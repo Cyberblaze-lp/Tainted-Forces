@@ -1,0 +1,87 @@
+{
+    "rules": [
+      {
+        "match": {
+          "blocks": {
+            "blocks": [
+                "tfc:ore/native_copper/granite:*",
+                "tfc:ore/native_copper/diorite:*",
+                "tfc:ore/native_copper/gabbro:*",
+                "tfc:ore/native_copper/shale:*",
+                "tfc:ore/native_copper/claystone:*",
+                "tfc:ore/native_copper/rocksalt:*",
+                "tfc:ore/native_copper/limestone:*",
+                "tfc:ore/native_copper/conglomerate:*",
+                "tfc:ore/native_copper/dolomite:*",
+                "tfc:ore/native_copper/chert:*",
+                "tfc:ore/native_copper/chalk:*",
+                "tfc:ore/native_copper/rhyolite:*",
+                "tfc:ore/native_copper/basalt:*",
+                "tfc:ore/native_copper/andesite:*",
+                "tfc:ore/native_copper/dacite:*",
+                "tfc:ore/native_copper/quartzite:*",
+                "tfc:ore/native_copper/slate:*",
+                "tfc:ore/native_copper/phyllite:*",
+                "tfc:ore/native_copper/schist:*",
+                "tfc:ore/native_copper/gneiss:*",
+                "tfc:ore/native_copper/marble:*"
+            ]
+          }
+        },
+        "replaceStrategy": "ADD",
+        "drops": [
+          {
+            "selector": {
+              "weight": {
+                "value": 25
+              },
+              "fortuneLevelRequired": 1
+            },
+            "item": {
+              "items": [
+                "tfc:ore/small/native_copper"
+              ],
+              "quantity": {
+                "min": 0,
+                "max": 2
+              }
+            }
+          },
+          {
+            "selector": {
+              "weight": {
+                "value": 25
+              },
+              "fortuneLevelRequired": 2
+            },
+            "item": {
+              "items": [
+                "tfc:ore/small/native_copper"
+              ],
+              "quantity": {
+                "min": 0, "max":3
+              }
+            }
+          },
+          {
+            "selector": {
+              "weight": {
+                "value": 25
+              },
+              "fortuneLevelRequired": 3
+            },
+            "item": {
+              "items": [
+                "tfc:ore/small/native_copper"
+              ],
+              "quantity": {
+                "min": 1,
+                "max": 4
+              
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }

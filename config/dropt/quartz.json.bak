@@ -1,0 +1,42 @@
+{
+    "rules": [
+      {
+        "match": {
+          "blocks": {
+            "blocks": [
+              "tfc:raw/quartzite:*",
+              "tfc:raw/granite:*",
+              "tfc:raw/rhyolite:*",
+              "tfc:raw/gneiss"
+            ]
+          }
+        },
+        "replaceStrategy": "ADD",
+        "drops": [
+          {
+            "selector": {
+                "silktouch": "EXCLUDED",
+                "weight": {
+                  "value": 1
+                }
+              },
+            "item": {
+              "items": [
+                "minecraft:quartz"
+              ],
+              "quantity": {
+                  "min": 0, "max":3
+              }
+            }
+          },
+          {
+            "selector": {
+                "weight": {
+                  "value": 2
+                }
+              }
+          }
+        ]
+      }
+    ]
+  }

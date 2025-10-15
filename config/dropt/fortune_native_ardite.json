@@ -1,0 +1,88 @@
+{
+    "rules": [
+      {
+        "match": {
+          "blocks": {
+            "blocks": [
+                "tconstruct:ore:1",
+                "tfc:ore/native_ardite/granite:*",
+                "tfc:ore/native_ardite/diorite:*",
+                "tfc:ore/native_ardite/gabbro:*",
+                "tfc:ore/native_ardite/shale:*",
+                "tfc:ore/native_ardite/claystone:*",
+                "tfc:ore/native_ardite/rocksalt:*",
+                "tfc:ore/native_ardite/limestone:*",
+                "tfc:ore/native_ardite/conglomerate:*",
+                "tfc:ore/native_ardite/dolomite:*",
+                "tfc:ore/native_ardite/chert:*",
+                "tfc:ore/native_ardite/chalk:*",
+                "tfc:ore/native_ardite/rhyolite:*",
+                "tfc:ore/native_ardite/basalt:*",
+                "tfc:ore/native_ardite/andesite:*",
+                "tfc:ore/native_ardite/dacite:*",
+                "tfc:ore/native_ardite/quartzite:*",
+                "tfc:ore/native_ardite/slate:*",
+                "tfc:ore/native_ardite/phyllite:*",
+                "tfc:ore/native_ardite/schist:*",
+                "tfc:ore/native_ardite/gneiss:*",
+                "tfc:ore/native_ardite/marble:*"
+            ]
+          }
+        },
+        "replaceStrategy": "ADD",
+        "drops": [
+          {
+            "selector": {
+              "weight": {
+                "value": 25
+              },
+              "fortuneLevelRequired": 1
+            },
+            "item": {
+              "items": [
+                "tfc:ore/small/native_ardite"
+              ],
+              "quantity": {
+                "min": 0,
+                "max": 2
+              }
+            }
+          },
+          {
+            "selector": {
+              "weight": {
+                "value": 25
+              },
+              "fortuneLevelRequired": 2
+            },
+            "item": {
+              "items": [
+                "tfc:ore/small/native_ardite"
+              ],
+              "quantity": {
+                "min": 0, "max":3
+              }
+            }
+          },
+          {
+            "selector": {
+              "weight": {
+                "value": 25
+              },
+              "fortuneLevelRequired": 3
+            },
+            "item": {
+              "items": [
+                "tfc:ore/small/native_ardite"
+              ],
+              "quantity": {
+                "min": 1,
+                "max": 4
+              
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }

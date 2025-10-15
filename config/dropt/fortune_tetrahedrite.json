@@ -1,0 +1,87 @@
+{
+    "rules": [
+      {
+        "match": {
+          "blocks": {
+            "blocks": [
+                "tfc:ore/tetrahedrite/granite:*",
+                "tfc:ore/tetrahedrite/diorite:*",
+                "tfc:ore/tetrahedrite/gabbro:*",
+                "tfc:ore/tetrahedrite/shale:*",
+                "tfc:ore/tetrahedrite/claystone:*",
+                "tfc:ore/tetrahedrite/rocksalt:*",
+                "tfc:ore/tetrahedrite/limestone:*",
+                "tfc:ore/tetrahedrite/conglomerate:*",
+                "tfc:ore/tetrahedrite/dolomite:*",
+                "tfc:ore/tetrahedrite/chert:*",
+                "tfc:ore/tetrahedrite/chalk:*",
+                "tfc:ore/tetrahedrite/rhyolite:*",
+                "tfc:ore/tetrahedrite/basalt:*",
+                "tfc:ore/tetrahedrite/andesite:*",
+                "tfc:ore/tetrahedrite/dacite:*",
+                "tfc:ore/tetrahedrite/quartzite:*",
+                "tfc:ore/tetrahedrite/slate:*",
+                "tfc:ore/tetrahedrite/phyllite:*",
+                "tfc:ore/tetrahedrite/schist:*",
+                "tfc:ore/tetrahedrite/gneiss:*",
+                "tfc:ore/tetrahedrite/marble:*"
+            ]
+          }
+        },
+        "replaceStrategy": "ADD",
+        "drops": [
+          {
+            "selector": {
+              "weight": {
+                "value": 25
+              },
+              "fortuneLevelRequired": 1
+            },
+            "item": {
+              "items": [
+                "tfc:ore/small/tetrahedrite"
+              ],
+              "quantity": {
+                "min": 0,
+                "max": 2
+              }
+            }
+          },
+          {
+            "selector": {
+              "weight": {
+                "value": 25
+              },
+              "fortuneLevelRequired": 2
+            },
+            "item": {
+              "items": [
+                "tfc:ore/small/tetrahedrite"
+              ],
+              "quantity": {
+                "min": 0, "max":3
+              }
+            }
+          },
+          {
+            "selector": {
+              "weight": {
+                "value": 25
+              },
+              "fortuneLevelRequired": 3
+            },
+            "item": {
+              "items": [
+                "tfc:ore/small/tetrahedrite"
+              ],
+              "quantity": {
+                "min": 1,
+                "max": 4
+              
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }

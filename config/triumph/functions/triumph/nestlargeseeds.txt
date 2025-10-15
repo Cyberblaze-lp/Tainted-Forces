@@ -1,0 +1,8 @@
+summon thaumcraft:taintseed ~-0.4 ~ ~-0.1
+summon thaumcraft:taintseed ~-0.6 ~ ~-0.1
+summon thaumcraft:taintseed ~-0.4 ~ ~0.1
+summon thaumcraft:taintseed ~-0.6 ~ ~0.1
+scoreboard objectives add isNest dummy
+scoreboard players add @e[r=5,type=thaumcraft:taintseed] isNest  1
+scoreboard players tag @e[r=5,type=thaumcraft:taintseed] add nest
+kill @s

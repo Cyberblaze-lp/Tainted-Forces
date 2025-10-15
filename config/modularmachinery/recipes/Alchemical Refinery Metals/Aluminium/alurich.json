@@ -1,0 +1,19 @@
+{   "machine": "refinerythaum",
+    "registryName": "AluminiumRich",
+    "recipeTime": 150 ,
+    "requirements": [
+       {"type": "aspect","io-type": "input","aspect": "metallum","amount" : 2},{"type": "aspect","io-type": "input","aspect": "ordo","amount" : 5},
+	{
+	"type":"item",
+	"io-type":"input",
+	"item":"ore:oreRichAluminium",
+	"amount": 1
+	},
+        {
+        	"type": "item",
+        	"io-type": "output",
+        	"item":"tfc:metal/scrap/aluminium"
+		
+        }
+    ]
+}

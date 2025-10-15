@@ -1,0 +1,87 @@
+{
+    "rules": [
+      {
+        "match": {
+          "blocks": {
+            "blocks": [
+                "tfc:ore/stibnite/granite:*",
+                "tfc:ore/stibnite/diorite:*",
+                "tfc:ore/stibnite/gabbro:*",
+                "tfc:ore/stibnite/shale:*",
+                "tfc:ore/stibnite/claystone:*",
+                "tfc:ore/stibnite/rocksalt:*",
+                "tfc:ore/stibnite/limestone:*",
+                "tfc:ore/stibnite/conglomerate:*",
+                "tfc:ore/stibnite/dolomite:*",
+                "tfc:ore/stibnite/chert:*",
+                "tfc:ore/stibnite/chalk:*",
+                "tfc:ore/stibnite/rhyolite:*",
+                "tfc:ore/stibnite/basalt:*",
+                "tfc:ore/stibnite/andesite:*",
+                "tfc:ore/stibnite/dacite:*",
+                "tfc:ore/stibnite/quartzite:*",
+                "tfc:ore/stibnite/slate:*",
+                "tfc:ore/stibnite/phyllite:*",
+                "tfc:ore/stibnite/schist:*",
+                "tfc:ore/stibnite/gneiss:*",
+                "tfc:ore/stibnite/marble:*"
+            ]
+          }
+        },
+        "replaceStrategy": "ADD",
+        "drops": [
+          {
+            "selector": {
+              "weight": {
+                "value": 25
+              },
+              "fortuneLevelRequired": 1
+            },
+            "item": {
+              "items": [
+                "tfc:ore/small/stibnite"
+              ],
+              "quantity": {
+                "min": 0,
+                "max": 2
+              }
+            }
+          },
+          {
+            "selector": {
+              "weight": {
+                "value": 25
+              },
+              "fortuneLevelRequired": 2
+            },
+            "item": {
+              "items": [
+                "tfc:ore/small/stibnite"
+              ],
+              "quantity": {
+                "min": 0, "max":3
+              }
+            }
+          },
+          {
+            "selector": {
+              "weight": {
+                "value": 25
+              },
+              "fortuneLevelRequired": 3
+            },
+            "item": {
+              "items": [
+                "tfc:ore/small/stibnite"
+              ],
+              "quantity": {
+                "min": 1,
+                "max": 4
+              
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }

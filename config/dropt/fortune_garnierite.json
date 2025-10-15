@@ -1,0 +1,87 @@
+{
+    "rules": [
+      {
+        "match": {
+          "blocks": {
+            "blocks": [
+                "tfc:ore/garnierite/granite:*",
+                "tfc:ore/garnierite/diorite:*",
+                "tfc:ore/garnierite/gabbro:*",
+                "tfc:ore/garnierite/shale:*",
+                "tfc:ore/garnierite/claystone:*",
+                "tfc:ore/garnierite/rocksalt:*",
+                "tfc:ore/garnierite/limestone:*",
+                "tfc:ore/garnierite/conglomerate:*",
+                "tfc:ore/garnierite/dolomite:*",
+                "tfc:ore/garnierite/chert:*",
+                "tfc:ore/garnierite/chalk:*",
+                "tfc:ore/garnierite/rhyolite:*",
+                "tfc:ore/garnierite/basalt:*",
+                "tfc:ore/garnierite/andesite:*",
+                "tfc:ore/garnierite/dacite:*",
+                "tfc:ore/garnierite/quartzite:*",
+                "tfc:ore/garnierite/slate:*",
+                "tfc:ore/garnierite/phyllite:*",
+                "tfc:ore/garnierite/schist:*",
+                "tfc:ore/garnierite/gneiss:*",
+                "tfc:ore/garnierite/marble:*"
+            ]
+          }
+        },
+        "replaceStrategy": "ADD",
+        "drops": [
+          {
+            "selector": {
+              "weight": {
+                "value": 25
+              },
+              "fortuneLevelRequired": 1
+            },
+            "item": {
+              "items": [
+                "tfc:ore/small/garnierite"
+              ],
+              "quantity": {
+                "min": 0,
+                "max": 2
+              }
+            }
+          },
+          {
+            "selector": {
+              "weight": {
+                "value": 25
+              },
+              "fortuneLevelRequired": 2
+            },
+            "item": {
+              "items": [
+                "tfc:ore/small/garnierite"
+              ],
+              "quantity": {
+                "min": 0, "max":3
+              }
+            }
+          },
+          {
+            "selector": {
+              "weight": {
+                "value": 25
+              },
+              "fortuneLevelRequired": 3
+            },
+            "item": {
+              "items": [
+                "tfc:ore/small/garnierite"
+              ],
+              "quantity": {
+                "min": 1,
+                "max": 4
+              
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }

@@ -1,0 +1,87 @@
+{
+    "rules": [
+      {
+        "match": {
+          "blocks": {
+            "blocks": [
+                "tfc:ore/rutile/granite:*",
+                "tfc:ore/rutile/diorite:*",
+                "tfc:ore/rutile/gabbro:*",
+                "tfc:ore/rutile/shale:*",
+                "tfc:ore/rutile/claystone:*",
+                "tfc:ore/rutile/rocksalt:*",
+                "tfc:ore/rutile/limestone:*",
+                "tfc:ore/rutile/conglomerate:*",
+                "tfc:ore/rutile/dolomite:*",
+                "tfc:ore/rutile/chert:*",
+                "tfc:ore/rutile/chalk:*",
+                "tfc:ore/rutile/rhyolite:*",
+                "tfc:ore/rutile/basalt:*",
+                "tfc:ore/rutile/andesite:*",
+                "tfc:ore/rutile/dacite:*",
+                "tfc:ore/rutile/quartzite:*",
+                "tfc:ore/rutile/slate:*",
+                "tfc:ore/rutile/phyllite:*",
+                "tfc:ore/rutile/schist:*",
+                "tfc:ore/rutile/gneiss:*",
+                "tfc:ore/rutile/marble:*"
+            ]
+          }
+        },
+        "replaceStrategy": "ADD",
+        "drops": [
+          {
+            "selector": {
+              "weight": {
+                "value": 25
+              },
+              "fortuneLevelRequired": 1
+            },
+            "item": {
+              "items": [
+                "tfc:ore/small/rutile"
+              ],
+              "quantity": {
+                "min": 0,
+                "max": 2
+              }
+            }
+          },
+          {
+            "selector": {
+              "weight": {
+                "value": 25
+              },
+              "fortuneLevelRequired": 2
+            },
+            "item": {
+              "items": [
+                "tfc:ore/small/rutile"
+              ],
+              "quantity": {
+                "min": 0, "max":3
+              }
+            }
+          },
+          {
+            "selector": {
+              "weight": {
+                "value": 25
+              },
+              "fortuneLevelRequired": 3
+            },
+            "item": {
+              "items": [
+                "tfc:ore/small/rutile"
+              ],
+              "quantity": {
+                "min": 1,
+                "max": 4
+              
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }

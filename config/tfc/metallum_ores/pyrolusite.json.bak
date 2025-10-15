@@ -1,0 +1,16 @@
+{
+	"pyrolusite": {
+    "ore": "tfc:pyrolusite",
+    "loose": "tfc:pyrolusite",
+    "width": 2,
+    "height": 10,
+    "shape": "cluster",
+    "rarity": 75,
+    "minimum_height": 30,
+    "maximum_height": 80,
+    "density": 60,
+    "base_rocks": [
+      "tfc:igneous_intrusive"
+    ]
+  }
+}

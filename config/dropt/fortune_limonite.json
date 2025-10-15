@@ -1,0 +1,87 @@
+{
+    "rules": [
+      {
+        "match": {
+          "blocks": {
+            "blocks": [
+                "tfc:ore/limonite/granite:*",
+                "tfc:ore/limonite/diorite:*",
+                "tfc:ore/limonite/gabbro:*",
+                "tfc:ore/limonite/shale:*",
+                "tfc:ore/limonite/claystone:*",
+                "tfc:ore/limonite/rocksalt:*",
+                "tfc:ore/limonite/limestone:*",
+                "tfc:ore/limonite/conglomerate:*",
+                "tfc:ore/limonite/dolomite:*",
+                "tfc:ore/limonite/chert:*",
+                "tfc:ore/limonite/chalk:*",
+                "tfc:ore/limonite/rhyolite:*",
+                "tfc:ore/limonite/basalt:*",
+                "tfc:ore/limonite/andesite:*",
+                "tfc:ore/limonite/dacite:*",
+                "tfc:ore/limonite/quartzite:*",
+                "tfc:ore/limonite/slate:*",
+                "tfc:ore/limonite/phyllite:*",
+                "tfc:ore/limonite/schist:*",
+                "tfc:ore/limonite/gneiss:*",
+                "tfc:ore/limonite/marble:*"
+            ]
+          }
+        },
+        "replaceStrategy": "ADD",
+        "drops": [
+          {
+            "selector": {
+              "weight": {
+                "value": 25
+              },
+              "fortuneLevelRequired": 1
+            },
+            "item": {
+              "items": [
+                "tfc:ore/small/limonite"
+              ],
+              "quantity": {
+                "min": 0,
+                "max": 2
+              }
+            }
+          },
+          {
+            "selector": {
+              "weight": {
+                "value": 25
+              },
+              "fortuneLevelRequired": 2
+            },
+            "item": {
+              "items": [
+                "tfc:ore/small/limonite"
+              ],
+              "quantity": {
+                "min": 0, "max":3
+              }
+            }
+          },
+          {
+            "selector": {
+              "weight": {
+                "value": 25
+              },
+              "fortuneLevelRequired": 3
+            },
+            "item": {
+              "items": [
+                "tfc:ore/small/limonite"
+              ],
+              "quantity": {
+                "min": 1,
+                "max": 4
+              
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }

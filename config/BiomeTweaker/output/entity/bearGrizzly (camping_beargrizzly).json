@@ -1,0 +1,6 @@
+
+{
+  "Name": "bearGrizzly",
+  "Registry ID": "camping:beargrizzly",
+  "Class": "com.rikmuld.camping.features.entities.bear.EntityBear"
+}

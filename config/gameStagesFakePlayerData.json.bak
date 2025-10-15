@@ -1,0 +1,27 @@
+[
+  {
+    "fakePlayerName": "DEFAULT",
+    "stages": [
+      "as",
+      "bl"
+      
+    ]
+  },
+  {
+    "fakePlayerName": "[XU2FakePlayer]",
+    "stages": [
+      "as",
+      "bl"
+      
+    ]
+  },
+  {
+    "fakePlayerName": "FakeThaumcraftGolem",
+    "stages": [
+      "as",
+      "bl"
+      
+    ]
+  }
+  
+]

@@ -1,0 +1,87 @@
+{
+    "rules": [
+      {
+        "match": {
+          "blocks": {
+            "blocks": [
+                "tfc:ore/native_gold/granite:*",
+                "tfc:ore/native_gold/diorite:*",
+                "tfc:ore/native_gold/gabbro:*",
+                "tfc:ore/native_gold/shale:*",
+                "tfc:ore/native_gold/claystone:*",
+                "tfc:ore/native_gold/rocksalt:*",
+                "tfc:ore/native_gold/limestone:*",
+                "tfc:ore/native_gold/conglomerate:*",
+                "tfc:ore/native_gold/dolomite:*",
+                "tfc:ore/native_gold/chert:*",
+                "tfc:ore/native_gold/chalk:*",
+                "tfc:ore/native_gold/rhyolite:*",
+                "tfc:ore/native_gold/basalt:*",
+                "tfc:ore/native_gold/andesite:*",
+                "tfc:ore/native_gold/dacite:*",
+                "tfc:ore/native_gold/quartzite:*",
+                "tfc:ore/native_gold/slate:*",
+                "tfc:ore/native_gold/phyllite:*",
+                "tfc:ore/native_gold/schist:*",
+                "tfc:ore/native_gold/gneiss:*",
+                "tfc:ore/native_gold/marble:*"
+            ]
+          }
+        },
+        "replaceStrategy": "ADD",
+        "drops": [
+          {
+            "selector": {
+              "weight": {
+                "value": 25
+              },
+              "fortuneLevelRequired": 1
+            },
+            "item": {
+              "items": [
+                "tfc:ore/small/native_gold"
+              ],
+              "quantity": {
+                "min": 0,
+                "max": 2
+              }
+            }
+          },
+          {
+            "selector": {
+              "weight": {
+                "value": 25
+              },
+              "fortuneLevelRequired": 2
+            },
+            "item": {
+              "items": [
+                "tfc:ore/small/native_gold"
+              ],
+              "quantity": {
+                "min": 0, "max":3
+              }
+            }
+          },
+          {
+            "selector": {
+              "weight": {
+                "value": 25
+              },
+              "fortuneLevelRequired": 3
+            },
+            "item": {
+              "items": [
+                "tfc:ore/small/native_gold"
+              ],
+              "quantity": {
+                "min": 1,
+                "max": 4
+              
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }

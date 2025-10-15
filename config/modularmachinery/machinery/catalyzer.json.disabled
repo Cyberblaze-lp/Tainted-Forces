@@ -1,0 +1,74 @@
+{"registryname": "catalyzer",
+    "localizedname": "Fuel Preprocessor",
+	"color":"54595c",
+	 "requires-blueprint": false,
+    "parts": [
+        {
+            "x": 1,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "tfc:trapdoor/platinum"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 0,
+            
+            "elements": [
+                "modularmachinery:blockfluidoutputhatch@2"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 0,
+            
+            "elements": [
+                "immersiveengineering:metal_decoration2@5"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "tfc:trapdoor/platinum"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "tfc:trapdoor/platinum"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "tfc:trapdoor/platinum"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 0,
+      
+            "elements": [
+                "immersiveengineering:metal_decoration2@5"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 0,
+            "z": 0,
+           
+            "elements": [
+                "modularmachinery:blockfluidinputhatch@2"
+            ]
+        }
+    ]}

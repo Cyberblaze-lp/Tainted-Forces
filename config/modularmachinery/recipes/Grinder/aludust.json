@@ -1,0 +1,26 @@
+{   "machine": "mechgrinder",
+    "registryName": "aludust",
+    "recipeTime": 80 ,
+    "requirements": [
+        {
+           "type": "mysticalmechanics",
+    "io-type": "input",
+    "levelRequiredMin": 60,
+    "levelRequiredMax": 160
+        },
+	{
+	"type":"item",
+	"io-type":"input",
+	"item":"ore:ingotAluminum"
+	
+	
+	},
+        {
+        	"type": "item",
+        	"io-type": "output",
+        	"item":"tfc:metal/dust/aluminium"
+		
+        }
+
+    ]
+}

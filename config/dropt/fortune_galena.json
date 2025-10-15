@@ -1,0 +1,87 @@
+{
+    "rules": [
+      {
+        "match": {
+          "blocks": {
+            "blocks": [
+                "tfc:ore/galena/granite:*",
+                "tfc:ore/galena/diorite:*",
+                "tfc:ore/galena/gabbro:*",
+                "tfc:ore/galena/shale:*",
+                "tfc:ore/galena/claystone:*",
+                "tfc:ore/galena/rocksalt:*",
+                "tfc:ore/galena/limestone:*",
+                "tfc:ore/galena/conglomerate:*",
+                "tfc:ore/galena/dolomite:*",
+                "tfc:ore/galena/chert:*",
+                "tfc:ore/galena/chalk:*",
+                "tfc:ore/galena/rhyolite:*",
+                "tfc:ore/galena/basalt:*",
+                "tfc:ore/galena/andesite:*",
+                "tfc:ore/galena/dacite:*",
+                "tfc:ore/galena/quartzite:*",
+                "tfc:ore/galena/slate:*",
+                "tfc:ore/galena/phyllite:*",
+                "tfc:ore/galena/schist:*",
+                "tfc:ore/galena/gneiss:*",
+                "tfc:ore/galena/marble:*"
+            ]
+          }
+        },
+        "replaceStrategy": "ADD",
+        "drops": [
+          {
+            "selector": {
+              "weight": {
+                "value": 25
+              },
+              "fortuneLevelRequired": 1
+            },
+            "item": {
+              "items": [
+                "tfc:ore/small/galena"
+              ],
+              "quantity": {
+                "min": 0,
+                "max": 2
+              }
+            }
+          },
+          {
+            "selector": {
+              "weight": {
+                "value": 25
+              },
+              "fortuneLevelRequired": 2
+            },
+            "item": {
+              "items": [
+                "tfc:ore/small/galena"
+              ],
+              "quantity": {
+                "min": 0, "max":3
+              }
+            }
+          },
+          {
+            "selector": {
+              "weight": {
+                "value": 25
+              },
+              "fortuneLevelRequired": 3
+            },
+            "item": {
+              "items": [
+                "tfc:ore/small/galena"
+              ],
+              "quantity": {
+                "min": 1,
+                "max": 4
+              
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }

@@ -1,0 +1,295 @@
+type = menu
+
+customization-meta {
+  identifier = net.minecraft.client.gui.GuiMainMenu
+  randomgroup = 1
+  renderorder = foreground
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  keepaspectratio = false
+  action = backgroundoptions
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_language_button%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=button_compatibility_id:forge_titlescreen_mods_button%
+  action = hidebutton
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 176
+  width = 268
+  action = deep_customization_element:title_screen_forge_top
+  actionid = a27833ec-2bb5-4f92-bec6-fbc80e98f5251750978623037
+  y = 4
+  height = 19
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 2
+  width = 169
+  action = deep_customization_element:title_screen_branding
+  actionid = edd617c8-ea65-4977-b05b-cd21260806921750978623067
+  y = 301
+  height = 50
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 391
+  width = 228
+  action = deep_customization_element:title_screen_forge_copyright
+  actionid = 8603b06d-2197-4ff7-a457-f488a0b6c8c81750978623068
+  y = 333
+  height = 9
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 413
+  width = 13
+  action = deep_customization_element:title_screen_realms_notification
+  actionid = 62dd079b-089f-4c1d-ac54-dcf21b4900031750978623069
+  y = 188
+  height = 13
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 173
+  width = 274
+  action = deep_customization_element:title_screen_logo
+  actionid = 013137a6-c996-4c11-a6ca-ba7c429191ec1750978623069
+  y = 30
+  height = 52
+}
+
+customization {
+  orientation = original
+  splash_color = #ffff00
+  hidden = true
+  x = 0
+  width = 60
+  splash_rotation = -20
+  action = deep_customization_element:title_screen_splash
+  actionid = 1c57b337-7e6c-4c0f-a09a-dc5ba171b24f1750978623070
+  y = 0
+  height = 30
+}
+
+customization {
+  orientation = top-left
+  name = menu_loop_24_b
+  x = 0
+  width = 640
+  actionid = ce83c3c5-ba3a-4a6b-a744-86399c3980d11751039703534
+  action = addanimation
+  y = 0
+  height = 360
+}
+
+customization {
+  orientation = top-left
+  restartbackgroundanimations = true
+  buttonaction = opengui;net.minecraft.client.gui.GuiMultiplayer%btnaction_splitter_fm%
+  backgroundhovered = resources/fancymenu/aqua_glitch.png
+  label = Play in Teams
+  loopbackgroundanimations = true
+  hoverlabel = Kill the Others
+  x = 241
+  width = 160
+  action = addbutton
+  actionid = 53a55e09-56ce-4248-8f7b-6cd40ec847e61751040481309
+  y = 164
+  backgroundnormal = resources/fancymenu/blank.png
+  height = 32
+}
+
+customization {
+  orientation = top-left
+  restartbackgroundanimations = true
+  buttonaction = opengui;net.minecraft.client.gui.GuiWorldSelection%btnaction_splitter_fm%
+  backgroundhovered = resources/fancymenu/aqua_glitch.png
+  label = Play Alone
+  loopbackgroundanimations = true
+  hoverlabel = Die Alone
+  x = 241
+  width = 160
+  action = addbutton
+  actionid = 655a2686-b1a0-4b5c-bc1a-37ff748d08691751040559470
+  y = 100
+  backgroundnormal = resources/fancymenu/blank.png
+  height = 33
+}
+
+customization {
+  orientation = top-left
+  restartbackgroundanimations = true
+  buttonaction = quitgame%btnaction_splitter_fm%
+  backgroundhovered = resources/fancymenu/blue_noise.png
+  label = Quit
+  loopbackgroundanimations = true
+  hoverlabel = Don't Leave us
+  x = 243
+  width = 93
+  action = addbutton
+  actionid = dbd82ea3-d021-4ad7-8f66-cb7d53cc1ce41751040675426
+  y = 226
+  backgroundnormal = resources/fancymenu/blank.png
+  height = 31
+}
+
+customization {
+  orientation = top-left
+  restartbackgroundanimations = true
+  buttonaction = quitgame%btnaction_splitter_fm%
+  backgroundhovered = resources/fancymenu/blank.png
+  label = Game
+  loopbackgroundanimations = true
+  hoverlabel = .
+  x = 336
+  width = 62
+  action = addbutton
+  actionid = daa7c41d-e1b9-41fa-8322-a63812ce0e4f1751040726305
+  y = 258
+  backgroundnormal = resources/fancymenu/blank.png
+  height = 29
+}
+
+customization {
+  orientation = top-left
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  buttonaction = opengui;net.minecraft.client.gui.GuiOptions%btnaction_splitter_fm%
+  x = 154
+  width = 47
+  action = addbutton
+  actionid = 1cacf576-7510-48f5-b65d-e4d629a6a1a51751040805062
+  y = 108
+  label = Options
+  backgroundnormal = resources/fancymenu/blank.png
+  height = 20
+}
+
+customization {
+  orientation = top-left
+  restartbackgroundanimations = true
+  buttonaction = openlink;https://mmcreviews.com/all/modpacks/tainted-forces/%btnaction_splitter_fm%
+  backgroundhovered = resources/fancymenu/star_yellow.png
+  label = 
+  loopbackgroundanimations = true
+  hoverlabel = Rate the Pack
+  x = 413
+  width = 76
+  action = addbutton
+  actionid = 47e38f4e-410b-4208-934c-086679ba340f1751040858165
+  y = 144
+  backgroundnormal = resources/fancymenu/blank.png
+  height = 95
+}
+
+customization {
+  advanced_height = 113.5
+  orientation = top-left
+  restartbackgroundanimations = true
+  buttonaction = opengui;net.minecraftforge.fml.client.GuiModList%btnaction_splitter_fm%
+  backgroundhovered = resources/fancymenu/controller.png
+  label = Configs
+  advanced_width = 113
+  loopbackgroundanimations = true
+  x = 42
+  width = 113
+  action = addbutton
+  actionid = c15c74c3-0721-4206-84df-5ce279a052891751041338710
+  y = 197
+  backgroundnormal = resources/fancymenu/blank.png
+  height = 113
+}
+
+customization {
+  orientation = top-left
+  restartbackgroundanimations = true
+  buttonaction = openlink;https://discord.gg/5H5J2kgsmp%btnaction_splitter_fm%
+  backgroundhovered = resources/fancymenu/blank.png
+  label = 1.12
+  loopbackgroundanimations = true
+  hoverlabel = 1.12 Coalition Discord
+  x = 450
+  width = 84
+  action = addbutton
+  actionid = 0e117b3b-867c-42b5-a35c-5785b2fd047a1751041484070
+  y = 251
+  backgroundnormal = resources/fancymenu/blank.png
+  height = 28
+}
+
+customization {
+  orientation = top-left
+  enable_scrolling = true
+  shadow = true
+  scale = 1.0
+  source = M%n%M%n%C%n%R
+  text_border = 0
+  case_mode = normal
+  source_mode = direct
+  line_spacing = 1
+  x = 457
+  width = 13
+  action = custom_layout_element:fancymenu_customization_item_text
+  actionid = 195fa602-8c13-4631-8d8d-1b42aa1e37241751321199416
+  y = 144
+  alignment = left
+  height = 42
+}
+
+customization {
+  orientation = top-left
+  restartbackgroundanimations = true
+  buttonaction = openlink;https://discord.gg/9cQXFUAas2%btnaction_splitter_fm%
+  backgroundhovered = resources/fancymenu/blank.png
+  label = 
+  loopbackgroundanimations = true
+  hoverlabel = Tainted Forces Discord
+  x = 162
+  width = 77
+  action = addbutton
+  actionid = 04c69df3-a9b0-4e3a-b4a5-a181ed6936bc1751045867914
+  y = 169
+  backgroundnormal = resources/fancymenu/blank.png
+  height = 109
+}
+

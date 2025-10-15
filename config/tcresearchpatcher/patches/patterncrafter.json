@@ -1,0 +1,34 @@
+[
+    {
+        "key": "ARCANEPATTERNCRAFTER",
+ "ops": [
+	    
+			{
+                "op":"replace",
+                "path": "stages/0/required_knowledge/0",
+				"value":["OBSERVATION;GOLEMANCY;1"]
+				
+           
+            		
+			},
+{
+                "op":"replace",
+                "path": "stages/0/required_knowledge/1",
+				"value":["THEORY;ARTIFICE;2"]
+				
+           
+            		
+			},
+{
+                "op":"replace",
+                "path": "stages/0/required_knowledge/2",
+				"value":["OBSERVATION;AUROMANCY;1"]
+				
+           
+            		
+			}   				
+		]
+		
+	}
+]
+

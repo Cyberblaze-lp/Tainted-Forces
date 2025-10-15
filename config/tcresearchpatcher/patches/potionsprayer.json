@@ -1,0 +1,14 @@
+[
+    {
+        "key": "POTIONSPRAYER",
+ "ops": [
+	    
+        {
+                "op":"replace",
+                "path": "parents/0",
+				"value":["HEDGEALCHEMY@2"]
+				
+           
+            		
+        }   ]}]
+

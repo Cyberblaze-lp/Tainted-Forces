@@ -1,0 +1,60 @@
+{
+  "rules": [
+    {
+      "match": {
+        "blocks": {
+          "blocks": [
+            "tfc:ore/petrified_wood/andesite:*",
+            "tfc:ore/petrified_wood/basalt:*",
+            "tfc:ore/petrified_wood/chalk:*",
+            "tfc:ore/petrified_wood/chert:*",
+            "tfc:ore/petrified_wood/claystone:*",
+            "tfc:ore/petrified_wood/conglomerate:*",
+            "tfc:ore/petrified_wood/dacite:*",
+            "tfc:ore/petrified_wood/diorite:*",
+            "tfc:ore/petrified_wood/dolomite:*",
+            "tfc:ore/petrified_wood/gabbro:*",
+            "tfc:ore/petrified_wood/gneiss:*",
+            "tfc:ore/petrified_wood/granite:*",
+            "tfc:ore/petrified_wood/limestone:*",
+            "tfc:ore/petrified_wood/marble:*",
+            "tfc:ore/petrified_wood/phyllite:*",
+            "tfc:ore/petrified_wood/quartzite:*",
+            "tfc:ore/petrified_wood/rhyolite:*",
+            "tfc:ore/petrified_wood/rocksalt:*",
+            "tfc:ore/petrified_wood/schist:*",
+            "tfc:ore/petrified_wood/shale:*",
+            "tfc:ore/petrified_wood/slate:*"
+          ]
+        }
+      },
+      "replaceStrategy": "ADD",
+      "drops": [
+        {
+          "selector": {
+            "weight": {
+              "value": 70
+            }
+          },
+          "item": {
+            "items": [
+              "thaumcraft:amber"
+            ],
+            "quantity": {
+              "min": 0,
+              "max": 2,
+              "fortuneModifier": 1
+            }
+          }
+        },
+        {
+          "selector": {
+            "weight": {
+              "value": 85
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

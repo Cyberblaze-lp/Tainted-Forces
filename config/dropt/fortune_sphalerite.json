@@ -1,0 +1,87 @@
+{
+    "rules": [
+      {
+        "match": {
+          "blocks": {
+            "blocks": [
+                "tfc:ore/sphalerite/granite:*",
+                "tfc:ore/sphalerite/diorite:*",
+                "tfc:ore/sphalerite/gabbro:*",
+                "tfc:ore/sphalerite/shale:*",
+                "tfc:ore/sphalerite/claystone:*",
+                "tfc:ore/sphalerite/rocksalt:*",
+                "tfc:ore/sphalerite/limestone:*",
+                "tfc:ore/sphalerite/conglomerate:*",
+                "tfc:ore/sphalerite/dolomite:*",
+                "tfc:ore/sphalerite/chert:*",
+                "tfc:ore/sphalerite/chalk:*",
+                "tfc:ore/sphalerite/rhyolite:*",
+                "tfc:ore/sphalerite/basalt:*",
+                "tfc:ore/sphalerite/andesite:*",
+                "tfc:ore/sphalerite/dacite:*",
+                "tfc:ore/sphalerite/quartzite:*",
+                "tfc:ore/sphalerite/slate:*",
+                "tfc:ore/sphalerite/phyllite:*",
+                "tfc:ore/sphalerite/schist:*",
+                "tfc:ore/sphalerite/gneiss:*",
+                "tfc:ore/sphalerite/marble:*"
+            ]
+          }
+        },
+        "replaceStrategy": "ADD",
+        "drops": [
+          {
+            "selector": {
+              "weight": {
+                "value": 25
+              },
+              "fortuneLevelRequired": 1
+            },
+            "item": {
+              "items": [
+                "tfc:ore/small/sphalerite"
+              ],
+              "quantity": {
+                "min": 0,
+                "max": 2
+              }
+            }
+          },
+          {
+            "selector": {
+              "weight": {
+                "value": 25
+              },
+              "fortuneLevelRequired": 2
+            },
+            "item": {
+              "items": [
+                "tfc:ore/small/sphalerite"
+              ],
+              "quantity": {
+                "min": 0, "max":3
+              }
+            }
+          },
+          {
+            "selector": {
+              "weight": {
+                "value": 25
+              },
+              "fortuneLevelRequired": 3
+            },
+            "item": {
+              "items": [
+                "tfc:ore/small/sphalerite"
+              ],
+              "quantity": {
+                "min": 1,
+                "max": 4
+              
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }

@@ -1,0 +1,87 @@
+{
+    "rules": [
+      {
+        "match": {
+          "blocks": {
+            "blocks": [
+                "tfc:ore/thorianite/granite:*",
+                "tfc:ore/thorianite/diorite:*",
+                "tfc:ore/thorianite/gabbro:*",
+                "tfc:ore/thorianite/shale:*",
+                "tfc:ore/thorianite/claystone:*",
+                "tfc:ore/thorianite/rocksalt:*",
+                "tfc:ore/thorianite/limestone:*",
+                "tfc:ore/thorianite/conglomerate:*",
+                "tfc:ore/thorianite/dolomite:*",
+                "tfc:ore/thorianite/chert:*",
+                "tfc:ore/thorianite/chalk:*",
+                "tfc:ore/thorianite/rhyolite:*",
+                "tfc:ore/thorianite/basalt:*",
+                "tfc:ore/thorianite/andesite:*",
+                "tfc:ore/thorianite/dacite:*",
+                "tfc:ore/thorianite/quartzite:*",
+                "tfc:ore/thorianite/slate:*",
+                "tfc:ore/thorianite/phyllite:*",
+                "tfc:ore/thorianite/schist:*",
+                "tfc:ore/thorianite/gneiss:*",
+                "tfc:ore/thorianite/marble:*"
+            ]
+          }
+        },
+        "replaceStrategy": "ADD",
+        "drops": [
+          {
+            "selector": {
+              "weight": {
+                "value": 25
+              },
+              "fortuneLevelRequired": 1
+            },
+            "item": {
+              "items": [
+                "tfc:ore/small/thorianite"
+              ],
+              "quantity": {
+                "min": 0,
+                "max": 2
+              }
+            }
+          },
+          {
+            "selector": {
+              "weight": {
+                "value": 25
+              },
+              "fortuneLevelRequired": 2
+            },
+            "item": {
+              "items": [
+                "tfc:ore/small/thorianite"
+              ],
+              "quantity": {
+                "min": 0, "max":3
+              }
+            }
+          },
+          {
+            "selector": {
+              "weight": {
+                "value": 25
+              },
+              "fortuneLevelRequired": 3
+            },
+            "item": {
+              "items": [
+                "tfc:ore/small/thorianite"
+              ],
+              "quantity": {
+                "min": 1,
+                "max": 4
+              
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }

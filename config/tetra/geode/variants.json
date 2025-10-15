@@ -1,0 +1,157 @@
+[
+
+
+    {
+
+
+        "minY": 5,
+
+
+        "maxY": 40,
+
+
+        "density": 8,
+
+
+        "block": "tfc:raw/granite",
+
+
+        "blockMeta": 0,
+
+
+        "hardness": 1.5,
+
+
+        "resistance": 10,
+
+
+        "dropMeta": 0
+
+
+    },
+
+
+    {
+
+
+        "minY": 5,
+
+
+        "maxY": 40,
+
+
+        "density": 10,
+
+
+        "block": "tfc:raw/diorite",
+
+
+        "blockMeta": 0,
+
+
+        "hardness": 1.5,
+
+
+        "resistance": 10,
+
+
+        "dropMeta": 0
+
+
+    },
+
+
+    {
+
+
+        "minY": 5,
+
+
+        "maxY": 40,
+
+
+        "density": 12,
+
+
+        "block": "tfc:raw/gabbro",
+
+
+        "blockMeta": 0,
+
+
+        "hardness": 1.5,
+
+
+        "resistance": 10,
+
+
+        "dropMeta": 0
+
+
+    },
+
+
+    {
+
+
+        "minY": 5,
+
+
+        "maxY": 25,
+
+
+        "density": 16,
+
+
+        "block": "tfc:raw/basalt",
+
+
+        "blockMeta": 5,
+
+
+        "hardness": 1.5,
+
+
+        "resistance": 10,
+
+
+        "dropMeta": 0
+
+
+    },
+
+
+    {
+
+
+        "minY": 80,
+
+
+        "maxY": 100,
+
+
+        "density": 18,
+
+
+        "block": "tfc:raw/gneiss",
+
+
+        "blockMeta": 0,
+
+
+        "hardness": 1.5,
+
+
+        "resistance": 10,
+
+
+        "dropMeta": 0
+
+
+    }
+
+
+    
+
+
+]

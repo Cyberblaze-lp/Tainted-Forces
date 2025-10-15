@@ -1,0 +1,87 @@
+{
+    "rules": [
+      {
+        "match": {
+          "blocks": {
+            "blocks": [
+                "tfc:ore/malachite/granite:*",
+                "tfc:ore/malachite/diorite:*",
+                "tfc:ore/malachite/gabbro:*",
+                "tfc:ore/malachite/shale:*",
+                "tfc:ore/malachite/claystone:*",
+                "tfc:ore/malachite/rocksalt:*",
+                "tfc:ore/malachite/limestone:*",
+                "tfc:ore/malachite/conglomerate:*",
+                "tfc:ore/malachite/dolomite:*",
+                "tfc:ore/malachite/chert:*",
+                "tfc:ore/malachite/chalk:*",
+                "tfc:ore/malachite/rhyolite:*",
+                "tfc:ore/malachite/basalt:*",
+                "tfc:ore/malachite/andesite:*",
+                "tfc:ore/malachite/dacite:*",
+                "tfc:ore/malachite/quartzite:*",
+                "tfc:ore/malachite/slate:*",
+                "tfc:ore/malachite/phyllite:*",
+                "tfc:ore/malachite/schist:*",
+                "tfc:ore/malachite/gneiss:*",
+                "tfc:ore/malachite/marble:*"
+            ]
+          }
+        },
+        "replaceStrategy": "ADD",
+        "drops": [
+          {
+            "selector": {
+              "weight": {
+                "value": 25
+              },
+              "fortuneLevelRequired": 1
+            },
+            "item": {
+              "items": [
+                "tfc:ore/small/malachite"
+              ],
+              "quantity": {
+                "min": 0,
+                "max": 2
+              }
+            }
+          },
+          {
+            "selector": {
+              "weight": {
+                "value": 25
+              },
+              "fortuneLevelRequired": 2
+            },
+            "item": {
+              "items": [
+                "tfc:ore/small/malachite"
+              ],
+              "quantity": {
+                "min": 0, "max":3
+              }
+            }
+          },
+          {
+            "selector": {
+              "weight": {
+                "value": 25
+              },
+              "fortuneLevelRequired": 3
+            },
+            "item": {
+              "items": [
+                "tfc:ore/small/malachite"
+              ],
+              "quantity": {
+                "min": 1,
+                "max": 4
+              
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }

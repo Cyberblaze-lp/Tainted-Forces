@@ -1,0 +1,87 @@
+{
+    "rules": [
+      {
+        "match": {
+          "blocks": {
+            "blocks": [
+                "tfc:ore/pyrolusite/granite:*",
+                "tfc:ore/pyrolusite/diorite:*",
+                "tfc:ore/pyrolusite/gabbro:*",
+                "tfc:ore/pyrolusite/shale:*",
+                "tfc:ore/pyrolusite/claystone:*",
+                "tfc:ore/pyrolusite/rocksalt:*",
+                "tfc:ore/pyrolusite/limestone:*",
+                "tfc:ore/pyrolusite/conglomerate:*",
+                "tfc:ore/pyrolusite/dolomite:*",
+                "tfc:ore/pyrolusite/chert:*",
+                "tfc:ore/pyrolusite/chalk:*",
+                "tfc:ore/pyrolusite/rhyolite:*",
+                "tfc:ore/pyrolusite/basalt:*",
+                "tfc:ore/pyrolusite/andesite:*",
+                "tfc:ore/pyrolusite/dacite:*",
+                "tfc:ore/pyrolusite/quartzite:*",
+                "tfc:ore/pyrolusite/slate:*",
+                "tfc:ore/pyrolusite/phyllite:*",
+                "tfc:ore/pyrolusite/schist:*",
+                "tfc:ore/pyrolusite/gneiss:*",
+                "tfc:ore/pyrolusite/marble:*"
+            ]
+          }
+        },
+        "replaceStrategy": "ADD",
+        "drops": [
+          {
+            "selector": {
+              "weight": {
+                "value": 25
+              },
+              "fortuneLevelRequired": 1
+            },
+            "item": {
+              "items": [
+                "tfc:ore/small/pyrolusite"
+              ],
+              "quantity": {
+                "min": 0,
+                "max": 2
+              }
+            }
+          },
+          {
+            "selector": {
+              "weight": {
+                "value": 25
+              },
+              "fortuneLevelRequired": 2
+            },
+            "item": {
+              "items": [
+                "tfc:ore/small/pyrolusite"
+              ],
+              "quantity": {
+                "min": 0, "max":3
+              }
+            }
+          },
+          {
+            "selector": {
+              "weight": {
+                "value": 25
+              },
+              "fortuneLevelRequired": 3
+            },
+            "item": {
+              "items": [
+                "tfc:ore/small/pyrolusite"
+              ],
+              "quantity": {
+                "min": 1,
+                "max": 4
+              
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }

@@ -1,0 +1,14 @@
+[
+    {
+        "key": "WARDEDJARS",
+ "ops": [
+	    
+			{
+                "op":"add",
+                "path": "stages/0/recipes/",
+				"value":["thaumcraft:jarschipped","thaumcraft:jarsflawed","thaumcraft:jarsnormal","thaumcraft:jarsflawless","thaumcraft:jarsexquisite","thaumcraft:JarVoid","thaumcraft:BrassBrace","thaumcraft:JarLabel"]
+			}
+
+		]
+	}
+]

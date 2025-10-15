@@ -1,0 +1,74 @@
+{"registryname": "catalyzer",
+    "localizedname": "Fuel Preprocessor",
+	"color":"54595c",
+	 "requires-blueprint": false,
+    "parts": [
+        {
+            "x": 1,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "tfc:trapdoor/platinum@11"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 0,
+            "nbt": {"size":"2","tank":{"gasTag":{"Empty":""},"Empty":""},"casingColor":"10066329","input":"0b","id":"minecraft:tilefluidoutputhatch"},
+            "elements": [
+                "modularmachinery:blockfluidoutputhatch@2"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 0,
+            "nbt": {"facing":"3","id":"immersiveengineering:razorwire"},
+            "elements": [
+                "immersiveengineering:metal_decoration2@5"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "tfc:trapdoor/platinum@11"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "tfc:trapdoor/platinum@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "tfc:trapdoor/platinum@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 0,
+            "nbt": {"facing":"2","id":"immersiveengineering:razorwire"},
+            "elements": [
+                "immersiveengineering:metal_decoration2@5"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 0,
+            "z": 0,
+            "nbt": {"size":"2","tank":{"gasTag":{"Empty":""},"Empty":""},"casingColor":"10066329","input":"1b","id":"minecraft:tilefluidinputhatch"},
+            "elements": [
+                "modularmachinery:blockfluidinputhatch@2"
+            ]
+        }
+    ]}

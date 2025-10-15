@@ -1,0 +1,11 @@
+[
+{
+"key":"FIRSTSTEPS",
+"ops":[
+    {  "op": "remove",
+    "path": "parents/0"
+   }
+
+ ] 
+}  
+]

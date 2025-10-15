@@ -1,0 +1,17 @@
+{
+	
+	"surface_stibnite": {
+    "ore": "tfc:stibnite",
+    "loose": "tfc:stibnite",
+    "width": 50,
+    "height": 5,
+    "shape": "cluster",
+    "rarity": 30,
+    "minimum_height": 168,
+    "maximum_height": 250,
+    "density": 40,
+    "base_rocks": [
+      "tfc:igneous_extrusive"
+    ]
+  }
+}

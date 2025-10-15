@@ -1,0 +1,19 @@
+[
+    {
+        "key": "ESSENTIATRANSPORT",
+ "ops": [
+	    
+			{
+                "op":"ad",
+                "path": "stages/1/recipes",
+				"value":["thaumcraft:betterinputtransfuser","thaumcraft:betteroutputtransfuser"]
+			},{
+				 "op":"add",
+                "path": "parents/1",
+				"value":"ESSENTIASMELTERVOID"
+				
+			}
+
+		]
+	}
+]

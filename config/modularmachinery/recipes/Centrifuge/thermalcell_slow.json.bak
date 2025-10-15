@@ -1,0 +1,47 @@
+{   "machine": "mechcentrifuge",
+    "registryName": "cell_slow",
+    "recipeTime": 300 ,
+    "requirements": [
+        {
+           "type": "mysticalmechanics",
+    "io-type": "input",
+    "levelRequiredMin": 20,
+    "levelRequiredMax": 120
+        },
+	{
+	"type":"item",
+	"io-type":"input",
+	"item":"tetra:magmatic_cell"
+	
+	
+	},
+	{
+	"type":"item",
+	"io-type":"input",
+	"item":"tetra:forged_bolt",
+	"chance":0.0
+	
+	},
+        {
+        	"type": "item",
+        	"io-type": "output",
+        	"item":"tetra:magmatic_cell@96"
+			
+		
+        },
+		 {
+        	"type": "item",
+        	"io-type": "output",
+        	"item":"minecraft:magma",
+			"amount":5
+		
+        },
+		 {
+        	"type": "item",
+        	"io-type": "output",
+        	"item":"embers:dust_ember",
+			"amount":2
+		
+        }
+    ]
+}

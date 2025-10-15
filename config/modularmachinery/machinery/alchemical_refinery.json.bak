@@ -1,0 +1,250 @@
+{
+	"registryname": "refinerythaum",
+    "localizedname": "Alchemical Refinery",
+	"color":"54595c",
+	 "requires-blueprint": true,
+    "parts": [
+        {
+            "x": -3,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "stone_bricks"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 1,
+            
+            "elements": [
+                "thaumcraft:tube"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "stone_bricks"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 1,
+            
+            "elements": [
+                "thaumcraft:tube"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "stone_bricks"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 1,
+            "z": 1,
+            
+            "elements": [
+                "thaumcraft:potion_sprayer"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 2,
+            
+            "elements": [
+                "thaumcraft:tube"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "stone_bricks"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "stone_bricks"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "stone_bricks"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "stone_bricks"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "stone_bricks"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "stone_bricks"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "stone_bricks"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 2,
+            
+            "elements": [
+                "modularmagic:blockaspectproviderinput"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 1,
+            
+            "elements": [
+                "modularmagic:blockaspectproviderinput"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "stone_bricks"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 2,
+            "z": 1,
+            "elements": [
+                "modularmachinery:blockinputbus@2"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 2,
+            "z": 2,
+            "elements": [
+                "stone_bricks"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "stone_bricks"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "modularmachinery:blockoutputbus@2"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "stone_bricks"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 2,
+            "z": 2,
+            "nbt": {"flow":"1b"},
+            "elements": [
+                "thaumcraft:tube_valve"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "stone_bricks"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "stone_bricks"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 2,
+            "z": 2,
+            
+            "elements": [
+                "thaumcraft:tube"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 1,
+            "z": 0,
+            
+            "elements": [
+                "tfc:bloomery"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 2,
+            "z": 1,
+            
+            "elements": [
+                "thaumcraft:tube"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 2,
+            
+            "elements": [
+                "thaumcraft:tube"
+            ]
+        }
+    ]}

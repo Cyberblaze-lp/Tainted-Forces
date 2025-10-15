@@ -1,0 +1,31 @@
+[
+    {
+        "key": "BELLOWS",
+ "ops": [
+	    
+        {
+                "op":"replace",
+                "path": "parents/0",
+				"value":["LEVITATOR"]
+				
+           
+            		
+        },
+		{
+			"op":"replace",
+                "path": "location",
+				"value":[7, 3]
+			
+			
+			
+		},
+		{
+			"op":"replace",
+                "path": "stages/1/recipes/0",
+				"value":["thaumcraft:betterbellows"]
+			
+			
+			
+		}
+		
+		]}]

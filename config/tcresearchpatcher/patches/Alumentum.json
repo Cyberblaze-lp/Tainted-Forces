@@ -1,0 +1,15 @@
+[
+{
+"key":"ALUMENTUM",
+"ops":[
+    
+
+
+    {
+    "op":"add",
+    "path":"stages/1/recipes/1",
+    "value":["thaumcraft:alumentumfromcoke"]
+      
+}  
+]
+}]

@@ -1,0 +1,19 @@
+[{
+        "key": "LABMEAT",    
+        "name": "research.LABMEAT.title",
+        "icons": [ "tfc:textures/items/food/bear.png" ],
+        "category": "ALCHEMY", "location": [ -1,3 ], 
+        "parents": [ "HEDGEALCHEMY" ],        
+        "stages": [
+                {
+                    "text": "research.LABMEAT.stage.1",
+                    "required_knowledge":["OBSERVATION;GOLEMANCY;2","OBSERVATION;ELDRITCH;1"],
+					"warp": 3
+                },
+                {
+                    "text": "research.LABMEAT.stage.2"  
+                    ,"recipes": ["thaumcraft:labmeat","thaumcraft:labrennet"]
+					
+                }
+            ]
+        }]

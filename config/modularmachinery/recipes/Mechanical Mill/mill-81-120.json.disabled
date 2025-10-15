@@ -1,0 +1,28 @@
+{   "machine": "mechmill",
+    "registryName": "mill_fast",
+    "recipeTime": 300 ,
+    "requirements": [
+        {
+           "type": "mysticalmechanics",
+    "io-type": "input",
+    "levelRequiredMin": 81,
+    "levelRequiredMax": 120
+        },
+	{
+	"type":"item",
+	"io-type":"input",
+	"item":"extrautils2:ingredients@15",
+	"chance":0.0
+	
+	
+	},
+        
+		 {
+        	"type": "grid",
+        	"io-type": "output",
+        	"power": 120
+		
+        }
+
+    ]
+}

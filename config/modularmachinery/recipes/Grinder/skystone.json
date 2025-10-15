@@ -1,0 +1,26 @@
+{   "machine": "mechgrinder",
+    "registryName": "skystone",
+    "recipeTime": 200 ,
+    "requirements": [
+        {
+           "type": "mysticalmechanics",
+    "io-type": "input",
+    "levelRequiredMin": 160,
+    "levelRequiredMax": 320
+        },
+	{
+	"type":"item",
+	"io-type":"input",
+	"item":"ore:blockSkyStone"
+	
+	
+	},
+        {
+        	"type": "item",
+        	"io-type": "output",
+        	"item":"appliedenergistics2:material@45"
+		
+        }
+
+    ]
+}

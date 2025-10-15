@@ -1,0 +1,188 @@
+{
+  "tfc:main/iron_armor": {
+    "criteria": {
+      "helmet": "2025-04-27 12:02:51 +0000"
+    },
+    "done": false
+  },
+  "minecraft:recipes/combat/wooden_sword": {
+    "criteria": {
+      "has_stick": "2025-04-27 11:59:21 +0000"
+    },
+    "done": true
+  },
+  "tfc:main/find_clay": {
+    "criteria": {
+      "native_copper": "2025-04-27 12:40:20 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/wooden_axe": {
+    "criteria": {
+      "has_stick": "2025-04-27 11:59:21 +0000"
+    },
+    "done": true
+  },
+  "minecraft:adventure/kill_a_mob": {
+    "criteria": {
+      "zombie": "2025-04-27 12:02:19 +0000"
+    },
+    "done": true
+  },
+  "minecraft:adventure/kill_all_mobs": {
+    "criteria": {
+      "zombie": "2025-04-27 12:02:19 +0000"
+    },
+    "done": false
+  },
+  "tfc:main/stone_age": {
+    "criteria": {
+      "axe_sed": "2025-04-27 12:12:16 +0000"
+    },
+    "done": true
+  },
+  "tfc:world/geologist": {
+    "criteria": {
+      "chalk": "2025-04-27 11:59:19 +0000"
+    },
+    "done": false
+  },
+  "tfc:world/hunter": {
+    "criteria": {
+      "native_copper": "2025-04-27 12:02:19 +0000"
+    },
+    "done": true
+  },
+  "astralsorcery:root": {
+    "criteria": {
+      "astralsorcery_present": "2025-04-27 11:44:07 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/wooden_hoe": {
+    "criteria": {
+      "has_stick": "2025-04-27 11:59:21 +0000"
+    },
+    "done": true
+  },
+  "tfc:main/get_straw": {
+    "criteria": {
+      "native_copper": "2025-04-27 12:21:11 +0000"
+    },
+    "done": true
+  },
+  "tfc:main/campfire": {
+    "criteria": {
+      "firepit": "2025-04-27 12:53:11 +0000"
+    },
+    "done": true
+  },
+  "tfc:main/pick_rock": {
+    "criteria": {
+      "chalk": "2025-04-27 11:59:19 +0000"
+    },
+    "done": true
+  },
+  "tfc:world/pick_nugget": {
+    "criteria": {
+      "limonite": "2025-04-27 12:31:54 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/bone_meal_from_bone": {
+    "criteria": {
+      "has_bone": "2025-04-27 12:31:03 +0000"
+    },
+    "done": true
+  },
+  "tfc:main/firestarter": {
+    "criteria": {
+      "native_copper": "2025-04-27 12:27:20 +0000"
+    },
+    "done": true
+  },
+  "advancedrocketry:normal/suitedup": {
+    "criteria": {
+      "suited": "2025-04-27 11:51:59 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/wooden_pickaxe": {
+    "criteria": {
+      "has_stick": "2025-04-27 11:59:21 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/ladder": {
+    "criteria": {
+      "has_stick": "2025-04-27 11:59:21 +0000"
+    },
+    "done": true
+  },
+  "minecraft:husbandry/root": {
+    "criteria": {
+      "consumed_item": "2025-04-27 12:55:49 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/chest": {
+    "criteria": {
+      "has_lots_of_items": "2025-04-27 12:02:51 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/wooden_shovel": {
+    "criteria": {
+      "has_stick": "2025-04-27 11:59:21 +0000"
+    },
+    "done": true
+  },
+  "enderioconduits:root": {
+    "criteria": {
+      "inv_changed-enderio:clay": "2025-04-27 12:40:20 +0000"
+    },
+    "done": false
+  },
+  "tfc:world/root": {
+    "criteria": {
+      "crafting_table": "2025-04-27 11:59:21 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/arrow": {
+    "criteria": {
+      "has_feather": "2025-04-27 12:37:16 +0000"
+    },
+    "done": true
+  },
+  "minecraft:adventure/root": {
+    "criteria": {
+      "killed_something": "2025-04-27 12:02:19 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/clay": {
+    "criteria": {
+      "has_clay_ball": "2025-04-27 12:40:20 +0000"
+    },
+    "done": true
+  },
+  "tfc:main/root": {
+    "criteria": {
+      "in-game": "2025-04-27 11:44:07 +0000"
+    },
+    "done": true
+  },
+  "tfc:main/logging": {
+    "criteria": {
+      "hickory": "2025-04-27 12:12:33 +0000"
+    },
+    "done": true
+  },
+  "bewitchment:root": {
+    "criteria": {
+      "tick": "2025-04-27 11:44:07 +0000"
+    },
+    "done": true
+  }
+}

@@ -1,0 +1,288 @@
+{
+  "wiki": "//looking to customize your own invasions? see http://coros.us/wiki/index.php?title=Hostile_Worlds_-_Invasions_-_Customizing for helpfull info",
+  "format": "mob_spawns",
+  "templates": [
+  
+     {
+      "name": "invasion_stage_1",
+      "wave_message": "§cPurple bugs appear from the Fog. They seem keen on spreading those nasty fibers to your base.",
+      "conditions": [
+        {
+          "condition": "invasion_number",
+          "min": 1
+		  
+        },
+		{
+          "condition": "game_stages",
+          "game_stages": [ "taint1" ],
+          "match_mode": "all_of"
+        },
+        {
+          "condition": "random",
+          "weight": 10
+        }
+      ],
+      "spawns": [
+        {
+          "entities": [
+            "thaumcraft:taintcrawler"
+          ],
+          "count": 5,
+          "count_max": 10,
+          "count_difficulty_multiplier": 2,
+          "cmods": [
+            {
+              "cmod": "template",
+              "template": "invader_soldier"
+            },
+			{
+              "cmod": "attribute_health",
+              "base_value": 8,
+              "difficulty_multiplier": 1.5
+            }
+           
+            
+          ]
+        }
+        
+      ]
+    },
+	
+	{
+      "name": "invasion_stage_2_opt_1_creepers",
+      "wave_message": "§cThe Purple People Eaters are back for more! Looks like they've assimilated some Creepers into their Ranks!",
+      "conditions": [
+        {
+          "condition": "invasion_number",
+          "min": 4
+        },
+        {
+          "condition": "random",
+          "weight": 10
+        },
+		{
+          "condition": "game_stages",
+          "game_stages": [ "taint1", "taint2" ],
+          "match_mode": "all_of"
+        }
+      ],
+      "spawns": [
+        {
+          "entities": [
+            "thaumcraft:taintcrawler"
+          ],
+          "count": 5,
+          "count_max": 15,
+          "count_difficulty_multiplier": 2,
+          "cmods": [
+            {
+              "cmod": "template",
+              "template": "invader_miner"
+            },
+			{
+              "cmod": "attribute_health",
+              "base_value": 20,
+              "difficulty_multiplier": 1.5
+            },
+           
+            {
+              "cmod": "template",
+              "template": "buffed_attributes"
+            }
+          ]
+        },
+        {
+			
+          "entities": [
+		"minecraft:creeper{Attributes:[{Name:\"tc.mobmod\",Base: -2.0d, Modifiers:[{Name:\"tainted\",Amount:15.0d,Operation: 0}]},{Name:\"tc.mobmodtaint\"}]}"
+          ],
+          "count": 5,
+          "count_max": 30,
+          "count_difficulty_multiplier": 0.5,
+          "cmods": [
+            {
+              "cmod": "template",
+              "template": "invader_soldier"
+            },
+            {
+              "cmod": "template",
+              "template": "buffed_attributes"
+            }
+          ]
+        },
+		{
+          "entities": [
+            "thaumcraft:thaumslime{Size:4}"
+          ],
+          "count": 6,
+          "count_max": 12,
+          "count_difficulty_multiplier": 1.0,
+          "cmods": [
+            {
+              "cmod": "template",
+              "template": "invader_soldier"
+            },
+            {
+              "cmod": "template",
+              "template": "buffed_attributes"
+            },
+            {
+              "cmod": "ai_attack_melee"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "invasion_stage_2_opt_2_swarms",
+      "wave_message": "§cThe crawlers got reinforcements! Watch out for the swarms!",
+      "conditions": [
+        {
+          "condition": "invasion_number",
+          "min": 3
+        },
+        {
+          "condition": "random",
+          "weight": 10
+        },
+		{
+          "condition": "game_stages",
+          "game_stages": [ "taint1", "taint2" ],
+          "match_mode": "all_of"
+        }
+      ],
+      "spawns": [
+        {
+          "entities": [
+            "thaumcraft:taintcrawler"
+          ],
+          "count": 5,
+          "count_max": 10,
+          "count_difficulty_multiplier": 2,
+          "cmods": [
+            {
+              "cmod": "template",
+              "template": "invader_miner"
+            },
+            {
+              "cmod": "template",
+              "template": "inventory_all_scales"
+            },
+            {
+              "cmod": "template",
+              "template": "buffed_attributes"
+            }
+          ]
+        },
+        {
+          "entities": [
+            "thaumcraft:taintswarm"
+          ],
+          "count": 20,
+          "count_max": 40,
+          "count_difficulty_multiplier": 0.5,
+          "cmods": [
+            {
+              "cmod": "template",
+              "template": "invader_soldier"
+            },
+            {
+              "cmod": "template",
+              "template": "buffed_attributes"
+            },
+            {
+              "cmod": "ai_attack_melee"
+            }
+          ]
+        },
+		{
+          "entities": [
+            "thaumcraft:thaumslime{Size:4}"
+          ],
+          "count": 6,
+          "count_max": 12,
+          "count_difficulty_multiplier": 1.0,
+          "cmods": [
+            {
+              "cmod": "template",
+              "template": "invader_soldier"
+            },
+            {
+              "cmod": "template",
+              "template": "buffed_attributes"
+            },
+            {
+              "cmod": "ai_attack_melee"
+            }
+          ]
+        }
+      ]
+    },
+	{
+      "name": "invasion_stage_3_opt_1_largenests",
+      "wave_message": "§cInfected Bears attack, likely to be gruesomely transformed into armored nests",
+      "conditions": [
+        {
+          "condition": "invasion_number",
+          "min": 4
+        },
+        {
+          "condition": "random",
+          "weight": 10
+        },
+		{
+          "condition": "game_stages",
+          "game_stages": [ "taint1", "taint2","taint3" ],
+          "match_mode": "all_of"
+        }
+      ],
+      "spawns": [
+        {
+          "entities": [
+            "thaumcraft:taintcrawler"
+          ],
+          "count": 5,
+          "count_max": 15,
+          "count_difficulty_multiplier": 2,
+          "cmods": [
+            {
+              "cmod": "template",
+              "template": "invader_miner"
+            },
+			{
+              "cmod": "attribute_health",
+              "base_value": 20,
+              "difficulty_multiplier": 1.5
+            },
+           
+            {
+              "cmod": "template",
+              "template": "buffed_attributes"
+            }
+          ]
+        },
+        {
+			
+          "entities": [
+		"tfc:blackbeartfc{Passengers:[{id:\"thaumcraft:thaumslime\",Size:4}]Attributes:[{Name:\"tc.mobmod\",Base: -2.0d, Modifiers:[{Name:\"tainted\",Amount:15.0d,Operation: 0}]},{Name:\"tc.mobmodtaint\"}]}"
+          ],
+          "count": 8,
+          "count_max": 30,
+          "count_difficulty_multiplier": 0.5,
+          "cmods": [
+            {
+              "cmod": "template",
+              "template": "invader_soldier"
+            },
+            {
+              "cmod": "template",
+              "template": "buffed_attributes"
+            }
+          ]
+        }
+      ]
+    }
+    
+  ]
+
+}

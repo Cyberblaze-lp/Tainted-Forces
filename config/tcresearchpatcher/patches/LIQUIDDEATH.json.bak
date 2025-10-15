@@ -1,0 +1,13 @@
+[
+    {
+        "key": "LIQUIDDEATH",
+ "ops": [
+	    
+        {
+                "op":"add",
+                "path": "stages/1/recipes/",
+            "value":["thaumcraft:springwater"]
+            		
+        } 
+]
+	}]

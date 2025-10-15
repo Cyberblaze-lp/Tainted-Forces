@@ -1,0 +1,21 @@
+[
+    {
+        "key": "THAUMATORIUM",
+ "ops": [
+	    
+        {
+                "op":"replace",
+                "path": "parents/0",
+				"value":["TUBES"]
+				
+           
+            		
+        },
+		{
+			"op":"remove",
+                "path": "parents/1"
+			
+			
+			
+		}
+		]}]

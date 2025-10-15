@@ -1,0 +1,21 @@
+[
+{
+"key":"METALLURGY",
+"ops":[
+    
+
+
+    {
+    "op":"add",
+    "path":"stages/1/recipes",
+    "value":["thaumcraft:brassingot","thaumcraft:brass_stuff","thaumcraft:betterthaumium","thaumcraft:betterthaumium2"]
+    },
+	    {
+    "op":"add",
+    "path":"stages/2/recipes",
+    "value":["thaumcraft:brassingot","thaumcraft:brass_stuff","thaumcraft:betterthaumium","thaumcraft:betterthaumium2",
+                                "thaumcraft:thaumium_stuff"]
+    }
+     ] 
+}  
+]

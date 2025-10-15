@@ -1,0 +1,51 @@
+[triggers]
+	[[triggers.mob]]
+		identifier = "taint"
+		resource_name = [ "taintacle" ]
+		detection_range = "40"
+		mob_targeting = false
+		priority = "10"
+		fade_in = "100"
+		fade_out = "100"
+
+	[[triggers.dimension]]
+		identifier = "space"
+		resource_name = [ "-3" ]
+		fade_in = "2000"
+		fade_out = "1000"
+		priority = "2"
+	[[triggers.dimension]]
+		identifier = "overworld"
+		resource_name = [ "0" ]
+	fade_in = "2000"
+		fade_out = "1000"
+		priority = "2"
+	
+	
+[songs]
+[songs.kevinmcleod_giantwyrm]
+		volume = "0,25"
+		triggers = [ "mob-taint" ]
+[songs.kevinmcleod_martiancowboy]
+		volume = "0.25"
+		triggers = [ "mob-taint" ]
+[songs.chriszabriskie_whatdoesanybodyknowaboutanything]
+		volume = "0,25"
+		triggers = [ "mob-taint" ]
+
+[songs.kevinmcleod_bluesizzle]
+		volume = "0,25"
+		triggers = [ "dimension-space" ]
+[songs.kevinmcleod_thedread]
+		volume = "0,25"
+		triggers = [ "dimension-space" ]
+[songs.kevinmcleod_itislost]
+		volume = "0,25"
+		triggers = [ "dimension-overworld" ]
+
+
+
+
+
+
+

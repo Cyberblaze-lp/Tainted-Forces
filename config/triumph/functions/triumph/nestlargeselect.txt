@@ -1,0 +1,3 @@
+execute @r[r=20,type=thaumcraft:taintseed,tag=!nest] ~ ~ ~ function triumph:nestlarge
+tp @s ~ -60 ~
+

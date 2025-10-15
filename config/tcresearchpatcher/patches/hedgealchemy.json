@@ -1,0 +1,37 @@
+[
+    {
+        "key": "HEDGEALCHEMY",
+ "ops": [
+	    
+
+		
+
+		{
+			"op":"replace",
+				"path":"stages/2/recipes/7",
+				"value":"thaumcraft:stringfix"
+		},
+		{
+			"op":"replace",
+				"path":"stages/2/recipes/8",
+				"value":"thaumcraft:webfix"
+		},
+		
+		{
+			"op":"replace",
+				"path":"stages/2/recipes/9",
+				"value":"thaumcraft:redstonefromsalt"
+		},
+				{
+			"op":"add",
+				"path":"stages/2/recipes/-",
+				"value":"thaumcraft:claydupe"
+		},
+				{
+			"op":"add",
+				"path":"stages/2/recipes/-",
+				"value":"thaumcraft:jute"
+		}
+
+		]}]
+

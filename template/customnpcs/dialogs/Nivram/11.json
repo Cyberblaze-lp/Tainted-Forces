@@ -1,0 +1,81 @@
+{
+    "AvailabilityScoreboardObjective": "",
+    "AvailabilityDialog3Id": -1,
+    "AvailabilityFaction2Stance": 0,
+    "AvailabilityDialog4": 0,
+    "AvailabilityQuest2": 0,
+    "AvailabilityFaction": 0,
+    "DecreaseFaction2Points": 0b,
+    "AvailabilityQuest3Id": -1,
+    "AvailabilityDialog2Id": -1,
+    "AvailabilityQuest": 0,
+    "OptionFaction2Points": 100,
+    "AvailabilityMinPlayerLevel": 0,
+    "OptionFaction1Points": 100,
+    "AvailabilityQuest4Id": -1,
+    "AvailabilityQuest2Id": -1,
+    "DecreaseFaction1Points": 0b,
+    "DialogQuest": -1,
+    "DialogDisableEsc": 0b,
+    "AvailabilityDialog3": 0,
+    "DialogMail": {
+        "Sender": "",
+        "Time": 0L,
+        "Message": {
+        },
+        "TimePast": 1745707576281L,
+        "Subject": "",
+        "MailQuest": -1,
+        "BeenRead": 0b,
+        "MailItems": [
+        ]
+    },
+    "DialogTitle": "X",
+    "DialogCommand": "",
+    "AvailabilityDayTime": 0,
+    "AvailabilityScoreboard2Type": 1,
+    "AvailabilityScoreboard2Objective": "",
+    "AvailabilityDialog": 0,
+    "AvailabilityDialog4Id": -1,
+    "AvailabilityQuestId": -1,
+    "OptionFactions2": -1,
+    "AvailabilityScoreboardType": 1,
+    "AvailabilityDialogId": -1,
+    "AvailabilityFactionId": -1,
+    "Options": [
+        {
+            "OptionSlot": 0,
+            "Option": {
+                "Title": "Yea, X is the one for me! [this decision is final]",
+                "OptionType": 1,
+                "Dialog": 16,
+                "DialogColor": 14737632,
+                "DialogCommand": ""
+            }
+        },
+        {
+            "OptionSlot": 1,
+            "Option": {
+                "Title": "I'm not sure about this one...",
+                "OptionType": 1,
+                "Dialog": 14,
+                "DialogColor": 14737632,
+                "DialogCommand": ""
+            }
+        }
+    ],
+    "DialogText": "Site X puts you on the northern coast where the climate is both arid and cold. Agriculture will be hard to get going initially, but hunting will see you through. Some of the native plants mightprove useful in other ways.",
+    "AvailabilityDialog2": 0,
+    "AvailabilityQuest3": 0,
+    "AvailabilityQuest4": 0,
+    "DialogShowWheel": 0b,
+    "AvailabilityFactionStance": 0,
+    "DialogHideNPC": 0b,
+    "AvailabilityFaction2": 0,
+    "OptionFactions1": -1,
+    "AvailabilityScoreboardValue": 1,
+    "AvailabilityFaction2Id": -1,
+    "DialogId": 11,
+    "AvailabilityScoreboard2Value": 1,
+    "ModRev": 18
+}

@@ -1,0 +1,30 @@
+[
+    {
+        "key": "ESSENTIASMELTER",
+ "ops": [
+	    
+        {
+                "op":"add",
+                "path": "stages/2/recipes/0",
+            "value": 	
+				   ["thaumcraft:bettersmelter"]
+            		
+        } ,
+		{
+                "op":"add",
+                "path": "stages/3/recipes/0",
+            "value": 	
+				   ["thaumcraft:bettersmelter"]
+            		
+        } ,
+		
+ { "op":"add",
+                "path": "stages/3/recipes/1",
+            "value": 	
+ ["thaumcraft:alembics 2.0"]},
+ { "op":"add",
+                "path": "stages/3/recipes/2",
+            "value": 	
+ ["thaumcraft:filters 2.0"]}
+  ]}]
+

@@ -1,0 +1,87 @@
+{
+    "rules": [
+      {
+        "match": {
+          "blocks": {
+            "blocks": [
+                "tfc:ore/cassiterite/granite:*",
+                "tfc:ore/cassiterite/diorite:*",
+                "tfc:ore/cassiterite/gabbro:*",
+                "tfc:ore/cassiterite/shale:*",
+                "tfc:ore/cassiterite/claystone:*",
+                "tfc:ore/cassiterite/rocksalt:*",
+                "tfc:ore/cassiterite/limestone:*",
+                "tfc:ore/cassiterite/conglomerate:*",
+                "tfc:ore/cassiterite/dolomite:*",
+                "tfc:ore/cassiterite/chert:*",
+                "tfc:ore/cassiterite/chalk:*",
+                "tfc:ore/cassiterite/rhyolite:*",
+                "tfc:ore/cassiterite/basalt:*",
+                "tfc:ore/cassiterite/andesite:*",
+                "tfc:ore/cassiterite/dacite:*",
+                "tfc:ore/cassiterite/quartzite:*",
+                "tfc:ore/cassiterite/slate:*",
+                "tfc:ore/cassiterite/phyllite:*",
+                "tfc:ore/cassiterite/schist:*",
+                "tfc:ore/cassiterite/gneiss:*",
+                "tfc:ore/cassiterite/marble:*"
+            ]
+          }
+        },
+        "replaceStrategy": "ADD",
+        "drops": [
+          {
+            "selector": {
+              "weight": {
+                "value": 25
+              },
+              "fortuneLevelRequired": 1
+            },
+            "item": {
+              "items": [
+                "tfc:ore/small/cassiterite"
+              ],
+              "quantity": {
+                "min": 0,
+                "max": 2
+              }
+            }
+          },
+          {
+            "selector": {
+              "weight": {
+                "value": 25
+              },
+              "fortuneLevelRequired": 2
+            },
+            "item": {
+              "items": [
+                "tfc:ore/small/cassiterite"
+              ],
+              "quantity": {
+                "min": 0, "max":3
+              }
+            }
+          },
+          {
+            "selector": {
+              "weight": {
+                "value": 25
+              },
+              "fortuneLevelRequired": 3
+            },
+            "item": {
+              "items": [
+                "tfc:ore/small/cassiterite"
+              ],
+              "quantity": {
+                "min": 1,
+                "max": 4
+              
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }

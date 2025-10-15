@@ -1,0 +1,15 @@
+[
+  {
+    "user": {
+      "type": "player",
+      "name": "Cyberblaze_lp",
+      "uniqueId": "d2380754-f10f-4f8f-9e1b-cbb0e04d4c99"
+    },
+    "time": 1753287831308,
+    "type": "Heap dump",
+    "data": {
+      "type": "file",
+      "value": "config\\spark\\data\\heap-2025-07-23_18.21.36.hprof"
+    }
+  }
+]

@@ -1,0 +1,16 @@
+[
+    {
+        "key": "IMPROVEDSMELTING2",
+ "ops": [
+	    
+
+		{
+			"op":"replace",
+                "path": "stages/1/recipes/0",
+				"value":["thaumcraft:bettervent"]
+			
+			
+			
+		}
+		
+		]}]

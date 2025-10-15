@@ -1,0 +1,24 @@
+[
+    {
+        "key": "UNLOCKAUROMANCY",
+ "ops": [
+	    
+
+		{
+			"op":"add",
+                "path": "stages/1/recipes/",
+				"value":["thaumcraft:bettervisresonator","thaumcraft:caster_basic"]
+			
+			
+			
+		},
+				{
+			"op":"add",
+                "path": "stages/2/recipes/",
+				"value":["thaumcraft:bettervisresonator","thaumcraft:caster_basic"]
+			
+			
+			
+		}
+		
+		]}]

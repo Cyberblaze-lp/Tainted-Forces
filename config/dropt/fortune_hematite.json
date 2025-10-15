@@ -1,0 +1,87 @@
+{
+    "rules": [
+      {
+        "match": {
+          "blocks": {
+            "blocks": [
+                "tfc:ore/hematite/granite:*",
+                "tfc:ore/hematite/diorite:*",
+                "tfc:ore/hematite/gabbro:*",
+                "tfc:ore/hematite/shale:*",
+                "tfc:ore/hematite/claystone:*",
+                "tfc:ore/hematite/rocksalt:*",
+                "tfc:ore/hematite/limestone:*",
+                "tfc:ore/hematite/conglomerate:*",
+                "tfc:ore/hematite/dolomite:*",
+                "tfc:ore/hematite/chert:*",
+                "tfc:ore/hematite/chalk:*",
+                "tfc:ore/hematite/rhyolite:*",
+                "tfc:ore/hematite/basalt:*",
+                "tfc:ore/hematite/andesite:*",
+                "tfc:ore/hematite/dacite:*",
+                "tfc:ore/hematite/quartzite:*",
+                "tfc:ore/hematite/slate:*",
+                "tfc:ore/hematite/phyllite:*",
+                "tfc:ore/hematite/schist:*",
+                "tfc:ore/hematite/gneiss:*",
+                "tfc:ore/hematite/marble:*"
+            ]
+          }
+        },
+        "replaceStrategy": "ADD",
+        "drops": [
+          {
+            "selector": {
+              "weight": {
+                "value": 25
+              },
+              "fortuneLevelRequired": 1
+            },
+            "item": {
+              "items": [
+                "tfc:ore/small/hematite"
+              ],
+              "quantity": {
+                "min": 0,
+                "max": 2
+              }
+            }
+          },
+          {
+            "selector": {
+              "weight": {
+                "value": 25
+              },
+              "fortuneLevelRequired": 2
+            },
+            "item": {
+              "items": [
+                "tfc:ore/small/hematite"
+              ],
+              "quantity": {
+                "min": 0, "max":3
+              }
+            }
+          },
+          {
+            "selector": {
+              "weight": {
+                "value": 25
+              },
+              "fortuneLevelRequired": 3
+            },
+            "item": {
+              "items": [
+                "tfc:ore/small/hematite"
+              ],
+              "quantity": {
+                "min": 1,
+                "max": 4
+              
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }

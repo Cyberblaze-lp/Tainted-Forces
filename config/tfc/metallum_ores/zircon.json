@@ -1,0 +1,18 @@
+{
+	"zircon": {
+    "ore": "tfc:zircon",
+    "width": 12,
+    "height": 12,
+    "shape": "cluster",
+    "rarity": 400,
+    "minimum_height": 5,
+    "maximum_height": 100,
+    "density": 55,
+    "base_rocks": [
+      "tfc:igneous_extrusive",
+      "tfc:sedimentary"
+
+    ]
+  }
+	
+}

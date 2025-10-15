@@ -1,0 +1,58 @@
+{
+  "rules": [
+    {
+      "match": {
+        "drops": {
+          "drops": [
+            "tfc:ore/satinspar",
+	    "tfc:ore/magnetite",
+            "tfc:ore/selenite",
+            "tfc:ore/graphite",
+            "tfc:ore/kimberlite",
+            "tfc:ore/jet",
+            "tfc:ore/microcline",
+            "tfc:ore/pitchblende",
+            "tfc:ore/cinnabar",
+            "tfc:ore/cryolite",
+            "tfc:ore/serpentine",
+            "tfc:ore/olivine",
+            "tfc:ore/lapis_lazuli",
+            "tfc:ore/chromite",
+            "tfc:ore/villiaumite",
+            "tfc:ore/rhodochrosite",
+            "tfc:ore/fluorite",
+            "tfc:ore/carobbiite",
+            "tfc:ore/arsenic"
+          ]
+        }
+      },
+      "replaceStrategy": "ADD",
+      "drops": [
+        {
+          "selector": {
+            "weight": {
+              "value": 20
+            }
+          },
+          "item": {
+            "items": [
+              "thaumcraft:nugget:10"
+            ],
+            "quantity": {
+              "min": 0,
+              "max": 2,
+              "fortuneModifier": 1
+            }
+          }
+        },
+        {
+          "selector": {
+            "weight": {
+              "value": 90
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

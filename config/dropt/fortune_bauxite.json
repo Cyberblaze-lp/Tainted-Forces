@@ -1,0 +1,87 @@
+{
+    "rules": [
+      {
+        "match": {
+          "blocks": {
+            "blocks": [
+                "tfc:ore/bauxite/granite:*",
+                "tfc:ore/bauxite/diorite:*",
+                "tfc:ore/bauxite/gabbro:*",
+                "tfc:ore/bauxite/shale:*",
+                "tfc:ore/bauxite/claystone:*",
+                "tfc:ore/bauxite/rocksalt:*",
+                "tfc:ore/bauxite/limestone:*",
+                "tfc:ore/bauxite/conglomerate:*",
+                "tfc:ore/bauxite/dolomite:*",
+                "tfc:ore/bauxite/chert:*",
+                "tfc:ore/bauxite/chalk:*",
+                "tfc:ore/bauxite/rhyolite:*",
+                "tfc:ore/bauxite/basalt:*",
+                "tfc:ore/bauxite/andesite:*",
+                "tfc:ore/bauxite/dacite:*",
+                "tfc:ore/bauxite/quartzite:*",
+                "tfc:ore/bauxite/slate:*",
+                "tfc:ore/bauxite/phyllite:*",
+                "tfc:ore/bauxite/schist:*",
+                "tfc:ore/bauxite/gneiss:*",
+                "tfc:ore/bauxite/marble:*"
+            ]
+          }
+        },
+        "replaceStrategy": "ADD",
+        "drops": [
+          {
+            "selector": {
+              "weight": {
+                "value": 25
+              },
+              "fortuneLevelRequired": 1
+            },
+            "item": {
+              "items": [
+                "tfc:ore/small/bauxite"
+              ],
+              "quantity": {
+                "min": 0,
+                "max": 2
+              }
+            }
+          },
+          {
+            "selector": {
+              "weight": {
+                "value": 25
+              },
+              "fortuneLevelRequired": 2
+            },
+            "item": {
+              "items": [
+                "tfc:ore/small/bauxite"
+              ],
+              "quantity": {
+                "min": 0, "max":3
+              }
+            }
+          },
+          {
+            "selector": {
+              "weight": {
+                "value": 25
+              },
+              "fortuneLevelRequired": 3
+            },
+            "item": {
+              "items": [
+                "tfc:ore/small/bauxite"
+              ],
+              "quantity": {
+                "min": 1,
+                "max": 4
+              
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }

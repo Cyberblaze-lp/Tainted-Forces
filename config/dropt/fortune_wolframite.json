@@ -1,0 +1,87 @@
+{
+    "rules": [
+      {
+        "match": {
+          "blocks": {
+            "blocks": [
+                "tfc:ore/wolframite/granite:*",
+                "tfc:ore/wolframite/diorite:*",
+                "tfc:ore/wolframite/gabbro:*",
+                "tfc:ore/wolframite/shale:*",
+                "tfc:ore/wolframite/claystone:*",
+                "tfc:ore/wolframite/rocksalt:*",
+                "tfc:ore/wolframite/limestone:*",
+                "tfc:ore/wolframite/conglomerate:*",
+                "tfc:ore/wolframite/dolomite:*",
+                "tfc:ore/wolframite/chert:*",
+                "tfc:ore/wolframite/chalk:*",
+                "tfc:ore/wolframite/rhyolite:*",
+                "tfc:ore/wolframite/basalt:*",
+                "tfc:ore/wolframite/andesite:*",
+                "tfc:ore/wolframite/dacite:*",
+                "tfc:ore/wolframite/quartzite:*",
+                "tfc:ore/wolframite/slate:*",
+                "tfc:ore/wolframite/phyllite:*",
+                "tfc:ore/wolframite/schist:*",
+                "tfc:ore/wolframite/gneiss:*",
+                "tfc:ore/wolframite/marble:*"
+            ]
+          }
+        },
+        "replaceStrategy": "ADD",
+        "drops": [
+          {
+            "selector": {
+              "weight": {
+                "value": 25
+              },
+              "fortuneLevelRequired": 1
+            },
+            "item": {
+              "items": [
+                "tfc:ore/small/wolframite"
+              ],
+              "quantity": {
+                "min": 0,
+                "max": 2
+              }
+            }
+          },
+          {
+            "selector": {
+              "weight": {
+                "value": 25
+              },
+              "fortuneLevelRequired": 2
+            },
+            "item": {
+              "items": [
+                "tfc:ore/small/wolframite"
+              ],
+              "quantity": {
+                "min": 0, "max":3
+              }
+            }
+          },
+          {
+            "selector": {
+              "weight": {
+                "value": 25
+              },
+              "fortuneLevelRequired": 3
+            },
+            "item": {
+              "items": [
+                "tfc:ore/small/wolframite"
+              ],
+              "quantity": {
+                "min": 1,
+                "max": 4
+              
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }

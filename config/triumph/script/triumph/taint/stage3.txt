@@ -1,0 +1,37 @@
+
+//Set icon item
+setIcon(<thaumcraft:taint_crust>)
+
+//Set title String
+setTitle("Taint Stage 3")
+
+//Set description String
+setDescription("Reinforced Seed Growths")
+setCompletedIconColor(##660060)
+setCompletedTitleColor(##660060)
+
+setUncompletedIconColor(#220020)
+setUncompletedTitleColor(#220020)
+
+
+
+//Add a parent advancement. The syntax is "modid:folder/path/to/the/advancement/then/filename"
+addParent("triumph:taint/stage2")
+
+//Set the position
+setPos(90,-16)
+
+
+
+//Adds criteria named "hasCircuit" with the trigger type "minecraft:inventory_changed". This function returns the criteria as an object
+criteria = addCriteria("hasCircuit", "minecraft:inventory_changed")
+
+//Adds the required item for the criteria. This is the item that needs to be in the player inventory.
+criteria.addItem(<ore:circuitAdvanced>)
+
+
+
+//Adds a function to fire upon completion. Any number of these can be added.
+addRewardFunction("triumph:taint3")
+addRewardFunction("triumph:taint2")
+addRewardFunction("triumph:taint1")

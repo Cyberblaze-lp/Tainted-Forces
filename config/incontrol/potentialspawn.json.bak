@@ -1,0 +1,106 @@
+[
+  {
+    "dimension": 0,
+    "mobs": [
+      {
+        "mob": "thaumcraft:taintacle",
+"block":["thaumcraft:taint_rock","thaumcraft:taint_soil","thaumcraft:taint_fibre"],
+        "weight": 1,
+        "groupcountmin": 1,
+        "groupcountmax": 1
+
+      },
+	  {
+        "mob": "thaumcraft:taintacle",
+"block":["thaumcraft:taint_fibre"],
+	"blockoffset":{"y":1},
+        "weight": 1,
+        "groupcountmin": 1,
+        "groupcountmax": 1
+
+      },
+	   {
+        "mob": "thaumcraft:thaumslime",
+"block":["thaumcraft:taint_rock","thaumcraft:taint_soil", "thaumcraft:taint_fibre","thaumcraft:taint_crust"],
+        "weight": 1,
+        "groupcountmin": 1,
+        "groupcountmax": 1
+
+      },
+	  {
+        "mob": "embers:ancient_golem",
+"block":["tetra:forged_platform"],
+        "weight": 5,
+        "groupcountmin": 1,
+        "groupcountmax": 1
+
+      },
+	        {
+        "mob": "minecraft:guardian",
+"biome":["tfc:deep_ocean"],
+        "weight": 3,
+        "groupcountmin": 1,
+        "groupcountmax": 5
+
+      },
+{"mob": "minecraft:zombie",
+	
+        "weight": 10,
+        "groupcountmin": 1,
+        "groupcountmax": 5
+}
+,
+{"mob": "minecraft:skeleton",
+
+        "weight": 3,
+        "groupcountmin": 1,
+        "groupcountmax": 3
+}
+,
+{"mob": "minecraft:creeper",
+
+        "weight": 3,
+        "groupcountmin": 1,
+        "groupcountmax": 3
+}
+,
+{"mob": "minecraft:spider",
+
+        "weight": 3,
+        "groupcountmin": 1,
+        "groupcountmax": 3
+}
+,
+{"mob": "minecraft:enderman",
+
+        "weight": 1,
+        "groupcountmin": 1,
+        "groupcountmax": 5
+		
+}
+,
+{"mob": "minecraft:zombie_villager",
+
+	maxcount:{
+		"amount": 2,
+		"mob": "minecraft:zombie_villager",
+      		"perplayer": true
+    		},
+	
+        "weight": 1,
+        "groupcountmin": 1,
+        "groupcountmax": 1
+},
+{"mob": "cyberware:cyberzombie",
+
+        "weight":5,
+        "groupcountmin": 1,
+        "groupcountmax": 5
+}
+
+
+
+	
+    ]
+  }
+]

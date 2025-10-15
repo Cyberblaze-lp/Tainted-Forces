@@ -1,0 +1,87 @@
+{
+    "rules": [
+      {
+        "match": {
+          "blocks": {
+            "blocks": [
+                "tfc:ore/magnesite/granite:*",
+                "tfc:ore/magnesite/diorite:*",
+                "tfc:ore/magnesite/gabbro:*",
+                "tfc:ore/magnesite/shale:*",
+                "tfc:ore/magnesite/claystone:*",
+                "tfc:ore/magnesite/rocksalt:*",
+                "tfc:ore/magnesite/limestone:*",
+                "tfc:ore/magnesite/conglomerate:*",
+                "tfc:ore/magnesite/dolomite:*",
+                "tfc:ore/magnesite/chert:*",
+                "tfc:ore/magnesite/chalk:*",
+                "tfc:ore/magnesite/rhyolite:*",
+                "tfc:ore/magnesite/basalt:*",
+                "tfc:ore/magnesite/andesite:*",
+                "tfc:ore/magnesite/dacite:*",
+                "tfc:ore/magnesite/quartzite:*",
+                "tfc:ore/magnesite/slate:*",
+                "tfc:ore/magnesite/phyllite:*",
+                "tfc:ore/magnesite/schist:*",
+                "tfc:ore/magnesite/gneiss:*",
+                "tfc:ore/magnesite/marble:*"
+            ]
+          }
+        },
+        "replaceStrategy": "ADD",
+        "drops": [
+          {
+            "selector": {
+              "weight": {
+                "value": 25
+              },
+              "fortuneLevelRequired": 1
+            },
+            "item": {
+              "items": [
+                "tfc:ore/small/magnesite"
+              ],
+              "quantity": {
+                "min": 0,
+                "max": 2
+              }
+            }
+          },
+          {
+            "selector": {
+              "weight": {
+                "value": 25
+              },
+              "fortuneLevelRequired": 2
+            },
+            "item": {
+              "items": [
+                "tfc:ore/small/magnesite"
+              ],
+              "quantity": {
+                "min": 0, "max":3
+              }
+            }
+          },
+          {
+            "selector": {
+              "weight": {
+                "value": 25
+              },
+              "fortuneLevelRequired": 3
+            },
+            "item": {
+              "items": [
+                "tfc:ore/small/magnesite"
+              ],
+              "quantity": {
+                "min": 1,
+                "max": 4
+              
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }

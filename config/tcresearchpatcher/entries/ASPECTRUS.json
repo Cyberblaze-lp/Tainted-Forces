@@ -1,0 +1,19 @@
+[{
+        "key": "ASPECTRUS",    
+        "name": "research.ASPECTRUS.title",
+        "icons": [ "thebetweenlands:textures/items/aspectrus_fruit.png" ],
+        "category": "ALCHEMY", "location": [ 1,-2 ], 
+        "parents": [ "POTIONSPRAYER" ],        
+        "stages": [
+                {
+                    "text": "research.ASPECTRUS.stage.1",
+                    "required_item":["thebetweenlands:aspectrus_seeds;1;0","thebetweenlands:items_misc;1;47"]
+					
+                },
+                {
+                    "text": "research.ASPECTRUS.stage.2"  
+                    ,"recipes": ["thaumcraft:1","thaumcraft:2","thaumcraft:3","thaumcraft:4","thaumcraft:5","thaumcraft:6","thaumcraft:7","thaumcraft:8","thaumcraft:9","thaumcraft:10","thaumcraft:11","thaumcraft:12","thaumcraft:13","thaumcraft:14","thaumcraft:15","thaumcraft:16"]
+					
+                }
+            ]
+        }]

@@ -1,0 +1,27 @@
+
+
+[
+    {
+        "key": "ARCANEBORE",
+ "ops": [
+	    {
+		 "op":"remove",
+		 "path":"stages/1/recipes/0"
+	    },
+        {
+                "op":"add",
+                "path": "stages/1/recipes",
+            "value": 	[
+				   "thaumcraft:betterbore"
+            ]
+        }
+      ]
+   }
+  
+
+
+
+]
+
+   
+

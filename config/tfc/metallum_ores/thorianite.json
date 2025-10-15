@@ -1,0 +1,16 @@
+{
+	"thorianite": {
+    "ore": "tfc:thorianite",
+    "loose": "tfc:thorianite",
+    "width": 12,
+    "height": 12,
+    "shape": "cluster",
+    "rarity": 100,
+    "minimum_height": 5,
+    "maximum_height": 100,
+    "density": 85,
+    "base_rocks": [
+      "tfc:igneous_extrusive"
+    ]
+  }
+}

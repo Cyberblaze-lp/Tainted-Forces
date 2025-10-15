@@ -1,0 +1,87 @@
+{
+    "rules": [
+      {
+        "match": {
+          "blocks": {
+            "blocks": [
+                "tfc:ore/native_platinum/granite:*",
+                "tfc:ore/native_platinum/diorite:*",
+                "tfc:ore/native_platinum/gabbro:*",
+                "tfc:ore/native_platinum/shale:*",
+                "tfc:ore/native_platinum/claystone:*",
+                "tfc:ore/native_platinum/rocksalt:*",
+                "tfc:ore/native_platinum/limestone:*",
+                "tfc:ore/native_platinum/conglomerate:*",
+                "tfc:ore/native_platinum/dolomite:*",
+                "tfc:ore/native_platinum/chert:*",
+                "tfc:ore/native_platinum/chalk:*",
+                "tfc:ore/native_platinum/rhyolite:*",
+                "tfc:ore/native_platinum/basalt:*",
+                "tfc:ore/native_platinum/andesite:*",
+                "tfc:ore/native_platinum/dacite:*",
+                "tfc:ore/native_platinum/quartzite:*",
+                "tfc:ore/native_platinum/slate:*",
+                "tfc:ore/native_platinum/phyllite:*",
+                "tfc:ore/native_platinum/schist:*",
+                "tfc:ore/native_platinum/gneiss:*",
+                "tfc:ore/native_platinum/marble:*"
+            ]
+          }
+        },
+        "replaceStrategy": "ADD",
+        "drops": [
+          {
+            "selector": {
+              "weight": {
+                "value": 25
+              },
+              "fortuneLevelRequired": 1
+            },
+            "item": {
+              "items": [
+                "tfc:ore/small/native_platinum"
+              ],
+              "quantity": {
+                "min": 0,
+                "max": 2
+              }
+            }
+          },
+          {
+            "selector": {
+              "weight": {
+                "value": 25
+              },
+              "fortuneLevelRequired": 2
+            },
+            "item": {
+              "items": [
+                "tfc:ore/small/native_platinum"
+              ],
+              "quantity": {
+                "min": 0, "max":3
+              }
+            }
+          },
+          {
+            "selector": {
+              "weight": {
+                "value": 25
+              },
+              "fortuneLevelRequired": 3
+            },
+            "item": {
+              "items": [
+                "tfc:ore/small/native_platinum"
+              ],
+              "quantity": {
+                "min": 1,
+                "max": 4
+              
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }

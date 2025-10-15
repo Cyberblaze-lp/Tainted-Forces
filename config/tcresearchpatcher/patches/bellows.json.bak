@@ -1,0 +1,31 @@
+[
+    {
+        "key": "IMPROVEDSMELTING2",
+ "ops": [
+	    
+        {
+                "op":"replace",
+                "path": "parents/0",
+				"value":["CENTRIFUGE"]
+				
+           
+            		
+        },
+		{
+			"op":"replace",
+                "path": "location",
+				"value":[9, -3]
+			
+			
+			
+		},
+		{
+			"op":"replace",
+                "path": "stages/1/recipes/0",
+				"value":["thaumcraft:bettervent"]
+			
+			
+			
+		}
+		
+		]}]

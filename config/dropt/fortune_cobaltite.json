@@ -1,0 +1,87 @@
+{
+    "rules": [
+      {
+        "match": {
+          "blocks": {
+            "blocks": [
+                "tfc:ore/cobaltite/granite:*",
+                "tfc:ore/cobaltite/diorite:*",
+                "tfc:ore/cobaltite/gabbro:*",
+                "tfc:ore/cobaltite/shale:*",
+                "tfc:ore/cobaltite/claystone:*",
+                "tfc:ore/cobaltite/rocksalt:*",
+                "tfc:ore/cobaltite/limestone:*",
+                "tfc:ore/cobaltite/conglomerate:*",
+                "tfc:ore/cobaltite/dolomite:*",
+                "tfc:ore/cobaltite/chert:*",
+                "tfc:ore/cobaltite/chalk:*",
+                "tfc:ore/cobaltite/rhyolite:*",
+                "tfc:ore/cobaltite/basalt:*",
+                "tfc:ore/cobaltite/andesite:*",
+                "tfc:ore/cobaltite/dacite:*",
+                "tfc:ore/cobaltite/quartzite:*",
+                "tfc:ore/cobaltite/slate:*",
+                "tfc:ore/cobaltite/phyllite:*",
+                "tfc:ore/cobaltite/schist:*",
+                "tfc:ore/cobaltite/gneiss:*",
+                "tfc:ore/cobaltite/marble:*"
+            ]
+          }
+        },
+        "replaceStrategy": "ADD",
+        "drops": [
+          {
+            "selector": {
+              "weight": {
+                "value": 25
+              },
+              "fortuneLevelRequired": 1
+            },
+            "item": {
+              "items": [
+                "tfc:ore/small/cobaltite"
+              ],
+              "quantity": {
+                "min": 0,
+                "max": 2
+              }
+            }
+          },
+          {
+            "selector": {
+              "weight": {
+                "value": 25
+              },
+              "fortuneLevelRequired": 2
+            },
+            "item": {
+              "items": [
+                "tfc:ore/small/cobaltite"
+              ],
+              "quantity": {
+                "min": 0, "max":3
+              }
+            }
+          },
+          {
+            "selector": {
+              "weight": {
+                "value": 25
+              },
+              "fortuneLevelRequired": 3
+            },
+            "item": {
+              "items": [
+                "tfc:ore/small/cobaltite"
+              ],
+              "quantity": {
+                "min": 1,
+                "max": 4
+              
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
