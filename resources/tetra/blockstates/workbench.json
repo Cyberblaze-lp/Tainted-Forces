@@ -1,0 +1,12 @@
+{
+    "forge_marker": 1,
+    "defaults": {
+        "model": "tetra:workbench"
+    },
+    "variants": {
+        "variant": {
+            "wood": { "model": "tetra:workbench" },
+            "forged": { "model": "tetra:workbench_forged" }
+        }
+    }
+}

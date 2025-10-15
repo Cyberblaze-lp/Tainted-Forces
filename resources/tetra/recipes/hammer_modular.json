@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " # ",
+        " /#",
+        "/  "
+    ],
+    "key": {
+        "#": {
+            "type": "forge:ore_dict",
+            "ore": "logWood"
+        },
+        "/": {
+            "item": "minecraft:stick"
+        }
+    },
+    "result": {
+        "item": "tetra:duplex_tool_modular",
+        "nbt": {
+            "duplex/head_left": "duplex/basic_hammer_left",
+            "duplex/basic_hammer_left_material": "basic_hammer/log",
+            "duplex/head_right": "duplex/basic_hammer_right",
+            "duplex/basic_hammer_right_material": "basic_hammer/log",
+            "duplex/handle": "duplex/basic_handle",
+            "duplex/basic_handle_material": "basic_handle/stick"
+        }
+    }
+}

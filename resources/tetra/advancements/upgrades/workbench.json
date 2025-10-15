@@ -1,0 +1,18 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:crafting_table"
+        },
+        "title": "Bench mk II",
+        "description": "Upgrade a crafting table by right-clicking it with a mallet"
+    },
+    "parent": "tetra:upgrades/root",
+    "criteria": {
+        "hammer": {
+            "trigger": "tetra:block_use",
+            "conditions": {
+                "after": "tetra:workbench"
+            }
+        }
+    }
+}

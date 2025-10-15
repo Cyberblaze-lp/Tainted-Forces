@@ -1,0 +1,31 @@
+{
+    "display": {
+        "icon": {
+            "item": "tetra:duplex_tool_modular",
+            "nbt": "{\"duplex/head_left\": \"duplex/basic_hammer_left\",\"duplex/basic_hammer_left_material\": \"basic_hammer/stone\",\"duplex/head_right\": \"duplex/basic_hammer_right\",\"duplex/basic_hammer_right_material\": \"basic_hammer/stone\",\"duplex/handle\": \"duplex/basic_handle\",\"duplex/basic_handle_material\": \"basic_handle/stick\"}"
+        },
+        "frame": "goal",
+        "title": "Double Up",
+        "description": "Smelt stone and use it to craft a double-sided hammer head"
+    },
+    "parent": "tetra:upgrades/workbench",
+    "criteria": {
+        "head_left": {
+            "trigger": "tetra:craft_module",
+            "conditions": {
+                "slot": "duplex/head_left",
+                "variant": "basic_hammer/stone"
+            }
+        },
+        "head_right": {
+            "trigger": "tetra:craft_module",
+            "conditions": {
+                "slot": "duplex/head_right",
+                "variant": "basic_hammer/stone"
+            }
+        }
+    },
+    "requirements": [
+        ["head_left"], ["head_right"]
+    ]
+}
