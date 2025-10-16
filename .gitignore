@@ -45,7 +45,8 @@ OpenComputersMod*
 /config/spark/data
 /config/spark/tmp
 /mods/TheBetweenlands-3.9.6-universal.jar
-patchouli_books.json
+patchouli_data.json
 BotaniaVars.dat
 /fancymenu_data
 /config/spark/tmp-client
+mods/OptiFine_1.12.2_HD_U_G6_pre1.jar
