@@ -49,4 +49,8 @@ patchouli_data.json
 BotaniaVars.dat
 /fancymenu_data
 /config/spark/tmp-client
-mods/OptiFine_1.12.2_HD_U_G6_pre1.jar
+/mods/OptiFine_1.12.2_HD_U_G6_pre1.jar
+/config/BiomeTweaker/output/
+/config/hqm/remote/data.json
+/config/hqm/remote/deaths.json
+/config/AppliedEnergistics2/items.csv
