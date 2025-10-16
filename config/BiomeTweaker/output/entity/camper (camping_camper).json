@@ -1,6 +1,0 @@
-
-{
-  "Name": "camper",
-  "Registry ID": "camping:camper",
-  "Class": "com.rikmuld.camping.features.entities.camper.EntityCamper"
-}
