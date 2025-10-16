@@ -31,11 +31,6 @@ icon.png
 /resourcepacks/EclecticTrove-1.12.2-1.0.1.zip
 time.history
 OpenComputersMod*
-#Modernized-specific
-mods/Nether-API-v1.3.0-mc1.12.2.jar
-mods/Piston-API-v1.0.2-mc1.12.2.jar
-mods/OptiFine_1.12.2_HD_U_G6_pre1.jar
-mods/!improved-relauncher-0.3.2.jar
 /assetmover
 /astralsorcery
 /betweenlands_gallery
@@ -50,3 +45,7 @@ mods/!improved-relauncher-0.3.2.jar
 /config/spark/data
 /config/spark/tmp
 /mods/TheBetweenlands-3.9.6-universal.jar
+patchouli_books.json
+BotaniaVars.dat
+/fancymenu_data
+/config/spark/tmp-client
