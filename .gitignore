@@ -55,4 +55,4 @@ BotaniaVars.dat
 /config/hqm/remote/deaths.json
 /config/AppliedEnergistics2/items.csv
 /mods/!mixinbooter*
-/config/*_cache*
+/config/*cache*
