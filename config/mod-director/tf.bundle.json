@@ -1,13 +1,10 @@
 {
-	"curse":
-	[
+	"curse": [
 		{
 			"addonId": 419286,
-			"fileId": 6344449,
-			"fileName": "!mixinbooter-10.6-1.jar",
-			"installationPolicy":
-			{
-				
+			"fileId": 7049694,
+			"fileName": "!mixinbooter-10.7.jar",
+			"installationPolicy": {
 				"description": "Mandatory"
 			}
 		},
@@ -15,24 +12,18 @@
 			"addonId": 409880,
 			"fileId": 3614638,
 			"fileName": "thaumicspeedup-4.0.jar",
-			"installationPolicy":
-			{
-				
+			"installationPolicy": {
 				"description": "Mandatory"
 			}
 		},
 		{
 			"addonId": 434344,
-			"fileId": 3626352,
-			"fileName": "_bansoukou-4.3.1.jar",
-			"installationPolicy":
-			{
-				
+			"fileId": 7114294,
+			"fileName": "!bansoukou-6.0.0.jar",
+			"installationPolicy": {
 				"description": "Mandatory"
 			}
 		},
-		
-		
 		{
 			"addonId": 557549,
 			"fileId": 7057606,
@@ -42,7 +33,7 @@
 		},
 			{
 			"addonId": 1214906,
-			"fileId": 6617611,
+			"fileId": 7069422,
 			"metadata": {
 				"side": "CLIENT"
 			},
@@ -51,27 +42,21 @@
 			}
 		
 		}
-		
-		
-		
-		
-				
-		
 	],
-	"url":
-	[
+	"url": [
 		{
-	            "url": "https://optifine.net/adloadx?f=preview_OptiFine_1.12.2_HD_U_G6_pre1.jar",
-	            "follows": ["preview OptiFine 1.12.2 HD U G6 pre1"],
-	            "fileName": "OptiFine_1.12.2_HD_U_G6_pre1.jar",
-	            "options": { "launchwrapperTweakerForceNext": true },
-	            "metadata": {
-	                "side": "CLIENT"
-	            },
-	            "installationPolicy": {
-	                "description": "Optional, but some visual stuff depends on it. Downloads OptiFine from the official site."
-	            }
+			"url": "https://optifine.net/adloadx?f=preview_OptiFine_1.12.2_HD_U_G6_pre1.jar",
+			"follows": ["preview OptiFine 1.12.2 HD U G6 pre1"],
+			"fileName": "OptiFine_1.12.2_HD_U_G6_pre1.jar",
+			"options": { 
+				"launchwrapperTweakerForceNext": true 
+			},
+			"metadata": {
+				"side": "CLIENT"
+			},
+			"installationPolicy": {
+				"description": "Optional, but some visual stuff depends on it. Downloads OptiFine from the official site."
+			}
 		}
-				]
-	
+	]
 }
