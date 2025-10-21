@@ -3,10 +3,9 @@
 knownkeys.txt
 hei_bookmarks.ini
 optionsshaders.txt
-dropt.log
+/*.log
 minecraftinstance.json
 /crash-reports
-crafttweaker.log
 .curseclient
 /vintagefix
 usernamecache.json
