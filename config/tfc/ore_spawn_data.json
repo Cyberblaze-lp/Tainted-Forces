@@ -15,7 +15,6 @@
   },
   "deep_native_copper": {
     "ore": "tfc:native_copper",
-   
     "width": 40,
     "height": 30,
     "shape": "cluster",
@@ -87,7 +86,6 @@
   },
   "deep_hematite": {
     "ore": "tfc:hematite",
-    
     "width": 30,
     "height": 18,
     "shape": "cluster",
@@ -144,7 +142,6 @@
   },
   "galena": {
     "ore": "tfc:galena",
-    
     "width": 15,
     "height": 30,
     "shape": "cluster",
@@ -154,7 +151,6 @@
     "density": 90,
     "base_rocks": [
       "tfc:metamorphic"
-	  
     ]
   },
   "malachite": {
@@ -234,17 +230,17 @@
     "height": 44,
     "shape": "cluster",
     "rarity": 3,
-    "minimum_height": 90,
-    "maximum_height": 40,
+    "minimum_height": 40,
+    "maximum_height": 90,
     "density": 60,
     "base_rocks": [
       "tfc:metamorphic",
-	  "tfc:sedimentary"
+      "tfc:sedimentary"
     ]
   },
   "lignite": {
     "ore": "tfc:lignite",
-	"loose":"tfc:ore/lignite",
+    "loose": "tfc:ore/lignite",
     "width": 28,
     "height": 36,
     "shape": "cluster",
@@ -258,7 +254,7 @@
   },
   "kaolinite": {
     "ore": "tfc:kaolinite",
-	"loose":"tfc:powder/kaolinite",
+    "loose": "tfc:powder/kaolinite",
     "width": 24,
     "height": 32,
     "shape": "cluster",
@@ -272,7 +268,7 @@
   },
   "graphite": {
     "ore": "tfc:graphite",
-	"loose":"tfc:powder/graphite",
+    "loose": "tfc:powder/graphite",
     "width": 24,
     "height": 32,
     "shape": "cluster",
@@ -299,7 +295,8 @@
   },
   "cinnabar": {
     "ore": "tfc:cinnabar",
-	"loose":"thaumcraft:nugget#5",
+    "loose": "thaumcraft:nugget",
+    "looseMeta": 5,
     "width": 16,
     "height": 16,
     "shape": "sphere",
@@ -328,10 +325,9 @@
       "tfc:quartzite"
     ]
   },
-  
   "cryolite": {
     "ore": "tfc:cryolite",
-	"loose":"minecraft:redstone",
+    "loose": "minecraft:redstone",
     "width": 16,
     "height": 16,
     "shape": "sphere",
@@ -358,7 +354,7 @@
   },
   "saltpeter": {
     "ore": "tfc:saltpeter",
-	"loose":"tfc:powder/saltpeter",
+    "loose": "tfc:powder/saltpeter",
     "width": 16,
     "height": 16,
     "shape": "sphere",
@@ -372,7 +368,7 @@
   },
   "sylvite": {
     "ore": "tfc:sylvite",
-	"loose":"tfc:powder/fertilizer",
+    "loose": "tfc:powder/fertilizer",
     "width": 16,
     "height": 16,
     "shape": "sphere",
@@ -386,7 +382,7 @@
   },
   "borax": {
     "ore": "tfc:borax",
-	"loose": "tfc:metal/nugget/boron",
+    "loose": "tfc:metal/nugget/boron",
     "width": 16,
     "height": 16,
     "shape": "sphere",
@@ -400,7 +396,7 @@
   },
   "gypsum": {
     "ore": "tfc:gypsum",
-	"loose": "tfc:ore/gypsum",
+    "loose": "tfc:ore/gypsum",
     "width": 16,
     "height": 16,
     "shape": "sphere",
@@ -412,10 +408,9 @@
       "tfc:sedimentary"
     ]
   },
-  
   "lapis_lazuli": {
     "ore": "tfc:lapis_lazuli",
-	"loose":"tfc:powder/lapis_lazuli",
+    "loose": "tfc:powder/lapis_lazuli",
     "width": 26,
     "height": 38,
     "shape": "cluster",
@@ -425,13 +420,13 @@
     "density": 70,
     "base_rocks": [
       "tfc:marble",
-	  "tfc:chalk",
-	  "tfc:limestone"
+      "tfc:chalk",
+      "tfc:limestone"
     ]
   },
   "petrified_wood": {
     "ore": "tfc:petrified_wood",
-	"loose":"thaumcraft:amber",
+    "loose": "thaumcraft:amber",
     "width": 50,
     "height": 3,
     "shape": "cluster",
