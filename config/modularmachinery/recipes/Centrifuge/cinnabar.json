@@ -1,39 +1,34 @@
-{   "machine": "mechcentrifuge",
-    "registryName": "cinnabarprocessing",
-    "recipeTime": 200 ,
-    "requirements": [
-        {
-           "type": "mysticalmechanics",
-    "io-type": "input",
-    "levelRequiredMin": 120 ,
-	"levelRequiredMax":500
-   
-        },
-	{
-	"type":"item",
-	"io-type":"input",
-	"item":"jaopca:dust.cinnabar"
-	
-	},
-        {
-        	"type": "item",
-        	"io-type": "output",
-        	"item":"minecraft:redstone",
+{
+	"machine": "mechcentrifuge",
+	"registryName": "cinnabarprocessing",
+	"recipeTime": 200,
+	"requirements": [
+		{
+			"type": "mysticalmechanics",
+			"io-type": "input",
+			"levelRequiredMin": 120,
+			"levelRequiredMax": 500
+		},
+		{
+			"type": "modularmachinery:item",
+			"io-type": "input",
+			"item": "jaopca:dust.cinnabar"
+		},
+		{
+			"type": "modularmachinery:item",
+			"io-type": "output",
+			"item": "minecraft:redstone",
 			"amount": 6
-		
-        },
-		 {
-        	"type": "item",
-        	"io-type": "output",
-        	"item":"thaumcraft:quicksilver"
-			
-		
-        },
-		 {
-        	"type": "item",
-        	"io-type": "output",
-        	"item":"tfc:powder/sulfur"
-		
-        }
-    ]
+		},
+		{
+			"type": "modularmachinery:item",
+			"io-type": "output",
+			"item": "thaumcraft:quicksilver"
+		},
+		{
+			"type": "modularmachinery:item",
+			"io-type": "output",
+			"item": "tfc:powder/sulfur"
+		}
+	]
 }

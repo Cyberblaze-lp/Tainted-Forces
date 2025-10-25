@@ -1,26 +1,23 @@
-{   "machine": "mechgrinder",
+{
+    "machine": "mechgrinder",
     "registryName": "cinnabar",
-    "recipeTime": 80 ,
+    "recipeTime": 80,
     "requirements": [
         {
-           "type": "mysticalmechanics",
-    "io-type": "input",
-    "levelRequiredMin": 60,
-    "levelRequiredMax": 160
+            "type": "mysticalmechanics",
+            "io-type": "input",
+            "levelRequiredMin": 60,
+            "levelRequiredMax": 160
         },
-	{
-	"type":"item",
-	"io-type":"input",
-	"item":"ore:gemCinnabar"
-	
-	
-	},
         {
-        	"type": "item",
-        	"io-type": "output",
-        	"item":"jaopca:dust.cinnabar"
-		
+            "type": "modularmachinery:item",
+            "io-type": "input",
+            "item": "ore:gemCinnabar"
+        },
+        {
+            "type": "modularmachinery:item",
+            "io-type": "output",
+            "item": "jaopca:dust.cinnabar"
         }
-
     ]
 }

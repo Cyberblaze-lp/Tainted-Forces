@@ -1,19 +1,30 @@
-{   "machine": "refinerythaum",
-    "registryName": "AluminiumNugget",
-    "recipeTime": 150 ,
-    "requirements": [
-       {"type": "aspect","io-type": "input","aspect": "metallum","amount" : 2},{"type": "aspect","io-type": "input","aspect": "ordo","amount" : 5},
-	{
-	"type":"item",
-	"io-type":"input",
-	"item":"ore:oreSmallAluminium",
-	"amount": 4
-	},
-        {
-        	"type": "item",
-        	"io-type": "output",
-        	"item":"tfc:metal/scrap/aluminium"
-		
-        }
-    ]
+{
+	"machine": "refinerythaum",
+	"registryName": "AluminiumNugget",
+	"recipeTime": 150,
+	"requirements": [
+		{
+			"type": "modularmachinery:aspect",
+			"io-type": "input",
+			"aspect": "metallum",
+			"amount": 2
+		},
+		{
+			"type": "modularmachinery:aspect",
+			"io-type": "input",
+			"aspect": "ordo",
+			"amount": 5
+		},
+		{
+			"type": "modularmachinery:item",
+			"io-type": "input",
+			"item": "ore:oreSmallAluminium",
+			"amount": 4
+		},
+		{
+			"type": "modularmachinery:item",
+			"io-type": "output",
+			"item": "tfc:metal/scrap/aluminium"
+		}
+	]
 }

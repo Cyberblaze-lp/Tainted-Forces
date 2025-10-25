@@ -1,34 +1,30 @@
-{   "machine": "mechcentrifuge",
-    "registryName": "gunpowderprocessing",
-    "recipeTime": 300 ,
-    "requirements": [
-        {
-           "type": "mysticalmechanics",
-    "io-type": "input",
-    "levelRequiredMin": 40,
-    "levelRequiredMax": 160
-        },
-	{
-	"type":"item",
-	"io-type":"input",
-	"item":"minecraft:gunpowder",
-	"amount":6
-	
-	
-	},
-        {
-        	"type": "item",
-        	"io-type": "output",
-        	"item":"tfc:powder/sulfur"
-		
-        },
-		 {
-        	"type": "item",
-        	"io-type": "output",
-        	"item":"tfc:powder/saltpeter",
-			"amount":2
-		
-        }
-
-    ]
+{
+	"machine": "mechcentrifuge",
+	"registryName": "gunpowderprocessing",
+	"recipeTime": 300,
+	"requirements": [
+		{
+			"type": "mysticalmechanics",
+			"io-type": "input",
+			"levelRequiredMin": 40,
+			"levelRequiredMax": 160
+		},
+		{
+			"type": "modularmachinery:item",
+			"io-type": "input",
+			"item": "minecraft:gunpowder",
+			"amount": 6
+		},
+		{
+			"type": "modularmachinery:item",
+			"io-type": "output",
+			"item": "tfc:powder/sulfur"
+		},
+		{
+			"type": "modularmachinery:item",
+			"io-type": "output",
+			"item": "tfc:powder/saltpeter",
+			"amount": 2
+		}
+	]
 }

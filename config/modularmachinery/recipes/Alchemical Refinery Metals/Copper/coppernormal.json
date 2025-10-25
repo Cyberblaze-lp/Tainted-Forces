@@ -1,19 +1,30 @@
-{   "machine": "refinerythaum",
-    "registryName": "CopperNormal",
-    "recipeTime": 150 ,
-    "requirements": [
-       {"type": "aspect","io-type": "input","aspect": "metallum","amount" : 2},{"type": "aspect","io-type": "input","aspect": "ordo","amount" : 5},
-	{
-	"type":"item",
-	"io-type":"input",
-	"item":"ore:oreNormalCopper",
-	"amount": 2
-	},
-        {
-        	"type": "item",
-        	"io-type": "output",
-        	"item":"tfc:metal/scrap/copper"
-		
-        }
-    ]
+{
+	"machine": "refinerythaum",
+	"registryName": "CopperNormal",
+	"recipeTime": 150,
+	"requirements": [
+		{
+			"type": "modularmachinery:aspect",
+			"io-type": "input",
+			"aspect": "metallum",
+			"amount": 2
+		},
+		{
+			"type": "modularmachinery:aspect",
+			"io-type": "input",
+			"aspect": "ordo",
+			"amount": 5
+		},
+		{
+			"type": "modularmachinery:item",
+			"io-type": "input",
+			"item": "ore:oreNormalCopper",
+			"amount": 2
+		},
+		{
+			"type": "modularmachinery:item",
+			"io-type": "output",
+			"item": "tfc:metal/scrap/copper"
+		}
+	]
 }
