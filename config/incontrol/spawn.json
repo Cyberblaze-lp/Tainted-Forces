@@ -91,17 +91,12 @@
 		"groupsizemin": 1,
 		"groupsizemax": 3
 	},
-	{
-		"dimension": 0,
-		"mob": "thaumcraft:taintacle",
-		"onjoin": true,
-		"result": "deny"
-	},
+	
 	{
 		"mob": "minecraft:zombie",
 		"dimension": 0,
 		"maxcount": {
-			"amount": 30,
+			"amount": 25,
 			"mob": "minecraft:zombie",
 			"perplayer": true
 		},
@@ -143,7 +138,7 @@
 		"mob": "minecraft:zombie_villager",
 		"dimension": 0,
 		"maxcount": {
-			"amount": 2,
+			"amount": 3,
 			"mob": "minecraft:zombie_villager",
 			"perplayer": true
 		},
@@ -157,22 +152,8 @@
 		"mob": "minecraft:skeleton",
 		"dimension": 0,
 		"maxcount": {
-			"amount": 18,
+			"amount": 20,
 			"mob": "minecraft:skeleton",
-			"perplayer": true
-		},
-		"maxlight": 0,
-		"result": "allow",
-		"groupsizemin": 1,
-		"groupsizemax": 4,
-		"onjoin": true
-	},
-	{
-		"mob": "minecraft:creeper",
-		"dimension": 0,
-		"maxcount": {
-			"amount": 8,
-			"mob": "creeper",
 			"perplayer": true
 		},
 		"maxlight": 0,
@@ -182,11 +163,25 @@
 		"onjoin": true
 	},
 	{
+		"mob": "minecraft:creeper",
+		"dimension": 0,
+		"maxcount": {
+			"amount": 12,
+			"mob": "creeper",
+			"perplayer": true
+		},
+		"maxlight": 0,
+		"result": "allow",
+		"groupsizemin": 1,
+		"groupsizemax": 2,
+		"onjoin": true
+	},
+	{
 		"mob": "minecraft:spider",
 		"dimension": 0,
 		"maxcount": {
 			"amount": 12,
-			"mob": "minecraft:spider",
+			"mob": "spiderstpo:better_spider",
 			"perplayer": true
 		},
 		"maxlight": 0,
