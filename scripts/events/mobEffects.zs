@@ -21,7 +21,7 @@ return;
 
 if (event.entity.definition.id == <entity:thaumcraft:taintswarm>.id)
 {
-    print("swarm created");
+   
     var levi1 = <potion:minecraft:levitation>.makePotionEffect(9999, 0 ,false, false) as IPotionEffect;
     var levi2 = <potion:minecraft:levitation>.makePotionEffect(9999, 0 ,true, false) as IPotionEffect;
     val entity as IEntityLivingBase = event.entity;
