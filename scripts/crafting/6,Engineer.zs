@@ -168,7 +168,6 @@ aluwire.add(<tfctech:metal/aluminium_wire>);
 <ore:gearIron>.remove(<immersiveintelligence:motor_gear:2>);
 <ore:gearSteel>.remove(<immersiveintelligence:motor_gear:3>);
 <ore:gearTungsten>.remove(<immersiveintelligence:motor_gear:4>);
-furnace.remove(<railcraft:fluid_bottle_creosote>);
 
 
 mods.thermalexpansion.InductionSmelter.removeRecipe(<tfc:metal/ingot/wrought_iron>,<thermalfoundation:material:768>*4);
