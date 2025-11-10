@@ -18,6 +18,7 @@
 
 // ================================================================================
 //#MARKER REMOVE SHAPED
+recipes.removeShaped(<integrateddynamics:squeezer>, [[<ore:stickWood>, <ore:blockIron>, <ore:stickWood>], [<ore:stickWood>, null, <ore:stickWood>], [<ore:plankWood>, <ore:ingotIron>, <ore:plankWood>]]);
 
 // ================================================================================
 //#MARKER ADD
@@ -35,6 +36,9 @@ recipes.addShapeless(<ic2:reactor_heat_vent>, [<ic2:heat_vent>, <ic2:crafting:7>
 
 // ================================================================================
 //#MARKER ADD SHAPED
+recipes.addShaped(<integrateddynamics:squeezer>, [[<ore:stickIron>, <ore:ingotDoubleIron>, <ore:stickIron>], [<ore:stickIron>, <ore:springBrass>, <ore:stickIron>], [<ore:stickIron>, <ore:springBrass>, <ore:stickIron>]]);
+recipes.addShaped(<embers:item_gauge> * 3, [[<minecraft:clock>], [<ore:plateLead>]]);
+recipes.addShaped(<embers:item_gauge>, [[<ore:dustRedstone>], [<ore:paper>], [<ore:plateLead>]]);
 recipes.addShaped(<thermaldynamics:duct_16:1> * 8, [[<thermaldynamics:duct_16>, <thermaldynamics:duct_16>, <thermaldynamics:duct_16>], [<thermaldynamics:duct_16>, <ore:ingetAnyBronze>, <thermaldynamics:duct_16>], [<thermaldynamics:duct_16>, <thermaldynamics:duct_16>, <thermaldynamics:duct_16>]]);
 recipes.addShaped(<thermaldynamics:duct_16> * 8, [[<thermaldynamics:duct_16:1>, <thermaldynamics:duct_16:1>, <thermaldynamics:duct_16:1>], [<thermaldynamics:duct_16:1>, <ore:blockGlassColorless>, <thermaldynamics:duct_16:1>], [<thermaldynamics:duct_16:1>, <thermaldynamics:duct_16:1>, <thermaldynamics:duct_16:1>]]);
 recipes.addShaped(<thermaldynamics:duct_16:1> * 24, [[<ore:nuggetCopper>, <ore:nuggetCopper>, <ore:nuggetCopper>], [<ore:sheetAnyBronze>, null, <ore:sheetAnyBronze>], [<ore:nuggetCopper>, <ore:nuggetCopper>, <ore:nuggetCopper>]]);

@@ -1,7 +1,7 @@
 import mods.immersiveintelligence.ChemicalBath;
 import mods.immersivetechnology.MeltingCrucible;
 import mods.terrafirmacraft.Barrel;
-
+import mods.integrateddynamics.Squeezer;
 mods.pneumaticcraft.liquidfuel.addFuel(<liquid:steam>, 5000);
 
 mods.immersiveintelligence.ChemicalBath.removeRecipe(<immersiveintelligence:material:6>);
@@ -29,6 +29,10 @@ mods.pneumaticcraft.pressurechamber.addRecipe([<ore:plasticRed>,<pneumaticcraft:
 mods.pneumaticcraft.pressurechamber.addRecipe([<ore:plasticRed>,<pneumaticcraft:unassembled_pcb>*2], 3.5, [<immersiveintelligence:material:10>]);
 MeltingCrucible.removeRecipe(<minecraft:cobblestone>);
 mods.pneumaticcraft.pressurechamber.addRecipe([<tetra:magmatic_cell>], -0.2, [<minecraft:magma>*4,<embers:shard_ember>*3,<tetra:magmatic_cell:128>]);
+Squeezer.addRecipe(<tetra:magmatic_cell>,
+  <tetra:magmatic_cell:128>,1.0,
+  <embers:shard_ember>*5,1.0,
+  <minecraft:magma>*2,1.0);
 mods.pneumaticcraft.pressurechamber.addRecipe([<ore:ingotIron>, <ore:dustBedrock>], 2.0, [<pneumaticcraft:ingot_iron_compressed>]);
 mods.pneumaticcraft.assembly.removeLaserRecipe(<pneumaticcraft:unassembled_pcb>);
 recipes.remove(<pneumaticcraft:advanced_pcb>);

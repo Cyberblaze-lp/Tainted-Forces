@@ -1,3 +1,4 @@
+
 #download_reobf_mapping 
 import native.net.minecraft.tileentity.TileEntity;
 import native.net.minecraft.block.Block;
@@ -6,58 +7,42 @@ import native.net.minecraft.world.World;
 import crafttweaker.block.IBlock;
 import crafttweaker.world.IWorld;
 import crafttweaker.entity.IEntity;
+import crafttweaker.world.IBlockPos;
 import crafttweaker.world.IBlockAccess;
 import crafttweaker.event.WorldTickEvent;
 import crafttweaker.event.IBlockEvent;
+import crafttweaker.event.EntityJoinWorldEvent;
 import crafttweaker.command.ICommandManager;
 //why am i doing this to myself?
-//makes IC2 reactors glow with the light effects of a manastorm charge.
+//makes IC2 reactors glow with the light effects of a manastorm charge. Hopefully without the physical effects.
 
-function first_NPE(world as IWorld) as IEntity{
-	for  entity in world.getEntities()
-		{
-		if(!isNull(entity.definition))
-			{
-			if(!isNull(entity.definition.id))
-			{
-			if(entity.definition.id has "player" ||entity.definition.id has "Player")
-			{}
-			else{
-			return(entity);
-			return;
-			}}
-			}
-	}	
-}
+
 
 events.onWorldTick(function(event as crafttweaker.event.WorldTickEvent){
 
 if (event.world.getWorldTime() % 500 !=0 || event.world.isRemote())
-{
-return;
-}
+	{
+	return;
+	}
 var tiles = event.world.native.loadedTileEntityList as TileEntity[];
 for tile in tiles
-{
-if( tile.toString() has "TileEntityNuclearReactorElectric")
-{
-if(isNull(event.world.getBlockState(tile.getPos().wrapper))||isNull(event.world.getBlock(tile.getPos().wrapper).data)) {
+	{
+	if( tile.toString() has "TileEntityNuclearReactorElectric")
+		{
+		if(isNull(event.world.getBlockState(tile.getPos().wrapper))||isNull(event.world.getBlock(tile.getPos().wrapper).data)) {
         return;
-    }
+    	}
 
 
 if (toString(event.world.getBlock(tile.getPos().wrapper).data) has "active: 1 as byte")
 					{
-
-
-					if (!isNull(first_NPE(event.world)))
-						{
 						
-						var command = "summon botania:mana_storm" + " " + toString(tile.getPos().wrapper.getX()) + " " + toString(tile.getPos().wrapper.getY())
-						+ ".5 " + toString(tile.getPos().wrapper.getZ());
-						server.commandManager.executeCommand(
-						first_NPE(event.world), command);
-						}
+						
+					var command = "summon botania:mana_storm" + " " + toString(tile.getPos().wrapper.getX()) + " " + toString(tile.getPos().wrapper.getY())
+					+ ".5 " + toString(tile.getPos().wrapper.getZ());
+					server.commandManager.executeCommandSilent(
+					server, command);
+						
 					}	
 				}
 		}
@@ -65,12 +50,36 @@ if (toString(event.world.getBlock(tile.getPos().wrapper).data) has "active: 1 as
 });
 
 
-events.onExplosionStart(function(event as crafttweaker.event.ExplosionStartEvent){
-if event.world.getBlock(event.position).definition.id has "ic2:te"
-{
-event.cancel();
-}
+events.onEntityJoinWorld(function(event as crafttweaker.event.EntityJoinWorldEvent){
+	if isNull(event.entity.definition)
+	{
+		return;
+	}
+	if(event.entity.definition.id has <entity:botania:mana_burst>.id)
+	{
+		var entityPosOld = event.entity.position3f as IBlockPos;
+		var entityPosNewZ = crafttweaker.util.Position3f.create(entityPosOld.x, entityPosOld.y, entityPosOld.z - 1) as IBlockPos;
+		var entityPosNewX = crafttweaker.util.Position3f.create(entityPosOld.x - 1, entityPosOld.y, entityPosOld.z) as IBlockPos;
+		var entityPosNewXZ = crafttweaker.util.Position3f.create(entityPosOld.x - 1, entityPosOld.y, entityPosOld.z - 1) as IBlockPos;
+	
+		if (toString(event.world.getBlock(entityPosNewZ).definition.id) has "ic2:te"||toString(event.world.getBlock(entityPosOld).definition.id) has "ic2:te"|| toString(event.world.getBlock(entityPosNewX).definition.id) has "ic2:te"||toString(event.world.getBlock(entityPosNewXZ).definition.id) has "ic2:te")
+		{
+			event.cancel();
+		}
+	}
+});
 
+
+
+
+
+
+events.onExplosionStart(function(event as crafttweaker.event.ExplosionStartEvent){
+
+	if toString(event.world.getBlock(event.position).data) has "ic2:nuclear_reactor"
+	{
+		event.cancel();
+	}
 });
 
 
