@@ -19,65 +19,61 @@ import crafttweaker.command.ICommandManager;
 
 
 events.onWorldTick(function(event as crafttweaker.event.WorldTickEvent){
-
-if (event.world.getWorldTime() % 500 !=0 || event.world.isRemote())
-	{
-	return;
+	if (event.world.getWorldTime() % 500 !=0 || event.world.isRemote()){
+		return;
 	}
-var tiles = event.world.native.loadedTileEntityList as TileEntity[];
-for tile in tiles
-	{
-	if( tile.toString() has "TileEntityNuclearReactorElectric")
-		{
-		if(isNull(event.world.getBlockState(tile.getPos().wrapper))||isNull(event.world.getBlock(tile.getPos().wrapper).data)) {
-        return;
-    	}
 
-
-if (toString(event.world.getBlock(tile.getPos().wrapper).data) has "active: 1 as byte")
-					{
-						
-						
-					var command = "summon botania:mana_storm" + " " + toString(tile.getPos().wrapper.getX()) + " " + toString(tile.getPos().wrapper.getY())
-					+ ".5 " + toString(tile.getPos().wrapper.getZ());
-					server.commandManager.executeCommandSilent(
-					server, command);
-						
-					}	
-				}
+	var tiles = event.world.native.loadedTileEntityList as TileEntity[];
+	for tile in tiles{
+		if( tile.toString() has "TileEntityNuclearReactorElectric"){
+			if(
+				isNull(event.world.getBlockState(tile.getPos().wrapper))
+			 || isNull(event.world.getBlock(tile.getPos().wrapper).data)
+			) {
+				return;
+			}
+			if (toString(event.world.getBlock(tile.getPos().wrapper).data) has "active: 1 as byte"){			
+				var command = 
+					"summon botania:mana_storm " + 
+					" " + 
+					toString(tile.getPos().wrapper.getX()) + 
+					" " + 
+					toString(tile.getPos().wrapper.getY()) + 
+					".5 " + 
+					toString(tile.getPos().wrapper.getZ())
+				;
+				server.commandManager.executeCommandSilent(server, command);
+			}
 		}
+	}
 
 });
 
 
 events.onEntityJoinWorld(function(event as crafttweaker.event.EntityJoinWorldEvent){
-	if isNull(event.entity.definition)
-	{
+	if isNull(event.entity.definition){
 		return;
 	}
-	if(event.entity.definition.id has <entity:botania:mana_burst>.id)
-	{
+	if(event.entity.definition.id has <entity:botania:mana_burst>.id){
 		var entityPosOld = event.entity.position3f as IBlockPos;
 		var entityPosNewZ = crafttweaker.util.Position3f.create(entityPosOld.x, entityPosOld.y, entityPosOld.z - 1) as IBlockPos;
 		var entityPosNewX = crafttweaker.util.Position3f.create(entityPosOld.x - 1, entityPosOld.y, entityPosOld.z) as IBlockPos;
 		var entityPosNewXZ = crafttweaker.util.Position3f.create(entityPosOld.x - 1, entityPosOld.y, entityPosOld.z - 1) as IBlockPos;
 	
-		if (toString(event.world.getBlock(entityPosNewZ).definition.id) has "ic2:te"||toString(event.world.getBlock(entityPosOld).definition.id) has "ic2:te"|| toString(event.world.getBlock(entityPosNewX).definition.id) has "ic2:te"||toString(event.world.getBlock(entityPosNewXZ).definition.id) has "ic2:te")
-		{
+		if (
+			toString(event.world.getBlock(entityPosNewZ).definition.id) has "ic2:te"
+		 || toString(event.world.getBlock(entityPosOld).definition.id) has "ic2:te"
+		 || toString(event.world.getBlock(entityPosNewX).definition.id) has "ic2:te"
+		 || toString(event.world.getBlock(entityPosNewXZ).definition.id) has "ic2:te"
+		){
 			event.cancel();
 		}
 	}
 });
 
 
-
-
-
-
 events.onExplosionStart(function(event as crafttweaker.event.ExplosionStartEvent){
-
-	if toString(event.world.getBlock(event.position).data) has "ic2:nuclear_reactor"
-	{
+	if toString(event.world.getBlock(event.position).data) has "ic2:nuclear_reactor"{
 		event.cancel();
 	}
 });

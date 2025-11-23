@@ -7,144 +7,104 @@ import crafttweaker.event.PlayerInteractBlockEvent;
 import crafttweaker.event.BlockNeighborNotifyEvent;
 import crafttweaker.world.IBlockPos;
 import crafttweaker.block.IBlockDefinition;
-//prevents inputs from being placed anywhere but specified dimensions
 
+//prevents inputs from being placed anywhere but specified dimensions
 function whitelistDeny (excludeList as IItemStack[], dims as int[]){
 
-
-events.onPlayerInteractBlock(function(event as crafttweaker.event.PlayerInteractBlockEvent){
-var clear = false;
-
-//iterates through the dimension list. if the placing takes place somewhere on the whitelist, it sets the "clear" flag, else it's canceled
+	events.onPlayerInteractBlock(function(event as crafttweaker.event.PlayerInteractBlockEvent){
+		var clear = false;
+		//iterates through the dimension list. if the placing takes place somewhere on the whitelist, it sets the "clear" flag, else it's canceled
 		if !(dims has event.world.getDimension()){
-for item in excludeList {
-
-
-    if(item has event.item){
-		event.cancel();
-		event.player.sendRichTextStatusMessage(format.red("Surface Conditions not met, cannot place!"));
-		event.player.setCooldown(item, 200);
-		return;
-  
-}}}});
-events.onBlockPlace(function(event as crafttweaker.event.BlockPlaceEvent){
-var clear = false;
-//iterates through the dimension list. if the placing takes place somewhere on the whitelist, it breaks, else it's canceled
-		if !(dims has event.world.getDimension()){
-for item in excludeList {
-
-
-    if(item.asBlock() has event.block as IBlock){
-		
-		event.cancel();
-		event.player.sendRichTextStatusMessage(format.red("Surface Conditions not met, cannot place!"));
-		event.player.setCooldown(item, 200);
-		return;
+			for item in excludeList {
+				if(item has event.item){
+					event.cancel();
+					event.player.sendRichTextStatusMessage(format.red("Surface Conditions not met, cannot place!"));
+					event.player.setCooldown(item, 200);
+					return;
+				}
+			}
 		}
-	}
-  }
-});
-//anti-chese through fake players
-events.onBlockNeighborNotify(function(event as crafttweaker.event.BlockNeighborNotifyEvent){
-//iterates through the dimension list. if the placing takes place somewhere on the whitelist, it breaks, else it's canceled
-		if !(dims has event.world.getDimension())
-			{
-for item in excludeList {
-	if (item.asBlock().definition.id == event.block.definition.id){
-		print("Cheese- meet Grater");
-		event.world.setBlockState(<blockstate:minecraft:air>, event.position);
-		event.world.performExplosion(null, event.position.getX(),event.position.getY() , event.position.getZ(), 4.0, true, true);
-		return;
-		}}}
-		
-		
-  
-});
-
-
-
+	});
+	events.onBlockPlace(function(event as crafttweaker.event.BlockPlaceEvent){
+		var clear = false;
+		//iterates through the dimension list. if the placing takes place somewhere on the whitelist, it breaks, else it's canceled
+		if !(dims has event.world.getDimension()){
+			for item in excludeList {
+				if(item.asBlock() has event.block as IBlock){
+					event.cancel();
+					event.player.sendRichTextStatusMessage(format.red("Surface Conditions not met, cannot place!"));
+					event.player.setCooldown(item, 200);
+					return;
+				}
+			}
+		}
+	});
+	//anti-chese through fake players
+	events.onBlockNeighborNotify(function(event as crafttweaker.event.BlockNeighborNotifyEvent){
+		//iterates through the dimension list. if the placing takes place somewhere on the whitelist, it breaks, else it's canceled
+		if !(dims has event.world.getDimension()){
+			for item in excludeList {
+				if (item.asBlock().definition.id == event.block.definition.id){
+					print("Cheese- meet Grater");
+					event.world.setBlockState(<blockstate:minecraft:air>, event.position);
+					event.world.performExplosion(null, event.position.getX(),event.position.getY() , event.position.getZ(), 4.0, true, true);
+					return;
+				}
+			}
+		}
+	});
 }
 
 
 // denies block placement only in specified Dimensions
 function blacklistDeny (excludeList as IItemStack[], dims as int[]){
-
-
-events.onPlayerInteractBlock(function(event as crafttweaker.event.PlayerInteractBlockEvent){
-//iterates through the dimension list. if the placing takes place somewhere on the whitelist, it breaks, else it's canceled
-		if (dims has event.world.getDimension())
-				{
-for item in excludeList {
-
-
-    if(item has event.item)
-		{
-		
-		
-				event.cancel();
-				event.player.sendRichTextStatusMessage(format.red("Surface Conditions not met, cannot place!"));
-				event.player.setCooldown(item, 200);
-				break;
+	events.onPlayerInteractBlock(function(event as crafttweaker.event.PlayerInteractBlockEvent){
+	//iterates through the dimension list. if the placing takes place somewhere on the whitelist, it breaks, else it's canceled
+		if (dims has event.world.getDimension()){
+			for item in excludeList {
+				if(item has event.item){
+					event.cancel();
+					event.player.sendRichTextStatusMessage(format.red("Surface Conditions not met, cannot place!"));
+					event.player.setCooldown(item, 200);
+					break;
 				}
 			}
-			
 		}
-  
-});
-events.onBlockPlace(function(event as crafttweaker.event.BlockPlaceEvent){
-//iterates through the dimension list. if the placing takes place somewhere on the whitelist, it breaks, else it's canceled
+	});
+	events.onBlockPlace(function(event as crafttweaker.event.BlockPlaceEvent){
+	//iterates through the dimension list. if the placing takes place somewhere on the whitelist, it breaks, else it's canceled
 		if (dims has event.world.getDimension()){
-for item in excludeList 
-	{
-
-
-    if(item.asBlock() has event.block as IBlock)
-		{
-		
-			
-				event.cancel();
-				event.player.sendRichTextStatusMessage(format.red("Surface Conditions not met, cannot place!"));
-				event.player.setCooldown(item, 200);
-				break;
+			for item in excludeList {
+				if(item.asBlock() has event.block as IBlock){
+					event.cancel();
+					event.player.sendRichTextStatusMessage(format.red("Surface Conditions not met, cannot place!"));
+					event.player.setCooldown(item, 200);
+					break;
 				}
 			}
-		
 		}
-  
-	
-});
-//anti-chese through fake players
-events.onBlockNeighborNotify(function(event as crafttweaker.event.BlockNeighborNotifyEvent){
-//iterates through the dimension list. if the placing takes place somewhere on the whitelist, it breaks, else it's canceled
+	});
+
+	//anti-chese through fake players
+	events.onBlockNeighborNotify(function(event as crafttweaker.event.BlockNeighborNotifyEvent){
+		//iterates through the dimension list. if the placing takes place somewhere on the whitelist, it breaks, else it's canceled
 		if (dims has event.world.getDimension()){
-for item in excludeList 
-	{
-
-
-    if item.asBlock().definition.id
-	== event.block.definition.id
-	
-		{
-		
-			
-				print("Cheese- meet Grater");
+			for item in excludeList {
+				if item.asBlock().definition.id == event.block.definition.id{
+					print("Cheese- meet Grater");
 					event.world.performExplosion(null, event.position.getX(),event.position.getY() , event.position.getZ(), 4.0, true, true);
-				break;
+					break;
 				}
 			}
-			
 		}
-  
-	
-});
+	});
 }
 
 //flux-producing machines exclusive to realms with taint nests
 val thaumstuff = [<thaumcraft:smelter_basic>,<thaumcraft:smelter_thaumium>,<thaumcraft:smelter_void>,<thaumcraft:mirror>,<thaumcraft:mirror_essentia>,<thaumcraft:infusion_matrix>,<thaumcraft:stabilizer>] as IItemStack[];
-for item in thaumstuff
-{
-item.addTooltip(format.darkAqua(format.bold("Surface Conditions: Placeable in")));
-item.addTooltip(format.darkAqua("-Overworld"));
+for item in thaumstuff{
+	item.addTooltip(format.darkAqua(format.bold("Surface Conditions: Placeable in")));
+	item.addTooltip(format.darkAqua("-Overworld"));
 }
 whitelistDeny(thaumstuff,[0]);
 
