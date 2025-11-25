@@ -26,12 +26,12 @@
 		},
 		{
 			"addonId": 557549,
-			"fileId": 7178243,
+			"fileId": 7237286,
 			"installationPolicy": {
 				"description": "Mandatory! Downloads Had enough Items"
 			}
 		},
-			{
+		{
 			"addonId": 1214906,
 			"fileId": 7177652,
 			"metadata": {
