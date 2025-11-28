@@ -1,3 +1,12 @@
+#download_reobf_mapping 
+import native.net.minecraft.item.ItemStack;
+import native.net.minecraft.util.ResourceLocation;
+
+import native.thaumcraft.api.ThaumcraftApi;
+import native.thaumcraft.api.crafting.CrucibleRecipe;
+import native.thaumcraft.api.aspects.Aspect;
+import native.thaumcraft.api.aspects.AspectList;
+
 import mods.thaumcraft.Infusion;
 import mods.immersiveengineering.DieselHandler;
 import mods.immersivetechnology.GasTurbine;
@@ -7,6 +16,8 @@ import mods.terrafirmacraft.ItemRegistry;
 import mods.thaumcraft.ArcaneWorkbench;
 import mods.immersivetechnology.MeltingCrucible;
 import mods.thaumcraft.Crucible;
+import crafttweaker.item.IItemStack;
+
 mods.immersivetechnology.MeltingCrucible.removeRecipe(<minecraft:cobblestone>);
 
 
@@ -194,6 +205,86 @@ ItemRegistry.registerArmor(<thaumcraft:void_robe_helm>, 55.0, 70.0,50.0);
 ItemRegistry.registerArmor(<thaumcraft:void_robe_chest>, 505.0, 70.0,50.0);
 ItemRegistry.registerArmor(<thaumcraft:void_robe_legs>, 55.0, 70.0,50.0);
 ItemRegistry.registerArmor(<thaumicaugmentation:void_boots>, 55.0, 70.0,50.0);
+
+
+
+
+//create simple ore processing recipes for crucible using very complicated code
+
+
+
+var ores = ["Copper","WroughtIron", "Gold","Zinc","Tin","Bismuth","Nickel","Silver","Lead","Antimony","Lithium","Thorium","Platinum","Aluminium"] as string[];
+
+var aspectsempty1 as AspectList = AspectList();
+var aspectsnugget as AspectList = aspectsempty1
+ .merge(Aspect.ORDER, 1)
+ .merge(Aspect.METAL,1);
+
+ var aspectsempty2 as AspectList = AspectList();
+var aspectspoor as AspectList = aspectsempty2
+ .merge(Aspect.ORDER, 2)
+ .merge(Aspect.METAL,2);
+
+ var aspectsempty3 as AspectList = AspectList();
+var aspectsnormal as AspectList = aspectsempty3
+ .merge(Aspect.ORDER, 3)
+ .merge(Aspect.METAL,3);
+
+ var aspectsempty4 as AspectList = AspectList();
+var aspectsrich as AspectList = aspectsempty4
+ .merge(Aspect.ORDER, 5)
+ .merge(Aspect.METAL,5);
+
+
+
+
+for item in ores
+{
+/*
+    mods.thaumcraft.Crucible.registerRecipe(("nugget" + item), "SIMPLEOREPROCESSING", oreDict.get("nugget"+item).firstItem*2, oreDict.get("oreSmall"+item), [<aspect:metallum>*1, <aspect:ordo>*1]);
+    mods.thaumcraft.Crucible.registerRecipe(("poor" + item), "SIMPLEOREPROCESSING", oreDict.get("nugget"+item).firstItem*4, oreDict.get("orePoor"+item), [<aspect:metallum>*2, <aspect:ordo>*2]);
+    mods.thaumcraft.Crucible.registerRecipe(("normal" + item), "SIMPLEOREPROCESSING", oreDict.get("nugget"+item).firstItem*6, oreDict.get("oreNormal"+ item), [<aspect:metallum>*3, <aspect:ordo>*3]);
+    mods.thaumcraft.Crucible.registerRecipe(("rich" + item), "SIMPLEOREPROCESSING", oreDict.get("nugget"+item).firstItem*10, oreDict.get("oreRich"+item), [<aspect:metallum>*5, <aspect:ordo>*5]);
+*/
+
+var resource as ResourceLocation = ResourceLocation("thaumcraft:orenugget"+item);
+
+
+var recipe as CrucibleRecipe = CrucibleRecipe("SIMPLEOREPROCESSING",(oreDict.get("nugget"+item).firstItem*2).native, ("oreSmall" + item),aspectsnugget);
+
+ThaumcraftApi.addCrucibleRecipe(resource, recipe);
+recipe.setGroup(ResourceLocation("thaumcraft:groupOre"+ item));
+
+
+resource = ResourceLocation("thaumcraft:orepoor"+item);
+
+ recipe = CrucibleRecipe("SIMPLEOREPROCESSING",(oreDict.get("nugget"+item).firstItem*4).native, ("orePoor" + item),aspectspoor);
+
+ThaumcraftApi.addCrucibleRecipe(resource, recipe);
+recipe.setGroup(ResourceLocation("thaumcraft:groupOre"+ item));
+
+
+
+resource = ResourceLocation("thaumcraft:orenormal"+item);
+
+recipe = CrucibleRecipe("SIMPLEOREPROCESSING",(oreDict.get("nugget"+item).firstItem*6).native, ("oreNormal" + item),aspectsnormal);
+
+ThaumcraftApi.addCrucibleRecipe(resource, recipe);
+recipe.setGroup(ResourceLocation("thaumcraft:groupOre"+ item));
+
+
+
+resource= ResourceLocation("thaumcraft:orerich"+item);
+
+recipe = CrucibleRecipe("SIMPLEOREPROCESSING",(oreDict.get("nugget"+item).firstItem*10).native, ("oreRich" + item),aspectsrich);
+
+ThaumcraftApi.addCrucibleRecipe(resource, recipe);
+recipe.setGroup(ResourceLocation("thaumcraft:groupOre"+ item));
+
+
+}
+
+
 
 
 

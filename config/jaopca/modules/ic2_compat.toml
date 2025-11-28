@@ -9,7 +9,9 @@
 	#The materials that should not have macerator plate to dust recipes added.
 	plateToDustMaterialBlacklist = []
 	#The materials that should not have compressor to dense plate recipes added.
-	toDensePlateMaterialBlacklist = []
+	toDensePlateMaterialBlacklist = [
+		"*"
+]
 	#The materials that should not have metal former rolling to plate recipes added.
 	ingotToPlateMaterialBlacklist = []
 	#The materials that should not have compressor to plate recipes added.

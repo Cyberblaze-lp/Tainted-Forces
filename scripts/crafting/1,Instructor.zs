@@ -67,11 +67,9 @@ recipes.remove(<conarm:travel_sack>);
 //5x5 mining is reserved for the terra shatterer and primal crusher
 recipes.remove(<immersiveintelligence:drillhead>);
 recipes.remove(<immersiveintelligence:drillhead:3>);
+
 // shields are a bit cheap for the 100% protection they give. let's fix that.
 recipes.remove(<minecraft:shield>);
-recipes.addShaped(<minecraft:shield>, [[<ore:stickSteel>, <ore:stickSteel>], [<tetra:vent_plate>, <tetra:vent_plate>], [<tetra:vent_plate>, <tetra:vent_plate>]]);
-
-
 
 
 

@@ -1,0 +1,20 @@
+[{
+        "key": "SIMPLEOREPROCESSING",    
+        "name": "research.SIMPLEOREPROCESSING.title",
+        "icons": [ "tfc:textures/items/metal/nugget/wrought_iron.png" ],
+        "category": "ALCHEMY", "location": [ 1,4 ], 
+        "parents": [ "METALLURGY" ],        
+        "stages": [
+                {
+                    "text": "research.SIMPLEOREPROCESSING.stage.1",
+                    "required_knowledge":["THEORY;ALCHEMY;1"]
+					
+                },
+                {
+                    "text": "research.SIMPLEOREPROCESSING.stage.2",  
+                    "recipes": ["thaumcraft:groupOreWroughtIron","thaumcraft:groupOreCopper","thaumcraft:groupOreTin","thaumcraft:groupOreBismuth","thaumcraft:groupOreZinc","thaumcraft:groupOreGold","thaumcraft:groupOreSilver","thaumcraft:groupOreLead",
+                    "thaumcraft:groupOreNickel","thaumcraft:groupOrePlatinum","thaumcraft:groupOreAntimony","thaumcraft:groupOreLithium","thaumcraft:groupOreThorium","thaumcraft:groupOreAluminium"]
+					
+                }
+            ]
+        }]

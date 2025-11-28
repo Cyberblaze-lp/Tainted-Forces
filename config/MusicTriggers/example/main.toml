@@ -1,40 +1,38 @@
-[triggers]
+#  Main header!
+#  Line 2
 
-	[[triggers.mob]]
-		identifier = "taint"
-		resource_name = [ "Taintacle" ]
-		detection_range = "40"
-		mob_targeting = false
-		level = "1"
-		priority = "10"
-		[[triggers.dimension]]
-		identifier = "overworld"
-		resource_name = ["0"]
-
-	
 [songs]
-[songs.kevinmcleod_giantwyrm]
+	[songs.chriszabriskie_whatdoesanybodyknowaboutanything]
 		triggers = [ "mob-taint" ]
-
-[songs.kevinmcleod_martiancowboy]
+	[songs.kevinmcleod_bluesizzle]
+		triggers = [ "dimension-overworld" ]
+	[songs.kevinmcleod_giantwyrm]
+		triggers = [ "mob-taint" ]
+	[songs.kevinmcleod_itislost]
+		triggers = [ "dimension-overworld" ]
+	[songs.kevinmcleod_martiancowboy]
 		triggers = [ "mob-taint" ]
 		volume = "1.0"
-
-[songs.chriszabriskie_whatdoesanybodyknowaboutanything]
-		triggers = [ "mob-taint" ]
-
-[songs.kevinmcleod_bluesizzle]
+	[songs.kevinmcleod_thedread]
 		triggers = [ "dimension-overworld" ]
 
-[songs.kevinmcleod_thedread]
-		triggers = [ "dimension-overworld" ]
-
-[songs.kevinmcleod_itislost]
-		triggers = [ "dimension-overworld" ]
-
-
-
-
-
-
+[triggers]
+	[triggers.dimension]
+		identifier = "overworld"
+		resource_name = [ "0" ]
+	[triggers.mob]
+		detection_range = "40"
+		identifier = "taint"
+		level = "1"
+		mob_targeting = false
+		priority = "10"
+		resource_name = [ "Taintacle" ]
+	[triggers.universal]
+		active_cooldown = "0"
+		fade_in = "0"
+		fade_out = "0"
+		persistence = "0"
+		ticks_before_active = "0"
+		ticks_before_audio = "0"
+		ticks_between_audio = "0"
 

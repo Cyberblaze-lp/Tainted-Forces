@@ -19,7 +19,7 @@
 	#Should the mod find dust materials with ores.
 	dust = true
 	#Should the mod find gem materials with ores.
-	gem = true
+	gem = false
 #Configurations related to material overrides.
 [materialOverrides]
 	#List of materials that should be crystals.

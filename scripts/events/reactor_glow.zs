@@ -13,6 +13,7 @@ import crafttweaker.event.WorldTickEvent;
 import crafttweaker.event.IBlockEvent;
 import crafttweaker.event.EntityJoinWorldEvent;
 import crafttweaker.command.ICommandManager;
+import crafttweaker.util.Math;
 //why am i doing this to myself?
 //makes IC2 reactors glow with the light effects of a manastorm charge. Hopefully without the physical effects.
 
@@ -57,12 +58,9 @@ events.onEntityJoinWorld(function(event as crafttweaker.event.EntityJoinWorldEve
 	}
 	if(event.entity.definition.id has <entity:botania:mana_burst>.id)
 	{
-		var entityPosOld = event.entity.position3f as IBlockPos;
-		var entityPosNewZ = crafttweaker.util.Position3f.create(entityPosOld.x, entityPosOld.y, entityPosOld.z - 1) as IBlockPos;
-		var entityPosNewX = crafttweaker.util.Position3f.create(entityPosOld.x - 1, entityPosOld.y, entityPosOld.z) as IBlockPos;
-		var entityPosNewXZ = crafttweaker.util.Position3f.create(entityPosOld.x - 1, entityPosOld.y, entityPosOld.z - 1) as IBlockPos;
-	
-		if (toString(event.world.getBlock(entityPosNewZ).definition.id) has "ic2:te"||toString(event.world.getBlock(entityPosOld).definition.id) has "ic2:te"|| toString(event.world.getBlock(entityPosNewX).definition.id) has "ic2:te"||toString(event.world.getBlock(entityPosNewXZ).definition.id) has "ic2:te")
+		var entityPosOld = event.entity.position3f;
+		var entityPosNew = crafttweaker.world.IBlockPos.create(Math.floor(entityPosOld.x),Math.floor(entityPosOld.y),Math.floor(entityPosOld.z)) as IBlockPos;
+		if (toString(event.world.getBlock(entityPosNew).definition.id) has "ic2:te")
 		{
 			event.cancel();
 		}

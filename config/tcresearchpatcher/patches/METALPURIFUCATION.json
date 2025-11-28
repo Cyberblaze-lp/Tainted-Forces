@@ -1,0 +1,27 @@
+[
+    {
+        "key": "METALPURIFICATION",
+ "ops": [
+	    
+            {
+                "op":"replace",
+                "path": "parents/0",
+				"value":["SIMPLEOREPROCESSING"]
+				
+           
+            		
+            },
+             {
+                "op":"replace",
+                "path": "location/0",
+				"value":["5"]
+				
+           
+            		
+            }
+
+
+
+        ]
+    }
+]
