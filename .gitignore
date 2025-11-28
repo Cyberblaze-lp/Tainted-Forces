@@ -40,6 +40,7 @@ OpenComputersMod*
 /journeymap
 /cache
 /caches
+!/caches/thaumicspeedup/*
 /dumps
 /config/spark/data
 /config/spark/tmp

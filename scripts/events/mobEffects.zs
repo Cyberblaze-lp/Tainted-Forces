@@ -13,22 +13,17 @@ import crafttweaker.entity.IEntityLivingBase;
 
 
 events.onEntityJoinWorld(function(event as crafttweaker.event.EntityJoinWorldEvent){
+    if(isNull(event.entity.definition)){
+        return;
+    }
 
-if(isNull(event.entity.definition))
-{
-return;
-}
-
-if (event.entity.definition.id == <entity:thaumcraft:taintswarm>.id)
-{
-   
-    var levi1 = <potion:minecraft:levitation>.makePotionEffect(9999, 0 ,false, false) as IPotionEffect;
-    var levi2 = <potion:minecraft:levitation>.makePotionEffect(9999, 0 ,true, false) as IPotionEffect;
-    val entity as IEntityLivingBase = event.entity;
-    entity.addPotionEffect(levi1);
-    entity.addPotionEffect(levi2);
-}
-
+    if (event.entity.definition.id == <entity:thaumcraft:taintswarm>.id){
+        var levi1 = <potion:minecraft:levitation>.makePotionEffect(9999, 0 ,false, false) as IPotionEffect;
+        var levi2 = <potion:minecraft:levitation>.makePotionEffect(9999, 0 ,true, false) as IPotionEffect;
+        val entity as IEntityLivingBase = event.entity;
+        entity.addPotionEffect(levi1);
+        entity.addPotionEffect(levi2);
+    }
 });
 
 

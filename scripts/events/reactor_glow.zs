@@ -20,40 +20,39 @@ import crafttweaker.util.Math;
 
 
 events.onWorldTick(function(event as crafttweaker.event.WorldTickEvent){
-
-if (event.world.getWorldTime() % 500 !=0 || event.world.isRemote())
-	{
-	return;
+	if (event.world.getWorldTime() % 500 !=0 || event.world.isRemote()){
+		return;
 	}
-var tiles = event.world.native.loadedTileEntityList as TileEntity[];
-for tile in tiles
-	{
-	if( tile.toString() has "TileEntityNuclearReactorElectric")
-		{
-		if(isNull(event.world.getBlockState(tile.getPos().wrapper))||isNull(event.world.getBlock(tile.getPos().wrapper).data)) {
-        return;
-    	}
 
-
-if (toString(event.world.getBlock(tile.getPos().wrapper).data) has "active: 1 as byte")
-					{
-						
-						
-					var command = "summon botania:mana_storm" + " " + toString(tile.getPos().wrapper.getX()) + " " + toString(tile.getPos().wrapper.getY())
-					+ ".5 " + toString(tile.getPos().wrapper.getZ());
-					server.commandManager.executeCommandSilent(
-					server, command);
-						
-					}	
-				}
+	var tiles = event.world.native.loadedTileEntityList as TileEntity[];
+	for tile in tiles{
+		if( tile.toString() has "TileEntityNuclearReactorElectric"){
+			if(
+				isNull(event.world.getBlockState(tile.getPos().wrapper))
+			 || isNull(event.world.getBlock(tile.getPos().wrapper).data)
+			) {
+				return;
+			}
+			if (toString(event.world.getBlock(tile.getPos().wrapper).data) has "active: 1 as byte"){			
+				var command = 
+					"summon botania:mana_storm " + 
+					" " + 
+					toString(tile.getPos().wrapper.getX()) + 
+					" " + 
+					toString(tile.getPos().wrapper.getY()) + 
+					".5 " + 
+					toString(tile.getPos().wrapper.getZ())
+				;
+				server.commandManager.executeCommandSilent(server, command);
+			}
 		}
+	}
 
 });
 
 
 events.onEntityJoinWorld(function(event as crafttweaker.event.EntityJoinWorldEvent){
-	if isNull(event.entity.definition)
-	{
+	if isNull(event.entity.definition){
 		return;
 	}
 	if(event.entity.definition.id has <entity:botania:mana_burst>.id)
@@ -68,14 +67,8 @@ events.onEntityJoinWorld(function(event as crafttweaker.event.EntityJoinWorldEve
 });
 
 
-
-
-
-
 events.onExplosionStart(function(event as crafttweaker.event.ExplosionStartEvent){
-
-	if toString(event.world.getBlock(event.position).data) has "ic2:nuclear_reactor"
-	{
+	if toString(event.world.getBlock(event.position).data) has "ic2:nuclear_reactor"{
 		event.cancel();
 	}
 });
