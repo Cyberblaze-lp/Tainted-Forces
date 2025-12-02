@@ -18,7 +18,7 @@ recipes.addShaped(<thebetweenlands:item_cage>, [[<thebetweenlands:weedwood_plank
 mods.thaumcraft.Crucible.removeRecipe(<thaumcraft:ingot>);
 mods.thaumcraft.Infusion.removeRecipe(<thaumicaugmentation:thaumostatic_harness_augment:1>);
 mods.thaumcraft.Infusion.removeRecipe(<thaumicaugmentation:thaumostatic_harness>);
-mods.thaumcraft.Crucible.registerRecipe("betterthaumium", "METALLURGY@2",<thaumcraft:ingot>,<ore:ingotSteel>,[<aspect:praecantatio>*5,<aspect:terra>*5]);
+mods.thaumcraft.Crucible.registerRecipe("betterthaumium", "METALLURGY@2",<thaumcraft:ingot>,<ore:ingotBismuth>,[<aspect:praecantatio>*5,<aspect:terra>*5]);
 mods.thaumcraft.Infusion.registerRecipe("FLEXPACK", "THAUMOSTATIC_HARNESS", <thaumicaugmentation:thaumostatic_harness>,10, [<aspect:gelum>*50,<aspect:potentia>*100,<aspect:machina>*50, <aspect:volatus>*50, <aspect:motus>*25],<thaumicaugmentation:material:4>,[<thaumcraft:vis_generator>,<immersiveengineering:metal_device1:8>,<ore:plateBrass>, <ore:plateBrass>,<thermalfoundation:material:1025>, <ore:circuitAdvanced>,<thaumcraft:plank_greatwood>,<thaumcraft:plank_greatwood>,<thaumcraft:mechanism_complex>]);
 mods.thaumcraft.Infusion.registerRecipe("Gucci Girdle", "THAUMOSTATIC_GIRDLE",<thaumicaugmentation:thaumostatic_harness_augment:1>,10, [<aspect:aer>*50 , <aspect:volatus>*50, <aspect:motus>*50, <aspect:desiderium>*50],<thaumcraft:baubles:2>,[<ore:ingotGold>,<ore:ingotGold>,<thebetweenlands:amulet_slot>]);
 mods.thaumcraft.Infusion.registerRecipe("SUPERFUEL", "IGNATIUSFUEL",<metallurgy:ignatius_fuel>,5, [<aspect:ignis>*10 , <aspect:alkimia>*5, <aspect:permutatio>*5, <aspect:desiderium>*5],<ore:clusterIgnatius>,[<ore:dustPhosphorus>,<metallurgy:thermite_dust>,<metallurgy:thermite_dust>,<embers:ember_cluster>,<ore:dustPyrotheum>]);
@@ -33,7 +33,6 @@ mods.thaumcraft.Infusion.registerRecipe("waystones2", "BASEELDRITCH", <thebetwee
 //Si'vlu Recipes
 mods.botania.ManaInfusion.removeRecipe(<botania:manaresource>);
 mods.botania.ManaInfusion.addInfusion(<botania:manaresource>, <ore:ingotWeakBlueSteel>, 4000);
-mods.thaumcraft.Crucible.registerRecipe("betterthaumium2", "METALLURGY@2",<thaumcraft:ingot>*4,<ore:ingotManasteel>,[<aspect:praecantatio>*20,<aspect:terra>*20]);
 
 recipes.remove(<astralsorcery:blockblackmarble>);
 

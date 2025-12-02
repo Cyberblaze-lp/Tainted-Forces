@@ -105,9 +105,11 @@ recipes.removeShaped(<railcraft:circuit:3>, [[null, <minecraft:repeater>, <ore:w
 recipes.removeShaped(<railcraft:circuit:2>, [[null, <minecraft:repeater>, <ore:wool>], [<ore:slimeball>, <ore:plateGold>, <ore:dustRedstone>], [<ore:wool>, <ore:dustRedstone>, <ore:gemLapis>]]);
 recipes.removeShaped(<railcraft:circuit:1>, [[null, <minecraft:repeater>, <ore:blockWoolGreen>], [<ore:slimeball>, <ore:plateGold>, <ore:dustRedstone>], [<ore:blockWoolGreen>, <ore:dustRedstone>, <ore:gemLapis>]]);
 recipes.removeShaped(<railcraft:circuit>, [[null, <minecraft:repeater>, <ore:woolRed>], [<ore:slimeball>, <ore:plateGold>, <ore:dustRedstone>], [<ore:woolRed>, <ore:dustRedstone>, <ore:gemLapis>]]);
-recipes.removeShaped(<clothesline:spinner>, [[<ore:stickWood>, <ore:stickWood>], [<ore:plankWood>, <ore:stickWood>]]);
-recipes.removeShaped(<clothesline:crank>, [[<ore:stickWood>, <ore:ingotIron>, <ore:stickWood>]]);
-recipes.removeShaped(<clothesline:clothesline_anchor> * 4, [[<ore:ingotIron>], [<ore:stickWood>]]);
+recipes.remove(<clothesline:spinner>);
+recipes.remove(<clothesline:crank>);
+recipes.remove(<clothesline:clothesline_anchor>);
+recipes.remove(<clothesline:clothesline>);
+
 recipes.removeShaped(<quark:chain> * 3, [[<ore:nuggetIron>, <ore:nuggetIron>, null], [<ore:nuggetIron>, <ore:ingotIron>, null], [null, null, <ore:ingotIron>]]);
 recipes.removeShaped(<betternether:reeds_block>, [[<ore:sugarcane>, <ore:sugarcane>, <ore:sugarcane>], [<ore:sugarcane>, <ore:sugarcane>, <ore:sugarcane>], [<ore:sugarcane>, <ore:sugarcane>, <ore:sugarcane>]]);
 recipes.removeShaped(<immersiveintelligence:mechanical_device>, [[<ore:plateBrass>, <immersiveengineering:material:8>, <ore:plateBrass>], [<ore:stickIron>, <ore:scaffoldingTreatedWood>, <ore:stickIron>], [<ore:plateBrass>, null, <ore:plateBrass>]]);
@@ -161,7 +163,6 @@ recipes.addShapeless(<railcraft:circuit:3> * 2, [<tfc:brass_mechanisms>, <minecr
 recipes.addShapeless(<railcraft:circuit:1> * 2, [<tfc:brass_mechanisms>, <minecraft:repeater>, <ore:blockWoolGreen>]);
 recipes.addShapeless(<railcraft:circuit> * 2, [<tfc:brass_mechanisms>, <minecraft:repeater>, <ore:woolRed>]);
 recipes.addShapeless(<minecraft:stone_pressure_plate>, [<ore:pressurePlateStone>]);
-recipes.addShapeless(<clothesline:clothesline> * 8, [<tfc:spindle>.transformDamage(1), <tfc:crop/product/jute_fiber>]);
 recipes.addShapeless(<minecraft:anvil>, [<tfc:metal/anvil/wrought_iron>]);
 recipes.addShapeless(<minecraft:anvil> * 2, [<tfc:metal/anvil/steel>]);
 recipes.addShapeless(<railcraft:worldspike:3>, [<railcraft:worldspike:2>]);
@@ -264,9 +265,6 @@ recipes.addShaped(<mekanism:machineblock3:6>, [[null, <ore:plateSteel>, null], [
 recipes.addShaped(<mystgears:gear_flywheel_heavy>, [[<ore:ingotDoubleLead>, <ore:ingotDoubleLead>, <ore:ingotDoubleLead>], [<ore:ingotDoubleLead>, <ore:sleeveBrass>, <ore:ingotDoubleLead>], [<ore:ingotDoubleLead>, <ore:ingotDoubleLead>, <ore:ingotDoubleLead>]]);
 recipes.addShaped(<mystgears:gear_flywheel_light>, [[<ore:ingotIron>, <ore:ingotIron>, <ore:ingotIron>], [<ore:ingotIron>, <ore:sleeveBrass>, <ore:ingotIron>], [<ore:ingotIron>, <ore:ingotIron>, <ore:ingotIron>]]);
 recipes.addShaped(<clothesline:crank>, [[<minecraft:lever>, <ore:stickWood>]]);
-recipes.addShaped(<clothesline:clothesline_anchor> * 12, [[<ore:sleeveSteel>], [<ore:stickWood>]]);
-recipes.addShaped(<clothesline:clothesline_anchor> * 6, [[<ore:sleeveBrass>], [<ore:stickWood>]]);
-recipes.addShaped(<clothesline:clothesline_anchor> * 3, [[<ore:sleeveTin>], [<ore:stickWood>]]);
 recipes.addShaped(<immersiveengineering:wirecoil:3> * 4, [[null, <tfc:crop/product/jute_fiber>, null], [<tfc:crop/product/jute_fiber>, <ore:stickWood>, <tfc:crop/product/jute_fiber>], [null, <tfc:crop/product/jute_fiber>, null]]);
 recipes.addShaped(<quark:rope> * 3, [[<tfc:crop/product/jute_fiber>, <tfc:crop/product/jute_fiber>, <tfc:crop/product/jute_fiber>], [<tfc:crop/product/jute_fiber>, null, <tfc:crop/product/jute_fiber>], [<tfc:crop/product/jute_fiber>, <tfc:crop/product/jute_fiber>, <tfc:crop/product/jute_fiber>]]);
 recipes.addShaped(<projectred-core:screwdriver>, [[null, <ore:rodIron>], [<ore:dyeBlue>, null]]);

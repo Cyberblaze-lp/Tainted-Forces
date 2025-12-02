@@ -62,4 +62,5 @@ BotaniaVars.dat
 /config/probezs.cfg
 /shaderpacks/ComplementaryReimagined*/
 /config/customloadingscreen_timings.nbt
-/config/jei/jei.cfg
+crafttweaker.log
+/config/spash.properties

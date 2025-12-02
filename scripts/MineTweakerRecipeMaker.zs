@@ -18,6 +18,7 @@
 
 // ================================================================================
 //#MARKER REMOVE SHAPED
+recipes.removeShaped(<thaumcraft:table_stone>, [[<minecraft:stone_slab>, <minecraft:stone_slab>, <minecraft:stone_slab>], [<ore:stone>, null, <ore:stone>]]);
 recipes.removeShaped(<integrateddynamics:squeezer>, [[<ore:stickWood>, <ore:blockIron>, <ore:stickWood>], [<ore:stickWood>, null, <ore:stickWood>], [<ore:plankWood>, <ore:ingotIron>, <ore:plankWood>]]);
 
 // ================================================================================
@@ -25,6 +26,8 @@ recipes.removeShaped(<integrateddynamics:squeezer>, [[<ore:stickWood>, <ore:bloc
 
 // ================================================================================
 //#MARKER ADD SHAPELESS
+recipes.addShapeless(<clothesline:clothesline>, [<tfc:crop/product/jute_fiber>, <tfc:crop/product/jute_fiber>]);
+recipes.addShapeless(<tfc:metal/tuyere/wrought_iron>, [<ore:sheetDoubleWroughtIron>, <tfc:metal/tuyere/wrought_iron>.reuse()]);
 recipes.addShapeless(<thermaldynamics:duct_16:7>, [<thermaldynamics:duct_16:6>]);
 recipes.addShapeless(<thermaldynamics:duct_16:6>, [<thermaldynamics:duct_16:7>, <railcraft:glass:*>]);
 recipes.addShapeless(<thermaldynamics:duct_16:6>, [<immersiveengineering:metal_device1:6>, <ore:plateBlackSteel>, <ore:plateBlackSteel>, <railcraft:glass:*>, <railcraft:glass:*>]);
@@ -36,13 +39,25 @@ recipes.addShapeless(<ic2:reactor_heat_vent>, [<ic2:heat_vent>, <ic2:crafting:7>
 
 // ================================================================================
 //#MARKER ADD SHAPED
+recipes.addShaped(<thaumcraft:table_stone>, [[<ore:slabStonePolished>, <ore:slabStonePolished>, <ore:slabStonePolished>], [<ore:stonePolished>, null, <ore:stonePolished>]]);
+recipes.addShaped(<extrautils2:redstonelantern> * 2, [[null, <ore:stone>, null], [<ore:stone>, <ore:gemQuartz>, <ore:stone>], [null, <minecraft:redstone_torch>, null]]);
+recipes.addShaped(<minecraft:glass_bottle>, [[<ore:blockGlass>, null, <ore:blockGlass>], [null, <ore:blockGlass>, null]]);
+recipes.addShaped(<clothesline:clothesline_anchor>, [[<ore:nuggetIron>, <ore:nuggetIron>, <ore:nuggetIron>], [null, <ore:stickIron>, null]]);
+recipes.addShaped(<botania:spreader>, [[<ore:livingwood>, <ore:livingwood>, <ore:livingwood>], [null, <ore:blockStraw>, <tfc:ceramics/fired/vessel>], [<ore:livingwood>, <ore:livingwood>, <ore:livingwood>]]);
+recipes.addShaped(<botania:spreader>, [[<ore:livingwood>, <ore:livingwood>, <ore:livingwood>], [<tfc:ceramics/fired/vessel>, <ore:blockStraw>, null], [<ore:livingwood>, <ore:livingwood>, <ore:livingwood>]]);
+recipes.addShaped(<botania:opencrate:1>, [[<ore:powderMana>, <ore:workbench>, <ore:powderMana>], [<ore:powderMana>, <botania:opencrate>, <ore:powderMana>], [<ore:powderMana>, <ore:powderMana>, <ore:powderMana>]]);
+recipes.addShaped(<tfc:metal/tuyere/wrought_iron>, [[<ore:ingotIron>, <ore:ingotIron>, <ore:ingotIron>], [<ore:ingotIron>, <tfc:metal/tuyere/wrought_iron>.reuse(), null]]);
+recipes.addShaped(<embers:mech_core>, [[<thermaldynamics:duct_16:1>, <thermaldynamics:duct_16:1>, <thermaldynamics:duct_16:1>], [<tfc:brass_mechanisms>, <mysticalmechanics:gearbox_frame>, <tfc:brass_mechanisms>], [<thermaldynamics:duct_16:1>, <thermaldynamics:duct_16:1>, <thermaldynamics:duct_16:1>]]);
+recipes.addShaped(<ic2:crafting:8>, [[<thermaldynamics:duct_16:1>, <thermaldynamics:duct_16:1>, <thermaldynamics:duct_16:1>], [<thermaldynamics:duct_16:1>, <thermaldynamics:duct_16:1>, <thermaldynamics:duct_16:1>]]);
+recipes.addShaped(<thermaldynamics:duct_16:1> * 12, [[<ore:plateCopper>, <ore:plateCopper>, <ore:plateCopper>]]);
+recipes.addShaped(<minecraft:cauldron>, [[<ore:nuggetIron>, null, <ore:nuggetIron>], [<ore:nuggetIron>, null, <ore:nuggetIron>], [<ore:nuggetIron>, <ore:plateIron>, <ore:nuggetIron>]]);
+recipes.addShaped(<ic2:resource:14>, [[null, <ore:plateLead>, null], [<ore:plateLead>, <ore:scaffoldingSteel>, <ore:plateLead>], [null, <ore:plateLead>, null]]);
 recipes.addShaped(<integrateddynamics:squeezer>, [[<ore:stickIron>, <ore:ingotDoubleIron>, <ore:stickIron>], [<ore:stickIron>, <ore:springBrass>, <ore:stickIron>], [<ore:stickIron>, <ore:springBrass>, <ore:stickIron>]]);
 recipes.addShaped(<embers:item_gauge> * 3, [[<minecraft:clock>], [<ore:plateLead>]]);
 recipes.addShaped(<embers:item_gauge>, [[<ore:dustRedstone>], [<ore:paper>], [<ore:plateLead>]]);
 recipes.addShaped(<thermaldynamics:duct_16:1> * 8, [[<thermaldynamics:duct_16>, <thermaldynamics:duct_16>, <thermaldynamics:duct_16>], [<thermaldynamics:duct_16>, <ore:ingetAnyBronze>, <thermaldynamics:duct_16>], [<thermaldynamics:duct_16>, <thermaldynamics:duct_16>, <thermaldynamics:duct_16>]]);
 recipes.addShaped(<thermaldynamics:duct_16> * 8, [[<thermaldynamics:duct_16:1>, <thermaldynamics:duct_16:1>, <thermaldynamics:duct_16:1>], [<thermaldynamics:duct_16:1>, <ore:blockGlassColorless>, <thermaldynamics:duct_16:1>], [<thermaldynamics:duct_16:1>, <thermaldynamics:duct_16:1>, <thermaldynamics:duct_16:1>]]);
 recipes.addShaped(<thermaldynamics:duct_16:1> * 24, [[<ore:nuggetCopper>, <ore:nuggetCopper>, <ore:nuggetCopper>], [<ore:sheetAnyBronze>, null, <ore:sheetAnyBronze>], [<ore:nuggetCopper>, <ore:nuggetCopper>, <ore:nuggetCopper>]]);
-recipes.addShaped(<clothesline:clothesline_anchor> * 16, [[<immersiveengineering:material:8>], [<ore:stickIron>]]);
 recipes.addShaped(<immersiveengineering:metal_device1:6> * 24, [[<ore:plateSteel>, <ore:plateSteel>, <ore:plateSteel>],[null,null,null], [<ore:plateSteel>, <ore:plateSteel>, <ore:plateSteel>]]);
 recipes.addShaped(<tconstruct:faucet>, [[<ore:brick>, <ore:dustCharcoal>, <ore:brick>], [null, <ore:mortar>, null]]);
 recipes.addShaped(<tconstruct:channel> * 3, [[<ore:brick>, <ore:dustCharcoal>, <ore:brick>], [<ore:mortar>, <ore:brick>, <ore:mortar>]]);

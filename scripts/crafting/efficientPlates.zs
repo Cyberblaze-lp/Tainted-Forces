@@ -219,6 +219,121 @@ recipes.removeByRecipeName("unidict:plateplatinum_x1_size.2");
 	
 	mods.embers.DawnstoneAnvil.add([<tfc:metal/double_ingot/tough_alloy>],<ore:ingottough_alloy>,<ore:ingottough_alloy>);
 	mods.embers.DawnstoneAnvil.add([<tfc:metal/sheet/tough_alloy>*3],<ore:ingotDoubletough_alloy>,<ore:ingotDoubletough_alloy>);
+
+	mods.embers.DawnstoneAnvil.add([<tfc:metal/double_sheet/bismuth>],<ore:sheetBismuth>,<ore:sheetBismuth>);
+
+	mods.embers.DawnstoneAnvil.add([<tfc:metal/double_sheet/nickel>],<ore:sheetNickel>,<ore:sheetNickel>);
+
+	mods.embers.DawnstoneAnvil.add([<tfc:metal/double_sheet/lead>],<ore:sheetLead>,<ore:sheetLead>);
+
+	mods.embers.DawnstoneAnvil.add([<tfc:metal/double_sheet/gold>],<ore:sheetGold>,<ore:sheetGold>);
+	
+	mods.embers.DawnstoneAnvil.add([<tfc:metal/double_sheet/copper>],<ore:sheetCopper>,<ore:sheetCopper>);
+
+	mods.embers.DawnstoneAnvil.add([<tfc:metal/double_sheet/brass>],<ore:sheetBrass>,<ore:sheetBrass>);
+
+	mods.embers.DawnstoneAnvil.add([<tfc:metal/double_sheet/antimony>],<ore:sheetAntimony>,<ore:sheetAntimony>);
+
+	mods.embers.DawnstoneAnvil.add([<tfc:metal/double_sheet/rose_gold>],<ore:sheetRoseGold>,<ore:sheetRoseGold>);
+	
+	mods.embers.DawnstoneAnvil.add([<tfc:metal/double_sheet/silver>],<ore:sheetSilver>,<ore:sheetSilver>);
+
+	mods.embers.DawnstoneAnvil.add([<tfc:metal/double_sheet/sterling_silver>],<ore:sheetSterlingSilver>,<ore:sheetSterlingSilver>);
+
+	mods.embers.DawnstoneAnvil.add([<tfc:metal/double_sheet/zinc>],<ore:sheetZinc>,<ore:sheetZinc>);
+
+	mods.embers.DawnstoneAnvil.add([<tfc:metal/double_sheet/tin>],<ore:sheetTin>,<ore:sheetTin>);
+
+	mods.embers.DawnstoneAnvil.add([<tfc:metal/double_sheet/bronze>],<ore:sheetBronze>,<ore:sheetBronze>);
+	
+	mods.embers.DawnstoneAnvil.add([<tfc:metal/double_sheet/bismuth_bronze>],<ore:sheetBismuthBronze>,<ore:sheetBismuthBronze>);
+
+	mods.embers.DawnstoneAnvil.add([<tfc:metal/double_sheet/black_bronze>],<ore:sheetBlackBronze>,<ore:sheetBlackBronze>);
+
+	mods.embers.DawnstoneAnvil.add([<tfc:metal/double_sheet/lithium>],<ore:sheet>,<ore:sheet>);
+
+	mods.embers.DawnstoneAnvil.add([<tfc:metal/double_sheet/lithium>],<ore:sheetLithium>,<ore:sheetLithium>);
+
+	mods.embers.DawnstoneAnvil.add([<tfc:metal/double_sheet/constantan>],<ore:sheetConstantan>,<ore:sheetConstantan>);
+
+	
+
+	mods.embers.DawnstoneAnvil.add([<tfc:metal/double_sheet/electrum>],<ore:sheetElectrum>,<ore:sheetElectrum>);
+	
+	mods.embers.DawnstoneAnvil.add([<tfc:metal/double_sheet/nickel_silver>],<ore:sheetNickelSilver>,<ore:sheetNickelSilver>);
+	
+	mods.embers.DawnstoneAnvil.add([<tfc:metal/double_sheet/red_alloy>],<ore:sheetRedAlloy>,<ore:sheetRedAlloy>);
+	
+	mods.embers.DawnstoneAnvil.add([<tfc:metal/double_sheet/mithril>],<ore:sheetMithril>,<ore:sheetMithril>);
+	
+	mods.embers.DawnstoneAnvil.add([<tfc:metal/double_sheet/wrought_iron>],<ore:sheetIron>,<ore:sheetIron>);
+	
+	mods.embers.DawnstoneAnvil.add([<tfc:metal/double_sheet/pig_iron>],<ore:sheetPigIron>,<ore:sheetPigIron>);
+	
+	mods.embers.DawnstoneAnvil.add([<tfc:metal/double_sheet/aluminium_brass>],<ore:sheetAluminiumBrass>,<ore:sheetAluminiumBrass>);
+	
+	mods.embers.DawnstoneAnvil.add([<tfc:metal/double_sheet/aluminium>],<ore:sheetAluminium>,<ore:sheetAluminium>);
+	
+	mods.embers.DawnstoneAnvil.add([<tfc:metal/double_sheet/cobalt>],<ore:sheetCobalt>,<ore:sheetCobalt>);
+	
+	mods.embers.DawnstoneAnvil.add([<tfc:metal/double_sheet/ardite>],<ore:sheetArdite>,<ore:sheetArdite>);
+	
+	mods.embers.DawnstoneAnvil.add([<tfc:metal/double_sheet/invar>],<ore:sheetInvar>,<ore:sheetInvar>);
+	
+	mods.embers.DawnstoneAnvil.add([<tfc:metal/double_sheet/magnesium>],<ore:sheetMagnesium>,<ore:sheetMagnesium>);
+	
+	mods.embers.DawnstoneAnvil.add([<tfc:metal/double_sheet/manganese>],<ore:sheetManganese>,<ore:sheetManganese>);
+	
+	mods.embers.DawnstoneAnvil.add([<tfc:metal/double_sheet/boron>],<ore:sheetBoron>,<ore:sheetBoron>);
+	
+	mods.embers.DawnstoneAnvil.add([<tfc:metal/double_sheet/magnesium_diboride>],<ore:sheetMagnesiumDiboride>,<ore:sheetMagnesiumDiboride>);
+	
+	mods.embers.DawnstoneAnvil.add([<tfc:metal/double_sheet/thorium>],<ore:sheetThorium>,<ore:sheetThorium>);
+	
+	mods.embers.DawnstoneAnvil.add([<tfc:metal/double_sheet/uranium>],<ore:sheetUranium>,<ore:sheetUranium>);
+	
+	
+	mods.embers.DawnstoneAnvil.add([<tfc:metal/double_sheet/manyullyn>],<ore:sheetManyullyn>,<ore:sheetManyullyn>);
+	
+	mods.embers.DawnstoneAnvil.add([<tfc:metal/double_sheet/steel>],<ore:sheetSteel>,<ore:sheetSteel>);
+	
+	mods.embers.DawnstoneAnvil.add([<tfc:metal/double_sheet/black_steel>],<ore:sheetBlackSteel>,<ore:sheetBlackSteel>);
+	
+	mods.embers.DawnstoneAnvil.add([<tfc:metal/double_sheet/platinum>],<ore:sheetPlatinum>,<ore:sheetPlatinum>);
+	
+	mods.embers.DawnstoneAnvil.add([<tfc:metal/double_sheet/ferroboron>],<ore:sheetFerroboron>,<ore:sheetFerroboron>);
+	
+	mods.embers.DawnstoneAnvil.add([<tfc:metal/double_sheet/red_steel>],<ore:sheetRedSteel>,<ore:sheetRedSteel>);
+	
+	mods.embers.DawnstoneAnvil.add([<tfc:metal/double_sheet/blue_steel>],<ore:sheetBlueSteel>,<ore:sheetBlueSteel>);
+
+	
+	mods.embers.DawnstoneAnvil.add([<tfc:metal/double_sheet/beryllium>],<ore:sheetBeryllium>,<ore:sheetBeryllium>);
+	
+	
+	mods.embers.DawnstoneAnvil.add([<tfc:metal/double_sheet/beryllium_copper>],<ore:sheetBerylliumCopper>,<ore:sheetBerylliumCopper>);
+
+	
+	mods.embers.DawnstoneAnvil.add([<tfc:metal/double_sheet/osmium>],<ore:sheetOsmium>,<ore:sheetOsmium>);
+
+	
+	mods.embers.DawnstoneAnvil.add([<tfc:metal/double_sheet/titanium>],<ore:sheetTitanium>,<ore:sheetTitanium>);
+	
+	
+	mods.embers.DawnstoneAnvil.add([<tfc:metal/double_sheet/tungsten>],<ore:sheetTungsten>,<ore:sheetTungsten>);
+
+	
+	mods.embers.DawnstoneAnvil.add([<tfc:metal/double_sheet/tungsten_steel>],<ore:sheetTungstenSteel>,<ore:sheetTungstenSteel>);
+	
+	
+	mods.embers.DawnstoneAnvil.add([<tfc:metal/double_sheet/zirconium>],<ore:sheetZirconium>,<ore:sheetZirconium>);
+
+	
+	mods.embers.DawnstoneAnvil.add([<tfc:metal/double_sheet/zircaloy>],<ore:sheetZircaloy>,<ore:sheetZircaloy>);
+
+	
+	mods.embers.DawnstoneAnvil.add([<tfc:metal/double_sheet/tough_alloy>],<ore:sheettough_alloy>,<ore:sheettough_alloy>);
+	
 //Done!	
 
 //special items

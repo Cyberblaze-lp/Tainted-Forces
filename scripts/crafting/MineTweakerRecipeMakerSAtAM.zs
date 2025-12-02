@@ -26,7 +26,7 @@ recipes.remove(<minecraft:bucket>);
 recipes.remove(<minecraft:beacon>);
 recipes.remove(<embers:fluid_transfer>);
 recipes.remove(<tfc:powder/flux>);
-
+recipes.remove(<botania:opencrate:1>);
 // ================================================================================
 //#MARKER REMOVE SHAPED
 recipes.removeShaped(<minecraft:chest>, [[<ore:plankWood>, <ore:plankWood>, <ore:plankWood>], [<ore:plankWood>, null, <ore:plankWood>], [<ore:plankWood>, <ore:plankWood>, <ore:plankWood>]]);
@@ -137,7 +137,6 @@ recipes.addShaped(<thaumcraft:baubles:4>, [[<ore:string>, <ore:string>, <ore:str
 
 recipes.addShaped(<testdummy:dummy>, [[null, <ore:thatch>, null], [<ore:straw>, <tfc:crop/product/burlap_cloth>, <ore:straw>], [null, <minecraft:armor_stand>, null]]);
 recipes.addShaped(<immersiveengineering:blueprint>.withTag({blueprint: "vulcanizer_molds"}), [[<ore:dustVulcanizationCompound>, <ore:dustVulcanizationCompound>, <ore:dustVulcanizationCompound>], [<ore:dyeBlue>, <ore:dyeBlue>, <ore:dyeBlue>], [<ore:paper>, <ore:paper>, <ore:paper>]]);
-recipes.addShaped(<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:conveyor"}) * 6, [[<ore:leather>, <ore:leather>, <ore:leather>], [<ore:ingetAnyBronze>, <ore:sleeveBrass>, <ore:ingetAnyBronze>]]);
 recipes.addShaped(<thaumcraft:ore_cinnabar>, [[<ore:gemCinnabar>, <ore:gemCinnabar>], [<ore:gemCinnabar>, <ore:gemCinnabar>]]);
 recipes.addShaped(<tfc:metal/anvil/tungsten_steel>, [[<ore:ingotDoubleTungstenSteel>, <ore:ingotDoubleTungstenSteel>, <ore:ingotDoubleTungstenSteel>], [null, <ore:ingotDoubleTungstenSteel>, null], [<ore:ingotDoubleTungstenSteel>, <ore:ingotDoubleTungstenSteel>, <ore:ingotDoubleTungstenSteel>]]);
 recipes.addShaped(<minecraft:brewing_stand>, [[null, <ore:bowl>, null], [<ore:springBrass>, <ore:rodBlaze>, null], [<ore:brick>, <ore:brick>, <ore:brick>]]);

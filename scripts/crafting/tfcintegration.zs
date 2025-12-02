@@ -11,11 +11,23 @@ import mods.firmalife.Oven;
 import mods.immersiveintelligence.ChemicalBath;
 mods.immersiveintelligence.ChemicalBath.addRecipe(<ore:stoneMarble>, <astralsorcery:blockmarble>, <liquid:hydrofluoric_acid>*50, 3000, 30);
 
+
+
+<ore:seed>.addItems(itemUtils.getItemsByRegexRegistryName(".*/crop/seeds.*"));
+
+mods.immersiveengineering.Squeezer.removeFluidRecipe(<liquid:plantoil>);
+mods.immersiveengineering.Squeezer.addRecipe(null,<liquid:plantoil>*120,<ore:seed>, 2500);
+
 <ore:categoryMeat>.addAll(<ore:fish>);
 <ore:categoryCookedMeat>.addAll(<ore:listAllmeatcooked>);
 
 //ItemRegistry.registerArmor(IIngredient input, float crushingModifier, float piercingModifier, float slashingModifier);
 //ItemRegistry.registerFood(IIngredient input, int hunger, float water, float saturation, float decay, float grain, float veg, float fruit, float meat, float dairy);
+
+ItemRegistry.registerItemSize(<tfc:sluice>, "VERY_SMALL", "VERY_LIGHT");
+
+ItemRegistry.registerItemSize(<minecraft:minecart>, "VERY_SMALL", "VERY_LIGHT");
+
 
 ItemRegistry.registerFood(<ore:fish>, 1, 10.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.5, 0.0);
 ItemRegistry.registerFood(<ore:listAllmeatcooked>, 1, 3.0, 5.0, 1.0, 0.0, 0.0, 0.0, 1.5, 0.0);
@@ -167,21 +179,13 @@ recipes.remove(<ic2:casing:3>);
 recipes.remove(<ic2:casing:4>);
 recipes.remove(<ic2:casing:5>);
 recipes.remove(<ic2:casing:6>);
-
-Anvil.addRecipe("casingbronze", <ore:sheetAnyBronze>, <ic2:casing>*3, 2,"general","HIT_THIRD_LAST","HIT_SECOND_LAST","PUNCH_LAST");
-Anvil.addRecipe("casingcopper", <ore:plateCopper>, <ic2:casing:1>*3, 1,"general","HIT_THIRD_LAST","HIT_SECOND_LAST","PUNCH_LAST");
-Anvil.addRecipe("casinggold", <ore:plateGold>, <ic2:casing:2>*3, 1,"general","HIT_THIRD_LAST","HIT_SECOND_LAST","PUNCH_LAST");
-Anvil.addRecipe("casinglead", <ore:plateLead>, <ic2:casing:4>*3, 1,"general","HIT_THIRD_LAST","HIT_SECOND_LAST","PUNCH_LAST");
-Anvil.addRecipe("casingtin", <ore:plateTin>, <ic2:casing:6>*3, 1,"general","HIT_THIRD_LAST","HIT_SECOND_LAST","PUNCH_LAST");
-Anvil.addRecipe("casingiron", <ore:plateIron>, <ic2:casing:3>*3, 3,"general","HIT_THIRD_LAST","HIT_SECOND_LAST","PUNCH_LAST");
-Anvil.addRecipe("casingSteel", <ore:plateSteel>, <ic2:casing:5>*3, 4,"general","HIT_THIRD_LAST","HIT_SECOND_LAST","PUNCH_LAST");
-
 //buckets...
 mods.jei.JEI.removeAndHide(<tfc:metal/bucket/blue_steel>);
 mods.jei.JEI.removeAndHide(<tfc:metal/bucket/red_steel>);
 
-Anvil.removeRecipe(<tfc:metal/bucket/red_steel>);
-Anvil.removeRecipe(<tfc:metal/bucket/blue_steel>);
+Anvil.removeRecipe(<tfc:metal/rod/gold>);
+Anvil.removeRecipe(<tfc:metal/rod/steel>);
+Anvil.removeRecipe(<tfc:metal/rod/wrought_iron>);
 
 Anvil.addRecipe("ironBucket", <ore:plateIron>, <minecraft:bucket>, 3,"general","BEND_ANY","BEND_ANY","BEND_ANY");
 
@@ -207,25 +211,17 @@ Anvil.addRecipe("steelHopper", <ore:sheetDoubleSteel>, <minecraft:hopper>*2, 4,"
 //Anvil.addRecipe("steelScrewhop", <ore:plateSteel>, <bithop:screwhop>*2, 4,"general","BEND_THIRD_LAST","DRAW_SECOND_LAST","DRAW_LAST");
 
 
-
+Anvil.addRecipe("ironAxles", <ore:ingotIron>, <mysticalmechanics:axle_iron>*2, 3,"general","DRAW_LAST","DRAW_NOT_LAST","PUNCH_NOT_LAST");
 
 
 
 ItemRegistry.registerItemHeat(<minecraft:quartz>,0.5,1600,false);
 Heating.addRecipe("quartzglass", <minecraft:quartz>, <betternether:quartz_glass>, 512.0, 1700.0);
-
-ItemRegistry.registerItemHeat(<tfc:ore/cinnabar>,0.5,1800,false);
-Heating.addRecipe("quicksilver", <tfc:ore/cinnabar>, <thaumcraft:quicksilver>*2, 512.0, 1800.0);
-
-ItemRegistry.registerItemHeat(<advancedrocketry:fueltank:*>,0.2,1600,false);
-Heating.addRecipe("scrapping1", <advancedrocketry:fueltank:*>, <tfctech:metal/copper_bolt>, 600.0, 1700.0);
-
-ItemRegistry.registerItemHeat(<immersiveengineering:metal_decoration1>,0.2,1600,false);
-Heating.addRecipe("scrapping2", <immersiveengineering:metal_decoration1>, <tfc:metal/scrap/pig_iron>, 600.0, 1700.0);
-
-Heating.addRecipe("scrapping3", <tfc:metal/sheet/pig_iron>, <tfc:metal/scrap/pig_iron>, 600.0, 1700.0);
+ItemRegistry.registerItemHeat(<ore:sand>,0.5,1600,false);
 
 
+ItemRegistry.registerItemHeat(<tfc:wooden_bucket>,0.5,1100,false);
+Heating.addRecipe("waterpurification", <tfc:wooden_bucket>.withTag({Fluid: {FluidName: "fresh_water", Amount: 1000}}), <tfc:wooden_bucket>.withTag({Fluid: {FluidName: "water", Amount: 1000}}), 200.0, 1700.0);
 
 
 
@@ -355,9 +351,9 @@ mods.nuclearcraft.manufactory.addRecipe([<tfc:plants/spanish_moss>,<nuclearcraft
 
 
 
-Anvil.addRecipe("brassspring", <tfctech:metal/brass_long_rod>, <immersiveintelligence:material_spring>, 1,"general","BEND_THIRD_LAST","BEND_SECOND_LAST","SHRINK_LAST");
-Anvil.addRecipe("ironspring", <tfctech:metal/wrought_iron_long_rod>, <immersiveintelligence:material_spring:1>, 3,"general","BEND_THIRD_LAST","BEND_SECOND_LAST","SHRINK_LAST");
-Anvil.addRecipe("steelspring", <tfctech:metal/steel_long_rod>, <immersiveintelligence:material_spring:2>, 4,"general","BEND_THIRD_LAST","BEND_SECOND_LAST","SHRINK_LAST");
+Anvil.addRecipe("brassspring", <tfctech:metal/brass_long_rod>, <immersiveintelligence:material_spring>, 1,"general","SHRINK_LAST","BEND_NOT_LAST","BEND_NOT_LAST");
+Anvil.addRecipe("ironspring", <tfctech:metal/wrought_iron_long_rod>, <immersiveintelligence:material_spring:1>, 3,"general","SHRINK_LAST","BEND_NOT_LAST","BEND_NOT_LAST");
+Anvil.addRecipe("steelspring", <tfctech:metal/steel_long_rod>, <immersiveintelligence:material_spring:2>, 4,"general","SHRINK_LAST","BEND_NOT_LAST","BEND_NOT_LAST");
 
 mods.inworldcrafting.ExplosionCrafting.explodeItemRecipe(<appliedenergistics2:material:1>, <ore:crystalCertusQuartz>, 10);
 
@@ -473,7 +469,6 @@ val remove_gear =
 <pneumaticcraft:assembly_laser>,
 <pneumaticcraft:assembly_platform>,
 <pneumaticcraft:assembly_controller>,
-<botania:altar>,
 <tconstruct:stone_torch>,
 <embers:ember_detector>,
 <mekanismgenerators:generator:6>,
