@@ -489,9 +489,7 @@ val remove_gear =
 <railcraft:boiler_firebox_solid>,
 
 
-<mekanismgenerators:solarpanel>,
-
-<appliedenergistics2:grindstone>
+<mekanismgenerators:solarpanel>
 
 ] as IItemStack[];
 for gear in remove_gear {
