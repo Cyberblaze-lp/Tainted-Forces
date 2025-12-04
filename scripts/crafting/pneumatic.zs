@@ -44,7 +44,7 @@ mods.pneumaticcraft.assembly.addDrillRecipe(<thaumcraft:mechanism_complex>, <pne
 
 
 // to need plastic for rubber
-mods.jei.JEI.removeAndHide(<tfctech:latex/vulcanizing_agents>);
+recipes.remove(<tfctech:latex/vulcanizing_agents>);
 Barrel.removeRecipe(<tfctech:latex/rubber_mix>*6);
 Barrel.addRecipe("cruderubber", <pneumaticcraft:plastic:*>, <liquid:latex>*500,<tfctech:latex/rubber_mix>, 8);
 

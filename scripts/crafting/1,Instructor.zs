@@ -55,7 +55,7 @@ mods.thermalexpansion.Crucible.removeRecipe(<minecraft:stone:1>);
 mods.thermalexpansion.Crucible.removeRecipe(<minecraft:cobblestone>);
 mods.thermalexpansion.Crucible.removeRecipe(<minecraft:stone:2>);
 mods.thermalexpansion.Crucible.removeRecipe(<minecraft:magma>);
-mods.jei.JEI.removeAndHide(<thermalexpansion:augment:352>);
+recipes.remove(<thermalexpansion:augment:352>);
 
 
 
