@@ -1,0 +1,143 @@
+# ----------------------------------------------------------- #
+# ########################################################### #
+#             ### flooded_vanilla.cave Info ###               #
+# ########################################################### #
+#   This is a simple preset which demonstrates the effect of  #
+# CaveBlocks and WallDecorators. It is designed to imitate    #
+# vanilla cave style with the addition of water and gravel on #
+# on the floor.                                               #
+# ----------------------------------------------------------- #
+{
+  dimensions: [
+    0
+  ]
+  replaceableBlocks: [
+    stone
+    dirt
+    grass
+    hardened_clay
+  ]
+  caveBlocks: [
+    # Fills y=(12-45) with water.
+    {
+      states: water
+      height: [ 12, 45 ]
+    }
+    # Manually places obsidian above lava.
+    {
+      states: obsidian
+      height: 11
+    }
+    # Imitates the normal lava placement behavior.
+    {
+      states: lava
+      height: [ 0, 10 ]
+    }
+  ]
+  tunnels: {
+    height: [
+      8
+      128
+    ]
+    resolution: 4
+    distance: 0
+    systemChance: 0.25
+    chance: 0.142
+    systemDensity: 4
+    noiseYReduction: true
+    resizeBranches: true
+    dYaw: {
+      startVal: 0
+      factor: 0.75
+      randFactor: 4
+      exponent: 1
+    }
+    dPitch: {
+      startVal: 0
+      factor: 0.9
+      randFactor: 2
+      exponent: 1
+    }
+    scale: {
+      startVal: 0
+      startValRandFactor: 1
+      factor: 1
+      randFactor: 0
+      exponent: 1
+    }
+    stretch: {
+      startVal: 1
+      factor: 1
+      randFactor: 0
+      exponent: 1
+    }
+    yaw: {
+      startVal: 0
+      startValRandFactor: 1
+    }
+    pitch: {
+      startVal: 0
+      startValRandFactor: 0.25
+    }
+    rooms: {
+      scale: 6
+      stretch: 0.5
+      chance: 0.1
+    }
+    count: 15
+  }
+  ravines: {
+    chance: 0.02
+    height: [
+      20
+      66
+    ]
+    resolution: 4
+    distance: 0
+    dYaw: {
+      startVal: 0
+      factor: 0.5
+      randFactor: 4
+      exponent: 1
+    }
+    dPitch: {
+      startVal: 0
+      factor: 0.8
+      randFactor: 2
+      exponent: 1
+    }
+    scale: {
+      startVal: 0
+      startValRandFactor: 2
+      factor: 1
+      randFactor: 0
+      exponent: 1
+    }
+    stretch: {
+      startVal: 3
+      factor: 1
+      randFactor: 0
+      exponent: 1
+    }
+    yaw: {
+      startVal: 0
+      startValRandFactor: 1
+    }
+    pitch: {
+      startVal: 0
+      startValRandFactor: 0.25
+    }
+    noiseYFactor: 0.7
+  }
+  enabled: false
+  wallDecorators: [
+    # Spawns gravel on the floor.
+    {
+      states: gravel
+      originHeight: [ 0, 63 ]
+      matchers: [ "stone", "dirt" ]
+      directions: down
+      integrity: 0.25
+    }
+  ]
+}

@@ -39,6 +39,7 @@ recipes.addShapeless(<ic2:reactor_heat_vent>, [<ic2:heat_vent>, <ic2:crafting:7>
 
 // ================================================================================
 //#MARKER ADD SHAPED
+recipes.addShaped(<minecraft:cauldron>, [[<ore:nuggetBlackBronze>, null, <ore:nuggetBlackBronze>], [<ore:nuggetBlackBronze>, null, <ore:nuggetBlackBronze>], [<ore:nuggetBlackBronze>, <ore:sheetBlackBronze>, <ore:nuggetBlackBronze>]]);
 recipes.addShaped(<thaumcraft:table_stone>, [[<ore:slabStonePolished>, <ore:slabStonePolished>, <ore:slabStonePolished>], [<ore:stonePolished>, null, <ore:stonePolished>]]);
 recipes.addShaped(<extrautils2:redstonelantern> * 2, [[null, <ore:stone>, null], [<ore:stone>, <ore:gemQuartz>, <ore:stone>], [null, <minecraft:redstone_torch>, null]]);
 recipes.addShaped(<minecraft:glass_bottle>, [[<ore:blockGlass>, null, <ore:blockGlass>], [null, <ore:blockGlass>, null]]);

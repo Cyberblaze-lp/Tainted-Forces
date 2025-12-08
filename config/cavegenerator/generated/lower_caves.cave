@@ -1,0 +1,24 @@
+# Spawns additional tunnels at the bottom of the world.
+{
+  enabled: true
+  # Additional tunnels that spawn at lower heights.
+  tunnels: {
+    # Use a lower height range.
+    height: [ 6, 20 ]
+    # Less likely to spawn systems -> more even distribution.
+    systemChance: 0.005
+    # Less likely to skip some origin points.
+    chance: 0.2
+    # Reduce the overall verticality of lower caves.
+    dPitch: { factor: 0.5 }
+    # Spawn less frequencly than in vanilla.
+    count: 8
+  }
+  caveBlocks: {
+    states: lava
+    height: [
+      0
+      10
+    ]
+  }
+}
