@@ -164,14 +164,14 @@ recipes.remove(<ore:plateBronze>);
 
 
 
-mods.jei.JEI.removeAndHide(<magneticraft:sluice_box>);
-mods.jei.JEI.removeAndHide(<magneticraft:crushing_table>);
-mods.jei.JEI.removeAndHide(<magneticraft:stone_hammer>);
-mods.jei.JEI.removeAndHide(<magneticraft:iron_hammer>);
-mods.jei.JEI.removeAndHide(<magneticraft:steel_hammer>);
-mods.jei.JEI.removeAndHide(<ic2:forge_hammer>);
-mods.jei.JEI.removeAndHide(<ic2:cutter>);
-mods.jei.JEI.removeAndHide(<ic2:te:50>);
+recipes.remove(<magneticraft:sluice_box>);
+recipes.remove(<magneticraft:crushing_table>);
+recipes.remove(<magneticraft:stone_hammer>);
+recipes.remove(<magneticraft:iron_hammer>);
+recipes.remove(<magneticraft:steel_hammer>);
+recipes.remove(<ic2:forge_hammer>);
+recipes.remove(<ic2:cutter>);
+recipes.remove(<ic2:te:50>);
 recipes.remove(<ic2:casing>);
 recipes.remove(<ic2:casing:1>);
 recipes.remove(<ic2:casing:2>);
@@ -180,8 +180,8 @@ recipes.remove(<ic2:casing:4>);
 recipes.remove(<ic2:casing:5>);
 recipes.remove(<ic2:casing:6>);
 //buckets...
-mods.jei.JEI.removeAndHide(<tfc:metal/bucket/blue_steel>);
-mods.jei.JEI.removeAndHide(<tfc:metal/bucket/red_steel>);
+recipes.remove(<tfc:metal/bucket/blue_steel>);
+recipes.remove(<tfc:metal/bucket/red_steel>);
 
 Anvil.removeRecipe(<tfc:metal/rod/gold>);
 Anvil.removeRecipe(<tfc:metal/rod/steel>);
@@ -370,21 +370,15 @@ ItemRegistry.registerFood(<minecraft:spider_eye>, 2, 20.0, 0.0, 10000000.0, 0.0,
 SalisMundus.addSingleConversion(<tfc:charcoal_forge>, <att:charcoalforge>);
 SalisMundus.addSingleConversion(<tfc:firepit>, <att:firepit>);
 
-mods.jei.JEI.removeAndHide(<extrautils2:angelring:*>);
-mods.jei.JEI.removeAndHide(<camping:campfire_wood_off>);
-mods.jei.JEI.removeAndHide(<camping:campfire_cook>);
+recipes.remove(<extrautils2:angelring:*>);
+recipes.remove(<camping:campfire_wood_off>);
+recipes.remove(<camping:campfire_cook>);
 
 
 
 
-val remove_and_hide_gear =
-[
-<travelersbackpack:sleeping_bag_bottom>
-] as IItemStack[];
-for gear in remove_and_hide_gear 
-{
-mods.jei.JEI.removeAndHide(gear);
-}
+//Gear
+recipes.remove(<travelersbackpack:sleeping_bag_bottom>);
 
 
 val remove_gear = 
@@ -489,9 +483,7 @@ val remove_gear =
 <railcraft:boiler_firebox_solid>,
 
 
-<mekanismgenerators:solarpanel>,
-
-<appliedenergistics2:grindstone>
+<mekanismgenerators:solarpanel>
 
 ] as IItemStack[];
 for gear in remove_gear {

@@ -39,8 +39,7 @@ OpenComputersMod*
 /impossible_data
 /journeymap
 /cache
-/caches
-!/caches/thaumicspeedup/*
+!/cache/thaumicspeedup/*
 /dumps
 /config/spark/data
 /config/spark/tmp
@@ -64,3 +63,4 @@ BotaniaVars.dat
 /config/customloadingscreen_timings.nbt
 crafttweaker.log
 /config/spash.properties
+config/jei/jei.cfg

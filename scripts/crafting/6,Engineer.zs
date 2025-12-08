@@ -100,7 +100,7 @@ val processor = <ore:circuitElite>;
 val advcircuit = (<ore:circuitAdvanced>);
 
 advcircuit.remove(<ic2:crafting:2>);
-mods.jei.JEI.removeAndHide(<ic2:crafting:2>);
+recipes.remove(<ic2:crafting:2>);
 val plastic = <ore:sheetPlastic>;
 <ore:itemRubber>.add(<tfctech:latex/rubber>);
 plastic.add(<mekanism:polyethene:2>);
