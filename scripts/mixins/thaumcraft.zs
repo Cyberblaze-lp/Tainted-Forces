@@ -1,3 +1,4 @@
+#loader mixin
 import native.java.util.ArrayList;
 import native.java.util.Iterator;
 import native.net.minecraft.block.BlockFlower;
@@ -18,7 +19,7 @@ import native.thaumcraft.common.lib.utils.BlockUtils;
 import native.thaumcraft.common.lib.utils.EntityUtils;
 import native.thaumcraft.common.lib.utils.Utils;
 import native.thaumcraft.common.world.aura.AuraHandler;
-#loader mixin
+
 
 //Aura & Flux
 
@@ -26,15 +27,17 @@ import native.thaumcraft.common.world.aura.AuraHandler;
 zenClass MixinFluxSpreadFactor {
     #mixin ModifyConstant {method: "processAuraChunk",  constant:{doubleValue: 1.75}}
     function relocateData(value as double) as double {
-        return 1.003;
+        return 1.003d;
     }
 }
+
+
 
 #mixin {targets: "thaumcraft.common.world.aura.AuraThread"}
 zenClass MixinFluxGrace {
     #mixin ModifyConstant {method: "processAuraChunk",  constant:{floatValue: 5.0}}
     function relocateData(value as float) as float {
-        return 20.0;
+        return 20.0f;
     }
 }
 
@@ -42,9 +45,32 @@ zenClass MixinFluxGrace {
 zenClass MixinSpreadSpeed {
     #mixin ModifyConstant {method: "processAuraChunk",  constant:{floatValue: 1.0}}
     function relocateData(value as float) as float {
-        return 10.0;
+        return 10.0f;
     }
 }
+
+
+
+//misc
+
+#mixin {targets: "thaumcraft.common.blocks.misc.BlockFluidDeath"}
+zenClass MixinFluidDeath {
+    #mixin ModifyConstant {method: "func_180634_a",  constant:{intValue: 4}}
+    function relocateData(value as int) as int {
+        return 30;
+    }
+}
+
+
+
+#mixin {targets: "blusunrize.immersiveengineering.common.util.compat.ThaumcraftHelper"}
+zenClass MixinFluidDeathChemthrower {
+    #mixin ModifyConstant {method: "init",  constant:{floatValue: 4.0}}
+    function relocateData(value as float) as float {
+        return 12.0f;
+    }
+}
+
 
 
 
@@ -95,22 +121,6 @@ zenClass MixinTaintSeed {
 
 
 
-//misc
 
-#mixin {targets: "thaumcraft.common.blocks.misc.blockFluidDeath"}
-zenClass MixinFluidDeath {
-    #mixin ModifyConstant {method: "processAuraChunk",  constant:{intValue: 4}}
-    function relocateData(value as int) as int {
-        return 30;
-    }
-}
-
-#mixin {targets: "blusunrize.immersiveengineering.common.util.compat.ThaumcraftHelper"}
-zenClass MixinFluidDeathChemthrower {
-    #mixin ModifyConstant {method: "init",  constant:{intValue: 4}}
-    function relocateData(value as int) as int {
-        return 12;
-    }
-}
 
 
