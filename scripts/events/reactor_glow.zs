@@ -15,7 +15,7 @@ import crafttweaker.event.EntityJoinWorldEvent;
 import crafttweaker.command.ICommandManager;
 import crafttweaker.util.Math;
 //why am i doing this to myself?
-//makes IC2 reactors glow with the light effects of a manastorm charge. Hopefully without the physical effects.
+//makes IC2 reactors glow with the light effects of a manastorm charge. Hopefully withoutthe physical effects.
 
 
 
@@ -36,7 +36,6 @@ events.onWorldTick(function(event as crafttweaker.event.WorldTickEvent){
 			if (toString(event.world.getBlock(tile.getPos().wrapper).data) has "active: 1 as byte"){			
 				var command = 
 					"summon botania:mana_storm " + 
-					" " + 
 					toString(tile.getPos().wrapper.getX()) + 
 					" " + 
 					toString(tile.getPos().wrapper.getY()) + 

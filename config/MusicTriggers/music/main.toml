@@ -25,7 +25,6 @@
 		volume = "1.0"
 
 [triggers]
-
 	[[triggers.dimension]]
 identifier = "space"
 priority = "2"
@@ -45,7 +44,7 @@ identifier = "overworld"
   identifier = "taint"
   mob_targeting = false
   priority = "10"
-  resource_name = [ "taintacle" ]
+  resource_name = [ "thaumcraft:taintacle" ]
 
 	[triggers.universal]
 		active_cooldown = "0"

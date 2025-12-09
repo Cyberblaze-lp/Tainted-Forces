@@ -1,0 +1,146 @@
+# ----------------------------------------------------------- #
+# ########################################################### #
+#               ### stalactites.cave Info ###                 #
+# ########################################################### #
+#   This preset is designed to demonstrate a basic use case   #
+# of the WallDecorator objects included with this mod. While  #
+# there are dedicated stalactite / stalagmite objects in this #
+# mod, this is more so intended to show what WallDecorators   #
+# can do, in addition to just replacing cave walls.           #
+# ----------------------------------------------------------- #
+{
+  dimensions: [
+    0
+  ]
+  replaceableBlocks: [
+    stone
+    dirt
+    grass
+    hardened_clay
+  ]
+  caveBlocks: {
+    states: lava
+    height: [
+      0
+      10
+    ]
+  }
+  tunnels: {
+    height: [
+      8
+      128
+    ]
+    resolution: 4
+    distance: 0
+    systemChance: 0.25
+    chance: 0.142
+    systemDensity: 4
+    noiseYReduction: true
+    resizeBranches: true
+    dYaw: {
+      startVal: 0
+      factor: 0.75
+      randFactor: 4
+      exponent: 1
+    }
+    dPitch: {
+      startVal: 0
+      factor: 0.9
+      randFactor: 2
+      exponent: 1
+    }
+    scale: {
+      startVal: 0
+      startValRandFactor: 1
+      factor: 1
+      randFactor: 0
+      exponent: 1
+    }
+    stretch: {
+      startVal: 1
+      factor: 1
+      randFactor: 0
+      exponent: 1
+    }
+    yaw: {
+      startVal: 0
+      startValRandFactor: 1
+    }
+    pitch: {
+      startVal: 0
+      startValRandFactor: 0.25
+    }
+    rooms: {
+      scale: 6
+      stretch: 0.5
+      chance: 0.1
+    }
+    count: 15
+  }
+  ravines: {
+    chance: 0.02
+    height: [
+      20
+      66
+    ]
+    resolution: 4
+    distance: 0
+    dYaw: {
+      startVal: 0
+      factor: 0.5
+      randFactor: 4
+      exponent: 1
+    }
+    dPitch: {
+      startVal: 0
+      factor: 0.8
+      randFactor: 2
+      exponent: 1
+    }
+    scale: {
+      startVal: 0
+      startValRandFactor: 2
+      factor: 1
+      randFactor: 0
+      exponent: 1
+    }
+    stretch: {
+      startVal: 3
+      factor: 1
+      randFactor: 0
+      exponent: 1
+    }
+    yaw: {
+      startVal: 0
+      startValRandFactor: 1
+    }
+    pitch: {
+      startVal: 0
+      startValRandFactor: 0.25
+    }
+    noiseYFactor: 0.7
+  }
+  enabled: true
+  wallDecorators: [
+    # Direction#DOWN -> stalagmites
+    {
+      # There aren't really any good stalagmite blocks
+      # in vanilla. This will have to do.
+      states: cobblestone_wall
+      height: [ 10, 55 ]
+      matchers: stone
+      directions: down
+      placement: overlay
+      integrity: 0.15
+    }
+    # Direction#UP -> stalactites
+    {
+      states: cobblestone_wall
+      height: [ 10, 55 ]
+      matchers: stone
+      directions: up
+      placement: overlay
+      integrity: 0.15
+    }
+  ]
+}

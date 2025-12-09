@@ -50,12 +50,12 @@ mods.thermalexpansion.Compactor.removeMintRecipe(<thermalfoundation:coin:*>);
 recipes.remove(<minecraft:glass_bottle>);
 recipes.remove(<nyx:meteor_dust>);
 
-ItemRegistry.registerItemMetal(<nyx:meteor_shard>,"titanium",50,false);
-ItemRegistry.registerItemMetal(<thaumcraft:mind>,"brass",200,true);
-ItemRegistry.registerItemMetal(<immersiveengineering:drillhead:1>,"wrought_iron",200,true);
-ItemRegistry.registerItemMetal(<immersiveengineering:drillhead>,"steel",200,true);
-ItemRegistry.registerItemMetal(<betternether:cincinnasite>,"brass",20,true);
-ItemRegistry.registerItemMetal(<thaumcraft:mind:1>,"brass",200,true);
+ItemRegistry.registerItemMetal(<nyx:meteor_shard>,"titanium",144,false);
+ItemRegistry.registerItemMetal(<thaumcraft:mind>,"brass",288,true);
+ItemRegistry.registerItemMetal(<immersiveengineering:drillhead:1>,"wrought_iron",288,true);
+ItemRegistry.registerItemMetal(<immersiveengineering:drillhead>,"steel",288,true);
+ItemRegistry.registerItemMetal(<betternether:cincinnasite>,"brass",32,true);
+ItemRegistry.registerItemMetal(<thaumcraft:mind:1>,"brass",288,true);
 Quern.addRecipe("fluxfrombllimestone", <thebetweenlands:items_misc:27>, <tfc:powder/flux>*3);
 recipes.remove(<tfctech:powder/potash>);
 recipes.remove(<tfctech:smeltery_firebox>);
@@ -119,7 +119,7 @@ furnace.remove(<embers:plate_caminite>);
 
 
 mods.inworldcrafting.FluidToFluid.transform(<liquid:fresh_water>, <liquid:hot_water>, [<cellars:ice_shard> * 4]);
-ItemRegistry.registerItemMetal(<tfcthings:metal_bracing>,"wrought_iron",50,true);
+ItemRegistry.registerItemMetal(<tfcthings:metal_bracing>,"wrought_iron",72,true);
 Welding.addRecipe("diapick", <tfcthings:diamond_grit>, <tfc:metal/pick/black_steel>, <minecraft:diamond_pickaxe>, 5);
 Welding.addRecipe("diaaxe", <tfcthings:diamond_grit>, <tfc:metal/axe/black_steel>, <minecraft:diamond_axe>, 5);
 Welding.addRecipe("diashovel", <tfcthings:diamond_grit>, <tfc:metal/shovel/black_steel>, <minecraft:diamond_shovel>, 5);
@@ -137,8 +137,8 @@ recipes.remove(<immersiveengineering:drillhead>);
 recipes.remove(<immersiveengineering:drillhead:1>);
 recipes.remove(<immersiveintelligence:drillhead:1>);
 recipes.remove(<immersiveintelligence:drillhead:2>);
-ItemRegistry.registerItemMetal(<immersiveintelligence:drillhead:1>,"wrought_iron",200,true);
-ItemRegistry.registerItemMetal(<immersiveintelligence:drillhead>,"steel",200,true);
+ItemRegistry.registerItemMetal(<immersiveintelligence:drillhead:1>,"wrought_iron",288,true);
+ItemRegistry.registerItemMetal(<immersiveintelligence:drillhead>,"steel",288,true);
 Welding.addRecipe("irondrill",<ore:sheetDoubleIron>, <tfc:metal/mace_head/wrought_iron>, <immersiveengineering:drillhead:1>, 2);
 Welding.addRecipe("steeldrill",<ore:sheetDoubleSteel>, <tfc:metal/mace_head/steel>, <immersiveengineering:drillhead>, 3);
 Welding.addRecipe("diairondrill",<immersiveengineering:drillhead:1>, <tfcthings:diamond_grit>, <immersiveintelligence:drillhead:1>, 3);
@@ -190,11 +190,11 @@ Anvil.removeRecipe(<tfc:metal/rod/wrought_iron>);
 Anvil.addRecipe("ironBucket", <ore:plateIron>, <minecraft:bucket>, 3,"general","BEND_ANY","BEND_ANY","BEND_ANY");
 
 //hoppers and hopping accessories
-//ItemRegistry.registerItemMetal(<bithop:pullhop>,"wrought_iron",50,true);
-ItemRegistry.registerItemMetal(<minecraft:hopper>,"wrought_iron",100,true);
-//ItemRegistry.registerItemMetal(<bithop:screwhop>,"wrought_iron",50,true);
-//ItemRegistry.registerItemMetal(<bithop:bithop>,"wrought_iron",50,true);
-//ItemRegistry.registerItemMetal(<bithop:fluxhop>,"wrought_iron",50,true);
+//ItemRegistry.registerItemMetal(<bithop:pullhop>,"wrought_iron",72,true);
+ItemRegistry.registerItemMetal(<minecraft:hopper>,"wrought_iron",144,true);
+//ItemRegistry.registerItemMetal(<bithop:screwhop>,"wrought_iron",72,true);
+//ItemRegistry.registerItemMetal(<bithop:bithop>,"wrought_iron",72,true);
+//ItemRegistry.registerItemMetal(<bithop:fluxhop>,"wrought_iron",72,true);
 recipes.remove(<minecraft:hopper>);
 //recipes.remove(<bithop:bithop>);
 //recipes.remove(<bithop:pullhop>);
@@ -278,13 +278,13 @@ ItemRegistry.registerItemHeat(<tfc:ore/chromite>, 0.5, 1700, false);
 
 	//make beryllium obtainable through reducing gems in the blast furnace
 	
-	ItemRegistry.registerItemMetal(<tfc:gem/beryl>, "beryllium", 10, false);
-	ItemRegistry.registerItemMetal(<tfc:gem/beryl:1>, "beryllium", 15, false);
-	ItemRegistry.registerItemMetal(<tfc:gem/beryl:2>, "beryllium", 25, false);
-	ItemRegistry.registerItemMetal(<tfc:gem/beryl:3>, "beryllium", 50, false);
-	ItemRegistry.registerItemMetal(<tfc:gem/beryl:4>, "beryllium", 100, false);
+	ItemRegistry.registerItemMetal(<tfc:gem/beryl>, "beryllium", 16, false);
+	ItemRegistry.registerItemMetal(<tfc:gem/beryl:1>, "beryllium", 48, false);
+	ItemRegistry.registerItemMetal(<tfc:gem/beryl:2>, "beryllium", 144, false);
+	ItemRegistry.registerItemMetal(<tfc:gem/beryl:3>, "beryllium", 288, false);
+	ItemRegistry.registerItemMetal(<tfc:gem/beryl:4>, "beryllium", 576, false);
 	
-	ItemRegistry.registerItemMetal(<cyberware:component:2>, "titanium", 25, false);
+	ItemRegistry.registerItemMetal(<cyberware:component:2>, "titanium", 48, false);
 
 
 	//disable charcoal recipes in the furnace (use TFC charcoal pit/IE coke oven instead)
