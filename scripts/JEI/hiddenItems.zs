@@ -25,6 +25,9 @@ JEI.hide(<immersiveengineering:metal:27>);
 JEI.hide(<immersiveengineering:metal:28>);
 JEI.hide(<immersiveengineering:metal:29>);
 
+JEI.hide(<immersivecables:coil_block:3>);
+JEI.hide(<immersivecables:wire_coil:3>);
+
 JEI.hide(<magneticraft:sluice_box>);
 JEI.hide(<magneticraft:crushing_table>);
 JEI.hide(<magneticraft:stone_hammer>);
