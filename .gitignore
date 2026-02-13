@@ -38,8 +38,6 @@ OpenComputersMod*
 /mineraltracker
 /impossible_data
 /journeymap
-/cache
-!/cache/thaumicspeedup/*
 /dumps
 /config/spark/data
 /config/spark/tmp
