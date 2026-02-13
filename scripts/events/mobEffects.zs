@@ -1,6 +1,8 @@
 import crafttweaker.event.EntityLivingSpawnEvent;
 import crafttweaker.event.EntityJoinWorldEvent;
 import crafttweaker.event.EntityLivingFallEvent;
+import crafttweaker.event.EntityLivingDeathEvent;
+import crafttweaker.event.EntityLivingDamageEvent;
 import crafttweaker.entity.IEntity;
 import crafttweaker.entity.IEntityDefinition;
 import crafttweaker.potions.IPotionEffect;
@@ -8,12 +10,14 @@ import crafttweaker.entity.IEntityLivingBase;
 import crafttweaker.util.Math;
 import crafttweaker.world.IBlockPos;
 import crafttweaker.util.IRandom;
+import crafttweaker.command.ICommandManager;
+import crafttweaker.server.IServer;
 
 //Applies potion effects to entities upon spawning
 //i thought RotM covered this but here we are
 //special thanks to Girouxdudes on the ct support discord for helping me get this to work
 
-
+//stupid band-aid fix: makes taint swarms able to properly fly again by applying constant levitation.
 events.onEntityJoinWorld(function(event as crafttweaker.event.EntityJoinWorldEvent){
     if(isNull(event.entity.definition)){
         return;
@@ -29,12 +33,9 @@ events.onEntityJoinWorld(function(event as crafttweaker.event.EntityJoinWorldEve
 });
 
 //applies taint poison when standing on taint fibers
-
-
-
 events.onEntityLivingUpdate(function(event as crafttweaker.event.EntityLivingUpdateEvent){
     var world = event.entityLivingBase.world;
-    if(isNull(event.entityLivingBase)||isNull(world)||world.getWorldTime() % 100 !=0 || world.isRemote())
+    if(isNull(event.entityLivingBase.definition)||isNull(world)||world.getWorldTime() % 100 !=0 || world.isRemote())
     {
         return;
     }
@@ -51,11 +52,98 @@ events.onEntityLivingUpdate(function(event as crafttweaker.event.EntityLivingUpd
 
     if (world.getBlock(entityPosNew).definition.id == "thaumcraft:taint_fibre" && world.random.nextInt(1,3) == 2 ){
 
-        var taint1 = <potion:thaumcraft:fluxtaint>.makePotionEffect(200, 0 ,false, false) as IPotionEffect;
+        var taint1 = <potion:thaumcraft:fluxtaint>.makePotionEffect(100, 0 ,false, false) as IPotionEffect;
         val entity as IEntityLivingBase = event.entityLivingBase;
         entity.addPotionEffect(taint1);
     }
 });
+
+
+
+
+// taint death effect: tainted mobs now explode into goo instead of keeling over
+events.onEntityLivingDeath(function(event as crafttweaker.event.EntityLivingDeathEvent){
+    var world = event.entityLivingBase.world;
+    if(isNull(event.entityLivingBase.definition)||isNull(world) || world.isRemote())
+    {
+        return;
+    }
+
+    var entityPosOld = event.entityLivingBase.position3f;
+	
+
+if (event.entityLivingBase.nbt.asString() has "istainted" || event.entityLivingBase.definition.id has "taint"){
+    var invis = <potion:minecraft:invisibility>.makePotionEffect(100, 3 ,false, false) as IPotionEffect;
+event.entityLivingBase.addPotionEffect(invis);
+server.commandManager.executeCommandSilent(event.entityLivingBase, "particle blockcrack ~ ~" + toString(event.entityLivingBase.eyeHeight /2) +" ~ 0.3 "+toString(event.entityLivingBase.eyeHeight /2)+ " 0.3 0 300 force @a 1099");
+server.commandManager.executeCommandSilent(event.entityLivingBase, "playsound thaumcraft:gore hostile @a ~ ~ ~");
+
+}
+
+
+    
+});
+
+
+
+
+//replace tainted mobs with CNPC variant where applicable
+val entries = ["creeper","sheep","cow","pig","chicken","villager","creeper"] as string[];
+
+events.onEntityLivingUpdate(function(event as crafttweaker.event.EntityLivingUpdateEvent){
+    var world = event.entityLivingBase.world;
+    if(isNull(event.entityLivingBase.definition)||isNull(world) || world.isRemote()||isNull(server))
+    {
+        return;
+    }
+
+    var entityPosOld = event.entityLivingBase.position3f;
+	
+
+
+
+    for entityType in entries
+     {
+
+        if (event.entityLivingBase.definition.id has entityType && event.entityLivingBase.getY()>-10)
+        {
+            if (event.entityLivingBase.nbt.asString() has "tainted"){
+            var invis = <potion:minecraft:invisibility>.makePotionEffect(100, 3 ,false, false) as IPotionEffect;
+            event.entityLivingBase.addPotionEffect(invis);
+            server.commandManager.executeCommandSilent(event.entityLivingBase, "noppes clone spawn tainted_"+entityType+" 1");
+
+            server.commandManager.executeCommandSilent(event.entityLivingBase, "playsound thaumcraft:gore hostile @a ~ ~ ~");
+            server.commandManager.executeCommandSilent(event.entityLivingBase, "tp @s ~ ~-500 ~");
+            server.commandManager.executeCommandSilent(event.entityLivingBase, "kill @s");
+           
+           
+        }
+    }
+}
+
+
+    
+});
+
+//make taint seeds incapable of suffocation and starvation
+
+events.onEntityLivingDamage(function(event as crafttweaker.event.EntityLivingDamageEvent){
+
+    if (isNull(event.entityLivingBase.definition))
+    {
+        return;
+    }
+
+if(event.damageSource.damageType has "arve"||event.damageSource.damageType has "all")
+{
+    if(event.entityLivingBase.definition.id has "aint")
+    {
+        event.cancel();
+    }
+}
+
+});
+
 
 
 

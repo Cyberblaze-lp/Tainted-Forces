@@ -9,32 +9,16 @@
 {
   $VANILLA: "ALL" # Default ravines and lava settings.
   enabled: true
-  wallDecorators: [
-    {
-      states: dirt
-      height: [ 20, 40 ]
-      matchers: stone
-      directions: down
-      placement: embed
-      integrity: 0.15
-    }
-    {
-      states: gravel
-      height: [ 20, 40 ]
-      matchers: [ "stone", "dirt" ]
-      directions: down
-      placement: embed
-      integrity: 0.15
-    }
-  ]
+  wallDecorators: []
   tunnels: {
-    originHeight: [ 27, 33 ]
-    # Most tunnels spawn alone.
-    systemChance: 0.001
+    originHeight: [ 2, 200 ]
+    systemChance: 0.8
+    chance: 0.1
     noiseYReduction: false
     rooms: {
-      scale: 7
-      stretch: 0.6
+      scale: 6
+      stretch: 0.5
+      chance: 0.1
     }
     dYaw: {
       factor: 0.9

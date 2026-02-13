@@ -1,12 +1,12 @@
 # Spawns additional tunnels at the bottom of the world.
 {
-  enabled: true
+  enabled: false
   # Additional tunnels that spawn at lower heights.
   tunnels: {
     # Use a lower height range.
-    height: [ 6, 20 ]
+    height: [ 6, 40 ]
     # Less likely to spawn systems -> more even distribution.
-    systemChance: 0.005
+    systemChance: 0.5
     # Less likely to skip some origin points.
     chance: 0.2
     # Reduce the overall verticality of lower caves.
@@ -18,7 +18,7 @@
     states: lava
     height: [
       0
-      10
+      5
     ]
   }
 }

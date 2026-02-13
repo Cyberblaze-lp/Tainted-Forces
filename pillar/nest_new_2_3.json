@@ -1,16 +1,10 @@
-// ===================================================================
-// This is a template for a Pillar structure
-// Do not include these lines in your file
-// The _template.json file is ignored so don't worry about it
-// ===================================================================
-
 {
 	"generatorType": "SURFACE",
 	"minY": 144,
 	"maxY":180,
-	"offsetX": -6,
+	"offsetX": -5,
 	"offsetY": -8,
-	"offsetZ": -5,
+	"offsetZ": -3,
 
 	"mirrorType": "NONE",
 	"rotation": null,

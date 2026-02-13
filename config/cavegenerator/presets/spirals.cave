@@ -8,7 +8,7 @@
 # turning all tunnels generated into downward spirals.        #
 # ----------------------------------------------------------- #
 {
-  enabled: true
+  enabled: false
   tunnels: {
     # Most tunnels will spawn alone.
     systemChance: 0.001

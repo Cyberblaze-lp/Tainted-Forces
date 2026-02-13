@@ -109,7 +109,6 @@ recipes.addShaped(<minecraft:dye:4>, [[<ore:gemLapis>]]);
 recipes.addShaped(<extrautils2:decorativesolid:2>, [[<ore:stonePolished>]]);
 recipes.addShaped(<minecraft:coal_block>, [[<ore:mineralLignite>, <ore:mineralLignite>, <ore:mineralLignite>], [<ore:mineralLignite>, <ore:mineralLignite>, <ore:mineralLignite>], [<ore:mineralLignite>, <ore:mineralLignite>, <ore:mineralLignite>]]);
 recipes.addShaped(<minecraft:coal_block>, [[<ore:mineralBituminousCoal>, <ore:mineralBituminousCoal>, <ore:mineralBituminousCoal>], [<ore:mineralBituminousCoal>, <ore:mineralBituminousCoal>, <ore:mineralBituminousCoal>], [<ore:mineralBituminousCoal>, <ore:mineralBituminousCoal>, <ore:mineralBituminousCoal>]]);
-recipes.addShaped(<tfc:ceramics/fire_clay>, [[<embers:blend_caminite>, <embers:blend_caminite>, <ore:dustGraphite>], [<ore:dustGraphite>, <ore:dustGraphite>, <ore:dustKaolinite>], [<ore:dustKaolinite>, <ore:dustKaolinite>, null]]);
 recipes.addShaped(<thebetweenlands:ancient_remnant_block> * 8, [[<ore:gemPrismarine>, <ore:gemPrismarine>, <ore:gemPrismarine>], [<ore:gemPrismarine>, <tfc:metal/ingot/copper>, <ore:gemPrismarine>], [<ore:gemPrismarine>, <ore:gemPrismarine>, <ore:gemPrismarine>]]);
 recipes.addShaped(<minecraft:sea_lantern>, [[<ore:gemPrismarine>, <ore:dustPrismarine>, <ore:gemPrismarine>], [<ore:dustPrismarine>, <ore:dustPrismarine>, <ore:dustPrismarine>], [<ore:gemPrismarine>, <ore:dustPrismarine>, <ore:gemPrismarine>]]);
 recipes.addShaped(<minecraft:golden_apple>, [[null, <ore:sheetGold>, null], [<ore:sheetGold>, <tfc:food/red_apple>, <ore:sheetGold>], [null, <ore:sheetGold>, null]]);
@@ -124,7 +123,7 @@ recipes.addShaped(<chisel:factory> * 64, [[null, <ore:stone>, null], [<ore:stone
 recipes.addShaped(<chisel:factory> * 64, [[null, <ore:stone>, null], [<ore:stone>, <ore:ingotDoubleWroughtIron>, <ore:stone>], [null, <ore:stone>, null]]);
 recipes.addShaped(<chisel:chisel_iron>, [[<ore:chiselHead>, null], [null, <ore:nuggetCopper>]]);
 recipes.addShaped(<tfc:peat>, [[<ore:dustAsh>, <ore:dustAsh>, <ore:dustAsh>], [<ore:dustAsh>, <ore:dustAsh>, <ore:dustAsh>], [<ore:dustAsh>, <ore:dustAsh>, <ore:dustAsh>]]);
-recipes.addShaped(<embers:heat_coil>, [[<ore:wireCopper>, <ore:wireCopper>, <ore:wireCopper>], [<embers:brick_caminite>, <embers:mech_core>, <embers:brick_caminite>]]);
+recipes.addShaped(<embers:heat_coil>, [[<ore:wireCopper>, <ore:wireCopper>, <ore:wireCopper>], [<minecraft:nether_brick>, <embers:mech_core>, <minecraft:nether_brick>]]);
 recipes.addShaped(<camping:tent:3>, [[null, <tfc:crop/product/burlap_cloth>, null], [<camping:parts:2>, null, <camping:parts:2>]]);
 recipes.addShaped(<camping:tent:15>, [[null, <ore:clothHighQuality>, null], [<camping:parts:2>, null, <camping:parts:2>]]);
 recipes.addShaped(<camping:knife>, [[<ore:knife>, <ore:dyeRed>], [<ore:saw>, <ore:dyeRed>], [<ore:chisel>, <ore:dyeRed>]]);

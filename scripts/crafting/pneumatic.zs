@@ -33,6 +33,11 @@ Squeezer.addRecipe(<tetra:magmatic_cell>,
   <tetra:magmatic_cell:128>,1.0,
   <embers:shard_ember>*5,1.0,
   <minecraft:magma>*2,1.0);
+
+
+  Squeezer.addRecipe(<thaumcraft:tallow>,
+  null, 0.0,
+  <liquid:lubricant>*50);
 mods.pneumaticcraft.pressurechamber.addRecipe([<ore:ingotIron>, <ore:dustBedrock>], 2.0, [<pneumaticcraft:ingot_iron_compressed>]);
 mods.pneumaticcraft.assembly.removeLaserRecipe(<pneumaticcraft:unassembled_pcb>);
 recipes.remove(<pneumaticcraft:advanced_pcb>);
@@ -49,18 +54,23 @@ Barrel.removeRecipe(<tfctech:latex/rubber_mix>*6);
 Barrel.addRecipe("cruderubber", <pneumaticcraft:plastic:*>, <liquid:latex>*500,<tfctech:latex/rubber_mix>, 8);
 
 
+
+
 //CO2
 mods.pneumaticcraft.thermopneumaticprocessingplant.addRecipe(<liquid:oxygen>*200, <thermalfoundation:material:768>, 2.0, 200.0, <liquid:carbon_dioxide>*2000);
 mods.pneumaticcraft.thermopneumaticprocessingplant.addRecipe(<liquid:oxygen>*200, <tfc:powder/charcoal>, 2.0, 200.0, <liquid:carbon_dioxide>*2000);
 mods.pneumaticcraft.thermopneumaticprocessingplant.addRecipe(<liquid:oxygen>*600, <immersiveengineering:material:17>, 3.0, 200.0, <liquid:carbon_dioxide>*6000);
 
 // distillation
-mods.pneumaticcraft.refinery.addRecipe(353,<liquid:vodka>*30, [<liquid:water>*12,<liquid:ethanol>*12,<liquid:methanol>*6] );
-mods.pneumaticcraft.refinery.addRecipe(353,<liquid:rum>*30, [<liquid:water>*12,<liquid:ethanol>*12,<liquid:methanol>*6] );
-mods.pneumaticcraft.refinery.addRecipe(353,<liquid:whiskey>*30, [<liquid:water>*16,<liquid:ethanol>*10,<liquid:methanol>*4] );
-mods.pneumaticcraft.refinery.addRecipe(353,<liquid:rye_whiskey>*30, [<liquid:water>*16,<liquid:ethanol>*10,<liquid:methanol>*4] );
-mods.pneumaticcraft.refinery.addRecipe(353,<liquid:corn_whiskey>*30, [<liquid:water>*16,<liquid:ethanol>*10,<liquid:methanol>*4] );
-mods.pneumaticcraft.refinery.addRecipe(353,<liquid:sake>*30, [<liquid:water>*20,<liquid:ethanol>*8,<liquid:methanol>*2] );
+mods.pneumaticcraft.refinery.addRecipe(353,<liquid:vodka>*50, [<liquid:water>*12,<liquid:ethanol>*12,<liquid:methanol>*6] );
+mods.pneumaticcraft.refinery.addRecipe(353,<liquid:rum>*50, [<liquid:water>*12,<liquid:ethanol>*12,<liquid:methanol>*6] );
+mods.pneumaticcraft.refinery.addRecipe(353,<liquid:whiskey>*50, [<liquid:water>*16,<liquid:ethanol>*10,<liquid:methanol>*4] );
+mods.pneumaticcraft.refinery.addRecipe(353,<liquid:rye_whiskey>*50, [<liquid:water>*16,<liquid:ethanol>*10,<liquid:methanol>*4] );
+mods.pneumaticcraft.refinery.addRecipe(353,<liquid:corn_whiskey>*50, [<liquid:water>*16,<liquid:ethanol>*10,<liquid:methanol>*4] );
+mods.pneumaticcraft.refinery.addRecipe(353,<liquid:beer>*50, [<liquid:water>*25,<liquid:ethanol>*4,<liquid:methanol>*1] );
+mods.pneumaticcraft.refinery.addRecipe(353,<liquid:sake>*50, [<liquid:water>*20,<liquid:ethanol>*8,<liquid:methanol>*2] );
+mods.pneumaticcraft.refinery.addRecipe(353,<liquid:cider>*50, [<liquid:water>*20,<liquid:ethanol>*8,<liquid:methanol>*2] );
+
 
 
 

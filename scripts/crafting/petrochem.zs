@@ -25,6 +25,7 @@ mods.immersiveengineering.Mixer.addRecipe(<liquid:concrete>*1000, <liquid:limewa
 recipes.remove(<immersiveengineering:stone_decoration:4>);
 recipes.remove(<immersiveengineering:stone_decoration:5>);
 mods.terrafirmacraft.Barrel.addRecipe("betterconcrete", <tfc:aggregate>, <liquid:limewater> * 125,<immersiveengineering:stone_decoration:5>,null, 1);
+mods.terrafirmacraft.Barrel.addRecipe("betterconcrete2", <ore:gravel>*2, <liquid:limewater> * 250,<immersiveengineering:stone_decoration:5>,null, 1);
 mods.terrafirmacraft.Barrel.addRecipe("betterasphalt", <tfc:aggregate>, <liquid:tar> * 125,<immersivepetroleum:stone_decoration>,null, 1);
 mods.terrafirmacraft.Barrel.addRecipe("betterhempcrete", <tfc:crop/product/jute_fiber>, <liquid:limewater> * 125,<immersiveengineering:stone_decoration:4>,null, 1);
 

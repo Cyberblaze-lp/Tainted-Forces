@@ -9,27 +9,46 @@
 {
   imports: [
     defaults.cave::caveBlocks as LAVA_CAVE_BLOCK
+    blocks.cave::ROCKSTFC as ROCKSTFC
   ]
   enabled: true
   ravines: {
-    # Increase ravine frequency.
-    chance: 0.00333
-    originHeight: [ 10, 170 ]
-    distance: 140
-    dYaw: { randFactor: 5 }
-    stretch: { startVal: 4 }
-    yaw: { startValRandFactor: 1.5 }
-    pitch: { startValRandFactor: 0.75 }
-    scale: {
+    biomes: {
+      names: [ "tfc:plains", "tfc:rolling_hills", "tfc:high_plains", "tfc:high_hills_edge", "tfc:high_hills", "tfc:mountains_edge", "tfc:mountains" ]
+    }
+    replaceableBlocks: $ROCKSTFC
+    checkWater: true
+    chance: 0.001
+    height: [ 134, 170 ]
+    resolution: 2
+    distance: 360
+    dYaw: {
+      startVal: 0
+      factor: 0.5
+      randFactor: 4
+      exponent: 1
+    }
+    dPitch: {
+      startVal: 0
+      factor: 0.8
+      randFactor: 2
+      exponent: 1
+    }
+    scale: 16
+    stretch: {
       startVal: 2
-      startValRandFactor: 2
+      factor: 1
+      randFactor: 0.3
+      exponent: 1
     }
-    noiseYFactor: 0.9
-    # Use a noise generator to handle wall shape.
-    walls: {
-      frequency: 0.1
-      range: [ 0, 4 ]
+    yaw: {
+      startVal: 0
+      startValRandFactor: 0.5
     }
+    pitch: {
+      startVal: 0
+      startValRandFactor: 0.25
+    }
+    noiseYFactor: 0.6
   }
-  caveBlocks: $LAVA_CAVE_BLOCK
 }

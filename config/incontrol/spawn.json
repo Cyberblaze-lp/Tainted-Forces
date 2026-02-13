@@ -3,7 +3,7 @@
 		"mob": "thaumcraft:taintacle",
 		"onjoin": true,
 		"maxcount": {
-			"amount": 8,
+			"amount": 20,
 			"mob": "thaumcraft:taintacle",
 			"perplayer": true
 		},
@@ -14,14 +14,14 @@
 		],
 		"result": "allow",
 		"groupsizemin": 1,
-		"groupsizemax": 1,
-		"gamestage": "taint1"
+		"groupsizemax": 1
+		
 	},
 	{
 		"mob": "thaumcraft:taintacle",
 		"onjoin": true,
 		"maxcount": {
-			"amount": 8,
+			"amount": 40,
 			"mob": "thaumcraft:taintacle",
 			"perplayer": true
 		},
@@ -29,33 +29,41 @@
 			"thaumcraft:taint_fibre"
 		],
 		"blockoffset": {
-			"y": 1
+			"x": 0,
+			"y": 1,
+			"z": 0
 		},
 		"result": "allow",
 		"groupsizemin": 1,
-		"groupsizemax": 1,
-		"gamestage": "taint1"
+		"groupsizemax": 1
+		
 	},
+
 	{
-		"dimension": 0,
-		"mob": "thaumcraft:taintacletiny",
-		"onjoin": false,
-		"maxcount": {
-			"amount": 3,
-			"mob": "thaumcraft:taintacletiny",
-			"perplayer": true
-		},
-		"block": [
+   
+    "mob": ["minecraft:skeleton", "minecraft.zombie", "minecraft:spider","minecraft:creeper", "minecraft:enderman", "minecraft:zombie_villager","cyberware:cyberzombie"],
+    "block": [
 			"thaumcraft:taint_rock",
 			"thaumcraft:taint_soil",
-			"thaumcraft:taint_fibre",
-			"thaumcraft:taint_crust"
+			"thaumcraft:taint_fibre"
 		],
-		"result": "allow",
-		"groupsizemin": 1,
-		"groupsizemax": 1,
-		"gamestage": "taint3"
-	},
+    "result": "deny"
+  },
+  {
+   "mob": ["minecraft:skeleton", "minecraft.zombie", "minecraft:spider","minecraft:creeper", "minecraft:enderman", "minecraft:zombie_villager","cyberware:cyberzombie"],
+    "block": [
+			
+			"thaumcraft:taint_fibre"
+		],
+	"blockoffset": {
+			"x": 0,
+			"y": 1,
+			"z": 0
+		},
+
+    "result": "deny"
+  },
+	
 	{
 		"dimension": 0,
 		"mob": "embers:ancient_golem",

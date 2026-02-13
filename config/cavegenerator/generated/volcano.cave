@@ -1,0 +1,51 @@
+# ----------------------------------------------------------- #
+# ########################################################### #
+#                 ### ravines.cave Info ###                   #
+# ########################################################### #
+#   This preset is designed to demonstrate a basic use case   #
+# for Cave Generator which increases the frequency and shape  #
+# of ravines, while disabling other cave-related features.    #
+# ----------------------------------------------------------- #
+{
+  enabled: true
+  ravines: {
+    biomes: {
+      names: [ "tfc:ocean", "tfc:deep_ocean" ]
+    }
+    replaceableBlocks: [ "tfc:fluid/salt_water", "minecraft:air" ]
+    checkWater: false
+    chance: 0.001
+    height: [ 104, 110 ]
+    resolution: 2
+    distance: 200
+    dYaw: {
+      startVal: 0.1
+      factor: 0.55
+      randFactor: 4
+      exponent: 1
+    }
+    dPitch: {
+      startVal: 0.5
+      factor: 0.8
+      randFactor: 0
+      exponent: 1
+    }
+    scale: 16
+    stretch: {
+      startVal: 2.1
+      factor: 1
+      randFactor: 0.3
+      exponent: 1
+    }
+    yaw: 5
+    pitch: {
+      startVal: 0
+      startValRandFactor: 0
+    }
+    noiseYFactor: 0.02
+  }
+  caveBlocks: {
+    states: tfc:raw/basalt
+    height: [ 100, 165 ]
+  }
+}

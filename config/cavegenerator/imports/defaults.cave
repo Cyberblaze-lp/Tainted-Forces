@@ -1,18 +1,21 @@
 {
+  imports: [
+    blocks.cave::ROCKSTFC as ROCKSTFC
+  ]
   dimensions: [ 0 ]
-  replaceableBlocks: [ "stone", "dirt", "grass", "hardened_clay" ]
+  replaceableBlocks: $ROCKSTFC
   caveBlocks: {
     states: lava
-    height: [ 0, 10 ]
+    height: [ 0, 5 ]
   }
   tunnels: {
-    height: [ 8, 128 ]
+    height: [ 8, 200 ]
     resolution: 4
     distance: 0
-    systemChance: 0.25
-    chance: 0.142
-    systemDensity: 4
-    noiseYReduction: true
+    systemChance: 0.85
+    chance: 0.842
+    systemDensity: 5
+    noiseYReduction: false
     resizeBranches: true
     dYaw: {
       startVal: 0
@@ -55,8 +58,9 @@
     count: 15
   }
   ravines: {
+    checkForWater: true
     chance: 0.02
-    height: [ 20, 66 ]
+    height: [ 2, 100 ]
     resolution: 4
     distance: 0
     dYaw: {
@@ -79,7 +83,7 @@
       exponent: 1
     }
     stretch: {
-      startVal: 3
+      startVal: 5
       factor: 1
       randFactor: 0
       exponent: 1

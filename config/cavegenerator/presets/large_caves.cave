@@ -8,7 +8,7 @@
 # ----------------------------------------------------------- #
 {
   $VANILLA: "ALL" # Default ravines and lava settings.
-  enabled: true
+  enabled: false
   rooms: {
     scale: 7
     stretch: 0.6

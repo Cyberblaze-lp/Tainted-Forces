@@ -8,12 +8,12 @@
 # caves that spawn them. They will appear anywhere they can.  #
 # ----------------------------------------------------------- #
 {
-  enabled: true
+  enabled: false
   caveBlocks: {
     states: lava
     height: [
       0
-      10
+      5
     ]
   }
   stalactites: [

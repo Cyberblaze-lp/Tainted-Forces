@@ -8,7 +8,7 @@
 # ----------------------------------------------------------- #
 {
   $VANILLA: "ALL" # Default ravines and lava settings.
-  enabled: true
+  enabled: false
   caverns: {
     height: [ 7, 50 ]
     generators: {
