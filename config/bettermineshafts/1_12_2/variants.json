@@ -290,9 +290,7 @@
     {
       "biomeTags": [
         [
-          "COLD",
-          "CONIFEROUS",
-          "FOREST"
+          "COLD"
         ]
       ],
       "mainSelector": {
