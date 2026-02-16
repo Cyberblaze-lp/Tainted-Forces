@@ -1,0 +1,223 @@
+{
+    "DeathTime": 0s,
+    "Leashed": 0b,
+    "OnGround": 1b,
+    "LeftHanded": 0b,
+    "AbsorptionAmount": 0.0f,
+    "Attributes": [
+        {
+            "Name": "tc.mobmod",
+            "Base": -2.0d,
+            "Modifiers": [
+                {
+                    "Name": "tainted",
+                    "Operation": 0,
+                    "UUIDMost": -6648679100818833088L,
+                    "UUIDLeast": -4867454916918920238L,
+                    "Amount": 15.0d
+                }
+            ]
+        },
+        {
+            "Name": "tc.mobmodtaint",
+            "Base": 0.0d,
+            "Modifiers": [
+                {
+                    "Name": "istainted",
+                    "Operation": 0,
+                    "UUIDMost": 3220673206479766551L,
+                    "UUIDLeast": -5906789707644069044L,
+                    "Amount": 1.0d
+                }
+            ]
+        },
+        {
+            "Name": "generic.scales",
+            "Base": 0.0d
+        },
+        {
+            "Name": "cyberware.tolerance",
+            "Base": 100.0d
+        },
+        {
+            "Name": "tconevo.flightSpeed",
+            "Base": 0.05d
+        },
+        {
+            "Name": "tconevo.damageTaken",
+            "Base": 1.0d
+        },
+        {
+            "Name": "tconevo.evasionChance",
+            "Base": 1.0d
+        },
+        {
+            "Name": "tconevo.healingReceived",
+            "Base": 1.0d
+        },
+        {
+            "Name": "generic.maxHealth",
+            "Base": 12.0d,
+            "Modifiers": [
+                {
+                    "Name": "HEALTH BUFF 6",
+                    "Operation": 0,
+                    "UUIDMost": 1095869401888276670L,
+                    "UUIDLeast": -7800654906485544975L,
+                    "Amount": 25.0d
+                }
+            ]
+        },
+        {
+            "Name": "generic.knockbackResistance",
+            "Base": 0.0d
+        },
+        {
+            "Name": "generic.movementSpeed",
+            "Base": 0.3d
+        },
+        {
+            "Name": "generic.armor",
+            "Base": 0.0d
+        },
+        {
+            "Name": "generic.armorToughness",
+            "Base": 0.0d
+        },
+        {
+            "Name": "forge.swimSpeed",
+            "Base": 1.0d
+        },
+        {
+            "Name": "generic.followRange",
+            "Base": 16.0d
+        },
+        {
+            "Name": "generic.attackDamage",
+            "Base": 2.0d,
+            "Modifiers": [
+                {
+                    "Name": "DAMAGE BUFF 1",
+                    "Operation": 0,
+                    "UUIDMost": 6003171136057788623L,
+                    "UUIDLeast": -4911720921854441656L,
+                    "Amount": 0.5d
+                }
+            ]
+        }
+    ],
+    "Invulnerable": 0b,
+    "Dimension": 0,
+    "ForgeCaps": {
+        "thebetweenlands:custom_step_sound": {
+        },
+        "thebetweenlands:puppet": {
+            "ticks": 0,
+            "guard": 0b,
+            "stay": 0b,
+            "recruitmentCost": 0
+        },
+        "thebetweenlands:entity_gems": {
+            "gems": [
+            ]
+        },
+        "thaumicaugmentation:portal_state": {
+            "inPortal": 0b
+        },
+        "thebetweenlands:equipment": {
+            "amuletSlots": 1
+        },
+        "pneumaticcraft:hacking": {
+        },
+        "dsurround:data": {
+            "a": 0b,
+            "f": 0b
+        },
+        "metallurgy:punch_effect": {
+            "ticks": 0,
+            "hasAiDisabled": 1b,
+            "knockbackTicks": 0
+        }
+    },
+    "ActiveEffects": [
+        {
+            "CurativeItems": [
+                {
+                    "id": "minecraft:milk_bucket",
+                    "Count": 1,
+                    "Damage": 0s
+                }
+            ],
+            "Duration": 163,
+            "Ambient": 0b,
+            "ShowParticles": 1b,
+            "Id": 32,
+            "Amplifier": 0b,
+            "Incurable": 0b
+        }
+    ],
+    "HandDropChances": [
+        0.085f,
+        0.085f
+    ],
+    "ArmorDropChances": [
+        0.085f,
+        0.085f,
+        0.085f,
+        0.085f
+    ],
+    "Rotation": [
+        -0.57128906f,
+        1.1864849f
+    ],
+    "HurtByTimestamp": 231,
+    "CustomName": "Tainted Scaler",
+    "UpdateBlocked": 0b,
+    "ArmorItems": [
+        {
+        },
+        {
+        },
+        {
+        },
+        {
+        }
+    ],
+    "HandItems": [
+        {
+        },
+        {
+        }
+    ],
+    "Air": 300s,
+    "ForgeData": {
+        "cnpcmarkdata": {
+            "marks": [
+            ]
+        },
+        "thebetweenlands.has_no_equipment": 1b
+    },
+    "Fire": -1s,
+    "FallDistance": 0.0f,
+    "id": "spiderstpo:better_cave_spider",
+    "Motion": [
+        3.96557006896121E-4d,
+        -0.07837316437844019d,
+        8.794952089574949E-4d
+    ],
+    "Health": 27.6f,
+    "HurtTime": 0s,
+    "CanPickUpLoot": 0b,
+    "AABB": [
+        -87.8658543642639d,
+        152.0d,
+        438.96839656390915d,
+        -87.16585437618483d,
+        152.5d,
+        439.6683965519882d
+    ],
+    "FallFlying": 0b,
+    "ModRev": 1,
+    "PersistenceRequired": 1b,
+    "PortalCooldown": 0
+}

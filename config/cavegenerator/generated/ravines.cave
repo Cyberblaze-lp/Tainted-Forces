@@ -9,30 +9,170 @@
 {
   enabled: true
   ravines: {
-    # Increase ravine frequency.
-    chance: 0.00333
-    originHeight: [ 10, 170 ]
-    distance: 140
-    dYaw: { randFactor: 5 }
-    stretch: { startVal: 4 }
-    yaw: { startValRandFactor: 1.5 }
-    pitch: { startValRandFactor: 0.75 }
-    scale: {
-      startVal: 2
-      startValRandFactor: 2
+    biomes: {
+      names: [ "tfc:plains", "tfc:rolling_hills", "tfc:high_plains", "tfc:high_hills_edge", "tfc:high_hills", "tfc:mountains_edge", "tfc:mountains" ]
     }
-    noiseYFactor: 0.9
-    # Use a noise generator to handle wall shape.
-    walls: {
-      frequency: 0.1
-      range: [ 0, 4 ]
-    }
-  }
-  caveBlocks: {
-    states: lava
-    height: [
-      0
-      10
+    replaceableBlocks: [
+      tfc:fluid/fresh_water
+      tfc:raw/basalt
+      tfc:gravel/basalt
+      tfc:sand/basalt
+      tfc:dirt/basalt
+      tfc:grass/basalt
+      tfc:dry_grass/basalt
+      tfc:raw/dacite
+      tfc:gravel/dacite
+      tfc:sand/dacite
+      tfc:dirt/dacite
+      tfc:grass/dacite
+      tfc:dry_grass/dacite
+      tfc:raw/andesite
+      tfc:gravel/andesite
+      tfc:sand/andesite
+      tfc:dirt/andesite
+      tfc:grass/andesite
+      tfc:dry_grass/andesite
+      tfc:raw/rhyolite
+      tfc:gravel/rhyolite
+      tfc:sand/rhyolite
+      tfc:dirt/rhyolite
+      tfc:grass/rhyolite
+      tfc:dry_grass/rhyolite
+      tfc:raw/diorite
+      tfc:gravel/diorite
+      tfc:sand/diorite
+      tfc:dirt/diorite
+      tfc:grass/diorite
+      tfc:dry_grass/diorite
+      tfc:raw/gabbro
+      tfc:gravel/gabbro
+      tfc:sand/gabbro
+      tfc:dirt/gabbro
+      tfc:grass/gabbro
+      tfc:dry_grass/gabbro
+      tfc:raw/granite
+      tfc:gravel/granite
+      tfc:sand/granite
+      tfc:dirt/granite
+      tfc:grass/granite
+      tfc:dry_grass/granite
+      tfc:raw/chert
+      tfc:gravel/chert
+      tfc:sand/chert
+      tfc:dirt/chert
+      tfc:grass/chert
+      tfc:dry_grass/chert
+      tfc:raw/shale
+      tfc:gravel/shale
+      tfc:sand/shale
+      tfc:dirt/shale
+      tfc:grass/shale
+      tfc:dry_grass/shale
+      tfc:raw/slate
+      tfc:gravel/slate
+      tfc:sand/slate
+      tfc:dirt/slate
+      tfc:grass/slate
+      tfc:dry_grass/slate
+      tfc:raw/conglomerate
+      tfc:gravel/conglomerate
+      tfc:sand/conglomerate
+      tfc:dirt/conglomerate
+      tfc:grass/conglomerate
+      tfc:dry_grass/conglomerate
+      tfc:raw/limestone
+      tfc:gravel/limestone
+      tfc:sand/limestone
+      tfc:dirt/limestone
+      tfc:grass/limestone
+      tfc:dry_grass/limestone
+      tfc:raw/claystone
+      tfc:gravel/claystone
+      tfc:sand/claystone
+      tfc:dirt/claystone
+      tfc:grass/claystone
+      tfc:dry_grass/claystone
+      tfc:raw/quartzite
+      tfc:gravel/quartzite
+      tfc:sand/quartzite
+      tfc:dirt/quartzite
+      tfc:grass/quartzite
+      tfc:dry_grass/quartzite
+      tfc:raw/phyllite
+      tfc:gravel/phyllite
+      tfc:sand/phyllite
+      tfc:dirt/phyllite
+      tfc:grass/phyllite
+      tfc:dry_grass/phyllite
+      tfc:raw/schist
+      tfc:gravel/schist
+      tfc:sand/schist
+      tfc:dirt/schist
+      tfc:grass/schist
+      tfc:dry_grass/schist
+      tfc:raw/gneiss
+      tfc:gravel/gneiss
+      tfc:sand/gneiss
+      tfc:dirt/gneiss
+      tfc:grass/gneiss
+      tfc:dry_grass/gneiss
+      tfc:raw/chalk
+      tfc:gravel/chalk
+      tfc:sand/chalk
+      tfc:dirt/chalk
+      tfc:grass/chalk
+      tfc:dry_grass/chalk
+      tfc:raw/dolomite
+      tfc:gravel/dolomite
+      tfc:sand/dolomite
+      tfc:dirt/dolomite
+      tfc:grass/dolomite
+      tfc:dry_grass/dolomite
+      tfc:raw/marble
+      tfc:gravel/marble
+      tfc:sand/marble
+      tfc:dirt/marble
+      tfc:grass/marble
+      tfc:dry_grass/marble
+      tfc:raw/rocksalt
+      tfc:gravel/rocksalt
+      tfc:sand/rocksalt
+      tfc:dirt/rocksalt
+      tfc:grass/rocksalt
+      tfc:dry_grass/rocksalt
     ]
+    checkWater: true
+    chance: 0.001
+    height: [ 134, 170 ]
+    resolution: 2
+    distance: 360
+    dYaw: {
+      startVal: 0
+      factor: 0.5
+      randFactor: 4
+      exponent: 1
+    }
+    dPitch: {
+      startVal: 0
+      factor: 0.8
+      randFactor: 2
+      exponent: 1
+    }
+    scale: 16
+    stretch: {
+      startVal: 2
+      factor: 1
+      randFactor: 0.3
+      exponent: 1
+    }
+    yaw: {
+      startVal: 0
+      startValRandFactor: 0.5
+    }
+    pitch: {
+      startVal: 0
+      startValRandFactor: 0.25
+    }
+    noiseYFactor: 0.6
   }
 }

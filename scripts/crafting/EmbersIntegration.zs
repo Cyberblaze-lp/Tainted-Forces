@@ -24,13 +24,12 @@ recipes.remove(<embers:ember_activator>);
 <embers:mechanical_pump>.addTooltip(format.red("sorry, but this one has a mild chance of corrupting your world. use II's mechanical pump instead"));
 
 
-recipes.addShaped(<embers:stamper>, [[<embers:plate_caminite>, <ore:rodWroughtIron>, <embers:plate_caminite>], [<ore:nuggetCopper>, <ore:rodWroughtIron>, <ore:nuggetCopper>], [<embers:plate_caminite>, <tfc:metal/hammer_head/wrought_iron>, <embers:plate_caminite>]]);
-recipes.addShaped(<embers:auto_hammer>, [[<embers:plate_caminite>, null, <tfc:metal/hammer_head/wrought_iron>], [<ore:ingotDoubleCopper>, <ore:rodWroughtIron>, null], [<embers:plate_caminite>, <tfc:brass_mechanisms>, null]]);
-recipes.addShaped(<embers:dawnstone_anvil>, [[<ore:plateDawnstone>, <ore:plateDawnstone>, <ore:plateDawnstone>], [<ore:plateDawnstone>, <ore:anvil>, <ore:plateDawnstone>], [null, <embers:block_caminite_brick_slab>, null]]);
+recipes.addShaped(<embers:auto_hammer>, [[<minecraft:nether_brick>, null, <tfc:metal/hammer_head/wrought_iron>], [<ore:ingotDoubleCopper>, <ore:rodWroughtIron>, null], [<minecraft:nether_brick>, <tfc:brass_mechanisms>, null]]);
+recipes.addShaped(<embers:dawnstone_anvil>, [[<ore:plateDawnstone>, <ore:plateDawnstone>, <ore:plateDawnstone>], [<ore:plateDawnstone>, <ore:anvil>, <ore:plateDawnstone>], [null, <minecraft:nether_brick>, null]]);
 
 
 mods.embers.Mixer.add(<liquid:lubricant>*2, [<liquid:creosote>*50, <liquid:olive_oil>]);
-mods.embers.Mixer.add(<liquid:uranium>, [<liquid:thorium>*2,<liquid:shallowbreath>*5]);
+mods.embers.Mixer.add(<liquid:uranium>, [<liquid:thorium>*2,<liquid:liquid_death>*5]);
 
 
 //energy generation rebalancing
@@ -248,11 +247,9 @@ mods.embers.HeatCoil.add(<tfc:crucible>, <tfc:ceramics/unfired/crucible>);
 <tfc:ceramics/unfired/crucible>.addTooltip(format.gold("can be fired using a hearth coil"));
 mods.embers.HeatCoil.add(<tfc:ceramics/fired/fire_brick>, <tfc:ceramics/fire_clay>);
 <tfc:ceramics/fire_clay>.addTooltip(format.gold("Can be turned directly into bricks via a hearth coil"));
-mods.embers.HeatCoil.add(<embers:brick_caminite>, <embers:blend_caminite>);
-<embers:blend_caminite>.addTooltip(format.gold("can be fired using a hearth coil"));
-mods.embers.HeatCoil.add(<embers:plate_caminite>, <embers:plate_caminite_raw>);
-<embers:plate_caminite_raw>.addTooltip(format.gold("can be fired using a hearth coil"));
-<embers:boiler>.addTooltip(format.gold("NOW USES LAVA INSTEAD OF WATER"));
+
+
+
 
 
 mods.embers.Stamper.add(<thebetweenlands:items_misc:18>, null ,<embers:stamp_flat>,<ore:dustSulfur>*3);
@@ -465,10 +462,13 @@ mods.embers.EmberGeneration.addBoilerFluid(<fluid:fish_oil>, <fluid:shallowbreat
 
 
 mods.embers.Alchemy.remove(<embers:dust_metallurgic>);
+mods.embers.Alchemy.remove(<embers:blasting_core>);
+
 mods.embers.Alchemy.remove(<embers:catalytic_plug>);
 mods.embers.Alchemy.add(<embers:dust_metallurgic>*5,[<thaumcraft:salis_mundus>,<thaumcraft:nugget:5>,null,null,null],{"dawnstone":(0 to 16),"iron":(0 to 16),"silver":(0 to 16),"copper":(0 to 16),"lead":(0 to 16)});
 mods.embers.Alchemy.add(<embers:dust_metallurgic>*5,[<thaumcraft:salis_mundus>,<minecraft:dye:15>,<minecraft:dye:15>,<minecraft:dye:15>,<minecraft:dye:15>],{"dawnstone":(0 to 16),"iron":(0 to 16),"silver":(0 to 16),"copper":(0 to 16),"lead":(0 to 16)});
 mods.embers.Alchemy.add(<embers:dust_metallurgic>*5,[<thaumcraft:nugget:5>,<minecraft:dye:15>,<minecraft:dye:15>,<minecraft:dye:15>,<minecraft:dye:15>],{"dawnstone":(0 to 16),"iron":(0 to 16),"silver":(0 to 16),"copper":(0 to 16),"lead":(0 to 16)});
+mods.embers.Alchemy.add(<embers:blasting_core>,[<ore:tnt>,<ore:plateIron>,<thermaldynamics:duct_16:1>,<thermaldynamics:duct_16:1>,<thermaldynamics:duct_16:1>],{"copper":(0 to 16)});
 
 
 mods.embers.DawnstoneAnvil.add([<tfc:metal/ingot/high_carbon_steel>,<immersiveengineering:material:7>], <tfc:metal/ingot/pig_iron>,null);
@@ -484,8 +484,7 @@ mods.embers.Mixer.remove(<fluid:dawnstone>*8);
 mods.embers.Mixer.remove(<fluid:oil_dwarf>*10);
 mods.embers.Mixer.remove(<fluid:oil_dwarf>*30);
 mods.embers.Mixer.add(<fluid:dawnstone>*8, [<fluid:rose_gold>*8,<fluid:pyrotheum>*4]);
-mods.embers.Mixer.add(<fluid:oil>*4, [<fluid:molten_tar>*2,<fluid:steam>*50]);
-mods.embers.Mixer.add(<fluid:hot_crude>*80, [<fluid:oil>*10,<fluid:lava>*5]);
+
 mods.embers.Mixer.add(<fluid:enrichedlava>*2, [<fluid:ic2pahoehoe_lava>,<fluid:purifying_fluid>]);
 mods.embers.Melter.add(<fluid:pyrotheum>*100, <ore:dustPyrotheum>);
 
@@ -493,7 +492,7 @@ mods.embers.Melter.add(<fluid:pyrotheum>*100, <ore:dustPyrotheum>);
 mods.embers.DawnstoneAnvil.add([<tfc:brass_mechanisms>*3],<ore:ingotBrass>,<tfc:brass_mechanisms>);
 mods.embers.DawnstoneAnvil.add([<tfcthings:metal_bracing>*2],<ore:ingotIron>,<tfcthings:metal_bracing>);
 mods.embers.DawnstoneAnvil.add([<tfcthings:metal_bracing>*3],<ore:ingotSteel>,<tfcthings:metal_bracing>);
-mods.embers.DawnstoneAnvil.add([<thaumcraft:mechanism_simple>],<tfcthings:metal_bracing>,<tfc:brass_mechanisms>);
+
 
 
 mods.embers.DawnstoneAnvil.add([<tfc:metal/shears/copper>],<tfc:metal/knife_blade/copper>,<tfc:metal/knife_blade/copper>);

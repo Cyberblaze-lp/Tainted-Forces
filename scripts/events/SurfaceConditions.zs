@@ -110,7 +110,7 @@ whitelistDeny(thaumstuff,[0]);
 
 //nether-exclusives (dawnstone-related machinery)
 
-val netherstuff = [<embers:ember_injector>,<embers:alchemy_tablet>,<embers:alchemy_pedestal>,<embers:dawnstone_anvil>,<embers:inferno_forge>] as IItemStack[];
+val netherstuff = [<embers:ember_injector>,<embers:alchemy_tablet>,<embers:alchemy_pedestal>,<embers:dawnstone_anvil>,<embers:inferno_forge>, <mekanism:basicblock:15>,<mekanism:basicblock2>,<mekanism:basicblock:14>] as IItemStack[];
 
 whitelistDeny(netherstuff,[-1]);
 for item in netherstuff

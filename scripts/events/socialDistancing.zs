@@ -12,7 +12,7 @@ function socialDistancing (IwasHereFirst as IEntityDefinition, OkIllSkedaddle as
         {
             return;
         }
-        if !(event.entity.definition.id has OkIllSkedaddle.id)
+        if !(event.entity.definition.id == OkIllSkedaddle.id)
         {
             return;
         }
@@ -24,7 +24,7 @@ function socialDistancing (IwasHereFirst as IEntityDefinition, OkIllSkedaddle as
         {
             if !isNull(entity.definition)
             {
-                if entity.definition.id has IwasHereFirst.id
+                if entity.definition.id == IwasHereFirst.id
                 {
                     event.cancel();
                     return;

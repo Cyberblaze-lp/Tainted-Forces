@@ -11,7 +11,7 @@
   imports: [
     defaults.cave::caveBlocks as LAVA_CAVE_BLOCK
   ]
-  enabled: true
+  enabled: false
   caveBlocks: "$LAVA_CAVE_BLOCK" # Defalt lava.
   stalactites: [
     {

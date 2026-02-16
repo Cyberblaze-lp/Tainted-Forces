@@ -10,7 +10,7 @@
 # ----------------------------------------------------------- #
 {
   $VANILLA: "ALL" # Default tunnels, ravines, etc.
-  enabled: true
+  enabled: false
   wallDecorators: [
     # Direction#DOWN -> stalagmites
     {

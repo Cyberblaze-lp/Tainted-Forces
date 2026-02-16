@@ -9,28 +9,71 @@
 # see vanilla.cave.                                           #
 # ----------------------------------------------------------- #
 {
-  enabled: true
-  caverns: {
-    enabled: true # Removed in 1.0. You can delete this field.
-    height: [ 5, 75 ]
-    generators: {
-      frequency: 0.02
-      threshold: -0.2
-      stretch: 0.75
-      type: Cellular
-      returnType: Distance3Div
-      jitter: 1
-      perturb: true
-      perturbAmp: 10
-      perturbFreq: 0.025
-      invert: true
+  enabled: false
+  tunnels: {
+    replaceableBlocks: [ "stone", "dirt", "grass", "hardened_clay" ]
+    biomes: {}
+    count: 15
+    originHeight: [ 60, 128 ]
+    resolution: 4
+    systemChance: 0.2
+    chance: 0.3
+    systemDensity: 6
+    noiseYReduction: false
+    distance: 0
+    reseedBranches: true
+    resizeBranches: true
+    checkWater: true
+    scale: {
+      startVal: 0
+      startValRandFactor: 1
+      factor: 1
+      randFactor: 0
+      exponent: 1
     }
+    stretch: 80
+    yaw: {
+      startVal: 0
+      startValRandFactor: 1
+    }
+    pitch: {
+      startVal: 0
+      startValRandFactor: 0.25
+    }
+    dYaw: {
+      startVal: 0
+      factor: 0.75
+      randFactor: 4
+      exponent: 1
+    }
+    dPitch: {
+      startVal: 0
+      factor: 0.9
+      randFactor: 2
+      exponent: 1
+    }
+    rooms: {}
+    # Just another tunnel generator. Infintely deep.
+    branches: {}
+    height: [ 8, 255 ]
+    blacklistBiomes: false
+    dimensions: []
+    blacklistDimensions: false
+    ceiling: {}
+    floor: {}
+    region: {}
+    noise: {}
+    replaceDecorators: true
+    caveBlocks: []
+    wallDecorators: []
+    ponds: []
+    shell: {}
   }
   caveBlocks: {
     states: lava
     height: [
       0
-      10
+      5
     ]
   }
 }

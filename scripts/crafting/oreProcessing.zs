@@ -11,6 +11,31 @@ val irongear =<ore:gearIron>;
 
 irongear.add(<tfctech:metal/wrought_iron_gear>);
 
+
+val metals = <ore:sheetToolMetal>;
+
+
+metals.addAll(<ore:plateIron>);
+metals.addAll(<ore:plateCopper>);
+metals.addAll(<ore:sheetAnyBronze>);
+metals.addAll(<ore:plateSteel>);
+metals.addAll(<ore:plateAluminium>);
+metals.addAll(<ore:plateBlackSteel>);
+metals.addAll(<ore:plateInvar>);
+metals.addAll(<ore:plateBlueSteel>);
+metals.addAll(<ore:plateRedSteel>);
+metals.addAll(<ore:plateMithril>);
+metals.addAll(<ore:plateTungsten>);
+metals.addAll(<ore:plateCobalt>);
+metals.addAll(<ore:plateTungstenSteel>);
+metals.addAll(<ore:plateNickelSilver>);
+metals.addAll(<ore:plateManyullyn>);
+metals.addAll(<ore:plateZircaloy>);
+metals.addAll(<ore:plateOsmium>);
+metals.addAll(<ore:plateTitanium>);
+
+
+
 mods.immersiveengineering.Squeezer.addRecipe(<tfc:ore/bismuthinite/gabbro>, null, <ore:oreSmallBismuth>*10, 2048);
 mods.immersiveengineering.Squeezer.addRecipe(<tfc:ore/bismuthinite/gabbro>, null, <ore:orePoorBismuth>*7, 2048);
 mods.immersiveengineering.Squeezer.addRecipe(<tfc:ore/bismuthinite/gabbro>, null, <ore:oreNormalBismuth>*4, 2048);
@@ -154,5 +179,12 @@ mods.immersiveengineering.BottlingMachine.addRecipe(<nuclearcraft:ore:5>,<ore:sc
 
 
 
+mods.ic2.Macerator.addRecipe(<thermalfoundation:material:893>*2, <tfc:ore/cinnabar>);
+mods.ic2.Macerator.addRecipe(<thermalfoundation:material:893>*2, <tfc:ore/cryolite>);
+mods.ic2.OreWasher.addRecipe([<minecraft:redstone>*5,<thaumcraft:nugget:5>*5,<extrautils2:ingredients>],<ore:clathrateRedstone>, 1000);
 
+
+
+mods.ic2.Macerator.addRecipe(<ic2:crushed:2>*10, <ore:oreRichIron>*9);
+mods.immersiveengineering.Crusher.addRecipe(<ic2:crushed:2>*10, <ore:oreRichIron>*9, 48000);
 

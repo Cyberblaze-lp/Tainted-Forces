@@ -184,7 +184,6 @@ mods.tconstruct.Alloy.removeRecipe(<liquid:steel>);
 recipes.remove(<ore:dustSteel>);
 //misc recipes
 recipes.addShapeless(<immersiveintelligence:printed_page:1>.withTag({display: {Lore: ["The very paper seems to twist and warp around the symbols and pictograms describing this feat of eldritch engineering"], Name: "Tesseract Plans"}, text: "fwy yn mil a chwalu ei yna, itilaer ein orchudd i hunain eu amlygu rywun i rhaid, dduwiol yn ddod i           ________            \\______/                         .  | ;V; |  Sre'nut alse't          _|___|_  Ne                      | \\  /. | surai'inos r'ed        |   °~ | Ddiarc Laidromirp    |_/_\\_|                                                               __;A;__ /______\\Rezilib'atsliev         T'I ILODDA       TI IL'ODDAef wadd'r ddeoresma ddewid i lewhcmydd ry neh iar rwam       "}), [<immersiveintelligence:printed_page:3>.withTag({RepairCost: 0, display: {Lore: ["Even though the ink is faded beyond recognition, you could swear you can feel reality curling around where the symbols used to be. Perhaps a deeper understanding of the fabric of Reality itself may allow you to decipher it against all odds.... "], Name: "Mangled Tesseract Plans"}}).onlyWithTag({RepairCost: 0, display: {Lore: ["Even though the ink is faded beyond recognition, you could swear you can feel reality curling around where the symbols used to be. Perhaps a deeper understanding of the fabric of Reality itself may allow you to decipher it against all odds.... "], Name: "Mangled Tesseract Plans"}}),<astralsorcery:itemusabledust:1>,<botania:lightrelay>,<astralsorcery:iteminfusedglass>.reuse(),<botania:dice>]);
-recipes.addShaped(<mekanism:basicblock2> * 4, [[null, <ore:heavyPlateCopper>, null],[<ore:heavyPlateCopper>, <ore:ingotIgnatius>, <ore:heavyPlateCopper>], [null, <ore:heavyPlateCopper>, null]]);
 recipes.addShaped(<ic2:thick_neutron_reflector>, [[null, <ore:ingotHOPGraphite>, null],[<ic2:neutron_reflector>, <ore:plateBeryllium>, <ic2:neutron_reflector>], [null, <ore:ingotHOPGraphite>, null]]);
 recipes.addShaped(<ic2:neutron_reflector>, [[<ore:dustTungsten>, <ore:dustCoal>, <ore:dustTungsten>],[<ore:dustCoal>, <ore:plateZinc>, <ore:dustCoal>], [<ore:dustTungsten>, <ore:dustCoal>, <ore:dustTungsten>]]);
 
@@ -213,13 +212,13 @@ recipes.remove(<ic2:quad_uranium_fuel_rod>);
 recipes.remove(<ic2:dual_mox_fuel_rod>);
 recipes.remove(<ic2:quad_mox_fuel_rod>);
 
-mods.ic2.ThermalCentrifuge.addRecipe([<ic2:nuclear:7>,<ic2:nuclear:3>*2,<tfc:metal/nugget/zircaloy>*3], <ic2:nuclear:14>, 100);
-mods.ic2.ThermalCentrifuge.addRecipe([<ic2:nuclear:7>*2,<ic2:nuclear:3>*4,<tfc:metal/dust/zircaloy>], <ic2:nuclear:15>, 100);
-mods.ic2.ThermalCentrifuge.addRecipe([<ic2:nuclear:7>*4,<ic2:nuclear:3>*8,<tfc:metal/dust/zircaloy>*3], <ic2:nuclear:16>, 100);
+mods.ic2.ThermalCentrifuge.addRecipe([<ic2:nuclear:7>,<ic2:nuclear:3>,<tfc:metal/dust/zircaloy>], <ic2:nuclear:14>, 100);
+mods.ic2.ThermalCentrifuge.addRecipe([<ic2:nuclear:7>*2,<ic2:nuclear:3>*2,<tfc:metal/dust/zircaloy>*2], <ic2:nuclear:15>, 100);
+mods.ic2.ThermalCentrifuge.addRecipe([<ic2:nuclear:7>*4,<ic2:nuclear:3>*4,<tfc:metal/dust/zircaloy>*5], <ic2:nuclear:16>, 100);
 
-mods.ic2.ThermalCentrifuge.addRecipe([<ic2:nuclear:7>,<ic2:nuclear:2>*4,<tfc:metal/nugget/zircaloy>*3], <ic2:nuclear:11>, 100);
-mods.ic2.ThermalCentrifuge.addRecipe([<ic2:nuclear:7>*2,<ic2:nuclear:2>*8,<tfc:metal/dust/zircaloy>], <ic2:nuclear:12>, 100);
-mods.ic2.ThermalCentrifuge.addRecipe([<ic2:nuclear:7>*4,<ic2:nuclear:2>*16,<tfc:metal/dust/zircaloy>*3], <ic2:nuclear:13>, 100);
+mods.ic2.ThermalCentrifuge.addRecipe([<ic2:nuclear:7>,<ic2:nuclear:2>*4,<tfc:metal/dust/zircaloy>], <ic2:nuclear:11>, 100);
+mods.ic2.ThermalCentrifuge.addRecipe([<ic2:nuclear:7>*2,<ic2:nuclear:2>*8,<tfc:metal/dust/zircaloy>*2], <ic2:nuclear:12>, 100);
+mods.ic2.ThermalCentrifuge.addRecipe([<ic2:nuclear:7>*4,<ic2:nuclear:2>*16,<tfc:metal/dust/zircaloy>*5], <ic2:nuclear:13>, 100);
 //editing AEA to be blue steel since the coils need red steel
 recipes.remove(<immersiveintelligence:material_dust>);
 

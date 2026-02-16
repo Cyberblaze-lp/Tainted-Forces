@@ -32,7 +32,7 @@ mods.thaumcraft.Infusion.registerRecipe("waystones2", "BASEELDRITCH", <thebetwee
 
 //Si'vlu Recipes
 mods.botania.ManaInfusion.removeRecipe(<botania:manaresource>);
-mods.botania.ManaInfusion.addInfusion(<botania:manaresource>, <ore:ingotWeakBlueSteel>, 4000);
+mods.botania.ManaInfusion.addInfusion(<botania:manaresource>, <ore:ingetAnyBronze>, 4000);
 
 recipes.remove(<astralsorcery:blockblackmarble>);
 

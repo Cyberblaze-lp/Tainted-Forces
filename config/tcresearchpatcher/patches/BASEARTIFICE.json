@@ -1,0 +1,15 @@
+[
+{
+"key":"BASEARTIFICE",
+"ops":[
+    
+
+
+    {
+    "op":"add",
+    "path":"stages/0/recipes/2",
+    "value":["thaumcraft:bettermechanism"]
+      
+}  
+]
+}]

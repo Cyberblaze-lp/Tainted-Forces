@@ -33,6 +33,12 @@ mods.immersivetechnology.MeltingCrucible.removeRecipe(<minecraft:cobblestone>);
 <tfc:metal/ingot/tungsten_steel>.setAspects(<aspect:metallum>*20,<aspect:ignis>*10,<aspect:praemunio>*20);
 <metallurgy:lemurite_ingot>.setAspects(<aspect:metallum>*10,<aspect:lux>*5);
 
+
+<thermalfoundation:material:1028>.setAspects(<aspect:vitium>*10,<aspect:desiderium>*5,<aspect:victus>*5);
+<thermalfoundation:geode>.setAspects(<aspect:vitium>*10,<aspect:aqua>*10,<aspect:victus>*5);
+<thaumcraft:taint_fibre>.setAspects(<aspect:vitium>*10,<aspect:victus>*5);
+<tfc:powder/flux>.setAspects(<aspect:vitium>*2,<aspect:ordo>*2,<aspect:terra>*5);
+
 <minecraft:magma>.setAspects(<aspect:ignis>*10, <aspect:terra>*5);
 <embers:dust_ember>.setAspects(<aspect:ignis>*8,<aspect:potentia>*8, <aspect:vitreus>*5,<aspect:perditio>*5);
 <embers:dust_metallurgic>.setAspects(<aspect:metallum>*15,<aspect:alkimia>*5,<aspect:perditio>*5);
@@ -46,6 +52,10 @@ mods.immersivetechnology.MeltingCrucible.removeRecipe(<minecraft:cobblestone>);
 <entity:minecraft:enderman>.setAspects([<aspect:humanus>*10, <aspect:tenebrae>*5, <aspect:alienis>*10]);
 <entity:embers:ancient_golem>.setAspects([<aspect:machina>*10, <aspect:tenebrae>*5, <aspect:ignis>*5,<aspect:terra>*10]);
 <entity:minecraft:slime>.setAspects([<aspect:aqua>*10, <aspect:victus>*10, <aspect:alkimia>*5]);
+
+<entity:thaumcraft:taintacle>.setAspects([<aspect:vitium>*15, <aspect:victus>*10, <aspect:sensus>*10]);
+<entity:thaumcraft:taintseed>.setAspects([<aspect:vitium>*25, <aspect:victus>*10, <aspect:aqua>*10, <aspect:permutatio>*10]);
+
 
 
 
@@ -84,26 +94,22 @@ mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:alembic>);
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:alembic>);
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:turret>);
 mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("filters 2.0", "ESSENTIASMELTER", 50, [<aspect:aqua>], <thaumcraft:filter>*2, [[<ore:ingotGold>,<thaumcraft:plank_silverwood>,<ore:ingotGold>]]);
-
+mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:mechanism_simple>);
 
 mods.thaumcraft.ArcaneWorkbench.registerShapelessRecipe("valves 2.0", "TUBES", 15, [], <thaumcraft:tube_valve>*8, [<tfc:brass_mechanisms>,<thaumcraft:tube>,<thaumcraft:tube>,<thaumcraft:tube>,<thaumcraft:tube>,<thaumcraft:tube>,<thaumcraft:tube>,<thaumcraft:tube>,<thaumcraft:tube>]);
-mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("buffers 2.0", "TUBES", 15, [], <thaumcraft:tube_buffer>*4, [[<thaumcraft:phial>,<thaumcraft:tube_oneway>,<thaumcraft:phial>],[<thaumcraft:tube>,<ore:sleeveBrass>,<thaumcraft:tube>],[<thaumcraft:phial>,<thaumcraft:tube_restrict>,<thaumcraft:phial>] ]);
-mods.thaumcraft.ArcaneWorkbench.registerShapelessRecipe("tubes 2.0", "TUBES", 15, [<aspect:ordo>], <thaumcraft:tube>*24, [<ore:tuyere>, <ore:nuggetQuicksilver>, <ore:nuggetQuicksilver>, <ore:nuggetLead>, <ore:nuggetLead>, <ore:nuggetLead>]);
-mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("alembics 2.0", "ESSENTIASMELTER", 15, [<aspect:aqua>,<aspect:ordo>,<aspect:perditio>], <thaumcraft:alembic>, [[<thaumcraft:plank_greatwood>, <ore:sleeveBrass>, <thaumcraft:plank_greatwood>],[<thaumcraft:filter>, <ore:springBrass>, <minecraft:glass_bottle>],[<thaumcraft:plank_greatwood>, <ore:sleeveBrass>, <thaumcraft:plank_greatwood>]]);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("buffers 2.0", "TUBES", 15, [], <thaumcraft:tube_buffer>*4, [[<thaumcraft:phial>,<thaumcraft:tube_oneway>,<thaumcraft:phial>],[<thaumcraft:tube>,<thaumcraft:mechanism_simple>,<thaumcraft:tube>],[<thaumcraft:phial>,<thaumcraft:tube_restrict>,<thaumcraft:phial>] ]);
+mods.thaumcraft.ArcaneWorkbench.registerShapelessRecipe("tubes 2.0", "TUBES", 15, [<aspect:ordo>], <thaumcraft:tube>*8, [<ore:sheetToolMetal>, <ore:nuggetQuicksilver>, <ore:nuggetLead>, <ore:nuggetLead>, <ore:nuggetLead>]);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("alembics 2.0", "ESSENTIASMELTER", 15, [<aspect:aqua>,<aspect:ordo>,<aspect:perditio>], <thaumcraft:alembic>, [[<thaumcraft:plank_greatwood>, <ore:springBrass>, <thaumcraft:plank_greatwood>],[<thaumcraft:filter>, <ore:springBrass>, <thaumcraft:phial>],[<thaumcraft:plank_greatwood>, <ore:springBrass>, <thaumcraft:plank_greatwood>]]);
 mods.thaumcraft.ArcaneWorkbench.registerShapelessRecipe("betterbellows", "BELLOWS", 15, [<aspect:aer>], <thaumcraft:bellows>, [<tfc:bellows>,<thaumcraft:mechanism_simple>]);
 mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("betterturrets", "BASICTURRET", 100, [<aspect:aer>], <thaumcraft:turret>*3, [[<minecraft:bow>, <thaumcraft:mechanism_simple>,<ore:plateIron>],[<thaumcraft:plank_greatwood>, <thaumcraft:mind>,<thaumcraft:plank_greatwood>],[<ore:stickWood>, null, <ore:stickWood>]]);
 
 mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("bettervent", "IMPROVEDSMELTING2", 150, [<aspect:aer>,<aspect:ordo>], <thaumcraft:smelter_vent>, [[<ore:sleeveBrass>, <ore:plateIron>],[<embers:ashen_cloth>, <thaumcraft:metal_alchemical>],[<ore:sleeveBrass>, <ore:plateIron>]]);
 mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("bettersmelter", "ESSENTIASMELTER@2", 50, [<aspect:ignis>], <thaumcraft:smelter_basic>, [[<ore:sheetBrass>, <thaumcraft:crucible>,<ore:sheetBrass>],[<ore:brickStone>,<minecraft:fire_charge>, <ore:brickStone>],[<ore:brickStone>, <ore:brickStone>,<ore:brickStone>]]);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("bettermechanism", "BASEARTIFICE", 20, [], <thaumcraft:mechanism_simple>, [[<ore:tallow>, <tfc:brass_mechanisms>],[<ore:stickIron>,<tfc:brass_mechanisms>]]);
 
 
-ItemRegistry.registerItemMetal(<thaumcraft:cluster>, "wrought_iron", 400, false);
-ItemRegistry.registerItemMetal(<thaumcraft:cluster:1>, "gold", 400, true);
-ItemRegistry.registerItemMetal(<thaumcraft:cluster:2>, "copper", 400, true);
-ItemRegistry.registerItemMetal(<thaumcraft:cluster:3>, "tin", 400, true);
-ItemRegistry.registerItemMetal(<thaumcraft:cluster:4>, "silver", 400, true);
-ItemRegistry.registerItemMetal(<thaumcraft:cluster:5>, "lead", 400, true);
-ItemRegistry.registerItemMetal(<tfc:brass_mechanisms>, "brass", 50, true);
+
+ItemRegistry.registerItemMetal(<tfc:brass_mechanisms>, "brass", 72, true);
 
 mods.thaumcraft.Infusion.registerRecipe("dropofevil", "DROPOFEVIL", <extrautils2:ingredients:10>, 5, [<aspect:tenebrae>*25, <aspect:vitium>*10, <aspect:desiderium>*10], <thaumcraft:alumentum>, [<tconstruct:soil:3>, <ore:quicksilver>]);
 
@@ -125,7 +131,6 @@ mods.thaumcraft.Infusion.registerRecipe("harvestseal", "SEALHARVEST", <thaumcraf
 mods.immersiveengineering.DieselHandler.addFuel(<liquid:hsla_steel>, 20000);
 DieselHandler.addDrillFuel(<liquid:hsla_steel>);
 DieselHandler.addDrillFuel(<liquid:shallowbreath>);
-DieselHandler.addDrillFuel(<liquid:shallowbreath>);
 DieselHandler.addDrillFuel(<liquid:refined_fuel>);
 DieselHandler.addDrillFuel(<liquid:refined_biofuel>);
 mods.immersiveengineering.DieselHandler.removeDrillFuel(<liquid:biodiesel>);
@@ -145,13 +150,18 @@ GasTurbine.addFuel(<liquid:carbon_dioxide> * 2000, <liquid:hsla_steel>*250, 10);
 
 
 
+<thermalfoundation:material:1028>.displayName = "Taint Tendril";
+<thermalfoundation:geode>.displayName = "Tainted Goo";
+
+
+
 //jade for warded jars
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:jar_normal>);
-mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("jarschipped", "WARDEDJARS", 10, [], <thaumcraft:jar_normal>*2, [[<ore:gemChippedJade>, <ore:lumber>,<ore:gemChippedJade>],[<ore:gemChippedJade>, <minecraft:glass_bottle>,<ore:gemChippedJade>],[<ore:gemChippedJade>, <ore:gemChippedJade>,<ore:gemChippedJade>]]);
-mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("jarsflawed", "WARDEDJARS", 20, [], <thaumcraft:jar_normal>*4, [[<ore:gemFlawedJade>, <ore:lumber>,<ore:gemFlawedJade>],[<ore:gemFlawedJade>, <minecraft:glass_bottle>,<ore:gemFlawedJade>],[<ore:gemFlawedJade>, <ore:gemFlawedJade>,<ore:gemFlawedJade>]]);
-mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("jarsnormal", "WARDEDJARS", 40, [], <thaumcraft:jar_normal>*8, [[<ore:gemJade>, <ore:lumber>,<ore:gemJade>],[<ore:gemJade>, <minecraft:glass_bottle>,<ore:gemJade>],[<ore:gemJade>, <ore:gemJade>,<ore:gemJade>]]);
-mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("jarsflawless", "WARDEDJARS", 80, [], <thaumcraft:jar_normal>*16, [[<ore:gemFlawlessJade>, <ore:lumber>,<ore:gemFlawlessJade>],[<ore:gemFlawlessJade>, <minecraft:glass_bottle>,<ore:gemFlawlessJade>],[<ore:gemFlawlessJade>, <ore:gemFlawlessJade>,<ore:gemFlawlessJade>]]);
-mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("jarsexquisite", "WARDEDJARS", 160, [], <thaumcraft:jar_normal>*32, [[<ore:gemExquisiteJade>, <ore:lumber>,<ore:gemExquisiteJade>],[<ore:gemExquisiteJade>, <minecraft:glass_bottle>,<ore:gemExquisiteJade>],[<ore:gemExquisiteJade>, <ore:gemExquisiteJade>,<ore:gemExquisiteJade>]]);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("jarschipped", "WARDEDJARS", 10, [], <thaumcraft:jar_normal>*2, [[<ore:gemChippedJade>, <ore:concrete>,<ore:gemChippedJade>],[<ore:gemChippedJade>, null,<ore:gemChippedJade>],[<ore:gemChippedJade>, <ore:gemChippedJade>,<ore:gemChippedJade>]]);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("jarsflawed", "WARDEDJARS", 20, [], <thaumcraft:jar_normal>*4, [[<ore:gemFlawedJade>, <ore:concrete>,<ore:gemFlawedJade>],[<ore:gemFlawedJade>, null,<ore:gemFlawedJade>],[<ore:gemFlawedJade>, <ore:gemFlawedJade>,<ore:gemFlawedJade>]]);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("jarsnormal", "WARDEDJARS", 40, [], <thaumcraft:jar_normal>*8, [[<ore:gemJade>, <ore:concrete>,<ore:gemJade>],[<ore:gemJade>, null,<ore:gemJade>],[<ore:gemJade>, <ore:gemJade>,<ore:gemJade>]]);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("jarsflawless", "WARDEDJARS", 80, [], <thaumcraft:jar_normal>*16, [[<ore:gemFlawlessJade>, <ore:concrete>,<ore:gemFlawlessJade>],[<ore:gemFlawlessJade>, null,<ore:gemFlawlessJade>],[<ore:gemFlawlessJade>, <ore:gemFlawlessJade>,<ore:gemFlawlessJade>]]);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("jarsexquisite", "WARDEDJARS", 160, [], <thaumcraft:jar_normal>*32, [[<ore:gemExquisiteJade>, <ore:concrete>,<ore:gemExquisiteJade>],[<ore:gemExquisiteJade>, null,<ore:gemExquisiteJade>],[<ore:gemExquisiteJade>, <ore:gemExquisiteJade>,<ore:gemExquisiteJade>]]);
 
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:vis_resonator>);
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<mystgears:vis_motor>);
@@ -161,17 +171,6 @@ mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:essentia_input>);
 mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("betterinputtransfuser", "ESSENTIATRANSPORT", 500, [<aspect:aer>,<aspect:aqua>], <thaumcraft:essentia_input>, [[<ore:plateBrass>,<minecraft:dispenser>,<ore:plateBrass>],[<ore:plateIron>,<thaumcraft:metal_alchemical_advanced>,<ore:plateIron>]]);
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:essentia_output>);
 mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("betteroutputtransfuser", "ESSENTIATRANSPORT", 500, [<aspect:aer>,<aspect:aqua>], <thaumcraft:essentia_output>, [[<ore:plateBrass>,<minecraft:hopper>,<ore:plateBrass>],[<ore:plateIron>,<thaumcraft:metal_alchemical_advanced>,<ore:plateIron>]]);
-
-
-
-
-recipes.remove(<thaumcraft:phial>);
-
-mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("indexer", "INDEXER", 200, [<aspect:aer>,<aspect:ordo>], <extrautils2:indexer>, [[<extrautils2:decorativesolid:3>,<extrautils2:decorativesolid:3>,<thaumcraft:mirrored_glass>],[<extrautils2:decorativesolid:3>,<thaumcraft:brain_box>,<thaumcraft:mirrored_glass>],[<extrautils2:decorativesolid:3>,<extrautils2:decorativesolid:3>,<thaumcraft:mirrored_glass>]]);
-mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("indexerremote", "INDEXER", 200, [<aspect:aer>*2,<aspect:ordo>,<aspect:perditio>], <extrautils2:indexerremote>, [[null,null,<ore:torchRedstoneActive>],[<projectred-core:resource_item>,<thaumcraft:mirror>,<projectred-core:resource_item>],[<projectred-core:resource_item>,<embers:intelligent_apparatus>,<projectred-core:resource_item>]]);
-<ore:tallow>.remove(<minecraft:grass>);
-
-
 
 
 

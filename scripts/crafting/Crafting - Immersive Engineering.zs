@@ -61,40 +61,6 @@ import mods.advancedrocketry.ArcFurnace;
 	recipes.remove(<immersiveengineering:metal:28>);
 	recipes.remove(<immersiveengineering:metal:29>);
 
-	recipes.removeByRecipeName("immersiveengineering:metal_storage/copper_block_uncraft");
-	recipes.removeByRecipeName("chisel:uncraft_blockcopper");
-	recipes.removeShaped(<immersiveengineering:storage:0>, [[<ore:ingotCopper>,<ore:ingotCopper>,<ore:ingotCopper>],[<ore:ingotCopper>,<ore:ingotCopper>,<ore:ingotCopper>],[<ore:ingotCopper>,<ore:ingotCopper>,<ore:ingotCopper>]]);
-
-	recipes.removeByRecipeName("immersiveengineering:metal_storage/aluminum_block");
-	recipes.removeByRecipeName("immersiveengineering:metal_storage/aluminum_block_uncraft");
-	recipes.removeByRecipeName("chisel:uncraft_blockaluminum");
-
-	recipes.removeShaped(<immersiveengineering:storage:2>, [[<ore:ingotLead>,<ore:ingotLead>,<ore:ingotLead>],[<ore:ingotLead>,<ore:ingotLead>,<ore:ingotLead>],[<ore:ingotLead>,<ore:ingotLead>,<ore:ingotLead>]]);
-	recipes.removeByRecipeName("immersiveengineering:metal_storage/lead_block_uncraft");
-	recipes.removeByRecipeName("chisel:uncraft_blocklead");
-
-	recipes.removeShaped(<immersiveengineering:storage:3>, [[<ore:ingotSilver>,<ore:ingotSilver>,<ore:ingotSilver>],[<ore:ingotSilver>,<ore:ingotSilver>,<ore:ingotSilver>],[<ore:ingotSilver>,<ore:ingotSilver>,<ore:ingotSilver>]]);
-	recipes.removeByRecipeName("immersiveengineering:metal_storage/silver_block_uncraft");
-	recipes.removeByRecipeName("chisel:uncraft_blocksilver");
-
-	recipes.removeShaped(<immersiveengineering:storage:4>, [[<ore:ingotNickel>,<ore:ingotNickel>,<ore:ingotNickel>],[<ore:ingotNickel>,<ore:ingotNickel>,<ore:ingotNickel>],[<ore:ingotNickel>,<ore:ingotNickel>,<ore:ingotNickel>]]);
-	recipes.removeByRecipeName("immersiveengineering:metal_storage/nickel_block_uncraft");
-	recipes.removeByRecipeName("chisel:uncraft_blocknickel");
-
-	recipes.removeByRecipeName("immersiveengineering:metal_storage/uranium_block");
-	recipes.removeByRecipeName("immersiveengineering:metal_storage/uranium_block_uncraft");
-	recipes.removeByRecipeName("chisel:uncraft_blockuranium");
-
-	recipes.removeByRecipeName("immersiveengineering:metal_storage/constantan_block");
-	recipes.removeByRecipeName("immersiveengineering:metal_storage/constantan_block_uncraft");
-
-	recipes.removeByRecipeName("immersiveengineering:metal_storage/electrum_block");
-	recipes.removeByRecipeName("immersiveengineering:metal_storage/electrum_block_uncraft");
-	recipes.removeByRecipeName("chisel:uncraft_blockelectrum");
-	recipes.removeByRecipeName("chisel:uncraft_blockdiamond");
-	recipes.removeByRecipeName("chisel:uncraft_blockemerald");
-
-	recipes.removeShaped(<immersiveengineering:storage:8>, [[<ore:ingotSteel>,<ore:ingotSteel>,<ore:ingotSteel>],[<ore:ingotSteel>,<ore:ingotSteel>,<ore:ingotSteel>],[<ore:ingotSteel>,<ore:ingotSteel>,<ore:ingotSteel>]]);
 
 	//Add
 	recipes.addShaped(<tfc:metal/ingot/steel>, [[<ore:nuggetSteel>, <ore:nuggetSteel>, <ore:nuggetSteel>],[<ore:nuggetSteel>, <ore:nuggetSteel>, <ore:nuggetSteel>], [<ore:nuggetSteel>, <ore:nuggetSteel>, <ore:nuggetSteel>]]);
@@ -113,14 +79,13 @@ import mods.advancedrocketry.ArcFurnace;
 	recipes.addShapeless(<tfc:metal/sheet/wrought_iron>, [<immersiveengineering:sheetmetal:9>]);
 	recipes.addShapeless(<tfc:metal/sheet/gold>, [<immersiveengineering:sheetmetal:10>]);
 	recipes.addShapeless(<immersiveengineering:material> * 2, [<ore:saw>.transformDamage(1), <ore:plankTreatedWood>]);
-	recipes.addShapeless(<immersiveengineering:material:5>, [<tfc:crop/product/burlap_cloth>, <immersiveengineering:material:0>]);
 
 //=======================================================================================================================================================================
 //Immersive Engineering Machine Recipes
 
 //Remove Crusher Recipes
 
-	mods.immersiveengineering.Crusher.removeRecipe(<tfc:powder/lapis_lazuli>);
+
 	mods.immersiveengineering.Crusher.removeRecipe(<immersiveengineering:material:24>);
 	mods.immersiveengineering.Crusher.removeRecipe(<tfc:ore/cinnabar>);
 	mods.immersiveengineering.Crusher.removeRecipesForInput(<tfc:ore/sulfur>);
@@ -131,53 +96,22 @@ import mods.advancedrocketry.ArcFurnace;
 
 //Crusher
 
-	//Grain
-	mods.immersiveengineering.Crusher.addRecipe(<tfc:food/barley_grain> * 1, <tfc:food/barley>, 4000, <tfc:food/barley_grain> * 1, 0.15);
-	mods.immersiveengineering.Crusher.addRecipe(<tfc:food/oat_grain> * 1, <tfc:food/oat>, 4000, <tfc:food/oat_grain> * 1, 0.15);
-	mods.immersiveengineering.Crusher.addRecipe(<tfc:food/rice_grain> * 1, <tfc:food/rice>, 4000, <tfc:food/rice_grain> * 1, 0.15);
-	mods.immersiveengineering.Crusher.addRecipe(<tfc:food/rye_grain> * 1, <tfc:food/rye>, 4000, <tfc:food/rye_grain> * 1, 0.15);
-	mods.immersiveengineering.Crusher.addRecipe(<tfc:food/wheat_grain> * 1, <tfc:food/wheat>, 4000, <tfc:food/wheat_grain> * 1, 0.15);
-	mods.immersiveengineering.Crusher.addRecipe(<tfc:food/maize_grain> * 1, <tfc:food/maize>, 4000, <tfc:food/maize_grain> * 1, 0.15);
-	
-	//Flour
-	mods.immersiveengineering.Crusher.addRecipe(<tfc:food/barley_flour> * 2, <tfc:food/barley_grain>, 4000, <tfc:food/barley_flour> * 1, 0.1);
-	mods.immersiveengineering.Crusher.addRecipe(<tfc:food/cornmeal_flour> * 2, <tfc:food/maize>, 4000, <tfc:food/cornmeal_flour> * 1, 0.1);
-	mods.immersiveengineering.Crusher.addRecipe(<tfc:food/oat_flour> * 2, <tfc:food/oat_grain>, 4000, <tfc:food/oat_flour> * 1, 0.1);
-	mods.immersiveengineering.Crusher.addRecipe(<tfc:food/rice_flour> * 2, <tfc:food/rice_grain>, 4000, <tfc:food/rice_flour> * 1, 0.1);
-	mods.immersiveengineering.Crusher.addRecipe(<tfc:food/rye_flour> * 2, <tfc:food/rye_grain>, 4000, <tfc:food/rye_flour> * 1, 0.1);
-	mods.immersiveengineering.Crusher.addRecipe(<tfc:food/wheat_flour> * 2, <tfc:food/wheat_grain>, 4000, <tfc:food/wheat_flour> * 1, 0.1);
-	
+
+
 	//Minerals
-	mods.immersiveengineering.Crusher.addRecipe(<tfc:powder/kaolinite> * 12, <ore:gemKaolinite>, 8000);
-	mods.immersiveengineering.Crusher.addRecipe(<minecraft:glowstone_dust> * 12, <ore:gemSelenite>, 8000, <thaumcraft:nugget:5> * 1, 0.5);
-	mods.immersiveengineering.Crusher.addRecipe(<tfc:powder/graphite> * 12, <ore:gemGraphite>, 8000);
+	mods.immersiveengineering.Crusher.addRecipe(<tfc:powder/kaolinite> * 8, <ore:gemKaolinite>, 8000);
+
+	mods.immersiveengineering.Crusher.addRecipe(<tfc:powder/graphite> * 8, <ore:gemGraphite>, 8000);
 	mods.immersiveengineering.Crusher.addRecipe(<tfc:gem/diamond:2> * 2, <ore:gemKimberlite>, 8000);
-	mods.immersiveengineering.Crusher.addRecipe(<tfc:powder/sulfur> * 10, <ore:gemSulfur>, 8000, <minecraft:blaze_powder> * 2, 0.5);
 	mods.immersiveengineering.Crusher.addRecipe(<minecraft:redstone> * 12, <ore:gemCinnabar>, 8000, <thaumcraft:nugget:5> * 4, 0.5);
 	mods.immersiveengineering.Crusher.addRecipe(<minecraft:redstone> * 12, <ore:gemCryolite>, 8000);
 	mods.immersiveengineering.Crusher.addRecipe(<tfc:powder/saltpeter> * 12, <ore:gemSaltpeter>, 8000);
 	mods.immersiveengineering.Crusher.addRecipe(<tfc:powder/fertilizer> * 12, <ore:gemSylvite>, 8000);
 	
-	mods.immersiveengineering.Crusher.addRecipe(<tfc:powder/lapis_lazuli> * 12, <ore:gemLapis>, 8000);
-	mods.immersiveengineering.Crusher.addRecipe(<tfc:powder/flux> * 6, <ore:rockFlux>, 8000);
+	
 	mods.immersiveengineering.Crusher.addRecipe(<tfc:powder/salt> * 8, <ore:rockRocksalt>, 8000);
-	mods.immersiveengineering.Crusher.addRecipe(<tfc:gem/diamond> * 5, <ore:oreDiamond>, 8000);
 
-	//Metals
-	mods.immersiveengineering.Crusher.addRecipe(<tfc:powder/hematite> * 2, <tfc:ore/small/hematite>, 8000);
-	mods.immersiveengineering.Crusher.addRecipe(<tfc:powder/hematite> * 3, <tfc:ore/hematite:1>, 8000);
-	mods.immersiveengineering.Crusher.addRecipe(<tfc:powder/hematite> * 6, <tfc:ore/hematite>, 8000);
-	mods.immersiveengineering.Crusher.addRecipe(<tfc:powder/hematite> * 8, <tfc:ore/hematite:2>, 8000);
 
-	mods.immersiveengineering.Crusher.addRecipe(<tfc:powder/limonite> * 2, <tfc:ore/small/limonite>, 8000);
-	mods.immersiveengineering.Crusher.addRecipe(<tfc:powder/limonite> * 3, <tfc:ore/limonite:1>, 8000);
-	mods.immersiveengineering.Crusher.addRecipe(<tfc:powder/limonite> * 6, <tfc:ore/limonite>, 8000);
-	mods.immersiveengineering.Crusher.addRecipe(<tfc:powder/limonite> * 8, <tfc:ore/limonite:2>, 8000);
-
-	mods.immersiveengineering.Crusher.addRecipe(<tfc:powder/malachite> * 2, <tfc:ore/small/malachite>, 8000);
-	mods.immersiveengineering.Crusher.addRecipe(<tfc:powder/malachite> * 3, <tfc:ore/malachite:1>, 8000);
-	mods.immersiveengineering.Crusher.addRecipe(<tfc:powder/malachite> * 6, <tfc:ore/malachite>, 8000);
-	mods.immersiveengineering.Crusher.addRecipe(<tfc:powder/malachite> * 8, <tfc:ore/malachite:2>, 8000);
 	//quartz
 	mods.immersiveengineering.Crusher.addRecipe(<immersiveintelligence:material_dust:8>*2, <minecraft:quartz>, 4000);
 
@@ -203,10 +137,7 @@ import mods.advancedrocketry.ArcFurnace;
 //Distillation
 
 	//Salt
-	mods.immersivepetroleum.Distillation.addRecipe([<liquid:fresh_water> * 1], [<tfc:powder/salt> * 1], <liquid:salt_water> * 1, 128, 150, [1, 1]);
-	
-	//Cheese
-	mods.immersivepetroleum.Distillation.addRecipe([<liquid:milk_vinegar> * 500], [<tfc:food/cheese> * 16], <liquid:milk_curdled> * 1000, 128, 1200, [1, 1]);
+	mods.immersivepetroleum.Distillation.addRecipe([<liquid:fresh_water> * 1000], [<tfc:powder/salt> * 1], <liquid:salt_water> * 1000, 128, 150, [1, 1]);
 	
 
 //=======================================================================================================================================================================

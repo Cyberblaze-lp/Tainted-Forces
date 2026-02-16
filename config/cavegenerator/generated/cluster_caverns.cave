@@ -7,21 +7,25 @@
 # biome-restricted caverns.                                   #
 # ----------------------------------------------------------- #
 {
-  enabled: true
-  biomes: {
-    types: HILLS
-  }
+  enabled: false
   clusters: {
     states: air
     chance: 0.75
     radiusX: [ 28, 33 ]
     radiusY: [ 21, 26 ]
     radiusZ: [ 28, 33 ]
-    centerHeight: [ 33, 39 ]
+    centerHeight: [ 17, 39 ]
     noise: {
       frequency: 0.02
       stretch: 0.4
       threshold: -0.30000000000000004
     }
+  }
+  caveBlocks: {
+    states: lava
+    height: [
+      0
+      5
+    ]
   }
 }

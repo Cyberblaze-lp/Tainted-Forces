@@ -290,9 +290,7 @@
     {
       "biomeTags": [
         [
-          "COLD",
-          "CONIFEROUS",
-          "FOREST"
+          "COLD"
         ]
       ],
       "mainSelector": {
@@ -397,7 +395,7 @@
       "stoneWallBlock": "minecraft:cobblestone_wall[east=false,north=false,south=false,up=false,variant=cobblestone,west=false]",
       "stoneSlabBlock": "minecraft:stone_slab[half=top,variant=sandstone]",
       "minY": 17,
-      "maxY": 37,
+      "maxY": 120,
       "vineChance": 0.1,
       "snowChance": 0.0,
       "cactusChance": 0.1,
@@ -452,7 +450,7 @@
       "stoneWallBlock": "minecraft:cobblestone_wall[east=false,north=false,south=false,up=false,variant=cobblestone,west=false]",
       "stoneSlabBlock": "minecraft:stone_slab[half=top,variant=stone_brick]",
       "minY": 17,
-      "maxY": 37,
+      "maxY": 120,
       "vineChance": 0.25,
       "snowChance": 0.0,
       "cactusChance": 0.0,

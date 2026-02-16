@@ -14,6 +14,14 @@ mods.immersiveintelligence.ChemicalBath.addRecipe(<ore:stoneMarble>, <astralsorc
 
 
 <ore:seed>.addItems(itemUtils.getItemsByRegexRegistryName(".*/crop/seeds.*"));
+<ore:fabricHemp>.add(<tfc:crop/product/burlap_cloth>);
+<ore:logWoodTannin>.add(<botania:livingwood>);
+<ore:logWoodTannin>.add(<thaumcraft:log_greatwood>);
+
+mods.botania.PureDaisy.addRecipe(<tfc:thatch>,<botania:livingwood>);
+
+<ore:blockGlass>.add(<betternether:quartz_glass>);
+<ore:blockGlassColorless>.add(<betternether:quartz_glass>);
 
 mods.immersiveengineering.Squeezer.removeFluidRecipe(<liquid:plantoil>);
 mods.immersiveengineering.Squeezer.addRecipe(null,<liquid:plantoil>*120,<ore:seed>, 2500);
@@ -56,7 +64,9 @@ ItemRegistry.registerItemMetal(<immersiveengineering:drillhead:1>,"wrought_iron"
 ItemRegistry.registerItemMetal(<immersiveengineering:drillhead>,"steel",288,true);
 ItemRegistry.registerItemMetal(<betternether:cincinnasite>,"brass",32,true);
 ItemRegistry.registerItemMetal(<thaumcraft:mind:1>,"brass",288,true);
-Quern.addRecipe("fluxfrombllimestone", <thebetweenlands:items_misc:27>, <tfc:powder/flux>*3);
+Quern.removeRecipe(<minecraft:redstone>);
+Quern.addRecipe("lessredstone", <tfc:ore/cinnabar>, <minecraft:redstone>*4);
+Quern.addRecipe("lessredstone2", <tfc:ore/cryolite>, <minecraft:redstone>*4);
 recipes.remove(<tfctech:powder/potash>);
 recipes.remove(<tfctech:smeltery_firebox>);
 recipes.remove(<tfctech:smeltery_cauldron>);
@@ -111,8 +121,7 @@ ItemRegistry.registerFuel(<metallurgy:thermite_dust>,12000 , 2000.0,true, true);
 <metallurgy:thermite_dust>.addTooltip(format.blue("Burns at 2000°C (>Brilliant White) for 10min"));
 
 
-Oven.addRecipe("caminiteplates", <embers:plate_caminite_raw>, <embers:plate_caminite>, 5000);
-Oven.addRecipe("caminitebricks", <embers:blend_caminite>, <embers:brick_caminite>, 3000);
+
 furnace.remove(<embers:brick_caminite>);
 furnace.remove(<embers:plate_caminite>);
 
@@ -127,7 +136,6 @@ Welding.addRecipe("goldpick", <tfc:metal/sheet/gold>, <tfc:metal/pick/bronze>, <
 Welding.addRecipe("goldaxe", <tfc:metal/sheet/gold>, <tfc:metal/axe/bronze>, <minecraft:golden_axe>, 2);
 Welding.addRecipe("goldshovel",<tfc:metal/sheet/gold>, <tfc:metal/shovel/bronze>, <minecraft:golden_shovel>, 2);
 Welding.addRecipe("goldhoe",<tfc:metal/sheet/gold>, <tfc:metal/hoe/bronze>, <minecraft:golden_hoe>, 2);
-Welding.addRecipe("tcmechanisms",<tfc:brass_mechanisms>, <tfcthings:metal_bracing>, <thaumcraft:mechanism_simple>, 3);
 Welding.addRecipe("robosurgeon",<ore:ingotBismuth>, <thaumcraft:mind>, <cyberware:surgery>, 3);
 Welding.addRecipe("knuckles",<ore:sleeveBrass>, <ore:sleeveBrass>, <metallurgy:brass_knuckles>, 0);
 Welding.addRecipe("minersring",<ore:sleeveTin>, <ore:ingotRedAlloy>, <baubles:ring>, 0);
@@ -299,12 +307,17 @@ mods.terrafirmacraft.Barrel.addRecipe("salt_conversion", <minecraft:magma>, <liq
 mods.terrafirmacraft.Barrel.addRecipe("malachite", <ore:nuggetCopper>, <liquid:salt_water> * 50,<tfc:powder/malachite>*2,null, 72);
 mods.terrafirmacraft.Barrel.addRecipe("rustyplate", <quark:iron_plate>, <liquid:salt_water> * 50,<quark:iron_plate:1>,null, 24);
 
+mods.terrafirmacraft.Barrel.addRecipe("hidefromflesh", <minecraft:rotten_flesh>*4, <liquid:limewater> * 400,<tfc:hide/soaked/medium>,null, 6);
+
 mods.terrafirmacraft.Barrel.addRecipe("parchment_from_small", <tfc:hide/prepared/small>, <liquid:white_dye> * 300,<minecraft:paper>,null, 6);
 mods.terrafirmacraft.Barrel.addRecipe("parchment_from_medium", <tfc:hide/prepared/medium>, <liquid:white_dye> * 400,<minecraft:paper>*2,null, 6);
 mods.terrafirmacraft.Barrel.addRecipe("parchment_from_large", <tfc:hide/prepared/large>, <liquid:white_dye> * 500,<minecraft:paper>*3,null, 6);
 
+
 mods.terrafirmacraft.Barrel.addRecipe("flux_manual", <thebetweenlands:items_misc:27>, <liquid:flux_goo> * 500,<tfc:powder/flux>*3,null, 1);
-mods.terrafirmacraft.Barrel.addRecipe("flux_automation", <embers:dust_metallurgic>, <liquid:flux_goo> * 500,<tfc:powder/flux>*10,null, 1);
+mods.terrafirmacraft.Barrel.addRecipe("flux_automation_0", <ore:sand>, <liquid:flux_goo> * 1000,<tfc:powder/flux>*2,null, 1);
+
+mods.terrafirmacraft.Barrel.addRecipe("flux_automation_1", <embers:dust_metallurgic>, <liquid:flux_goo> * 500,<tfc:powder/flux>*10,null, 1);
 mods.terrafirmacraft.Barrel.addRecipe("flux_automation_2", <embers:alchemic_waste>, <liquid:flux_goo> * 500,<tfc:powder/flux>*4,null, 2);
 mods.terrafirmacraft.Barrel.addRecipe("wood replacement", <betternether:nether_reed>*4, <liquid:olive_oil> * 5,<betternether:reeds_block>,null, 2);
 
@@ -447,7 +460,6 @@ val remove_gear =
 <firmalife:climate_station_4>,
 <firmalife:climate_station_5>,
 <firmalife:sprinkler>,
-<embers:item_request>,
 <embers:item_transfer>,
 <embers:item_dropper>,
 <embers:vacuum>,
