@@ -1,4 +1,8 @@
 import loottweaker.LootTweaker;
+import crafttweaker.game.IGame;
+import crafttweaker.util.IRandom;
+import crafttweaker.world.IWorld;
+import crafttweaker.enchantments.IEnchantmentDefinition;
 import loottweaker.vanilla.loot.LootTable;
 import loottweaker.vanilla.loot.LootPool;
 mods.ltt.LootTable.removeGlobalItem("minecraft:iron_ingot");
@@ -38,7 +42,15 @@ dungeon.removeEntry("ic2:ingot:1");
 dungeon.removeEntry("ic2:ingot:2");
 dungeon.removeEntry("ic2:ingot:3");
 
+world = crafttweaker.world.IWorld.getFromID(0);
 
+for enchant in crafttweaker.game.IGame.enchantments {
+ID = enchant.id;
+X = world.rndom.nextInt(1, enchant.maxLevel);
+
+dungeon.addItemEntry(<minecraft:enchanted_book>.withTagnchantments: [{lvl: X , id: ID }]}), 3, 2);
+
+}
 
 
 
