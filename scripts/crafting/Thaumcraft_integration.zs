@@ -136,6 +136,9 @@ mods.thaumcraft.Infusion.registerRecipe("harvestseal", "SEALHARVEST", <thaumcraf
 
 
 //changes hsla steel to be a liquid version of alumentum, a high-efficiency fuel for mining drill and such
+
+mods.immersiveengineering.CokeOven.addRecipe(<minecraft:coal:1>*2, 50, <thaumcraft:alumentum>, 600);
+
 mods.immersiveengineering.DieselHandler.addFuel(<liquid:hsla_steel>, 20000);
 DieselHandler.addDrillFuel(<liquid:hsla_steel>);
 DieselHandler.addDrillFuel(<liquid:shallowbreath>);
@@ -292,6 +295,7 @@ recipe.setGroup(ResourceLocation("thaumcraft:groupOre"+ item));
 
 
 }
+
 
 
 
