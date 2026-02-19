@@ -314,36 +314,14 @@ import mods.advancedrocketry.ArcFurnace;
 
 
 
-	//High Carbon Steel Ingot
-	mods.immersiveengineering.MetalPress.addRecipe(<tfc:metal/ingot/high_carbon_steel>, <tfc:metal/ingot/pig_iron>, <tfc:metal/hammer_head/wrought_iron>, 500);
-	mods.immersiveengineering.MetalPress.addRecipe(<tfc:metal/ingot/high_carbon_steel>, <tfc:metal/ingot/pig_iron>, <tfc:metal/hammer_head/steel>, 500);
-	mods.immersiveengineering.MetalPress.addRecipe(<tfc:metal/ingot/high_carbon_steel>, <tfc:metal/ingot/pig_iron>, <tfc:metal/hammer_head/black_steel>, 500);
-	mods.immersiveengineering.MetalPress.addRecipe(<tfc:metal/ingot/high_carbon_steel>, <tfc:metal/ingot/pig_iron>, <tfc:metal/hammer_head/blue_steel>, 500);
-	mods.immersiveengineering.MetalPress.addRecipe(<tfc:metal/ingot/high_carbon_steel>, <tfc:metal/ingot/pig_iron>, <tfc:metal/hammer_head/red_steel>, 500);
+	// Steel Ingot
+	mods.immersiveengineering.MetalPress.addRecipe(<tfc:metal/ingot/steel>, <tfc:metal/ingot/pig_iron>, <tfc:metal/hammer_head/wrought_iron>, 50000);
+	mods.immersiveengineering.MetalPress.addRecipe(<tfc:metal/ingot/steel>, <tfc:metal/ingot/pig_iron>, <tfc:metal/hammer_head/steel>, 50000);
+	mods.immersiveengineering.MetalPress.addRecipe(<tfc:metal/ingot/steel>, <tfc:metal/ingot/pig_iron>, <tfc:metal/hammer_head/black_steel>, 50000);
+	mods.immersiveengineering.MetalPress.addRecipe(<tfc:metal/ingot/steel>, <tfc:metal/ingot/pig_iron>, <tfc:metal/hammer_head/blue_steel>, 50000);
+	mods.immersiveengineering.MetalPress.addRecipe(<tfc:metal/ingot/steel>, <tfc:metal/ingot/pig_iron>, <tfc:metal/hammer_head/red_steel>, 50000);
 	
-	//Steel Ingot
-	mods.immersiveengineering.MetalPress.addRecipe(<tfc:metal/ingot/steel>, <tfc:metal/ingot/high_carbon_steel>, <tfc:metal/hammer_head/wrought_iron>, 500);
-	mods.immersiveengineering.MetalPress.addRecipe(<tfc:metal/ingot/steel>, <tfc:metal/ingot/high_carbon_steel>, <tfc:metal/hammer_head/steel>, 500);
-	mods.immersiveengineering.MetalPress.addRecipe(<tfc:metal/ingot/steel>, <tfc:metal/ingot/high_carbon_steel>, <tfc:metal/hammer_head/black_steel>, 500);
-	mods.immersiveengineering.MetalPress.addRecipe(<tfc:metal/ingot/steel>, <tfc:metal/ingot/high_carbon_steel>, <tfc:metal/hammer_head/blue_steel>, 500);
-	mods.immersiveengineering.MetalPress.addRecipe(<tfc:metal/ingot/steel>, <tfc:metal/ingot/high_carbon_steel>, <tfc:metal/hammer_head/red_steel>, 500);
 	
-	//Black Steel
-	mods.immersiveengineering.MetalPress.addRecipe(<tfc:metal/ingot/black_steel>, <tfc:metal/ingot/high_carbon_black_steel>, <tfc:metal/hammer_head/steel>, 500);
-	mods.immersiveengineering.MetalPress.addRecipe(<tfc:metal/ingot/black_steel>, <tfc:metal/ingot/high_carbon_black_steel>, <tfc:metal/hammer_head/black_steel>, 500);
-	mods.immersiveengineering.MetalPress.addRecipe(<tfc:metal/ingot/black_steel>, <tfc:metal/ingot/high_carbon_black_steel>, <tfc:metal/hammer_head/blue_steel>, 500);
-	mods.immersiveengineering.MetalPress.addRecipe(<tfc:metal/ingot/black_steel>, <tfc:metal/ingot/high_carbon_black_steel>, <tfc:metal/hammer_head/red_steel>, 500);
-	
-	//Red Steel
-	mods.immersiveengineering.MetalPress.addRecipe(<tfc:metal/ingot/red_steel>, <tfc:metal/ingot/high_carbon_red_steel>, <tfc:metal/hammer_head/black_steel>, 500);
-	mods.immersiveengineering.MetalPress.addRecipe(<tfc:metal/ingot/red_steel>, <tfc:metal/ingot/high_carbon_red_steel>, <tfc:metal/hammer_head/blue_steel>, 500);
-	mods.immersiveengineering.MetalPress.addRecipe(<tfc:metal/ingot/red_steel>, <tfc:metal/ingot/high_carbon_red_steel>, <tfc:metal/hammer_head/red_steel>, 500);
-	
-	//Blue Steel
-	mods.immersiveengineering.MetalPress.addRecipe(<tfc:metal/ingot/blue_steel>, <tfc:metal/ingot/high_carbon_blue_steel>, <tfc:metal/hammer_head/black_steel>, 500);
-	mods.immersiveengineering.MetalPress.addRecipe(<tfc:metal/ingot/blue_steel>, <tfc:metal/ingot/high_carbon_blue_steel>, <tfc:metal/hammer_head/blue_steel>, 500);
-	mods.immersiveengineering.MetalPress.addRecipe(<tfc:metal/ingot/blue_steel>, <tfc:metal/ingot/high_carbon_blue_steel>, <tfc:metal/hammer_head/red_steel>, 500);
-
 
 //Clay Molds
 /*
@@ -770,3 +748,4 @@ mods.immersiveengineering.BlastFurnace.removeRecipe(<immersiveengineering:storag
 
 //II tungsten unification
 recipes.replaceAllOccurences(<immersiveintelligence:material_ingot:3>,<tfc:metal/ingot/tungsten>);
+
