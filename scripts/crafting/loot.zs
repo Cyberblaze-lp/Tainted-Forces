@@ -31,13 +31,16 @@ dungeon.addItemEntry(<thaumcraft:fabric>, 30000);
 dungeon.addItemEntry(<thaumcraft:baubles:3>, 1000);
 dungeon.addItemEntry(<thaumcraft:pech_wand>, 2000);
 dungeon.addItemEntry(<thaumcraft:curio:6>, 3000);
-/*dungeon.removeEntry("bewitchment:opal");
-dungeon.removeEntry("bewitchment:garnet");
-dungeon.removeEntry("bewitchment:amethyst");
-dungeon.removeEntry("enderio:item_material@9");
-dungeon.removeEntry("randomthings:summoningpendulum");
+
 dungeon.removeEntry("minecraft:beetroot_seeds");
-*/
+dungeon.removeEntry("ic2:ingot");
+dungeon.removeEntry("ic2:ingot:1");
+dungeon.removeEntry("ic2:ingot:2");
+dungeon.removeEntry("ic2:ingot:3");
+
+
+
+
 
 
 dungeon.addItemEntry(<quark:ancient_tome>.withTag({StoredEnchantments: [{lvl: 5 , id: 32 }]}), 10);
@@ -88,3 +91,17 @@ container.addItemEntry(<extrautils2:scanner>, 5);
 
 val scrap = LootTweaker.getTable("tetra:forged/metal_scrap_salvage").getPool("forged/metal_scrap_salvage");
 scrap.removeEntry("*");
+scrap.addItemEntry(<tfc:metal/nugget/black_steel>), 1;
+scrap.addItemEntry(<tfc:metal/nugget/steel>), 1;
+scrap.addItemEntry(<tfc:metal/nugget/wrought_iron>), 4;
+scrap.addItemEntry(<tfc:metal/nugget/aluminium>), 4;
+scrap.addItemEntry(<tfc:metal/nugget/tin>), 4;
+scrap.addItemEntry(<tfc:metal/nugget/lead>), 6;
+
+
+
+
+
+
+
+
