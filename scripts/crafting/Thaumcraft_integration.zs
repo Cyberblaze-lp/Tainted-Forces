@@ -67,6 +67,14 @@ mods.thaumcraft.Crucible.registerRecipe("labrennet", "LABMEAT", <firmalife:renne
 
 mods.thaumcraft.Crucible.registerRecipe("springwater", "LIQUIDDEATH", <forge:bucketfilled>.withTag({FluidName: "hot_water", Amount: 1000}), <forge:bucketfilled>.withTag({FluidName: "salt_water", Amount: 1000}), [<aspect:victus>*25, <aspect:ignis>*5]);
 mods.thaumcraft.Crucible.removeRecipe(<minecraft:clay_ball>);
+mods.thaumcraft.Crucible.removeRecipe(<minecraft:glowstone_dust>);
+mods.thaumcraft.Crucible.removeRecipe(<minecraft:web>);
+mods.thaumcraft.Crucible.removeRecipe(<minecraft:gunpowder>);
+
+mods.thaumcraft.Crucible.registerRecipe("glowstonefix", "HEDGEALCHEMY@1", <minecraft:glowstone_dust>*2, <minecraft:glowstone_dust>, [<aspect:sensus>*5, <aspect:lux>*10]);
+mods.thaumcraft.Crucible.registerRecipe("gunpowderfix", "HEDGEALCHEMY@1", <minecraft:gunpowder>*2, <minecraft:gunpowder>, [<aspect:ignis>*10, <aspect:perditio>*10, <aspect:alkimia>*5]);
+
+
 mods.thaumcraft.Crucible.registerRecipe("claydupe", "HEDGEALCHEMY@2", <minecraft:clay_ball>*2, <minecraft:clay_ball>, [<aspect:aqua>*5, <aspect:terra>*5]);
 mods.thaumcraft.Crucible.registerRecipe("redstonefromsalt", "HEDGEALCHEMY@2", <minecraft:redstone>, <ore:gemChippedRuby>, [<aspect:potentia>*10, <aspect:mortuus>*1]);
 mods.thaumcraft.Crucible.registerRecipe("stringfix", "HEDGEALCHEMY@2", <minecraft:string>, <ore:straw>, [<aspect:fabrico>*5, <aspect:bestia>]);
@@ -284,6 +292,7 @@ recipe.setGroup(ResourceLocation("thaumcraft:groupOre"+ item));
 
 
 }
+
 
 
 
