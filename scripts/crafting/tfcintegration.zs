@@ -73,32 +73,7 @@ recipes.remove(<tfctech:smeltery_cauldron>);
 recipes.addShapeless(<tfc:metal/dust/tungsten_steel> * 9, [<ore:dustSteel>, <ore:dustSteel>, <ore:dustSteel>, <ore:dustSteel>, <ore:dustSteel>, <ore:dustSteel>, <ore:dustSteel>, <ore:dustSteel>, <ore:dustTungsten>]);
 recipes.addShapeless(<tfctech:powder/potash> * 8, [<tfctech:pot_potash>]);
 recipes.addShapeless(<tfc:metal/ingot/brass>, [<thaumcraft:ingot:2>]);
-//recipes.addShapeless(<tfc:metal/ingot/aluminium> * 9, [<immersiveengineering:storage:1>]);
-//recipes.addShapeless(<tfc:metal/ingot/silver> * 9, [<immersiveengineering:storage:3>]);
-//recipes.addShapeless(<tfc:metal/ingot/lead> * 9, [<immersiveengineering:storage:2>]);
-//recipes.addShapeless(<tfc:metal/ingot/electrum> * 9, [<immersiveengineering:storage:7>]);
-//recipes.addShapeless(<tfc:metal/ingot/wrought_iron> * 9, [<minecraft:iron_block>]);
-//recipes.addShapeless(<tfc:metal/ingot/gold> * 9, [<minecraft:gold_block>]);
-//recipes.addShapeless(<tfc:metal/ingot/uranium> * 9, [<immersiveengineering:storage:5>]);
-//recipes.addShapeless(<tfc:metal/ingot/nickel> * 9, [<immersiveengineering:storage:4>]);
-//recipes.addShapeless(<tfc:metal/ingot/steel> * 9, [<immersiveengineering:storage:8>]);
-//recipes.addShapeless(<tfc:metal/ingot/copper> * 9, [<immersiveengineering:storage>]);
-//recipes.addShapeless(<tfc:metal/ingot/constantan> * 9, [<immersiveengineering:storage:6>]);
-recipes.addShapeless(<minecraft:bookshelf>, [<ore:bookshelf>]);
-//recipes.addShapeless(<minecraft:redstone> * 8, [<thebetweenlands:items_crushed:28>, <ore:gunpowder>]);
-//recipes.addShapeless(<minecraft:redstone> * 8, [<thebetweenlands:items_crushed:21>, <ore:gunpowder>]);
-//recipes.addShaped(<immersiveengineering:storage:3>, [[<tfc:metal/ingot/silver>, <tfc:metal/ingot/silver>, <tfc:metal/ingot/silver>], [<tfc:metal/ingot/silver>, <tfc:metal/ingot/silver>, <tfc:metal/ingot/silver>], [<tfc:metal/ingot/silver>, <tfc:metal/ingot/silver>, <tfc:metal/ingot/silver>]]);
-//recipes.addShaped(<immersiveengineering:storage:1>, [[<tfc:metal/ingot/aluminium>, <tfc:metal/ingot/aluminium>, <tfc:metal/ingot/aluminium>], [<tfc:metal/ingot/aluminium>, <tfc:metal/ingot/aluminium>, <tfc:metal/ingot/aluminium>], [<tfc:metal/ingot/aluminium>, <tfc:metal/ingot/aluminium>, <tfc:metal/ingot/aluminium>]]);
-//recipes.addShaped(<immersiveengineering:storage:2>, [[<tfc:metal/ingot/lead>, <tfc:metal/ingot/lead>, <tfc:metal/ingot/lead>], [<tfc:metal/ingot/lead>, <tfc:metal/ingot/lead>, <tfc:metal/ingot/lead>], [<tfc:metal/ingot/lead>, <tfc:metal/ingot/lead>, <tfc:metal/ingot/lead>]]);
-//recipes.addShaped(<immersiveengineering:storage:7>, [[<tfc:metal/ingot/electrum>, <tfc:metal/ingot/electrum>, <tfc:metal/ingot/electrum>], [<tfc:metal/ingot/electrum>, <tfc:metal/ingot/electrum>, <tfc:metal/ingot/electrum>], [<tfc:metal/ingot/electrum>, <tfc:metal/ingot/electrum>, <tfc:metal/ingot/electrum>]]);
-//recipes.addShaped(<minecraft:iron_block>, [[<tfc:metal/ingot/wrought_iron>, <tfc:metal/ingot/wrought_iron>, <tfc:metal/ingot/wrought_iron>], [<tfc:metal/ingot/wrought_iron>, <tfc:metal/ingot/wrought_iron>, <tfc:metal/ingot/wrought_iron>], [<tfc:metal/ingot/wrought_iron>, <tfc:metal/ingot/wrought_iron>, <tfc:metal/ingot/wrought_iron>]]);
-//recipes.addShaped(<minecraft:gold_block>, [[<tfc:metal/ingot/gold>, <tfc:metal/ingot/gold>, <tfc:metal/ingot/gold>], [<tfc:metal/ingot/gold>, <tfc:metal/ingot/gold>, <tfc:metal/ingot/gold>], [<tfc:metal/ingot/gold>, <tfc:metal/ingot/gold>, <tfc:metal/ingot/gold>]]);
-//recipes.addShaped(<immersiveengineering:storage:5>, [[<tfc:metal/ingot/uranium>, <tfc:metal/ingot/uranium>, <tfc:metal/ingot/uranium>], [<tfc:metal/ingot/uranium>, <tfc:metal/ingot/uranium>, <tfc:metal/ingot/uranium>], [<tfc:metal/ingot/uranium>, <tfc:metal/ingot/uranium>, <tfc:metal/ingot/uranium>]]);
-//recipes.addShaped(<immersiveengineering:storage:4>, [[<tfc:metal/ingot/nickel>, <tfc:metal/ingot/nickel>, <tfc:metal/ingot/nickel>], [<tfc:metal/ingot/nickel>, <tfc:metal/ingot/nickel>, <tfc:metal/ingot/nickel>], [<tfc:metal/ingot/nickel>, <tfc:metal/ingot/nickel>, <tfc:metal/ingot/nickel>]]);
-//recipes.addShaped(<immersiveengineering:storage:8>, [[<tfc:metal/ingot/steel>, <tfc:metal/ingot/steel>, <tfc:metal/ingot/steel>], [<tfc:metal/ingot/steel>, <tfc:metal/ingot/steel>, <tfc:metal/ingot/steel>], [<tfc:metal/ingot/steel>, <tfc:metal/ingot/steel>, <tfc:metal/ingot/steel>]]);
-//recipes.addShaped(<immersiveengineering:storage>, [[<tfc:metal/ingot/copper>, <tfc:metal/ingot/copper>, <tfc:metal/ingot/copper>], [<tfc:metal/ingot/copper>, <tfc:metal/ingot/copper>, <tfc:metal/ingot/copper>], [<tfc:metal/ingot/copper>, <tfc:metal/ingot/copper>, <tfc:metal/ingot/copper>]]);
-//recipes.addShaped(<immersiveengineering:storage:6>, [[<ore:ingotConstantan>, <ore:ingotConstantan>, <ore:ingotConstantan>], [<ore:ingotConstantan>, <ore:ingotConstantan>, <ore:ingotConstantan>], [<ore:ingotConstantan>, <ore:ingotConstantan>, <ore:ingotConstantan>]]);
-recipes.addShaped(<minecraft:sandstone>, [[<ore:sand>, <ore:sand>], [<ore:sand>, <ore:sand>]]);
+
 
 
 <minecraft:coal:1>.addTooltip(format.yellow("Burns at 1350°C (Yellow White***) for 1min 30s"));
@@ -340,26 +315,6 @@ Alloy.addAlloy("weak_blue_steel").addMetal("steel", 0.5, 0.65).addMetal("platinu
 <ore:dustAdvancedElectronicAlloy>.remove(<immersiveintelligence:material_dust>);
 <ore:nuggetAdvancedElectronicAlloy>.remove(<immersiveintelligence:material_nugget>);
 
-/*
-mods.nuclearcraft.alloy_furnace.removeRecipeWithOutput([<ore:ingotSteel>]);
-mods.nuclearcraft.alloy_furnace.removeRecipeWithOutput([<ore:blockSteel>]);
-mods.nuclearcraft.alloy_furnace.removeRecipeWithOutput([<ore:blockSteel>*2]);
-mods.nuclearcraft.alloy_furnace.removeRecipeWithOutput([<immersiveengineering:storage:8>]);
-mods.nuclearcraft.alloy_furnace.removeRecipeWithOutput([<immersiveengineering:storage:8>*2]);
-
-mods.nuclearcraft.alloy_furnace.removeRecipeWithInput([<ore:blockIron>*2, <ore:BlockFuelCoke>]);
-mods.nuclearcraft.alloy_furnace.removeRecipeWithInput([<ore:ingotIron>*2, <ore:fuelCoke>]);
-
-
-mods.nuclearcraft.manufactory.addRecipe([<tfc:ore/pitchblende>,<tfc:metal/dust/uranium>*4, 3.0, 2.0, 0.05 ]);
-mods.nuclearcraft.manufactory.addRecipe([<ore:oreSmallThorium>*10,<tfc:metal/dust/thorium>, 3.0, 2.0, 0.05 ]);
-mods.nuclearcraft.manufactory.addRecipe([<ore:orePoorThorium>*7,<tfc:metal/dust/thorium>, 3.0, 2.0, 0.05 ]);
-mods.nuclearcraft.manufactory.addRecipe([<ore:oreNormalThorium>*4,<tfc:metal/dust/thorium>, 3.0, 2.0, 0.05 ]);
-mods.nuclearcraft.manufactory.addRecipe([<ore:oreRichThorium>*3,<tfc:metal/dust/thorium>, 3.0, 2.0, 0.05 ]);
-mods.nuclearcraft.manufactory.addRecipe([<tfc:food/sugarcane>,<nuclearcraft:part:6>, 3.0, 2.0, 0.0]);
-mods.nuclearcraft.manufactory.addRecipe([<tfc:plants/spanish_moss>,<nuclearcraft:part:6>*2, 3.0, 2.0, 0.0]);
-
-*/
 
 
 
@@ -502,6 +457,7 @@ for gear in remove_gear {
 recipes.remove(gear);
 }
 Anvil.removeRecipe(<firmalife:spout>);
+
 
 
 
