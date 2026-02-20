@@ -1,9 +1,5 @@
 import loottweaker.LootTweaker;
 import loottweaker.Functions;
-import loottweaker.LootContext;
-
-import crafttweaker.util.IRandom;
-import crafttweaker.item.IItemStack;
 
 mods.ltt.LootTable.removeGlobalItem("minecraft:iron_ingot");
 mods.ltt.LootTable.removeGlobalItem("minecraft:wheat");
@@ -45,9 +41,9 @@ LootTweaker.getTable("minecraft:chests/simple_dungeon").getPool("pool1").removeE
 
 for enchant in game.enchantments {
     dungeon.addItemEntry(<minecraft:enchanted_book>, 3, 2, [
-        Functions.zenscript(function(input as IItemStack, rng as IRandom, context as LootContext) as IItemStack {
-            input.addEnchantment(enchant.makeEnchantment(rng.nextInt(1, enchant.maxLevel)));
-            return input;
+        Functions.zenscript(function(stack, random, context){
+            stack.addEnchantment(enchant.makeEnchantment(random.nextInt(1, enchant.maxLevel)));
+            return stack;
         })
     ], []);
 }
