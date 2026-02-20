@@ -1,21 +1,24 @@
 import loottweaker.LootTweaker;
-import crafttweaker.game.IGame;
+import loottweaker.Functions;
+import loottweaker.LootContext;
+
 import crafttweaker.util.IRandom;
-import crafttweaker.world.IWorld;
-import crafttweaker.enchantments.IEnchantmentDefinition;
-import loottweaker.vanilla.loot.LootTable;
-import loottweaker.vanilla.loot.LootPool;
+import crafttweaker.item.IItemStack;
+
 mods.ltt.LootTable.removeGlobalItem("minecraft:iron_ingot");
 mods.ltt.LootTable.removeGlobalItem("minecraft:wheat");
 mods.ltt.LootTable.removeGlobalItem("enderio:item_material:9");
 mods.ltt.LootTable.removeGlobalItem("botania:manaresource");
-mods.ltt.LootTable.removeGlobalItem("ic2:ingot:1");
+mods.ltt.LootTable.removeGlobalItem("ic2:ingot");
 mods.ltt.LootTable.removeGlobalItem("ic2:ingot:1");
 mods.ltt.LootTable.removeGlobalItem("ic2:ingot:2");
 mods.ltt.LootTable.removeGlobalItem("ic2:ingot:3");
 mods.ltt.LootTable.removeGlobalItem("ic2:ingot:4");
 mods.ltt.LootTable.removeGlobalItem("ic2:ingot:6");
+
+
 val dungeon = LootTweaker.getTable("minecraft:chests/simple_dungeon").getPool("main");
+
 dungeon.addItemEntry(<thaumcraft:amulet_vis>, 2000);
 dungeon.addItemEntry(<thaumcraft:curio>, 4000);
 dungeon.addItemEntry(<thaumcraft:celestial_notes>, 1000);
@@ -36,21 +39,19 @@ dungeon.addItemEntry(<thaumcraft:baubles:3>, 1000);
 dungeon.addItemEntry(<thaumcraft:pech_wand>, 2000);
 dungeon.addItemEntry(<thaumcraft:curio:6>, 3000);
 
-dungeon.removeEntry("minecraft:beetroot_seeds");
-dungeon.removeEntry("ic2:ingot");
-dungeon.removeEntry("ic2:ingot:1");
-dungeon.removeEntry("ic2:ingot:2");
-dungeon.removeEntry("ic2:ingot:3");
 
-world = crafttweaker.world.IWorld.getFromID(0);
+LootTweaker.getTable("minecraft:chests/simple_dungeon").getPool("pool1").removeEntry("minecraft:beetroot_seeds");
 
-for enchant in crafttweaker.game.IGame.enchantments {
-ID = enchant.id;
-X = world.rndom.nextInt(1, enchant.maxLevel);
 
-dungeon.addItemEntry(<minecraft:enchanted_book>.withTagnchantments: [{lvl: X , id: ID }]}), 3, 2);
-
+for enchant in game.enchantments {
+    dungeon.addItemEntry(<minecraft:enchanted_book>, 3, 2, [
+        Functions.zenscript(function(input as IItemStack, rng as IRandom, context as LootContext) as IItemStack {
+            input.addEnchantment(enchant.makeEnchantment(rng.nextInt(1, enchant.maxLevel)));
+            return input;
+        })
+    ], []);
 }
+
 
 
 
@@ -105,12 +106,12 @@ container.addItemEntry(<extrautils2:scanner>, 5);
 
 val scrap = LootTweaker.getTable("tetra:forged/metal_scrap_salvage").getPool("forged/metal_scrap_salvage");
 scrap.removeEntry("*");
-scrap.addItemEntry(<tfc:metal/nugget/black_steel>), 1, 3;
-scrap.addItemEntry(<tfc:metal/nugget/steel>), 1, 2;
-scrap.addItemEntry(<tfc:metal/nugget/wrought_iron>), 4;
-scrap.addItemEntry(<tfc:metal/nugget/aluminium>), 4;
-scrap.addItemEntry(<tfc:metal/nugget/tin>), 4;
-scrap.addItemEntry(<tfc:metal/nugget/lead>), 6;
+scrap.addItemEntry(<tfc:metal/nugget/black_steel>, 1, 3);
+scrap.addItemEntry(<tfc:metal/nugget/steel>, 1, 2);
+scrap.addItemEntry(<tfc:metal/nugget/wrought_iron>, 4);
+scrap.addItemEntry(<tfc:metal/nugget/aluminium>, 4);
+scrap.addItemEntry(<tfc:metal/nugget/tin>, 4);
+scrap.addItemEntry(<tfc:metal/nugget/lead>, 6);
 
 
 
