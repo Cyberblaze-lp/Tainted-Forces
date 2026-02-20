@@ -42,8 +42,9 @@ LootTweaker.getTable("minecraft:chests/simple_dungeon").getPool("pool1").removeE
 for enchant in game.enchantments {
     dungeon.addItemEntry(<minecraft:enchanted_book>, 3, 2, [
         Functions.zenscript(function(stack, random, context){
-            stack.addEnchantment(enchant.makeEnchantment(random.nextInt(1, enchant.maxLevel)));
-            return stack;
+            return <minecraft:enchanted_book>.withTag(
+                {StoredEnchantments: [{lvl: random.nextInt(1, enchant.maxLevel), id: enchant.id}]}
+            );
         })
     ], []);
 }
