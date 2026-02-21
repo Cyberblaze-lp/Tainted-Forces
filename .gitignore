@@ -16,7 +16,6 @@ usercache.json
 /mods/memory_repo
 /mods/.index
 config/jei/worldSettings.cfg
-mods/*.disabled-by-mod-director
 /classOut
 /mods/1.12.2
 /mods/railcraft
@@ -46,19 +45,27 @@ patchouli_data.json
 BotaniaVars.dat
 /fancymenu_data
 /config/spark/tmp-client
-/mods/OptiFine_1.12.2_HD_U_G6_pre1.jar
 /config/BiomeTweaker/output/
 /config/hqm/remote/data.json
 /config/hqm/remote/deaths.json
 /config/AppliedEnergistics2/items.csv
-/mods/!mixinbooter*
 /config/*cache*
-/mods/Caliper-1.12.2-1.1.46.jar
-/mods/LoadingProfiler-MC1.12-1.3.jar
-/mods/ProbeZS-1.18.8.jar
 /config/probezs.cfg
 /shaderpacks/ComplementaryReimagined*/
 /config/customloadingscreen_timings.nbt
 crafttweaker.log
 /config/spash.properties
 config/jei/jei.cfg
+
+# File Director-downloaded mods
+/mods/!mixinbooter*
+/mods/thaumicspeedup*
+/mods/HadEnoughItems*
+/mods/++relauncher*
+/mods/OptiFine_1.12.2_HD_U_G6_pre1.jar
+/mods/*.disabled-by-mod-director
+
+# Profiling mods
+/mods/Caliper-1.12.2-1.1.46.jar
+/mods/LoadingProfiler-MC1.12-1.3.jar
+/mods/ProbeZS-1.18.8.jar
