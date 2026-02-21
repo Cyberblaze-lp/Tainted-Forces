@@ -322,7 +322,7 @@ recipes.addShaped(<immersiveengineering:wooden_device1:3>, [[<ore:fenceTreatedWo
 
 recipes.addShaped(<immersiveengineering:cloth_device:2>, [[<ore:stickAluminium>, <ore:stickAluminium>, <ore:stickAluminium>], [<tfc:crop/product/jute_fiber>, <tfc:crop/product/jute_fiber>, <tfc:crop/product/jute_fiber>], [<tfc:crop/product/jute_fiber>, <tfc:crop/product/jute_fiber>, <tfc:crop/product/jute_fiber>]]);
 recipes.addShaped(<immersiveengineering:cloth_device:2>, [[<ore:stickIron>, <ore:stickIron>, <ore:stickIron>], [<tfc:crop/product/jute_fiber>, <tfc:crop/product/jute_fiber>, <tfc:crop/product/jute_fiber>], [<tfc:crop/product/jute_fiber>, <tfc:crop/product/jute_fiber>, <tfc:crop/product/jute_fiber>]]);
-recipes.addShaped(<hardcorequesting:quest_book>, [[<ore:stickWood>, null], [<ore:rock>, <ore:rock>]]);
+
 recipes.addShaped(<tconstruct:tooltables>, [[<ore:lumber>, <ore:leather>, <ore:lumber>], [<ore:lumber>, <ore:workbench>, <ore:lumber>], [<ore:lumber>, null, <ore:lumber>]]);
 recipes.addShaped(<thermalfoundation:storage_alloy:3>, [[<ore:ingotBronze>, <ore:ingotBronze>, <ore:ingotBronze>], [<ore:ingotBronze>, <ore:ingotBronze>, <ore:ingotBronze>], [<ore:ingotBronze>, <ore:ingotBronze>, <ore:ingotBronze>]]);
 recipes.addShaped(<tfc:metal/ingot/bronze>, [[<ore:nuggetBronze>, <ore:nuggetBronze>, <ore:nuggetBronze>], [<ore:nuggetBronze>, <ore:nuggetBronze>, <ore:nuggetBronze>], [<ore:nuggetBronze>, <ore:nuggetBronze>, <ore:nuggetBronze>]]);
@@ -681,6 +681,7 @@ recipes.addShaped(<metallurgy:bimetal_structure_block> * 16, [[<ore:ingotZirconi
 recipes.addShaped(<advancedrocketry:thermitetorch> * 4, [[<ore:dustThermite>], [<ore:stickWood>]]);
 recipes.addShaped(<mekanism:machineblock:8>, [[<ore:alloyBasic>, <ore:circuitBasic>, <ore:alloyBasic>], [<minecraft:compass>, <mekanism:basicblock:8>, <minecraft:compass>], [<ore:alloyBasic>, <ore:circuitBasic>, <ore:alloyBasic>]]);
 recipes.addShaped(<ic2:te:81>, [[null, <ore:plateAluminum>, null], [<ore:plateAluminum>, <ic2:fluid_cell>, <ore:plateAluminum>], [null, <ore:plateAluminum>, null]]);
+
 
 
 
