@@ -24,7 +24,7 @@ for item in [
 val dungeon = LootTweaker.getTable("minecraft:chests/simple_dungeon");
 val dungeonMain = dungeon.getPool("main");
 
-dungeonMain.removeEntry("quark:ancient_tome")
+dungeonMain.removeEntry("quark:ancient_tome");
 
 dungeonMain.addItemEntry(<thaumcraft:amulet_vis>, 2000);
 dungeonMain.addItemEntry(<thaumcraft:curio>, 4000);
@@ -47,10 +47,16 @@ dungeonMain.addItemEntry(<thaumcraft:pech_wand>, 2000);
 dungeonMain.addItemEntry(<thaumcraft:curio:6>, 3000);
 
 val dungeonEnchant = dungeon.addPool("tf:enchants", 1, 2, 0, 0);
-print("There are "+game.enchantments.length + "enchants");
 dungeonEnchant.addConditions([Conditions.randomChance(0.50)]);
+
 for enchant in game.enchantments {
-    dungeonEnchant.addItemEntry(<minecraft:enchanted_book>, 3, 2, [
+    var weight as int;
+    if(enchant.registryName has "minecraft"){
+        weight = 4;
+    } else {
+        weight = 2;
+    }
+    dungeonEnchant.addItemEntry(<minecraft:enchanted_book>, weight, 2, [
         Functions.zenscript(function(stack, random, context){
             return <minecraft:enchanted_book>.withTag(
                 {StoredEnchantments: [{lvl: random.nextInt(1, enchant.maxLevel), id: enchant.id}]}
