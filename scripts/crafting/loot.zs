@@ -22,6 +22,7 @@ for item in [
 }
 
 val dungeon = LootTweaker.getTable("minecraft:chests/simple_dungeon");
+dungeon.removePool("ic2");
 val dungeonMain = dungeon.getPool("main");
 
 dungeonMain.removeEntry("quark:ancient_tome");
