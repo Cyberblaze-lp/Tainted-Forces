@@ -56,7 +56,6 @@ crafttweaker.log
 config/jei/jei.cfg
 
 # File Director-downloaded mods
-/mods/!mixinbooter*
 /mods/thaumicspeedup*
 /mods/HadEnoughItems*
 /mods/++relauncher*
