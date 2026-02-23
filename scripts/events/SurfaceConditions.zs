@@ -78,6 +78,13 @@ function isDenied(block as IBlock, world as IWorld) as bool {
 }
 
 events.onPlayerInteractBlock(function(event as crafttweaker.event.PlayerInteractBlockEvent) {
+	if(isNull(event.item)){
+		return;
+	}
+	if(isNull(event.item.asBlock())){
+		return;
+	}
+
 	if(isDenied(event.item.asBlock(), event.world)){
 		event.cancel();
 		event.player.sendRichTextStatusMessage(format.red("Surface Conditions not met, cannot place!"));
