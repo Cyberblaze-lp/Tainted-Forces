@@ -69,13 +69,12 @@ function addLabel (item as IItemStack, dims as int[], whitelist as bool) {
 function isDenied(block as IBlock, world as IWorld) as bool {
 	val blockstate = block.definition.getStateFromMeta(block.meta);
 
-	if isNull(dimMap[blockstate]){
+	val entry as RestrictionEntry = dimMap[blockstate]; 
+	if isNull(entry){
 		return false;
 	}
 
-	val dims as int[] = dimMap[blockstate].dims;
-
-	return dims has world.getDimension();
+	return entry.isWhitelist != (entry.dims has world.getDimension());
 }
 
 events.onPlayerInteractBlock(function(event as crafttweaker.event.PlayerInteractBlockEvent) {
