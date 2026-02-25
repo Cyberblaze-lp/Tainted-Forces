@@ -11,7 +11,7 @@ recipes.addShaped(<minecraft:stone_pressure_plate>, [
     [nonBLStone, nonBLStone]
 ]);
 
-recipes.removeByRecipeName("minecraft:button");
+recipes.removeByRecipeName("minecraft:stone_button");
 recipes.addShapeless(<minecraft:stone_button>, [nonBLStone]);
 
 recipes.removeByRecipeName("minecraft:furnace");
@@ -36,7 +36,7 @@ recipes.addShaped(<minecraft:sign> * 3, [
 
 recipes.removeByRecipeName("minecraft:bowl");
 recipes.addShaped(<minecraft:bowl> * 4, [
-    [nonBLPlank, nonBLPlank, nonBLPlank],
+    [nonBLPlank, null, nonBLPlank],
     [null, nonBLPlank, null]
 ]);
 
