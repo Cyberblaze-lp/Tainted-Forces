@@ -1,21 +1,22 @@
+
 {
-	"generatorType": "SURFACE",
-	"minY": 144,
-	"maxY": 200,
-	"offsetX": 0,
-	"offsetY": 1,
+	"generatorType": "NONE",
+	"minY": -1,
+	"maxY": -1,
+	"offsetX": -1,
+	"offsetY": -1,
 	"offsetZ": 0,
 
 	"mirrorType": "NONE",
 	"rotation": null,
 	"ignoreEntities": false,
 
-	"dimensionSpawns": [0],
-	"biomeNameSpawns": ["tfc:swampland"],
+	"dimensionSpawns": [],
+	"biomeNameSpawns": [],
 	"biomeTagSpawns": [],
 	"isDimensionSpawnsBlacklist": false,
 	"isBiomeNameSpawnsBlacklist": false,
-	"isBiomeTagSpawnsBlacklist": true,
+	"isBiomeTagSpawnsBlacklist": false,
 	"generateEverywhere": false,
 
 	"integrity": 1,

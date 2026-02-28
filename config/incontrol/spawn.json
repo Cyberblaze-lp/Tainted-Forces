@@ -45,12 +45,16 @@
     "block": [
 			"thaumcraft:taint_rock",
 			"thaumcraft:taint_soil",
-			"thaumcraft:taint_fibre"
+			"thaumcraft:taint_fibre",
+			"tetra:forged_wall",
+			"tetra:forged_pillar",
+			"tetra:forged_platform",
+			"tetra:forged_platform_slab"
 		],
     "result": "deny"
   },
   {
-   "mob": ["minecraft:skeleton", "minecraft.zombie", "minecraft:spider","minecraft:creeper", "minecraft:enderman", "minecraft:zombie_villager","cyberware:cyberzombie"],
+   "mob": ["minecraft:skeleton", "minecraft:zombie", "minecraft:spider", "minecraft:enderman", "minecraft:zombie_villager","cyberware:cyberzombie","minecraft:witch"],
     "block": [
 			
 			"thaumcraft:taint_fibre"
@@ -66,16 +70,48 @@
 	
 	{
 		"dimension": 0,
-		"mob": "embers:ancient_golem",
-		"onjoin": true,
+		"mob": "quark:forgotten",
+		"onjoin": false,
 		"maxcount": {
-			"amount": 10,
-			"mob": "embers:ancient_golem",
+			"amount": 3,
+			"mob": "quark:forgotten",
 			"perplayer": true
 		},
 		"block": "tetra:forged_platform",
 		"maxY": 30,
-		"maxlight": 10,
+		"maxlight": 3,
+		"result": "allow",
+		"groupsizemin": 1,
+		"groupsizemax": 1
+	},
+	{
+		"dimension": 0,
+		"mob": "quark:ashen",
+		"onjoin": false,
+		"maxcount": {
+			"amount": 15,
+			"mob": "quark:ashen",
+			"perplayer": true
+		},
+		"block": "tetra:forged_platform",
+		"maxY": 30,
+		"maxlight": 3,
+		"result": "allow",
+		"groupsizemin": 1,
+		"groupsizemax": 1
+	},
+	{
+		"dimension": 0,
+		"mob": "quark:dweller",
+		"onjoin": false,
+		"maxcount": {
+			"amount": 10,
+			"mob": "quark:dweller",
+			"perplayer": true
+		},
+		"block": "tetra:forged_platform",
+		"maxY": 25,
+		"maxlight": 1,
 		"result": "allow",
 		"groupsizemin": 1,
 		"groupsizemax": 1
@@ -108,11 +144,13 @@
 			"mob": "minecraft:zombie",
 			"perplayer": true
 		},
+		"minY": 32,
+		"maxY": 250,
 		"maxlight": 3,
 		"result": "allow",
 		"groupsizemin": 1,
 		"groupsizemax": 4,
-		"onjoin": true
+		"onjoin": false
 	},
 	{
 		"mob": "cyberware:cyberzombie",
@@ -126,7 +164,7 @@
 		"result": "allow",
 		"groupsizemin": 1,
 		"groupsizemax": 12,
-		"onjoin": true
+		"onjoin": false
 	},
 	{
 		"mob": "minecraft:witch",
@@ -140,7 +178,7 @@
 		"result": "allow",
 		"groupsizemin": 1,
 		"groupsizemax": 1,
-		"onjoin": true
+		"onjoin": false
 	},
 	{
 		"mob": "minecraft:zombie_villager",
@@ -154,7 +192,7 @@
 		"result": "allow",
 		"groupsizemin": 1,
 		"groupsizemax": 1,
-		"onjoin": true
+		"onjoin": false
 	},
 	{
 		"mob": "minecraft:skeleton",
@@ -168,7 +206,7 @@
 		"result": "allow",
 		"groupsizemin": 1,
 		"groupsizemax": 3,
-		"onjoin": true
+		"onjoin": false
 	},
 	{
 		"mob": "minecraft:creeper",
@@ -182,7 +220,7 @@
 		"result": "allow",
 		"groupsizemin": 1,
 		"groupsizemax": 2,
-		"onjoin": true
+		"onjoin": false
 	},
 	{
 		"mob": "minecraft:spider",
@@ -210,7 +248,7 @@
 		"result": "allow",
 		"groupsizemin": 1,
 		"groupsizemax": 2,
-		"onjoin": true
+		"onjoin": false
 	},
 	{
 		"dimension": 0,
@@ -277,11 +315,6 @@
 		"mob": "thaumcraft:taintacle",
 		"onjoin": false,
 		"result": "deny"
-	},
-	{
-		"dimension": 0,
-		"mob": "embers:ancient_golem",
-		"onjoin": false,
-		"result": "deny"
 	}
+
 ]

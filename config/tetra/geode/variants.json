@@ -7,73 +7,13 @@
         "minY": 5,
 
 
-        "maxY": 40,
+        "maxY": 25,
 
 
         "density": 8,
 
 
-        "block": "tfc:raw/granite",
-
-
-        "blockMeta": 0,
-
-
-        "hardness": 1.5,
-
-
-        "resistance": 10,
-
-
-        "dropMeta": 0
-
-
-    },
-
-
-    {
-
-
-        "minY": 5,
-
-
-        "maxY": 40,
-
-
-        "density": 10,
-
-
-        "block": "tfc:raw/diorite",
-
-
-        "blockMeta": 0,
-
-
-        "hardness": 1.5,
-
-
-        "resistance": 10,
-
-
-        "dropMeta": 0
-
-
-    },
-
-
-    {
-
-
-        "minY": 5,
-
-
-        "maxY": 40,
-
-
-        "density": 12,
-
-
-        "block": "tfc:raw/gabbro",
+        "block": "minecraft:stone",
 
 
         "blockMeta": 0,
@@ -100,10 +40,70 @@
         "maxY": 25,
 
 
+        "density": 10,
+
+
+        "block": "minecraft:stone",
+
+
+        "blockMeta": 1,
+
+
+        "hardness": 1.5,
+
+
+        "resistance": 10,
+
+
+        "dropMeta": 0
+
+
+    },
+
+
+    {
+
+
+        "minY": 5,
+
+
+        "maxY": 25,
+
+
+        "density": 12,
+
+
+        "block": "minecraft:stone",
+
+
+        "blockMeta": 3,
+
+
+        "hardness": 1.5,
+
+
+        "resistance": 10,
+
+
+        "dropMeta": 0
+
+
+    },
+
+
+    {
+
+
+        "minY": 5,
+
+
+        "maxY": 25,
+
+
         "density": 16,
 
 
-        "block": "tfc:raw/basalt",
+        "block": "minecraft:stone",
 
 
         "blockMeta": 5,
@@ -124,34 +124,91 @@
     {
 
 
-        "minY": 80,
+        "minY": 5,
 
 
-        "maxY": 100,
+        "maxY": 30,
 
 
         "density": 18,
 
 
-        "block": "tfc:raw/gneiss",
+        "block": "undergroundbiomes:igneous_stone",
 
 
-        "blockMeta": 0,
+        "blockMeta": 1,
 
 
-        "hardness": 1.5,
+        "hardness": 3.6,
 
 
-        "resistance": 10,
+        "resistance": 6.95,
+
+
+        "dropMeta": 0
+
+
+    },
+
+
+    {
+
+
+        "minY": 5,
+
+
+        "maxY": 17,
+
+
+        "density": 18,
+
+
+        "block": "undergroundbiomes:igneous_stone",
+
+
+        "blockMeta": 2,
+
+
+        "hardness": 2.925,
+
+
+        "resistance": 6.3,
+
+
+        "dropMeta": 0
+
+
+    },
+
+
+    {
+
+
+        "minY": 5,
+
+
+        "maxY": 17,
+
+
+        "density": 18,
+
+
+        "block": "undergroundbiomes:igneous_stone",
+
+
+        "blockMeta": 5,
+
+
+        "hardness": 3.15,
+
+
+        "resistance": 6.55,
 
 
         "dropMeta": 0
 
 
     }
-
-
-    
 
 
 ]

@@ -71,21 +71,25 @@
       "biomeTags": [
         [
           "COLD"
+        ],
+        [
+          "RARE"
         ]
       ],
       "mainSelector": {
         "entries": {
           "tetra:forged_wall": 0.4,
-          "minecraft:air": 0.2
+          "minecraft:air": 0.2,
+          "tetra:forged_platform_slab[half=top]" : 0.4
         },
         "defaultBlock": "tetra:forged_wall"
       },
       "floorSelector": {
         "entries": {
-          "tetra:forged_platform": 0.8
+          "tetra:forged_platform": 1.0
 
         },
-        "defaultBlock": "tetra:forged_wall"
+        "defaultBlock": "tetra:forged_platform"
       },
       "brickSelector": {
         "entries": {
@@ -95,26 +99,26 @@
       },
       "legSelector": {
         "entries": {
-          "tetra:forged_pillar[axis=y]": 0.8,
-          "tetra:forged_pillar[facing=up, powered=false]": 0.2
+          "tetra:forged_pillar[axis=y]": 1.0
+          
         },
         "defaultBlock": "tetra:forged_wall"
       },
       "mainBlock": "tetra:forged_wall",
-      "supportBlock": "immersiveengineering:metal_decoration1[east=false,north=false,south=false,west=false]",
+      "supportBlock": "immersiveengineering:metal_decoration1[type=steel_fence,east=false,north=false,south=false,west=false]",
       "slabBlock": "tetra:forged_platform_slab[half=bottom]",
       "gravelBlock": "minecraft:gravel",
-      "stoneWallBlock": "immersiveengineering:metal_decoration1[east=false,north=false,south=false,west=false]",
+      "stoneWallBlock": "immersiveengineering:metal_decoration1[type=steel_fence,east=false,north=false,south=false,west=false]",
       "stoneSlabBlock": "tetra:forged_platform_slab[half=top]",
-      "minY": 17,
-      "maxY": 37,
+      "minY": 15,
+      "maxY": 15,
       "vineChance": 0.0,
       "snowChance": 0.0,
       "cactusChance": 0.0,
       "deadBushChance": 0.0,
-      "mushroomChance": 0.02,
+      "mushroomChance": 0.2,
       "legVariant": 1,
-      "replacementRate": 0.7
+      "replacementRate": 0.93
     }
     
     
@@ -123,44 +127,40 @@
     "biomeTags": [],
     "mainSelector": {
       "entries": {
-        "minecraft:cobblestone": 0.1,
-        "minecraft:stonebrick[variant=stonebrick]": 0.1,
-        "minecraft:air": 0.2,
-        "minecraft:stonebrick[variant=cracked_stonebrick]": 0.1,
-        "minecraft:stonebrick[variant=mossy_stonebrick]": 0.1
+        
+        "minecraft:air": 0.2
+        
       },
-      "defaultBlock": "minecraft:planks[variant=oak]"
+      "defaultBlock": "tfc:wood/planks/birch"
     },
     "floorSelector": {
       "entries": {
-        "minecraft:cobblestone": 0.1,
-        "minecraft:stonebrick[variant=stonebrick]": 0.1,
-        "minecraft:stonebrick[variant=cracked_stonebrick]": 0.1,
-        "minecraft:stonebrick[variant=mossy_stonebrick]": 0.1
+        
+        
       },
-      "defaultBlock": "minecraft:planks[variant=oak]"
+      "defaultBlock": "tfc:wood/planks/birch"
     },
     "brickSelector": {
       "entries": {
-        "minecraft:stonebrick[variant=stonebrick]": 0.33333,
-        "minecraft:stonebrick[variant=cracked_stonebrick]": 0.33333,
-        "minecraft:stonebrick[variant=mossy_stonebrick]": 0.33333
+        "tfc:cobble/andesite": 0.33333,
+        "tfc:smooth/andesite": 0.33333,
+        "tfc:bricks/andesite": 0.33333
       },
-      "defaultBlock": "minecraft:planks[variant=oak]"
+      "defaultBlock": "tfc:wood/planks/birch"
     },
     "legSelector": {
       "entries": {
-        "minecraft:log[axis=y,variant=oak]": 1.0
+        "tfc:wood/support/birch[axis=y,east=false,north=false,south=false,west=false]": 1.0
       },
-      "defaultBlock": "minecraft:planks[variant=oak]"
+      "defaultBlock": "tfc:wood/planks/birch"
     },
-    "mainBlock": "minecraft:planks[variant=oak]",
-    "supportBlock": "minecraft:fence[east=false,north=false,south=false,west=false]",
-    "slabBlock": "minecraft:wooden_slab[half=bottom,variant=oak]",
-    "gravelBlock": "minecraft:gravel",
-    "stoneWallBlock": "minecraft:cobblestone_wall[east=false,north=false,south=false,up=false,variant=cobblestone,west=false]",
-    "stoneSlabBlock": "minecraft:stone_slab[half=top,variant=stone_brick]",
-    "minY": 17,
+    "mainBlock": "tfc:wood/planks/birch",
+    "supportBlock": "tfc:wood/fence/birch[east=false,north=false,south=false,west=false]",
+    "slabBlock": "tfc:slab/wood/birch[half=bottom,variant=default]",
+    "gravelBlock": "tfc:gravel/andesite",
+    "stoneWallBlock": "tfc:wall/bricks/andesite[east=false,north=false,south=false,up=false,variant=cobblestone,west=false]",
+    "stoneSlabBlock": "tfc:slab/smooth/andesite[half=top,variant=default]",
+    "minY": 50,
     "maxY": 120,
     "vineChance": 0.0,
     "snowChance": 0.0,

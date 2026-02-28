@@ -1,3 +1,17 @@
+#capability
+tfc.capability.weight.very_light=Stack Size: 64
+tfc.capability.weight.light=Stack Size: 512
+tfc.capability.weight.medium=Stack Size: 32
+tfc.capability.weight.heavy=Stack Size: 24
+tfc.capability.weight.very_heavy=Stack Size: 4
+
+tfc.capability.size.tiny=Tiny
+tfc.capability.size.very_small=Very Small
+tfc.capability.size.small=Small
+tfc.capability.size.normal=Normal
+tfc.capability.size.large=Large
+tfc.capability.size.very_large=Very Large
+tfc.capability.size.huge=Huge
 # Ore blocks
 # native_ardite
 tile.tfc.ore.native_ardite.granite.name=Native Ardite Granite

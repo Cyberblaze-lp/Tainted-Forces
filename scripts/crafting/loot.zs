@@ -117,7 +117,6 @@ container.addItemEntry(<extrautils2:scanner>, 5);
 
 
 val scrap = LootTweaker.getTable("tetra:forged/metal_scrap_salvage").getPool("forged/metal_scrap_salvage");
-scrap.removeEntry("*");
 scrap.addItemEntry(<tfc:metal/nugget/black_steel>, 1, 3);
 scrap.addItemEntry(<tfc:metal/nugget/steel>, 1, 2);
 scrap.addItemEntry(<tfc:metal/nugget/wrought_iron>, 4);
