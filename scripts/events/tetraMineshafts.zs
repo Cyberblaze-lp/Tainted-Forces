@@ -38,21 +38,30 @@ if( ID has <entity:minecraft:chest_minecart>.id || ID has <entity:railcraft:cart
     }
 
 
-if(event.world.random.nextInt(0, 5) % 3 == 0)
-{
+
     var entityPosOld = event.entity.position3f;
-	var entityPosNew = crafttweaker.world.IBlockPos.create(Math.floor(entityPosOld.x),Math.floor(entityPosOld.y),Math.floor(entityPosOld.z)) as IBlockPos;
+    var x as int =Math.floor(entityPosOld.x) as int;
+    var y as int =Math.floor(entityPosOld.y) as int;
+    var z as int =Math.floor(entityPosOld.z) as int;
+	var entityPosNew = crafttweaker.world.IBlockPos.create(x, y, z) as IBlockPos;
+    var posModX as int = x & - 16;
+    var posModZ as int = z & -16;
 
-    server.commandManager.executeCommandSilent(event.entity, "tp @s ~-16 -60 ~-16");
-    server.commandManager.executeCommandSilent(event.entity, "tgen tetra:forged_container");
+        server.commandManager.executeCommandSilent(event.entity, "fill "+ toString(posModX+16) + " 4 "+ toString(posModZ + 16) + " "+ toString(posModX+2 +16) + " 4 " + toString(posModZ + 18) + " minectaft:air" );
 
+
+        server.commandManager.executeCommandSilent(event.entity, "tgen tetra:forged_container");
+    
+
+        server.commandManager.executeCommandSilent(event.entity, "clone "+ toString(posModX +16) + " 4 "+ toString(posModZ+16) + " "+ toString(posModX+2 +16) + " 4 "+toString(posModZ + 18) + " ~ ~-1 ~ replace move" );
+        server.commandManager.executeCommandSilent(event.entity, "tp @s ~ ~-600 ~");
 
       
       return;
 
-}
-else
-{
+
+
+
 var r1 = event.world.random.nextInt(0, features.length - 1);
 var feature as string = features[r1];
 
@@ -60,7 +69,7 @@ var feature as string = features[r1];
     server.commandManager.executeCommandSilent(event.entity, "tgen tetra:forged_" + feature);
     return;
 
-}
+
 
 }
 

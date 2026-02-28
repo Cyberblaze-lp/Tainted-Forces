@@ -78,9 +78,9 @@
       ],
       "mainSelector": {
         "entries": {
-          "tetra:forged_wall": 0.4,
-          "minecraft:air": 0.2,
-          "tetra:forged_platform_slab[half=top]" : 0.4
+          "tetra:forged_wall": 0.7,
+          
+          "tetra:forged_platform_slab[half=top]" : 0.1
         },
         "defaultBlock": "tetra:forged_wall"
       },

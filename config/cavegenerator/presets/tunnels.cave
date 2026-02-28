@@ -8,7 +8,7 @@
 # ----------------------------------------------------------- #
 {
   $VANILLA: "ALL" # Default ravines and lava settings.
-  enabled: true
+  enabled: false
   wallDecorators: []
   tunnels: {
     originHeight: [ 2, 200 ]
