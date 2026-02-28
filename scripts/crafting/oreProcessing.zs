@@ -98,8 +98,8 @@ mods.immersiveengineering.BottlingMachine.addRecipe(<thermalfoundation:ore:6>,<o
 
 
 
-mods.immersiveengineering.Squeezer.addRecipe(<immersiveengineering:ore:5>, null, <ore:gemPitchblende>*2, 2048);
-mods.immersiveengineering.BottlingMachine.addRecipe(<immersiveengineering:ore:5>,<ore:scrapUranium>, <liquid:lava>*200);
+mods.immersiveengineering.Squeezer.addRecipe(<ic2:resource:4>, null, <ore:gemPitchblende>*2, 2048);
+mods.immersiveengineering.BottlingMachine.addRecipe(<ic2:resource:4>,<ore:scrapUranium>, <liquid:lava>*200);
 
 mods.immersiveengineering.Squeezer.addRecipe(<metallurgy:osmium_ore>, null, <ore:oreSmallOsmium>*10, 2048);
 mods.immersiveengineering.Squeezer.addRecipe(<metallurgy:osmium_ore>, null, <ore:orePoorOsmium>*7, 2048);

@@ -29,6 +29,12 @@ mods.immersiveengineering.Squeezer.addRecipe(null,<liquid:plantoil>*120,<ore:see
 <ore:categoryMeat>.addAll(<ore:fish>);
 <ore:categoryCookedMeat>.addAll(<ore:listAllmeatcooked>);
 
+<ore:pressurePlateStone>.add(
+	<thaumicaugmentation:pressure_plate_arcane_stone>,
+	<thaumicaugmentation:warded_pressure_plate_arcane_stone>,
+	<thebetweenlands:betweenstone_pressure_plate>
+);
+
 //ItemRegistry.registerArmor(IIngredient input, float crushingModifier, float piercingModifier, float slashingModifier);
 //ItemRegistry.registerFood(IIngredient input, int hunger, float water, float saturation, float decay, float grain, float veg, float fruit, float meat, float dairy);
 
