@@ -9,7 +9,7 @@
 # see vanilla.cave.                                           #
 # ----------------------------------------------------------- #
 {
-  enabled: false
+  enabled: true
   tunnels: {
     replaceableBlocks: [
       tfc:fluid/fresh_water

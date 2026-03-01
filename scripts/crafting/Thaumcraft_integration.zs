@@ -56,6 +56,10 @@ mods.immersivetechnology.MeltingCrucible.removeRecipe(<minecraft:cobblestone>);
 <entity:thaumcraft:taintacle>.setAspects([<aspect:vitium>*15, <aspect:victus>*10, <aspect:sensus>*10]);
 <entity:thaumcraft:taintseed>.setAspects([<aspect:vitium>*25, <aspect:victus>*10, <aspect:aqua>*10, <aspect:permutatio>*10]);
 
+<minecraft:coal:1>.setAspects(<aspect:ignis>*4,<aspect:potentia>*4);
+<tfc:ore/bituminous_coal>.setAspects(<aspect:ignis>*4,<aspect:potentia>*4);
+<tfc:ore/lignite>.setAspects(<aspect:ignis>*4,<aspect:potentia>*4);
+
 
 
 
@@ -136,8 +140,9 @@ mods.thaumcraft.Infusion.registerRecipe("harvestseal", "SEALHARVEST", <thaumcraf
 
 
 //changes hsla steel to be a liquid version of alumentum, a high-efficiency fuel for mining drill and such
+mods.inworldcrafting.ExplosionCrafting.explodeItemRecipe(<minecraft:coal:1>*4, <thaumcraft:alumentum>, 85);
 
-mods.immersiveengineering.CokeOven.addRecipe(<minecraft:coal:1>*2, 50, <thaumcraft:alumentum>, 600);
+
 
 mods.immersiveengineering.DieselHandler.addFuel(<liquid:hsla_steel>, 20000);
 DieselHandler.addDrillFuel(<liquid:hsla_steel>);
