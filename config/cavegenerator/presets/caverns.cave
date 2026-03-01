@@ -7,10 +7,13 @@
 # vanilla.cave.                                               #
 # ----------------------------------------------------------- #
 {
+  imports: [
+    defaults.cave::caveBlocks as LAVA_CAVE_BLOCK
+  ]
   $VANILLA: "ALL" # Default ravines and lava settings.
   enabled: false
   caverns: {
-    height: [ 7, 50 ]
+    height: [ 2, 50 ]
     generators: {
       frequency: 0.02
       threshold: -0.5
@@ -20,8 +23,8 @@
   tunnels: {
     # Spawn rate roughly in half.
     count: 7
-    # Most tunnels will spawn alone.
-    systemChance: 0.00050
+    # Most tunnels will spawn together.
+    systemChance: 0.5
     noiseYReduction: false
     resizeBranches: false
     dPitch: {
@@ -37,4 +40,5 @@
       startVal: 0.6
     }
   }
+  caveBlocks: $LAVA_CAVE_BLOCK
 }

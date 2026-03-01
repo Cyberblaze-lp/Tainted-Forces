@@ -8,9 +8,15 @@
 # turning all tunnels generated into downward spirals.        #
 # ----------------------------------------------------------- #
 {
+  imports: [
+    defaults.cave::caveBlocks as LAVA_CAVE_BLOCK
+    blocks.cave::ROCKSTFC as ROCKSTFC
+  ]
   enabled: false
   tunnels: {
-    # Most tunnels will spawn alone.
+    height: [ 10, 180 ]
+    replaceableBlocks: $ROCKSTFC
+    checkWater: true
     systemChance: 0.001
     noiseYReduction: false
     dYaw: {
@@ -19,7 +25,7 @@
       # the same between sections.
       factor: 1
       randFactor: 0
-      startVal: 5
+      startVal: 2
     }
     dPitch: {
       # Don't twist vertically at all.

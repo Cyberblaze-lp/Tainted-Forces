@@ -149,8 +149,8 @@
   tunnels: {
     # Spawn rate roughly in half.
     count: 7
-    # Most tunnels will spawn alone.
-    systemChance: 0.00050
+    # Most tunnels will spawn together.
+    systemChance: 0.5
     noiseYReduction: false
     resizeBranches: false
     dPitch: {
@@ -212,7 +212,7 @@
   }
   enabled: false
   caverns: {
-    height: [ 7, 50 ]
+    height: [ 2, 50 ]
     generators: {
       frequency: 0.02
       threshold: -0.5
