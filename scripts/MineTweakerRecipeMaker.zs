@@ -48,6 +48,7 @@ recipes.addShapeless(<ic2:reactor_heat_vent>, [<ic2:heat_vent>, <ic2:crafting:7>
 
 // ================================================================================
 //#MARKER ADD SHAPED
+recipes.addShaped(<embers:item_request> * 2, [[<ore:nuggetQuicksilver>, <ore:nuggetQuicksilver>, <ore:nuggetQuicksilver>], [<embers:item_gauge>, <tetra:forged_bolt>, <tetra:metal_scrap>]]);
 recipes.addShaped(<ic2:scaffold> * 2, [[<ore:stickWood>, <ore:stickWood>, <ore:stickWood>], [null, <ore:stickWood>, null], [<ore:stickWood>, null, <ore:stickWood>]]);
 recipes.addShaped(<ic2:scaffold> * 4, [[<ore:lumber>, <ore:lumber>, <ore:lumber>], [null, <ore:stickWood>, null], [<ore:stickWood>, null, <ore:stickWood>]]);
 recipes.addShaped(<embers:stamper>, [[<ore:concrete>, <ore:ingotDoubleWroughtIron>, <ore:concrete>], [<ore:ingotCopper>, <ore:ingotDoubleWroughtIron>, <ore:ingotCopper>], [<ore:concrete>, null, <ore:concrete>]]);

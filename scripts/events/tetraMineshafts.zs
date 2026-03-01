@@ -1,3 +1,4 @@
+
 import crafttweaker.world.IWorld;
 import crafttweaker.event.EntityJoinWorldEvent;
 import crafttweaker.util.IRandom;
@@ -31,14 +32,16 @@ var ID as string = event.entity.definition.id;
 
 if( ID has <entity:minecraft:chest_minecart>.id || ID has <entity:railcraft:cart_chest>.id )
 {
+    
     if( 16.5 < event.entity.getY() || 16.0 > event.entity.getY())
         {
             event.cancel();
-        return;
+            return;
     }
 
 
-
+if event.world.random.nextInt(0, 2) == 1
+{
     var entityPosOld = event.entity.position3f;
     var x as int =Math.floor(entityPosOld.x) as int;
     var y as int =Math.floor(entityPosOld.y) as int;
@@ -58,10 +61,7 @@ if( ID has <entity:minecraft:chest_minecart>.id || ID has <entity:railcraft:cart
 
       
       return;
-
-
-
-
+}
 var r1 = event.world.random.nextInt(0, features.length - 1);
 var feature as string = features[r1];
 
@@ -72,7 +72,6 @@ var feature as string = features[r1];
 
 
 }
-
 if(ID has <entity:minecraft:tnt_minecart>.id || ID has <entity:railcraft:cart_tnt>.id)
 {
     if event.entity.getY() > 40.0 
@@ -83,6 +82,7 @@ if(ID has <entity:minecraft:tnt_minecart>.id || ID has <entity:railcraft:cart_tn
 
 var r2 as int = event.world.random.nextInt(0, pillarfeatures.length - 1);
 var pillarfeature as string = pillarfeatures[r2];
+
    server.commandManager.executeCommandSilent(event.entity, "pillar-spawn " + pillarfeature);
    server.commandManager.executeCommandSilent(event.entity, "tp @s ~-16 -60 ~-16");
     
