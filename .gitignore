@@ -53,6 +53,7 @@ BotaniaVars.dat
 crafttweaker.log
 /config/spash.properties
 config/jei/jei.cfg
+.mixin.out
 
 # File Director-downloaded mods
 /mods/thaumicspeedup*
