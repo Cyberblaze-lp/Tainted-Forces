@@ -46,11 +46,7 @@ events.onEntityJoinWorld(function (event as crafttweaker.event.EntityJoinWorldEv
     {
         return;
     }
-    /*
-    if isNull(event.entity.definition.id)
-    {
-        return;
-    }*/
+    
     var ID as string = event.entity.definition.id;
 
     if( ID has <entity:minecraft:chest_minecart>.id || ID has <entity:railcraft:cart_chest>.id )
