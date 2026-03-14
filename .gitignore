@@ -1,61 +1,69 @@
-
+# Logs
 /logs
-knownkeys.txt
-hei_bookmarks.ini
-optionsshaders.txt
 /*.log
-minecraftinstance.json
 /crash-reports
+crafttweaker.log
+
+# Launcher files
+minecraftinstance.json
 .curseclient
-/vintagefix
+/mods/memory_repo
+/mods/.index
+
+# Minecraft/Forge files
 usernamecache.json
 usercache.json
 /saves
+/screenshots
+/texturepacks
+
+# Mods
+/vintagefix
 /optionsof.txt
-/options.txt
-/mods/memory_repo
-/mods/.index
-config/jei/worldSettings.cfg
-/classOut
-/mods/1.12.2
-/mods/railcraft
 hei_favorites.ini
 mputils/settings.dat
-servers.dat
-/screenshots
 /relauncher
-/local
-/resourcepacks/EclecticTrove-1.12.2-1.0.1.zip
+
+# Dumps/Caches/Data
 time.history
-OpenComputersMod*
-/assetmover
-/astralsorcery
-/betweenlands_gallery
-/patchouli_books
-/texturepacks
-/mineraltracker
-/impossible_data
-/journeymap
+.mixin.out
+BotaniaVars.dat
+patchouli_data.json
 /dumps
+/assetmover
+/betweenlands_gallery
+/fancymenu_data
+/astralsorcery
+/impossible_data
+/config/spark/tmp-client
 /config/spark/data
 /config/spark/tmp
-/mods/TheBetweenlands-3.9.6-universal.jar
-patchouli_data.json
-BotaniaVars.dat
-/fancymenu_data
-/config/spark/tmp-client
 /config/BiomeTweaker/output/
 /config/AppliedEnergistics2/items.csv
 /config/*cache*
 /config/probezs.cfg
-/shaderpacks/ComplementaryReimagined*/
 /config/customloadingscreen_timings.nbt
-crafttweaker.log
-/config/spash.properties
-config/jei/jei.cfg
-.mixin.out
 
-# File Director-downloaded mods
+# Client stuff
+/config/jei/worldSettings.cfg
+/config/jei/jei.cfg
+/options.txt
+/journeymap
+/mineraltracker
+/local
+knownkeys.txt
+hei_bookmarks.ini
+optionsshaders.txt
+servers.dat
+
+# Downloaded mods
+/mods/1.12.2
+/mods/railcraft
+OpenComputersMod*
+/shaderpacks/ComplementaryReimagined*/
+/resourcepacks/EclecticTrove-1.12.2-1.0.1.zip
+/mods/TheBetweenlands-3.9.6-universal.jar
+## File Director
 /mods/thaumicspeedup*
 /mods/HadEnoughItems*
 /mods/++relauncher*
@@ -68,3 +76,8 @@ config/jei/jei.cfg
 /mods/ProbeZS-1.18.8.jar
 /mods/LagGoggles-1.12.2-5.9-140.jar
 /mods/TickCentral-3.2.jar
+/mods/FTBLib*
+/mods/FTBUtilities*
+
+/config/ftblib.cfg
+/config/ftbutilities.cfg
