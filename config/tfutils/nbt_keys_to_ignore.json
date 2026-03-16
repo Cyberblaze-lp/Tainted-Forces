@@ -1,0 +1,60 @@
+{
+	"ignore": [
+		"Items",
+		"InvSlots",
+		"inventory",
+		"inv",
+		"items",
+		"electricityStored",
+		"ifluxEnergy",
+		"Energy",
+		"internalCurrentPower",
+		"Fluid",
+		"tank",
+		"fluids",
+		"Amount",
+		"burnTime",
+		"BurnTime",
+		"TotalTime",
+		"def:1",
+		"def:2",
+		"def:3",
+		"def:4",
+		"def:5",
+		"def:6",
+		"extra:1",
+		"extra:2",
+		"extra:3",
+		"extra:4",
+		"extra:5",
+		"extra:6"
+	],
+	"iterate": {
+		"Attachments": {
+			"make_item": {
+				"id": "thermaldynamics:servo",
+				"Damage": "this.type"
+			}
+		},
+		"Covers": {
+			"make_item": {
+				"id": "appliedenergistics2:facade",
+				"tag": {
+					"damage": "this.damage",
+					"item": "this.block"
+				}
+			}
+		}
+	},
+	"access": {
+		"Components": {
+			"ignore": "fluid"
+		},
+		"TileData": {
+			"iterate": {
+				"ignore": "module_inventory"
+			}
+		}
+	},
+	"make_item": "upgrades"
+}
