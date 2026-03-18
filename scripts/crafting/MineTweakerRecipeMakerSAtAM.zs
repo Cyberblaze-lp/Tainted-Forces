@@ -139,5 +139,5 @@ recipes.addShaped(<immersiveengineering:blueprint>.withTag({blueprint: "vulcaniz
 recipes.addShaped(<thaumcraft:ore_cinnabar>, [[<ore:gemCinnabar>, <ore:gemCinnabar>], [<ore:gemCinnabar>, <ore:gemCinnabar>]]);
 recipes.addShaped(<tfc:metal/anvil/tungsten_steel>, [[<ore:ingotDoubleTungstenSteel>, <ore:ingotDoubleTungstenSteel>, <ore:ingotDoubleTungstenSteel>], [null, <ore:ingotDoubleTungstenSteel>, null], [<ore:ingotDoubleTungstenSteel>, <ore:ingotDoubleTungstenSteel>, <ore:ingotDoubleTungstenSteel>]]);
 recipes.addShaped(<minecraft:brewing_stand>, [[null, <ore:bowl>, null], [<ore:springBrass>, <ore:rodBlaze>, null], [<ore:brick>, <ore:brick>, <ore:brick>]]);
-recipes.addShaped(<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:dropper"}), [[<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:conveyor"})], [<ore:trapdoormetal>]]);
+
 

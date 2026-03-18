@@ -31,8 +31,7 @@ recipes.removeShaped(<integrateddynamics:squeezer>, [[<ore:stickWood>, <ore:bloc
 // ================================================================================
 //#MARKER ADD SHAPELESS
 recipes.addShapeless(<ic2:crafting:6> * 2, [<cyberware:component>, <thaumcraft:mechanism_simple>, <cyberware:component>]);
-recipes.addShapeless(<botania:corporeainterceptor>, [<thaumcraft:alumentum>, <thaumcraft:salis_mundus>, <ore:blockRedstone>]);
-recipes.addShapeless(<botania:corporeaspark:1>, [<botania:corporeaspark>, <thaumcraft:alumentum>]);
+
 recipes.addShapeless(<embers:ember_cartridge>, [<embers:ember_jar>, <embers:ember_jar>, <embers:ember_jar>, <embers:ember_jar>]);
 recipes.addShapeless(<embers:ember_jar>, [<embers:ember_bulb>, <embers:ember_bulb>, <embers:ember_bulb>, <embers:ember_bulb>]);
 recipes.addShapeless(<clothesline:clothesline>, [<tfc:crop/product/jute_fiber>, <tfc:crop/product/jute_fiber>]);
@@ -48,6 +47,19 @@ recipes.addShapeless(<ic2:reactor_heat_vent>, [<ic2:heat_vent>, <ic2:crafting:7>
 
 // ================================================================================
 //#MARKER ADD SHAPED
+recipes.addShaped(<minecraft:paper>, [[<ore:petalWhite>, <ore:petalWhite>, <ore:petalWhite>], [<ore:petalWhite>, <ore:petalWhite>, <ore:petalWhite>]]);
+recipes.addShaped(<projectred-integration:gate:4>, [[<ore:gemQuartz>, <ore:ingotRedAlloy>, <ore:gemQuartz>], [<ore:concrete>, <ore:concrete>, <ore:concrete>]]);
+recipes.addShaped(<immersiveengineering:wirecoil:5> * 12, [[<ore:ingotRedAlloy>, <ore:ingotRedAlloy>, <ore:ingotRedAlloy>]]);
+recipes.addShaped(<immersivepetroleum:speedboat>, [[<ore:plankTreatedWood>, null, <embers:blasting_core>], [<ore:plankTreatedWood>, <ore:plankTreatedWood>, <ore:plankTreatedWood>]]);
+recipes.addShaped(<tfc:crucible>, [[<tfc:ceramics/fired/fire_brick>, null, <tfc:ceramics/fired/fire_brick>], [<tfc:ceramics/fired/fire_brick>, null, <tfc:ceramics/fired/fire_brick>], [<tfc:ceramics/fired/fire_brick>, <tfc:ceramics/fired/fire_brick>, <tfc:ceramics/fired/fire_brick>]]);
+recipes.addShaped(<tfc:blast_furnace>, [[<tetra:metal_scrap>, <tetra:metal_scrap>, <tetra:metal_scrap>], [<tfc:ceramics/fired/fire_brick>, <tetra:vent_plate>, <tfc:ceramics/fired/fire_brick>], [<tfc:ceramics/fired/fire_brick>, <tetra:forged_bolt>, <tfc:ceramics/fired/fire_brick>]]);
+recipes.addShaped(<tfc:alabaster_brick> * 24, [[<ore:concrete>, <ore:concrete>, <ore:concrete>], [<ore:gemQuartz>, <ore:gemQuartz>, <ore:gemQuartz>]]);
+recipes.addShaped(<tfc:alabaster_brick> * 24, [[<ore:gemQuartz>, <ore:gemQuartz>, <ore:gemQuartz>], [<ore:concrete>, <ore:concrete>, <ore:concrete>]]);
+recipes.addShaped(<tfc:alabaster/raw/plain> * 4, [[<ore:gemQuartz>, <ore:concrete>], [<ore:concrete>, <ore:gemQuartz>]]);
+recipes.addShaped(<tfc:alabaster/raw/plain> * 4, [[<ore:concrete>, <ore:gemQuartz>], [<ore:gemQuartz>, <ore:concrete>]]);
+recipes.addShaped(<tetra:journal>, [[null, <ore:ingotUnknown>, null], [<ore:ingotUnknown>, <ore:gearStone>, <ore:ingotUnknown>], [null, <ore:ingotUnknown>, null]]);
+recipes.addShaped(<embers:codex>, [[<ore:ingotUnknown>], [<tetra:vent_plate>], [<ore:ingotUnknown>]]);
+recipes.addShaped(<astralsorcery:blockmachine:1> * 2, [[null, <ore:livingrock>, <ore:livingwood>], [<ore:livingwoodTwig>, <ore:livingwoodTwig>, <ore:livingwood>]]);
 recipes.addShaped(<embers:item_request> * 2, [[<ore:nuggetQuicksilver>, <ore:nuggetQuicksilver>, <ore:nuggetQuicksilver>], [<embers:item_gauge>, <tetra:forged_bolt>, <tetra:metal_scrap>]]);
 recipes.addShaped(<ic2:scaffold> * 2, [[<ore:stickWood>, <ore:stickWood>, <ore:stickWood>], [null, <ore:stickWood>, null], [<ore:stickWood>, null, <ore:stickWood>]]);
 recipes.addShaped(<ic2:scaffold> * 4, [[<ore:lumber>, <ore:lumber>, <ore:lumber>], [null, <ore:stickWood>, null], [<ore:stickWood>, null, <ore:stickWood>]]);
@@ -81,8 +93,6 @@ recipes.addShaped(<ic2:te:31>, [[<thermaldynamics:duct_16:1>, <thermaldynamics:d
 recipes.addShaped(<mysticalmechanics:gear_fan> * 8, [[<ore:sheetIron>, null, <tfc:metal/sheet/wrought_iron>], [null, <ore:stickIron>, null], [<ore:sheetIron>, null, <ore:sheetIron>]]);
 recipes.addShaped(<botania:manatablet>, [[<ore:livingrock>, <ore:powderMana>, <ore:livingrock>], [<ore:powderMana>, <ore:clothManaweave>, <ore:powderMana>], [<ore:livingrock>, <ore:powderMana>, <ore:livingrock>]]);
 recipes.addShaped(<botania:manaresource:6>, [[<ore:dustRedstone>, <ore:straw>]]);
-recipes.addShaped(<botania:corporeaindex>, [[<thaumcraft:salis_mundus>, <ore:blockGlass>, <thaumcraft:salis_mundus>], [<ore:blockGlass>, <ore:quicksilver>, <ore:blockGlass>], [<thaumcraft:alumentum>, <ore:blockGlass>, <thaumcraft:alumentum>]]);
-recipes.addShaped(<botania:corporeaspark> * 2, [[null, <ore:blockGlass>, null], [<thaumcraft:salis_mundus>, <thaumcraft:quicksilver>, <thaumcraft:salis_mundus>], [null, <ore:blockGlass>, null]]);
 recipes.addShaped(<immersiveengineering:metal_decoration0:3> * 3, [[<ore:plateSteel>, <ore:circuitBasic>, <ore:plateSteel>], [<ore:ingotRedAlloy>, <ore:ingotRedAlloy>, <ore:ingotRedAlloy>], [<ore:plateSteel>, <ore:circuitBasic>, <ore:plateSteel>]]);
 recipes.addShaped(<immersiveengineering:metal_decoration0:5> * 3, [[<ore:plateSteel>, <embers:blasting_core>, <ore:plateSteel>], [<ore:ingotBlackSteel>, <ore:ingotBlackSteel>, <ore:ingotBlackSteel>], [<ore:plateSteel>, <embers:blasting_core>, <ore:plateSteel>]]);
 recipes.addShaped(<immersiveengineering:metal_decoration1:1> * 6, [[<ore:ingotSteel>, <ore:ingotSteel>, <ore:ingotSteel>], [null, <ore:stickIron>, null], [<ore:stickIron>, <ore:ingotSteel>, <ore:stickIron>]]);
@@ -171,7 +181,6 @@ recipes.addShaped(<embers:ember_pulser>, [[null, <embers:aspectus_dawnstone>, nu
 recipes.addShaped(<embers:ember_funnel>, [[<embers:aspectus_dawnstone>, <embers:ember_receiver>, <embers:aspectus_dawnstone>], [null, <embers:aspectus_dawnstone>, null]]);
 recipes.addShaped(<minecraft:cauldron>, [[<ore:nuggetBlackBronze>, null, <ore:nuggetBlackBronze>], [<ore:nuggetBlackBronze>, null, <ore:nuggetBlackBronze>], [<ore:nuggetBlackBronze>, <ore:sheetBlackBronze>, <ore:nuggetBlackBronze>]]);
 recipes.addShaped(<thaumcraft:table_stone>, [[<ore:slabStonePolished>, <ore:slabStonePolished>, <ore:slabStonePolished>], [<ore:stonePolished>, null, <ore:stonePolished>]]);
-recipes.addShaped(<extrautils2:redstonelantern> * 2, [[null, <ore:stone>, null], [<ore:stone>, <ore:gemQuartz>, <ore:stone>], [null, <minecraft:redstone_torch>, null]]);
 recipes.addShaped(<minecraft:glass_bottle>, [[<ore:blockGlass>, null, <ore:blockGlass>], [null, <ore:blockGlass>, null]]);
 recipes.addShaped(<clothesline:clothesline_anchor>, [[<ore:nuggetIron>, <ore:nuggetIron>, <ore:nuggetIron>], [null, <ore:stickIron>, null]]);
 recipes.addShaped(<botania:spreader>, [[<ore:livingwood>, <ore:livingwood>, <ore:livingwood>], [null, <ore:blockStraw>, <tfc:ceramics/fired/vessel>], [<ore:livingwood>, <ore:livingwood>, <ore:livingwood>]]);

@@ -47,6 +47,7 @@ events.onEntityJoinWorld(function (event as crafttweaker.event.EntityJoinWorldEv
         return;
     }
     
+
     var ID as string = event.entity.definition.id;
 
     if( ID has <entity:minecraft:chest_minecart>.id || ID has <entity:railcraft:cart_chest>.id )
@@ -56,31 +57,35 @@ events.onEntityJoinWorld(function (event as crafttweaker.event.EntityJoinWorldEv
             event.cancel();
             return;
         }
+          val entityPosOld = event.entity.position3f;
+            val x as int =Math.floor(entityPosOld.x) as int;
+            val y as int =Math.floor(entityPosOld.y) as int;
+            val z as int =Math.floor(entityPosOld.z) as int;
+            val entityPosNew = crafttweaker.world.IBlockPos.create(x, y, z) as IBlockPos;
+            val entityPosOffset = crafttweaker.world.IBlockPos.create(x - 16 , -60, z - 16) as IBlockPos;
 
         if (event.world.random.nextInt(0, 2) == 1)
         {
-            var entityPosOld = event.entity.position3f;
-            var x as int =Math.floor(entityPosOld.x) as int;
-            var y as int =Math.floor(entityPosOld.y) as int;
-            var z as int =Math.floor(entityPosOld.z) as int;
-            var entityPosNew = crafttweaker.world.IBlockPos.create(x, y, z) as IBlockPos;
+          
             var posModX as int = x & - 16;
             var posModZ as int = z & -16;
 
 
             server.commandManager.executeCommandSilent(event.entity, "fill "+ toString(posModX+16) + " 4 "+ toString(posModZ + 16) + " "+ toString(posModX+2 +16) + " 4 " + toString(posModZ + 18) + " minectaft:air" );
             server.commandManager.executeCommandSilent(event.entity, "tgen tetra:forged_container");
+            event.entity.setPosition(entityPosOffset);
             server.commandManager.executeCommandSilent(event.entity, "clone "+ toString(posModX +16) + " 4 "+ toString(posModZ+16) + " "+ toString(posModX+2 +16) + " 4 "+toString(posModZ + 18) + " ~ ~-1 ~ replace move" );
             
-            event.cancel();
+            
+            
+            
             return;
         }
 
         val r1 = event.world.random.nextInt(0, features.length - 1);
         val feature as string = features[r1];
-
+        event.entity.setPosition(entityPosOffset);
         server.commandManager.executeCommandSilent(event.entity, "tgen tetra:forged_" + feature);
-        event.cancel();
         return;
     }
 

@@ -40,35 +40,6 @@
 	},
 
 	{
-   
-    "mob": ["minecraft:skeleton", "minecraft.zombie", "minecraft:spider","minecraft:creeper", "minecraft:enderman", "minecraft:zombie_villager","cyberware:cyberzombie"],
-    "block": [
-			"thaumcraft:taint_rock",
-			"thaumcraft:taint_soil",
-			"thaumcraft:taint_fibre",
-			"tetra:forged_wall",
-			"tetra:forged_pillar",
-			"tetra:forged_platform",
-			"tetra:forged_platform_slab"
-		],
-    "result": "deny"
-  },
-  {
-   "mob": ["minecraft:skeleton", "minecraft:zombie", "minecraft:spider", "minecraft:enderman", "minecraft:zombie_villager","cyberware:cyberzombie","minecraft:witch"],
-    "block": [
-			
-			"thaumcraft:taint_fibre"
-		],
-	"blockoffset": {
-			"x": 0,
-			"y": 1,
-			"z": 0
-		},
-
-    "result": "deny"
-  },
-	
-	{
 		"dimension": 0,
 		"mob": "quark:forgotten",
 		"onjoin": false,
@@ -116,26 +87,6 @@
 		"groupsizemin": 1,
 		"groupsizemax": 1
 	},
-	{
-		"dimension": 0,
-		"mob": "minecraft:guardian",
-		"onjoin": true,
-		"maxcount": {
-			"amount": 25,
-			"mob": "minecraft:guardian",
-			"perplayer": true
-		},
-		"inwater": true,
-		"biome": [
-			"tfc:deep_ocean",
-			"tfc:ocean"
-		],
-		"maxY": 140,
-		"result": "allow",
-		"groupsizemin": 1,
-		"groupsizemax": 3
-	},
-	
 	{
 		"mob": "minecraft:zombie",
 		"dimension": 0,
@@ -294,19 +245,7 @@
 	},
 	{
 		"dimension": 0,
-		"mob": "bewitchment:black_dog",
-		"onjoin": false,
-		"result": "deny"
-	},
-	{
-		"dimension": 0,
 		"mob": "minecraft:witch",
-		"onjoin": false,
-		"result": "deny"
-	},
-	{
-		"dimension": 0,
-		"mob": "minecraft:guardian",
 		"onjoin": false,
 		"result": "deny"
 	},

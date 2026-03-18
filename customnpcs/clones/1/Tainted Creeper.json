@@ -65,15 +65,15 @@
             "knockbackTicks": 0
         }
     },
+    "BossColor": 0,
     "CloakTexture": "",
+    "Weapons": [
+    ],
+    "pSize": 5,
     "HandDropChances": [
         0.085f,
         0.085f
     ],
-    "Weapons": [
-    ],
-    "pSize": 5,
-    "BossColor": 0,
     "BossBar": 0b,
     "MovingState": 1,
     "GroundSound": "minecraft:block.stone.break",
@@ -122,7 +122,7 @@
     "StandingState": 0,
     "MoveSpeed": 5,
     "CombatRegen": 0,
-    "Fire": -1s,
+    "Fire": 0s,
     "ModRev": 18,
     "KilledTime": 0L,
     "WalkingRange": 10,
@@ -175,7 +175,7 @@
     "TransformHasRole": 0b,
     "AggroRange": 30,
     "OnGround": 1b,
-    "MaxFiringRange": 1,
+    "MaxFiringRange": 2,
     "pEffect": 0,
     "HitSound": "minecraft:entity.arrow.hit",
     "pPhysics": 1b,
@@ -296,7 +296,7 @@
     "NpcAngrySound": "",
     "npcInteracting": 1b,
     "FindShelter": 0,
-    "HurtByTimestamp": 8214,
+    "HurtByTimestamp": 318,
     "AttackStrenght": 1,
     "ScriptEnabled": 1b,
     "HealthRegen": 0,
@@ -381,12 +381,12 @@
     "PersistenceRequired": 0b,
     "PotionImmune": 0b,
     "AABB": [
-        -68.91982739578553d,
-        156.0d,
-        -234.14370185892977d,
-        -68.31982737194367d,
-        157.70000004768372d,
-        -233.54370183508792d
+        -555.6783432354704d,
+        149.0d,
+        283.1607820513212d,
+        -555.0783432116285d,
+        150.70000004768372d,
+        283.76078207516304d
     ],
     "NpcDeathSound": "minecraft:entity.creeper.death",
     "NpcModelData": {
@@ -455,29 +455,12 @@
     "CreatureType": 0,
     "PotionDuration": 5,
     "pEffAmp": 0,
-    "TotalTicksAlive": 43232L,
+    "TotalTicksAlive": 43578L,
     "TransformHasInv": 0b,
     "Dimension": 0,
-    "ActiveEffects": [
-        {
-            "CurativeItems": [
-                {
-                    "id": "minecraft:milk_bucket",
-                    "Count": 1,
-                    "Damage": 0s
-                }
-            ],
-            "Duration": 102,
-            "Ambient": 0b,
-            "ShowParticles": 1b,
-            "Id": 32,
-            "Amplifier": 0b,
-            "Incurable": 0b
-        }
-    ],
     "Texture": "thaumcraft:textures/entity/creeper.png",
     "Rotation": [
-        341.39728f,
+        251.39728f,
         0.0f
     ],
     "MinExp": 5,
@@ -489,7 +472,7 @@
         "Lines": [
         ]
     },
-    "DistanceToMelee": 0,
+    "DistanceToMelee": 1,
     "AvoidsSun": 0b,
     "Air": 300s,
     "HandItems": [

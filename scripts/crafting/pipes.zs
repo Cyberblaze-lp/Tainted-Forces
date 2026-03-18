@@ -10,6 +10,10 @@ val removeitems =[
 <thermaldynamics:duct_16:*>,
 <thermaldynamics:duct_32:*>,
 <immersiveengineering:conveyor>,
+<botania:corporearetainer>,
+<botania:corporeacrystalcube>,
+<botania:corporeafunnel>
+
 ] as IIngredient[];
 
 for item in removeitems

@@ -141,7 +141,6 @@ recipes.remove(<ore:gearIron>);
 recipes.remove(<ore:gearGold>);
 recipes.removeShaped(<mekanism:basicblock:14>, [[<ore:circuitAdvanced>, <ore:paneGlass>, <ore:circuitAdvanced>], [<mekanism:basicblock2>, <minecraft:bucket>, <mekanism:basicblock2>], [<mekanism:basicblock2>, <mekanism:basicblock2>, <mekanism:basicblock2>]]);
 recipes.removeShaped(<magneticraft:connector> * 8, [[null, <ore:ingotIron>, null], [<ore:stone>, <ore:ingotCopper>, <ore:stone>]]);
-recipes.removeShaped(<locks:diamond_lock_pick> * 2, [[null, <ore:gemDiamond>, <ore:gemDiamond>], [null, <ore:gemDiamond>, null], [<ore:gemDiamond>, null, null]]);
 recipes.remove(<ic2:cover>);
 recipes.remove(<immersiveintelligence:mechanical_device1>);
 recipes.remove(<extrautils2:user>);
@@ -300,7 +299,6 @@ recipes.addShaped(<buildinggadgets:copypastetool>, [[<ore:plateTin>, <embers:int
 recipes.addShaped(<buildinggadgets:copypastetool>, [[<ore:sheetZinc>, <embers:intelligent_apparatus>], [<ore:sheetZinc>, <embers:ancient_motive_core>], [<ore:sheetZinc>, <ore:sheetZinc>]]);
 recipes.addShaped(<buildinggadgets:exchangertool>, [[<ore:sheetZinc>, <thaumcraft:morphic_resonator>], [<ore:sheetZinc>, <embers:ancient_motive_core>], [<ore:sheetZinc>, <ore:sheetZinc>]]);
 recipes.addShaped(<buildinggadgets:exchangertool>, [[<ore:plateTin>, <thaumcraft:morphic_resonator>], [<ore:plateTin>, <embers:ancient_motive_core>], [<ore:plateTin>, <ore:plateTin>]]);
-recipes.addShaped(<buildinggadgets:buildingtool>, [[<ore:brick>, <ore:dyeLime>], [<ore:brick>, <locks:wood_lock_mechanism>], [<ore:brick>, <ore:brick>]]);
 recipes.addShaped(<buildinggadgets:destructiontool>, [[<ore:plateSteel>, <ore:dustRedstone>], [<ore:plateSteel>, <mekanism:obsidiantnt>], [<ore:plateSteel>, <ore:plateSteel>]]);
 recipes.addShaped(<buildinggadgets:templatemanager>, [[<ore:sheetZinc>, <cyberware:brain_upgrades:5>, <ore:sheetZinc>], [<ore:sheetZinc>, <ore:chestWood>, <ore:sheetZinc>]]);
 recipes.addShaped(<buildinggadgets:templatemanager>, [[<ore:plateTin>, <cyberware:brain_upgrades:5>, <ore:plateTin>], [<ore:plateTin>, <ore:chestWood>, <ore:plateTin>]]);
