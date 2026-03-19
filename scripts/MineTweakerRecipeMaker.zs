@@ -13,6 +13,8 @@
 // ================================================================================
 //#MARKER REMOVE
 recipes.remove(<minecraft:rail>);
+recipes.removeByMod("signals");
+recipes.remove(<botania:fertilizer>);
 
 // ================================================================================
 //#MARKER REMOVE SHAPELESS
@@ -30,6 +32,10 @@ recipes.removeShaped(<integrateddynamics:squeezer>, [[<ore:stickWood>, <ore:bloc
 
 // ================================================================================
 //#MARKER ADD SHAPELESS
+recipes.addShapeless(<signals:rail_network_controller>, [<minecraft:map>, <signals:block_signal>]);
+recipes.addShapeless(<minecraft:fire_charge> * 3, [<thaumcraft:alumentum>, <thaumcraft:alumentum>, <minecraft:gunpowder>, <ore:powderBlaze>, <ore:powderBlaze>, <ore:powderBlaze>, <ore:powderBlaze>, <ore:powderBlaze>, <ore:powderBlaze>]);
+recipes.addShapeless(<minecraft:fire_charge>, [<thaumcraft:alumentum>, <thaumcraft:alumentum>]);
+recipes.addShapeless(<botania:fertilizer> * 2, [<botania:petal:*>, <botania:petal:*>, <minecraft:dye:15>]);
 recipes.addShapeless(<ic2:crafting:6> * 2, [<cyberware:component>, <thaumcraft:mechanism_simple>, <cyberware:component>]);
 
 recipes.addShapeless(<embers:ember_cartridge>, [<embers:ember_jar>, <embers:ember_jar>, <embers:ember_jar>, <embers:ember_jar>]);
@@ -47,6 +53,15 @@ recipes.addShapeless(<ic2:reactor_heat_vent>, [<ic2:heat_vent>, <ic2:crafting:7>
 
 // ================================================================================
 //#MARKER ADD SHAPED
+recipes.addShaped(<embers:crystal_ember>, [[null, <embers:shard_ember>, <embers:shard_ember>], [<embers:shard_ember>, <ore:blockBlaze>, <embers:shard_ember>], [<embers:shard_ember>, <embers:shard_ember>, null]]);
+recipes.addShaped(<embers:ancient_motive_core>, [[<tetra:metal_scrap>, <tetra:metal_scrap>, <tetra:metal_scrap>], [<embers:blasting_core>, <tetra:quick_latch>, <embers:blasting_core>], [<tetra:metal_scrap>, <tetra:metal_scrap>, <tetra:metal_scrap>]]);
+recipes.addShaped(<embers:inferno_forge>, [[<embers:blasting_core>, <embers:blasting_core>, <embers:blasting_core>], [<embers:blasting_core>, <embers:blasting_core>, <embers:blasting_core>], [<minecraft:nether_brick>, <embers:aspectus_dawnstone>, <minecraft:nether_brick>]]);
+recipes.addShaped(<chisel:chisel_iron>, [[<ore:stickWood>, <ore:chiselHead>]]);
+recipes.addShaped(<minecraft:redstone>, [[<ore:dye>, <ore:dye>, <ore:dye>], [<ore:dye>, <ore:powderMana>, <ore:dustFlux>]]);
+recipes.addShaped(<signals:cart_engine>, [[<embers:steam_engine>], [<ore:plateIron>]]);
+recipes.addShaped(<signals:chunkloader_upgrade>, [[<railcraft:worldspike:3>], [<ore:plateIron>]]);
+recipes.addShaped(<signals:block_signal> * 8, [[<ore:dustRedstone>, <ore:plateIron>], [<ore:dustRedstone>, <ore:blockGlass>]]);
+recipes.addShaped(<signals:block_signal> * 8, [[<ore:plateIron>, <ore:dustRedstone>], [<ore:blockGlass>, <ore:dustRedstone>]]);
 recipes.addShaped(<minecraft:paper>, [[<ore:petalWhite>, <ore:petalWhite>, <ore:petalWhite>], [<ore:petalWhite>, <ore:petalWhite>, <ore:petalWhite>]]);
 recipes.addShaped(<projectred-integration:gate:4>, [[<ore:gemQuartz>, <ore:ingotRedAlloy>, <ore:gemQuartz>], [<ore:concrete>, <ore:concrete>, <ore:concrete>]]);
 recipes.addShaped(<immersiveengineering:wirecoil:5> * 12, [[<ore:ingotRedAlloy>, <ore:ingotRedAlloy>, <ore:ingotRedAlloy>]]);

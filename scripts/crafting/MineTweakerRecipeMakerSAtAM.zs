@@ -84,14 +84,9 @@ recipes.addShapeless(<bountifulbaubles:reforger>, [<minecraft:cauldron>, <ore:an
 recipes.addShapeless(<thaumcraft:plate:1>, [<ore:sheetIron>]);
 recipes.addShapeless(<thaumcraft:plate>, [<ore:sheetBrass>]);
 
-recipes.addShapeless(<immersiveintelligence:material:31>, [<tfctech:latex/vulcanizing_agents>, <tfctech:latex/vulcanizing_agents>]);
-recipes.addShapeless(<projectred-core:resource_item>, [<ore:brick>, <ore:hammer>.transformDamage(1)]);
-recipes.addShapeless(<projectred-core:resource_item:250>, [<ore:charcoal>, <ore:charcoal>, <ore:sandSilica>, <ore:sandSilica>]);
-recipes.addShapeless(<projectred-core:resource_item:250>, [<ore:fuelCoke>, <ore:sandSilica>]);
 recipes.addShapeless(<thaumcraft:plank_silverwood> * 2, [<thaumcraft:log_silverwood>, <ore:saw>.transformDamage(1)]);
 recipes.addShapeless(<thaumcraft:plank_greatwood> * 2, [<thaumcraft:log_greatwood>, <ore:saw>.transformDamage(1)]);
-recipes.addShapeless(<immersiveengineering:stone_decoration:2> * 3, [<ore:plateBlackSteel>, <tfc:fire_bricks>,<tfc:fire_bricks>, <ore:brickNether>]);
-recipes.addShapeless(<minecraft:dirt>, [<ore:sand>, <ore:dustAsh>,<ore:dustAsh>,<ore:dustAsh>]);
+recipes.addShapeless(<immersiveengineering:stone_decoration:2> * 3, [<ore:plateBlackSteel>, <tfc:fire_bricks>,<tfc:fire_bricks>]);
 recipes.addShapeless(<minecraft:dirt>, [<ore:dirt>]);
 recipes.addShapeless(<quark:arrow_explosive>, [<minecraft:arrow>, <thaumcraft:alumentum>,<thaumcraft:alumentum> ]);
 recipes.addShapeless(<quark:polished_stone>, [<ore:stonePolished>, <tfcthings:whetstone>.transformDamage(1)]);

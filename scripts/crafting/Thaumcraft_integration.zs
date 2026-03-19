@@ -34,6 +34,8 @@ mods.immersivetechnology.MeltingCrucible.removeRecipe(<minecraft:cobblestone>);
 <metallurgy:lemurite_ingot>.setAspects(<aspect:metallum>*10,<aspect:lux>*5);
 
 
+
+
 <thermalfoundation:material:1028>.setAspects(<aspect:vitium>*10,<aspect:desiderium>*5,<aspect:victus>*5);
 <thermalfoundation:geode>.setAspects(<aspect:vitium>*10,<aspect:aqua>*10,<aspect:victus>*5);
 <thaumcraft:taint_fibre>.setAspects(<aspect:vitium>*10,<aspect:victus>*5);
@@ -42,6 +44,9 @@ mods.immersivetechnology.MeltingCrucible.removeRecipe(<minecraft:cobblestone>);
 <minecraft:magma>.setAspects(<aspect:ignis>*10, <aspect:terra>*5);
 <embers:dust_ember>.setAspects(<aspect:ignis>*8,<aspect:potentia>*8, <aspect:vitreus>*5,<aspect:perditio>*5);
 <embers:dust_metallurgic>.setAspects(<aspect:metallum>*15,<aspect:alkimia>*5,<aspect:perditio>*5);
+
+
+
 
 <entity:minecraft:zombie>.setAspects([<aspect:exanimis>*5, <aspect:humanus>*10, <aspect:terra>*5]);
 <entity:cyberware:cyberzombie>.setAspects([<aspect:exanimis>*5, <aspect:humanus>*10, <aspect:machina>*10, <aspect:metallum>*5]);
@@ -56,6 +61,7 @@ mods.immersivetechnology.MeltingCrucible.removeRecipe(<minecraft:cobblestone>);
 <entity:thaumcraft:taintacle>.setAspects([<aspect:vitium>*15, <aspect:victus>*10, <aspect:sensus>*10]);
 <entity:thaumcraft:taintseed>.setAspects([<aspect:vitium>*25, <aspect:victus>*10, <aspect:aqua>*10, <aspect:permutatio>*10]);
 
+<minecraft:coal>.setAspects(<aspect:ignis>*4,<aspect:potentia>*4);
 <minecraft:coal:1>.setAspects(<aspect:ignis>*4,<aspect:potentia>*4);
 <tfc:ore/bituminous_coal>.setAspects(<aspect:ignis>*4,<aspect:potentia>*4);
 <tfc:ore/lignite>.setAspects(<aspect:ignis>*4,<aspect:potentia>*4);

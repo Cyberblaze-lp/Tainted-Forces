@@ -168,10 +168,7 @@ recipes.addShapeless(<railcraft:worldspike:2>, [<railcraft:worldspike:1>]);
 recipes.addShapeless(<railcraft:worldspike:1>, [<railcraft:worldspike:3>]);
 recipes.addShapeless(<extrautils2:spike_wood>, [<ore:knife>.transformDamage(1), <ore:logWood>]);
 
-recipes.addShapeless(<minecraft:fire_charge>, [<minecraft:lava_bucket>.transformReplace(<minecraft:bucket>), <ore:gunpowder>, <ore:mineralLignite>]);
-recipes.addShapeless(<minecraft:fire_charge>, [<minecraft:lava_bucket>.transformReplace(<minecraft:bucket>), <ore:gunpowder>, <ore:mineralBituminousCoal>]);
-recipes.addShapeless(<minecraft:fire_charge>, [<minecraft:lava_bucket>.transformReplace(<minecraft:bucket>), <ore:gunpowder>, <ore:fuelCoke>]);
-recipes.addShapeless(<minecraft:fire_charge>, [<minecraft:lava_bucket>.transformReplace(<minecraft:bucket>), <ore:gunpowder>, <ore:itemCharcoal>]);
+
 recipes.addShapeless(<minecraft:brown_mushroom>, [<ore:mushroombrown>]);
 recipes.addShapeless(<minecraft:red_mushroom>, [<ore:mushroomRed>]);
 recipes.addShapeless(<ic2:nuclear:9>, [<ore:dustCharcoal>, <ore:dustCharcoal>, <ore:dustCharcoal>, <ore:dustCharcoal>, <ic2:nuclear>, <ore:dustCharcoal>, <ore:dustCharcoal>, <ore:dustCharcoal>, <ore:dustCharcoal>]);
@@ -287,7 +284,6 @@ recipes.addShaped(<railcraft:borehead_iron>, [[<ore:dyeBlue>, <tfc:metal/mace_he
 recipes.addShaped(<railcraft:borehead_steel>, [[<ore:dyeBlue>, <tfc:metal/mace_head/steel>], [<ore:plateSteel>, <tfc:metal/mace_head/steel>], [<ore:dyeBlue>, <tfc:metal/mace_head/steel>]]);
 recipes.addShaped(<railcraft:tool_crowbar_steel>, [[null, <ore:nuggetSteel>, <ore:rodSteel>], [null, <ore:rodSteel>, <ore:dyeRed>], [<ore:rodSteel>, <ore:dyeRed>, null]]);
 recipes.addShaped(<railcraft:tool_crowbar_iron>, [[null, <ore:nuggetIron>, <ore:rodWroughtIron>], [null, <ore:rodWroughtIron>, <ore:dyeRed>], [<ore:rodWroughtIron>, <ore:dyeRed>, null]]);
-recipes.addShaped(<minecraft:furnace>, [[<ore:stonePolished>, <ore:stonePolished>, <ore:stonePolished>], [<ore:brickStone>, <minecraft:fire_charge>, <ore:brickStone>], [<ore:brickStone>, <ore:brickStone>, <ore:brickStone>]]);
 recipes.addShaped(<extrautils2:spike_stone>, [[<ore:knifeHead>, <ore:knifeHead>], [<ore:itemClay>, <ore:cobblestone>]]);
 recipes.addShaped(<mekanism:walkietalkie>, [[null, null, <ore:nuggetCopper>], [<ore:brick>, <ore:clothHighQuality>, <ore:brick>], [null, <ore:brick>, null]]);
 recipes.addShaped(<buildinggadgets:copypastetool>, [[<ore:plateTitanium>, <appliedenergistics2:material:43>], [<ore:plateTitanium>, <appliedenergistics2:material:23>], [<ore:plateTitanium>, <appliedenergistics2:material:23>]]);
@@ -429,7 +425,6 @@ recipes.addShaped(<mekanism:basicblock:8>, [[<ore:heavyPlateSteel>, <ore:heavyPl
 recipes.addShaped(<appliedenergistics2:inscriber>, [[<ore:ingotSteel>, <cyberware:component>, <ore:ingotSteel>], [null, null, <ore:ingotSteel>], [<ore:ingotSteel>, <cyberware:component>, <ore:ingotSteel>]]);
 recipes.addShaped(<extrautils2:analogcrafter>, [[<immersiveengineering:treated_wood>, <ore:ingotDoubleCopper>, <immersiveengineering:treated_wood>], [<immersiveengineering:treated_wood>, <thaumcraft:pattern_crafter>, <immersiveengineering:treated_wood>], [<immersiveengineering:treated_wood>, <thaumcraft:brain_box>, <immersiveengineering:treated_wood>]]);
 recipes.addShaped(<extrautils2:crafter>, [[<thaumcraft:stone_arcane_brick>, <ore:ingotDoubleElectrum>, <thaumcraft:stone_arcane_brick>], [<thaumcraft:stone_arcane_brick>, <thaumcraft:pattern_crafter>, <thaumcraft:stone_arcane_brick>], [<thaumcraft:stone_arcane_brick>, <thaumcraft:brain_box>, <thaumcraft:stone_arcane_brick>]]);
-recipes.addShaped(<tfc:blast_furnace>, [[<tetra:metal_scrap>, <tetra:metal_scrap>, <tetra:metal_scrap>], [<embers:archaic_brick>, <tetra:vent_plate>, <embers:archaic_brick>], [<embers:archaic_brick>, <embers:archaic_circuit>, <embers:archaic_brick>]]);
 recipes.addShaped(<embers:archaic_circuit> * 2, [[null, <embers:archaic_brick>, null], [<ore:wireCopper>, <ore:fireClay>, <ore:wireCopper>], [null, <embers:archaic_brick>, null]]);
 recipes.addShaped(<bloodmagic:soul_forge>, [[<embers:aspectus_silver>, null, <embers:aspectus_silver>], [<ore:ingotColdIron>, <embers:seed_silver>, <ore:ingotColdIron>], [<ore:ingotColdIron>, null, <ore:ingotColdIron>]]);
 recipes.addShaped(<immersiveintelligence:mechanical_device1>, [[<tfc:bellows>, <ore:rodIron>, <tfc:bellows>], [<ore:barsIron>, <tfc:brass_mechanisms>, <ore:barsIron>], [<ore:plateBrass>, <ore:barsIron>, <ore:plateBrass>]]);
@@ -670,7 +665,6 @@ recipes.addShaped(<firmalife:greenhouse_wall> * 16, [[<ore:ingotPigIron>, <ore:i
 recipes.addShaped(<firmalife:greenhouse_roof> * 12, [[null, null, <ore:ingotPigIron>], [null, <ore:ingotPigIron>, null], [<ore:ingotPigIron>, null, <ore:ingotPigIron>]]);
 recipes.addShaped(<mekanism:basicblock:14>, [[<ore:circuitUltimate>, <ore:circuitUltimate>, <ore:circuitUltimate>], [<mekanism:basicblock2>, <mekanism:basicblock:8>, <mekanism:basicblock2>], [<mekanism:basicblock2>, <mekanism:basicblock2>, <mekanism:basicblock2>]]);
 
-recipes.addShaped(<embers:boiler>, [[<ore:ingotCopper>, <ore:ingotCopper>, <ore:ingotCopper>], [<ore:rodWroughtIron>, <ore:grill>, <ore:rodWroughtIron>], [<ore:rodWroughtIron>, <tfc:metal/lamp/copper>, <ore:rodWroughtIron>]]);
 recipes.addShaped(<minecraft:piston>, [[<ore:lumber>,<ore:lumber>,<ore:lumber>],[<ore:cobblestone>,<ore:rodWroughtIron>,<ore:cobblestone>],[<ore:cobblestone>,<tfc:brass_mechanisms>,<ore:cobblestone>]]);
 recipes.addShaped(<magneticraft:connector> * 4, [[<ore:nuggetTungsten>, <ore:nuggetTungsten>, <ore:nuggetTungsten>], [null, <ore:nuggetTungsten>, null], [null, <ore:ingotIron>, null]]);
 recipes.addShaped(<metallurgy:bimetal_structure_block> * 2, [[<ore:ingotBrass>, <ore:ingotWroughtIron>, <ore:ingotBrass>], [<ore:ingotWroughtIron>, null, <ore:ingotWroughtIron>], [<ore:ingotBrass>, <ore:ingotWroughtIron>, <ore:ingotBrass>]]);

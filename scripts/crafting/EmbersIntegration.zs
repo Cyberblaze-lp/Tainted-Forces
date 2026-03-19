@@ -454,7 +454,6 @@ mods.embers.EmberGeneration.removeBoilerFluid(<liquid:oil_dwarf>);
 
 recipes.remove (<thermalexpansion:satchel:100>);
 mods.inworldcrafting.FluidToItem.transform(<thermalexpansion:satchel:100>, <liquid:lava>, [<thermalexpansion:satchel>], true);
-mods.inworldcrafting.FluidToItem.transform(<minecraft:fire_charge>, <liquid:lava>, [<ore:gunpowder>], true);
 mods.embers.Alchemy.remove(<embers:shifting_scales>);
 
 mods.embers.Alchemy.add(<embers:shifting_scales>*3,[<embers:ashen_cloth>,<thebetweenlands:items_misc:54>,<ore:sheetDoubleLead>,<thebetweenlands:items_misc:54>,<ore:sheetDoubleLead>],{"iron":(16 to 64),"lead":(48 to 128)});
@@ -468,7 +467,7 @@ mods.embers.Alchemy.remove(<embers:catalytic_plug>);
 mods.embers.Alchemy.add(<embers:dust_metallurgic>*5,[<thaumcraft:salis_mundus>,<thaumcraft:nugget:5>,null,null,null],{"dawnstone":(0 to 16),"iron":(0 to 16),"silver":(0 to 16),"copper":(0 to 16),"lead":(0 to 16)});
 mods.embers.Alchemy.add(<embers:dust_metallurgic>*5,[<thaumcraft:salis_mundus>,<minecraft:dye:15>,<minecraft:dye:15>,<minecraft:dye:15>,<minecraft:dye:15>],{"dawnstone":(0 to 16),"iron":(0 to 16),"silver":(0 to 16),"copper":(0 to 16),"lead":(0 to 16)});
 mods.embers.Alchemy.add(<embers:dust_metallurgic>*5,[<thaumcraft:nugget:5>,<minecraft:dye:15>,<minecraft:dye:15>,<minecraft:dye:15>,<minecraft:dye:15>],{"dawnstone":(0 to 16),"iron":(0 to 16),"silver":(0 to 16),"copper":(0 to 16),"lead":(0 to 16)});
-mods.embers.Alchemy.add(<embers:blasting_core>,[<ore:tnt>,<ore:plateIron>,<thermaldynamics:duct_16:1>,<thermaldynamics:duct_16:1>,<thermaldynamics:duct_16:1>],{"copper":(0 to 16)});
+mods.embers.Alchemy.add(<embers:blasting_core>,[<minecraft:fire_charge>,<ore:plateIron>,<ore:plateIron>,<ic2:crafting:8>,<ore:plateIron>],{"copper":(0 to 16)});
 
 
 mods.embers.DawnstoneAnvil.add([<tfc:metal/ingot/high_carbon_steel>,<immersiveengineering:material:7>], <tfc:metal/ingot/pig_iron>,null);

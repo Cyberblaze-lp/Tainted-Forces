@@ -11,25 +11,34 @@ import crafttweaker.potions.IPotionEffect;
 import crafttweaker.potions.IPotion;
 
 events.onPlayerChangedDimension(function(event as crafttweaker.event.PlayerChangedDimensionEvent){
-while (event.toWorld.getBlock(event.player.getX(),-1 + event.player.getY(),event.player.getZ()).definition.id == "minecraft:air")
-		event.player.world.catenation()
-				.run(function(world, context) {
-				context.data = world.time;
-				})
-				.sleep(2)
+if(event.to != 0 || event.from !=-3 || event.player.hasGameStage("setspawn")){
+	return;
+}
+		event.toWorld.catenation()
+				
 				.then(function(world, context) {
-			var resi = <potion:minecraft:resistance>.makePotionEffect(10, 5, false, false);
-		event.player.addPotionEffect(resi);
-        })
-		.start();
+					var resi = <potion:minecraft:resistance>.makePotionEffect(10000, 5, true, true);
+					event.player.addPotionEffect(resi);
+        		})
+				.sleepUntil(function(world, context){
+					return (!isNull(event.toWorld.getBlock(event.player.getX(),-1 + event.player.getY(),event.player.getZ()))&& event.toWorld.getBlock(event.player.getX(),-1 + event.player.getY(),event.player.getZ()).definition.id != "minecraft:air");
+				})
+				.sleep(5)
+				.then(function(world, context){
+					server.commandManager.executeCommand(event.player,"spawnpoint @s ~ ~ ~");
+					server.commandManager.executeCommand(event.player, "gamestage silentadd @s setspawn");
+					event.player.clearActivePotions();
+				}
+				)
+				
+				.start();
 		
 		
-				if (!event.player.hasGameStage("setspawn") && event.from == -3 && event.to == 0){
+				
 				
 				  
 			
-			server.commandManager.executeCommand(event.player,"spawnpoint @s ~ ~ ~");
-			server.commandManager.executeCommand(event.player, "gamestage silentadd @s setspawn");
-			}
+			
+			
 });
 

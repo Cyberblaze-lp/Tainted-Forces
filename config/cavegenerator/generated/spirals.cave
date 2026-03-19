@@ -12,7 +12,6 @@
   tunnels: {
     height: [ 10, 180 ]
     replaceableBlocks: [
-      tfc:fluid/fresh_water
       tfc:raw/basalt
       tfc:gravel/basalt
       tfc:sand/basalt

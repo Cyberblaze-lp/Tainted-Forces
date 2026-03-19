@@ -62,9 +62,9 @@ mods.thermalexpansion.Compactor.removeMintRecipe(<thermalfoundation:coin:*>);
 
 
 recipes.remove(<minecraft:glass_bottle>);
-recipes.remove(<nyx:meteor_dust>);
 
-ItemRegistry.registerItemMetal(<nyx:meteor_shard>,"titanium",144,false);
+
+
 ItemRegistry.registerItemMetal(<thaumcraft:mind>,"brass",288,true);
 ItemRegistry.registerItemMetal(<immersiveengineering:drillhead:1>,"wrought_iron",288,true);
 ItemRegistry.registerItemMetal(<immersiveengineering:drillhead>,"steel",288,true);
@@ -91,8 +91,8 @@ ItemRegistry.registerFuel(<thermalfoundation:material:802>, 3600, 1350.0,true, t
 ItemRegistry.registerFuel(<ic2:coke>, 3600, 1350.0,true, true);
 <ic2:coke>.addTooltip(format.yellow("Burns at 1350°C (Yellow White***) for 3min"));
 
-ItemRegistry.registerFuel(<thaumcraft:alumentum>, 5400, 1400.0,true, true);
-<thaumcraft:alumentum>.addTooltip(format.white("Burns at 1400°C (White**) for 4min 30s"));
+ItemRegistry.registerFuel(<thaumcraft:alumentum>, 7200, 1400.0,true, true);
+<thaumcraft:alumentum>.addTooltip(format.white("Burns at 1400°C (White**) for 6min"));
 ItemRegistry.registerFuel(<ic2:nuclear:9>,12000 , 3300.0,true, true);
 <ic2:nuclear:9>.addTooltip(format.blue("Burns at 3300°C (>>Brilliant White) for 10min"));
 ItemRegistry.registerFuel(<metallurgy:ignatius_fuel>,12000 , 3300.0,true, true);
@@ -295,8 +295,8 @@ mods.terrafirmacraft.Barrel.addRecipe("parchment_from_medium", <tfc:hide/prepare
 mods.terrafirmacraft.Barrel.addRecipe("parchment_from_large", <tfc:hide/prepared/large>, <liquid:white_dye> * 500,<minecraft:paper>*3,null, 6);
 
 
-mods.terrafirmacraft.Barrel.addRecipe("flux_manual", <thebetweenlands:items_misc:27>, <liquid:flux_goo> * 500,<tfc:powder/flux>*3,null, 1);
-mods.terrafirmacraft.Barrel.addRecipe("flux_automation_0", <ore:sand>, <liquid:flux_goo> * 1000,<tfc:powder/flux>*2,null, 1);
+mods.terrafirmacraft.Barrel.addRecipe("flux_manual", <thebetweenlands:items_misc:27>, <liquid:flux_goo> * 500,<tfc:powder/flux>*3,null, 3);
+mods.terrafirmacraft.Barrel.addRecipe("flux_automation_0", <ore:sand>, <liquid:flux_goo> * 500,<tfc:powder/flux>*2,null, 4);
 
 mods.terrafirmacraft.Barrel.addRecipe("flux_automation_1", <embers:dust_metallurgic>, <liquid:flux_goo> * 500,<tfc:powder/flux>*10,null, 1);
 mods.terrafirmacraft.Barrel.addRecipe("flux_automation_2", <embers:alchemic_waste>, <liquid:flux_goo> * 500,<tfc:powder/flux>*4,null, 2);
@@ -331,7 +331,6 @@ Anvil.addRecipe("steelspring", <tfctech:metal/steel_long_rod>, <immersiveintelli
 
 mods.inworldcrafting.ExplosionCrafting.explodeItemRecipe(<appliedenergistics2:material:1>, <ore:crystalCertusQuartz>, 10);
 
-mods.inworldcrafting.FluidToItem.transform(<appliedenergistics2:material>, <liquid:lunar_water>, [<ore:gemQuartz>,<tfc:gem/opal:*>], false);
 
 //prevent mob drop-type foods from expiring as they're poisonous already and will refuse to stack otherwise, clogging up your storage
 ItemRegistry.registerFood(<thaumcraft:brain>, 2, 20.0, 0.0, 10000000.0, 0.0, 0.0, 0.0, 3.0, 0.0);

@@ -62,8 +62,7 @@ mods.thermalexpansion.InductionSmelter.removeRecipe(<minecraft:cauldron>, <minec
 
 
 //metallurgy & nyx stuff
-mods.thermalexpansion.Pulverizer.addRecipe(<nyx:meteor_dust>, <nyx:meteor_shard>, 2000, <appliedenergistics2:material:45>, 20);
-mods.immersiveengineering.Crusher.addRecipe(<nyx:meteor_dust>, <nyx:meteor_shard>, 2000, <appliedenergistics2:material:45>, 0.1);
+
 mods.immersiveengineering.Crusher.addRecipe(<appliedenergistics2:material:45>, <appliedenergistics2:sky_stone_block>, 2000, <appliedenergistics2:material:45>, 0.1);
 
 //QoL and automation recipes

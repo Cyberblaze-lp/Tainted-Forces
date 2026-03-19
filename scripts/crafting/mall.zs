@@ -91,6 +91,15 @@ for item in corporea
 
 }
 
+mods.chisel.Carving.addGroup("signals");
+val signals as IItemStack[] =[<signals:block_signal>,<signals:chain_signal>,<signals:station_marker>,<signals:rail_link>,<signals:ticket>];
+for item in signals
+{
+    mods.chisel.Carving.addVariation("signals", item);
+    recipes.remove(item);
+
+}
+
 
 
 
