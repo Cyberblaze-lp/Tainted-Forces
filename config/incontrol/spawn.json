@@ -42,15 +42,15 @@
 	{
 		"dimension": 0,
 		"mob": "quark:forgotten",
-		"onjoin": false,
+		"onjoin": true,
 		"maxcount": {
 			"amount": 3,
 			"mob": "quark:forgotten",
 			"perplayer": true
 		},
-		"block": "tetra:forged_platform",
+		"block": ["tetra:forged_platform"],
 		"maxY": 30,
-		"maxlight": 3,
+		"maxlight": 1,
 		"result": "allow",
 		"groupsizemin": 1,
 		"groupsizemax": 1
@@ -58,15 +58,15 @@
 	{
 		"dimension": 0,
 		"mob": "quark:ashen",
-		"onjoin": false,
+		"onjoin": true,
 		"maxcount": {
 			"amount": 15,
 			"mob": "quark:ashen",
 			"perplayer": true
 		},
-		"block": "tetra:forged_platform",
+		"block": ["tetra:forged_platform"],
 		"maxY": 30,
-		"maxlight": 3,
+		"maxlight": 2,
 		"result": "allow",
 		"groupsizemin": 1,
 		"groupsizemax": 1
@@ -74,13 +74,13 @@
 	{
 		"dimension": 0,
 		"mob": "quark:dweller",
-		"onjoin": false,
+		"onjoin": true,
 		"maxcount": {
 			"amount": 10,
 			"mob": "quark:dweller",
 			"perplayer": true
 		},
-		"block": "tetra:forged_platform",
+		"block": ["tetra:forged_platform"],
 		"maxY": 25,
 		"maxlight": 1,
 		"result": "allow",
@@ -97,31 +97,50 @@
 		},
 		"minY": 32,
 		"maxY": 250,
-		"maxlight": 3,
+		"maxlight": 0,
 		"result": "allow",
 		"groupsizemin": 1,
 		"groupsizemax": 4,
 		"onjoin": false
 	},
+
 	{
 		"mob": "cyberware:cyberzombie",
 		"dimension": 0,
 		"maxcount": {
-			"amount": 12,
-			"mob": "cyberware:cyberzombie",
+			"amount": 25,
+			"mob": "minecraft:zombie",
 			"perplayer": true
 		},
-		"maxlight": 1,
+		"minY": 32,
+		"maxY": 250,
+		"maxlight": 0,
 		"result": "allow",
 		"groupsizemin": 1,
-		"groupsizemax": 12,
+		"groupsizemax": 1,
+		"onjoin": false
+	},
+	{
+		"mob": "minecraft:skeleton",
+		"dimension": 0,
+		"maxcount": {
+			"amount": 10,
+			"mob": "minecraft:skeleton",
+			"perplayer": true
+		},
+		"minY": 32,
+		"maxY": 250,
+		"maxlight": 0,
+		"result": "allow",
+		"groupsizemin": 1,
+		"groupsizemax": 2,
 		"onjoin": false
 	},
 	{
 		"mob": "minecraft:witch",
 		"dimension": 0,
 		"maxcount": {
-			"amount": 2,
+			"amount": 1,
 			"mob": "minecraft:witch",
 			"perplayer": true
 		},
@@ -145,20 +164,7 @@
 		"groupsizemax": 1,
 		"onjoin": false
 	},
-	{
-		"mob": "minecraft:skeleton",
-		"dimension": 0,
-		"maxcount": {
-			"amount": 20,
-			"mob": "minecraft:skeleton",
-			"perplayer": true
-		},
-		"maxlight": 0,
-		"result": "allow",
-		"groupsizemin": 1,
-		"groupsizemax": 3,
-		"onjoin": false
-	},
+
 	{
 		"mob": "minecraft:creeper",
 		"dimension": 0,
@@ -237,12 +243,7 @@
 		"onjoin": false,
 		"result": "deny"
 	},
-	{
-		"dimension": 0,
-		"mob": "cyberware:cyberzombie",
-		"onjoin": false,
-		"result": "deny"
-	},
+
 	{
 		"dimension": 0,
 		"mob": "minecraft:witch",
@@ -254,6 +255,29 @@
 		"mob": "thaumcraft:taintacle",
 		"onjoin": false,
 		"result": "deny"
+	},
+	{
+		"dimension": 0,
+		"mob": "quark:dweller",
+		"onjoin": false,
+		"result": "deny"
+	},
+	{
+		"dimension": 0,
+		"mob": "quark:ashen",
+		"onjoin": false,
+		"result": "deny"
+	},
+	{
+		"dimension": 0,
+		"mob": "quark:forgotten",
+		"onjoin": false,
+		"result": "deny"
+	},
+	{
+		"dimension": 0,
+		"mob": "cyberware:cyberzombie",
+		"onjoin": false,
+		"result": "deny"
 	}
-
 ]

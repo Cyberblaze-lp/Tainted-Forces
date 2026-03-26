@@ -39,36 +39,36 @@ zenClass MixinDioptra {
 
 
 
-#mixin {targets: "thaumcraft.common.world.aura.AuraThread"}
+#mixin {targets: "thecodex6824.thaumcraftfix.api.aura.DefaultAuraProcessor"}
 zenClass MixinFluxSpreadFactor {
-    #mixin ModifyConstant {method: "processAuraChunk",  constant:{doubleValue: 1.75}}
-    function ExponentialFade(value as double) as double {
-        return 1.0d;
+    #mixin ModifyConstant {method: "equalizeWithNeighbors",  constant:{floatValue: 1.75}}
+    function ExponentialFade(value as float) as float {
+        return 1.0f;
     }
 }
 
 
-#mixin {targets: "thaumcraft.common.world.aura.AuraThread"}
+#mixin {targets: "thecodex6824.thaumcraftfix.api.aura.DefaultAuraProcessor"}
 zenClass MixinSpreadSpeed {
-    #mixin ModifyConstant {method: "processAuraChunk",  constant:{floatValue: 1.0}}
+    #mixin ModifyConstant {method: "equalizeWithNeighbors",  constant:{floatValue: 1.0}}
     function FluxSpreadSpeed(value as float) as float {
         return(2.0f* 7.0f);
     }
 }
 
-#mixin {targets: "thaumcraft.common.world.aura.AuraThread"}
+#mixin {targets: "thecodex6824.thaumcraftfix.api.aura.DefaultAuraProcessor"}
 zenClass MixinFluxGrace {
-    #mixin ModifyConstant {method: "processAuraChunk",  constant:{floatValue: 5.0}}
+    #mixin ModifyConstant {method: "equalizeWithNeighbors",  constant:{floatValue: 5.0}}
     function relocateData(value as float) as float {
-        return 20.0f;
+        return 25.0f;
     }
 }
 
-#mixin {targets: "thaumcraft.common.world.aura.AuraThread"}
+#mixin {targets: "thecodex6824.thaumcraftfix.api.aura.DefaultAuraProcessor"}
 zenClass MixinLinearity {
     #mixin ModifyVariable
     #{
-    #    method: "processAuraChunk",
+    #    method: "equalizeWithNeighbors",
     #   name: "inc",
     #    at: {      
     #        value: "STORE",

@@ -140,19 +140,14 @@ Welding.addRecipe("engineershammer",<tfcthings:prospectors_hammer/wrought_iron>,
 recipes.replaceAllOccurences(<magneticraft:crafting:3>, <ore:wireCopper>);
 recipes.replaceAllOccurences(<ore:plateBronze>, <ore:sheetAnyBronze>);
 recipes.replaceAllOccurences(<ore:ingotBronze>, <ore:ingetAnyBronze>);
-recipes.replaceAllOccurences(<magneticraft:light_plates>, <ore:plateIron>);
-recipes.replaceAllOccurences(<magneticraft:light_plates:1>, <ore:plateGold>);
-recipes.replaceAllOccurences(<magneticraft:light_plates:2>, <ore:plateCopper>);
-recipes.replaceAllOccurences(<magneticraft:light_plates:3>, <ore:plateLead>);
-recipes.replaceAllOccurences(<magneticraft:light_plates:5>, <ore:plateTungsten>);
-recipes.replaceAllOccurences(<magneticraft:light_plates:6>, <ore:plateSteel>);
+
 
 recipes.remove(<ore:blockBronze>);
 recipes.remove(<ore:nuggetBronze>);
 recipes.remove(<ore:plateBronze>);
 
 
-
+recipes.remove(<tfc:sluice>);
 recipes.remove(<magneticraft:sluice_box>);
 recipes.remove(<magneticraft:crushing_table>);
 recipes.remove(<magneticraft:stone_hammer>);

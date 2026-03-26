@@ -9,7 +9,7 @@
 # see vanilla.cave.                                           #
 # ----------------------------------------------------------- #
 {
-  enabled: true
+  enabled: false
   tunnels: {
     replaceableBlocks: [
       tfc:raw/basalt

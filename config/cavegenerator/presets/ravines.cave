@@ -9,14 +9,14 @@
 {
   imports: [
     defaults.cave::caveBlocks as LAVA_CAVE_BLOCK
-    blocks.cave::ROCKSTFC as ROCKSTFC
+    blocks.cave::ROCKSTFCWATER as ROCKSTFCWATER
   ]
   enabled: true
   ravines: {
     biomes: {
       names: [ "tfc:plains", "tfc:rolling_hills", "tfc:high_plains", "tfc:high_hills_edge", "tfc:mountains_edge" ]
     }
-    replaceableBlocks: $ROCKSTFC
+    replaceableBlocks: $ROCKSTFCWATER
     checkWater: true
     chance: 0.001
     height: [ 134, 170 ]

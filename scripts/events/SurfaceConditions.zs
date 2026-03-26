@@ -125,9 +125,9 @@ for item in thaumstuff {
 //nether-exclusives (dawnstone-related machinery)
 val netherStuff = [
 	<embers:ember_injector>,
+	<embers:reactor>,
 	<embers:alchemy_tablet>,
 	<embers:alchemy_pedestal>,
-	<embers:dawnstone_anvil>,
 	<embers:inferno_forge>
 ] as IItemStack[];
 for item in netherStuff {
@@ -137,7 +137,10 @@ for item in netherStuff {
 val netherStuffWithMeta = [
 	<mekanism:basicblock:15>,
 	<mekanism:basicblock2>,
-	<mekanism:basicblock:14>
+	<mekanism:basicblock:14>,
+		<embers:combustor:0>,
+	<embers:catalyzer:0>
+	
 ] as IItemStack[];
 for item in netherStuffWithMeta {
 	addRestriction(true, false, [-1], item);

@@ -1,0 +1,18 @@
+[{
+        "key": "EMBERCRYSTALLIZATION",    
+        "name": "research.EMBERCRYSTALLIZATION.title",
+        "icons": [ "embers:textures/items/core_stone.png" ],
+        "category": "ARTIFICE", "location": [ 5,-3], 
+        "parents": [ "INFUSION","INFERNALFURNACE" ],        
+        "stages": [
+                {
+                    "text": "research.EMBERCRYSTALLIZATION.stage.1",
+                    "required_knowledge":["THEORY;ALCHEMY;1","OBSERVATION;INFUSION;1"]
+                },
+                {
+                    "text": "research.EMBERCRYSTALLIZATION.stage.2"  
+                    ,"recipes": ["thaumcraft:EMBERCRYSTALLIZATION"]
+					
+                }
+            ]
+        }]

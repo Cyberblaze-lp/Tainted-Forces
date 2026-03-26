@@ -10,7 +10,7 @@ import crafttweaker.world.IBlockPos;
 import crafttweaker.util.Math;
 import crafttweaker.data.IData;
 import crafttweaker.item.IItemStack;
-
+import mods.zenutils.Catenation;
 
 JEI.removeAndHide(<minecraft:chest_minecart>);
 JEI.removeAndHide(<minecraft:tnt_minecart>);
@@ -37,12 +37,17 @@ static pillarfeatures as string[] = [
     "forged_transfer_unit",
     "forged_vent_small",
     "forged_hammer",
-    "forged_crate_2b"
+    "forged_crate_2b",
+    "lampforged",
+    "lampforged",
+    "lampforged",
+    "lampforged",
+    "lampforged"
 ] as string[];
 
 
 events.onEntityJoinWorld(function (event as crafttweaker.event.EntityJoinWorldEvent){
-    if (isNull(event.entity.definition) || isNull(event.entity.definition.id))
+    if (isNull(event.entity.definition) || isNull(event.entity.definition.id) ||event.world.isRemote())
     {
         return;
     }
@@ -64,17 +69,42 @@ events.onEntityJoinWorld(function (event as crafttweaker.event.EntityJoinWorldEv
             val entityPosNew = crafttweaker.world.IBlockPos.create(x, y, z) as IBlockPos;
             val entityPosOffset = crafttweaker.world.IBlockPos.create(x - 16 , -60, z - 16) as IBlockPos;
 
-        if (event.world.random.nextInt(0, 2) == 1)
+        if (mods.ctutils.utils.Math.getRandom().nextInt(0, 2) == 1)
         {
           
             var posModX as int = x & - 16;
             var posModZ as int = z & -16;
 
+            event.world.catenation()
+				.sleep(10)
+				.then(function(world, context) 
+                {
+				    server.commandManager.executeCommandSilent(event.entity, "fill " + toString(posModX) + " 4 " + toString(posModZ) + " " + toString(posModX +2) + " 4 " + toString(posModZ + 2) + " minecraft:air" );
+                })
+				
+				.sleep(1)
+				.then(function(world, context)
+                {
+                    event.entity.setPosition(entityPosOffset);
+				    server.commandManager.executeCommandSilent(event.entity, "tgen tetra:forged_container");
+				})
+                .sleep(1)
+				.then(function(world, context)
+                {
+                    server.commandManager.executeCommandSilent(event.entity, "clone " + toString(posModX) + " 4 " + toString(posModZ) + " " + toString(posModX+2 ) + " 4 " + toString(posModZ + 2) + " ~17 16 ~17 replace move" );
+				})
+                .sleep(1)
+                .then(function(world, context)
+                {
+                    event.entity.setPosition(entityPosOffset);
+                }
+                )
 
-            server.commandManager.executeCommandSilent(event.entity, "fill "+ toString(posModX+16) + " 4 "+ toString(posModZ + 16) + " "+ toString(posModX+2 +16) + " 4 " + toString(posModZ + 18) + " minectaft:air" );
-            server.commandManager.executeCommandSilent(event.entity, "tgen tetra:forged_container");
-            event.entity.setPosition(entityPosOffset);
-            server.commandManager.executeCommandSilent(event.entity, "clone "+ toString(posModX +16) + " 4 "+ toString(posModZ+16) + " "+ toString(posModX+2 +16) + " 4 "+toString(posModZ + 18) + " ~ ~-1 ~ replace move" );
+				
+				.start();
+           
+            
+            
             
             
             
@@ -97,7 +127,7 @@ events.onEntityJoinWorld(function (event as crafttweaker.event.EntityJoinWorldEv
             return;
         }
 
-        val r2 as int = event.world.random.nextInt(0, pillarfeatures.length - 1);
+        val r2 as int = mods.ctutils.utils.Math.getRandom().nextInt(0, pillarfeatures.length - 1);
         val pillarfeature as string = pillarfeatures[r2];
 
         server.commandManager.executeCommandSilent(event.entity, "pillar-spawn " + pillarfeature);

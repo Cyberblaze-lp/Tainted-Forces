@@ -14,7 +14,7 @@
     blocks.cave::ROCKSTFC as ROCKSTFC
   ]
   variables: {}
-  enabled: true
+  enabled: false
   tunnels: {
     replaceableBlocks: $ROCKSTFC
     count: 300

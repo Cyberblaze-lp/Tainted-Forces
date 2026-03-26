@@ -1,0 +1,18 @@
+[{
+        "key": "NUCLEAR",    
+        "name": "research.NUCLEAR.title",
+        "icons": [ "ic2:textures/items/reactor/fuel_rod/dual_uranium.png" ],
+        "category": "ARTIFICE", "location": [ 7,-3], 
+        "parents": [ "EMBERCRYSTALLIZATION" ],        
+        "stages": [
+                {
+                    "text": "research.NUCLEAR.stage.1",
+                    "required_knowledge":["THEORY;ARTIFICE;1","THEORY;ALCHEMY;1","OBSERVATION;INFUSION;1"]
+                },
+                {
+                    "text": "research.NUCLEAR.stage.2"  
+                    ,"recipes": ["thaumcraft:NUCLEAR"]
+					
+                }
+            ]
+        }]

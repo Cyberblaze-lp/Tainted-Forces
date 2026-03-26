@@ -28,11 +28,11 @@ mods.pneumaticcraft.pressurechamber.addRecipe([<immersiveengineering:stone_decor
 mods.pneumaticcraft.pressurechamber.addRecipe([<ore:plasticRed>,<pneumaticcraft:empty_pcb>*2], 3.5, [<immersiveintelligence:material:10>]);
 mods.pneumaticcraft.pressurechamber.addRecipe([<ore:plasticRed>,<pneumaticcraft:unassembled_pcb>*2], 3.5, [<immersiveintelligence:material:10>]);
 MeltingCrucible.removeRecipe(<minecraft:cobblestone>);
-mods.pneumaticcraft.pressurechamber.addRecipe([<tetra:magmatic_cell>], -0.2, [<minecraft:magma>*4,<embers:shard_ember>*3,<tetra:magmatic_cell:128>]);
+mods.pneumaticcraft.pressurechamber.addRecipe([<tetra:magmatic_cell>], -0.2, [<minecraft:magma>,<embers:dust_ember>*3,<tetra:magmatic_cell:128>]);
 Squeezer.addRecipe(<tetra:magmatic_cell>,
   <tetra:magmatic_cell:128>,1.0,
-  <embers:shard_ember>*5,1.0,
-  <minecraft:magma>*2,1.0);
+  <embers:dust_ember>*3,1.0,
+  <minecraft:magma>,0.5);
 
 
   Squeezer.addRecipe(<thaumcraft:tallow>,

@@ -1,0 +1,43 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model": "modularmachinery:calcifier_t0"
+  },
+  "variants": {
+    "facing=north,formed=false": {
+      "model": "modularmachinery:calcifier_t0"
+    },
+    "facing=south,formed=false": {
+      "model": "modularmachinery:blockcontroller",
+      "y": 180
+    },
+    "facing=west,formed=false": {
+      "model": "modularmachinery:calcifier_t0",
+      "y": 270
+    },
+    "facing=east,formed=false": {
+      "model": "modularmachinery:calcifier_t0",
+      "y": 90
+    },
+    "facing=north,formed=true": {
+      "model": "modularmachinery:calcifier_t0"
+    },
+    "facing=south,formed=true": {
+      "model": "modularmachinery:calcifier_t0",
+      "y": 180
+    },
+    "facing=west,formed=true": {
+      "model": "modularmachinery:calcifier_t0",
+      "y": 270
+    },
+    "facing=east,formed=true": {
+      "model": "modularmachinery:calcifier_t0",
+      "y": 90
+    },
+    "inventory": [
+      {
+        "transform": "forge:default-block"
+      }
+    ]
+  }
+}

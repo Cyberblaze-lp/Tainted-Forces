@@ -13,6 +13,7 @@
       names: [ "tfc:plains", "tfc:rolling_hills", "tfc:high_plains", "tfc:high_hills_edge", "tfc:mountains_edge" ]
     }
     replaceableBlocks: [
+      tfc:fluid/fresh_water
       tfc:raw/basalt
       tfc:gravel/basalt
       tfc:sand/basalt

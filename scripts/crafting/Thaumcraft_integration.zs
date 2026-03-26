@@ -43,7 +43,10 @@ mods.immersivetechnology.MeltingCrucible.removeRecipe(<minecraft:cobblestone>);
 
 <minecraft:magma>.setAspects(<aspect:ignis>*10, <aspect:terra>*5);
 <embers:dust_ember>.setAspects(<aspect:ignis>*8,<aspect:potentia>*8, <aspect:vitreus>*5,<aspect:perditio>*5);
-<embers:dust_metallurgic>.setAspects(<aspect:metallum>*15,<aspect:alkimia>*5,<aspect:perditio>*5);
+for item in <ore:concrete>.itemArray
+{
+    item.setAspects(<aspect:terra>*5, <aspect:ordo>*2,<aspect:fabrico>*2);
+}
 
 
 
@@ -70,7 +73,6 @@ mods.immersivetechnology.MeltingCrucible.removeRecipe(<minecraft:cobblestone>);
 
 
 mods.thaumcraft.Crucible.registerRecipe("alumentumfromcoke", "ALUMENTUM", <thaumcraft:alumentum>*2, <ore:fuelCoke>, [<aspect:ignis>*20, <aspect:potentia>*20, <aspect:perditio>*10]);
-
 
 mods.thaumcraft.Crucible.registerRecipe("labmeat", "LABMEAT", <tfc:food/bear>*3, <tfc:food/bear>, [<aspect:victus>*10, <aspect:fabrico>*5]);
 mods.thaumcraft.Crucible.registerRecipe("labrennet", "LABMEAT", <firmalife:rennet>*5, <firmalife:rennet>, [<aspect:victus>*10, <aspect:permutatio>*5]);
@@ -106,6 +108,9 @@ mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:smelter_vent>);
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:tube>);
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:tube_valve>);
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:tube_buffer>);
+mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:tube_restrict>);
+mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:tube_oneway>);
+mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumicaugmentation:glass_tube>);
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:smelter_basic>);
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:filter>);
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:alembic>);
@@ -115,14 +120,14 @@ mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("filters 2.0", "ESSENTIASME
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:mechanism_simple>);
 
 mods.thaumcraft.ArcaneWorkbench.registerShapelessRecipe("valves 2.0", "TUBES", 15, [], <thaumcraft:tube_valve>*8, [<tfc:brass_mechanisms>,<thaumcraft:tube>,<thaumcraft:tube>,<thaumcraft:tube>,<thaumcraft:tube>,<thaumcraft:tube>,<thaumcraft:tube>,<thaumcraft:tube>,<thaumcraft:tube>]);
-mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("buffers 2.0", "TUBES", 15, [], <thaumcraft:tube_buffer>*4, [[<thaumcraft:phial>,<thaumcraft:tube_oneway>,<thaumcraft:phial>],[<thaumcraft:tube>,<thaumcraft:mechanism_simple>,<thaumcraft:tube>],[<thaumcraft:phial>,<thaumcraft:tube_restrict>,<thaumcraft:phial>] ]);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("buffers 2.0", "TUBES", 15, [], <thaumcraft:tube_buffer>*4, [[<thaumcraft:phial>,<thaumcraft:tube>,<thaumcraft:phial>],[<thaumcraft:tube>,<thaumcraft:mechanism_simple>,<thaumcraft:tube>],[<thaumcraft:phial>,<thaumcraft:tube>,<thaumcraft:phial>] ]);
 mods.thaumcraft.ArcaneWorkbench.registerShapelessRecipe("tubes 2.0", "TUBES", 15, [<aspect:ordo>], <thaumcraft:tube>*8, [<ore:sheetToolMetal>, <ore:nuggetQuicksilver>, <ore:nuggetLead>, <ore:nuggetLead>, <ore:nuggetLead>]);
 mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("alembics 2.0", "ESSENTIASMELTER", 15, [<aspect:aqua>,<aspect:ordo>,<aspect:perditio>], <thaumcraft:alembic>, [[<thaumcraft:plank_greatwood>, <ore:springBrass>, <thaumcraft:plank_greatwood>],[<thaumcraft:filter>, <ore:springBrass>, <thaumcraft:phial>],[<thaumcraft:plank_greatwood>, <ore:springBrass>, <thaumcraft:plank_greatwood>]]);
 mods.thaumcraft.ArcaneWorkbench.registerShapelessRecipe("betterbellows", "BELLOWS", 15, [<aspect:aer>], <thaumcraft:bellows>, [<tfc:bellows>,<thaumcraft:mechanism_simple>]);
-mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("betterturrets", "BASICTURRET", 100, [<aspect:aer>], <thaumcraft:turret>*3, [[<minecraft:bow>, <thaumcraft:mechanism_simple>,<ore:plateIron>],[<thaumcraft:plank_greatwood>, <thaumcraft:mind>,<thaumcraft:plank_greatwood>],[<ore:stickWood>, null, <ore:stickWood>]]);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("betterturrets", "BASICTURRET", 100, [<aspect:aer>], <thaumcraft:turret>*3, [[null, <thaumcraft:mechanism_simple>,null],[<ore:stickIron>, <thaumcraft:mind>,<ore:stickIron>],[<ore:stickIron>, null, <ore:stickIron>]]);
 
 mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("bettervent", "IMPROVEDSMELTING2", 150, [<aspect:aer>,<aspect:ordo>], <thaumcraft:smelter_vent>, [[<ore:sleeveBrass>, <ore:plateIron>],[<embers:ashen_cloth>, <thaumcraft:metal_alchemical>],[<ore:sleeveBrass>, <ore:plateIron>]]);
-mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("bettersmelter", "ESSENTIASMELTER@2", 50, [<aspect:ignis>], <thaumcraft:smelter_basic>, [[<ore:sheetBrass>, <thaumcraft:crucible>,<ore:sheetBrass>],[<ore:brickStone>,<minecraft:fire_charge>, <ore:brickStone>],[<ore:brickStone>, <ore:brickStone>,<ore:brickStone>]]);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("bettersmelter", "ESSENTIASMELTER@2", 50, [<aspect:ignis>], <thaumcraft:smelter_basic>, [[<ore:sheetBrass>, <thaumcraft:crucible>,<ore:sheetBrass>],[<ore:concrete>,<minecraft:fire_charge>, <ore:concrete>],[<ore:concrete>, <ore:concrete>,<ore:concrete>]]);
 mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("bettermechanism", "BASEARTIFICE", 20, [], <thaumcraft:mechanism_simple>, [[<ore:tallow>, <tfc:brass_mechanisms>],[<ore:stickIron>,<tfc:brass_mechanisms>]]);
 
 
