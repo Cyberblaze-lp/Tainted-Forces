@@ -55,6 +55,8 @@ recipes.addShapeless(<ic2:reactor_heat_vent>, [<ic2:heat_vent>, <ic2:crafting:7>
 
 // ================================================================================
 //#MARKER ADD SHAPED
+recipes.addShaped(<ic2:te:87>, [[<ore:plateIron>, <ic2:crafting:7>, <ore:plateIron>], [<embers:blasting_core>, null, <embers:blasting_core>], [<ore:plateIron>, <ore:plateIron>, <ore:plateIron>]]);
+recipes.addShaped(<ic2:crafting:7>, [[<ore:concrete>, <ore:sheetDoubleCopper>, <ore:concrete>], [<ore:concrete>, <ore:sheetDoubleCopper>, <ore:concrete>], [<ore:concrete>, <ore:sheetDoubleCopper>, <ore:concrete>]]);
 recipes.addShaped(<ic2:neutron_reflector>, [[<ore:nuggetBeryllium>, <ore:nuggetBeryllium>, <ore:nuggetBeryllium>], [<ore:nuggetBeryllium>, <ore:plateSteel>, <ore:nuggetBeryllium>], [<ore:nuggetBeryllium>, <ore:nuggetBeryllium>, <ore:nuggetBeryllium>]]);
 recipes.addShaped(<chisel:factory> * 64, [[<ore:concrete>, <ore:concrete>, <ore:concrete>], [null, <ore:ingotSteel>, null], [<ore:concrete>, <ore:concrete>, <ore:concrete>]]);
 recipes.addShaped(<chisel:factory> * 64, [[<ore:concrete>, <ore:concrete>, <ore:concrete>], [<ore:concrete>, <ore:ingotSteel>, <ore:concrete>], [<ore:concrete>, <ore:concrete>, <ore:concrete>]]);
