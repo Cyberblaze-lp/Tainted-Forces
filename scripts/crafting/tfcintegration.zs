@@ -12,8 +12,7 @@ import mods.immersiveintelligence.ChemicalBath;
 mods.immersiveintelligence.ChemicalBath.addRecipe(<ore:stoneMarble>, <astralsorcery:blockmarble>, <liquid:hydrofluoric_acid>*50, 3000, 30);
 
 
-
-<ore:seed>.addItems(itemUtils.getItemsByRegexRegistryName(".*/crop/seeds.*"));
+<ore:seed>.addItems(itemUtils.getItemsByRegexRegistryName(".*crop/seeds.*"));
 <ore:fabricHemp>.add(<tfc:crop/product/burlap_cloth>);
 <ore:logWoodTannin>.add(<botania:livingwood>);
 <ore:logWoodTannin>.add(<thaumcraft:log_greatwood>);
@@ -38,9 +37,6 @@ mods.immersiveengineering.Squeezer.addRecipe(null,<liquid:plantoil>*120,<ore:see
 //ItemRegistry.registerArmor(IIngredient input, float crushingModifier, float piercingModifier, float slashingModifier);
 //ItemRegistry.registerFood(IIngredient input, int hunger, float water, float saturation, float decay, float grain, float veg, float fruit, float meat, float dairy);
 
-ItemRegistry.registerItemSize(<tfc:sluice>, "VERY_SMALL", "VERY_LIGHT");
-
-ItemRegistry.registerItemSize(<minecraft:minecart>, "VERY_SMALL", "VERY_LIGHT");
 
 
 ItemRegistry.registerFood(<ore:fish>, 1, 10.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.5, 0.0);

@@ -89,8 +89,6 @@ zenClass MixinLinearity {
 
 
 
-
-
 #mixin {targets: "thaumcraft.common.entities.monster.tainted.EntityTaintSeed"}
 zenClass passivePollute {
     #mixin ModifyConstant {method: "func_70071_h_",  constant:{floatValue: 0.1}}

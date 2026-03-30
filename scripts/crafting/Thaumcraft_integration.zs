@@ -42,7 +42,6 @@ mods.immersivetechnology.MeltingCrucible.removeRecipe(<minecraft:cobblestone>);
 <tfc:powder/flux>.setAspects(<aspect:vitium>*2,<aspect:ordo>*2,<aspect:terra>*5);
 
 <minecraft:magma>.setAspects(<aspect:ignis>*10, <aspect:terra>*5);
-<embers:dust_ember>.setAspects(<aspect:ignis>*8,<aspect:potentia>*8, <aspect:vitreus>*5,<aspect:perditio>*5);
 for item in <ore:concrete>.itemArray
 {
     item.setAspects(<aspect:terra>*5, <aspect:ordo>*2,<aspect:fabrico>*2);
@@ -260,9 +259,19 @@ ItemRegistry.registerArmor(<thaumicaugmentation:void_boots>, 55.0, 70.0,50.0);
 
 //create simple ore processing recipes for crucible using very complicated code
 
+zenClass itemPlusOre{
+    val item as IItemStack;
+    val ore as string;
+    
 
+    zenConstructor(itemIn as IItemStack, oreIn as string)
+{
+    item = itemIn;
+    ore = oreIn;
 
-var ores = ["Copper","WroughtIron", "Gold","Zinc","Tin","Bismuth","Nickel","Silver","Lead","Antimony","Lithium","Thorium","Platinum","Aluminium"] as string[];
+}}
+
+var itemplusOres = [itemPlusOre(<tfc:metal/nugget/copper>,"Copper"),itemPlusOre(<tfc:metal/nugget/bismuth>,"Bismuth"),itemPlusOre(<tfc:metal/nugget/gold>,"Gold")] as itemPlusOre[];
 
 var aspectsempty1 as AspectList = AspectList();
 var aspectsnugget as AspectList = aspectsempty1
@@ -287,19 +296,22 @@ var aspectsrich as AspectList = aspectsempty4
 
 
 
-for item in ores
+for itemPlusOre in itemplusOres
 {
+
 /*
-    mods.thaumcraft.Crucible.registerRecipe(("nugget" + item), "SIMPLEOREPROCESSING", oreDict.get("nugget"+item).firstItem*2, oreDict.get("oreSmall"+item), [<aspect:metallum>*1, <aspect:ordo>*1]);
-    mods.thaumcraft.Crucible.registerRecipe(("poor" + item), "SIMPLEOREPROCESSING", oreDict.get("nugget"+item).firstItem*4, oreDict.get("orePoor"+item), [<aspect:metallum>*2, <aspect:ordo>*2]);
-    mods.thaumcraft.Crucible.registerRecipe(("normal" + item), "SIMPLEOREPROCESSING", oreDict.get("nugget"+item).firstItem*6, oreDict.get("oreNormal"+ item), [<aspect:metallum>*3, <aspect:ordo>*3]);
-    mods.thaumcraft.Crucible.registerRecipe(("rich" + item), "SIMPLEOREPROCESSING", oreDict.get("nugget"+item).firstItem*10, oreDict.get("oreRich"+item), [<aspect:metallum>*5, <aspect:ordo>*5]);
+    mods.thaumcraft.Crucible.registerRecipe(("nugget" + item), "SIMPLEOREPROCESSING", itemstack*2, oreDict.get("oreSmall"+item), [<aspect:metallum>*1, <aspect:ordo>*1]);
+    mods.thaumcraft.Crucible.registerRecipe(("poor" + item), "SIMPLEOREPROCESSING", itemstack*4, oreDict.get("orePoor"+item), [<aspect:metallum>*2, <aspect:ordo>*2]);
+    mods.thaumcraft.Crucible.registerRecipe(("normal" + item), "SIMPLEOREPROCESSING", itemstack*6, oreDict.get("oreNormal"+ item), [<aspect:metallum>*3, <aspect:ordo>*3]);
+    mods.thaumcraft.Crucible.registerRecipe(("rich" + item), "SIMPLEOREPROCESSING", itemstack*10, oreDict.get("oreRich"+item), [<aspect:metallum>*5, <aspect:ordo>*5]);
 */
 
+val item as string = itemPlusOre.ore;
+val itemstack as IItemStack = itemPlusOre.item;
 var resource as ResourceLocation = ResourceLocation("thaumcraft:orenugget"+item);
 
 
-var recipe as CrucibleRecipe = CrucibleRecipe("SIMPLEOREPROCESSING",(oreDict.get("nugget"+item).firstItem*2).native, ("oreSmall" + item),aspectsnugget);
+var recipe as CrucibleRecipe = CrucibleRecipe("SIMPLEOREPROCESSING",(itemstack*2).native, ("oreSmall" + item),aspectsnugget);
 
 ThaumcraftApi.addCrucibleRecipe(resource, recipe);
 recipe.setGroup(ResourceLocation("thaumcraft:groupOre"+ item));
@@ -307,7 +319,7 @@ recipe.setGroup(ResourceLocation("thaumcraft:groupOre"+ item));
 
 resource = ResourceLocation("thaumcraft:orepoor"+item);
 
- recipe = CrucibleRecipe("SIMPLEOREPROCESSING",(oreDict.get("nugget"+item).firstItem*4).native, ("orePoor" + item),aspectspoor);
+ recipe = CrucibleRecipe("SIMPLEOREPROCESSING",(itemstack*4).native, ("orePoor" + item),aspectspoor);
 
 ThaumcraftApi.addCrucibleRecipe(resource, recipe);
 recipe.setGroup(ResourceLocation("thaumcraft:groupOre"+ item));
@@ -316,7 +328,7 @@ recipe.setGroup(ResourceLocation("thaumcraft:groupOre"+ item));
 
 resource = ResourceLocation("thaumcraft:orenormal"+item);
 
-recipe = CrucibleRecipe("SIMPLEOREPROCESSING",(oreDict.get("nugget"+item).firstItem*6).native, ("oreNormal" + item),aspectsnormal);
+recipe = CrucibleRecipe("SIMPLEOREPROCESSING",(itemstack*6).native, ("oreNormal" + item),aspectsnormal);
 
 ThaumcraftApi.addCrucibleRecipe(resource, recipe);
 recipe.setGroup(ResourceLocation("thaumcraft:groupOre"+ item));
@@ -325,7 +337,7 @@ recipe.setGroup(ResourceLocation("thaumcraft:groupOre"+ item));
 
 resource= ResourceLocation("thaumcraft:orerich"+item);
 
-recipe = CrucibleRecipe("SIMPLEOREPROCESSING",(oreDict.get("nugget"+item).firstItem*10).native, ("oreRich" + item),aspectsrich);
+recipe = CrucibleRecipe("SIMPLEOREPROCESSING",(itemstack*10).native, ("oreRich" + item),aspectsrich);
 
 ThaumcraftApi.addCrucibleRecipe(resource, recipe);
 recipe.setGroup(ResourceLocation("thaumcraft:groupOre"+ item));

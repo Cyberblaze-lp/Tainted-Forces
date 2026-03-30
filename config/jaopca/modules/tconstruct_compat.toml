@@ -29,6 +29,6 @@
 	#The materials that should not have plate melting recipes added.
 	plateToMoltenMaterialBlacklist = []
 	#Should the module only add recipes for materials with JAOPCA molten fluids.
-	jaopcaOnly = true
+	jaopcaOnly = false
 	#The materials that should not have plate casting recipes added.
 	toPlateMaterialBlacklist = []
