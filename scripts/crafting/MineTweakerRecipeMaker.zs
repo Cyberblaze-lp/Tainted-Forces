@@ -268,9 +268,8 @@ recipes.addShaped(<railcraft:borehead_bronze>, [[<ore:dyeBlue>, <tfc:metal/mace_
 recipes.addShaped(<railcraft:borehead_iron>, [[<ore:dyeBlue>, <tfc:metal/mace_head/wrought_iron>], [<ore:plateIron>, <tfc:metal/mace_head/wrought_iron>], [<ore:dyeBlue>, <tfc:metal/mace_head/wrought_iron>]]);
 recipes.addShaped(<railcraft:borehead_steel>, [[<ore:dyeBlue>, <tfc:metal/mace_head/steel>], [<ore:plateSteel>, <tfc:metal/mace_head/steel>], [<ore:dyeBlue>, <tfc:metal/mace_head/steel>]]);
 recipes.addShaped(<railcraft:tool_crowbar_steel>, [[null, <ore:nuggetSteel>, <ore:rodSteel>], [null, <ore:rodSteel>, <ore:dyeRed>], [<ore:rodSteel>, <ore:dyeRed>, null]]);
-recipes.addShaped(<railcraft:tool_crowbar_iron>, [[null, <ore:nuggetIron>, <ore:rodWroughtIron>], [null, <ore:rodWroughtIron>, <ore:dyeRed>], [<ore:rodWroughtIron>, <ore:dyeRed>, null]]);
+recipes.addShaped(<railcraft:tool_crowbar_iron>, [[null, <ore:nuggetIron>, <ore:rodWroughtIron>], [null, <ore:rodWroughtIron>, null], [<ore:rodWroughtIron>, null, null]]);
 recipes.addShaped(<extrautils2:spike_stone>, [[<ore:knifeHead>, <ore:knifeHead>], [<ore:itemClay>, <ore:cobblestone>]]);
-recipes.addShaped(<mekanism:walkietalkie>, [[null, null, <ore:nuggetCopper>], [<ore:brick>, <ore:clothHighQuality>, <ore:brick>], [null, <ore:brick>, null]]);
 
 recipes.addShaped(<thermalfoundation:material:512>, [[<ore:nuggetRedSteel>, <ore:springSteel>, <ore:nuggetRedSteel>], [<ore:nuggetRedSteel>, <ore:springSteel>, <ore:nuggetRedSteel>]]);
 recipes.addShaped(<minecraft:arrow> * 32, [[<ore:javelinHead>], [<ore:stickWood>], [<ore:knifeBlade>]]);
