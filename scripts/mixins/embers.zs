@@ -10,3 +10,4 @@ zenClass MixinTilePlugBase {
         return native.net.minecraftforge.fluids.FluidRegistry.LAVA;
     }
 }
+

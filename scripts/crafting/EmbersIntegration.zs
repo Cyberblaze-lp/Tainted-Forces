@@ -12,21 +12,11 @@ import mods.thermalexpansion.CompressionDynamo;
 import mods.thermalexpansion.Refinery;
 import mods.magneticraft.FluidFuel;
 import mods.embers.EmberGeneration;
-recipes.remove(<embers:tinker_hammer>);
-recipes.remove(<embers:ember_bore>);
-recipes.remove(<embers:heat_coil>);
-recipes.remove(<embers:stamper>);
-recipes.remove(<embers:auto_hammer>);
-recipes.remove(<embers:stamper_base>);
-recipes.remove(<embers:dawnstone_anvil>);
-recipes.remove(<embers:mechanical_pump>);
-recipes.remove(<embers:ember_activator>);
+
 <embers:mechanical_pump>.addTooltip(format.red("sorry, but this one has a mild chance of corrupting your world. use II's mechanical pump instead"));
 
 
-recipes.addShaped(<embers:auto_hammer>, [[<minecraft:nether_brick>, null, <tfc:metal/hammer_head/wrought_iron>], [<ore:ingotDoubleCopper>, <ore:rodWroughtIron>, null], [<minecraft:nether_brick>, <tfc:brass_mechanisms>, null]]);
-recipes.addShaped(<embers:dawnstone_anvil>, [[<ore:plateDawnstone>, <ore:plateDawnstone>, <ore:plateDawnstone>], [<ore:plateDawnstone>, <ore:anvil>, <ore:plateDawnstone>], [null, <minecraft:nether_brick>, null]]);
-
+<embers:dawnstone_anvil>.displayName = "Automatic Anvil";
 
 mods.embers.Mixer.add(<liquid:lubricant>*2, [<liquid:creosote>*50, <liquid:olive_oil>]);
 mods.embers.Mixer.add(<liquid:uranium>, [<liquid:thorium>*2,<liquid:liquid_death>*5]);
@@ -52,184 +42,16 @@ GasTurbine.addFuel(null, <liquid:shallowbreath> * 10,15 );
 mods.thermalexpansion.CompressionDynamo.removeFuel(<liquid:fuel>);
 mods.thermalexpansion.CompressionDynamo.removeFuel(<liquid:creosote>);
 mods.thermalexpansion.CompressionDynamo.removeFuel(<liquid:crude_oil>);
-mods.thermalexpansion.CompressionDynamo.removeFuel(<liquid:oil>);
-mods.thermalexpansion.CompressionDynamo.removeFuel(<liquid:kerosene>);
-mods.thermalexpansion.CompressionDynamo.removeFuel(<liquid:lpg>);
 mods.thermalexpansion.CompressionDynamo.removeFuel(<liquid:coal>);
-mods.thermalexpansion.CompressionDynamo.removeFuel(<liquid:naphtha>);
+
 Refinery.removeRecipe(<liquid:refined_oil>);
 Refinery.removeRecipe(<liquid:biocrude>);
 
 Refinery.removeRecipe(<liquid:crude_oil>);
 Refinery.removeRecipe(<liquid:coal>);
 
-// for some stupid reason modular diversity doesn't wanna work with me here. will replace it with fitting refinery recipes
-/*
-val reci = mods.modularmachinery.RecipeBuilder.newBuilder("diesel", "catalyzer", 3, 0);
 
-
-reci.addFluidInput(<fluid:diesel>*30);
-reci.addFluidOutput(<fluid:refined_fuel>*20);
-reci.addAuraOutput(0.0,0.2);
-reci.build();
-
-val recia = mods.modularmachinery.RecipeBuilder.newBuilder("kerosene", "catalyzer", 3, 0);
-
-
-recia.addFluidInput(<fluid:kerosene>*30);
-recia.addFluidOutput(<fluid:refined_fuel>*30);
-reci.addAuraOutput(0.0,0.2);
-recia.build();
-recia.setPerTick(true);
-val recib= mods.modularmachinery.RecipeBuilder.newBuilder("gasolinepneuma", "catalyzer", 3, 0);
-
-
-recib.addFluidInput(<fluid:fuel>*15);
-recib.addFluidOutput(<fluid:refined_fuel>*20);
-reci.addAuraOutput(0.0,0.2);
-recib.build();
-
-val recic = mods.modularmachinery.RecipeBuilder.newBuilder("gasolineip", "catalyzer", 3, 0);
-
-
-recic.addFluidInput(<fluid:gasoline>*25);
-recic.addFluidOutput(<fluid:refined_fuel>*20);
-reci.addAuraOutput(0.0,0.2);
-recic.build();
-
-val recid = mods.modularmachinery.RecipeBuilder.newBuilder("lpg", "catalyzer", 3, 0);
-
-
-recid.addFluidInput(<fluid:lpg>*30);
-recid.addFluidOutput(<fluid:refined_fuel>*50);
-reci.addAuraOutput(0.0,0.2);
-recid.build();
-
-val reciea = mods.modularmachinery.RecipeBuilder.newBuilder("naphthaTE", "catalyzer", 3, 0);
-
-
-reciea.addFluidInput(<fluid:refined_oil>*30);
-reciea.addFluidOutput(<fluid:refined_fuel>*20);
-reciea.addAuraOutput(0.0,0.2);
-reciea.build();
-
-val recie = mods.modularmachinery.RecipeBuilder.newBuilder("naphtha", "catalyzer", 3, 0);
-
-
-recie.addFluidInput(<fluid:naphtha>*30);
-recie.addFluidOutput(<fluid:refined_fuel>*20);
-recie.addAuraOutput(0.0,0.2);
-recie.build();
-
-val recif = mods.modularmachinery.RecipeBuilder.newBuilder("biodiesel", "catalyzer", 3, 0);
-
-
-recif.addFluidInput(<fluid:biodiesel>*32);
-recif.addFluidOutput(<fluid:refined_biofuel>*20);
-recif.addAuraOutput(0.0,0.1);
-recif.build();
-
-val recig = mods.modularmachinery.RecipeBuilder.newBuilder("treeoil", "catalyzer", 3, 0);
-
-
-recig.addFluidInput(<fluid:tree_oil>*40);
-recig.addFluidOutput(<fluid:refined_biofuel>*20);
-recif.addAuraOutput(0.0,0.1);
-recig.build();
-
-val recih = mods.modularmachinery.RecipeBuilder.newBuilder("creosote", "catalyzer", 3, 0);
-
-
-recih.addFluidInput(<fluid:creosote>*200);
-recih.addFluidOutput(<fluid:refined_biofuel>*10);
-recif.addAuraOutput(0.0,0.1);
-recih.build();
-
-val recii = mods.modularmachinery.RecipeBuilder.newBuilder("biocrude", "catalyzer", 3, 0);
-
-
-recii.addFluidInput(<fluid:biocrude>*40);
-recii.addFluidOutput(<fluid:refined_biofuel>*20);
-recif.addAuraOutput(0.0,0.1);
-recii.build();
-
-val recij = mods.modularmachinery.RecipeBuilder.newBuilder("biogas", "catalyzer", 3, 0);
-
-
-recij.addFluidInput(<fluid:ic2biogas>*160);
-recij.addFluidOutput(<fluid:refined_biofuel>*20);
-recif.addAuraOutput(0.0,0.1);
-recij.build();
-
-
-*/
-
-//standard fossil fuel for comparing others to kinda high pollution rate
-mods.immersiveengineering.Refinery.addRecipe(<fluid:refined_fuel>*20, <fluid:diesel>*30, <fluid:flux_goo>*20, 1024);
-mods.immersiveengineering.Refinery.addRecipe(<fluid:refined_fuel>*20, <fluid:diesel>*30, <fluid:purifying_fluid>*10, 1024);
-mods.immersiveengineering.Refinery.addRecipe(<fluid:refined_fuel>*20, <fluid:diesel>*30, <fluid:shallowbreath>*5, 1024);
-//1:1 efficiency, 1.5x less pollution
-mods.immersiveengineering.Refinery.addRecipe(<fluid:refined_fuel>*30, <fluid:kerosene>*30, <fluid:flux_goo>*20, 1024);
-mods.immersiveengineering.Refinery.addRecipe(<fluid:refined_fuel>*30, <fluid:kerosene>*30, <fluid:purifying_fluid>*10, 1024);
-mods.immersiveengineering.Refinery.addRecipe(<fluid:refined_fuel>*30, <fluid:kerosene>*30, <fluid:shallowbreath>*5, 1024);
-//slightly higher petroleum efficiency
-mods.immersiveengineering.Refinery.addRecipe(<fluid:refined_fuel>*20, <fluid:gasoline>*25, <fluid:flux_goo>*20, 1024);
-mods.immersiveengineering.Refinery.addRecipe(<fluid:refined_fuel>*20, <fluid:gasoline>*25, <fluid:purifying_fluid>*10, 1024);
-mods.immersiveengineering.Refinery.addRecipe(<fluid:refined_fuel>*20, <fluid:gasoline>*25, <fluid:shallowbreath>*5, 1024);
-//much higher petroleum efficiency
-mods.immersiveengineering.Refinery.addRecipe(<fluid:refined_fuel>*20, <fluid:fuel>*15, <fluid:flux_goo>*20, 1024);
-mods.immersiveengineering.Refinery.addRecipe(<fluid:refined_fuel>*20, <fluid:fuel>*15, <fluid:purifying_fluid>*10, 1024);
-mods.immersiveengineering.Refinery.addRecipe(<fluid:refined_fuel>*20, <fluid:fuel>*15, <fluid:shallowbreath>*5, 1024);
-//much higher petroleum efficiency, 1.25x less pollution
-mods.immersiveengineering.Refinery.addRecipe(<fluid:refined_fuel>*25, <fluid:lpg>*15, <fluid:flux_goo>*20, 1024);
-mods.immersiveengineering.Refinery.addRecipe(<fluid:refined_fuel>*25, <fluid:lpg>*15, <fluid:purifying_fluid>*10, 1024);
-mods.immersiveengineering.Refinery.addRecipe(<fluid:refined_fuel>*25, <fluid:lpg>*15, <fluid:shallowbreath>*5, 1024);
-//same as diesel. can be gotten in a 1:1 ratio from oil if desired
-mods.immersiveengineering.Refinery.addRecipe(<fluid:refined_fuel>*20, <fluid:refined_oil>*30, <fluid:flux_goo>*20, 1024);
-mods.immersiveengineering.Refinery.addRecipe(<fluid:refined_fuel>*20, <fluid:refined_oil>*30, <fluid:purifying_fluid>*10, 1024);
-mods.immersiveengineering.Refinery.addRecipe(<fluid:refined_fuel>*20, <fluid:refined_oil>*30, <fluid:shallowbreath>*5, 1024);
-//just like diesel. more of a waste product than anything
-mods.immersiveengineering.Refinery.addRecipe(<fluid:refined_fuel>*20, <fluid:naphtha>*30, <fluid:flux_goo>*20, 1024);
-mods.immersiveengineering.Refinery.addRecipe(<fluid:refined_fuel>*20, <fluid:naphtha>*30, <fluid:purifying_fluid>*10, 1024);
-mods.immersiveengineering.Refinery.addRecipe(<fluid:refined_fuel>*20, <fluid:naphtha>*30, <fluid:shallowbreath>*5, 1024);
-// the cleanest fuel by far: 2x less pollution at the cost of 2x less petroleum efficiency. further, you need 10 mb of LPG to get 3 of this.
-mods.immersiveengineering.Refinery.addRecipe(<fluid:refined_fuel>*40, <fluid:natural_gas>*60, <fluid:flux_goo>*20, 1024);
-mods.immersiveengineering.Refinery.addRecipe(<fluid:refined_fuel>*40, <fluid:natural_gas>*60, <fluid:purifying_fluid>*10, 1024);
-mods.immersiveengineering.Refinery.addRecipe(<fluid:refined_fuel>*40, <fluid:natural_gas>*60, <fluid:shallowbreath>*5, 1024);
-//standard biofuel. biofuel usually produces less RF/mb, so slightly reduced overall efficiency
-mods.immersiveengineering.Refinery.addRecipe(<fluid:refined_biofuel>*20, <fluid:biodiesel>*30, <fluid:flux_goo>*20, 1024);
-mods.immersiveengineering.Refinery.addRecipe(<fluid:refined_biofuel>*20, <fluid:biodiesel>*30, <fluid:purifying_fluid>*10, 1024);
-mods.immersiveengineering.Refinery.addRecipe(<fluid:refined_biofuel>*20, <fluid:biodiesel>*30, <fluid:shallowbreath>*5, 1024);
-//same as biodiesel
-mods.immersiveengineering.Refinery.addRecipe(<fluid:refined_biofuel>*20, <fluid:wood_gas>*30, <fluid:flux_goo>*20, 1024);
-mods.immersiveengineering.Refinery.addRecipe(<fluid:refined_biofuel>*20, <fluid:wood_gas>*30, <fluid:purifying_fluid>*10, 1024);
-mods.immersiveengineering.Refinery.addRecipe(<fluid:refined_biofuel>*20, <fluid:wood_gas>*30, <fluid:shallowbreath>*5, 1024);
-//very fuel efficient, but is annoying to get
-mods.immersiveengineering.Refinery.addRecipe(<fluid:refined_biofuel>*20, <fluid:olive_oil>*5, <fluid:flux_goo>*20, 1024);
-mods.immersiveengineering.Refinery.addRecipe(<fluid:refined_biofuel>*20, <fluid:olive_oil>*5, <fluid:purifying_fluid>*10, 1024);
-mods.immersiveengineering.Refinery.addRecipe(<fluid:refined_biofuel>*20, <fluid:olive_oil>*5, <fluid:shallowbreath>*5, 1024);
-//no recipe for this yet, who knows? maybe you find a vanilla spruce somewhere...
-mods.immersiveengineering.Refinery.addRecipe(<fluid:refined_biofuel>*20, <fluid:tree_oil>*40, <fluid:flux_goo>*20, 1024);
-mods.immersiveengineering.Refinery.addRecipe(<fluid:refined_biofuel>*20, <fluid:tree_oil>*40, <fluid:purifying_fluid>*10, 1024);
-mods.immersiveengineering.Refinery.addRecipe(<fluid:refined_biofuel>*20, <fluid:tree_oil>*40, <fluid:shallowbreath>*5, 1024);
-//really trashy fuel. pollutes 1.33 times more
-mods.immersiveengineering.Refinery.addRecipe(<fluid:refined_biofuel>*15, <fluid:creosote>*60, <fluid:flux_goo>*20, 1024);
-mods.immersiveengineering.Refinery.addRecipe(<fluid:refined_biofuel>*15, <fluid:creosote>*60, <fluid:purifying_fluid>*10, 1024);
-mods.immersiveengineering.Refinery.addRecipe(<fluid:refined_biofuel>*15, <fluid:creosote>*60, <fluid:shallowbreath>*5, 1024);
-// standard-ish fuel for all you ic2 lovers out there
-mods.immersiveengineering.Refinery.addRecipe(<fluid:refined_biofuel>*20, <fluid:ic2biogas>*100, <fluid:flux_goo>*20, 1024);
-mods.immersiveengineering.Refinery.addRecipe(<fluid:refined_biofuel>*20, <fluid:ic2biogas>*100, <fluid:purifying_fluid>*10, 1024);
-mods.immersiveengineering.Refinery.addRecipe(<fluid:refined_biofuel>*20, <fluid:ic2biogas>*100, <fluid:shallowbreath>*5, 1024);
-// re-addition of the TE biofuel recipe. slightly increased fuel efficiency
-mods.immersiveengineering.Refinery.addRecipe(<fluid:refined_biofuel>*20, <fluid:biocrude>*20, <fluid:flux_goo>*20, 1024);
-mods.immersiveengineering.Refinery.addRecipe(<fluid:refined_biofuel>*20, <fluid:biocrude>*20, <fluid:purifying_fluid>*10, 1024);
-mods.immersiveengineering.Refinery.addRecipe(<fluid:refined_biofuel>*20, <fluid:biocrude>*20, <fluid:shallowbreath>*5, 1024);
-//most efficient (tho in practice probably not as clean as nat. Gas.
-mods.immersiveengineering.Refinery.addRecipe(<fluid:refined_biofuel>*40, <fluid:liquidethene>*20, <fluid:flux_goo>*20, 1024);
-mods.immersiveengineering.Refinery.addRecipe(<fluid:refined_biofuel>*40, <fluid:liquidethene>*20, <fluid:purifying_fluid>*10, 1024);
-mods.immersiveengineering.Refinery.addRecipe(<fluid:refined_biofuel>*40, <fluid:liquidethene>*20, <fluid:shallowbreath>*5, 1024);
-
-mods.magneticraft.FluidFuel.addFuel(<liquid:lava>*250, 2000, 400.0);
+mods.magneticraft.FluidFuel.addFuel(<liquid:refined_fuel>*120, 2000, 400.0);
 mods.magneticraft.FluidFuel.addFuel(<liquid:refined_biofuel>*120, 2000, 400.0);
 mods.magneticraft.FluidFuel.addFuel(<liquid:shallowbreath>*100, 2000, 400.0);
 
@@ -248,8 +70,9 @@ mods.embers.HeatCoil.add(<tfc:crucible>, <tfc:ceramics/unfired/crucible>);
 mods.embers.HeatCoil.add(<tfc:ceramics/fired/fire_brick>, <tfc:ceramics/fire_clay>);
 <tfc:ceramics/fire_clay>.addTooltip(format.gold("Can be turned directly into bricks via a hearth coil"));
 
+<embers:boiler>.addTooltip(format.gold("Now uses LAVA instead of water!"));
 
-
+mods.embers.Stamper.remove(<embers:dust_ember>);
 
 
 mods.embers.Stamper.add(<thebetweenlands:items_misc:18>, null ,<embers:stamp_flat>,<ore:dustSulfur>*3);
@@ -467,7 +290,7 @@ mods.embers.Alchemy.remove(<embers:catalytic_plug>);
 mods.embers.Alchemy.add(<embers:dust_metallurgic>*5,[<thaumcraft:salis_mundus>,<thaumcraft:nugget:5>,null,null,null],{"dawnstone":(0 to 16),"iron":(0 to 16),"silver":(0 to 16),"copper":(0 to 16),"lead":(0 to 16)});
 mods.embers.Alchemy.add(<embers:dust_metallurgic>*5,[<thaumcraft:salis_mundus>,<minecraft:dye:15>,<minecraft:dye:15>,<minecraft:dye:15>,<minecraft:dye:15>],{"dawnstone":(0 to 16),"iron":(0 to 16),"silver":(0 to 16),"copper":(0 to 16),"lead":(0 to 16)});
 mods.embers.Alchemy.add(<embers:dust_metallurgic>*5,[<thaumcraft:nugget:5>,<minecraft:dye:15>,<minecraft:dye:15>,<minecraft:dye:15>,<minecraft:dye:15>],{"dawnstone":(0 to 16),"iron":(0 to 16),"silver":(0 to 16),"copper":(0 to 16),"lead":(0 to 16)});
-mods.embers.Alchemy.add(<embers:blasting_core>,[<minecraft:fire_charge>,<ore:plateIron>,<ore:plateIron>,<ic2:crafting:8>,<ore:plateIron>],{"copper":(0 to 16)});
+mods.embers.Alchemy.add(<embers:blasting_core>,[<minecraft:fire_charge>,<ore:plateIron>,<ore:gearIron>,<ic2:crafting:8>,<ore:plateIron>],{"copper":(0 to 16)});
 
 
 mods.embers.DawnstoneAnvil.add([<tfc:metal/ingot/high_carbon_steel>,<immersiveengineering:material:7>], <tfc:metal/ingot/pig_iron>,null);
@@ -613,28 +436,11 @@ mods.embers.DawnstoneAnvil.add([<tfctech:metal/titanium_gear>],<ore:sleeveSteel>
 mods.embers.DawnstoneAnvil.add([<tfctech:metal/aluminium_gear>],<ore:rackwheelAluminium>,<ore:sleeveBrass>);
 mods.embers.DawnstoneAnvil.add([<tfctech:metal/aluminium_gear>],<ore:sleeveBrass>,<ore:rackwheelAluminium>);
 
+mods.embers.DawnstoneAnvil.add([<mysticalmechanics:axle_iron>*3],<ore:ingotIron>,<ore:stickIron>);
+mods.embers.DawnstoneAnvil.add([<mysticalmechanics:axle_iron>*3],<ore:stickIron>,<ore:ingotIron>);
 
+recipes.remove(<ore:stickIron>);
 
-mods.embers.Stamper.add(<ore:stickLongBismuth>.firstItem, null ,<immersiveengineering:mold:2>,<ore:ingotBismuth>);
-
-mods.embers.Stamper.add(<ore:stickLongBismuthBronze>.firstItem, null ,<immersiveengineering:mold:2>,<ore:ingotBismuthBronze>);
-
-mods.embers.Stamper.add(<ore:stickLongBlackBronze>.firstItem, null ,<immersiveengineering:mold:2>,<ore:ingotBlackBronze>);
-mods.embers.Stamper.add(<ore:stickLongBrass>.firstItem, null ,<immersiveengineering:mold:2>,<ore:ingotBrass>);
-mods.embers.Stamper.add(<ore:stickLongBronze>.firstItem, null ,<immersiveengineering:mold:2>,<ore:ingotBronze>);
-mods.embers.Stamper.add(<ore:stickLongCopper>.firstItem, null ,<immersiveengineering:mold:2>,<ore:ingotCopper>);
-mods.embers.Stamper.add(<ore:stickLongGold>.firstItem, null ,<immersiveengineering:mold:2>,<ore:ingotGold>);
-mods.embers.Stamper.add(<ore:stickLongLead>.firstItem, null ,<immersiveengineering:mold:2>,<ore:ingotLead>);
-mods.embers.Stamper.add(<ore:stickLongNickel>.firstItem, null ,<immersiveengineering:mold:2>,<ore:ingotNickel>);
-mods.embers.Stamper.add(<ore:stickLongTin>.firstItem, null ,<immersiveengineering:mold:2>,<ore:ingotTin>);
-mods.embers.Stamper.add(<ore:stickLongSilver>.firstItem, null ,<immersiveengineering:mold:2>,<ore:ingotSilver>);
-mods.embers.Stamper.add(<ore:stickLongRoseGold>.firstItem, null ,<immersiveengineering:mold:2>,<ore:ingotRoseGold>);
-mods.embers.Stamper.add(<ore:stickLongWroughtIron>.firstItem, null ,<immersiveengineering:mold:2>,<ore:ingotIron>);
-mods.embers.Stamper.add(<ore:stickLongSteel>.firstItem, null ,<immersiveengineering:mold:2>,<ore:ingotSteel>);
-mods.embers.Stamper.add(<ore:stickLongBlackSteel>.firstItem, null ,<immersiveengineering:mold:2>,<ore:ingotBlackSteel>);
-mods.embers.Stamper.add(<ore:stickLongTungsten>.firstItem, null ,<immersiveengineering:mold:2>,<ore:ingotTungsten>);
-mods.embers.Stamper.add(<ore:stickLongTungstenSteel>.firstItem, null ,<immersiveengineering:mold:2>,<ore:ingotTungstenSteel>);
-mods.embers.Stamper.add(<ore:stickLongAluminium>.firstItem, null ,<immersiveengineering:mold:2>,<ore:ingotAluminium>);
 
 
 

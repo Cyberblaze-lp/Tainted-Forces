@@ -12,6 +12,8 @@ import crafttweaker.world.IBlockPos;
 import crafttweaker.util.IRandom;
 import crafttweaker.command.ICommandManager;
 import crafttweaker.server.IServer;
+import crafttweaker.event.ProjectileImpactArrowEvent;
+import crafttweaker.util.IAxisAlignedBB;
 
 //Applies potion effects to entities upon spawning
 //i thought RotM covered this but here we are
@@ -75,7 +77,7 @@ events.onEntityLivingDeath(function(event as crafttweaker.event.EntityLivingDeat
 if (event.entityLivingBase.nbt.asString() has "istainted" || event.entityLivingBase.definition.id has "taint"){
     var invis = <potion:minecraft:invisibility>.makePotionEffect(100, 3 ,false, false) as IPotionEffect;
 event.entityLivingBase.addPotionEffect(invis);
-server.commandManager.executeCommandSilent(event.entityLivingBase, "particle blockcrack ~ ~" + toString(event.entityLivingBase.eyeHeight /2) +" ~ 0.3 "+toString(event.entityLivingBase.eyeHeight /2)+ " 0.3 0 300 force @a 1099");
+server.commandManager.executeCommandSilent(event.entityLivingBase, "particle blockcrack ~ ~" + toString(event.entityLivingBase.eyeHeight /2) +" ~ 0.3 "+toString(event.entityLivingBase.eyeHeight /2)+ " 0.3 0 300 force @a 1108");
 server.commandManager.executeCommandSilent(event.entityLivingBase, "playsound thaumcraft:gore hostile @a ~ ~ ~");
 
 }
@@ -142,6 +144,34 @@ if(event.damageSource.damageType has "arve"||event.damageSource.damageType has "
     }
 }
 
+});
+val dist as double = 1.8 as double;
+events.onProjectileImpactArrow(function(event as crafttweaker.event.ProjectileImpactArrowEvent){
+
+  
+
+    if (isNull(event.entity.definition))
+    {
+        return;
+    }
+
+    val Xpos = event.entity.x; 
+    val Ypos = event.entity.y; 
+    val Zpos = event.entity.z; 
+
+    val Entities = event.entity.world.getEntitiesWithinAABB(IAxisAlignedBB.create(Xpos - dist, Ypos+0.5d - dist, Zpos - dist, Xpos + dist, Ypos+0.5d + dist, Zpos + dist));
+    
+    for entity in Entities
+    {
+        if !isNull(entity.definition)
+        {   
+            if(entity.definition.id has "cart"||entity.definition.id has "locomo"||entity.definition.id has "turret")
+            {
+                event.cancel();
+                return;
+            }
+        }
+    }
 });
 
 

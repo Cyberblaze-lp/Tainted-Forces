@@ -1,4 +1,5 @@
 import mods.jei.JEI;
+import crafttweaker.item.IItemStack;
 
 JEI.hide(<thermalexpansion:augment:352>);
 JEI.hide(<ic2:crafting:2>);
@@ -40,8 +41,16 @@ JEI.hide(<ic2:te:50>);
 JEI.hide(<tfc:metal/bucket/blue_steel>);
 JEI.hide(<tfc:metal/bucket/red_steel>);
 
-JEI.hide(<extrautils2:angelring:*>);
+JEI.removeAndHide(<extrautils2:angelring:*>);
 JEI.hide(<camping:campfire_wood_off>);
 JEI.hide(<camping:campfire_cook>);
 
 JEI.hide(<travelersbackpack:sleeping_bag_bottom>);
+
+for item in [
+    <advancedrocketry:concrete>
+
+] as IItemStack[]
+{
+ JEI.removeAndHide(item);
+}

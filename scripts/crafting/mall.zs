@@ -100,6 +100,36 @@ for item in signals
 
 }
 
+mods.chisel.Carving.addGroup("track_kits");
+for item in <railcraft:track_kit>.definition.subItems{
+
+    mods.chisel.Carving.addVariation("track_kits", item);
+    recipes.remove(item);
+
+}
+
+mods.chisel.Carving.addGroup("e_tubes");
+val e_tubes as IItemStack[] =[<thaumcraft:tube>,<thaumcraft:tube_oneway>,<thaumcraft:tube_restrict>,<thaumicaugmentation:glass_tube>];
+for item in e_tubes
+{
+    mods.chisel.Carving.addVariation("e_tubes", item);
+    recipes.remove(item);
+
+}
+
+mods.chisel.Carving.addGroup("emberadv");
+val emberadv as IItemStack[] =[<embers:reactor>,<embers:combustor>,<embers:catalyzer>,<embers:ember_injector>,<embers:inferno_forge>,<embers:stirling>];
+for item in emberadv
+{
+    mods.chisel.Carving.addVariation("emberadv", item);
+    recipes.remove(item);
+
+}
+
+
+
+
+
 
 
 

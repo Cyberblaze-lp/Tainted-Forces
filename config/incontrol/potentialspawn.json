@@ -4,22 +4,28 @@
     "mobs": [
       {
         "mob": "quark:forgotten",
-        
-        "weight": 0.4,
+        "block": [
+          "tetra:forged-platform"
+        ],
+        "weight": 3,
         "groupcountmin": 1,
         "groupcountmax": 1
       },
       {
         "mob": "quark:ashen",
-      
-        "weight": 0.6,
+      "block": [
+          "tetra:forged-platform"
+        ],
+        "weight": 6,
         "groupcountmin": 1,
-        "groupcountmax": 2
+        "groupcountmax": 1
       },
       {
         "mob": "quark:dweller",
-       
-        "weight": 0.6,
+       "block": [
+          "tetra:forged-platform"
+        ],
+        "weight": 4,
         "groupcountmin": 1,
         "groupcountmax": 1
       },

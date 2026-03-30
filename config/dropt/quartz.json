@@ -17,22 +17,38 @@
             "selector": {
                 "silktouch": "EXCLUDED",
                 "weight": {
-                  "value": 1
+                  "value": 10
                 }
               },
             "item": {
               "items": [
-                "minecraft:quartz"
+                "thaumcraft:nugget:9"
               ],
               "quantity": {
-                  "min": 0, "max":3
+                  "min": 0, "max":5
+              }
+            }
+          },
+          {
+            "selector": {
+                "silktouch": "EXCLUDED",
+                "weight": {
+                  "value": 2
+                }
+              },
+            "item": {
+              "items": [
+                "thaumcraft:cluster:7"
+              ],
+              "quantity": {
+                  "min": 0, "max":1
               }
             }
           },
           {
             "selector": {
                 "weight": {
-                  "value": 2
+                  "value": 50
                 }
               }
           }
