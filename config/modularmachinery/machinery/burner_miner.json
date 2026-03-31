@@ -2,7 +2,7 @@
     "registryname": "burnerdrill_t1",
     "localizedname": "Burner Miner",
     "requires-blueprint": false,
-    "color": "BD4E33",
+    "color": "A25426",
     "parts": [
         {
             "x": 1,

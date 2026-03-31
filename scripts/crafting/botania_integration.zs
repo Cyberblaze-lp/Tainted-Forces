@@ -19,13 +19,6 @@ mods.botania.Apothecary.removeRecipe("daffomill");
 mods.botania.Apothecary.addRecipe("daffomill", [<ore:petalYellow>, <ore:petalWhite>, <ore:petalWhite>, <botania:manaresource:6>, <botania:manaresource:3>]);
 
 
-mods.modularmachinery.RecipeBuilder.newBuilder("basicflux", "calcifier_t0", 300)
-.addItemInput(<ore:powderMana>*8)
-.addItemOutput(<tfc:powder/flux>)
-.addFluxOutput(2,0)
-.build();
-
-
 
 recipes.remove(<botania:twigwand>);
 

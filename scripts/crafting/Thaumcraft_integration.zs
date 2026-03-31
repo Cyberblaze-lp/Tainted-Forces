@@ -259,19 +259,36 @@ ItemRegistry.registerArmor(<thaumicaugmentation:void_boots>, 55.0, 70.0,50.0);
 
 //create simple ore processing recipes for crucible using very complicated code
 
-zenClass itemPlusOre{
+zenClass itemPlusOre
+{
     val item as IItemStack;
     val ore as string;
     
 
     zenConstructor(itemIn as IItemStack, oreIn as string)
-{
-    item = itemIn;
-    ore = oreIn;
+    {
+        item = itemIn;
+        ore = oreIn;
+    }
+}
 
-}}
-
-var itemplusOres = [itemPlusOre(<tfc:metal/nugget/copper>,"Copper"),itemPlusOre(<tfc:metal/nugget/bismuth>,"Bismuth"),itemPlusOre(<tfc:metal/nugget/gold>,"Gold")] as itemPlusOre[];
+var itemplusOres = 
+[
+    itemPlusOre(<tfc:metal/nugget/copper>,"Copper"),
+    itemPlusOre(<tfc:metal/nugget/bismuth>,"Bismuth"),
+    itemPlusOre(<tfc:metal/nugget/gold>,"Gold"),
+    itemPlusOre(<tfc:metal/nugget/tin>,"Tin"),
+    itemPlusOre(<tfc:metal/nugget/wrought_iron>,"WroughtIron"),
+    itemPlusOre(<tfc:metal/nugget/zinc>,"Zinc"),
+    itemPlusOre(<tfc:metal/nugget/silver>,"Silver"),
+    itemPlusOre(<tfc:metal/nugget/lead>,"Lead"),
+    itemPlusOre(<tfc:metal/nugget/nickel>,"Nickel"),
+    itemPlusOre(<tfc:metal/nugget/aluminium>,"Aluminium"),
+    itemPlusOre(<tfc:metal/nugget/platinum>,"Platinum"),
+    itemPlusOre(<tfc:metal/nugget/lithium>,"Lithium"),
+    itemPlusOre(<tfc:metal/nugget/thorium>,"Thorium"),
+    itemPlusOre(<tfc:metal/nugget/antimony>,"Antimony"),
+] as itemPlusOre[];
 
 var aspectsempty1 as AspectList = AspectList();
 var aspectsnugget as AspectList = aspectsempty1
