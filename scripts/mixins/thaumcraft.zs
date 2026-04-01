@@ -5,6 +5,8 @@ import native.net.minecraft.block.BlockFlower;
 import native.net.minecraft.block.material.Material;
 import native.net.minecraft.entity.Entity;
 import native.net.minecraft.init.Blocks;
+import native.net.minecraft.entity.EntityLivingBase;
+import native.net.minecraft.item.ItemStack;
 import native.net.minecraft.util.math.BlockPos;
 import native.net.minecraft.world.World;
 import native.net.minecraftforge.common.IPlantable;
@@ -20,9 +22,11 @@ import native.thaumcraft.common.lib.utils.EntityUtils;
 import native.thaumcraft.common.lib.utils.Utils;
 import native.thaumcraft.common.world.aura.AuraHandler;
 import native.thaumcraft.common.world.aura.AuraThread;
+import native.thaumcraft.api.items.IRechargable;
+import native.thaumcraft.api.items.RechargeHelper;
 import native.net.minecraft.block.Block;
 import native.net.minecraft.util.BlockRenderLayer;
-
+import native.thecodex6824.thaumicaugmentation.common.item.ItemThaumostaticHarness;
 
 
 
@@ -98,6 +102,9 @@ zenClass passivePollute {
 }
 
 
+//taint aesthetics
+
+
 #mixin {targets: "thaumcraft.common.blocks.world.taint.BlockTaintFibre"}
 zenClass func_180664 {
     #mixin Overwrite 
@@ -106,7 +113,6 @@ zenClass func_180664 {
     }
 }
 
-//taint aesthetics
 
 #mixin {targets: "thaumcraft.common.blocks.world.taint.BlockTaintFibre"}
 zenClass MixinFiberLight {
@@ -195,33 +201,7 @@ zenClass MixinFiberGrowths4 {
     
 }
 
-
-
-
-
-
-
-
-//misc
-
-#mixin {targets: "thaumcraft.common.blocks.misc.BlockFluidDeath"}
-zenClass MixinFluidDeath {
-    #mixin ModifyConstant {method: "func_180634_a",  constant:{intValue: 4}}
-    function relocateData(value as int) as int {
-        return 30;
-    }
-}
-
-
-
-#mixin {targets: "blusunrize.immersiveengineering.common.util.compat.ThaumcraftHelper"}
-zenClass MixinFluidDeathChemthrower {
-    #mixin ModifyConstant {method: "init",  constant:{floatValue: 4.0}}
-    function relocateData(value as float) as float {
-        return 12.0f;
-    }
-}
-
+//tainted soil spreads now instead of rock. less laggy with 144 layers of rock vs 9 of dirt. also fixes taint sometimes "missing" a patch of grass which looked patchworky and ugly
 
 #mixin {targets: "thaumcraft.common.blocks.world.taint.BlockTaint"}
 zenClass MixinSoilSpread{
@@ -232,6 +212,45 @@ zenClass MixinSoilSpread{
 }
 
 
+
+// make thaumostatic harness un-rechargeable
+
+#mixin {targets: "thecodex6824.thaumicaugmentation.common.item.ItemThaumostaticHarness"}
+zenClass MixinMaxCharge{
+    #mixin Overwrite 
+    function getMaxCharge(stack as ItemStack, entity as EntityLivingBase ) as int {
+        return RechargeHelper.getCharge(stack);
+    }
+}
+
+
+
+
+
+//misc
+//buff liquid death dmg
+
+#mixin {targets: "thaumcraft.common.blocks.misc.BlockFluidDeath"}
+zenClass MixinFluidDeath {
+    #mixin ModifyConstant {method: "func_180634_a",  constant:{intValue: 4}}
+    function relocateData(value as int) as int {
+        return 30;
+    }
+}
+
+//buff it a little less when used as chemthrower ammo
+
+#mixin {targets: "blusunrize.immersiveengineering.common.util.compat.ThaumcraftHelper"}
+zenClass MixinFluidDeathChemthrower {
+    #mixin ModifyConstant {method: "init",  constant:{floatValue: 4.0}}
+    function relocateData(value as float) as float {
+        return 12.0f;
+    }
+}
+
+
+
+//buff crossbow turret detection radius
 
 #mixin {targets: "thaumcraft.common.entities.construct.EntityTurretCrossbowAdvanced"}
 zenClass MixinAdvCrossbowRange {

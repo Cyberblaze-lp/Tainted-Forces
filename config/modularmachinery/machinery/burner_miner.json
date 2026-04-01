@@ -84,7 +84,7 @@
             "z": 2,
             
             "elements": [
-                "modularmachinery:blockcasing@2"
+                "firebox"
             ]
         },
         {
@@ -102,7 +102,7 @@
             "z": 0,
             
             "elements": [
-                "modularmachinery:blockcasing@2"
+                "firebox"
             ]
         },
         {
@@ -127,7 +127,7 @@
             "z": 1,
             
             "elements": [
-                "modularmachinery:blockcasing@2"
+                "firebox"
             ]
         },
         {
@@ -153,7 +153,7 @@
             "z": 1,
             
             "elements": [
-                "modularmachinery:blockcasing@2"
+                "firebox"
             ]
         },
         {
