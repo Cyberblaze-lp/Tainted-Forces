@@ -16,8 +16,6 @@ import mods.embers.EmberGeneration;
 <embers:mechanical_pump>.addTooltip(format.red("sorry, but this one has a mild chance of corrupting your world. use II's mechanical pump instead"));
 
 
-<embers:dawnstone_anvil>.displayName = "Automatic Anvil";
-
 mods.embers.Mixer.add(<liquid:lubricant>*2, [<liquid:creosote>*50, <liquid:olive_oil>]);
 mods.embers.Mixer.add(<liquid:uranium>, [<liquid:thorium>*2,<liquid:liquid_death>*5]);
 
