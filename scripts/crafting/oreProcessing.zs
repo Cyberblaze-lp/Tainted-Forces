@@ -91,10 +91,11 @@ mods.immersiveengineering.Squeezer.addRecipe(<thermalfoundation:ore:6>, null, <o
 mods.immersiveengineering.Squeezer.addRecipe(<ic2:resource:4>, null, <ore:gemPitchblende>*2, 2048);
 mods.immersiveengineering.BottlingMachine.addRecipe(<ic2:resource:4>,<ore:scrapUranium>, <liquid:lava>*200);
 
-mods.immersiveengineering.Squeezer.addRecipe(<metallurgy:osmium_ore>, null, <ore:oreSmallOsmium>*10, 2048);
-mods.immersiveengineering.Squeezer.addRecipe(<metallurgy:osmium_ore>, null, <ore:orePoorOsmium>*7, 2048);
-mods.immersiveengineering.Squeezer.addRecipe(<metallurgy:osmium_ore>, null, <ore:oreNormalOsmium>*4, 2048);
-mods.immersiveengineering.Squeezer.addRecipe(<metallurgy:osmium_ore>, null, <ore:oreRichOsmium>*3, 2048);
+//Osmium
+mods.immersiveengineering.Squeezer.addRecipe(<mekanism:oreblock>, null, <ore:oreSmallOsmium>*10, 2048);
+mods.immersiveengineering.Squeezer.addRecipe(<mekanism:oreblock>, null, <ore:orePoorOsmium>*7, 2048);
+mods.immersiveengineering.Squeezer.addRecipe(<mekanism:oreblock>, null, <ore:oreNormalOsmium>*4, 2048);
+mods.immersiveengineering.Squeezer.addRecipe(<mekanism:oreblock>, null, <ore:oreRichOsmium>*3, 2048);
 
 
 
@@ -115,12 +116,6 @@ mods.immersiveengineering.Squeezer.addRecipe(<tfc:ore/stibnite/gabbro>, null, <o
 mods.immersiveengineering.Squeezer.addRecipe(<tfc:ore/stibnite/gabbro>, null, <ore:orePoorAntimony>*7, 2048);
 mods.immersiveengineering.Squeezer.addRecipe(<tfc:ore/stibnite/gabbro>, null, <ore:oreNormalAntimony>*4, 2048);
 mods.immersiveengineering.Squeezer.addRecipe(<tfc:ore/stibnite/gabbro>, null, <ore:oreRichAntimony>*3, 2048);
-
-mods.immersiveengineering.Squeezer.addRecipe(<metallurgy:manganese_ore>, null, <ore:oreSmallManganese>*10, 2048);
-mods.immersiveengineering.Squeezer.addRecipe(<metallurgy:manganese_ore>, null, <ore:orePoorManganese>*7, 2048);
-mods.immersiveengineering.Squeezer.addRecipe(<metallurgy:manganese_ore>, null, <ore:oreNormalManganese>*4, 2048);
-mods.immersiveengineering.Squeezer.addRecipe(<metallurgy:manganese_ore>, null, <ore:oreRichManganese>*3, 2048);
-
 
 mods.immersiveengineering.Squeezer.addRecipe(<immersiveintelligence:ore:2>, null, <ore:oreSmallTungsten>*10, 2048);
 mods.immersiveengineering.Squeezer.addRecipe(<immersiveintelligence:ore:2>, null, <ore:orePoorTungsten>*7, 2048);

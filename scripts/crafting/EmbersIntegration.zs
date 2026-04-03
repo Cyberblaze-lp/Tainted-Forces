@@ -268,9 +268,6 @@ Welding.addRecipe("tinkerhammer",<tfc:metal/hammer/wrought_iron>, <ore:plateLead
 
 
 
-mods.embers.Melter.add(<liquid:molten_tar>*50,<ore:fish>,<liquid:fish_oil>*10);
-mods.embers.Melter.add(<liquid:hsla_steel>*100,<thaumcraft:alumentum>,<liquid:molten_tar>*50);
-mods.embers.Melter.add(<liquid:molten_tar>*1000,<thebetweenlands:items_misc:44>,<liquid:oil_soul>*1000);
 mods.embers.EmberGeneration.removeBoilerFluid(<liquid:oil_dwarf>);
 
 

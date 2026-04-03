@@ -31,7 +31,6 @@ recipes.remove(<tconstruct:soil>);
 recipes.remove(<thermalfoundation:material:513>);
 recipes.remove(<thermalfoundation:material:514>);
 recipes.remove(<thermalfoundation:material:515>);
-recipes.remove(<metallurgy:brass_knuckles>);
 recipes.remove(<minecraft:compass>);
 recipes.remove(<minecraft:enchanting_table>);
 recipes.remove(<minecraft:fishing_rod>);
@@ -120,10 +119,8 @@ recipes.removeShaped(<tfc:bloomery>, [[<ore:sheetDoubleAnyBronze>, <ore:sheetDou
 recipes.removeShaped(<minecraft:rotten_flesh> * 9, [[<thaumcraft:flesh_block>]]);
 recipes.removeShaped(<thaumcraft:flesh_block>, [[<minecraft:rotten_flesh>, <minecraft:rotten_flesh>, <minecraft:rotten_flesh>], [<minecraft:rotten_flesh>, <minecraft:rotten_flesh>, <minecraft:rotten_flesh>], [<minecraft:rotten_flesh>, <minecraft:rotten_flesh>, <minecraft:rotten_flesh>]]);
 recipes.removeShaped(<quark:candle> * 2, [[<ore:string>], [<ore:tallow>], [<ore:tallow>]]);
-recipes.removeShaped(<metallurgy:quicksilver_ingot>, [[<ore:nuggetQuicksilver>, <ore:nuggetQuicksilver>, <ore:nuggetQuicksilver>], [<ore:nuggetQuicksilver>, <ore:nuggetQuicksilver>, <ore:nuggetQuicksilver>], [<ore:nuggetQuicksilver>, <ore:nuggetQuicksilver>, <ore:nuggetQuicksilver>]]);
 recipes.remove(<minecraft:piston>);
 recipes.remove(<immersiveengineering:drill>);
-recipes.remove(<metallurgy:ignatius_fuel>);
 recipes.remove(<extrautils2:analogcrafter>);
 recipes.remove(<extrautils2:crafter>);
 recipes.removeByMod("buildinggadgets");
@@ -163,14 +160,14 @@ recipes.addShapeless(<minecraft:red_mushroom>, [<ore:mushroomRed>]);
 recipes.addShapeless(<ic2:nuclear:9>, [<ore:dustCharcoal>, <ore:dustCharcoal>, <ore:dustCharcoal>, <ore:dustCharcoal>, <ic2:nuclear>, <ore:dustCharcoal>, <ore:dustCharcoal>, <ore:dustCharcoal>, <ore:dustCharcoal>]);
 recipes.addShapeless(<ic2:nuclear:9>, [<ore:dustCoal>, <ore:dustCoal>, <ic2:nuclear>, <ore:dustCoal>, <ore:dustCoal>]);
 recipes.addShapeless(<minecraft:rabbit_foot>, [<tfc:food/rabbit>, <ore:knife>.transformDamage(1)]);
-recipes.addShapeless(<metallurgy:thermite_dust> * 6, [<ore:dustAluminum>, <ore:dustAluminum>, <thaumcraft:alumentum>, <ore:dustPigIron>, <thaumcraft:alumentum>]);
-recipes.addShapeless(<metallurgy:thermite_dust> * 3, [<ore:dustAluminum>, <ore:dustAluminum>, <thaumcraft:alumentum>, <ore:dustWroughtIron>, <thaumcraft:alumentum>]);
-recipes.addShapeless(<metallurgy:thermite_dust> * 4, [<ore:dustAluminum>, <ore:dustAluminum>, <ore:dustCoke>, <ore:dustPigIron>]);
-recipes.addShapeless(<metallurgy:thermite_dust> * 2, [<ore:dustAluminum>, <ore:dustAluminum>, <ore:dustCoke>, <ore:dustWroughtIron>]);
-recipes.addShapeless(<metallurgy:thermite_dust> * 2, [<ore:dustAluminum>, <ore:dustAluminum>, <ore:dustCoal>, <ore:dustWroughtIron>, <ore:dustCoal>]);
-recipes.addShapeless(<metallurgy:thermite_dust> * 4, [<ore:dustAluminum>, <ore:dustAluminum>, <ore:dustCoal>, <ore:dustPigIron>, <ore:dustCoal>]);
-recipes.addShapeless(<metallurgy:thermite_dust> * 2, [<ore:dustAluminum>, <ore:dustAluminum>, <ore:dustCharcoal>, <ore:dustPigIron>, <ore:dustCharcoal>]);
-recipes.addShapeless(<metallurgy:thermite_dust>, [<ore:dustAluminum>, <ore:dustAluminum>, <ore:dustCharcoal>, <ore:dustWroughtIron>, <ore:dustCharcoal>]);
+recipes.addShapeless(<advancedrocketry:thermite> * 6, [<ore:dustAluminum>, <ore:dustAluminum>, <thaumcraft:alumentum>, <ore:dustPigIron>, <thaumcraft:alumentum>]);
+recipes.addShapeless(<advancedrocketry:thermite> * 3, [<ore:dustAluminum>, <ore:dustAluminum>, <thaumcraft:alumentum>, <ore:dustWroughtIron>, <thaumcraft:alumentum>]);
+recipes.addShapeless(<advancedrocketry:thermite> * 4, [<ore:dustAluminum>, <ore:dustAluminum>, <ore:dustCoke>, <ore:dustPigIron>]);
+recipes.addShapeless(<advancedrocketry:thermite> * 2, [<ore:dustAluminum>, <ore:dustAluminum>, <ore:dustCoke>, <ore:dustWroughtIron>]);
+recipes.addShapeless(<advancedrocketry:thermite> * 2, [<ore:dustAluminum>, <ore:dustAluminum>, <ore:dustCoal>, <ore:dustWroughtIron>, <ore:dustCoal>]);
+recipes.addShapeless(<advancedrocketry:thermite> * 4, [<ore:dustAluminum>, <ore:dustAluminum>, <ore:dustCoal>, <ore:dustPigIron>, <ore:dustCoal>]);
+recipes.addShapeless(<advancedrocketry:thermite> * 2, [<ore:dustAluminum>, <ore:dustAluminum>, <ore:dustCharcoal>, <ore:dustPigIron>, <ore:dustCharcoal>]);
+recipes.addShapeless(<advancedrocketry:thermite>, [<ore:dustAluminum>, <ore:dustAluminum>, <ore:dustCharcoal>, <ore:dustWroughtIron>, <ore:dustCharcoal>]);
 recipes.addShapeless(<ic2:nuclear:9>, [<ic2:nuclear>, <ore:dustCoke>, <ore:dustCoke>]);
 recipes.addShapeless(<ic2:nuclear:9>*5, [<ic2:nuclear:4>, <ore:dustCoke>, <ore:dustCoke>]);
 recipes.addShapeless(<ic2:nuclear:9>*5, [<ore:dustCoal>, <ore:dustCoal>, <ic2:nuclear:4>, <ore:dustCoal>, <ore:dustCoal>]);
@@ -220,8 +217,7 @@ recipes.addShapeless(<immersiveintelligence:small_crate:8>, [<immersiveintellige
 recipes.addShapeless(<immersiveintelligence:small_crate:6>, [<immersiveintelligence:small_crate:7>]);
 recipes.addShapeless(<immersiveintelligence:small_crate:7>, [<immersiveengineering:wooden_device0:5>]);
 recipes.addShapeless(<minecraft:ender_eye>, [<ore:enderpearl>, <thaumcraft:void_seed>, <ore:powderBlaze>]);
-recipes.remove(<metallurgy:thermite_dust>);
-recipes.addShapeless(<metallurgy:thermite_dust> * 8, [<ore:dustAluminium>, <ore:dustPigIron>, <thaumcraft:alumentum>]);
+recipes.addShapeless(<advancedrocketry:thermite> * 8, [<ore:dustAluminium>, <ore:dustPigIron>, <thaumcraft:alumentum>]);
 recipes.addShapeless(<camping:parts> * 2, [<ore:leatherArtificial>, <minecraft:rabbit_hide>, <camping:knife>.reuse()]);
 
 
@@ -569,7 +565,6 @@ recipes.addShaped(<tfc:metal/axe/mithril>, [[<tfc:metal/axe_head/mithril>], [<or
 recipes.addShaped(<tfc:metal/shovel/mithril>, [[<tfc:metal/shovel_head/mithril>], [<ore:stickWood>]]);
 recipes.addShaped(<tfc:metal/pick/mithril>, [[<tfc:metal/pick_head/mithril>], [<ore:stickWood>]]);
 recipes.addShaped(<immersiveintelligence:metal_decoration:1> * 3, [[<ore:ingotShadowSteel>, <ore:circuitBasic>, <ore:ingotShadowSteel>], [<ore:circuitBasic>, <ore:scaffoldingAluminum>, <ore:circuitBasic>], [<ore:ingotShadowSteel>, <ore:circuitBasic>, <ore:ingotShadowSteel>]]);
-recipes.addShaped(<metallurgy:orichalcum_buckler>, [[null, <ore:gemJade>, null], [<ore:gemJade>, <tfc:metal/shield/bismuth_bronze>, <ore:gemJade>], [null, <ore:gemJade>, null]]);
 recipes.addShaped(<thermalexpansion:frame> * 2, [[<ore:sheetDoubleTitanium>, <ic2:glass>, <ore:sheetDoubleTitanium>], [<ic2:glass>, <ore:circuitAdvanced>, <ic2:glass>], [<ore:heavyPlateSteel>, <ic2:glass>, <ore:heavyPlateSteel>]]);
 recipes.addShaped(<extrautils2:spike_diamond>, [[null, <tfc:metal/knife_blade/cobalt>, null], [<ore:dustDiamond>, <tfc:gem/diamond:3>, <ore:dustDiamond>]]);
 recipes.addShaped(<extrautils2:spike_gold>, [[null, <tfc:metal/knife_blade/bronze>, null], [<ore:nuggetGold>, <ore:blockSheetmetalGold>, <ore:nuggetGold>]]);
@@ -602,7 +597,6 @@ recipes.addShaped(<mysticalmechanics:gearbox_frame> * 2, [[<ore:rodWroughtIron>,
 recipes.addShaped(<travelersbackpack:travelers_backpack>, [[<thaumcraft:baubles:2>, <ore:leather>, <thaumcraft:baubles:2>], [<minecraft:glass_bottle>, <ore:chest>, <minecraft:glass_bottle>], [<ore:leather>, <ore:clothHighQuality>, <ore:leather>]]);
 recipes.addShaped(<thermalexpansion:satchel>, [[null, <ore:leather>, null], [null, <ore:nuggetCopper>, null], [<ore:leather>, <ore:clothHighQuality>, <ore:leather>]]);
 recipes.addShaped(<ic2:dust:6> * 9, [[<ore:dustRedstone>, <ore:dustLithium>, <ore:dustRedstone>], [<ore:dustLithium>, <ore:dustRedstone>, <ore:dustLithium>], [<ore:dustRedstone>, <ore:dustLithium>, <ore:dustRedstone>]]);
-recipes.addShaped(<metallurgy:rubracium_gauntlet>*2, [[<ore:leather>, <ore:leather>], [<ore:ingotRedSteel>, <ore:ingotRedSteel>]]);
 recipes.addShaped(<tetra:journal>, [[null, <embers:archaic_brick>, null], [<embers:archaic_brick>, <ore:dustBedrock>, <embers:archaic_brick>], [null, <embers:archaic_brick>, null]]);
 recipes.addShaped(<tetra:toolbelt_modular>.withTag({"toolbelt/belt_material": "belt/rope", "toolbelt/belt": "toolbelt/belt", "toolbelt/slot1": "toolbelt/strap_slot1", "toolbelt/strap_slot1_material": "strap1/leather"}), [[null, <tfc:crop/product/jute_fiber>, null], [<tfc:crop/product/jute_fiber>, null, <tfc:crop/product/jute_fiber>], [null, <tfc:crop/product/jute_fiber>, null]]);
 recipes.addShaped(<tetra:toolbelt_modular>.withTag({"toolbelt/belt_material": "belt/rope", "toolbelt/belt": "toolbelt/belt", "toolbelt/slot1": "toolbelt/strap_slot1", "toolbelt/strap_slot1_material": "strap1/leather"}), [[null, <ore:string>, null], [<ore:string>, null, <ore:string>], [null, <ore:string>, null]]);
@@ -626,8 +620,6 @@ recipes.addShaped(<mekanism:basicblock:14>, [[<ore:circuitUltimate>, <ore:circui
 
 recipes.addShaped(<minecraft:piston>, [[<ore:lumber>,<ore:lumber>,<ore:lumber>],[<ore:cobblestone>,<ore:rodWroughtIron>,<ore:cobblestone>],[<ore:cobblestone>,<tfc:brass_mechanisms>,<ore:cobblestone>]]);
 recipes.addShaped(<magneticraft:connector> * 4, [[<ore:nuggetTungsten>, <ore:nuggetTungsten>, <ore:nuggetTungsten>], [null, <ore:nuggetTungsten>, null], [null, <ore:ingotIron>, null]]);
-recipes.addShaped(<metallurgy:bimetal_structure_block> * 2, [[<ore:ingotBrass>, <ore:ingotWroughtIron>, <ore:ingotBrass>], [<ore:ingotWroughtIron>, null, <ore:ingotWroughtIron>], [<ore:ingotBrass>, <ore:ingotWroughtIron>, <ore:ingotBrass>]]);
-recipes.addShaped(<metallurgy:bimetal_structure_block> * 16, [[<ore:ingotZirconium>, <ore:ingotNickel>, <ore:ingotZirconium>], [<ore:ingotNickel>, null, <ore:ingotNickel>], [<ore:ingotZirconium>, <ore:ingotNickel>, <ore:ingotZirconium>]]);
 recipes.addShaped(<advancedrocketry:thermitetorch> * 4, [[<ore:dustThermite>], [<ore:stickWood>]]);
 recipes.addShaped(<mekanism:machineblock:8>, [[<ore:alloyBasic>, <ore:circuitBasic>, <ore:alloyBasic>], [<minecraft:compass>, <mekanism:basicblock:8>, <minecraft:compass>], [<ore:alloyBasic>, <ore:circuitBasic>, <ore:alloyBasic>]]);
 recipes.addShaped(<ic2:te:81>, [[null, <ore:plateAluminum>, null], [<ore:plateAluminum>, <ic2:fluid_cell>, <ore:plateAluminum>], [null, <ore:plateAluminum>, null]]);

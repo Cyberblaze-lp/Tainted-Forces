@@ -42,8 +42,6 @@ recipes.addShaped(<tconstruct:seared_slab:3> * 6, [[<tconstruct:seared:3>, <tcon
 
 
 
-//prevents a dupe with the induction smelter.
-recipes.remove(<metallurgy:rubracium_gauntlet>);
 
 mods.thermalexpansion.Crucible.removeRecipe(<minecraft:netherrack>);
 mods.thermalexpansion.Crucible.removeRecipe(<minecraft:stone>);

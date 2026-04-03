@@ -3,7 +3,6 @@ import crafttweaker.item.IItemStack;
 
 JEI.hide(<thermalexpansion:augment:352>);
 JEI.hide(<ic2:crafting:2>);
-JEI.hide(<advancedrocketry:thermite>);
 JEI.hide(<tfctech:latex/vulcanizing_agents>);
 
 

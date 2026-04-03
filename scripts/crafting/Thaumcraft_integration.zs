@@ -31,7 +31,6 @@ mods.immersivetechnology.MeltingCrucible.removeRecipe(<minecraft:cobblestone>);
 <tfc:metal/ingot/black_steel>.setAspects(<aspect:metallum>*15, <aspect:ordo>*5,<aspect:tenebrae>*10);
 <tfc:metal/ingot/tungsten>.setAspects(<aspect:metallum>*15,<aspect:machina>*10,<aspect:ignis>*30);
 <tfc:metal/ingot/tungsten_steel>.setAspects(<aspect:metallum>*20,<aspect:ignis>*10,<aspect:praemunio>*20);
-<metallurgy:lemurite_ingot>.setAspects(<aspect:metallum>*10,<aspect:lux>*5);
 
 
 
@@ -160,8 +159,6 @@ mods.thaumcraft.Infusion.registerRecipe("dropofevil", "DROPOFEVIL", <extrautils2
 
 val nuggetq = <ore:nuggetQuicksilver>;
 val ingotq = <ore:ingotQuicksilver>;
-nuggetq.remove(<metallurgy:quicksilver_nugget>);
-ingotq.remove(<metallurgy:quicksilver_ingot>);
 
 mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:turret:2>);
 mods.thaumcraft.Infusion.registerRecipe("betterbore", "ARCANEBORE", <thaumcraft:turret:2>, 4, [<aspect:machina>*50, <aspect:vacuos>*25, <aspect:motus>*25,<aspect:potentia>*100,<aspect:terra>*250], <thaumcraft:turret>, [<thaumcraft:vis_resonator>,<thaumcraft:focus_1>.withTag({package: {complexity: 14, nodes: [{type: "MEDIUM", key: "ROOT"}, {type: "MEDIUM", key: "thaumcraft.BOLT"}, {"setting.power": 3, type: "EFFECT", key: "thaumcraft.EARTH"}], index: 0, power: 1.0 as float}, srt: -1937637418, color: -11091968}), <ore:plateBrass>]);
