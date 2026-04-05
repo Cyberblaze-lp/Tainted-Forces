@@ -8,7 +8,7 @@
       "model": "modularmachinery:burnerdrill_t1"
     },
     "facing=south,formed=false": {
-      "model": "modularmachinery:blockcontroller",
+      "model": "modularmachinery:burnerdrill_t1",
       "y": 180
     },
     "facing=west,formed=false": {

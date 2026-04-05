@@ -8,7 +8,7 @@
       "model": "modularmachinery:calcifier_t0"
     },
     "facing=south,formed=false": {
-      "model": "modularmachinery:blockcontroller",
+      "model": "modularmachinery:calcifier_t0",
       "y": 180
     },
     "facing=west,formed=false": {

@@ -28,7 +28,7 @@ function checkVeins (iblockstate as IBlockState, controller as IMachineControlle
     val block as BlockOreTFC= iblockstate.getBlock().native as BlockOreTFC;
     val chunkX as int = Math.floor(pos.x as float /16.0) as int;
     val chunkZ as int = Math.floor(pos.z as float /16.0) as int;
-    val veins = WorldGenOreVeins.getNearbyVeins(chunkX, chunkZ, controller.world.getWorldInfo().seed as long, 1);
+    val veins = WorldGenOreVeins.getNearbyVeins(chunkX, chunkZ, controller.world.getWorldInfo().seed as long, 2);
 
     for vein in veins
     {
@@ -95,13 +95,13 @@ val pos1 =  controller.pos.getOffset(controller.facing, -1)
         return;
     }
     
-     val pos2 =  controller.pos.getOffset(controller.facing, -1)
+     val pos2 =  controller.pos .getOffset(controller.facing, -1)
                                 .getOffset(IFacing.up(), 1)
                                 .getOffset(IFacing.south, 1);
-     val pos3 =  controller.pos.getOffset(controller.facing, -1)
+     val pos3 =  controller.pos .getOffset(controller.facing, -1)
                                 .getOffset(IFacing.up(), 1)
                                 .getOffset(IFacing.east, 1);
-     val pos4 =  controller.pos.getOffset(controller.facing, -1)
+     val pos4 =  controller.pos .getOffset(controller.facing, -1)
                                 .getOffset(IFacing.up(), 1)
                                 .getOffset(IFacing.west, 1);
 
@@ -133,23 +133,42 @@ mods.modularmachinery.RecipeBuilder.newBuilder("perditioDrilling", "burnerdrill_
 .addItemOutput(<betterquesting:placeholder>)
 .addItemModifier(function(controller as IMachineController, item as IItemStack) as IItemStack {
    
-    val itemOut as IItemStack = lookForOre(controller);
+    if isNull (controller.customData)||isNull (controller.customData.item)
+    {
+        return null;
+    }
+    val itemOut as IItemStack = itemUtils.getItem(controller.customData.item as string);
     return itemOut;
 
-    })
+})
 
 .addItemInput(<thaumcraft:alumentum>)
 .setChance(1.5/32)
 .addAspectInput("perditio", 1)
 
 .addStartHandler(function (event as RecipeStartEvent){
-    setPower(30.0, event.controller);
     setFireboxState(4, event.controller);
+    val item = lookForOre(event.controller);
+    if !isNull(item)
+    {
+        val map1 as IData = {
+            "item" : item.definition.id
+        };
+        event.controller.customData = map1;
+        setPower(30.0, event.controller);
+    }
+	else 
+	{
+		val map1 as IData = {
+            "item" : ""
+        };
+        event.controller.customData = map1;
+	}
 })
 
 .addFinishHandler(function (event as RecipeFinishEvent){
-     setPower(0.0, event.controller);
-     setFireboxState(2, event.controller);
+    setPower(0.0, event.controller);
+    setFireboxState(2, event.controller);
 })
 .build();
 
@@ -160,23 +179,43 @@ mods.modularmachinery.RecipeBuilder.newBuilder("basicDrilling", "burnerdrill_t1"
 
 .addItemOutput(<betterquesting:placeholder>)
 .addItemModifier(function(controller as IMachineController, item as IItemStack) as IItemStack {
-   
-    val itemOut as IItemStack = lookForOre(controller);
+   if isNull (controller.customData)||isNull (controller.customData.item)
+   {
+    return null;
+   }
+    val itemOut as IItemStack = itemUtils.getItem(controller.customData.item);
     return itemOut;
 
-    })
+    }
+)
 
 .addItemInput(<thaumcraft:alumentum>)
 .setChance(1.5/32)
 
 .addStartHandler(function (event as RecipeStartEvent){
-    setPower(10.0, event.controller);
+    
     setFireboxState(4, event.controller);
+    val item = lookForOre(event.controller);
+    if !isNull(item)
+    {
+        val map1 as IData = {
+            "item" : item.definition.id
+        };
+        event.controller.customData = map1;
+        setPower(10.0, event.controller);
+    }
+	else 
+	{
+		val map1 as IData = {
+            "item" : ""
+        };
+        event.controller.customData = map1;
+	}
 })
 
 .addFinishHandler(function (event as RecipeFinishEvent){
-     setPower(0.0, event.controller);
-     setFireboxState(2, event.controller);
+    setPower(0.0, event.controller);
+    setFireboxState(2, event.controller);
 })
 .build();
 
