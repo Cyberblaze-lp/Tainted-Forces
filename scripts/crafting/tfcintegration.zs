@@ -91,11 +91,11 @@ ItemRegistry.registerFuel(<thaumcraft:alumentum>, 7200, 1400.0,true, true);
 <thaumcraft:alumentum>.addTooltip(format.white("Burns at 1400°C (White**) for 6min"));
 ItemRegistry.registerFuel(<ic2:nuclear:9>,12000 , 3300.0,true, true);
 <ic2:nuclear:9>.addTooltip(format.blue("Burns at 3300°C (>>Brilliant White) for 10min"));
-ItemRegistry.registerFuel(<metallurgy:ignatius_fuel>,12000 , 3300.0,true, true);
-<metallurgy:ignatius_fuel>.addTooltip(format.blue("Burns at 3300°C (>>Brilliant White) for 10min"));
+ItemRegistry.registerFuel(<contenttweaker:ignatius_fuel>,12000 , 3300.0,true, true);
+<contenttweaker:ignatius_fuel>.addTooltip(format.blue("Burns at 3300°C (>>Brilliant White) for 10min"));
 
-ItemRegistry.registerFuel(<metallurgy:thermite_dust>,12000 , 2000.0,true, true);
-<metallurgy:thermite_dust>.addTooltip(format.blue("Burns at 2000°C (>Brilliant White) for 10min"));
+ItemRegistry.registerFuel(<advancedrocketry:thermite>,12000 , 2000.0,true, true);
+<advancedrocketry:thermite>.addTooltip(format.blue("Burns at 2000°C (>Brilliant White) for 10min"));
 
 
 
@@ -114,7 +114,6 @@ Welding.addRecipe("goldaxe", <tfc:metal/sheet/gold>, <tfc:metal/axe/bronze>, <mi
 Welding.addRecipe("goldshovel",<tfc:metal/sheet/gold>, <tfc:metal/shovel/bronze>, <minecraft:golden_shovel>, 2);
 Welding.addRecipe("goldhoe",<tfc:metal/sheet/gold>, <tfc:metal/hoe/bronze>, <minecraft:golden_hoe>, 2);
 Welding.addRecipe("robosurgeon",<ore:ingotBismuth>, <thaumcraft:mind>, <cyberware:surgery>, 3);
-Welding.addRecipe("knuckles",<ore:sleeveBrass>, <ore:sleeveBrass>, <metallurgy:brass_knuckles>, 0);
 Welding.addRecipe("minersring",<ore:sleeveTin>, <ore:ingotRedAlloy>, <baubles:ring>, 0);
 //drills
 

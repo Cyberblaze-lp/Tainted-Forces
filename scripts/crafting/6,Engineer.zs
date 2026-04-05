@@ -42,15 +42,10 @@ recipes.remove(<cyberware:engineering_table>);
 recipes.remove(<ic2:resource:12>);
 recipes.remove(<magneticraft:multiblock_column>);
 recipes.remove(<magneticraft:multiblock_parts:5>);
-mods.tconstruct.Casting.addBasinRecipe(<ic2:resource:12>, <ore:scaffoldingAluminum>, <liquid:shadow_steel>, 576, true, 160);
 mods.tconstruct.Casting.addBasinRecipe(<magneticraft:multiblock_column>, <quark:sturdy_stone>, <liquid:lead>, 576, true, 160);
 mods.tconstruct.Casting.addBasinRecipe(<magneticraft:multiblock_parts:5>, <quark:iron_plate>, <liquid:iron>, 576, true, 160);
 mods.tconstruct.Casting.addBasinRecipe(<immersiveengineering:metal_decoration0:3>, <immersiveintelligence:metal_decoration:1>, <liquid:redstone>, 2000, true, 160);
 
-mods.tconstruct.Alloy.removeRecipe(<liquid:shadow_steel>);
-mods.tconstruct.Alloy.addRecipe(<liquid:shadow_steel> * 3, [<liquid:steel> * 2, <liquid:lemurite>]);
-mods.tconstruct.Melting.addRecipe(<liquid:lemurite> * 144,<cyberware:component:4>, 500);
-mods.tconstruct.Melting.addRecipe(<liquid:lemurite> * 288,<ore:mineralChromite>, 500);
 mods.tconstruct.Melting.removeRecipe(<liquid:iron>, <minecraft:minecart>);
 mods.tconstruct.Melting.removeRecipe(<liquid:iron>, <minecraft:anvil>);
 mods.thermalexpansion.InductionSmelter.removeRecipe(<minecraft:bucket>, <minecraft:sand>);
