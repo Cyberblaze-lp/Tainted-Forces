@@ -320,41 +320,52 @@ for itemPlusOre in itemplusOres
     mods.thaumcraft.Crucible.registerRecipe(("rich" + item), "SIMPLEOREPROCESSING", itemstack*10, oreDict.get("oreRich"+item), [<aspect:metallum>*5, <aspect:ordo>*5]);
 */
 
-val item as string = itemPlusOre.ore;
+
 val itemstack as IItemStack = itemPlusOre.item;
-var resource as ResourceLocation = ResourceLocation("thaumcraft:orenugget"+item);
+for items in oreDict.get("oreSmall" +itemPlusOre.ore).items
+{
+
+    var resource as ResourceLocation = ResourceLocation("thaumcraft:orenugget"+ itemPlusOre.ore + items.definition.id);
+
+    var recipe as CrucibleRecipe = CrucibleRecipe("SIMPLEOREPROCESSING",(itemstack*2).native, items.native ,aspectsnugget);
+
+    ThaumcraftApi.addCrucibleRecipe(resource, recipe);
+    recipe.setGroup(ResourceLocation("thaumcraft:groupOre"+ itemPlusOre.ore));
+}
 
 
-var recipe as CrucibleRecipe = CrucibleRecipe("SIMPLEOREPROCESSING",(itemstack*2).native, ("oreSmall" + item),aspectsnugget);
+for items in oreDict.get("orePoor" +itemPlusOre.ore).items
+{
 
-ThaumcraftApi.addCrucibleRecipe(resource, recipe);
-recipe.setGroup(ResourceLocation("thaumcraft:groupOre"+ item));
+    var resource as ResourceLocation = ResourceLocation("thaumcraft:orepoor"+ itemPlusOre.ore + items.definition.id);
 
+    var recipe as CrucibleRecipe = CrucibleRecipe("SIMPLEOREPROCESSING",(itemstack*4).native, items.native ,aspectspoor);
 
-resource = ResourceLocation("thaumcraft:orepoor"+item);
+    ThaumcraftApi.addCrucibleRecipe(resource, recipe);
+    recipe.setGroup(ResourceLocation("thaumcraft:groupOre"+ itemPlusOre.ore));
+}
 
- recipe = CrucibleRecipe("SIMPLEOREPROCESSING",(itemstack*4).native, ("orePoor" + item),aspectspoor);
+for items in oreDict.get("oreNormal" +itemPlusOre.ore).items
+{
 
-ThaumcraftApi.addCrucibleRecipe(resource, recipe);
-recipe.setGroup(ResourceLocation("thaumcraft:groupOre"+ item));
+    var resource as ResourceLocation = ResourceLocation("thaumcraft:orenormal"+ itemPlusOre.ore + items.definition.id);
 
+    var recipe as CrucibleRecipe = CrucibleRecipe("SIMPLEOREPROCESSING",(itemstack*6).native, items.native ,aspectsnormal);
 
+    ThaumcraftApi.addCrucibleRecipe(resource, recipe);
+    recipe.setGroup(ResourceLocation("thaumcraft:groupOre"+ itemPlusOre.ore));
+}
 
-resource = ResourceLocation("thaumcraft:orenormal"+item);
+for items in oreDict.get("oreRich" +itemPlusOre.ore).items
+{
 
-recipe = CrucibleRecipe("SIMPLEOREPROCESSING",(itemstack*6).native, ("oreNormal" + item),aspectsnormal);
+    var resource as ResourceLocation = ResourceLocation("thaumcraft:orerich"+ itemPlusOre.ore + items.definition.id);
 
-ThaumcraftApi.addCrucibleRecipe(resource, recipe);
-recipe.setGroup(ResourceLocation("thaumcraft:groupOre"+ item));
+    var recipe as CrucibleRecipe = CrucibleRecipe("SIMPLEOREPROCESSING",(itemstack*10).native, items.native ,aspectsrich);
 
-
-
-resource= ResourceLocation("thaumcraft:orerich"+item);
-
-recipe = CrucibleRecipe("SIMPLEOREPROCESSING",(itemstack*10).native, ("oreRich" + item),aspectsrich);
-
-ThaumcraftApi.addCrucibleRecipe(resource, recipe);
-recipe.setGroup(ResourceLocation("thaumcraft:groupOre"+ item));
+    ThaumcraftApi.addCrucibleRecipe(resource, recipe);
+    recipe.setGroup(ResourceLocation("thaumcraft:groupOre"+ itemPlusOre.ore));
+}
 
 
 }
