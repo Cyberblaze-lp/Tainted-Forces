@@ -74,7 +74,7 @@ recipes.remove(<extrautils2:spike_iron>);
 recipes.remove(<extrautils2:spike_stone>);
 recipes.remove(<extrautils2:spike_wood>);
 recipes.remove(<ic2:glass>);
-recipes.remove(<cyberware:beacon_large>);
+
 recipes.remove(<cyberware:scanner>);
 recipes.remove(<magneticraft:steam_boiler>);
 
@@ -383,7 +383,7 @@ recipes.addShaped(<mekanism:basicblock:8>, [[<ore:heavyPlateSteel>, <ore:heavyPl
 recipes.addShaped(<appliedenergistics2:inscriber>, [[<ore:ingotSteel>, <cyberware:component>, <ore:ingotSteel>], [null, null, <ore:ingotSteel>], [<ore:ingotSteel>, <cyberware:component>, <ore:ingotSteel>]]);
 recipes.addShaped(<extrautils2:analogcrafter>, [[<immersiveengineering:treated_wood>, <ore:ingotDoubleCopper>, <immersiveengineering:treated_wood>], [<immersiveengineering:treated_wood>, <thaumcraft:pattern_crafter>, <immersiveengineering:treated_wood>], [<immersiveengineering:treated_wood>, <thaumcraft:brain_box>, <immersiveengineering:treated_wood>]]);
 recipes.addShaped(<extrautils2:crafter>, [[<thaumcraft:stone_arcane_brick>, <ore:ingotDoubleElectrum>, <thaumcraft:stone_arcane_brick>], [<thaumcraft:stone_arcane_brick>, <thaumcraft:pattern_crafter>, <thaumcraft:stone_arcane_brick>], [<thaumcraft:stone_arcane_brick>, <thaumcraft:brain_box>, <thaumcraft:stone_arcane_brick>]]);
-recipes.addShaped(<embers:archaic_circuit> * 2, [[null, <embers:archaic_brick>, null], [<ore:wireCopper>, <ore:fireClay>, <ore:wireCopper>], [null, <embers:archaic_brick>, null]]);
+
 recipes.addShaped(<bloodmagic:soul_forge>, [[<embers:aspectus_silver>, null, <embers:aspectus_silver>], [<ore:ingotColdIron>, <embers:seed_silver>, <ore:ingotColdIron>], [<ore:ingotColdIron>, null, <ore:ingotColdIron>]]);
 recipes.addShaped(<immersiveintelligence:mechanical_device1>, [[<tfc:bellows>, <ore:rodIron>, <tfc:bellows>], [<ore:barsIron>, <tfc:brass_mechanisms>, <ore:barsIron>], [<ore:plateBrass>, <ore:barsIron>, <ore:plateBrass>]]);
 recipes.addShaped(<immersiveintelligence:motor_gear>, [[<ore:rackwheelPieceCopper>, null], [null, <ore:rackwheelPieceCopper>]]);
@@ -526,7 +526,6 @@ recipes.addShaped(<tfc:metal/hoe/titanium>, [[<tfc:metal/hoe_head/titanium>], [<
 recipes.addShaped(<tfc:metal/axe/titanium>, [[<tfc:metal/axe_head/titanium>], [<ore:stickWood>]]);
 recipes.addShaped(<tfc:metal/shovel/titanium>, [[<tfc:metal/shovel_head/titanium>], [<ore:stickWood>]]);
 recipes.addShaped(<tfc:metal/pick/titanium>, [[<tfc:metal/pick_head/titanium>], [<ore:stickWood>]]);
-recipes.addShaped(<cyberware:beacon_large>, [[<ore:rodWroughtIron>, <ore:enderpearl>, <ore:rodWroughtIron>], [<ore:rodWroughtIron>, <ore:circuitBasic>, <ore:rodWroughtIron>], [<cyberware:component:2>, <ore:plateBismuth>, <cyberware:component:2>]]);
 recipes.addShaped(<tfc:metal/saw/nickel_silver>, [[<tfc:metal/saw_blade/nickel_silver>], [<ore:stickWood>]]);
 recipes.addShaped(<tfc:metal/scythe/nickel_silver>, [[<tfc:metal/scythe_blade/nickel_silver>], [<ore:stickWood>]]);
 recipes.addShaped(<tfc:metal/propick/nickel_silver>, [[<tfc:metal/propick_head/nickel_silver>], [<ore:stickWood>]]);

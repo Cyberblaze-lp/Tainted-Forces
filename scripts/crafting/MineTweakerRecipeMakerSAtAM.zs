@@ -111,11 +111,7 @@ recipes.addShaped(<thaumcraft:stone_arcane> * 12, [[null, <ore:stoneBasalt>, nul
 recipes.addShaped(<tfctech:wire_draw_bench>, [[<tfctech:wiredraw/winch>, <tfctech:wiredraw/leather_belt>, <ore:tongsWroughtIron>], [null, <thaumcraft:table_stone>, null]]);
 recipes.addShaped(<cyberware:surgery_chamber>, [[<ore:chiselHead>, <ore:sawBlade>], [<ore:barsIron>, <ore:barsIron>], [<ore:barsIron>, <ore:barsIron>]]);
 recipes.addShaped(<immersiveengineering:metal_device0:6> * 4, [[<ore:plateIron>, <ore:barsIron>, <ore:plateIron>], [<ore:barsIron>, <minecraft:bucket>, <ore:barsIron>], [<ore:plateIron>, <ore:barsIron>, <ore:plateIron>]]);
-recipes.addShaped(<embers:golems_eye>, [[<embers:archaic_brick>, <embers:archaic_circuit>, <embers:archaic_brick>]]);
-recipes.addShaped(<chisel:factory> * 24, [[null, <ore:stone>, null], [<ore:stone>, <ore:ingotDoubleAnyBronze>, <ore:stone>], [null, <ore:stone>, null]]);
-recipes.addShaped(<chisel:factory> * 12, [[null, <ore:stone>, null], [<ore:stone>, <tfc:metal/double_ingot/copper>, <ore:stone>], [null, <ore:stone>, null]]);
-recipes.addShaped(<chisel:factory> * 64, [[null, <ore:stone>, null], [<ore:stone>, <tfc:metal/ingot/steel>, <ore:stone>], [null, <ore:stone>, null]]);
-recipes.addShaped(<chisel:factory> * 64, [[null, <ore:stone>, null], [<ore:stone>, <ore:ingotDoubleWroughtIron>, <ore:stone>], [null, <ore:stone>, null]]);
+
 recipes.addShaped(<chisel:chisel_iron>, [[<ore:chiselHead>, null], [null, <ore:nuggetCopper>]]);
 recipes.addShaped(<tfc:peat>, [[<ore:dustAsh>, <ore:dustAsh>, <ore:dustAsh>], [<ore:dustAsh>, <ore:dustAsh>, <ore:dustAsh>], [<ore:dustAsh>, <ore:dustAsh>, <ore:dustAsh>]]);
 recipes.addShaped(<embers:heat_coil>, [[<ore:wireCopper>, <ore:wireCopper>, <ore:wireCopper>], [<minecraft:nether_brick>, <embers:mech_core>, <minecraft:nether_brick>]]);

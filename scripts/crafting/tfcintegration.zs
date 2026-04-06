@@ -400,6 +400,8 @@ val remove_gear =
 <thaumcraft:void_boots>,
 <chisel:factory>,
 <embers:block_caminite_brick>,
+<cyberware:beacon_large>,
+<cyberware:radio_post>,
 
 
 

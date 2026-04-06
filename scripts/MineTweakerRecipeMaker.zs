@@ -56,6 +56,7 @@ recipes.addShapeless(<ic2:reactor_heat_vent>, [<ic2:heat_vent>, <ic2:crafting:7>
 
 // ================================================================================
 //#MARKER ADD SHAPED
+recipes.addShaped(<botania:corporeaspark>, [[null, <botania:managlass>, null], [<botania:managlass>, <thaumcraft:salis_mundus>, <botania:managlass>], [null, <botania:managlass>, null]]);
 recipes.addShaped(<thermalfoundation:material:23>, [[null, <ore:stone>, null], [<ore:stone>, <ore:stone>, <ore:stone>], [null, <ore:stone>, null]]);
 recipes.addShaped(<quark:charred_nether_bricks> * 8, [[<minecraft:nether_brick>, <minecraft:nether_brick>, <minecraft:nether_brick>], [<minecraft:nether_brick>, <thaumcraft:alumentum>, <minecraft:nether_brick>], [<minecraft:nether_brick>, <minecraft:nether_brick>, <minecraft:nether_brick>]]);
 recipes.addShaped(<railcraft:locomotive_electric>, [[null, <ore:circuitBasic>, null], [<railcraft:charge:5>, <ic2:resource:12>, <railcraft:charge:5>]]);

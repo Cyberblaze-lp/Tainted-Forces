@@ -148,6 +148,7 @@ mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("betterturrets", "BASICTURR
 mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("bettervent", "IMPROVEDSMELTING2", 150, [<aspect:aer>,<aspect:ordo>], <thaumcraft:smelter_vent>, [[<ore:sleeveBrass>, <ore:plateIron>],[<embers:ashen_cloth>, <thaumcraft:metal_alchemical>],[<ore:sleeveBrass>, <ore:plateIron>]]);
 mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("bettersmelter", "ESSENTIASMELTER@2", 50, [<aspect:ignis>], <thaumcraft:smelter_basic>, [[<ore:sheetBrass>, <thaumcraft:crucible>,<ore:sheetBrass>],[<ore:concrete>,<minecraft:fire_charge>, <ore:concrete>],[<ore:concrete>, <ore:concrete>,<ore:concrete>]]);
 mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("bettermechanism", "BASEARTIFICE", 20, [], <thaumcraft:mechanism_simple>, [[<ore:tallow>, <tfc:brass_mechanisms>],[<ore:stickIron>,<tfc:brass_mechanisms>]]);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("RADIOPOST", "THAUMOSTATIC_HARNESS", 100, [<aspect:aer>*2], <cyberware:radio_post>*6, [[<ore:stickIron>,<thaumcraft:tube>,<ore:stickIron>],[<ore:stickIron>,null,<ore:stickIron>],[<ore:stickIron>,<thaumcraft:tube>,<ore:stickIron>]]);
 
 
 
@@ -196,6 +197,8 @@ GasTurbine.addFuel(<liquid:carbon_dioxide> * 2000, <liquid:hsla_steel>*250, 10);
 
 <thermalfoundation:material:1028>.displayName = "Taint Tendril";
 <thermalfoundation:geode>.displayName = "Tainted Goo";
+
+<embers:dawnstone_anvil>.displayName = "Automatic Anvil";
 
 
 
