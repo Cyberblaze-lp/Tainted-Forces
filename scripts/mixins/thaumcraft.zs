@@ -216,12 +216,42 @@ zenClass MixinSoilSpread{
 // make thaumostatic harness un-rechargeable
 
 #mixin {targets: "thecodex6824.thaumicaugmentation.common.item.ItemThaumostaticHarness"}
-zenClass MixinMaxCharge{
+zenClass MixinNoRecharge{
     #mixin Overwrite 
     function getMaxCharge(stack as ItemStack, entity as EntityLivingBase ) as int {
         return RechargeHelper.getCharge(stack);
     }
 }
+
+#mixin {targets: "thecodex6824.thaumicaugmentation.common.item.ItemThaumostaticHarness"}
+zenClass MixinMaxCharge {
+    #mixin Static
+    #mixin Overwrite
+    function getHarnessVisCapacity(stack as ItemStack) as int {
+        return 5;
+    }
+}
+
+
+
+#mixin {targets: "thecodex6824.thaumicaugmentation.common.item.ItemThaumostaticHarnessAugment$1"}
+zenClass MixinAugnment1 {
+    #mixin Overwrite
+    function getVisCapacity() as int {
+        return 5;
+    }
+}
+
+#mixin {targets: "thecodex6824.thaumicaugmentation.common.item.ItemThaumostaticHarnessAugment$2"}
+zenClass MixinAugment2 {
+    #mixin Overwrite
+    function getVisCapacity() as int {
+        return 5;
+    }
+}
+
+
+
 
 
 
