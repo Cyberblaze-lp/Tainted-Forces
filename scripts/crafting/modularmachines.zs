@@ -1,3 +1,4 @@
+
 import mods.modularmachinery.IMachineController;                                                                  
 import mods.modularmachinery.RecipeFinishEvent;
 import mods.modularmachinery.RecipeStartEvent;
@@ -28,6 +29,8 @@ import mods.modularmachinery.Sync;
 import native.extendedrenderer.particle.ParticleRegistry;
 import crafttweaker.event.PlayerTickEvent;
 import native.net.minecraft.tileentity.TileEntity;
+import crafttweaker.entity.IEntity;
+import crafttweaker.event.EntityJoinWorldEvent;
 
 recipes.removeByMod("modularmachinery");
 
@@ -44,6 +47,12 @@ mods.modularmachinery.RecipeBuilder.newBuilder("basicflux", "calcifier_t0", 300)
 
 function addClouds (controller as TileEntity) as void
 {
+    /*
+    if mods.ctutils.utils.Math.getRandom().nextInt(0, 2) != 0
+    {
+        return;
+    }
+    */
     var facing = IFacing.north;
     
     val block = controller.getWorld().getBlockState(controller.getPos());
@@ -65,18 +74,58 @@ function addClouds (controller as TileEntity) as void
         facing = IFacing.east;
     }
 
+    
+    val offset =  controller.getPos().wrapper   
+    .getOffset(facing, -14)
+    .getOffset(IFacing.up(), 19);
+
+    Sync.addSyncTask(
+        function(){
+        <entity:bountifulbaubles:bee>.spawnEntity(controller.world.wrapper, offset);
+        }
+    );
+                              
+                               
+}
+
+events.onEntityJoinWorld(function(event as EntityJoinWorldEvent){
+    if isNull(event.entity.definition) || event.entity.definition.id != <entity:bountifulbaubles:bee>.id
+    {
+        return;
+    }
+
+    if event.world.isRemote()
+    {
+        addClouds2(event.entity);
+    }
+    else
+    {
+        event.entity.world.catenation()
+            .sleep(2)
+            .then(function(world, context){
+                    event.entity.setDead();
+            })
+            .start();
+    }
+});
+    
+    function addClouds2 (entity as IEntity) as void
+{
+    if isNull(ClientTickHandler.weatherManager)
+    {
+        return;
+    }
     val icon =ParticleRegistry.cloud256;
-    val offset =  controller.getPos().wrapper.getOffset(facing, -14)
-                                .getOffset(IFacing.up(), 19);
+    val offset as IBlockPos = entity.position3f as IBlockPos;
     var vec = Vec3(offset);
     var pb = ParticleBehaviorFog(vec);
-   
-    var cloud = pb.spawnNewParticleIconFX(controller.getWorld(), icon, offset.x as double, offset.y as double, offset.z as double, 0.0d, 6.01d, 0.0d, 1);
+    
+    var cloud = pb.spawnNewParticleIconFX(entity.world.native, icon, offset.x as double, offset.y as double, offset.z as double, 0.0d, 6.01d, 0.0d, 1);
     cloud.rotationPitch = mods.ctutils.utils.Math.getRandom().nextInt(0, 314) as float / 100.0f;
     pb.initParticle(cloud);
     pb.particles.add(cloud);
     val tm = Minecraft.getMinecraft().getTextureManager();
-    val rpm = RotatingParticleManager(controller.world, tm);
+    val rpm = RotatingParticleManager(entity.world, tm);
     cloud.spawnAsWeatherEffect();
     cloud.setGravity(0.0f);
     cloud.setFacePlayer(true);
@@ -105,8 +154,8 @@ function addClouds (controller as TileEntity) as void
 				.then(function(world, context) 
                 {
 				    cloud.setMotionY(0.5d);
-                    cloud.setMotionX(mods.ctutils.utils.Math.getRandom().nextInt(0, 314) as float / 80.0f);
-                    cloud.setMotionZ(mods.ctutils.utils.Math.getRandom().nextInt(0, 314) as float / 80.0f);
+                    cloud.setMotionX(100.0/1000.0 - mods.ctutils.utils.Math.getRandom().nextInt(0, 100) as float / 500.0f);
+                    cloud.setMotionZ(100.0/1000.0 - mods.ctutils.utils.Math.getRandom().nextInt(0, 100) as float / 500.0f);
 
                 })
                 .sleep(4)
@@ -124,23 +173,36 @@ function addClouds (controller as TileEntity) as void
                 {
 				    
                     cloud.setGravity(-0.08f);
+                    cloud.setMotionX(8.0/160.0 - mods.ctutils.utils.Math.getRandom().nextInt(0, 8) as float / 80.0f);
+                    cloud.setMotionZ(8.0/160.0 - mods.ctutils.utils.Math.getRandom().nextInt(0, 8) as float / 80.0f);
+                    cloud.setMotionY(8.0/160.0 - mods.ctutils.utils.Math.getRandom().nextInt(0, 8) as float / 80.0f);
                 })
                 .sleep(100)
                 .then(function(world, context) 
                 {
 				    
                     cloud.setGravity(-0.06f);
+                    cloud.setMotionX(8.0/160.0 - mods.ctutils.utils.Math.getRandom().nextInt(0, 8) as float / 80.0f);
+                    cloud.setMotionZ(8.0/160.0 - mods.ctutils.utils.Math.getRandom().nextInt(0, 8) as float / 80.0f);
+                    cloud.setMotionY(8.0/160.0 - mods.ctutils.utils.Math.getRandom().nextInt(0, 8) as float / 80.0f);
+
                 })
                 .sleep(100)
                 .then(function(world, context) 
                 {
 				    
                     cloud.setGravity(-0.02f);
+                    cloud.setMotionX(8.0/160.0 - mods.ctutils.utils.Math.getRandom().nextInt(0, 8) as float / 80.0f);
+                    cloud.setMotionZ(8.0/160.0 - mods.ctutils.utils.Math.getRandom().nextInt(0, 8) as float / 80.0f);
+                    cloud.setMotionY(8.0/160.0 - mods.ctutils.utils.Math.getRandom().nextInt(0, 8) as float / 80.0f);
                 })
 
                 .sleep(100)
 				.then(function(world, context) 
                 {
+                     cloud.setMotionX(8.0/160.0 - mods.ctutils.utils.Math.getRandom().nextInt(0, 8) as float / 80.0f);
+                    cloud.setMotionZ(8.0/160.0 - mods.ctutils.utils.Math.getRandom().nextInt(0, 8) as float / 80.0f);
+                    cloud.setMotionY(8.0/160.0 - mods.ctutils.utils.Math.getRandom().nextInt(0, 8) as float / 80.0f);
 				    cloud.setGravity(-0.01f);
                     cloud.setScale(210.0f);
                 })
@@ -149,24 +211,36 @@ function addClouds (controller as TileEntity) as void
                 {
 				    
                     cloud.setScale(220.0f);
+                    cloud.setMotionX(8.0/160.0 - mods.ctutils.utils.Math.getRandom().nextInt(0, 8) as float / 80.0f);
+                    cloud.setMotionZ(8.0/160.0 - mods.ctutils.utils.Math.getRandom().nextInt(0, 8) as float / 80.0f);
+                    cloud.setMotionY(8.0/160.0 - mods.ctutils.utils.Math.getRandom().nextInt(0, 8) as float / 80.0f);
                 })
                 .sleep(10)
 				.then(function(world, context) 
                 {
 				    
                     cloud.setScale(240.0f);
+                    cloud.setMotionX(8.0/160.0 - mods.ctutils.utils.Math.getRandom().nextInt(0, 8) as float / 80.0f);
+                    cloud.setMotionZ(8.0/160.0 - mods.ctutils.utils.Math.getRandom().nextInt(0, 8) as float / 80.0f);
+                    cloud.setMotionY(8.0/160.0 - mods.ctutils.utils.Math.getRandom().nextInt(0, 8) as float / 80.0f);
                 })
                 .sleep(10)
 				.then(function(world, context) 
                 {
 				    
                     cloud.setScale(260.0f);
+                    cloud.setMotionX(8.0/160.0 - mods.ctutils.utils.Math.getRandom().nextInt(0, 8) as float / 80.0f);
+                    cloud.setMotionZ(8.0/160.0 - mods.ctutils.utils.Math.getRandom().nextInt(0, 8) as float / 80.0f);
+                    cloud.setMotionY(8.0/160.0 - mods.ctutils.utils.Math.getRandom().nextInt(0, 8) as float / 80.0f);
                 })
                 .sleep(10)
 				.then(function(world, context) 
                 {
 				    
                     cloud.setScale(300.0f);
+                    cloud.setMotionX(8.0/160.0 - mods.ctutils.utils.Math.getRandom().nextInt(0, 8) as float / 80.0f);
+                    cloud.setMotionZ(8.0/160.0 - mods.ctutils.utils.Math.getRandom().nextInt(0, 8) as float / 80.0f);
+                    cloud.setMotionY(8.0/160.0 - mods.ctutils.utils.Math.getRandom().nextInt(0, 8) as float / 80.0f);
                 })
                 .sleep(200)
 				.then(function(world, context) 
@@ -186,27 +260,8 @@ function addClouds (controller as TileEntity) as void
 
 }
 
-MMEvents.onControllerGUIRender("cooling_tower_t2", function(event as ControllerGUIRenderEvent) {
-    if !event.controller.world.isRemote()
-    {
-        return;
-    }
-    addClouds(event.controller);
-});
 
 
-static tiles as TileEntity[]  =[] as TileEntity[];
-
-events.onPlayerTick( function(event as PlayerTickEvent) {
-    
-    if event.side =="SERVER"||mods.ctutils.utils.Math.getRandom().nextInt(0, 8) !=0
-    {
-        return;
-    }
-
-
-    //addClouds(controller);
-});
 
 
 mods.modularmachinery.RecipeBuilder.newBuilder("coolingtowerrecipe_waterfromExhaustSteamW", "cooling_tower_t2", 5)
@@ -215,6 +270,9 @@ mods.modularmachinery.RecipeBuilder.newBuilder("coolingtowerrecipe_waterfromExha
 .addItemOutput(<thebetweenlands:items_misc:27>)
 .setChance(0.65)
 .addFluidOutput(<liquid:ic2distilled_water>*80)
+.addStartHandler(function (event as RecipeStartEvent){
+   addClouds(event.controller);
+})
 .build();
 
 mods.modularmachinery.RecipeBuilder.newBuilder("coolingtowerrecipe_waterfromSteamW", "cooling_tower_t2", 5)
@@ -224,7 +282,7 @@ mods.modularmachinery.RecipeBuilder.newBuilder("coolingtowerrecipe_waterfromStea
 .setChance(0.65)
 .addFluidOutput(<liquid:ic2distilled_water>*80)
 .addStartHandler(function (event as RecipeStartEvent){
-   
+   addClouds(event.controller);
 })
 .build();
 
@@ -235,7 +293,7 @@ mods.modularmachinery.RecipeBuilder.newBuilder("coolingtowerrecipe_waterfromExha
 .setChance(0.65)
 .addFluidOutput(<liquid:ic2distilled_water>*80)
 .addStartHandler(function (event as RecipeStartEvent){
-    
+   addClouds(event.controller);
 })
 .build();
 
@@ -246,7 +304,7 @@ mods.modularmachinery.RecipeBuilder.newBuilder("coolingtowerrecipe_waterfromStea
 .setChance(0.65)
 .addFluidOutput(<liquid:ic2distilled_water>*80)
 .addStartHandler(function (event as RecipeStartEvent){
-   
+   addClouds(event.controller);
 })
 .build();
 
