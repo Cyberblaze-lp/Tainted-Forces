@@ -22,8 +22,12 @@ import native.CoroUtil.util.Vec3;
 import native.weather2.ClientTickHandler;
 import mods.modularmachinery.ControllerModelAnimationEvent;
 import mods.modularmachinery.ControllerGUIRenderEvent;
+import mods.modularmachinery.MachineTickEvent;
 import mods.modularmachinery.MMEvents;
 import mods.modularmachinery.Sync;
+import native.extendedrenderer.particle.ParticleRegistry;
+import crafttweaker.event.PlayerTickEvent;
+import native.net.minecraft.tileentity.TileEntity;
 
 recipes.removeByMod("modularmachinery");
 
@@ -38,43 +42,182 @@ mods.modularmachinery.RecipeBuilder.newBuilder("basicflux", "calcifier_t0", 300)
 //ic2 boiler to tower ratio should be ~ 16:1
 
 
-function addClouds (controller as IMachineController) as void
+function addClouds (controller as TileEntity) as void
 {
- 
-    val icon = TextureAtlasSprite("extendedrenderer:textures/particles/cloud256");
-    val offset =  controller.pos.getOffset(controller.facing, -14)
-                                .getOffset(IFacing.up(), 21);
+    var facing = IFacing.north;
+    
+    val block = controller.getWorld().getBlockState(controller.getPos());
+
+    if block.wrapper.meta == 0
+    {
+        facing = IFacing.south;
+    }
+    else if block.wrapper.meta == 1
+    {
+        facing = IFacing.west;
+    }
+    else if block.wrapper.meta == 2
+    {
+        facing = IFacing.north;
+    }
+    else if block.wrapper.meta == 3
+    {
+        facing = IFacing.east;
+    }
+
+    val icon =ParticleRegistry.cloud256;
+    val offset =  controller.getPos().wrapper.getOffset(facing, -14)
+                                .getOffset(IFacing.up(), 19);
     var vec = Vec3(offset);
     var pb = ParticleBehaviorFog(vec);
    
-    var cloud = pb.spawnNewParticleIconFX(controller.world.native, icon, offset.x as double, offset.y as double, offset.z as double, 0.0d, -0.01d, 0.0d, 1);
+    var cloud = pb.spawnNewParticleIconFX(controller.getWorld(), icon, offset.x as double, offset.y as double, offset.z as double, 0.0d, 6.01d, 0.0d, 1);
+    cloud.rotationPitch = mods.ctutils.utils.Math.getRandom().nextInt(0, 314) as float / 100.0f;
     pb.initParticle(cloud);
     pb.particles.add(cloud);
-    print(toString(cloud));
     val tm = Minecraft.getMinecraft().getTextureManager();
-    val rpm = RotatingParticleManager(controller.world.native, tm);
+    val rpm = RotatingParticleManager(controller.world, tm);
     cloud.spawnAsWeatherEffect();
-    ClientTickHandler.weatherManager.addWeatheredParticle(cloud);
+    cloud.setGravity(0.0f);
+    cloud.setFacePlayer(true);
 
+    cloud.setScale(180.0f + mods.ctutils.utils.Math.getRandom().nextInt(0, 40) as float );
+    ClientTickHandler.weatherManager.addWeatheredParticle(cloud);
+    client.catenation()
+				.sleep(2)
+				.then(function(world, context) 
+                {
+				    cloud.setMotionY(3.0d);
+                    cloud.setGravity(-0.02);
+                })
+                
+                .sleep(4)
+				.then(function(world, context) 
+                {
+				    cloud.setMotionY(1.1d);
+                })
+                .sleep(4)
+				.then(function(world, context) 
+                {
+				    cloud.setMotionY(0.8d);
+                })
+                .sleep(4)
+				.then(function(world, context) 
+                {
+				    cloud.setMotionY(0.5d);
+                    cloud.setMotionX(mods.ctutils.utils.Math.getRandom().nextInt(0, 314) as float / 80.0f);
+                    cloud.setMotionZ(mods.ctutils.utils.Math.getRandom().nextInt(0, 314) as float / 80.0f);
+
+                })
+                .sleep(4)
+				.then(function(world, context) 
+                {
+				    cloud.setMotionY(0.25d);
+                })
+                .sleep(4)
+				.then(function(world, context) 
+                {
+                    cloud.setGravity(-0.1f);
+                })
+                .sleep(60)
+                .then(function(world, context) 
+                {
+				    
+                    cloud.setGravity(-0.08f);
+                })
+                .sleep(100)
+                .then(function(world, context) 
+                {
+				    
+                    cloud.setGravity(-0.06f);
+                })
+                .sleep(100)
+                .then(function(world, context) 
+                {
+				    
+                    cloud.setGravity(-0.02f);
+                })
+
+                .sleep(100)
+				.then(function(world, context) 
+                {
+				    cloud.setGravity(-0.01f);
+                    cloud.setScale(210.0f);
+                })
+                .sleep(100)
+				.then(function(world, context) 
+                {
+				    
+                    cloud.setScale(220.0f);
+                })
+                .sleep(10)
+				.then(function(world, context) 
+                {
+				    
+                    cloud.setScale(240.0f);
+                })
+                .sleep(10)
+				.then(function(world, context) 
+                {
+				    
+                    cloud.setScale(260.0f);
+                })
+                .sleep(10)
+				.then(function(world, context) 
+                {
+				    
+                    cloud.setScale(300.0f);
+                })
+                .sleep(200)
+				.then(function(world, context) 
+                {
+				    
+                    cloud.setScale(400.0f);
+                })
+                .sleep(200)
+				.then(function(world, context) 
+                {
+				    
+                    cloud.setScale(500.0f);
+                    cloud.startDeath();
+                })
+
+                .start();
 
 }
 
 MMEvents.onControllerGUIRender("cooling_tower_t2", function(event as ControllerGUIRenderEvent) {
+    if !event.controller.world.isRemote()
+    {
+        return;
+    }
     addClouds(event.controller);
 });
 
-mods.modularmachinery.RecipeBuilder.newBuilder("waterfromExhaustSteamW", "cooling_tower_t2", 5)
+
+static tiles as TileEntity[]  =[] as TileEntity[];
+
+events.onPlayerTick( function(event as PlayerTickEvent) {
+    
+    if event.side =="SERVER"||mods.ctutils.utils.Math.getRandom().nextInt(0, 8) !=0
+    {
+        return;
+    }
+
+
+    //addClouds(controller);
+});
+
+
+mods.modularmachinery.RecipeBuilder.newBuilder("coolingtowerrecipe_waterfromExhaustSteamW", "cooling_tower_t2", 5)
 .addFluidInput(<liquid:water>*2000)
 .addFluidInput(<liquid:exhauststeam>*1000)
 .addItemOutput(<thebetweenlands:items_misc:27>)
 .setChance(0.65)
 .addFluidOutput(<liquid:ic2distilled_water>*80)
-.addStartHandler(function (event as ControllerModelAnimationEvent){
-    
-})
 .build();
 
-mods.modularmachinery.RecipeBuilder.newBuilder("waterfromSteamW", "cooling_tower_t2", 5)
+mods.modularmachinery.RecipeBuilder.newBuilder("coolingtowerrecipe_waterfromSteamW", "cooling_tower_t2", 5)
 .addFluidInput(<liquid:water>*2000)
 .addFluidInput(<liquid:steam>*500)
 .addItemOutput(<thebetweenlands:items_misc:27>)
@@ -85,7 +228,7 @@ mods.modularmachinery.RecipeBuilder.newBuilder("waterfromSteamW", "cooling_tower
 })
 .build();
 
-mods.modularmachinery.RecipeBuilder.newBuilder("waterfromExhaustSteamF", "cooling_tower_t2", 5)
+mods.modularmachinery.RecipeBuilder.newBuilder("coolingtowerrecipe_waterfromExhaustSteamF", "cooling_tower_t2", 5)
 .addFluidInput(<liquid:fresh_water>*2000)
 .addFluidInput(<liquid:exhauststeam>*1000)
 .addItemOutput(<thebetweenlands:items_misc:27>)
@@ -96,7 +239,7 @@ mods.modularmachinery.RecipeBuilder.newBuilder("waterfromExhaustSteamF", "coolin
 })
 .build();
 
-mods.modularmachinery.RecipeBuilder.newBuilder("waterfromSteamF", "cooling_tower_t2", 5)
+mods.modularmachinery.RecipeBuilder.newBuilder("coolingtowerrecipe_waterfromSteamF", "cooling_tower_t2", 5)
 .addFluidInput(<liquid:fresh_water>*2000)
 .addFluidInput(<liquid:steam>*500)
 .addItemOutput(<thebetweenlands:items_misc:27>)
