@@ -11,6 +11,13 @@ import crafttweaker.block.IBlock;
 import crafttweaker.world.IFacing;
 import crafttweaker.util.Math;
 import crafttweaker.data.IData;
+import native.extendedrenderer.particle.entity.EntityRotFX;
+import native.extendedrenderer.particle.behavior.ParticleBehaviors;
+import native.net.minecraft.client.renderer.texture.TextureAtlasSprite;
+import native.CoroUtil.util.Vec3;
+import mods.modularmachinery.ControllerModelAnimationEvent;
+import mods.modularmachinery.ControllerGUIRenderEvent;
+import mods.modularmachinery.MMEvents;
 recipes.removeByMod("modularmachinery");
 
 
@@ -18,6 +25,75 @@ mods.modularmachinery.RecipeBuilder.newBuilder("basicflux", "calcifier_t0", 300)
 .addItemInput(<ore:powderMana>*8)
 .addItemOutput(<tfc:powder/flux>)
 .addFluxOutput(2,0)
+.build();
+
+//cooling tower stuff
+//ic2 boiler to tower ratio should be ~ 16:1
+
+
+function addClouds (controller as IMachineController) as void
+{
+ 
+    val icon = TextureAtlasSprite("extendedrenderer:textures/particles/cloud256.png");
+    val offset =  controller.pos.getOffset(controller.facing, -14)
+                                .getOffset(IFacing.up(), 21);
+    var vec = Vec3(offset);
+    var pb = ParticleBehaviors(vec);
+    var cloud = pb.spawnNewParticleIconFX(controller.world.native, icon, offset.x as double, offset.y as double, offset.z as double, 0.0d, 0.01d, 0.0d, 1);
+
+    pb.initParticle(cloud);
+
+
+
+
+}
+
+MMEvents.onControllerGUIRender("cooling_tower_t2", function(event as ControllerGUIRenderEvent) {
+    addClouds(event.controller);
+});
+
+mods.modularmachinery.RecipeBuilder.newBuilder("waterfromExhaustSteamW", "cooling_tower_t2", 5)
+.addFluidInput(<liquid:water>*2000)
+.addFluidInput(<liquid:exhauststeam>*1000)
+.addItemOutput(<thebetweenlands:items_misc:27>)
+.setChance(0.65)
+.addFluidOutput(<liquid:ic2distilled_water>*80)
+.addStartHandler(function (event as ControllerModelAnimationEvent){
+    addClouds(event.controller);
+})
+.build();
+
+mods.modularmachinery.RecipeBuilder.newBuilder("waterfromSteamW", "cooling_tower_t2", 5)
+.addFluidInput(<liquid:water>*2000)
+.addFluidInput(<liquid:steam>*500)
+.addItemOutput(<thebetweenlands:items_misc:27>)
+.setChance(0.65)
+.addFluidOutput(<liquid:ic2distilled_water>*80)
+.addStartHandler(function (event as RecipeStartEvent){
+    addClouds(event.controller);
+})
+.build();
+
+mods.modularmachinery.RecipeBuilder.newBuilder("waterfromExhaustSteamF", "cooling_tower_t2", 5)
+.addFluidInput(<liquid:fresh_water>*2000)
+.addFluidInput(<liquid:exhauststeam>*1000)
+.addItemOutput(<thebetweenlands:items_misc:27>)
+.setChance(0.65)
+.addFluidOutput(<liquid:ic2distilled_water>*80)
+.addStartHandler(function (event as RecipeStartEvent){
+    addClouds(event.controller);
+})
+.build();
+
+mods.modularmachinery.RecipeBuilder.newBuilder("waterfromSteamF", "cooling_tower_t2", 5)
+.addFluidInput(<liquid:fresh_water>*2000)
+.addFluidInput(<liquid:steam>*500)
+.addItemOutput(<thebetweenlands:items_misc:27>)
+.setChance(0.65)
+.addFluidOutput(<liquid:ic2distilled_water>*80)
+.addStartHandler(function (event as RecipeStartEvent){
+    addClouds(event.controller);
+})
 .build();
 
 //burner drill stuff

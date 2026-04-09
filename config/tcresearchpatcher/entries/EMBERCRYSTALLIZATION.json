@@ -7,7 +7,12 @@
         "stages": [
                 {
                     "text": "research.EMBERCRYSTALLIZATION.stage.1",
-                    "required_knowledge":["THEORY;ALCHEMY;1","OBSERVATION;INFUSION;1"]
+                    "required_knowledge":["THEORY;ALCHEMY;1","OBSERVATION;INFUSION;1"],
+                    "required_item":[
+                        "thaumcraft:alumentum;1;0",
+                        "thaumcraft:phial;1;1;{Aspects:[{amount:10,key:'potentia'}]}",
+                        "embers:dust_ember;5;0"
+                    ]
                 },
                 {
                     "text": "research.EMBERCRYSTALLIZATION.stage.2"  

@@ -90,7 +90,8 @@ mods.thaumcraft.Crucible.registerRecipe("redstonefromsalt", "HEDGEALCHEMY@2", <m
 mods.thaumcraft.Crucible.registerRecipe("stringfix", "HEDGEALCHEMY@2", <minecraft:string>, <ore:straw>, [<aspect:fabrico>*5, <aspect:bestia>]);
 mods.thaumcraft.Crucible.registerRecipe("webfix", "HEDGEALCHEMY@2", <minecraft:web>, <ore:string>, [<aspect:vinculum>*5]);
 mods.thaumcraft.Crucible.registerRecipe("jute", "HEDGEALCHEMY@2", <tfc:crop/product/jute_fiber>, <ore:thatch>, [<aspect:herba>*5, <aspect:vinculum>*5]);
-mods.thaumcraft.Crucible.registerRecipe("THORIUMTRANSMUTATION", "THORIUMTRANSMUTATION", <tfc:metal/ingot/uranium>, <ore:ingotThorium>, [<aspect:potentia>*10,<aspect:permutatio>*5, <aspect:mortuus>*5]);
+mods.thaumcraft.Crucible.registerRecipe("THORIUMTRANSMUTATION", "NUCLEAR", <tfc:metal/ingot/uranium>, <ore:ingotThorium>, [<aspect:potentia>*10,<aspect:permutatio>*5, <aspect:mortuus>*5]);
+mods.thaumcraft.Crucible.registerRecipe("coolant", "NUCLEAR", <forge:bucketfilled>.withTag({FluidName: "ic2coolant", Amount: 1000}), <minecraft:bucket>, [<aspect:ignis>*20,<aspect:permutatio>*20, <aspect:gelum>*20]);
 
 
 

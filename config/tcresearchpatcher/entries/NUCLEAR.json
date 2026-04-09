@@ -7,11 +7,15 @@
         "stages": [
                 {
                     "text": "research.NUCLEAR.stage.1",
-                    "required_knowledge":["THEORY;ARTIFICE;1","THEORY;ALCHEMY;1","OBSERVATION;INFUSION;1"]
+                    "required_knowledge":["THEORY;ARTIFICE;1","THEORY;ALCHEMY;1","OBSERVATION;INFUSION;1"],
+                     "required_item":[
+                        "ic2:nuclear;1;0",
+                        "tfc:metal/ingot/black_steel;1;0"
+                        ]
                 },
                 {
                     "text": "research.NUCLEAR.stage.2"  
-                    ,"recipes": ["thaumcraft:NUCLEAR"]
+                    ,"recipes": ["thaumcraft:URANIUMROD","thaumcraft:MOXROD","thaumcraft:coolant","thaumcraft:THORIUMTRANSMUTATION"]
 					
                 }
             ]

@@ -27,6 +27,7 @@ function socialDistancing (IwasHereFirst as IEntityDefinition, OkIllSkedaddle as
                 if entity.definition.id == IwasHereFirst.id
                 {
                     event.cancel();
+                    
                     return;
                 }
             }
