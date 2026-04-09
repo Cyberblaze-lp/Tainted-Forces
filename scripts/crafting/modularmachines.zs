@@ -13,11 +13,18 @@ import crafttweaker.util.Math;
 import crafttweaker.data.IData;
 import native.extendedrenderer.particle.entity.EntityRotFX;
 import native.extendedrenderer.particle.behavior.ParticleBehaviors;
+import native.extendedrenderer.render.RotatingParticleManager;
+import native.extendedrenderer.particle.behavior.ParticleBehaviorFog;
 import native.net.minecraft.client.renderer.texture.TextureAtlasSprite;
+import native.net.minecraft.client.renderer.texture.TextureManager;
+import native.net.minecraft.client.Minecraft;
 import native.CoroUtil.util.Vec3;
+import native.weather2.ClientTickHandler;
 import mods.modularmachinery.ControllerModelAnimationEvent;
 import mods.modularmachinery.ControllerGUIRenderEvent;
 import mods.modularmachinery.MMEvents;
+import mods.modularmachinery.Sync;
+
 recipes.removeByMod("modularmachinery");
 
 
@@ -34,16 +41,20 @@ mods.modularmachinery.RecipeBuilder.newBuilder("basicflux", "calcifier_t0", 300)
 function addClouds (controller as IMachineController) as void
 {
  
-    val icon = TextureAtlasSprite("extendedrenderer:textures/particles/cloud256.png");
+    val icon = TextureAtlasSprite("extendedrenderer:textures/particles/cloud256");
     val offset =  controller.pos.getOffset(controller.facing, -14)
                                 .getOffset(IFacing.up(), 21);
     var vec = Vec3(offset);
-    var pb = ParticleBehaviors(vec);
-    var cloud = pb.spawnNewParticleIconFX(controller.world.native, icon, offset.x as double, offset.y as double, offset.z as double, 0.0d, 0.01d, 0.0d, 1);
-
+    var pb = ParticleBehaviorFog(vec);
+   
+    var cloud = pb.spawnNewParticleIconFX(controller.world.native, icon, offset.x as double, offset.y as double, offset.z as double, 0.0d, -0.01d, 0.0d, 1);
     pb.initParticle(cloud);
-
-
+    pb.particles.add(cloud);
+    print(toString(cloud));
+    val tm = Minecraft.getMinecraft().getTextureManager();
+    val rpm = RotatingParticleManager(controller.world.native, tm);
+    cloud.spawnAsWeatherEffect();
+    ClientTickHandler.weatherManager.addWeatheredParticle(cloud);
 
 
 }
@@ -59,7 +70,7 @@ mods.modularmachinery.RecipeBuilder.newBuilder("waterfromExhaustSteamW", "coolin
 .setChance(0.65)
 .addFluidOutput(<liquid:ic2distilled_water>*80)
 .addStartHandler(function (event as ControllerModelAnimationEvent){
-    addClouds(event.controller);
+    
 })
 .build();
 
@@ -70,7 +81,7 @@ mods.modularmachinery.RecipeBuilder.newBuilder("waterfromSteamW", "cooling_tower
 .setChance(0.65)
 .addFluidOutput(<liquid:ic2distilled_water>*80)
 .addStartHandler(function (event as RecipeStartEvent){
-    addClouds(event.controller);
+   
 })
 .build();
 
@@ -81,7 +92,7 @@ mods.modularmachinery.RecipeBuilder.newBuilder("waterfromExhaustSteamF", "coolin
 .setChance(0.65)
 .addFluidOutput(<liquid:ic2distilled_water>*80)
 .addStartHandler(function (event as RecipeStartEvent){
-    addClouds(event.controller);
+    
 })
 .build();
 
@@ -92,7 +103,7 @@ mods.modularmachinery.RecipeBuilder.newBuilder("waterfromSteamF", "cooling_tower
 .setChance(0.65)
 .addFluidOutput(<liquid:ic2distilled_water>*80)
 .addStartHandler(function (event as RecipeStartEvent){
-    addClouds(event.controller);
+   
 })
 .build();
 
