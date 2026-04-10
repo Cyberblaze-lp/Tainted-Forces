@@ -78,7 +78,7 @@ function addClouds (controller as TileEntity) as void
     val offset =  controller.getPos().wrapper   
     .getOffset(facing, -14)
     .getOffset(IFacing.up(), 19);
-
+    
     Sync.addSyncTask(
         function(){
         <entity:bountifulbaubles:bee>.spawnEntity(controller.world.wrapper, offset);

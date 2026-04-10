@@ -34,15 +34,19 @@ events.onWorldTick(function(event as crafttweaker.event.WorldTickEvent){
 				return;
 			}
 			if (toString(event.world.getBlock(tile.getPos().wrapper).data) has "active: 1 as byte"){			
-				var command = 
-					"summon botania:mana_storm " + 
-					toString(tile.getPos().wrapper.getX()) + 
-					" " + 
-					toString(tile.getPos().wrapper.getY()) + 
-					".5 " + 
-					toString(tile.getPos().wrapper.getZ())
-				;
-				server.commandManager.executeCommandSilent(server, command);
+				var world = tile.getWorld().wrapper;
+				var pos = tile.getPos().wrapper;
+
+				var manastorm = <entity:botania:mana_storm>.spawnEntity(world, pos);
+				event.world.catenation()
+				.sleep(2)
+				.then(function(world, context){
+					manastorm.position3f = crafttweaker.util.Position3f.create(pos.x as float+ 0.5, pos.y as float + 0.5 , pos.z as float + 0.5);
+				})
+				.start();
+				
+
+
 			}
 		}
 	}
@@ -61,8 +65,11 @@ events.onEntityJoinWorld(function(event as crafttweaker.event.EntityJoinWorldEve
 		if (toString(event.world.getBlock(entityPosNew).definition.id) has "ic2:te")
 		{
 			event.cancel();
+			
 		}
+		return;
 	}
+	
 });
 
 
