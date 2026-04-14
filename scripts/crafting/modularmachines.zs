@@ -474,6 +474,7 @@ mods.modularmachinery.RecipeBuilder.newBuilder("perditioDrilling", "burnerdrill_
 })
 
 .addFinishHandler(function (event as RecipeFinishEvent){
+    setPower(0.0, event.controller);
     event.controller.world.catenation()
     .sleep(2)
     .then(function(world, context){
@@ -481,7 +482,7 @@ mods.modularmachinery.RecipeBuilder.newBuilder("perditioDrilling", "burnerdrill_
         {
             return;
         }
-        setPower(0.0, event.controller);
+        
         setFireboxState(2, event.controller);
 
     })
@@ -532,6 +533,7 @@ mods.modularmachinery.RecipeBuilder.newBuilder("basicDrilling", "burnerdrill_t1"
 })
 
 .addFinishHandler(function (event as RecipeFinishEvent){
+    setPower(0.0, event.controller);
     event.controller.world.catenation()
     .sleep(2)
     .then(function(world, context){
@@ -539,7 +541,7 @@ mods.modularmachinery.RecipeBuilder.newBuilder("basicDrilling", "burnerdrill_t1"
         {
             return;
         }
-        setPower(0.0, event.controller);
+        
         setFireboxState(2, event.controller);
 
     })
