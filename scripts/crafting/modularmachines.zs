@@ -532,8 +532,18 @@ mods.modularmachinery.RecipeBuilder.newBuilder("basicDrilling", "burnerdrill_t1"
 })
 
 .addFinishHandler(function (event as RecipeFinishEvent){
-    setPower(0.0, event.controller);
-    setFireboxState(2, event.controller);
+    event.controller.world.catenation()
+    .sleep(2)
+    .then(function(world, context){
+        if event.controller.isWorking
+        {
+            return;
+        }
+        setPower(0.0, event.controller);
+        setFireboxState(2, event.controller);
+
+    })
+    .start();
 })
 .build();
 
