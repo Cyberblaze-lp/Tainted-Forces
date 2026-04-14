@@ -1,0 +1,23 @@
+# ----------------------------------------------------------- #
+# ########################################################### #
+#                 ### flares_caverns.cave Info ###                   #
+# ########################################################### #
+#   This preset is designed to demonstrate a basic use case   #
+# for Cave Generator which increases the frequency and shape  #
+# of ravines, while disabling other cave-related features.    #
+# ----------------------------------------------------------- #
+{
+  enabled: true
+  caverns: {
+    generators: [
+      {
+        frequency: 0.4
+        perturb: true
+        perturbAmp: 500
+        threshold: -0.7
+        octaves: 2
+        distFunc: Manhattan
+      }
+    ]
+  }
+}

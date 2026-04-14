@@ -21,13 +21,8 @@ import native.net.minecraft.client.renderer.texture.TextureManager;
 import native.net.minecraft.client.Minecraft;
 import native.CoroUtil.util.Vec3;
 import native.weather2.ClientTickHandler;
-import mods.modularmachinery.ControllerModelAnimationEvent;
-import mods.modularmachinery.ControllerGUIRenderEvent;
-import mods.modularmachinery.MachineTickEvent;
-import mods.modularmachinery.MMEvents;
 import mods.modularmachinery.Sync;
 import native.extendedrenderer.particle.ParticleRegistry;
-import crafttweaker.event.PlayerTickEvent;
 import native.net.minecraft.tileentity.TileEntity;
 import crafttweaker.entity.IEntity;
 import crafttweaker.event.EntityJoinWorldEvent;
@@ -76,8 +71,8 @@ function addClouds (controller as TileEntity) as void
 
     
     val offset =  controller.getPos().wrapper   
-    .getOffset(facing, -14)
-    .getOffset(IFacing.up(), 19);
+    .getOffset(facing, -15)
+    .getOffset(IFacing.up(), 22);
     
     Sync.addSyncTask(
         function(){
@@ -115,76 +110,87 @@ events.onEntityJoinWorld(function(event as EntityJoinWorldEvent){
     {
         return;
     }
+    val yfactor as float = 0.3f;
+
     val icon =ParticleRegistry.cloud256;
     val offset as IBlockPos = entity.position3f as IBlockPos;
     var vec = Vec3(offset);
     var pb = ParticleBehaviorFog(vec);
     
-    var cloud = pb.spawnNewParticleIconFX(entity.world.native, icon, offset.x as double, offset.y as double, offset.z as double, 0.0d, 6.01d, 0.0d, 1);
+    var cloud = pb.spawnNewParticleIconFX(entity.world.native, icon, offset.x as double, offset.y as double, offset.z as double, 0.0d, 5.0d, 0.0d, 1);
     cloud.rotationPitch = mods.ctutils.utils.Math.getRandom().nextInt(0, 314) as float / 100.0f;
     pb.initParticle(cloud);
     pb.particles.add(cloud);
     val tm = Minecraft.getMinecraft().getTextureManager();
     val rpm = RotatingParticleManager(entity.world, tm);
     cloud.spawnAsWeatherEffect();
-    cloud.setGravity(0.0f);
+    cloud.setGravity(-1.3f*yfactor);
     cloud.setFacePlayer(true);
 
-    cloud.setScale(180.0f + mods.ctutils.utils.Math.getRandom().nextInt(0, 40) as float );
+    cloud.setScale(145.0f + mods.ctutils.utils.Math.getRandom().nextInt(0, 20) as float );
     ClientTickHandler.weatherManager.addWeatheredParticle(cloud);
     client.catenation()
 				.sleep(2)
 				.then(function(world, context) 
                 {
-				    cloud.setMotionY(3.0d);
-                    cloud.setGravity(-0.02);
+				    
+                    cloud.setGravity(1.0f*yfactor);
                 })
                 
-                .sleep(4)
+                .sleep(8)
 				.then(function(world, context) 
                 {
-				    cloud.setMotionY(1.1d);
+				    cloud.setGravity(-0.85f*yfactor);
                 })
-                .sleep(4)
+                .sleep(8)
 				.then(function(world, context) 
                 {
-				    cloud.setMotionY(0.8d);
+				    cloud.setGravity(-0.65f*yfactor);
+                    
                 })
-                .sleep(4)
+                .sleep(8)
 				.then(function(world, context) 
                 {
-				    cloud.setMotionY(0.5d);
+				     cloud.setGravity(-0.5f*yfactor);
                     cloud.setMotionX(100.0/1000.0 - mods.ctutils.utils.Math.getRandom().nextInt(0, 100) as float / 500.0f);
                     cloud.setMotionZ(100.0/1000.0 - mods.ctutils.utils.Math.getRandom().nextInt(0, 100) as float / 500.0f);
 
                 })
-                .sleep(4)
+                .sleep(8)
 				.then(function(world, context) 
                 {
-				    cloud.setMotionY(0.25d);
+				    cloud.setGravity(-0.35f);
                 })
-                .sleep(4)
+                .sleep(8)
+				.then(function(world, context) 
+                {
+                    cloud.setGravity(-0.25f);
+                })
+                .sleep(10)
+                .then(function(world, context) 
+                {
+				    
+                    cloud.setGravity(-0.15f);
+                    cloud.setMotionX(8.0/160.0 - mods.ctutils.utils.Math.getRandom().nextInt(0, 8) as float / 80.0f);
+                    cloud.setMotionZ(8.0/160.0 - mods.ctutils.utils.Math.getRandom().nextInt(0, 8) as float / 80.0f);
+                    
+                })
+
+                .sleep(50)
 				.then(function(world, context) 
                 {
                     cloud.setGravity(-0.1f);
+                    cloud.setScale(200.0f);
                 })
-                .sleep(60)
+
+                .sleep(50)
                 .then(function(world, context) 
                 {
 				    
-                    cloud.setGravity(-0.08f);
+                    cloud.setGravity(-0.05f);
                     cloud.setMotionX(8.0/160.0 - mods.ctutils.utils.Math.getRandom().nextInt(0, 8) as float / 80.0f);
                     cloud.setMotionZ(8.0/160.0 - mods.ctutils.utils.Math.getRandom().nextInt(0, 8) as float / 80.0f);
-                    cloud.setMotionY(8.0/160.0 - mods.ctutils.utils.Math.getRandom().nextInt(0, 8) as float / 80.0f);
-                })
-                .sleep(100)
-                .then(function(world, context) 
-                {
-				    
-                    cloud.setGravity(-0.06f);
-                    cloud.setMotionX(8.0/160.0 - mods.ctutils.utils.Math.getRandom().nextInt(0, 8) as float / 80.0f);
-                    cloud.setMotionZ(8.0/160.0 - mods.ctutils.utils.Math.getRandom().nextInt(0, 8) as float / 80.0f);
-                    cloud.setMotionY(8.0/160.0 - mods.ctutils.utils.Math.getRandom().nextInt(0, 8) as float / 80.0f);
+                    
 
                 })
                 .sleep(100)
@@ -194,7 +200,7 @@ events.onEntityJoinWorld(function(event as EntityJoinWorldEvent){
                     cloud.setGravity(-0.02f);
                     cloud.setMotionX(8.0/160.0 - mods.ctutils.utils.Math.getRandom().nextInt(0, 8) as float / 80.0f);
                     cloud.setMotionZ(8.0/160.0 - mods.ctutils.utils.Math.getRandom().nextInt(0, 8) as float / 80.0f);
-                    cloud.setMotionY(8.0/160.0 - mods.ctutils.utils.Math.getRandom().nextInt(0, 8) as float / 80.0f);
+                    
                 })
 
                 .sleep(100)
@@ -215,16 +221,16 @@ events.onEntityJoinWorld(function(event as EntityJoinWorldEvent){
                     cloud.setMotionZ(8.0/160.0 - mods.ctutils.utils.Math.getRandom().nextInt(0, 8) as float / 80.0f);
                     cloud.setMotionY(8.0/160.0 - mods.ctutils.utils.Math.getRandom().nextInt(0, 8) as float / 80.0f);
                 })
-                .sleep(10)
+                .sleep(80)
 				.then(function(world, context) 
                 {
 				    
                     cloud.setScale(240.0f);
                     cloud.setMotionX(8.0/160.0 - mods.ctutils.utils.Math.getRandom().nextInt(0, 8) as float / 80.0f);
                     cloud.setMotionZ(8.0/160.0 - mods.ctutils.utils.Math.getRandom().nextInt(0, 8) as float / 80.0f);
-                    cloud.setMotionY(8.0/160.0 - mods.ctutils.utils.Math.getRandom().nextInt(0, 8) as float / 80.0f);
+                    
                 })
-                .sleep(10)
+                .sleep(80)
 				.then(function(world, context) 
                 {
 				    
@@ -233,7 +239,7 @@ events.onEntityJoinWorld(function(event as EntityJoinWorldEvent){
                     cloud.setMotionZ(8.0/160.0 - mods.ctutils.utils.Math.getRandom().nextInt(0, 8) as float / 80.0f);
                     cloud.setMotionY(8.0/160.0 - mods.ctutils.utils.Math.getRandom().nextInt(0, 8) as float / 80.0f);
                 })
-                .sleep(10)
+                .sleep(80)
 				.then(function(world, context) 
                 {
 				    
@@ -248,11 +254,30 @@ events.onEntityJoinWorld(function(event as EntityJoinWorldEvent){
 				    
                     cloud.setScale(400.0f);
                 })
-                .sleep(200)
+                 .sleep(200)
 				.then(function(world, context) 
                 {
 				    
                     cloud.setScale(500.0f);
+                    cloud.setMotionX(8.0/100.0 - mods.ctutils.utils.Math.getRandom().nextInt(0, 8) as float / 50.0f);
+                    cloud.setMotionZ(8.0/100.0 - mods.ctutils.utils.Math.getRandom().nextInt(0, 8) as float / 50.0f);
+                    cloud.setMotionY(8.0/100.0 - mods.ctutils.utils.Math.getRandom().nextInt(0, 8) as float / 50.0f);
+                })
+                 .sleep(200)
+				.then(function(world, context) 
+                {
+				    
+                    cloud.setScale(600.0f);
+                    cloud.setMotionX(8.0/60.0 - mods.ctutils.utils.Math.getRandom().nextInt(0, 8) as float / 30.0f);
+                    cloud.setMotionZ(8.0/60.0 - mods.ctutils.utils.Math.getRandom().nextInt(0, 8) as float / 30.0f);
+                    cloud.setMotionY(8.0/60.0 - mods.ctutils.utils.Math.getRandom().nextInt(0, 8) as float / 30.0f);
+
+                })
+                .sleep(200)
+				.then(function(world, context) 
+                {
+				    
+                    cloud.setScale(800.0f);
                     cloud.startDeath();
                 })
 
@@ -394,21 +419,15 @@ val pos1 =  controller.pos.getOffset(controller.facing, -1)
                                 .getOffset(IFacing.west, 1);
 
 
- 
-
-    for pos in [pos1, pos2, pos3, pos4]
-    {
-        // horrible clump of tech debt that will come to haunt us one day
-        // changes the blockstate without telling the TE that its existence privilege has been revoked
-        val chunk = controller.world.native.getChunk(pos);
-
-        val stateOld = controller.world.getBlockState(pos1).native;
-
-        chunk.storageArrays[Math.floor(pos.y as float /16.0)].set(pos.x & 15, pos.y & 15, pos.z & 15, state.native );
-        chunk.markDirty();
-        controller.world.native.markAndNotifyBlock(pos, chunk, stateOld, state, 3);
-
-    }
+    
+    Sync.addSyncTask(function(){
+        for pos in [pos1, pos2, pos3, pos4]
+        {
+            var data = controller.world.getBlock(pos).data;
+            var blockstate = controller.world.getBlockState(pos).block.definition.getStateFromMeta(meta);
+            controller.world.setBlockState(blockstate, data, pos);
+        }
+    });
 }
 
 <modularmachinery:blockcasing:4>.displayName = "Firebox Casing";
@@ -455,8 +474,19 @@ mods.modularmachinery.RecipeBuilder.newBuilder("perditioDrilling", "burnerdrill_
 })
 
 .addFinishHandler(function (event as RecipeFinishEvent){
-    setPower(0.0, event.controller);
-    setFireboxState(2, event.controller);
+    event.controller.world.catenation()
+    .sleep(2)
+    .then(function(world, context){
+        if event.controller.isWorking
+        {
+            return;
+        }
+        setPower(0.0, event.controller);
+        setFireboxState(2, event.controller);
+
+    })
+    .start();
+    
 })
 .build();
 

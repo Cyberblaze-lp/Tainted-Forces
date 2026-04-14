@@ -147,7 +147,7 @@
   }
   tunnels: {
     # Spawn rate roughly in half.
-    count: 7
+    count: 1
     # Most tunnels will spawn together.
     systemChance: 0.5
     noiseYReduction: false
@@ -211,11 +211,21 @@
   }
   enabled: false
   caverns: {
+    distFunc: Manhattan
     height: [ 2, 50 ]
     generators: {
-      frequency: 0.02
-      threshold: -0.5
+      frequency: 0.01
+      threshold: -0.75
       stretch: 0.5
+    }
+  }
+  caverns2: {
+    height: [ 2, 50 ]
+    distFunc: Manhattan
+    generators: {
+      frequency: 0.99
+      threshold: -0.85
+      stretch: 0.3
     }
   }
 }

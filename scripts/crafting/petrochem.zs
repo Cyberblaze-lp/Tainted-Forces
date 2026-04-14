@@ -33,6 +33,8 @@ mods.pneumaticcraft.thermopneumaticprocessingplant.removeRecipe(<liquid:lpg>);
 mods.pneumaticcraft.thermopneumaticprocessingplant.removeRecipe(<liquid:fuel>);
 mods.pneumaticcraft.thermopneumaticprocessingplant.removeRecipe(<liquid:kerosene>);
 mods.pneumaticcraft.thermopneumaticprocessingplant.removeRecipe(<liquid:lubricant>);
+mods.pneumaticcraft.thermopneumaticprocessingplant.removeRecipe(<liquid:plastic>);
+
 
 mods.magneticraft.OilHeater.removeRecipe(<liquid:oil>);
 
@@ -49,9 +51,13 @@ mods.inworldcrafting.FluidToItem.transform(<thebetweenlands:sludge_worm_egg_sac>
 
 <ore:dustSulfur>.add(<thebetweenlands:items_misc:18>);
 
-mods.pneumaticcraft.thermopneumaticprocessingplant.addRecipe(<liquid:lubricant>*16000, <thebetweenlands:shock_arrow>, 2.0, 300.0, <liquid:diesel>*15000);
-mods.pneumaticcraft.thermopneumaticprocessingplant.addRecipe(<liquid:kerosene>*16000, <thebetweenlands:shock_arrow>, 2.0, 300.0, <liquid:refined_oil>*12000);
-mods.pneumaticcraft.thermopneumaticprocessingplant.addRecipe(<liquid:gasoline>*16000, <thebetweenlands:shock_arrow>, 2.0, 300.0, <liquid:lpg>*13500);
+mods.pneumaticcraft.thermopneumaticprocessingplant.addRecipe(<liquid:lubricant>*16000, <thebetweenlands:shock_arrow>, 2.0, 300.0+273.0, <liquid:diesel>*15000);
+mods.pneumaticcraft.thermopneumaticprocessingplant.addRecipe(<liquid:kerosene>*16000, <thebetweenlands:shock_arrow>, 2.0, 300.0+273.0, <liquid:refined_oil>*12000);
+mods.pneumaticcraft.thermopneumaticprocessingplant.addRecipe(<liquid:gasoline>*16000, <thebetweenlands:shock_arrow>, 2.0, 300.0+273.0, <liquid:lpg>*13500);
+
+mods.pneumaticcraft.thermopneumaticprocessingplant.addRecipe(<liquid:plastic>*1000, <thebetweenlands:items_misc:44>*10, 2.0, 300.0+273.0, <liquid:lpg>*500);
+
+
 
 
 

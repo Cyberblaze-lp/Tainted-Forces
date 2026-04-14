@@ -9,13 +9,13 @@
     height: [ 0, 5 ]
   }
   tunnels: {
-    height: [ 8, 200 ]
+    height: [ 40, 112 ]
     resolution: 4
     distance: 0
     systemChance: 0.85
-    chance: 0.842
+    chance: 0.242
     systemDensity: 5
-    noiseYReduction: false
+    noiseYReduction: true
     resizeBranches: true
     dYaw: {
       startVal: 0
