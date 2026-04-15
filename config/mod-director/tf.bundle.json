@@ -9,14 +9,6 @@
 			}
 		},
 		{
-			"addonId": 409880,
-			"fileId": 3614638,
-			"fileName": "thaumicspeedup-4.0.jar",
-			"installationPolicy": {
-				"description": "Mandatory! Downloads Thaumic Speedup"
-			}
-		},		
-		{
 			"addonId": 557549,
 			"fileId": 7515497,
 			"installationPolicy": {
