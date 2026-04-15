@@ -110,7 +110,7 @@ events.onEntityJoinWorld(function(event as EntityJoinWorldEvent){
     {
         return;
     }
-    val yfactor as float = 0.3f;
+    val yfactor as float = 0.25f;
 
     val icon =ParticleRegistry.cloud256;
     val offset as IBlockPos = entity.position3f as IBlockPos;
@@ -151,7 +151,7 @@ events.onEntityJoinWorld(function(event as EntityJoinWorldEvent){
                 .sleep(8)
 				.then(function(world, context) 
                 {
-				     cloud.setGravity(-0.5f*yfactor);
+				    cloud.setGravity(-0.5f*yfactor);
                     cloud.setMotionX(100.0/1000.0 - mods.ctutils.utils.Math.getRandom().nextInt(0, 100) as float / 500.0f);
                     cloud.setMotionZ(100.0/1000.0 - mods.ctutils.utils.Math.getRandom().nextInt(0, 100) as float / 500.0f);
 

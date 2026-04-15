@@ -1,7 +1,7 @@
 #loader mixin
 
 #mixin {targets: "mctmods.immersivetechnology.common.multiblocks.metal.tileentities.TileEntitySteamTurbineMaster"}
-zenClass MixinDioptra {
+zenClass MixinTurbine {
     #mixin Overwrite 
     function isValidAlternator() as bool {
         return true;

@@ -24,13 +24,13 @@ events.onWorldTick(function(event as crafttweaker.event.WorldTickEvent){
 		return;
 	}
 
-	var tiles = event.world.native.loadedTileEntityList as TileEntity[];
+	val tiles = event.world.native.loadedTileEntityList as TileEntity[];
 	for tile in tiles{
 		if( tile.toString() has "TileEntityNuclearReactorElectric"){
 			if(
 				isNull(event.world.getBlockState(tile.getPos().wrapper))
-			 || isNull(event.world.getBlock(tile.getPos().wrapper).data)
-			) {
+			 || isNull(event.world.getBlock(tile.getPos().wrapper).data)) 
+			{
 				return;
 			}
 			if (toString(event.world.getBlock(tile.getPos().wrapper).data) has "active: 1 as byte"){			

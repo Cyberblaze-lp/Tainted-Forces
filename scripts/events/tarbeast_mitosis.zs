@@ -9,7 +9,7 @@ import crafttweaker.item.IMutableItemStack;
 
 events.onPlayerInteractEntity(function(event as crafttweaker.event.PlayerInteractEntityEvent){
 
-if(isNull(event.item) || isNull(event.item.liquid)) {
+if(isNull(event.item) || isNull(event.item.liquid)) ||isNull(event.target.definition) {
         return;
     }
 

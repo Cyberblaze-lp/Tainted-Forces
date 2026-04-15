@@ -1,7 +1,7 @@
 import crafttweaker.event.EntityLivingSpawnEvent;
 import crafttweaker.event.EntityJoinWorldEvent;
 import crafttweaker.event.EntityLivingFallEvent;
-import crafttweaker.event.EntityLivingDeathEvent;
+import crafttweaker.event.EntityLivingDeathDropsEvent;
 import crafttweaker.event.EntityLivingDamageEvent;
 import crafttweaker.entity.IEntity;
 import crafttweaker.entity.IEntityDefinition;
@@ -54,34 +54,61 @@ events.onEntityLivingUpdate(function(event as crafttweaker.event.EntityLivingUpd
 
     if (world.getBlock(entityPosNew).definition.id == "thaumcraft:taint_fibre" && world.random.nextInt(1,3) == 2 ){
 
-        var taint1 = <potion:thaumcraft:fluxtaint>.makePotionEffect(100, 0 ,false, false) as IPotionEffect;
+        var taint1 = <potion:thaumcraft:fluxtaint>.makePotionEffect(120, 0 ,false, false) as IPotionEffect;
         val entity as IEntityLivingBase = event.entityLivingBase;
         entity.addPotionEffect(taint1);
     }
 });
 
 
-
+val gooOnly as string = <entity:thaumcraft:thaumslime>.id + <entity:thaumcraft:taintswarm>.id + <entity:thaumcraft:taintseed>.id;
 
 // taint death effect: tainted mobs now explode into goo instead of keeling over
-events.onEntityLivingDeath(function(event as crafttweaker.event.EntityLivingDeathEvent){
-    var world = event.entityLivingBase.world;
+// also replaces their drops with tendrils and goo
+events.onEntityLivingDeathDrops(function(event as crafttweaker.event.EntityLivingDeathDropsEvent){
+    val world = event.entityLivingBase.world;
     if(isNull(event.entityLivingBase.definition)||isNull(world) || world.isRemote())
     {
         return;
     }
-
-    var entityPosOld = event.entityLivingBase.position3f;
 	
+    if !(event.entityLivingBase.nbt.asString() has "istainted" || event.entityLivingBase.definition.id has "taint" ||event.entityLivingBase.definition.id has "thaumslime" )
+    {
+        return;
+    }
 
-if (event.entityLivingBase.nbt.asString() has "istainted" || event.entityLivingBase.definition.id has "taint"){
-    var invis = <potion:minecraft:invisibility>.makePotionEffect(100, 3 ,false, false) as IPotionEffect;
-event.entityLivingBase.addPotionEffect(invis);
-server.commandManager.executeCommandSilent(event.entityLivingBase, "particle blockcrack ~ ~" + toString(event.entityLivingBase.eyeHeight /2) +" ~ 0.3 "+toString(event.entityLivingBase.eyeHeight /2)+ " 0.3 0 300 force @a 1108");
-server.commandManager.executeCommandSilent(event.entityLivingBase, "playsound thaumcraft:gore hostile @a ~ ~ ~");
+    //death effect (swarms look better without this so we exclude them)
 
-}
+    if ! (event.entityLivingBase.definition.id has "taintswarm")
+    {
+        val invis = <potion:minecraft:invisibility>.makePotionEffect(1000, 3 ,false, false) as IPotionEffect;
+        event.entityLivingBase.addPotionEffect(invis);
+        server.commandManager.executeCommandSilent(event.entityLivingBase, "particle blockcrack ~ ~" + toString(event.entityLivingBase.eyeHeight /2) +" ~ 0.3 "+toString(event.entityLivingBase.eyeHeight /2)+ " 0.3 0 300 force @a 1107");
+        server.commandManager.executeCommandSilent(event.entityLivingBase, "playsound thaumcraft:gore hostile @a ~ ~ ~");
+    }
+    //drops
+    val rand = mods.ctutils.utils.Math.getRandom().nextInt(0, 3);
+    event.drops = [];
+    if(gooOnly has event.entityLivingBase.definition.id)
+    {
+        event.addItem(<contenttweaker:taint_goo>);
+        return;
+    }
+    if(rand == 0)
+    {
+        return;
+    }
+    else if rand == 1
+    {
+        event.addItem(<contenttweaker:taint_goo>);
+    }
+    else 
+     {
+        event.addItem(<contenttweaker:taint_tendril>);
+     }
 
+
+        
 
     
 });

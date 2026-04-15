@@ -27,7 +27,7 @@ import native.thaumcraft.api.items.RechargeHelper;
 import native.net.minecraft.block.Block;
 import native.net.minecraft.util.BlockRenderLayer;
 import native.thecodex6824.thaumicaugmentation.common.item.ItemThaumostaticHarness;
-
+import native.baubles.api.BaubleType;
 
 
 
@@ -106,7 +106,7 @@ zenClass passivePollute {
 
 
 #mixin {targets: "thaumcraft.common.blocks.world.taint.BlockTaintFibre"}
-zenClass func_180664 {
+zenClass MixinFiberTransparentBorder {
     #mixin Overwrite 
     function func_180664_k() as BlockRenderLayer {
         return BlockRenderLayer.TRANSLUCENT;
@@ -290,6 +290,10 @@ zenClass MixinAdvCrossbowRange {
     }
     
 }
+
+
+
+
 
 
 

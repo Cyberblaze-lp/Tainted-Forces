@@ -35,8 +35,8 @@ mods.immersivetechnology.MeltingCrucible.removeRecipe(<minecraft:cobblestone>);
 
 
 
-<thermalfoundation:material:1028>.setAspects(<aspect:vitium>*10,<aspect:desiderium>*5,<aspect:victus>*5);
-<thermalfoundation:geode>.setAspects(<aspect:vitium>*10,<aspect:aqua>*10,<aspect:victus>*5);
+<contenttweaker:taint_tendril>.setAspects(<aspect:vitium>*10,<aspect:desiderium>*5,<aspect:victus>*5);
+<contenttweaker:taint_goo>.setAspects(<aspect:vitium>*10,<aspect:aqua>*10,<aspect:victus>*5);
 <thaumcraft:taint_fibre>.setAspects(<aspect:vitium>*10,<aspect:victus>*5);
 <tfc:powder/flux>.setAspects(<aspect:vitium>*2,<aspect:ordo>*2,<aspect:terra>*5);
 
@@ -196,8 +196,8 @@ GasTurbine.addFuel(<liquid:carbon_dioxide> * 2000, <liquid:hsla_steel>*250, 10);
 
 
 
-<thermalfoundation:material:1028>.displayName = "Taint Tendril";
-<thermalfoundation:geode>.displayName = "Tainted Goo";
+<contenttweaker:taint_tendril>.displayName = "Taint Tendril";
+<contenttweaker:taint_goo>.displayName = "Tainted Goo";
 
 <embers:dawnstone_anvil>.displayName = "Automatic Anvil";
 
