@@ -1,14 +1,6 @@
 {
 	"curse": [
 		{
-			"addonId": 419286,
-			"fileId": 7049694,
-			"fileName": "!mixinbooter-10.7.jar",
-			"installationPolicy": {
-				"description": "Mandatory! Downloads MixinBooter"
-			}
-		},
-		{
 			"addonId": 557549,
 			"fileId": 7515497,
 			"installationPolicy": {
