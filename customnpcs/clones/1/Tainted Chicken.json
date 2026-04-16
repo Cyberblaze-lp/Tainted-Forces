@@ -58,11 +58,6 @@
         "dsurround:data": {
             "a": 0b,
             "f": 0b
-        },
-        "metallurgy:punch_effect": {
-            "ticks": 0,
-            "hasAiDisabled": 1b,
-            "knockbackTicks": 0
         }
     },
     "BossColor": 0,
@@ -227,6 +222,10 @@
             "Base": 1.0d
         },
         {
+            "Name": "tconevo.damageDealt",
+            "Base": 1.0d
+        },
+        {
             "Name": "generic.maxHealth",
             "Base": 0.0d,
             "Modifiers": [
@@ -281,13 +280,13 @@
             "Base": 0.800000011920929d
         }
     ],
-    "FactionID": 5,
+    "FactionID": 2,
     "TransformHasJob": 0b,
     "Name": "Tainted Chicken",
     "NpcAngrySound": "minecraft.entity.chicken.ambient",
     "npcInteracting": 0b,
     "FindShelter": 2,
-    "HurtByTimestamp": 1071,
+    "HurtByTimestamp": 100,
     "AttackStrenght": 2,
     "ScriptEnabled": 0b,
     "HealthRegen": 0,
@@ -372,12 +371,12 @@
     "PersistenceRequired": 0b,
     "PotionImmune": 0b,
     "AABB": [
-        99.35328647922364d,
-        149.0d,
-        267.3037034837448d,
-        99.75328645538178d,
-        149.69999998807907d,
-        267.70370345990295d
+        41.410754708401775d,
+        111.0d,
+        885.4629401674604d,
+        41.81075468455992d,
+        111.69999998807907d,
+        885.8629401436185d
     ],
     "NpcDeathSound": "minecraft:entity.player.death",
     "NpcModelData": {
@@ -446,12 +445,12 @@
     "CreatureType": 0,
     "PotionDuration": 5,
     "pEffAmp": 0,
-    "TotalTicksAlive": 17967L,
+    "TotalTicksAlive": 19016L,
     "TransformHasInv": 0b,
     "Dimension": 0,
     "Texture": "thaumcraft:textures/entity/chicken.png",
     "Rotation": [
-        269.59503f,
+        131.23645f,
         0.0f
     ],
     "MinExp": 5,

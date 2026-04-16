@@ -58,11 +58,6 @@
         "dsurround:data": {
             "a": 0b,
             "f": 0b
-        },
-        "metallurgy:punch_effect": {
-            "ticks": 0,
-            "hasAiDisabled": 1b,
-            "knockbackTicks": 0
         }
     },
     "BossColor": 0,
@@ -227,6 +222,10 @@
             "Base": 1.0d
         },
         {
+            "Name": "tconevo.damageDealt",
+            "Base": 1.0d
+        },
+        {
             "Name": "generic.maxHealth",
             "Base": 0.0d,
             "Modifiers": [
@@ -281,13 +280,13 @@
             "Base": 0.5d
         }
     ],
-    "FactionID": 5,
+    "FactionID": 2,
     "TransformHasJob": 0b,
     "Name": "Tainted Sheep",
     "NpcAngrySound": "",
     "npcInteracting": 1b,
     "FindShelter": 2,
-    "HurtByTimestamp": 543,
+    "HurtByTimestamp": 617,
     "AttackStrenght": 8,
     "ScriptEnabled": 0b,
     "HealthRegen": 0,
@@ -372,12 +371,12 @@
     "PersistenceRequired": 0b,
     "PotionImmune": 0b,
     "AABB": [
-        150.29658934483962d,
-        145.0d,
-        225.04576694405424d,
-        151.19658932099776d,
-        146.29999995231628d,
-        225.94576692021238d
+        42.28249594828749d,
+        112.0d,
+        882.3033422998354d,
+        43.18249592444563d,
+        113.29999995231628d,
+        883.2033422759936d
     ],
     "NpcDeathSound": "minecraft:entity.sheep.death",
     "NpcModelData": {
@@ -449,12 +448,12 @@
     "CreatureType": 0,
     "PotionDuration": 5,
     "pEffAmp": 0,
-    "TotalTicksAlive": 30728L,
+    "TotalTicksAlive": 31401L,
     "TransformHasInv": 0b,
     "Dimension": 0,
     "Texture": "thaumcraft:textures/entity/sheep.png",
     "Rotation": [
-        89.473404f,
+        137.45227f,
         0.0f
     ],
     "MinExp": 5,

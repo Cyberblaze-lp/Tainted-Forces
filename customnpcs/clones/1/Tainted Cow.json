@@ -58,11 +58,6 @@
         "dsurround:data": {
             "a": 0b,
             "f": 0b
-        },
-        "metallurgy:punch_effect": {
-            "ticks": 0,
-            "hasAiDisabled": 1b,
-            "knockbackTicks": 0
         }
     },
     "BossColor": 0,
@@ -227,6 +222,10 @@
             "Base": 1.0d
         },
         {
+            "Name": "tconevo.damageDealt",
+            "Base": 1.0d
+        },
+        {
             "Name": "generic.maxHealth",
             "Base": 5.0d,
             "Modifiers": [
@@ -281,13 +280,13 @@
             "Base": 0.4000000059604645d
         }
     ],
-    "FactionID": 5,
+    "FactionID": 2,
     "TransformHasJob": 0b,
     "Name": "Tainted Cow",
     "NpcAngrySound": "",
     "npcInteracting": 1b,
     "FindShelter": 2,
-    "HurtByTimestamp": 758,
+    "HurtByTimestamp": 117,
     "AttackStrenght": 8,
     "ScriptEnabled": 0b,
     "HealthRegen": 0,
@@ -364,20 +363,20 @@
     "ScriptLanguage": "ECMAScript",
     "MarkovGeneratorId": 3,
     "Motion": [
-        0.0d,
+        -0.0345806327858359d,
         -0.0784000015258789d,
-        0.0d
+        -0.0319529286863562d
     ],
     "CanPickUpLoot": 0b,
     "PersistenceRequired": 0b,
     "PotionImmune": 0b,
     "AABB": [
-        -207.94999998807907d,
-        154.0d,
-        439.05000001192093d,
-        -207.05000001192093d,
-        155.39999997615814d,
-        439.94999998807907d
+        76.75698501669933d,
+        149.0d,
+        1091.4758096185394d,
+        77.65698499285747d,
+        150.39999997615814d,
+        1092.3758095946976d
     ],
     "NpcDeathSound": "minecraft:entity.cow.death",
     "NpcModelData": {
@@ -446,12 +445,12 @@
     "CreatureType": 0,
     "PotionDuration": 5,
     "pEffAmp": 0,
-    "TotalTicksAlive": 21953L,
+    "TotalTicksAlive": 22264L,
     "TransformHasInv": 0b,
     "Dimension": 0,
     "Texture": "thaumcraft:textures/entity/cow.png",
     "Rotation": [
-        125.689575f,
+        132.74214f,
         0.0f
     ],
     "MinExp": 5,

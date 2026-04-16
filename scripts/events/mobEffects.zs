@@ -2,7 +2,7 @@ import crafttweaker.event.EntityLivingSpawnEvent;
 import crafttweaker.event.EntityJoinWorldEvent;
 import crafttweaker.event.EntityLivingFallEvent;
 import crafttweaker.event.EntityLivingDeathDropsEvent;
-import crafttweaker.event.EntityLivingDamageEvent;
+import crafttweaker.event.EntityLivingHurtEvent;
 import crafttweaker.entity.IEntity;
 import crafttweaker.entity.IEntityDefinition;
 import crafttweaker.potions.IPotionEffect;
@@ -26,8 +26,8 @@ events.onEntityJoinWorld(function(event as crafttweaker.event.EntityJoinWorldEve
     }
 
     if (event.entity.definition.id == <entity:thaumcraft:taintswarm>.id){
-        var levi1 = <potion:minecraft:levitation>.makePotionEffect(999999, 0 ,false, false) as IPotionEffect;
-        var levi2 = <potion:minecraft:levitation>.makePotionEffect(999999, 0 ,true, false) as IPotionEffect;
+        val levi1 = <potion:minecraft:levitation>.makePotionEffect(999999, 0 ,false, false) as IPotionEffect;
+        val levi2 = <potion:minecraft:levitation>.makePotionEffect(999999, 0 ,true, false) as IPotionEffect;
         val entity as IEntityLivingBase = event.entity;
         entity.addPotionEffect(levi1);
         entity.addPotionEffect(levi2);
@@ -89,6 +89,12 @@ events.onEntityLivingDeathDrops(function(event as crafttweaker.event.EntityLivin
     //drops
     val rand = mods.ctutils.utils.Math.getRandom().nextInt(0, 3);
     event.drops = [];
+    
+    if event.entityLivingBase.definition.id has "tiny" && mods.ctutils.utils.Math.getRandom().nextInt(0, 5) != 0
+    {
+        return;
+    }
+
     if(gooOnly has event.entityLivingBase.definition.id)
     {
         event.addItem(<contenttweaker:taint_goo>);
@@ -156,7 +162,7 @@ events.onEntityLivingUpdate(function(event as crafttweaker.event.EntityLivingUpd
 
 //make taint seeds incapable of suffocation and starvation
 
-events.onEntityLivingDamage(function(event as crafttweaker.event.EntityLivingDamageEvent){
+events.onEntityLivingHurt(function(event as crafttweaker.event.EntityLivingHurtEvent){
 
     if (isNull(event.entityLivingBase.definition))
     {
