@@ -33,6 +33,7 @@ recipes.removeShaped(<integrateddynamics:squeezer>, [[<ore:stickWood>, <ore:bloc
 
 // ================================================================================
 //#MARKER ADD SHAPELESS
+recipes.addShapeless(<minecraft:book>, [<ore:paper>, <ore:paper>, <ore:paper>, <ore:lumber>, <ore:lumber>, <ore:string>]);
 recipes.addShapeless(<tconevo:material>, [<ore:ingotBlueSteel>, <ore:ingotThaumium>, <ore:ingotThaumium>, <ore:ingotThaumium>, <appliedenergistics2:material:47>]);
 recipes.addShapeless(<embers:shard_ember> * 6, [<embers:crystal_ember>]);
 recipes.addShapeless(<minecraft:arrow> * 2, [<ore:stickWood>, <botania:petal:*>, <botania:petal:*>]);

@@ -7,6 +7,8 @@ import native.thaumicperiphery.ModContent;
 import native.thecodex6824.thaumicaugmentation.common.item.ItemThaumostaticHarness;
 import native.baubles.api.BaubleType;
 
+ //makes the pauldron actually render in any bauble slot
+ 
 #mixin {targets: "thaumicperiphery.render.LayerExtraBaubles"}
 zenClass MixinPauldron
 {
@@ -26,7 +28,7 @@ zenClass MixinPauldron
     }
 }
 
-// make pauldron able to be put in any  bauble slot bc i think it looks cool
+// make pauldron able to be put in any bauble slot bc i think it looks cool
 
 #mixin {targets: ["thaumicperiphery.items.ItemPauldron","thaumicperiphery.items.ItemPauldronRepulsion" ]}
 zenClass MixinBaubleSlot {

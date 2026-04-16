@@ -58,22 +58,17 @@
         "dsurround:data": {
             "a": 0b,
             "f": 0b
-        },
-        "metallurgy:punch_effect": {
-            "ticks": 0,
-            "hasAiDisabled": 1b,
-            "knockbackTicks": 0
         }
     },
+    "BossColor": 0,
     "CloakTexture": "",
+    "Weapons": [
+    ],
+    "pSize": 5,
     "HandDropChances": [
         0.085f,
         0.085f
     ],
-    "Weapons": [
-    ],
-    "pSize": 5,
-    "BossColor": 0,
     "BossBar": 0b,
     "MovingState": 1,
     "GroundSound": "minecraft:block.stone.break",
@@ -227,6 +222,10 @@
             "Base": 1.0d
         },
         {
+            "Name": "tconevo.damageDealt",
+            "Base": 1.0d
+        },
+        {
             "Name": "generic.maxHealth",
             "Base": 5.0d,
             "Modifiers": [
@@ -281,13 +280,13 @@
             "Base": 0.5d
         }
     ],
-    "FactionID": 5,
+    "FactionID": 2,
     "TransformHasJob": 0b,
     "Name": "Tainted Villager",
     "NpcAngrySound": "minecraft:entity.villager.no",
     "npcInteracting": 1b,
     "FindShelter": 0,
-    "HurtByTimestamp": 4908,
+    "HurtByTimestamp": 125,
     "AttackStrenght": 6,
     "ScriptEnabled": 0b,
     "HealthRegen": 0,
@@ -372,12 +371,12 @@
     "PersistenceRequired": 0b,
     "PotionImmune": 0b,
     "AABB": [
-        -50.80000001192093d,
-        158.0d,
-        440.19999998807907d,
-        -50.19999998807907d,
-        159.95000004768372d,
-        440.80000001192093d
+        45.91088828360069d,
+        111.0d,
+        882.030043088686d,
+        46.51088830744255d,
+        112.95000004768372d,
+        882.6300431125279d
     ],
     "NpcDeathSound": "minecraft:entity.villager.death",
     "NpcModelData": {
@@ -446,29 +445,12 @@
     "CreatureType": 0,
     "PotionDuration": 5,
     "pEffAmp": 0,
-    "TotalTicksAlive": 26956L,
+    "TotalTicksAlive": 27109L,
     "TransformHasInv": 0b,
     "Dimension": 0,
-    "ActiveEffects": [
-        {
-            "CurativeItems": [
-                {
-                    "id": "minecraft:milk_bucket",
-                    "Count": 1,
-                    "Damage": 0s
-                }
-            ],
-            "Duration": 188,
-            "Ambient": 0b,
-            "ShowParticles": 1b,
-            "Id": 32,
-            "Amplifier": 0b,
-            "Incurable": 0b
-        }
-    ],
     "Texture": "thaumcraft:textures/entity/villager.png",
     "Rotation": [
-        125.689575f,
+        300.4291f,
         0.0f
     ],
     "MinExp": 10,

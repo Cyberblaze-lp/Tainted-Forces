@@ -58,11 +58,6 @@
         "dsurround:data": {
             "a": 0b,
             "f": 0b
-        },
-        "metallurgy:punch_effect": {
-            "ticks": 0,
-            "hasAiDisabled": 1b,
-            "knockbackTicks": 0
         }
     },
     "CloakTexture": "",
@@ -227,6 +222,10 @@
             "Base": 1.0d
         },
         {
+            "Name": "tconevo.damageDealt",
+            "Base": 1.0d
+        },
+        {
             "Name": "generic.maxHealth",
             "Base": 0.0d,
             "Modifiers": [
@@ -281,13 +280,13 @@
             "Base": 0.4000000059604645d
         }
     ],
-    "FactionID": 5,
+    "FactionID": 2,
     "TransformHasJob": 0b,
     "Name": "Tainted Pig",
     "NpcAngrySound": "",
     "npcInteracting": 1b,
     "FindShelter": 2,
-    "HurtByTimestamp": 172,
+    "HurtByTimestamp": 179,
     "AttackStrenght": 6,
     "ScriptEnabled": 0b,
     "HealthRegen": 0,
@@ -372,12 +371,12 @@
     "PersistenceRequired": 0b,
     "PotionImmune": 0b,
     "AABB": [
-        -78.94999998807907d,
-        152.0d,
-        458.05000001192093d,
-        -78.05000001192093d,
-        152.89999997615814d,
-        458.94999998807907d
+        93.77053870074272d,
+        149.0d,
+        1099.0246263023228d,
+        94.67053867690086d,
+        149.89999997615814d,
+        1099.924626278481d
     ],
     "NpcDeathSound": "minecraft:entity.pig.death",
     "NpcModelData": {
@@ -446,7 +445,7 @@
     "CreatureType": 0,
     "PotionDuration": 5,
     "pEffAmp": 0,
-    "TotalTicksAlive": 20703L,
+    "TotalTicksAlive": 20929L,
     "TransformHasInv": 0b,
     "Dimension": 0,
     "ActiveEffects": [
@@ -458,17 +457,17 @@
                     "Damage": 0s
                 }
             ],
-            "Duration": 166,
+            "Duration": 89,
             "Ambient": 0b,
             "ShowParticles": 1b,
             "Id": 32,
-            "Amplifier": 0b,
+            "Amplifier": 1b,
             "Incurable": 0b
         }
     ],
     "Texture": "thaumcraft:textures/entity/pig.png",
     "Rotation": [
-        125.689575f,
+        273.41473f,
         0.0f
     ],
     "MinExp": 5,

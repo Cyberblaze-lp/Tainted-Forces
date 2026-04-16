@@ -52,4 +52,13 @@ furnace.addRecipe(<tfc:food/cooked_mutton>, <tfc:food/mutton>, 0.2);
 furnace.addRecipe(<tfc:food/cooked_horse_meat>, <tfc:food/horse_meat>, 0.2);
 
 
+//how long in secs the item with decayMod should take to rot
+
+
+val ticksToDecay as int = 6100;
+// for some odd reason tfc takes the reciprocal of this
+val decayMod as float = 22.0f*24000.0f /ticksToDecay as float;
+
+ItemRegistry.registerFood(<contenttweaker:taint_goo>, 0, 0.0, 0.0, decayMod, 0.0, 0.0, 0.0, 0.0, 0.0);
+ItemRegistry.registerFood(<contenttweaker:taint_tendril>, 0, 0.0, 0.0, decayMod, 0.0, 0.0, 0.0, 0.0, 0.0);
 

@@ -3,7 +3,7 @@
     "AttackInvisible": 0b,
     "AbsorptionAmount": 0.0f,
     "SpawnCycle": 3,
-    "Accuracy": 1,
+    "Accuracy": 100,
     "IsStatue": 0b,
     "MovingPatern": 0,
     "HideBodyWhenKilled": 0b,
@@ -18,7 +18,7 @@
         {
         }
     ],
-    "pRender3D": 1b,
+    "pRender3D": 0b,
     "TransformHasAdvanced": 0b,
     "Resistances": {
         "Explosion": 0.0f,
@@ -58,11 +58,6 @@
         "dsurround:data": {
             "a": 0b,
             "f": 0b
-        },
-        "metallurgy:punch_effect": {
-            "ticks": 0,
-            "hasAiDisabled": 1b,
-            "knockbackTicks": 0
         }
     },
     "BossColor": 0,
@@ -86,15 +81,6 @@
     "MovingPause": 1b,
     "FiringSound": "minecraft:entity.creeper.primed",
     "Scripts": [
-        {
-            "ScriptList": [
-            ],
-            "Console": [
-            ],
-            "Script": "function meeleeAttack(e){
-  e.npc.say(\"die mf die\")
-}"
-        }
     ],
     "ShowName": 1,
     "LinkedNpcName": "",
@@ -122,7 +108,7 @@
     "StandingState": 0,
     "MoveSpeed": 5,
     "CombatRegen": 0,
-    "Fire": 0s,
+    "Fire": -1s,
     "ModRev": 18,
     "KilledTime": 0L,
     "WalkingRange": 10,
@@ -175,7 +161,7 @@
     "TransformHasRole": 0b,
     "AggroRange": 30,
     "OnGround": 1b,
-    "MaxFiringRange": 2,
+    "MaxFiringRange": 1,
     "pEffect": 0,
     "HitSound": "minecraft:entity.arrow.hit",
     "pPhysics": 1b,
@@ -236,6 +222,10 @@
             "Base": 1.0d
         },
         {
+            "Name": "tconevo.damageDealt",
+            "Base": 1.0d
+        },
+        {
             "Name": "generic.maxHealth",
             "Base": 5.0d,
             "Modifiers": [
@@ -274,7 +264,7 @@
         },
         {
             "Name": "generic.attackDamage",
-            "Base": 1.0d,
+            "Base": 0.0d,
             "Modifiers": [
                 {
                     "Name": "DAMAGE BUFF 1",
@@ -290,15 +280,15 @@
             "Base": 0.5d
         }
     ],
-    "FactionID": 3,
+    "FactionID": 2,
     "TransformHasJob": 0b,
     "Name": "Tainted Creeper",
     "NpcAngrySound": "",
     "npcInteracting": 1b,
     "FindShelter": 0,
-    "HurtByTimestamp": 318,
-    "AttackStrenght": 1,
-    "ScriptEnabled": 1b,
+    "HurtByTimestamp": 190,
+    "AttackStrenght": 0,
+    "ScriptEnabled": 0b,
     "HealthRegen": 0,
     "pXlr8": 0b,
     "NpcStepSound": "",
@@ -381,12 +371,12 @@
     "PersistenceRequired": 0b,
     "PotionImmune": 0b,
     "AABB": [
-        -555.6783432354704d,
+        44.00043088008105d,
         149.0d,
-        283.1607820513212d,
-        -555.0783432116285d,
+        1050.1709104512447d,
+        44.600430903922906d,
         150.70000004768372d,
-        283.76078207516304d
+        1050.7709104750866d
     ],
     "NpcDeathSound": "minecraft:entity.creeper.death",
     "NpcModelData": {
@@ -455,12 +445,12 @@
     "CreatureType": 0,
     "PotionDuration": 5,
     "pEffAmp": 0,
-    "TotalTicksAlive": 43578L,
+    "TotalTicksAlive": 35431L,
     "TransformHasInv": 0b,
     "Dimension": 0,
     "Texture": "thaumcraft:textures/entity/creeper.png",
     "Rotation": [
-        251.39728f,
+        276.37164f,
         0.0f
     ],
     "MinExp": 5,
@@ -472,7 +462,7 @@
         "Lines": [
         ]
     },
-    "DistanceToMelee": 1,
+    "DistanceToMelee": 0,
     "AvoidsSun": 0b,
     "Air": 300s,
     "HandItems": [
@@ -488,7 +478,7 @@
     "FallDistance": 0.0f,
     "CanSwim": 1b,
     "MaxHealth": 5,
-    "Health": 30.0f,
+    "Health": 29.0f,
     "UsingSkinUrl": 0b,
     "PortalCooldown": 0
 }

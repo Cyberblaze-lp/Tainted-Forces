@@ -11,10 +11,10 @@ import crafttweaker.server.IServer;
 
 //for now, let's use cubic growth (discounting stage 1)
 val stage1 as int = 1;
-val stage2 as int = 100;
-val stage3 as int = 800;
-val stage4 as int = 2700;
-val stage5 as int = 6400;
+val stage2 as int = 300;
+val stage3 as int = 2400;
+val stage4 as int = 8100;
+val stage5 as int = 19200;
 
 function evoThreshold(evo as string, amount as int, world as IWorld) as bool{
 var rules =world.getGameRules();
