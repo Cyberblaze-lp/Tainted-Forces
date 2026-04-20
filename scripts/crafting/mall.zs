@@ -109,7 +109,7 @@ for item in <railcraft:track_kit>.definition.subItems{
 }
 
 mods.chisel.Carving.addGroup("e_tubes");
-val e_tubes as IItemStack[] =[<thaumcraft:tube>,<thaumcraft:tube_oneway>,<thaumcraft:tube_restrict>,<thaumicaugmentation:glass_tube>];
+val e_tubes as IItemStack[] =[<thaumcraft:tube>,<thaumcraft:tube_valve>,<thaumcraft:tube_oneway>,<thaumcraft:tube_restrict>,<thaumcraft:tube_filter>,<thaumicaugmentation:glass_tube>];
 for item in e_tubes
 {
     mods.chisel.Carving.addVariation("e_tubes", item);

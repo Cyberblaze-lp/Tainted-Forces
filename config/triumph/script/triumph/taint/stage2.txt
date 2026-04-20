@@ -26,8 +26,7 @@ setPos(58,-16)
 //Adds criteria named "hasSteel" with the trigger type "minecraft:inventory_changed". This function returns the criteria as an object
 criteria = addCriteria("hasSteel", "minecraft:inventory_changed")
 
-//Adds the required item for the criteria. This is the item that needs to be in the player inventory.
-criteria.addItem(<ore:ingotSteel>)
+criteria = addCriteria("impossible", "minecraft:impossible")
 
 
 

@@ -1,31 +1,4 @@
-setblock ~ ~ ~ thaumcraft:taint_crust
-setblock ~-1 ~ ~ thaumcraft:taint_crust
-setblock ~-1 ~ ~-1 thaumcraft:taint_crust
-setblock ~ ~ ~-1 thaumcraft:taint_crust
-setblock ~ ~1 ~ thaumcraft:taint_feature 1
-setblock ~-1 ~1 ~ thaumcraft:taint_feature 1
-setblock ~-1 ~1 ~-1 thaumcraft:taint_feature 1
-setblock ~ ~1 ~-1 thaumcraft:taint_feature 1
-setblock ~ ~2 ~ thaumcraft:taint_crust
-setblock ~-1 ~2 ~ thaumcraft:taint_crust
-setblock ~-1 ~2 ~-1 thaumcraft:taint_crust
-setblock ~ ~2 ~-1 thaumcraft:taint_crust
-setblock ~1 ~ ~ thaumcraft:taint_crust
-setblock ~1 ~1 ~ thaumcraft:taint_crust
-setblock ~ ~ ~1 thaumcraft:taint_crust
-setblock ~ ~1 ~1 thaumcraft:taint_crust
-setblock ~1 ~ ~-1 thaumcraft:taint_crust
-setblock ~1 ~1 ~-1 thaumcraft:taint_crust
-setblock ~-1 ~ ~1 thaumcraft:taint_crust
-setblock ~-1 ~1 ~1 thaumcraft:taint_crust
-setblock ~-2 ~ ~ thaumcraft:taint_crust
-setblock ~-2 ~ ~-1 thaumcraft:taint_crust
-setblock ~ ~ ~-2 thaumcraft:taint_crust
-setblock ~-1 ~ ~-2 thaumcraft:taint_crust
-setblock ~-2 ~1 ~ thaumcraft:taint_crust
-setblock ~-2 ~1 ~-1 thaumcraft:taint_crust
-setblock ~ ~1 ~-2 thaumcraft:taint_crust
-setblock ~-1 ~1 ~-2 thaumcraft:taint_crust
+
 summon tconstruct:fancy_frame ~ ~ ~
 execute @e[r=2,type=tconstruct:fancy_frame] ~ ~ ~ function triumph:nestlargeseeds
 kill @e[r=5,type=thaumcraft:taintcrawler]

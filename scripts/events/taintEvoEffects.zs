@@ -26,10 +26,23 @@ if(isNull(rules.getInt("taintEvo")))
 return (rules.getInt("taintEvo") >= amount);
 }
 
+function evoNr(evo as string, world as IWorld) as int
+{
+    var rules =world.getGameRules();
+    if(isNull(rules.getInt("taintEvo")))
+    {
+        return false;
+    }   
+
+    return rules.getInt("taintEvo");
+
+}
+
+
 
 
 events.onWorldTick(function(event as crafttweaker.event.WorldTickEvent){
-if !(event.world.random.nextInt(0, 300) == 0)
+if !(event.world.random.nextInt(0, 500) == 0)
 {
     return;
 }
@@ -57,7 +70,14 @@ else
 if(evoThreshold("taintEvo", stage3, event.world))
 {
     server.commandManager.executeCommandSilent(server, "advancement grant @a only triumph:taint/stage3");
-    server.commandManager.executeCommandSilent(server, "execute @r[type=thaumcraft:taintseed,tag=!nest] ~ ~ ~ function triumph:nestlarge");
+    server.commandManager.executeCommandSilent(server, "scoreboard objectives add isNest dummy");
+    server.commandManager.executeCommandSilent(server, "execute @r[type=thaumcraft:taintseed,tag=!nest] ~ ~ ~ pillar-spawn nest_s3");
+    
+
+    //decreases the evo a bit tocompensate for each nest having like 4 seeds and 1  getting killed
+    //will not revert back to pre-stage 3
+    val decrement as int= - min(evoNr("taintEvo", event.world)- stage3, 4);
+    scripts.events.taintEvoCause.evolve("taintEvo", decrement, event.world);
     
 
 }

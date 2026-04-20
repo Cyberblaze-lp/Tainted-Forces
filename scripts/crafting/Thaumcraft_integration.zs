@@ -136,10 +136,10 @@ mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:filter>);
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:alembic>);
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:alembic>);
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:turret>);
-mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("filters 2.0", "ESSENTIASMELTER", 50, [<aspect:aqua>], <thaumcraft:filter>*2, [[<ore:ingotGold>,<thaumcraft:plank_silverwood>,<ore:ingotGold>]]);
+
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:mechanism_simple>);
 
-mods.thaumcraft.ArcaneWorkbench.registerShapelessRecipe("valves 2.0", "TUBES", 15, [], <thaumcraft:tube_valve>*8, [<tfc:brass_mechanisms>,<thaumcraft:tube>,<thaumcraft:tube>,<thaumcraft:tube>,<thaumcraft:tube>,<thaumcraft:tube>,<thaumcraft:tube>,<thaumcraft:tube>,<thaumcraft:tube>]);
+
 mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("buffers 2.0", "TUBES", 15, [], <thaumcraft:tube_buffer>*4, [[<thaumcraft:phial>,<thaumcraft:tube>,<thaumcraft:phial>],[<thaumcraft:tube>,<thaumcraft:mechanism_simple>,<thaumcraft:tube>],[<thaumcraft:phial>,<thaumcraft:tube>,<thaumcraft:phial>] ]);
 mods.thaumcraft.ArcaneWorkbench.registerShapelessRecipe("tubes 2.0", "TUBES", 15, [<aspect:ordo>], <thaumcraft:tube>*8, [<ore:sheetToolMetal>, <ore:nuggetQuicksilver>, <ore:nuggetLead>, <ore:nuggetLead>, <ore:nuggetLead>]);
 mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("alembics 2.0", "ESSENTIASMELTER", 15, [<aspect:aqua>,<aspect:ordo>,<aspect:perditio>], <thaumcraft:alembic>, [[<thaumcraft:plank_greatwood>, <ore:springBrass>, <thaumcraft:plank_greatwood>],[<thaumcraft:filter>, <ore:springBrass>, <thaumcraft:phial>],[<thaumcraft:plank_greatwood>, <ore:springBrass>, <thaumcraft:plank_greatwood>]]);
@@ -254,6 +254,20 @@ ItemRegistry.registerArmor(<thaumcraft:void_robe_helm>, 55.0, 70.0,50.0);
 ItemRegistry.registerArmor(<thaumcraft:void_robe_chest>, 505.0, 70.0,50.0);
 ItemRegistry.registerArmor(<thaumcraft:void_robe_legs>, 55.0, 70.0,50.0);
 ItemRegistry.registerArmor(<thaumicaugmentation:void_boots>, 55.0, 70.0,50.0);
+
+
+// metal chest conversion
+
+mods.thaumcraft.SalisMundus.addSingleConversion(<ore:chestWood>, <thaumcraft:hungry_chest>, "HUNGRYCHEST");
+mods.thaumcraft.SalisMundus.addSingleConversion(<ore:chestCopper>, <metalchests:metal_hungry_chest:0>, "HUNGRYCHEST");
+mods.thaumcraft.SalisMundus.addSingleConversion(<ore:chestIron>, <metalchests:metal_hungry_chest:1>, "HUNGRYCHEST");
+mods.thaumcraft.SalisMundus.addSingleConversion(<ore:chestSilver>, <metalchests:metal_hungry_chest:2>, "HUNGRYCHEST");
+mods.thaumcraft.SalisMundus.addSingleConversion(<ore:chestGold>, <metalchests:metal_hungry_chest:3>, "HUNGRYCHEST");
+mods.thaumcraft.SalisMundus.addSingleConversion(<ore:chestDiamond>, <metalchests:metal_hungry_chest:4>, "HUNGRYCHEST");
+mods.thaumcraft.SalisMundus.addSingleConversion(<ore:chestObsidian>, <metalchests:metal_hungry_chest:5>, "HUNGRYCHEST");
+
+recipes.removeByMod("metalchests");
+
 
 
 

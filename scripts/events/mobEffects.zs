@@ -25,7 +25,8 @@ events.onEntityJoinWorld(function(event as crafttweaker.event.EntityJoinWorldEve
         return;
     }
 
-    if (event.entity.definition.id == <entity:thaumcraft:taintswarm>.id){
+    if (event.entity.definition.id == <entity:thaumcraft:taintswarm>.id)
+    {
         val levi1 = <potion:minecraft:levitation>.makePotionEffect(999999, 0 ,false, false) as IPotionEffect;
         val levi2 = <potion:minecraft:levitation>.makePotionEffect(999999, 0 ,true, false) as IPotionEffect;
         val entity as IEntityLivingBase = event.entity;

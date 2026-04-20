@@ -106,6 +106,7 @@ events.onEntityJoinWorld(function(event as EntityJoinWorldEvent){
     
     function addClouds2 (entity as IEntity) as void
 {
+    
     if isNull(ClientTickHandler.weatherManager)
     {
         return;

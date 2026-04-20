@@ -10,13 +10,7 @@
 				   ["thaumcraft:tubes 2.0"]
             		
         },
-		{
-                "op":"add",
-                "path": "stages/1/recipes/2",
-            "value": 	
-				   ["thaumcraft:valves 2.0"]
-            		
-        },
+		
 		{
                 "op":"add",
                 "path": "stages/1/recipes/10",

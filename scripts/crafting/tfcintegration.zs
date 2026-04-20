@@ -55,10 +55,14 @@ ItemRegistry.registerFood(<minecraft:pumpkin_pie>, 4, 100.0, 0.0, 0.0, 0.0, 0.0,
 mods.thermalexpansion.Compactor.removeMintRecipe(<thermalfoundation:coin:*>);
 */
 
-
-
 recipes.remove(<minecraft:glass_bottle>);
 
+
+
+for item in <ore:hammer>.items
+{
+	item.definition.setHarvestLevel("IE_HAMMER", 1); 
+}
 
 
 ItemRegistry.registerItemMetal(<thaumcraft:mind>,"brass",288,true);
