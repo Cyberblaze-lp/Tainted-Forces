@@ -1,0 +1,20 @@
+{
+    "parent": "modularmachinery:block/blockmodel_overlay",
+    "textures": {
+        "particle": "modularmachinery:blocks/blockcasing_plain",
+
+        "bg_down": "modularmachinery:blocks/blockcasing_plain",
+        "bg_up": "modularmachinery:blocks/blockcasing_plain",
+        "bg_north": "modularmachinery:blocks/blockcasing_plain",
+        "bg_east": "modularmachinery:blocks/blockcasing_plain",
+        "bg_south": "modularmachinery:blocks/blockcasing_plain",
+        "bg_west": "modularmachinery:blocks/blockcasing_plain",
+
+        "ov_down": "modularmachinery:blocks/overlay_transparent",
+        "ov_up": "modularmachinery:blocks/overlay_transparent",
+        "ov_north": "modularmachinery:blocks/overlay_firebox",
+        "ov_east": "modularmachinery:blocks/overlay_firebox",
+        "ov_south": "modularmachinery:blocks/overlay_firebox",
+        "ov_west": "modularmachinery:blocks/overlay_firebox"
+    }
+}
