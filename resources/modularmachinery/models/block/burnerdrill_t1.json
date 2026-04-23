@@ -1,9 +1,46 @@
 {
-    "parent": "modularmachinery:block/blockmodel_overlay_orientable_all",
     "textures": {
         "bg_all": "modularmachinery:blocks/blockcasing_plain",
-        "ov_top": "modularmachinery:blocks/overlay_transparent",
-        "ov_side": "modularmachinery:blocks/overlay_transparent",
-        "ov_front": "modularmachinery:blocks/overlay_burnerdrill_t1"
-    }
+        "ov_front": "modularmachinery:blocks/overlay_burnerdrill_t1",
+        "ov_front_emissive": "modularmachinery:blocks/overlay_burnerdrill_t1_emissive",
+        "transparent": "modularmachinery:blocks/overlay_transparent"
+    },
+    "elements": [
+        {
+            "from": [ 0, 0, 0 ],
+            "to": [ 16, 16, 16 ],
+            "faces": {
+                "down":  { "texture": "#bg_all",  "cullface": "down",  "tintindex": 1 },
+                "up":    { "texture": "#bg_all",  "cullface": "up",    "tintindex": 1 },
+                "north": { "texture": "#bg_all",  "cullface": "north", "tintindex": 1 },
+                "south": { "texture": "#bg_all",  "cullface": "south", "tintindex": 1 },
+                "west":  { "texture": "#bg_all",  "cullface": "west",  "tintindex": 1 },
+                "east":  { "texture": "#bg_all",  "cullface": "east",  "tintindex": 1 }
+            }
+        },
+        {
+            "from": [ 0, 0, 0 ],
+            "to": [ 16, 16, 16 ],
+            "faces": {
+                "down":  { "texture": "#transparent",  "cullface": "down" },
+                "up":    { "texture": "#transparent",  "cullface": "up" },
+                "north": { "texture": "#ov_front",     "cullface": "north" },
+                "south": { "texture": "#transparent",  "cullface": "south" },
+                "west":  { "texture": "#transparent",  "cullface": "west" },
+                "east":  { "texture": "#transparent",  "cullface": "east" }
+            }
+        },
+        {
+            "from": [ 0, 0, 0 ],
+            "to": [ 16, 16, 16 ],
+            "faces": {
+                "down":  { "texture": "#transparent",       "cullface": "down" },
+                "up":    { "texture": "#transparent",       "cullface": "up" },
+                "north": { "texture": "#ov_front_emissive", "cullface": "north" },
+                "south": { "texture": "#transparent",       "cullface": "south" },
+                "west":  { "texture": "#transparent",       "cullface": "west" },
+                "east":  { "texture": "#transparent",       "cullface": "east" }
+            }
+        }
+    ]
 }
