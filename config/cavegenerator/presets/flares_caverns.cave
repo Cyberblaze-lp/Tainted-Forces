@@ -11,7 +11,7 @@
     defaults.cave::caveBlocks as LAVA_CAVE_BLOCK
     blocks.cave::ROCKSTFCWATER as ROCKSTFCWATER
   ]
-  enabled: true
+  enabled: false
   caverns: {
     generators: [
       {

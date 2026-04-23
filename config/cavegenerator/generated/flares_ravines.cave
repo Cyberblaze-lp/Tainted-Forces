@@ -10,7 +10,7 @@
   enabled: true
   ravines: {
     biomes: {
-      names: [ "tfc:plains", "tfc:rolling_hills", "tfc:high_plains", "tfc:high_hills_edge", "tfc:mountains_edge" ]
+      names: [ "tfc:plains", "tfc:rolling_hills", "tfc:high_plains", "tfc:high_hills_edge", "tfc:mountains_edge", "tfc:high_hills", "tfc:mountains", "tfc:river" ]
     }
     replaceableBlocks: [
       tfc:fluid/fresh_water

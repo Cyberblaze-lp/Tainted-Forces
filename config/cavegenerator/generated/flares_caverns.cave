@@ -7,7 +7,7 @@
 # of ravines, while disabling other cave-related features.    #
 # ----------------------------------------------------------- #
 {
-  enabled: true
+  enabled: false
   caverns: {
     generators: [
       {
