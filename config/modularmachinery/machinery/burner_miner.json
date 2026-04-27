@@ -18,7 +18,7 @@
             "z": 1,
            
             "elements": [
-                "modularmachinery:blockcasing@3"
+                "drillside"
             ]
         },
         {
@@ -66,7 +66,7 @@
             "y": 0,
             "z": 1,
             "elements": [
-                "modularmachinery:blockaspectproviderinput@0"
+                "drillside"
             ]
         },
         {
@@ -75,7 +75,7 @@
             "z": 1,
             
             "elements": [
-                "modularmachinery:blockcasing@3"
+                "thaumcraft:metal_alchemical"
             ]
         },
         {
@@ -144,7 +144,7 @@
             "z": 2,
             
             "elements": [
-                "modularmachinery:blockoutputbus@2"
+                "drillside"
             ]
         },
         {

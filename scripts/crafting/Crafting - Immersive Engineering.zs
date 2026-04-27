@@ -215,9 +215,9 @@ import mods.advancedrocketry.ArcFurnace;
 //Coke Oven
 
 	//Add
-	mods.immersiveengineering.CokeOven.addRecipe(<immersiveengineering:material:6> * 3, 500, <tfc:ore/bituminous_coal>, 1000);
-	mods.immersiveengineering.CokeOven.addRecipe(<immersiveengineering:material:6> * 2, 500, <tfc:ore/lignite>, 1200);
-	mods.immersiveengineering.CokeOven.addRecipe(<immersiveengineering:material:6> * 1, 500, <tfc:peat>, 1500);
+	mods.immersiveengineering.CokeOven.addRecipe(<immersiveengineering:material:6> * 3, 500, <tfc:ore/bituminous_coal>*4, 1000);
+	mods.immersiveengineering.CokeOven.addRecipe(<immersiveengineering:material:6> * 2, 500, <tfc:ore/lignite>*4, 1200);
+	mods.immersiveengineering.CokeOven.addRecipe(<immersiveengineering:material:6> * 1, 500, <tfc:peat>*4, 1500);
 	
 
 //=======================================================================================================================================================================

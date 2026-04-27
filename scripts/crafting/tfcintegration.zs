@@ -9,6 +9,7 @@ import mods.terrafirmacraft.Barrel;
 import mods.thaumcraft.SalisMundus;
 import mods.firmalife.Oven;
 import mods.immersiveintelligence.ChemicalBath;
+import mods.astralsorcery.Grindstone;
 mods.immersiveintelligence.ChemicalBath.addRecipe(<ore:stoneMarble>, <astralsorcery:blockmarble>, <liquid:hydrofluoric_acid>*50, 3000, 30);
 
 
@@ -70,9 +71,7 @@ ItemRegistry.registerItemMetal(<immersiveengineering:drillhead:1>,"wrought_iron"
 ItemRegistry.registerItemMetal(<immersiveengineering:drillhead>,"steel",288,true);
 ItemRegistry.registerItemMetal(<betternether:cincinnasite>,"brass",32,true);
 ItemRegistry.registerItemMetal(<thaumcraft:mind:1>,"brass",288,true);
-Quern.removeRecipe(<minecraft:redstone>);
-Quern.addRecipe("lessredstone", <tfc:ore/cinnabar>, <minecraft:redstone>*4);
-Quern.addRecipe("lessredstone2", <tfc:ore/cryolite>, <minecraft:redstone>*4);
+
 recipes.remove(<tfctech:powder/potash>);
 recipes.remove(<tfctech:smeltery_firebox>);
 recipes.remove(<tfctech:smeltery_cauldron>);
@@ -132,6 +131,30 @@ Welding.addRecipe("steeldrill",<ore:sheetDoubleSteel>, <tfc:metal/mace_head/stee
 Welding.addRecipe("diairondrill",<immersiveengineering:drillhead:1>, <tfcthings:diamond_grit>, <immersiveintelligence:drillhead:1>, 3);
 Welding.addRecipe("diasteeldrill",<immersiveengineering:drillhead>, <tfcthings:diamond_grit>, <immersiveintelligence:drillhead:2>, 4);
 Welding.addRecipe("engineershammer",<tfcthings:prospectors_hammer/wrought_iron>, <ore:ingotNickel>, <immersiveengineering:tool>, 3);
+
+
+Grindstone.addRecipe(<tfc:ore/saltpeter>, <tfc:powder/saltpeter>*3, 0.5f);
+Grindstone.addRecipe(<tfc:ore/cinnabar>, <minecraft:redstone>*4, 0.5f);
+Grindstone.addRecipe(<tfc:ore/cryolite>, <minecraft:redstone>*4, 0.5f);
+
+Grindstone.addRecipe(<tfc:ore/halite>, <tfc:powder/salt>*2, 0.5f);
+Grindstone.addRecipe(<tfc:rock/rocksalt>, <tfc:powder/salt>, 0.5f);
+Grindstone.addRecipe(<tfc:ore/kimberlite>, <tfc:gem/diamond:2>, 0.5f);
+
+
+Grindstone.addRecipe(<tfc:ore/lapis_lazuli>, <tfc:powder/lapis_lazuli>, 0.0f);
+Grindstone.addRecipe(<tfc:ore/graphite>, <tfc:powder/graphite>*3, 0.5f);
+Grindstone.addRecipe(<tfc:ore/kaolinite>, <tfc:powder/kaolinite>*3, 0.5f);
+
+
+
+Grindstone.addRecipe(<tfc:brick/quartzite>, <tfcthings:whetstone>, 0.0f);
+
+
+
+
+
+
 
 
 

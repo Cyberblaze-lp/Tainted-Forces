@@ -260,7 +260,6 @@ recipes.remove(<embers:pipe>);
 recipes.remove(<embers:item_pipe>);
 recipes.remove(<embers:pump>);
 recipes.remove(<embers:item_pump>);
-Welding.addRecipe("fluidpump",<ore:ingotDoubleIron>, <minecraft:iron_bars>, <embers:pump>*12, 2);
 Welding.addRecipe("tinkerhammer",<tfc:metal/hammer/wrought_iron>, <ore:plateLead>, <embers:tinker_hammer>, 2);
 
 

@@ -127,6 +127,45 @@ for item in emberadv
 }
 
 
+mods.chisel.Carving.addGroup("gearboxes");
+val gearboxes as IItemStack[] =[<mysticalmechanics:gearbox_frame>, <mysticalmechanics:mergebox_frame>,<immersiveintelligence:gearbox>,<immersiveintelligence:mechanical_device>,<immersiveintelligence:mechanical_connector>];
+for item in gearboxes
+{
+mods.chisel.Carving.addVariation("gearboxes", item);
+recipes.remove(item);
+
+}
+
+mods.chisel.Carving.addGroup("gauges");
+val gauges as IItemStack[] =[<tfc:brass_mechanisms>, <embers:ember_gauge>,<embers:fluid_gauge>,<embers:item_gauge>,<mystgears:mechanical_dial>,<embers:clockwork_attenuator>,<pneumaticcraft:pressure_gauge_module>,<questionablyimmersive:metal_device>];
+for item in gauges
+{
+mods.chisel.Carving.addVariation("gauges", item);
+recipes.remove(item);
+
+}
+
+mods.chisel.Carving.addGroup("fluidlogistics");
+val fluidlogi as IItemStack[] =[<thermaldynamics:duct_16:1>,<thermaldynamics:duct_16>,<embers:pump>,<embers:fluid_transfer>, <firmalife:sprinkler>];
+for item in fluidlogi
+{
+mods.chisel.Carving.addVariation("fluidlogistics", item);
+recipes.remove(item);
+
+}
+
+mods.chisel.Carving.addGroup("fluidlogisticssimple");
+val fluidlogisimple as IItemStack[] =[<tfc:ceramics/fired/fire_brick>,<tconstruct:faucet>,<tconstruct:channel>,<firmalife:spout>];
+for item in fluidlogisimple
+{
+mods.chisel.Carving.addVariation("fluidlogisticssimple", item);
+recipes.remove(item);
+
+}
+
+
+
+
 
 
 

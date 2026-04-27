@@ -36,7 +36,7 @@ mods.immersivetechnology.MeltingCrucible.removeRecipe(<minecraft:cobblestone>);
 
 
 <contenttweaker:taint_tendril>.setAspects(<aspect:vitium>*10,<aspect:desiderium>*5,<aspect:victus>*5);
-<contenttweaker:taint_goo>.setAspects(<aspect:vitium>*10,<aspect:aqua>*10,<aspect:victus>*5);
+<contenttweaker:taint_goo>.setAspects(<aspect:vitium>*10,<aspect:aqua>*10,<aspect:victus>*10, <aspect:alkimia>*2);
 <thaumcraft:taint_fibre>.setAspects(<aspect:vitium>*10,<aspect:victus>*5);
 <tfc:powder/flux>.setAspects(<aspect:vitium>*2,<aspect:ordo>*2,<aspect:terra>*5);
 

@@ -9,6 +9,9 @@ import native.net.minecraft.world.World;
 import native.net.minecraft.util.math.BlockPos;
 import native.net.minecraft.item.ItemStack;
 import native.blusunrize.immersiveengineering.common.util.Utils;
+import native.net.minecraftforge.event.RegistryEvent;
+import mixin.CallbackInfo;
+import mixin.CallbackInfoReturnable;
 
 
 #mixin {targets: "net.dries007.tfc.objects.items.ItemsTFC"}
@@ -56,13 +59,23 @@ zenClass MixinFirebrickBack {
     #mixin Overwrite 
     function getOriginalBlock() as ItemStack
     {
-        //return BlocksTFC.FIRE_BRICKS.getItem(null, null,BlocksTFC.FIRE_BRICKS.getStateFromMeta(0));
+        
         return ItemStack(BlocksTFC.FIRE_BRICKS);
     }
 
 }
 
+#mixin {targets: "net.dries007.tfc.types.DefaultRecipes" }
+zenClass MixinNukeQuern {
 
+    
+    #mixin Static
+    #mixin Inject {method: "onRegisterQuernRecipeEvent", at: {value: "HEAD"}, cancellable: true}
+    function nukeQuern(register as native.net.minecraftforge.event.RegistryEvent.Register, ci as CallbackInfo) as void {
+        ci.cancel();
+        return;
+    }
+}
 
 
 
