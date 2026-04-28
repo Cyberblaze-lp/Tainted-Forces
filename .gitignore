@@ -43,6 +43,7 @@ patchouli_data.json
 /config/*cache*
 /config/probezs.cfg
 /config/customloadingscreen_timings.nbt
+/config/cleanroom_load_timings.dat
 
 # Client stuff
 /config/jei/worldSettings.cfg
