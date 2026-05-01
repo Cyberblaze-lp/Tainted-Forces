@@ -52,6 +52,7 @@ patchouli_data.json
 /journeymap
 /mineraltracker
 /local
+/visualores
 knownkeys.txt
 hei_bookmarks.ini
 optionsshaders.txt
@@ -77,6 +78,7 @@ OpenComputersMod*
 /mods/TickCentral-3.2.jar
 /mods/FTBLib*
 /mods/FTBUtilities*
+*.nps
 
 /config/ftblib.cfg
 /config/ftbutilities.cfg
