@@ -312,27 +312,7 @@ mods.modularmachinery.RecipeBuilder.newBuilder("coolingtowerrecipe_waterfromStea
 })
 .build();
 
-mods.modularmachinery.RecipeBuilder.newBuilder("coolingtowerrecipe_waterfromExhaustSteamF", "cooling_tower_t2", 5)
-.addFluidInput(<liquid:fresh_water>*2000)
-.addFluidInput(<liquid:exhauststeam>*1000)
-.addItemOutput(<thebetweenlands:items_misc:27>)
-.setChance(0.65)
-.addFluidOutput(<liquid:ic2distilled_water>*80)
-.addStartHandler(function (event as RecipeStartEvent){
-   addClouds(event.controller);
-})
-.build();
 
-mods.modularmachinery.RecipeBuilder.newBuilder("coolingtowerrecipe_waterfromSteamF", "cooling_tower_t2", 5)
-.addFluidInput(<liquid:fresh_water>*2000)
-.addFluidInput(<liquid:steam>*500)
-.addItemOutput(<thebetweenlands:items_misc:27>)
-.setChance(0.65)
-.addFluidOutput(<liquid:ic2distilled_water>*80)
-.addStartHandler(function (event as RecipeStartEvent){
-   addClouds(event.controller);
-})
-.build();
 
 //burner drill stuff
 

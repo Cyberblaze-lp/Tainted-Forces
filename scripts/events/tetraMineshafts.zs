@@ -97,18 +97,8 @@ events.onEntityJoinWorld(function (event as crafttweaker.event.EntityJoinWorldEv
                 .then(function(world, context)
                 {
                     event.entity.setPosition(entityPosOffset);
-                }
-                )
-
-				
+                })
 				.start();
-           
-            
-            
-            
-            
-            
-            
             return;
         }
 

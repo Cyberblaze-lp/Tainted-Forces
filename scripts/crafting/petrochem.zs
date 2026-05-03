@@ -10,7 +10,7 @@ import moretweaker.betweenlands.Purifier;
 mods.immersivepetroleum.Distillation.addRecipe([<liquid:stagnant_water>*5, <liquid:lubricant> * 8, <liquid:diesel> * 5,<liquid:lpg>*2], [<tfc:powder/coke>, <thebetweenlands:mud>], <liquid:oil>*20, 500, 10, [0.05, 0.1]);
 mods.immersivepetroleum.Distillation.addRecipe([<liquid:stagnant_water>*10, <liquid:ammonia> * 25,<liquid:methanol>*15, <liquid:carbon_monoxide>*5], [<thebetweenlands:sludge_ball>], <liquid:fog>*100, 500, 10, [0.05]);
 mods.immersivepetroleum.Distillation.addRecipe([ <liquid:nitrogen> * 80, <liquid:oxygen> * 19,<liquid:carbon_dioxide>*1], [], <liquid:ic2air>*100, 500, 10, []);
-mods.immersivepetroleum.Distillation.addRecipe([ <liquid:fresh_water>*90,<liquid:vinegar>*10], [], <liquid:swamp_water>*100, 500, 10, []);
+mods.immersivepetroleum.Distillation.addRecipe([ <liquid:water>*90,<liquid:vinegar>*10], [], <liquid:swamp_water>*100, 500, 10, []);
 mods.immersivepetroleum.Distillation.addRecipe([ <liquid:kerosene>*30,<liquid:refined_oil>*20, <liquid:gasoline>*50], [<thebetweenlands:sludge_ball>], <liquid:diesel>*100, 500, 50, [0.2]);
 
 mods.immersiveengineering.Mixer.addRecipe(<liquid:oil>*2000, <liquid:limewater>*2000,[<thebetweenlands:items_misc:26>], 5000);
@@ -55,7 +55,7 @@ mods.pneumaticcraft.thermopneumaticprocessingplant.addRecipe(<liquid:lubricant>*
 mods.pneumaticcraft.thermopneumaticprocessingplant.addRecipe(<liquid:kerosene>*16000, <thebetweenlands:shock_arrow>, 2.0, 300.0+273.0, <liquid:refined_oil>*12000);
 mods.pneumaticcraft.thermopneumaticprocessingplant.addRecipe(<liquid:gasoline>*16000, <thebetweenlands:shock_arrow>, 2.0, 300.0+273.0, <liquid:lpg>*13500);
 
-mods.pneumaticcraft.thermopneumaticprocessingplant.addRecipe(<liquid:plastic>*1000, <thebetweenlands:items_misc:44>*10, 2.0, 300.0+273.0, <liquid:lpg>*500);
+mods.pneumaticcraft.thermopneumaticprocessingplant.addRecipe(<liquid:lpg>*250, <thebetweenlands:items_misc:44>*10, 2.0, 300.0+273.0, <liquid:plastic>*1000);
 
 
 

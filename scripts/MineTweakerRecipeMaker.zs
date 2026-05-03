@@ -15,6 +15,7 @@
 recipes.remove(<minecraft:rail>);
 recipes.removeByMod("signals");
 recipes.remove(<botania:fertilizer>);
+recipes.remove(<botania:pylon>);
 
 // ================================================================================
 //#MARKER REMOVE SHAPELESS
@@ -57,6 +58,8 @@ recipes.addShapeless(<ic2:reactor_heat_vent>, [<ic2:heat_vent>, <ic2:crafting:7>
 
 // ================================================================================
 //#MARKER ADD SHAPED
+recipes.addShaped(<botania:pylon>, [[<ore:powderMana>, <ore:powderMana>, <ore:powderMana>], [<ore:powderMana>, <ore:ingotGold>, <ore:powderMana>], [<ore:powderMana>, <ore:powderMana>, <ore:powderMana>]]);
+recipes.addShaped(<minecraft:redstone_torch> * 3, [[<ore:dustRedstone>], [<ore:livingwoodTwig>]]);
 recipes.addShaped(<immersiveengineering:wooden_device0:1>, [[<ore:livingwood>, null, <ore:livingwood>], [<ore:livingwood>, null, <ore:livingwood>], [<ore:livingwood>, <ore:livingwood>, <ore:livingwood>]]);
 recipes.addShaped(<immersiveintelligence:mechanical_device1>, [[null, <tfc:bellows>, null], [<ore:plateBrass>, <ore:plateBrass>, <ore:plateBrass>]]);
 recipes.addShaped(<firmalife:large_planter>, [[<ore:ingotBrick>, <ore:dirt>, <ore:ingotBrick>], [<ore:ingotBrick>, <ore:dirt>, <ore:ingotBrick>], [<ore:ingotBrick>, <ore:ingotBrick>, <ore:ingotBrick>]]);

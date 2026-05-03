@@ -56,7 +56,7 @@ zenClass MixinFluxSpreadFactor {
 zenClass MixinSpreadSpeed {
     #mixin ModifyConstant {method: "equalizeWithNeighbors",  constant:{floatValue: 1.0}}
     function FluxSpreadSpeed(value as float) as float {
-        return(2.0f* 7.0f);
+        return(7.0f);
     }
 }
 
@@ -292,6 +292,65 @@ zenClass MixinAdvCrossbowRange {
 }
 
 
+//visualOres opacity change for aura
+
+#mixin {targets:"hellfall.visualores.database.thaumcraft.AuraFluxPosition"}
+zenClass changeOpacity{
+    #mixin ModifyVariable
+    #{
+    #    method: "<init>",
+    #   name: "alpha",
+    #    at: {      
+    #        value: "LOAD",
+    #         
+    #        target: "alpha"
+    #    }
+    #}
+    function cutoffAlpha(value as int) as int {
+        return max(1,value);
+    }
+     #mixin ModifyVariable
+    #{
+    #    method: "<init>",
+    #   name: "midAlpha",
+    #    at: {      
+    #        value: "LOAD",
+    #         
+    #        target: "midAlpha"
+    #    }
+    #}
+    function addMidAlpha(value as int) as int {
+        return max(1, (value as float * 1.99f) as int);
+    }
+    #mixin ModifyVariable
+    #{
+    #    method: "<init>",
+    #   name: "fluxAmount",
+    #    at: {      
+    #        value: "LOAD",
+    #         
+    #        target: "fluxAmount"
+    #    }
+    #}
+    function multiplyFlux(value as float) as float {
+        return 1.0f;
+    }
+    #mixin ModifyVariable
+    #{
+    #    method: "<init>",
+    #   name: "totalAmount",
+    #    at: {      
+    #        value: "LOAD",
+    #         
+    #        target: "totalAmount"
+    #    }
+    #}
+    function multiplyFlux(value as double) as double {
+        return (this0.flux as double)/32.0d as double;
+    }
+
+
+}
 
 
 

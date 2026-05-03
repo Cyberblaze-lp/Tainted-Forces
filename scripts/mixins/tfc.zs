@@ -12,6 +12,10 @@ import native.blusunrize.immersiveengineering.common.util.Utils;
 import native.net.minecraftforge.event.RegistryEvent;
 import mixin.CallbackInfo;
 import mixin.CallbackInfoReturnable;
+import native.net.minecraftforge.fluids.Fluid;
+import native.net.minecraftforge.fluids.FluidRegistry;
+import native.net.dries007.tfc.objects.fluids.properties.FluidWrapper;
+import native.net.dries007.tfc.world.classic.genlayers.river.GenLayerRiverInitTFC;
 
 
 #mixin {targets: "net.dries007.tfc.objects.items.ItemsTFC"}
@@ -77,5 +81,31 @@ zenClass MixinNukeQuern {
     }
 }
 
+// replace fresh water with vanilla water
 
+#mixin {targets: "net.dries007.tfc.objects.blocks.BlocksTFC"}
+zenClass MixinWaterCheck
+{
+    #mixin Overwrite
+    #mixin Static
+    function isFreshWater(current as IBlockState) as bool
+    {
+        return current == FluidRegistry.WATER.getBlock().getDefaultState();
+    }
+
+}
+#mixin {targets:"net.dries007.tfc.objects.fluids.properties.FluidWrapper"}
+zenClass MixinWaterRegistry
+{
+    #mixin Overwrite
+    function get() as Fluid
+    {
+        if this0.fluid.name == "fresh_water"
+        {
+            return FluidRegistry.WATER;
+        }
+        return this0.fluid;
+
+    }
+}
 
