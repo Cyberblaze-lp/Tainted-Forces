@@ -94,9 +94,7 @@ mods.thermalexpansion.Centrifuge.addRecipe([<mekanism:controlcircuit:3>*24,<astr
 mods.jei.JEI.addDescription(<pneumaticcraft:printed_circuit_board>, ["The crystal used to craft this needs to be max Size and Cutting, and be attuned to Alcara. Purity does not matter.","You can either use this right away, or centrifuge it to get the crystal back. Well, what's left of it, anyway.","The crystal can then be re-grown, converted, attuned, cut, etc., forming a closed loop."]);
 mods.jei.JEI.addDescription(<pneumaticcraft:transistor>, ["The crystal used to craft this needs to be max Size and Cutting, and be attuned to Octans. Purity does not matter.","You can either use this right away, or centrifuge it to get the crystal back. Well, what's left of it, anyway.","The crystal can then be re-grown, converted, attuned, cut, etc., forming a closed loop."]);
 
-// Solar Neutron Activator gating
 recipes.remove(<mekanism:machineblock3:1>);
-mods.recipestages.Recipes.addShaped("test","sna",<mekanism:machineblock3:1>, [[<mekanism:polyethene:2>, <mekanismgenerators:solarpanel>, <mekanism:polyethene:2>],[<ic2:crafting:9>, <ic2:crafting:9>, <ic2:crafting:9>], [<ic2:iridium_reflector>, <mekanism:basicblock:8>, <ic2:iridium_reflector>]]);
 
 
 

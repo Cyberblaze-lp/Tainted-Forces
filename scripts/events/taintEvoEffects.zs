@@ -69,11 +69,8 @@ else
 
 if(evoThreshold("taintEvo", stage3, event.world))
 {
-    server.commandManager.executeCommandSilent(server, "advancement grant @a only triumph:taint/stage3");
-    server.commandManager.executeCommandSilent(server, "scoreboard objectives add isNest dummy");
-    server.commandManager.executeCommandSilent(server, "execute @r[type=thaumcraft:taintseed,tag=!nest] ~ ~ ~ scoreboard players tag @s add nestprep");
-    server.commandManager.executeCommandSilent(server, "execute @e[type=thaumcraft:taintseed,tag=nestprep] ~ ~ ~ pillar-spawn nest_s3");
-    server.commandManager.executeCommandSilent(server, "execute @e[type=thaumcraft:taintseed,tag=nestprep] ~ ~ ~ kill @s");
+    server.commandManager.executeCommandSilent(server, "execute @r[type=thaumcraft:taintseed,tag=!nest] ~ ~ ~ pillar-spawn nest_s3");
+
     
 
     //decreases the evo a bit tocompensate for each nest having like 4 seeds and 1  getting killed
