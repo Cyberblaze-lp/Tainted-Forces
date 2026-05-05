@@ -16,6 +16,7 @@ recipes.remove(<minecraft:rail>);
 recipes.removeByMod("signals");
 recipes.remove(<botania:fertilizer>);
 recipes.remove(<botania:pylon>);
+recipes.remove(<botania:spreader>);
 
 // ================================================================================
 //#MARKER REMOVE SHAPELESS
@@ -231,8 +232,6 @@ recipes.addShaped(<minecraft:cauldron>, [[<ore:nuggetBlackBronze>, null, <ore:nu
 recipes.addShaped(<thaumcraft:table_stone>, [[<ore:slabStonePolished>, <ore:slabStonePolished>, <ore:slabStonePolished>], [<ore:stonePolished>, null, <ore:stonePolished>]]);
 recipes.addShaped(<minecraft:glass_bottle>, [[<ore:blockGlass>, null, <ore:blockGlass>], [null, <ore:blockGlass>, null]]);
 recipes.addShaped(<clothesline:clothesline_anchor>, [[<ore:nuggetIron>, <ore:nuggetIron>, <ore:nuggetIron>], [null, <ore:stickIron>, null]]);
-recipes.addShaped(<botania:spreader>, [[<ore:livingwood>, <ore:livingwood>, <ore:livingwood>], [null, <ore:blockStraw>, <tfc:ceramics/fired/vessel>], [<ore:livingwood>, <ore:livingwood>, <ore:livingwood>]]);
-recipes.addShaped(<botania:spreader>, [[<ore:livingwood>, <ore:livingwood>, <ore:livingwood>], [<tfc:ceramics/fired/vessel>, <ore:blockStraw>, null], [<ore:livingwood>, <ore:livingwood>, <ore:livingwood>]]);
 recipes.addShaped(<botania:opencrate:1>, [[<ore:powderMana>, <ore:workbench>, <ore:powderMana>], [<ore:powderMana>, <botania:opencrate>, <ore:powderMana>], [<ore:powderMana>, <ore:powderMana>, <ore:powderMana>]]);
 
 recipes.addShaped(<ic2:crafting:8>, [[<thermaldynamics:duct_16:1>, <thermaldynamics:duct_16:1>, <thermaldynamics:duct_16:1>], [<thermaldynamics:duct_16:1>, <thermaldynamics:duct_16:1>, <thermaldynamics:duct_16:1>]]);
