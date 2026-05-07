@@ -18,7 +18,7 @@ mods.immersiveintelligence.ChemicalBath.addRecipe(<ore:stoneMarble>, <astralsorc
 <ore:logWoodTannin>.add(<botania:livingwood>);
 <ore:logWoodTannin>.add(<thaumcraft:log_greatwood>);
 
-mods.botania.PureDaisy.addRecipe(<tfc:thatch>,<botania:livingwood>);
+
 
 <ore:blockGlass>.add(<betternether:quartz_glass>);
 <ore:blockGlassColorless>.add(<betternether:quartz_glass>);
@@ -107,7 +107,7 @@ furnace.remove(<embers:plate_caminite>);
 
 
 
-mods.inworldcrafting.FluidToFluid.transform(<liquid:fresh_water>, <liquid:hot_water>, [<cellars:ice_shard> * 4]);
+
 ItemRegistry.registerItemMetal(<tfcthings:metal_bracing>,"wrought_iron",72,true);
 Welding.addRecipe("diapick", <tfcthings:diamond_grit>, <tfc:metal/pick/black_steel>, <minecraft:diamond_pickaxe>, 5);
 Welding.addRecipe("diaaxe", <tfcthings:diamond_grit>, <tfc:metal/axe/black_steel>, <minecraft:diamond_axe>, 5);
@@ -145,6 +145,15 @@ Grindstone.addRecipe(<tfc:ore/kimberlite>, <tfc:gem/diamond:2>, 0.5f);
 Grindstone.addRecipe(<tfc:ore/lapis_lazuli>, <tfc:powder/lapis_lazuli>, 0.0f);
 Grindstone.addRecipe(<tfc:ore/graphite>, <tfc:powder/graphite>*3, 0.5f);
 Grindstone.addRecipe(<tfc:ore/kaolinite>, <tfc:powder/kaolinite>*3, 0.5f);
+
+Grindstone.addRecipe(<minecraft:coal:1>, <tfc:powder/charcoal>, 0.0f);
+
+Grindstone.addRecipe(<tfc:food/barley_grain>, <tfc:food/barley_flour>, 0.5f);
+Grindstone.addRecipe(<tfc:food/maize_grain>, <tfc:food/cornmeal_flour>, 0.5f);
+Grindstone.addRecipe(<tfc:food/oat_grain>, <tfc:food/oat_flour>, 0.5f);
+Grindstone.addRecipe(<tfc:food/rice_grain>, <tfc:food/rice_flour>, 0.5f);
+Grindstone.addRecipe(<tfc:food/rye_grain>, <tfc:food/rye_flour>, 0.5f);
+Grindstone.addRecipe(<tfc:food/wheat_grain>, <tfc:food/wheat_flour>, 0.5f);
 
 
 
@@ -227,7 +236,6 @@ ItemRegistry.registerItemHeat(<ore:sand>,0.5,1600,false);
 
 
 ItemRegistry.registerItemHeat(<tfc:wooden_bucket>,0.5,1100,false);
-Heating.addRecipe("waterpurification", <tfc:wooden_bucket>.withTag({Fluid: {FluidName: "fresh_water", Amount: 1000}}), <tfc:wooden_bucket>.withTag({Fluid: {FluidName: "water", Amount: 1000}}), 200.0, 1700.0);
 
 
 
@@ -300,7 +308,6 @@ ItemRegistry.registerItemHeat(<tfc:ore/chromite>, 0.5, 1700, false);
 Barrel.removeRecipe(<minecraft:clay_ball>);
 
 mods.terrafirmacraft.Barrel.addRecipe("eye_fermentation", <minecraft:spider_eye>, <liquid:vinegar> * 100, <minecraft:fermented_spider_eye>, null, 12);
-mods.terrafirmacraft.Barrel.addRecipe("water_conversion", <ore:nuggetCopper>, <liquid:fresh_water> * 10000,null,<liquid:water>*10000, 1);
 mods.terrafirmacraft.Barrel.addRecipe("salt_conversion", <minecraft:magma>, <liquid:salt_water> * 10000,<tfc:powder/salt>*8,null, 8);
 mods.terrafirmacraft.Barrel.addRecipe("malachite", <ore:nuggetCopper>, <liquid:salt_water> * 50,<tfc:powder/malachite>*2,null, 72);
 mods.terrafirmacraft.Barrel.addRecipe("rustyplate", <quark:iron_plate>, <liquid:salt_water> * 50,<quark:iron_plate:1>,null, 24);

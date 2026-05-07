@@ -19,7 +19,7 @@ events.onPlayerTick(function(event as PlayerTickEvent)
                 if item.isRotten()
                 {
                     val amount = item.amount;
-                    val taintpoison = <potion:thaumcraft:fluxtaint>.makePotionEffect(max( 90, Math.sqrt(amount)), min( 2, Math.sqrt(amount)- 1) ,true, true);
+                    val taintpoison = <potion:thaumcraft:fluxtaint>.makePotionEffect(max( 90, Math.sqrt(amount)* 50), min( 2, Math.sqrt(amount)- 1) ,true, true);
                     val entity = event.entityLivingBase;
                     entity.addPotionEffect(taintpoison);
                     item.mutable().shrink(amount);

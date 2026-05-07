@@ -13,7 +13,7 @@ import native.baubles.api.BaubleType;
 zenClass MixinPauldron
 {
     #mixin Redirect
-    # {method:"doRenderLayer", at:{value: "INVOKE", ordinal:2, target: "Lbaubles/api/cap/IBaublesItemHandler;getStackInSlot(I)Lnet/minecraft/item/ItemStack;"}}
+    # {method:"doRenderLayer", at:{value: "INVOKE", ordinal: 2, target: "Lbaubles/api/cap/IBaublesItemHandler;getStackInSlot(I)Lnet/minecraft/item/ItemStack;"}}
     function redirectSlot(instance as IBaublesItemHandler, i as int) as ItemStack
     {
         for m in 0 to 7

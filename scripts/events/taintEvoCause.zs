@@ -20,6 +20,26 @@ else {
     }
 }
 
+function difficulty(world as IWorld) as int
+{
+	val diff as string = world.getWorldInfo().difficulty;
+	
+	if diff has "EASY"
+	{
+		return 1;
+	}
+	if diff has "NORMAL"
+	{
+		return 2;
+	}
+	if diff has "HARD"
+	{
+		return 3;
+	}
+	return 0;
+	
+
+}
 
 
 events.onEntityLivingDeath(function(event as crafttweaker.event.EntityLivingDeathEvent){
@@ -30,11 +50,11 @@ if(isNull (event.entityLivingBase.definition))
 }
 if (event.entityLivingBase.definition.id == <entity:thaumcraft:taintseed>.id)
 {
-    evolve("taintEvo",1, world);
+    evolve("taintEvo",1*difficulty(world), world);
 }
 else if (event.entityLivingBase.definition.id == <entity:thaumcraft:taintseedprime>.id)
 {
-evolve("taintEvo", 200, world);
+evolve("taintEvo", 200*difficulty(world), world);
 }
 
 });

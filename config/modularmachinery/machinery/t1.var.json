@@ -1,16 +1,14 @@
-[
+
     {
     "firebox": [
         "modularmachinery:blockcasing@2",
         "modularmachinery:blockcasing@4"
-    ]
-},
-
-{
+    ],
     "drillside": [
         "modularmachinery:blockoutputbus@1",
-        "modularmachinery:aspectproviderinput",
+        "modularmachinery:blockaspectproviderinput",
         "thaumcraft:metal_alchemical"
     ]
 }
-]
+
+

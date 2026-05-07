@@ -11,10 +11,10 @@ import crafttweaker.server.IServer;
 
 //for now, let's use cubic growth (discounting stage 1)
 val stage1 as int = 1;
-val stage2 as int = 300;
-val stage3 as int = 2400;
-val stage4 as int = 8100;
-val stage5 as int = 19200;
+val stage2 as int = 300*2;
+val stage3 as int = 2400*2;
+val stage4 as int = 8100*2;
+val stage5 as int = 19200*2;
 
 function evoThreshold(evo as string, amount as int, world as IWorld) as bool{
 var rules =world.getGameRules();
@@ -69,9 +69,8 @@ else
 
 if(evoThreshold("taintEvo", stage3, event.world))
 {
-    server.commandManager.executeCommandSilent(server, "advancement grant @a only triumph:taint/stage3");
-    server.commandManager.executeCommandSilent(server, "scoreboard objectives add isNest dummy");
     server.commandManager.executeCommandSilent(server, "execute @r[type=thaumcraft:taintseed,tag=!nest] ~ ~ ~ pillar-spawn nest_s3");
+
     
 
     //decreases the evo a bit tocompensate for each nest having like 4 seeds and 1  getting killed

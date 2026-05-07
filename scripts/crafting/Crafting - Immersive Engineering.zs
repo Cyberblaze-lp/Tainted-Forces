@@ -137,7 +137,7 @@ import mods.advancedrocketry.ArcFurnace;
 //Distillation
 
 	//Salt
-	mods.immersivepetroleum.Distillation.addRecipe([<liquid:fresh_water> * 1000], [<tfc:powder/salt> * 1], <liquid:salt_water> * 1000, 128, 150, [1, 1]);
+	mods.immersivepetroleum.Distillation.addRecipe([<liquid:water> * 1000], [<tfc:powder/salt> * 1], <liquid:salt_water> * 1000, 128, 150, [1, 1]);
 	
 
 //=======================================================================================================================================================================
@@ -181,14 +181,14 @@ import mods.advancedrocketry.ArcFurnace;
 	mods.immersiveengineering.Mixer.addRecipe(<liquid:vinegar> * 1000, <liquid:rye_whiskey> * 1000, [<ore:categoryFruit> * 10], 1024);
 	
 	//Limewater
-	mods.immersiveengineering.Mixer.addRecipe(<liquid:limewater> * 1000, <liquid:fresh_water> * 1000, [<ore:dustFlux> * 2], 512);
+	mods.immersiveengineering.Mixer.addRecipe(<liquid:limewater> * 1000, <liquid:water> * 1000, [<ore:dustFlux> * 2], 512);
 	
 	//Tannin
-	mods.immersiveengineering.Mixer.addRecipe(<liquid:tannin> * 1000, <liquid:fresh_water> * 1000, [<ore:logWoodTannin>], 1024);
+	mods.immersiveengineering.Mixer.addRecipe(<liquid:tannin> * 1000, <liquid:water> * 1000, [<ore:logWoodTannin>], 1024);
 
 //=======================================================================================================================================================================
 //Distiller
- mods.immersivetechnology.Distiller.addRecipe(<liquid:fresh_water>*80, <liquid:salt_water>*100, <tfc:powder/salt>, 1024, 20, 0.1);	
+ mods.immersivetechnology.Distiller.addRecipe(<liquid:water>*80, <liquid:salt_water>*100, <tfc:powder/salt>, 1024, 20, 0.1);	
 
 //=======================================================================================================================================================================
 //Bottling Machine
@@ -199,9 +199,9 @@ import mods.advancedrocketry.ArcFurnace;
 	mods.immersiveengineering.BottlingMachine.addRecipe(<tfc:hide/soaked/large>, <tfc:hide/raw/large>, <liquid:limewater> * 500);
 
 	//Scraped Hide to Prepared Hide
-	mods.immersiveengineering.BottlingMachine.addRecipe(<tfc:hide/prepared/small>, <tfc:hide/scraped/small>, <liquid:fresh_water> * 300);
-	mods.immersiveengineering.BottlingMachine.addRecipe(<tfc:hide/prepared/medium>, <tfc:hide/scraped/medium>, <liquid:fresh_water> * 400);
-	mods.immersiveengineering.BottlingMachine.addRecipe(<tfc:hide/prepared/large>, <tfc:hide/scraped/large>, <liquid:fresh_water> * 500);
+	mods.immersiveengineering.BottlingMachine.addRecipe(<tfc:hide/prepared/small>, <tfc:hide/scraped/small>, <liquid:water> * 300);
+	mods.immersiveengineering.BottlingMachine.addRecipe(<tfc:hide/prepared/medium>, <tfc:hide/scraped/medium>, <liquid:water> * 400);
+	mods.immersiveengineering.BottlingMachine.addRecipe(<tfc:hide/prepared/large>, <tfc:hide/scraped/large>, <liquid:water> * 500);
 
 	//Prepared Hide to Leather
 	mods.immersiveengineering.BottlingMachine.addRecipe(<minecraft:leather> * 1, <tfc:hide/scraped/small>, <liquid:tannin> * 300);
@@ -209,7 +209,7 @@ import mods.advancedrocketry.ArcFurnace;
 	mods.immersiveengineering.BottlingMachine.addRecipe(<minecraft:leather> * 3, <tfc:hide/scraped/large>, <liquid:tannin> * 500);
 
 	//Jute Fibre Processing
-	mods.immersiveengineering.BottlingMachine.addRecipe(<tfc:crop/product/jute_fiber>, <tfc:crop/product/jute>, <liquid:fresh_water> * 500);
+	mods.immersiveengineering.BottlingMachine.addRecipe(<tfc:crop/product/jute_fiber>, <tfc:crop/product/jute>, <liquid:water> * 500);
 
 //=======================================================================================================================================================================
 //Coke Oven

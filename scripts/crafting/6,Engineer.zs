@@ -217,19 +217,8 @@ mods.ic2.ThermalCentrifuge.addRecipe([<ic2:nuclear:7>*4,<ic2:nuclear:2>*16,<tfc:
 recipes.remove(<immersiveintelligence:material_dust>);
 
 
-//ic2 distilled water recipe via cooling tower
+
  mods.immersivetechnology.SolarTower.addRecipe(<liquid:ic2hot_coolant>, <liquid:ic2coolant>, 1);
-
-mods.immersivetechnology.CoolingTower.addRecipe(<liquid:ic2distilled_water>*80, <liquid:ic2distilled_water>*80, <liquid:ic2distilled_water>*80, <liquid:ic2hot_water>*600, <liquid:ic2distilled_water>*100, 20);
-mods.immersivetechnology.CoolingTower.addRecipe(<liquid:ic2distilled_water>*70, <liquid:ic2distilled_water>*70, <liquid:ic2distilled_water>*70, <liquid:exhauststeam>*800, <liquid:water>*1000, 10);
-mods.immersivetechnology.CoolingTower.addRecipe(<liquid:ic2distilled_water>*70, <liquid:ic2distilled_water>*70, <liquid:ic2distilled_water>*70, <liquid:exhauststeam>*800, <liquid:fresh_water>*1000, 10);
-mods.immersivetechnology.CoolingTower.addRecipe(<liquid:ic2distilled_water>*70, <liquid:ic2distilled_water>*70, <liquid:ic2distilled_water>*70, <liquid:steam>*500, <liquid:water>*1000, 10);
-mods.immersivetechnology.CoolingTower.addRecipe(<liquid:ic2distilled_water>*70, <liquid:ic2distilled_water>*70, <liquid:ic2distilled_water>*70, <liquid:steam>*500, <liquid:fresh_water>*1000, 10);
-
-mods.immersivetechnology.CoolingTower.addRecipe(<liquid:ic2distilled_water>*70, <liquid:ic2distilled_water>*70, <liquid:ic2distilled_water>*70, <liquid:water>*1000,<liquid:exhauststeam>*800,  10);
-mods.immersivetechnology.CoolingTower.addRecipe(<liquid:ic2distilled_water>*70, <liquid:ic2distilled_water>*70, <liquid:ic2distilled_water>*70, <liquid:fresh_water>*1000, <liquid:exhauststeam>*800 , 10);
-mods.immersivetechnology.CoolingTower.addRecipe(<liquid:ic2distilled_water>*70, <liquid:ic2distilled_water>*70, <liquid:ic2distilled_water>*70, <liquid:water>*1000, <liquid:steam>*500, 10);
-mods.immersivetechnology.CoolingTower.addRecipe(<liquid:ic2distilled_water>*70, <liquid:ic2distilled_water>*70, <liquid:ic2distilled_water>*70, <liquid:fresh_water>*1000,<liquid:steam>*500,  30);
 mods.immersivetechnology.Radiator.addRecipe(<liquid:ic2distilled_water>*100,<liquid:exhauststeam>*800, 40);
 mods.immersivetechnology.Radiator.addRecipe(<liquid:ic2distilled_water>*100,<liquid:steam>*800, 80);
 mods.thermalexpansion.Pulverizer.removeRecipe(<tfc:metal/ingot/bismuth_bronze>);

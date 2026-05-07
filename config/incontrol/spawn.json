@@ -95,13 +95,13 @@
 			"mob": "minecraft:zombie",
 			"perplayer": true
 		},
-		"minY": 32,
+		"minY": 50,
 		"maxY": 250,
 		"maxlight": 0,
 		"result": "allow",
 		"groupsizemin": 1,
-		"groupsizemax": 4,
-		"onjoin": false
+		"groupsizemax": 2,
+		"onjoin": true
 	},
 
 	{
@@ -112,13 +112,13 @@
 			"mob": "minecraft:zombie",
 			"perplayer": true
 		},
-		"minY": 32,
+		"minY": 50,
 		"maxY": 250,
 		"maxlight": 0,
 		"result": "allow",
 		"groupsizemin": 1,
 		"groupsizemax": 1,
-		"onjoin": false
+		"onjoin": true
 	},
 	{
 		"mob": "minecraft:skeleton",
@@ -128,13 +128,13 @@
 			"mob": "minecraft:skeleton",
 			"perplayer": true
 		},
-		"minY": 32,
+		"minY": 36,
 		"maxY": 250,
 		"maxlight": 0,
 		"result": "allow",
 		"groupsizemin": 1,
 		"groupsizemax": 2,
-		"onjoin": false
+		"onjoin": true
 	},
 	{
 		"mob": "minecraft:witch",

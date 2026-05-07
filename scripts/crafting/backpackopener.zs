@@ -4,7 +4,6 @@ mods.bpopener.BPOpener.addEntry(<minecraft:written_book>,false);
 mods.bpopener.BPOpener.addEntry(<appliedenergistics2:wireless_terminal>,false);
 mods.bpopener.BPOpener.addEntry(<appliedenergistics2:portable_cell>,false);
 mods.bpopener.BPOpener.addEntry(<thermalexpansion:satchel:*>,false);
-mods.bpopener.BPOpener.addEntry(<travelersbackpack:travelers_backpack:*>,false);
 mods.bpopener.BPOpener.addEntry(<thaumcraft:focus_pouch>,false);
 mods.bpopener.BPOpener.addEntry(<thaumcraft:thaumonomicon>,false);
 mods.bpopener.BPOpener.addEntry(<immersiveengineering:toolbox>,false);

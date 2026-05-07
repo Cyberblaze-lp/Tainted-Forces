@@ -33,6 +33,34 @@ events.onEntityJoinWorld(function(event as crafttweaker.event.EntityJoinWorldEve
         entity.addPotionEffect(levi1);
         entity.addPotionEffect(levi2);
     }
+
+    if !(event.entity.definition.id == <entity:thaumcraft:taintseed>.id)
+    {
+        return;
+    }
+    if (event.entity.tags has "nest")
+    {
+        val Xpos = event.entity.x; 
+        val Ypos = event.entity.y; 
+        val Zpos = event.entity.z; 
+        val dist = 2.0d;
+        val Entities = event.entity.world.getEntitiesWithinAABB(IAxisAlignedBB.create(Xpos - dist, Ypos+0.5d - dist, Zpos - dist, Xpos + dist, Ypos+0.5d + dist, Zpos + dist));
+
+        for entity in Entities
+        {
+            if(isNull(entity.definition))
+            {
+                continue;
+            }
+
+            if (entity.definition.id == <entity:thaumcraft:taintseed>.id && !(entity.tags has "nest"))
+            {
+                entity.setDead();
+                return;
+            }
+        }
+    }
+
 });
 
 //applies taint poison when standing on taint fibers
