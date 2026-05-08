@@ -63,10 +63,6 @@ mods.magneticraft.FluidFuel.removeFuel(<liquid:gasoline>);
 mods.magneticraft.FluidFuel.removeFuel(<liquid:natural_gas>);
 
 
-mods.embers.HeatCoil.add(<tfc:crucible>, <tfc:ceramics/unfired/crucible>);
-<tfc:ceramics/unfired/crucible>.addTooltip(format.gold("can be fired using a hearth coil"));
-mods.embers.HeatCoil.add(<tfc:ceramics/fired/fire_brick>, <tfc:ceramics/fire_clay>);
-<tfc:ceramics/fire_clay>.addTooltip(format.gold("Can be turned directly into bricks via a hearth coil"));
 
 <embers:boiler>.addTooltip(format.gold("Now uses LAVA instead of water!"));
 

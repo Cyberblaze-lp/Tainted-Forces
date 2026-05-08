@@ -1,0 +1,26 @@
+[
+    {
+        "key": "CENTRIFUGE",
+ "ops": [
+	    
+			{
+                "op":"add",
+                "path": "stages/1/recipes",
+				"value":["thaumcraft:centrifuge 2.0"]
+			}
+
+		]
+	},
+	 {
+        "key": "IMPROVEDSMELTING",
+ "ops": [
+	    
+			{
+                "op":"add",
+                "path": "stages/1/recipes",
+				"value":["thaumcraft:slurrypump 2.0"]
+			}
+
+		]
+	}
+]

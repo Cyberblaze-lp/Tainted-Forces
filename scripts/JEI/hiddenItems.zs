@@ -44,7 +44,7 @@ JEI.removeAndHide(<extrautils2:angelring:*>);
 JEI.hide(<camping:campfire_wood_off>);
 JEI.hide(<camping:campfire_cook>);
 
-JEI.hide(<travelersbackpack:sleeping_bag_bottom>);
+
 
 for item in [
     <advancedrocketry:concrete>

@@ -144,7 +144,6 @@ Grindstone.addRecipe(<tfc:ore/kimberlite>, <tfc:gem/diamond:2>, 0.5f);
 
 Grindstone.addRecipe(<tfc:ore/lapis_lazuli>, <tfc:powder/lapis_lazuli>, 0.0f);
 Grindstone.addRecipe(<tfc:ore/graphite>, <tfc:powder/graphite>*3, 0.5f);
-Grindstone.addRecipe(<tfc:ore/kaolinite>, <tfc:powder/kaolinite>*3, 0.5f);
 
 Grindstone.addRecipe(<minecraft:coal:1>, <tfc:powder/charcoal>, 0.0f);
 
@@ -233,6 +232,8 @@ Anvil.addRecipe("ironAxles", <ore:ingotIron>, <mysticalmechanics:axle_iron>*2, 3
 ItemRegistry.registerItemHeat(<minecraft:quartz>,0.5,1600,false);
 Heating.addRecipe("quartzglass", <minecraft:quartz>, <betternether:quartz_glass>, 512.0, 1700.0);
 ItemRegistry.registerItemHeat(<ore:sand>,0.5,1600,false);
+Heating.removeRecipe(<tfc:crucible>);
+Heating.removeRecipe(<tfc:ceramics/fired/fire_brick>);
 
 
 ItemRegistry.registerItemHeat(<tfc:wooden_bucket>,0.5,1100,false);
@@ -375,7 +376,7 @@ recipes.remove(<camping:campfire_cook>);
 
 
 //Gear
-recipes.remove(<travelersbackpack:sleeping_bag_bottom>);
+
 
 
 val remove_gear = 

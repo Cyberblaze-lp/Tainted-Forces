@@ -8,6 +8,10 @@
         "modularmachinery:blockoutputbus@1",
         "modularmachinery:blockaspectproviderinput",
         "thaumcraft:metal_alchemical"
+    ],
+    "drilltop": [
+        "modularmachinery:blockinputbus@1",
+        "embers:mech_actuator_single@1"
     ]
 }
 

@@ -1,0 +1,20 @@
+[{
+        "key": "MOTOR",    
+        "name": "research.MOTOR.title",
+        "icons": [ "mystgears:essentia_motor" ],
+        "category": "ALCHEMY", "location": [ 8,-4 ], 
+        "parents": [ "TUBES" ],        
+        "stages": [
+                {
+                    "text": "research.MOTOR.stage.1",
+                    "required_knowledge":["OBSERVATION;ALCHEMY;1","OBSERVATION;ARTIFICE;1"],
+                    "required_item":["thaumcraft:phial;1;1;{Aspects:[{amount:10,key:'motus'}]}"]
+					
+                },
+                {
+                    "text": "research.MOTOR.stage.2"  
+                    ,"recipes": ["thaumcraft:motors 2.0"]
+					
+                }
+            ]
+        }]

@@ -20,7 +20,7 @@ recipes.removeShapeless(<thaumcraft:plank_silverwood> * 4, [<thaumcraft:log_silv
 recipes.remove(<minecraft:detector_rail>);
 recipes.remove(<minecraft:golden_rail>);
 recipes.remove(<thebetweenlands:items_misc:47>);
-recipes.remove(<travelersbackpack:hose_nozzle>);
+
 recipes.remove(<tfc:metal/sheet/brass>);
 recipes.remove(<minecraft:bucket>);
 recipes.remove(<minecraft:beacon>);
@@ -32,7 +32,6 @@ recipes.remove(<botania:opencrate:1>);
 recipes.removeShaped(<minecraft:chest>, [[<ore:plankWood>, <ore:plankWood>, <ore:plankWood>], [<ore:plankWood>, null, <ore:plankWood>], [<ore:plankWood>, <ore:plankWood>, <ore:plankWood>]]);
 recipes.removeShaped(<minecraft:chest> * 4, [[<ore:logWood>, <ore:logWood>, <ore:logWood>], [<ore:logWood>, null, <ore:logWood>], [<ore:logWood>, <ore:logWood>, <ore:logWood>]]);
 recipes.removeShaped(<tfctech:wire_draw_bench>, [[<tfctech:wiredraw/winch>, <tfctech:wiredraw/leather_belt>, <ore:tongsWroughtIron>], [<ore:sheetWroughtIron>, <ore:sheetWroughtIron>, <ore:sheetWroughtIron>], [<ore:sheetWroughtIron>, null, <ore:sheetWroughtIron>]]);
-recipes.removeShaped(<travelersbackpack:travelers_backpack>, [[<ore:leather>, <ore:ingotGold>, <ore:leather>], [<travelersbackpack:backpack_tank>, <ore:chest>, <travelersbackpack:backpack_tank>], [<ore:leather>, <travelersbackpack:sleeping_bag_bottom>, <ore:leather>]]);
 recipes.removeShaped(<mysticalmechanics:axle_iron> * 8, [[<ore:ingotIron>], [<ore:nuggetWroughtIron>], [<ore:ingotIron>]]);
 recipes.removeShaped(<tfc:metal/sheet/brass> * 3, [[<ore:ingotBrass>, <ore:ingotBrass>, <ore:ingotBrass>]]);
 recipes.removeShaped(<tfc:metal/sheet/wrought_iron> * 3, [[<ore:ingotIron>, <ore:ingotIron>, <ore:ingotIron>]]);
@@ -120,7 +119,6 @@ recipes.addShaped(<camping:tent:15>, [[null, <ore:clothHighQuality>, null], [<ca
 recipes.addShaped(<camping:knife>, [[<ore:knife>, <ore:dyeRed>], [<ore:saw>, <ore:dyeRed>], [<ore:chisel>, <ore:dyeRed>]]);
 recipes.addShaped(<scannable:scanner>, [[<ore:propickHead>, <ore:propickHead>, <ore:propickHead>], [null, <ore:ingotBismuth>, null], [<ore:ingotUnknown>, <ore:ingotUnknown>, <ore:ingotUnknown>]]);
 recipes.addShaped(<minecraft:beacon>, [[<ore:blockGlassColorless>, <ore:blockGlassColorless>, <ore:blockGlassColorless>], [<ore:blockGlassColorless>, <ore:gemExquisiteDiamond>, <ore:blockGlassColorless>], [<ore:obsidian>, <thaumcraft:alumentum>, <ore:obsidian>]]);
-recipes.addShaped(<travelersbackpack:hose_nozzle>, [[<ore:sheetGold>], [<minecraft:bucket>], [<ore:sheetGold>]]);
 recipes.addShaped(<immersiveengineering:jerrycan>, [[<ore:tuyere>, <ore:dyeGreen>], [<ore:plateWroughtIron>, <minecraft:bucket>], [<ore:plateWroughtIron>, <ore:plateWroughtIron>]]);
 recipes.addShaped(<thaumcraft:baubles:6>, [[null, <ore:leather>, null], [<ore:leather>, null, <ore:leather>], [<ore:sheetRoseGold>, <ore:gemExquisite>, <ore:sheetRoseGold>]]);
 recipes.addShaped(<thaumcraft:baubles:4>, [[<ore:string>, <ore:string>, <ore:string>], [<ore:sheetRoseGold>, <ore:gemExquisite>, <ore:sheetRoseGold>], [null, <ore:sheetRoseGold>, null]]);

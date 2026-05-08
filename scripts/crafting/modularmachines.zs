@@ -2,6 +2,8 @@
 import mods.modularmachinery.IMachineController;                                                                  
 import mods.modularmachinery.RecipeFinishEvent;
 import mods.modularmachinery.RecipeStartEvent;
+import mods.modularmachinery.RecipeCheckEvent;
+import mods.modularmachinery.MachineTickEvent;
 import native.net.dries007.tfc.objects.blocks.stone.BlockOreTFC;
 import native.net.dries007.tfc.objects.items.metal.ItemOreTFC;
 import native.net.dries007.tfc.world.classic.worldgen.WorldGenOreVeins;
@@ -26,6 +28,7 @@ import native.extendedrenderer.particle.ParticleRegistry;
 import native.net.minecraft.tileentity.TileEntity;
 import crafttweaker.entity.IEntity;
 import crafttweaker.event.EntityJoinWorldEvent;
+import mods.modularmachinery.MMEvents;
 
 recipes.removeByMod("modularmachinery");
 
@@ -377,6 +380,23 @@ function setPower(power as float, controller as IMachineController) as void
    controller.world.setBlockState(controller.world.getBlockState(drillPos), datamod, drillPos);
 }
 
+function isPowerEnough(powerMin as float, controller as IMachineController) as bool
+{
+    val actuPos =  controller.pos.getOffset(controller.facing, -1)
+                                .getOffset(IFacing.down(), -1);
+    val actu as IBlock = controller.world.getBlock (actuPos.x, actuPos.y, actuPos.z);
+    if actu.definition.id has "modularmachinery"
+    {
+        return false;
+    }
+
+    val data = actu.data;
+    val powerIn = data.memberGet("mech_power1");
+    return powerIn >= powerMin;
+
+   
+}
+
 
 function setFireboxState(meta as int, controller as IMachineController) as void
 {
@@ -529,5 +549,64 @@ mods.modularmachinery.RecipeBuilder.newBuilder("basicDrilling", "burnerdrill_t1"
     .start();
 })
 .build();
+
+
+mods.modularmachinery.RecipeBuilder.newBuilder("basicDrillingMech", "burnerdrill_t1", 3)
+.addPostCheckHandler(function(event as RecipeCheckEvent)
+{
+    if !isPowerEnough(20.0f, event.controller)
+    {
+        event.setFailed("no power or attempting to use solid fuel recipe");
+    }
+
+})
+.addItemOutput(<betterquesting:placeholder>)
+
+.addItemModifier(function(controller as IMachineController, item as IItemStack) as IItemStack {
+   
+    if isNull (controller.customData)||isNull (controller.customData.item)
+    {
+        return null;
+    }
+    val itemOut as IItemStack = itemUtils.getItem(controller.customData.item as string);
+    return itemOut;
+
+})
+.setChance(1.0f/50)
+
+
+
+.addStartHandler(function (event as RecipeStartEvent){
+    val item = lookForOre(event.controller);
+    if !isNull(item)
+    {
+        val map1 as IData = {
+            "item" : item.definition.id
+        };
+        event.controller.customData = map1;
+        setPower(20.0, event.controller);
+    }
+	else 
+	{
+		val map1 as IData = {
+            "item" : ""
+        };
+        event.controller.customData = map1;
+	}
+})
+
+.addFinishHandler(function (event as RecipeFinishEvent){
+    setPower(0.0, event.controller);
+    
+        
+    setFireboxState(2, event.controller);
+
+    })
+.build();
+
+
+
+
+
 
 
