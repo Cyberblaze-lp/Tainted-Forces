@@ -1,0 +1,15 @@
+[
+  {
+    "id": "custom:1479b43e",
+    "displayName": "Factory Blocks",
+    "backgroundColor": 861230421,
+    "borderColor": -863467384,
+    "itemUids": [
+      "chisel:factory:*",
+      "chisel:factory1:*",
+      "chisel:technical:*",
+      "chisel:technical1:*",
+      "chisel:technicalnew:*"
+    ]
+  }
+]

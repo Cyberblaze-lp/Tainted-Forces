@@ -85,8 +85,6 @@ mods.immersiveengineering.Excavator.addMineral("Cryolite", 10, 0.005, ["tfc:ore/
 mods.immersiveengineering.Excavator.removeMineral("Uranium");
 mods.immersiveengineering.Excavator.removeMineral("Uranium Ore");
 
-//Kaolinite
-mods.immersiveengineering.Excavator.addMineral("Kaolinite", 15, 0.005, ["gemKaolinite"], [1]);
 
 //Gypsum
 mods.immersiveengineering.Excavator.addMineral("Gypsum", 10, 0.005, ["gemGypsum"], [1]);

@@ -3,7 +3,9 @@ import crafttweaker.item.IItemStack;
 // Facilitate creation of a "Mall" like in factorio where all your essentials (conveyors, machines, redstone stuff) can be passive-produced
 //This means that some intermediate products will be replaced or cut so automation of this equipment is easier.
 
-
+mods.rustichromia.Assembler.removeAll();
+mods.rustichromia.Quern.removeAll();
+mods.rustichromia.Gin.removeAll();
 
 <ore:stone>.add(<immersiveengineering:stone_decoration:5>);
 
@@ -159,6 +161,43 @@ val fluidlogisimple as IItemStack[] =[<tfc:ceramics/fired/fire_brick>,<tconstruc
 for item in fluidlogisimple
 {
 mods.chisel.Carving.addVariation("fluidlogisticssimple", item);
+recipes.remove(item);
+
+}
+
+mods.chisel.Carving.addGroup("casting");
+val casting as IItemStack[] =[<tfc:crucible>, <tconstruct:casting>,<tconstruct:casting:1>];
+for item in casting
+{
+mods.chisel.Carving.addVariation("casting", item);
+recipes.remove(item);
+
+}
+
+
+mods.chisel.Carving.addGroup("mechStuff");
+val mechStuff as IItemStack[] =[<immersiveengineering:metal_decoration0:4>, <embers:mech_core>,<mystgears:drill>,<modularmachinery:burnerdrill_t1_controller>,<modularmachinery:blockcasing:2>,<modularmachinery:blockcasing:4>, <modularmachinery:blockinputbus:1>,<modularmachinery:blockoutputbus:1>];
+for item in mechStuff
+{
+mods.chisel.Carving.addVariation("mechStuff", item);
+recipes.remove(item);
+
+}
+
+mods.chisel.Carving.addGroup("alchStuff");
+val alchStuff as IItemStack[] =[<thaumcraft:metal_alchemical>, <modularmachinery:blockaspectproviderinput>,<modularmachinery:blockaspectprovideroutput>];
+for item in alchStuff
+{
+mods.chisel.Carving.addVariation("alchStuff", item);
+recipes.remove(item);
+
+}
+
+mods.chisel.Carving.addGroup("clockwork");
+val clockwork as IItemStack[] =[<thaumcraft:mind>,<mysticalmechanics:gear_gold_off>,<mysticalmechanics:gear_gold_on>,<rustichromia:mech_torch>,<rustichromia:mech_torch_toggle>];
+for item in clockwork
+{
+mods.chisel.Carving.addVariation("clockwork", item);
 recipes.remove(item);
 
 }

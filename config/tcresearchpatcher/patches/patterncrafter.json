@@ -23,10 +23,13 @@
                 "op":"replace",
                 "path": "stages/0/required_knowledge/2",
 				"value":["OBSERVATION;AUROMANCY;1"]
-				
-           
-            		
-			}   				
+			},
+			
+			{
+                "op":"add",
+                "path": "stages/1/recipes",
+				"value":["thaumcraft:auracrafter 2.0","thaumcraft:mechcrafter 2.0"]
+			}      			 	
 		]
 		
 	}

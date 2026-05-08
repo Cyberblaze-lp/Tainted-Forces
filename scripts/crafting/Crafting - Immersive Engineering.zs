@@ -99,8 +99,7 @@ import mods.advancedrocketry.ArcFurnace;
 
 
 	//Minerals
-	mods.immersiveengineering.Crusher.addRecipe(<tfc:powder/kaolinite> * 8, <ore:gemKaolinite>, 8000);
-
+	
 	mods.immersiveengineering.Crusher.addRecipe(<tfc:powder/graphite> * 8, <ore:gemGraphite>, 8000);
 	mods.immersiveengineering.Crusher.addRecipe(<tfc:gem/diamond:2> * 2, <ore:gemKimberlite>, 8000);
 	mods.immersiveengineering.Crusher.addRecipe(<minecraft:redstone> * 12, <ore:gemCinnabar>, 8000, <thaumcraft:nugget:5> * 4, 0.5);
