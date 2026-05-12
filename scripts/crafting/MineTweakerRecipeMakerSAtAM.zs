@@ -117,7 +117,6 @@ recipes.addShaped(<embers:heat_coil>, [[<ore:wireCopper>, <ore:wireCopper>, <ore
 recipes.addShaped(<camping:tent:3>, [[null, <tfc:crop/product/burlap_cloth>, null], [<camping:parts:2>, null, <camping:parts:2>]]);
 recipes.addShaped(<camping:tent:15>, [[null, <ore:clothHighQuality>, null], [<camping:parts:2>, null, <camping:parts:2>]]);
 recipes.addShaped(<camping:knife>, [[<ore:knife>, <ore:dyeRed>], [<ore:saw>, <ore:dyeRed>], [<ore:chisel>, <ore:dyeRed>]]);
-recipes.addShaped(<scannable:scanner>, [[<ore:propickHead>, <ore:propickHead>, <ore:propickHead>], [null, <ore:ingotBismuth>, null], [<ore:ingotUnknown>, <ore:ingotUnknown>, <ore:ingotUnknown>]]);
 recipes.addShaped(<minecraft:beacon>, [[<ore:blockGlassColorless>, <ore:blockGlassColorless>, <ore:blockGlassColorless>], [<ore:blockGlassColorless>, <ore:gemExquisiteDiamond>, <ore:blockGlassColorless>], [<ore:obsidian>, <thaumcraft:alumentum>, <ore:obsidian>]]);
 recipes.addShaped(<immersiveengineering:jerrycan>, [[<ore:tuyere>, <ore:dyeGreen>], [<ore:plateWroughtIron>, <minecraft:bucket>], [<ore:plateWroughtIron>, <ore:plateWroughtIron>]]);
 recipes.addShaped(<thaumcraft:baubles:6>, [[null, <ore:leather>, null], [<ore:leather>, null, <ore:leather>], [<ore:sheetRoseGold>, <ore:gemExquisite>, <ore:sheetRoseGold>]]);
