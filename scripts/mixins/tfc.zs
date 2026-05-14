@@ -124,7 +124,7 @@ zenClass MixinBellowsCompat {
         val mod = this0.rotationModifier;
         val world as World = this0.field_145850_b;
         val pos = this0.func_174877_v();
-        val f1 = world.func_180495_p(pos).func_177229_b(BotaniaStateProps.CARDINALS) as EnumFacing as EnumFacing;
+        val f1 = world.func_180495_p(pos).func_177229_b(BotaniaStateProps.CARDINALS) as EnumFacing;
         val pos1 = pos.func_177972_a(f1);
         val block1 = world.func_180495_p(pos1).func_177230_c();
 
@@ -161,7 +161,7 @@ zenClass MixinBellowsCompat2 {
         val mod = 4;
         val world as World = this0.field_145850_b;
         val pos = this0.func_174877_v();
-        val f1 = world.func_180495_p(pos).func_177229_b(BotaniaStateProps.CARDINALS) as EnumFacing as EnumFacing;
+        val f1 = world.func_180495_p(pos).func_177229_b(BotaniaStateProps.CARDINALS) as EnumFacing;
         val pos1 = pos.func_177972_a(f1);
         val block1 = world.func_180495_p(pos1).func_177230_c();
         
