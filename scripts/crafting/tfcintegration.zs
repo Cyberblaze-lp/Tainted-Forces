@@ -64,6 +64,8 @@ for item in <ore:hammer>.items
 {
 	item.definition.setHarvestLevel("IE_HAMMER", 1); 
 }
+<immersiveengineering:drill>.definition.setHarvestLevel("pickaxe", 3); 
+<immersiveengineering:drill>.definition.setHarvestLevel("shovel", 3); 
 
 
 ItemRegistry.registerItemMetal(<thaumcraft:mind>,"brass",288,true);

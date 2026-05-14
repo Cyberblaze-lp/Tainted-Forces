@@ -241,7 +241,6 @@ mods.embers.HeatCoil.add(<tfctech:ceramics/mold/glass_block>, <tfctech:ceramics/
 mods.embers.Stamper.add(<minecraft:glass_bottle>,<liquid:glass>*250 ,<ore:blowpipe>);
 mods.embers.Stamper.add(<minecraft:glass_pane>,<liquid:glass>*375 ,<tfctech:ceramics/mold/glass_pane>);
 mods.embers.Stamper.add(<minecraft:glass>,<liquid:glass>*1000 ,<tfctech:ceramics/mold/glass_block>);
-mods.embers.Stamper.add(<tfc:food/olive_paste>, null ,<tfc:metal/hammer_head/wrought_iron>,<tfc:food/olive>);
 mods.embers.Stamper.add(<appliedenergistics2:material:45>, null ,<tfc:metal/hammer_head/blue_steel>,<ore:blockSkyStone>);
 mods.embers.Stamper.add(<appliedenergistics2:material:45>, null ,<tfc:metal/hammer_head/red_steel>,<ore:blockSkyStone>);
 mods.embers.Stamper.add(<thermalfoundation:material:770>, null ,<tfc:metal/hammer_head/blue_steel>,<ore:obsidian>);

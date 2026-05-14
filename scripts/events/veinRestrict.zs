@@ -68,5 +68,5 @@ import native.net.minecraftforge.common.DimensionManager;
 		}
 	});
 
-    <thaumcraft:sapling_silverwood>.addTooltip(format.aqua("Needs to be planted in a Chunk with a Cinnabr Vein"));
+    
 //End

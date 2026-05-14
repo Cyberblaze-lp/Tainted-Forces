@@ -13,6 +13,11 @@ import crafttweaker.world.IWorldInfo;
 
 import native.net.minecraftforge.common.DimensionManager;
 
+
+//Add tooltips *before SC does its
+	<thaumcraft:sapling_silverwood>.addTooltip(format.aqua("Needs to be planted in a Chunk with a Cinnabar Vein"));
+//End
+
 //Dim-Restriction Definition
 	zenClass RestrictionEntry {
 		val isWhitelist as bool; 
@@ -163,7 +168,6 @@ import native.net.minecraftforge.common.DimensionManager;
 		addRestriction(false, true, [-1], item);
 	}
 //End
-
 
 
 

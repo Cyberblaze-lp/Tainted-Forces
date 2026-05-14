@@ -61,6 +61,10 @@ recipes.addShapeless(<ic2:reactor_heat_vent>, [<ic2:heat_vent>, <ic2:crafting:7>
 
 // ================================================================================
 //#MARKER ADD SHAPED
+recipes.addShaped(<railcraft:locomotive_steam_solid>, [[<immersiveengineering:metal_decoration0:4>], [<minecraft:minecart>]]);
+recipes.addShaped(<botania:bellows>, [[null, <ore:livingwood>, null], [<ore:leather>, <ore:leather>, <ore:leather>], [<ore:livingwood>, <ore:livingwood>, <ore:livingwood>]]);
+recipes.addShaped(<botania:pylon>, [[<ore:powderMana>, <ore:powderMana>, <ore:powderMana>], [<ore:ingotBrass>, <ore:powderMana>, <ore:ingotBrass>], [<ore:powderMana>, <ore:powderMana>, <ore:powderMana>]]);
+recipes.addShaped(<minecraft:piston>, [[<ore:lumber>, <ore:lumber>, <ore:lumber>], [<ore:cobblestone>, <ore:ingotManasteel>, <ore:cobblestone>], [<ore:cobblestone>, <ore:dustRedstone>, <ore:cobblestone>]]);
 recipes.addShaped(<botania:pylon>, [[<ore:powderMana>, <ore:powderMana>, <ore:powderMana>], [<ore:powderMana>, <ore:ingotGold>, <ore:powderMana>], [<ore:powderMana>, <ore:powderMana>, <ore:powderMana>]]);
 recipes.addShaped(<minecraft:redstone_torch> * 3, [[<ore:dustRedstone>], [<ore:livingwoodTwig>]]);
 recipes.addShaped(<immersiveengineering:wooden_device0:1>, [[<ore:livingwood>, null, <ore:livingwood>], [<ore:livingwood>, null, <ore:livingwood>], [<ore:livingwood>, <ore:livingwood>, <ore:livingwood>]]);

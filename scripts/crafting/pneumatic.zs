@@ -43,6 +43,10 @@ furnace.setFuel(<thaumcraft:alumentum>, 6400 );
   Squeezer.addRecipe(<thaumcraft:tallow>,
   null, 0.0,
   <liquid:lubricant>*50);
+
+  Squeezer.addRecipe(<tfc:food/olive>,
+  null, 0.0,
+  <liquid:olive_oil_water>*250);
 mods.pneumaticcraft.pressurechamber.addRecipe([<ore:ingotIron>, <ore:dustBedrock>], 2.0, [<pneumaticcraft:ingot_iron_compressed>]);
 mods.pneumaticcraft.assembly.removeLaserRecipe(<pneumaticcraft:unassembled_pcb>);
 recipes.remove(<pneumaticcraft:advanced_pcb>);
