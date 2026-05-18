@@ -1,4 +1,5 @@
 import crafttweaker.item.IItemStack;
+import crafttweaker.item.IIngredient;
 import mods.terrafirmacraft.ItemRegistry;
 import mods.terrafirmacraft.Anvil;
 import mods.terrafirmacraft.Alloy;
@@ -10,6 +11,8 @@ import mods.thaumcraft.SalisMundus;
 import mods.firmalife.Oven;
 import mods.immersiveintelligence.ChemicalBath;
 import mods.astralsorcery.Grindstone;
+import native.net.dries007.tfc.api.recipes.heat.HeatRecipeSimple;
+import native.net.dries007.tfc.api.registries.TFCRegistries;
 mods.immersiveintelligence.ChemicalBath.addRecipe(<ore:stoneMarble>, <astralsorcery:blockmarble>, <liquid:hydrofluoric_acid>*50, 3000, 30);
 
 
@@ -38,7 +41,8 @@ mods.immersiveengineering.Squeezer.addRecipe(null,<liquid:plantoil>*120,<ore:see
 //ItemRegistry.registerArmor(IIngredient input, float crushingModifier, float piercingModifier, float slashingModifier);
 //ItemRegistry.registerFood(IIngredient input, int hunger, float water, float saturation, float decay, float grain, float veg, float fruit, float meat, float dairy);
 
-
+val glassRecipe = HeatRecipeSimple( native.net.dries007.tfc.objects.inventory.ingredient.IIngredient.of("sand"), <minecraft:glass>.native, 500.0f ).setRegistryName("glass");
+TFCRegistries.HEAT.register(glassRecipe);
 
 ItemRegistry.registerFood(<ore:fish>, 1, 10.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.5, 0.0);
 ItemRegistry.registerFood(<ore:listAllmeatcooked>, 1, 3.0, 5.0, 1.0, 0.0, 0.0, 0.0, 1.5, 0.0);

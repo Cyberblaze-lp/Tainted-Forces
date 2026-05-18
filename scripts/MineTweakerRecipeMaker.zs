@@ -61,6 +61,9 @@ recipes.addShapeless(<ic2:reactor_heat_vent>, [<ic2:heat_vent>, <ic2:crafting:7>
 
 // ================================================================================
 //#MARKER ADD SHAPED
+recipes.addShaped(<rustichromia:ratiobox>, [[null, <thaumcraft:mind>, null], [<ore:gearWroughtIron>, <mysticalmechanics:gearbox_frame>, <ore:gearWroughtIron>], [null, <ore:gearWroughtIron>, null]]);
+recipes.addShaped(<rustichromia:ratiobox> * 5, [[null, <tetra:forged_bolt>, null], [<ore:gearWroughtIron>, <mysticalmechanics:gearbox_frame>, <ore:gearWroughtIron>], [null, <ore:gearWroughtIron>, null]]);
+recipes.addShaped(<mystgears:bellows_mechanical>, [[null, <thaumcraft:mechanism_simple>, null], [<ore:leather>, <ore:leather>, <ore:leather>], [<ore:livingwood>, <ore:livingwood>, <ore:livingwood>]]);
 recipes.addShaped(<railcraft:locomotive_steam_solid>, [[<immersiveengineering:metal_decoration0:4>], [<minecraft:minecart>]]);
 recipes.addShaped(<botania:bellows>, [[null, <ore:livingwood>, null], [<ore:leather>, <ore:leather>, <ore:leather>], [<ore:livingwood>, <ore:livingwood>, <ore:livingwood>]]);
 recipes.addShaped(<botania:pylon>, [[<ore:powderMana>, <ore:powderMana>, <ore:powderMana>], [<ore:ingotBrass>, <ore:powderMana>, <ore:ingotBrass>], [<ore:powderMana>, <ore:powderMana>, <ore:powderMana>]]);
