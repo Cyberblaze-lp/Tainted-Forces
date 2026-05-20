@@ -17,41 +17,11 @@ import mods.bloodmagic.BloodAltar;
 recipes.remove(<ic2:ingot>);
 recipes.addShaped(<ic2:ingot>, [[<ore:ingotOsmium>], [<ore:ingotConstantan>], [<ore:ingotZinc>]]);
 recipes.addShaped(<immersiveintelligence:material_ingot:6> * 2, [[<ore:itemSilicon>, <ore:itemSilicon>, <ore:itemSilicon>], [<ore:itemSilicon>, <ore:itemSilicon>, <ore:itemSilicon>]]);
-recipes.remove(<ic2:crafting:2>);
 
-
-
-
-recipes.remove(<immersiveengineering:tool>);
-recipes.remove(<immersiveengineering:tool:1>);
-recipes.remove(<thermalexpansion:frame>);
-
-
-
-
-//remove easy plate crafting
-recipes.removeShaped(<thaumcraft:plate:1> * 3, [[<ore:ingotIron>, <ore:ingotIron>, <ore:ingotIron>]]);
-
-recipes.removeShaped(<thaumcraft:plate> * 3, [[<ore:ingotBrass>, <ore:ingotBrass>, <ore:ingotBrass>]]);
-recipes.removeShaped(<thaumcraft:plate:2> * 3, [[<ore:ingotThaumium>, <ore:ingotThaumium>, <ore:ingotThaumium>]]);
-recipes.removeShaped(<thaumcraft:plate:3> * 3, [[<ore:ingotVoid>, <ore:ingotVoid>, <ore:ingotVoid>]]);
-
-recipes.remove(<cyberware:surgery_chamber>);
-
-recipes.remove(<cyberware:engineering_table>);
-recipes.remove(<ic2:resource:12>);
-recipes.remove(<magneticraft:multiblock_column>);
-recipes.remove(<magneticraft:multiblock_parts:5>);
 mods.tconstruct.Casting.addBasinRecipe(<magneticraft:multiblock_column>, <quark:sturdy_stone>, <liquid:lead>, 576, true, 160);
 mods.tconstruct.Casting.addBasinRecipe(<magneticraft:multiblock_parts:5>, <quark:iron_plate>, <liquid:iron>, 576, true, 160);
 mods.tconstruct.Casting.addBasinRecipe(<immersiveengineering:metal_decoration0:3>, <immersiveintelligence:metal_decoration:1>, <liquid:redstone>, 2000, true, 160);
 
-mods.tconstruct.Melting.removeRecipe(<liquid:iron>, <minecraft:minecart>);
-mods.tconstruct.Melting.removeRecipe(<liquid:iron>, <minecraft:anvil>);
-mods.thermalexpansion.InductionSmelter.removeRecipe(<minecraft:bucket>, <minecraft:sand>);
-mods.thermalexpansion.InductionSmelter.removeRecipe(<minecraft:anvil>, <minecraft:sand>);
-mods.thermalexpansion.InductionSmelter.removeRecipe(<minecraft:minecart>, <minecraft:sand>);
-mods.thermalexpansion.InductionSmelter.removeRecipe(<minecraft:cauldron>, <minecraft:sand>);
 
 
 
@@ -63,32 +33,6 @@ mods.immersiveengineering.Crusher.addRecipe(<appliedenergistics2:material:45>, <
 //QoL and automation recipes
 
 
-mods.immersiveengineering.Squeezer.addRecipe(<minecraft:coal>, <liquid:water>*100,<ore:dustHydratedCoal>*3, 10000);
-recipes.remove(<ic2:dust:6>);
-recipes.remove(<thermalexpansion:frame:64>);
-recipes.remove(<ic2:te:39>);
-recipes.remove(<mekanism:teleportationcore>);
-recipes.remove(<ic2:te:63>);
-// removes recipes for flux reconstruction and pyroconvective loop respectively.
-recipes.remove(<thermalexpansion:augment:401>);
-recipes.remove(<thermalexpansion:augment:352>);
-
-recipes.remove(<tconstruct:materials:18>);
-recipes.remove(<immersiveengineering:metal_device1:13>);
-
-
-recipes.remove(<advancedrocketry:arcfurnace>);
-
-
-recipes.addShapeless(<tconstruct:throwball:1> * 16, [<ore:alloyBasic>, <ore:gunpowder>, <ore:plateLead>, <ore:dustVulcanite>]);
-recipes.addShaped(<thermalexpansion:frame:64>, [[<ore:ingotManasteel>, <ore:blockGlass>, <ore:ingotManasteel>], [<ore:blockGlass>, <ore:gearCopper>, <ore:blockGlass>], [<ore:ingotManasteel>, <ore:blockGlass>, <ore:ingotManasteel>]]);
-recipes.addShaped(<thermalexpansion:frame:64>, [[<ore:ingotColdIron>, <ore:blockGlass>, <ore:ingotColdIron>], [<ore:blockGlass>, <ore:gearCopper>, <ore:blockGlass>], [<ore:ingotColdIron>, <ore:blockGlass>, <ore:ingotColdIron>]]);
-recipes.addShaped(<ic2:te:39>, [[<ore:ingotEximite>, <ore:ingotEximite>, <ore:ingotEximite>], [<ore:circuitAdvanced>, <ic2:resource:13>, <ore:circuitAdvanced>], [<ic2:cable:1>, <ic2:frequency_transmitter>, <ic2:cable:1>]]);
-recipes.addShaped(<mekanism:teleportationcore>, [[<ore:plateDenseLapis>, <ore:dustEximite>, <ore:plateDenseLapis>], [<ore:dustEximite>, <ore:alloyUltimate>, <ore:dustEximite>], [<ore:plateDenseLapis>, <ore:dustEximite>, <ore:plateDenseLapis>]]);
-recipes.addShaped(<ic2:te:63>, [[<ic2:resource:11>, <ic2:glass>, <ic2:resource:11>], [<ore:ingotMeutoite>, <ic2:te:39>, <ore:ingotMeutoite>], [<ore:ingotMeutoite>, <ic2:te:74>, <ore:ingotMeutoite>]]);
-
-recipes.addShaped(<tconstruct:materials:18>, [[<ore:vine>, <ore:vine>, <ore:vine>], [<ore:ingotPrometheum>, <ore:ingotPrometheum>, <ore:ingotPrometheum>], [<ore:vine>, <ore:vine>, <ore:vine>]]);
-recipes.addShaped(<immersiveengineering:metal_device1:13>, [[<ore:blockGlass>, <ore:electronTubeAdvanced>, <ore:blockGlass>], [<ore:blockGlass>, <immersiveengineering:material:8>, <ore:blockGlass>], [<ore:plankTreatedWood>, <ore:blockPrometheum>, <ore:plankTreatedWood>]]);
 
 val processor = <ore:circuitElite>;
 val advcircuit = (<ore:circuitAdvanced>);
@@ -164,12 +108,6 @@ aluwire.add(<tfctech:metal/aluminium_wire>);
 <ore:gearTungsten>.remove(<immersiveintelligence:motor_gear:4>);
 
 
-mods.thermalexpansion.InductionSmelter.removeRecipe(<tfc:metal/ingot/wrought_iron>,<thermalfoundation:material:768>*4);
-mods.thermalexpansion.InductionSmelter.removeRecipe(<tfc:metal/ingot/wrought_iron>,<thermalfoundation:material:769>*4);
-mods.thermalexpansion.InductionSmelter.removeRecipe(<tfc:metal/ingot/wrought_iron>,<thermalfoundation:material:802>);
-mods.thermalexpansion.InductionSmelter.removeRecipe(<thermalfoundation:material>,<thermalfoundation:material:768>*4);
-mods.thermalexpansion.InductionSmelter.removeRecipe(<thermalfoundation:material>,<thermalfoundation:material:769>*4);
-mods.thermalexpansion.InductionSmelter.removeRecipe(<thermalfoundation:material>,<thermalfoundation:material:802>);
 
 
 
@@ -180,14 +118,6 @@ recipes.remove(<ore:dustSteel>);
 recipes.addShapeless(<immersiveintelligence:printed_page:1>.withTag({display: {Lore: ["The very paper seems to twist and warp around the symbols and pictograms describing this feat of eldritch engineering"], Name: "Tesseract Plans"}, text: "fwy yn mil a chwalu ei yna, itilaer ein orchudd i hunain eu amlygu rywun i rhaid, dduwiol yn ddod i           ________            \\______/                         .  | ;V; |  Sre'nut alse't          _|___|_  Ne                      | \\  /. | surai'inos r'ed        |   °~ | Ddiarc Laidromirp    |_/_\\_|                                                               __;A;__ /______\\Rezilib'atsliev         T'I ILODDA       TI IL'ODDAef wadd'r ddeoresma ddewid i lewhcmydd ry neh iar rwam       "}), [<immersiveintelligence:printed_page:3>.withTag({RepairCost: 0, display: {Lore: ["Even though the ink is faded beyond recognition, you could swear you can feel reality curling around where the symbols used to be. Perhaps a deeper understanding of the fabric of Reality itself may allow you to decipher it against all odds.... "], Name: "Mangled Tesseract Plans"}}).onlyWithTag({RepairCost: 0, display: {Lore: ["Even though the ink is faded beyond recognition, you could swear you can feel reality curling around where the symbols used to be. Perhaps a deeper understanding of the fabric of Reality itself may allow you to decipher it against all odds.... "], Name: "Mangled Tesseract Plans"}}),<astralsorcery:itemusabledust:1>,<botania:lightrelay>,<astralsorcery:iteminfusedglass>.reuse(),<botania:dice>]);
 recipes.addShaped(<ic2:thick_neutron_reflector>, [[null, <ore:ingotHOPGraphite>, null],[<ic2:neutron_reflector>, <ore:plateBeryllium>, <ic2:neutron_reflector>], [null, <ore:ingotHOPGraphite>, null]]);
 recipes.addShaped(<ic2:neutron_reflector>, [[<ore:dustTungsten>, <ore:dustCoal>, <ore:dustTungsten>],[<ore:dustCoal>, <ore:plateZinc>, <ore:dustCoal>], [<ore:dustTungsten>, <ore:dustCoal>, <ore:dustTungsten>]]);
-
-
-
-// ore drill tweaks
-
-
-
-
 
 //Fusion fuel changes
 

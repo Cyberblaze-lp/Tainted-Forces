@@ -54,7 +54,7 @@ recipes.remove(<thermalexpansion:satchel>);
 recipes.remove(<extrautils2:drum>);
 recipes.remove(<mystgears:ember_gatling_gun>);
 recipes.remove(<embers:mini_boiler>);
-recipes.remove(<mystgears:windup_box>);
+mods.jei.JEI.removeAndHide(<mystgears:windup_box>);
 recipes.remove(<embers:cinder_plinth>);
 recipes.remove(<minecraft:wool>);
 recipes.remove(<immersiveengineering:skyhook>);
@@ -182,7 +182,6 @@ recipes.addShapeless(<minecraft:cobblestone> * 3, [<ore:cobblestone>, <ore:morta
 recipes.addShapeless(<minecraft:rabbit_hide>, [<tfc:hide/prepared/small>]);
 recipes.addShapeless(<ic2:nuclear:2>, [<ic2:nuclear:6>, <ic2:nuclear:6>, <ic2:nuclear:6>, <ic2:nuclear:6>, <ic2:nuclear:6>, <ic2:nuclear:6>, <ic2:nuclear:6>, <ic2:nuclear:6>, <ic2:nuclear:6>]);
 
-recipes.addShapeless(<ic2:cover>, [<ore:barsIron>, <mysticalmechanics:gear_fan>, <tfc:brass_mechanisms>]);
 
 recipes.addShapeless(<immersiveintelligence:material:40> * 12, [<ore:sand>, <ore:clothHighQuality>]);
 recipes.addShapeless(<immersiveintelligence:material:40> * 12, [<ore:sand>, <tfc:crop/product/burlap_cloth>]);
@@ -338,15 +337,15 @@ recipes.addShaped(<pneumaticcraft:assembly_platform>, [[<pneumaticcraft:pneumati
 recipes.addShaped(<pneumaticcraft:assembly_laser>, [[null, <thaumcraft:focus_2>, <thaumcraft:vis_resonator>], [null, <pneumaticcraft:plastic:14>, <pneumaticcraft:pneumatic_cylinder>], [<ore:ingotIronCompressed>, <ore:ingotIronCompressed>, <ore:ingotIronCompressed>]]);
 recipes.addShaped(<pneumaticcraft:assembly_drill>, [[null, <immersiveintelligence:drillhead:1>, <pneumaticcraft:turbine_rotor>], [null, <pneumaticcraft:plastic:14>, <pneumaticcraft:pneumatic_cylinder>], [<ore:ingotIronCompressed>, <ore:ingotIronCompressed>, <ore:ingotIronCompressed>]]);
 recipes.addShaped(<pneumaticcraft:assembly_io_unit>, [[null, <tfctech:metal/iron_tongs>, <pneumaticcraft:pneumatic_cylinder>], [null, <pneumaticcraft:plastic:14>, <pneumaticcraft:pneumatic_cylinder>], [<ore:ingotIronCompressed>, <ore:ingotIronCompressed>, <ore:ingotIronCompressed>]]);
-recipes.addShaped(<pneumaticcraft:assembly_controller>, [[null, <thaumcraft:brain_box>, null], [<pneumaticcraft:pressure_tube>, <thaumcraft:mechanism_simple>, null], [<ore:ingotIronCompressed>, <ore:ingotIronCompressed>, <ore:ingotIronCompressed>]]);
+recipes.addShaped(<pneumaticcraft:assembly_controller>, [[null, <thaumcraft:mind:1>, null], [<pneumaticcraft:pressure_tube>, <thaumcraft:mechanism_simple>, null], [<ore:ingotIronCompressed>, <ore:ingotIronCompressed>, <ore:ingotIronCompressed>]]);
 recipes.addShaped(<tconstruct:dried_clay:1> * 2, [[<tconstruct:materials:2>, <ore:mortar>, <tconstruct:materials:2>], [<ore:mortar>, <tconstruct:materials:2>, <ore:mortar>], [<tconstruct:materials:2>, <ore:mortar>, <tconstruct:materials:2>]]);
 recipes.addShaped(<tfctech:smeltery_firebox>, [[<tconstruct:materials:2>, <tconstruct:materials:2>, <tconstruct:materials:2>], [<tconstruct:materials:2>, <ore:mortar>, <tconstruct:materials:2>]]);
 recipes.addShaped(<tfctech:smeltery_cauldron>, [[<thaumcraft:slab_arcane_stone>], [<minecraft:cauldron>]]);
 recipes.addShaped(<immersiveengineering:chemthrower>, [[null, <immersiveengineering:toolupgrade>, <ore:gungripWood>], [<immersiveengineering:toolupgrade>, <thaumcraft:metal_alchemical>, <ore:gungripWood>], [<immersiveengineering:material:8>, null, <ore:bucket>]]);
 recipes.addShaped(<immersiveengineering:metal_device0:5> * 2, [[null, <ore:plateIron>, null], [<ore:barsIron>, <immersiveengineering:material:8>, <ore:barsIron>], [<ore:plateIron>, <ore:barsIron>, <ore:plateIron>]]);
 recipes.addShaped(<embers:bin> * 2, [[<ore:nuggetIron>, null, <ore:nuggetIron>], [<ore:nuggetIron>, null, <ore:nuggetIron>], [<ore:nuggetIron>, <ore:nuggetIron>, <ore:nuggetIron>]]);
-recipes.addShaped(<extrautils2:miner>, [[<thaumcraft:stone_arcane_brick>, <tfc:metal/pick/wrought_iron>, <thaumcraft:stone_arcane_brick>], [<thaumcraft:stone_arcane_brick>, <thaumcraft:mechanism_complex>, <thaumcraft:stone_arcane_brick>], [<thaumcraft:stone_arcane_brick>, <thaumcraft:brain_box>, <thaumcraft:stone_arcane_brick>]]);
-recipes.addShaped(<extrautils2:user>, [[<thaumcraft:stone_arcane_brick>, <tfctech:metal/iron_tongs>, <thaumcraft:stone_arcane_brick>], [<thaumcraft:stone_arcane_brick>, <thaumcraft:mechanism_complex>, <thaumcraft:stone_arcane_brick>], [<thaumcraft:stone_arcane_brick>, <thaumcraft:brain_box>, <thaumcraft:stone_arcane_brick>]]);
+
+
 recipes.addShaped(<embers:ember_pipe> * 16, [[null, <ore:wireCopper>, <ore:screwSilver>], [<ore:wireCopper>, <ore:stickLongRedSteel>, <ore:wireCopper>], [<ore:screwSilver>, <ore:wireCopper>, null]]);
 
 recipes.addShaped(<embers:catalytic_plug> * 3, [[<minecraft:glass_bottle>, <minecraft:glass_bottle>, null], [null, <ore:gunpartRevolver>, <ore:plateSilver>], [<minecraft:glass_bottle>, <minecraft:glass_bottle>, null]]);
@@ -362,8 +361,7 @@ recipes.addShaped(<minecraft:heavy_weighted_pressure_plate> * 16, [[<ore:plateIr
 recipes.addShaped(<mekanism:basicblock:8>, [[<ore:heavyPlateSteel>, <ore:heavyPlateSteel>, <ore:heavyPlateSteel>], [<ore:ingotCrudeSteel>, null, <ore:ingotCrudeSteel>], [<ore:heavyPlateSteel>, <ore:heavyPlateSteel>, <ore:heavyPlateSteel>]]);
 
 recipes.addShaped(<appliedenergistics2:inscriber>, [[<ore:ingotSteel>, <cyberware:component>, <ore:ingotSteel>], [null, null, <ore:ingotSteel>], [<ore:ingotSteel>, <cyberware:component>, <ore:ingotSteel>]]);
-recipes.addShaped(<extrautils2:analogcrafter>, [[<immersiveengineering:treated_wood>, <ore:ingotDoubleCopper>, <immersiveengineering:treated_wood>], [<immersiveengineering:treated_wood>, <thaumcraft:pattern_crafter>, <immersiveengineering:treated_wood>], [<immersiveengineering:treated_wood>, <thaumcraft:brain_box>, <immersiveengineering:treated_wood>]]);
-recipes.addShaped(<extrautils2:crafter>, [[<thaumcraft:stone_arcane_brick>, <ore:ingotDoubleElectrum>, <thaumcraft:stone_arcane_brick>], [<thaumcraft:stone_arcane_brick>, <thaumcraft:pattern_crafter>, <thaumcraft:stone_arcane_brick>], [<thaumcraft:stone_arcane_brick>, <thaumcraft:brain_box>, <thaumcraft:stone_arcane_brick>]]);
+
 
 recipes.addShaped(<bloodmagic:soul_forge>, [[<embers:aspectus_silver>, null, <embers:aspectus_silver>], [<ore:ingotColdIron>, <embers:seed_silver>, <ore:ingotColdIron>], [<ore:ingotColdIron>, null, <ore:ingotColdIron>]]);
 recipes.addShaped(<immersiveintelligence:motor_gear>, [[<ore:rackwheelPieceCopper>, null], [null, <ore:rackwheelPieceCopper>]]);

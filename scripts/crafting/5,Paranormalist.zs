@@ -15,8 +15,7 @@ import mods.astralsorcery.Altar;
 
 recipes.addShaped(<thebetweenlands:item_cage>, [[<thebetweenlands:weedwood_plank_slab>, <ore:ingotSyrmorite>, <thebetweenlands:weedwood_plank_slab>], [<ore:rodBlizz>, null, <ore:rodBlizz>], [null, <thebetweenlands:weedwood_plank_slab>, null]]);
 
-mods.thaumcraft.Crucible.removeRecipe(<thaumcraft:ingot>);
-mods.thaumcraft.Infusion.removeRecipe(<thaumicaugmentation:thaumostatic_harness>);
+
 mods.thaumcraft.Crucible.registerRecipe("betterthaumium", "METALLURGY@2",<thaumcraft:ingot>,<ore:ingotBismuth>,[<aspect:praecantatio>*5,<aspect:terra>*5]);
 mods.thaumcraft.Infusion.registerRecipe("FLEXPACK", "THAUMOSTATIC_HARNESS", <thaumicaugmentation:thaumostatic_harness>,10, [<aspect:potentia>*50,<aspect:machina>*25, <aspect:volatus>*25, <aspect:motus>*25],<minecraft:leather_chestplate>,[<thaumcraft:morphic_resonator>,<thaumcraft:morphic_resonator>,<ore:plateBrass>, <ore:plateBrass>, <thaumcraft:metal_alchemical>,<thaumcraft:plank_greatwood>,<thaumcraft:plank_greatwood>,<thaumcraft:mind>]);
 mods.thaumcraft.Infusion.registerRecipe("RADIOBEACON", "THAUMOSTATIC_HARNESS",<cyberware:beacon_large>,10, [<aspect:aer>*50 , <aspect:volatus>*20, <aspect:permutatio>*20, <aspect:potentia>*20],<thaumcraft:metal_alchemical>,[<thaumcraft:tube>,<thaumcraft:tube>,<thaumcraft:morphic_resonator>,<thaumcraft:tube>,<thaumcraft:tube>,<thaumcraft:morphic_resonator>]);
@@ -47,9 +46,6 @@ Agglomeration.addRecipe(<astralsorcery:blockblackmarble>*8,[<minecraft:fire_char
 
 
 
-//mekanism gating
-recipes.remove(<mekanism:basicblock:8>);
-recipes.remove(<mekanism:machineblock:8>);
 
 
 
@@ -94,17 +90,11 @@ mods.thermalexpansion.Centrifuge.addRecipe([<mekanism:controlcircuit:3>*24,<astr
 mods.jei.JEI.addDescription(<pneumaticcraft:printed_circuit_board>, ["The crystal used to craft this needs to be max Size and Cutting, and be attuned to Alcara. Purity does not matter.","You can either use this right away, or centrifuge it to get the crystal back. Well, what's left of it, anyway.","The crystal can then be re-grown, converted, attuned, cut, etc., forming a closed loop."]);
 mods.jei.JEI.addDescription(<pneumaticcraft:transistor>, ["The crystal used to craft this needs to be max Size and Cutting, and be attuned to Octans. Purity does not matter.","You can either use this right away, or centrifuge it to get the crystal back. Well, what's left of it, anyway.","The crystal can then be re-grown, converted, attuned, cut, etc., forming a closed loop."]);
 
-recipes.remove(<mekanism:machineblock3:1>);
 
 
 
 
-// blood magic stuff
-mods.bloodmagic.BloodAltar.removeRecipe(<minecraft:stone>);
-mods.bloodmagic.BloodAltar.removeRecipe(<bloodmagic:slate>);
-mods.bloodmagic.BloodAltar.removeRecipe(<bloodmagic:slate:1>);
-mods.bloodmagic.BloodAltar.removeRecipe(<bloodmagic:slate:2>);
-mods.bloodmagic.BloodAltar.removeRecipe(<bloodmagic:slate:3>);
+
 
 mods.bloodmagic.BloodAltar.addRecipe(<bloodmagic:slate>, <minecraft:netherrack>, 0, 1000,40,40);
 mods.bloodmagic.BloodAltar.addRecipe(<bloodmagic:slate:1>, <thebetweenlands:betweenstone>, 1, 2000,80,70);

@@ -5,6 +5,31 @@ import native.net.minecraft.item.ItemStack;
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 
+global rocktypes as string[] =
+[
+    "granite",
+    "diorite",
+    "gabbro",
+    "shale",
+    "claystone",
+    "rocksalt",
+    "limestone",
+    "conglomerate",
+    "dolomite",
+    "chert",
+    "chalk",
+    "rhyolite",
+    "basalt",
+    "andesite",
+    "dacite",
+    "quartzite",
+    "slate",
+    "phyllite",
+    "schist",
+    "gneiss",
+    "marble"
+];
+
 
 
 $expand IItemStack$fresh() as IIngredient

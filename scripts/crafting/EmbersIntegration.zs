@@ -74,112 +74,26 @@ mods.embers.Stamper.add(<thebetweenlands:items_misc:18>, null ,<embers:stamp_fla
 
 mods.embers.Stamper.add(<tfc:ceramics/unfired/mold/ingot>, null ,<ore:ingotIron>,<minecraft:clay_ball>);
 
-//cobble to gravel
 
-mods.embers.Stamper.add(<tfc:gravel/granite>, null ,<tfc:metal/hammer_head/wrought_iron>,<tfc:cobble/granite>);
-mods.embers.Stamper.add(<tfc:gravel/diorite>, null ,<tfc:metal/hammer_head/wrought_iron>,<tfc:cobble/diorite>);
-mods.embers.Stamper.add(<tfc:gravel/gabbro>, null ,<tfc:metal/hammer_head/wrought_iron>,<tfc:cobble/gabbro>);
-mods.embers.Stamper.add(<tfc:gravel/shale>, null ,<tfc:metal/hammer_head/wrought_iron>,<tfc:cobble/shale>);
-mods.embers.Stamper.add(<tfc:gravel/claystone>, null ,<tfc:metal/hammer_head/wrought_iron>,<tfc:cobble/claystone>);
-mods.embers.Stamper.add(<tfc:gravel/rocksalt>, null ,<tfc:metal/hammer_head/wrought_iron>,<tfc:cobble/rocksalt>);
-mods.embers.Stamper.add(<tfc:gravel/limestone>, null ,<tfc:metal/hammer_head/wrought_iron>,<tfc:cobble/limestone>);
-mods.embers.Stamper.add(<tfc:gravel/conglomerate>, null ,<tfc:metal/hammer_head/wrought_iron>,<tfc:cobble/conglomerate>);
-mods.embers.Stamper.add(<tfc:gravel/dolomite>, null ,<tfc:metal/hammer_head/wrought_iron>,<tfc:cobble/dolomite>);
-mods.embers.Stamper.add(<tfc:gravel/chert>, null ,<tfc:metal/hammer_head/wrought_iron>,<tfc:cobble/chert>);
-mods.embers.Stamper.add(<tfc:gravel/chalk>, null ,<tfc:metal/hammer_head/wrought_iron>,<tfc:cobble/chalk>);
-mods.embers.Stamper.add(<tfc:gravel/rhyolite>, null ,<tfc:metal/hammer_head/wrought_iron>,<tfc:cobble/rhyolite>);
-mods.embers.Stamper.add(<tfc:gravel/basalt>, null ,<tfc:metal/hammer_head/wrought_iron>,<tfc:cobble/basalt>);
-mods.embers.Stamper.add(<tfc:gravel/andesite>, null ,<tfc:metal/hammer_head/wrought_iron>,<tfc:cobble/andesite>);
-mods.embers.Stamper.add(<tfc:gravel/dacite>, null ,<tfc:metal/hammer_head/wrought_iron>,<tfc:cobble/dacite>);
-mods.embers.Stamper.add(<tfc:gravel/quartzite>, null ,<tfc:metal/hammer_head/wrought_iron>,<tfc:cobble/quartzite>);
-mods.embers.Stamper.add(<tfc:gravel/slate>, null ,<tfc:metal/hammer_head/wrought_iron>,<tfc:cobble/slate>);
-mods.embers.Stamper.add(<tfc:gravel/phyllite>, null ,<tfc:metal/hammer_head/wrought_iron>,<tfc:cobble/phyllite>);
-mods.embers.Stamper.add(<tfc:gravel/schist>, null ,<tfc:metal/hammer_head/wrought_iron>,<tfc:cobble/schist>);
-mods.embers.Stamper.add(<tfc:gravel/gneiss>, null ,<tfc:metal/hammer_head/wrought_iron>,<tfc:cobble/gneiss>);
-mods.embers.Stamper.add(<tfc:gravel/marble>, null ,<tfc:metal/hammer_head/wrought_iron>,<tfc:cobble/marble>);
-/*
-mods.embers.Stamper.add(<tfc:gravel/breccia>, null ,<tfc:metal/hammer_head/wrought_iron>,<tfc:cobble/breccia>);
-mods.embers.Stamper.add(<tfc:gravel/porphyry>, null ,<tfc:metal/hammer_head/wrought_iron>,<tfc:cobble/porphyry>);
-mods.embers.Stamper.add(<tfc:gravel/peridotite>, null ,<tfc:metal/hammer_head/wrought_iron>,<tfc:cobble/peridotite>);
-mods.embers.Stamper.add(<tfc:gravel/mudstone>, null ,<tfc:metal/hammer_head/wrought_iron>,<tfc:cobble/mudstone>);
-mods.embers.Stamper.add(<tfc:gravel/sandstone>, null ,<tfc:metal/hammer_head/wrought_iron>,<tfc:cobble/sandstone>);
-mods.embers.Stamper.add(<tfc:gravel/siltstone>, null ,<tfc:metal/hammer_head/wrought_iron>,<tfc:cobble/siltstone>);
-mods.embers.Stamper.add(<tfc:gravel/catlinite>, null ,<tfc:metal/hammer_head/wrought_iron>,<tfc:cobble/catlinite>);
-mods.embers.Stamper.add(<tfc:gravel/novaculite>, null ,<tfc:metal/hammer_head/wrought_iron>,<tfc:cobble/novaculite>);
-mods.embers.Stamper.add(<tfc:gravel/soapstone>, null ,<tfc:metal/hammer_head/wrought_iron>,<tfc:cobble/soapstone>);
-mods.embers.Stamper.add(<tfc:gravel/komatiite>, null ,<tfc:metal/hammer_head/wrought_iron>,<tfc:cobble/komatiite>);
-*/
-//gravel to sand
+for stone in rocktypes
+{
+    val cobble = itemUtils.getItem("tfc:cobble/"+ stone);
+    val gravel = itemUtils.getItem("tfc:gravel/"+ stone);
+    val sand = itemUtils.getItem("tfc:sand/"+ stone);
+    val rock = itemUtils.getItem("tfc:rock/"+ stone);
 
-mods.embers.Stamper.add(<tfc:ceramics/unfired/mold/ingot>*2, null ,<ore:ingotIron>,<minecraft:clay>);
-mods.embers.Stamper.add(<tfc:sand/granite>, null ,<tfc:metal/hammer_head/wrought_iron>,<tfc:gravel/granite>);
-mods.embers.Stamper.add(<tfc:sand/diorite>, null ,<tfc:metal/hammer_head/wrought_iron>,<tfc:gravel/diorite>);
-mods.embers.Stamper.add(<tfc:sand/gabbro>, null ,<tfc:metal/hammer_head/wrought_iron>,<tfc:gravel/gabbro>);
-mods.embers.Stamper.add(<tfc:sand/shale>, null ,<tfc:metal/hammer_head/wrought_iron>,<tfc:gravel/shale>);
-mods.embers.Stamper.add(<tfc:sand/claystone>, null ,<tfc:metal/hammer_head/wrought_iron>,<tfc:gravel/claystone>);
-mods.embers.Stamper.add(<tfc:sand/rocksalt>, null ,<tfc:metal/hammer_head/wrought_iron>,<tfc:gravel/rocksalt>);
-mods.embers.Stamper.add(<tfc:sand/limestone>, null ,<tfc:metal/hammer_head/wrought_iron>,<tfc:gravel/limestone>);
-mods.embers.Stamper.add(<tfc:sand/conglomerate>, null ,<tfc:metal/hammer_head/wrought_iron>,<tfc:gravel/conglomerate>);
-mods.embers.Stamper.add(<tfc:sand/dolomite>, null ,<tfc:metal/hammer_head/wrought_iron>,<tfc:gravel/dolomite>);
-mods.embers.Stamper.add(<tfc:sand/chert>, null ,<tfc:metal/hammer_head/wrought_iron>,<tfc:gravel/chert>);
-mods.embers.Stamper.add(<tfc:sand/chalk>, null ,<tfc:metal/hammer_head/wrought_iron>,<tfc:gravel/chalk>);
-mods.embers.Stamper.add(<tfc:sand/rhyolite>, null ,<tfc:metal/hammer_head/wrought_iron>,<tfc:gravel/rhyolite>);
-mods.embers.Stamper.add(<tfc:sand/basalt>, null ,<tfc:metal/hammer_head/wrought_iron>,<tfc:gravel/basalt>);
-mods.embers.Stamper.add(<tfc:sand/andesite>, null ,<tfc:metal/hammer_head/wrought_iron>,<tfc:gravel/andesite>);
-mods.embers.Stamper.add(<tfc:sand/dacite>, null ,<tfc:metal/hammer_head/wrought_iron>,<tfc:gravel/dacite>);
-mods.embers.Stamper.add(<tfc:sand/quartzite>, null ,<tfc:metal/hammer_head/wrought_iron>,<tfc:gravel/quartzite>);
-mods.embers.Stamper.add(<tfc:sand/slate>, null ,<tfc:metal/hammer_head/wrought_iron>,<tfc:gravel/slate>);
-mods.embers.Stamper.add(<tfc:sand/phyllite>, null ,<tfc:metal/hammer_head/wrought_iron>,<tfc:gravel/phyllite>);
-mods.embers.Stamper.add(<tfc:sand/schist>, null ,<tfc:metal/hammer_head/wrought_iron>,<tfc:gravel/schist>);
-mods.embers.Stamper.add(<tfc:sand/gneiss>, null ,<tfc:metal/hammer_head/wrought_iron>,<tfc:gravel/gneiss>);
-mods.embers.Stamper.add(<tfc:sand/marble>, null ,<tfc:metal/hammer_head/wrought_iron>,<tfc:gravel/marble>);
-/*
-mods.embers.Stamper.add(<tfc:sand/breccia>, null ,<tfc:metal/hammer_head/wrought_iron>,<tfc:gravel/breccia>);
-mods.embers.Stamper.add(<tfc:sand/porphyry>, null ,<tfc:metal/hammer_head/wrought_iron>,<tfc:gravel/porphyry>);
-mods.embers.Stamper.add(<tfc:sand/peridotite>, null ,<tfc:metal/hammer_head/wrought_iron>,<tfc:gravel/peridotite>);
-mods.embers.Stamper.add(<tfc:sand/mudstone>, null ,<tfc:metal/hammer_head/wrought_iron>,<tfc:gravel/mudstone>);
-mods.embers.Stamper.add(<tfc:sand/sandstone>, null ,<tfc:metal/hammer_head/wrought_iron>,<tfc:gravel/sandstone>);
-mods.embers.Stamper.add(<tfc:sand/siltstone>, null ,<tfc:metal/hammer_head/wrought_iron>,<tfc:gravel/siltstone>);
-mods.embers.Stamper.add(<tfc:sand/catlinite>, null ,<tfc:metal/hammer_head/wrought_iron>,<tfc:gravel/catlinite>);
-mods.embers.Stamper.add(<tfc:sand/novaculite>, null ,<tfc:metal/hammer_head/wrought_iron>,<tfc:gravel/novaculite>);
-mods.embers.Stamper.add(<tfc:sand/soapstone>, null ,<tfc:metal/hammer_head/wrought_iron>,<tfc:gravel/soapstone>);
-mods.embers.Stamper.add(<tfc:sand/komatiite>, null ,<tfc:metal/hammer_head/wrought_iron>,<tfc:gravel/komatiite>);
-*/
-//stone duplication
-mods.embers.Stamper.add(<tfc:raw/marble>, <liquid:enrichedlava>*50 ,<tfctech:ceramics/mold/glass_block>,<tfc:rock/marble>);
-mods.embers.Stamper.add(<tfc:raw/chalk>, <liquid:enrichedlava>*50 ,<tfctech:ceramics/mold/glass_block>,<tfc:rock/chalk>);
-mods.embers.Stamper.add(<tfc:raw/limestone>, <liquid:enrichedlava>*50 ,<tfctech:ceramics/mold/glass_block>,<tfc:rock/limestone>);
-mods.embers.Stamper.add(<tfc:raw/dolomite>, <liquid:enrichedlava>*50 ,<tfctech:ceramics/mold/glass_block>,<tfc:rock/dolomite>);
 
-mods.embers.Stamper.add(<tfc:raw/granite>, <liquid:lava>*250 ,<tfctech:ceramics/mold/glass_block>,<tfc:rock/granite>);
-mods.embers.Stamper.add(<tfc:raw/diorite>, <liquid:lava>*250 ,<tfctech:ceramics/mold/glass_block>,<tfc:rock/diorite>);
-mods.embers.Stamper.add(<tfc:raw/gabbro>, <liquid:lava>*250 ,<tfctech:ceramics/mold/glass_block>,<tfc:rock/gabbro>);
-mods.embers.Stamper.add(<tfc:raw/shale>, <liquid:lava>*250 ,<tfctech:ceramics/mold/glass_block>,<tfc:rock/shale>);
-mods.embers.Stamper.add(<tfc:raw/claystone>, <liquid:lava>*250 ,<tfctech:ceramics/mold/glass_block>,<tfc:rock/claystone>);
-mods.embers.Stamper.add(<tfc:raw/rocksalt>, <liquid:lava>*250 ,<tfctech:ceramics/mold/glass_block>,<ore:dustSalt>*4);
-mods.embers.Stamper.add(<tfc:raw/conglomerate>, <liquid:lava>*250 ,<tfctech:ceramics/mold/glass_block>,<tfc:rock/conglomerate>);
-mods.embers.Stamper.add(<tfc:raw/chert>, <liquid:lava>*250 ,<tfctech:ceramics/mold/glass_block>,<tfc:rock/chert>);
-mods.embers.Stamper.add(<tfc:raw/rhyolite>, <liquid:lava>*250 ,<tfctech:ceramics/mold/glass_block>,<tfc:rock/rhyolite>);
-mods.embers.Stamper.add(<tfc:raw/basalt>, <liquid:lava>*250 ,<tfctech:ceramics/mold/glass_block>,<tfc:rock/basalt>);
-mods.embers.Stamper.add(<tfc:raw/andesite>, <liquid:lava>*250 ,<tfctech:ceramics/mold/glass_block>,<tfc:rock/andesite>);
-mods.embers.Stamper.add(<tfc:raw/dacite>, <liquid:lava>*250 ,<tfctech:ceramics/mold/glass_block>,<tfc:rock/dacite>);
-mods.embers.Stamper.add(<tfc:raw/quartzite>, <liquid:lava>*250 ,<tfctech:ceramics/mold/glass_block>,<tfc:rock/quartzite>);
-mods.embers.Stamper.add(<tfc:raw/slate>, <liquid:lava>*250 ,<tfctech:ceramics/mold/glass_block>,<tfc:rock/slate>);
-mods.embers.Stamper.add(<tfc:raw/phyllite>, <liquid:lava>*250 ,<tfctech:ceramics/mold/glass_block>,<tfc:rock/phyllite>);
-mods.embers.Stamper.add(<tfc:raw/schist>, <liquid:lava>*250 ,<tfctech:ceramics/mold/glass_block>,<tfc:rock/schist>);
-mods.embers.Stamper.add(<tfc:raw/gneiss>, <liquid:lava>*250 ,<tfctech:ceramics/mold/glass_block>,<tfc:rock/gneiss>);
-/*
-mods.embers.Stamper.add(<tfc:raw/breccia>, <liquid:lava>*250 ,<tfctech:ceramics/mold/glass_block>,<tfc:rock/breccia>);
-mods.embers.Stamper.add(<tfc:raw/porphyry>, <liquid:lava>*250 ,<tfctech:ceramics/mold/glass_block>,<tfc:rock/porphyry>);
-mods.embers.Stamper.add(<tfc:raw/peridotite>, <liquid:lava>*250 ,<tfctech:ceramics/mold/glass_block>,<tfc:rock/peridotite>);
-mods.embers.Stamper.add(<tfc:raw/novaculite>, <liquid:lava>*250 ,<tfctech:ceramics/mold/glass_block>,<tfc:rock/novaculite>);
-mods.embers.Stamper.add(<tfc:raw/mudstone>, <liquid:lava>*250 ,<tfctech:ceramics/mold/glass_block>,<tfc:rock/mudstone>);
-mods.embers.Stamper.add(<tfc:raw/sandstone>, <liquid:lava>*250 ,<tfctech:ceramics/mold/glass_block>,<tfc:rock/sandstone>);
-mods.embers.Stamper.add(<tfc:raw/siltstone>, <liquid:lava>*250 ,<tfctech:ceramics/mold/glass_block>,<tfc:rock/siltstone>);
-mods.embers.Stamper.add(<tfc:raw/catlinite>, <liquid:lava>*250 ,<tfctech:ceramics/mold/glass_block>,<tfc:rock/catlinite>);
-mods.embers.Stamper.add(<tfc:raw/soapstone>, <liquid:lava>*250 ,<tfctech:ceramics/mold/glass_block>,<tfc:rock/soapstone>);
-mods.embers.Stamper.add(<tfc:raw/komatiite>, <liquid:lava>*250 ,<tfctech:ceramics/mold/glass_block>,<tfc:rock/komatiite>);
-*/
+    mods.rustichromia.Quern.add(stone + "sand", [gravel], [sand], 4.0, 10.0, 500.0);
+    mods.rustichromia.Quern.add(stone + "gravel", [cobble], [gravel], 4.0, 10.0, 500.0);
+    mods.rustichromia.Quern.add(stone + "gravelfromrock", [rock *4], [gravel], 4.0, 10.0, 500.0);
+
+
+}
+
+
+
+
+
 // mold making
 mods.embers.Stamper.add(<tfc:ceramics/unfired/mold/pick_head>, null ,<tfc:metal/pick_head/wrought_iron>,<minecraft:clay_ball>*3);
 mods.embers.Stamper.add(<tfc:ceramics/unfired/mold/shovel_head>, null ,<tfc:metal/shovel_head/wrought_iron>,<minecraft:clay_ball>*3);
@@ -238,13 +152,6 @@ mods.embers.HeatCoil.add(<tfctech:ceramics/mold/glass_block>, <tfctech:ceramics/
 <tfctech:ceramics/unfired/glass_pane>.addTooltip(format.gold("can be fired using a hearth coil"));
 <tfctech:ceramics/unfired/glass_block>.addTooltip(format.gold("can be fired using a hearth coil"));
 
-mods.embers.Stamper.add(<minecraft:glass_bottle>,<liquid:glass>*250 ,<ore:blowpipe>);
-mods.embers.Stamper.add(<minecraft:glass_pane>,<liquid:glass>*375 ,<tfctech:ceramics/mold/glass_pane>);
-mods.embers.Stamper.add(<minecraft:glass>,<liquid:glass>*1000 ,<tfctech:ceramics/mold/glass_block>);
-mods.embers.Stamper.add(<appliedenergistics2:material:45>, null ,<tfc:metal/hammer_head/blue_steel>,<ore:blockSkyStone>);
-mods.embers.Stamper.add(<appliedenergistics2:material:45>, null ,<tfc:metal/hammer_head/red_steel>,<ore:blockSkyStone>);
-mods.embers.Stamper.add(<thermalfoundation:material:770>, null ,<tfc:metal/hammer_head/blue_steel>,<ore:obsidian>);
-mods.embers.Stamper.add(<thermalfoundation:material:770>, null ,<tfc:metal/hammer_head/red_steel>,<ore:obsidian>);
 
 recipes.remove(<embers:mechanical_pump>);
 recipes.remove(<embers:mech_core>);

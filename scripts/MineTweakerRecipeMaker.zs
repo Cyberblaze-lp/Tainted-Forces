@@ -61,6 +61,10 @@ recipes.addShapeless(<ic2:reactor_heat_vent>, [<ic2:heat_vent>, <ic2:crafting:7>
 
 // ================================================================================
 //#MARKER ADD SHAPED
+recipes.addShaped(<rustichromia:quern>, [[null, <ore:stickIron>, null], [<ore:concrete>, <ore:gearIron>, <ore:concrete>], [<ore:concrete>, <ore:concrete>, <ore:concrete>]]);
+recipes.addShaped(<extrautils2:user>, [[<ore:concrete>, <ore:gearIron>, <ore:concrete>], [<tfc:brass_mechanisms>, <thaumcraft:mind:1>, <tfc:brass_mechanisms>], [<ore:concrete>, <tfc:brass_mechanisms>, <ore:concrete>]]);
+recipes.addShaped(<minecraft:cauldron>, [[<ore:ingotManasteel>, null, <ore:ingotManasteel>], [<ore:ingotManasteel>, null, <ore:ingotManasteel>], [<ore:ingotManasteel>, <ore:ingotManasteel>, <ore:ingotManasteel>]]);
+recipes.addShaped(<minecraft:bucket>, [[<ore:ingotManasteel>, null, <ore:ingotManasteel>], [null, <ore:ingotManasteel>, null]]);
 recipes.addShaped(<rustichromia:ratiobox>, [[null, <thaumcraft:mind>, null], [<ore:gearWroughtIron>, <mysticalmechanics:gearbox_frame>, <ore:gearWroughtIron>], [null, <ore:gearWroughtIron>, null]]);
 recipes.addShaped(<rustichromia:ratiobox> * 5, [[null, <tetra:forged_bolt>, null], [<ore:gearWroughtIron>, <mysticalmechanics:gearbox_frame>, <ore:gearWroughtIron>], [null, <ore:gearWroughtIron>, null]]);
 recipes.addShaped(<mystgears:bellows_mechanical>, [[null, <thaumcraft:mechanism_simple>, null], [<ore:leather>, <ore:leather>, <ore:leather>], [<ore:livingwood>, <ore:livingwood>, <ore:livingwood>]]);
@@ -200,7 +204,6 @@ recipes.addShaped(<embers:ember_emitter> * 2, [[null, <ore:ingotCopper>, null], 
 recipes.addShaped(<embers:ember_receiver> * 2, [[<ore:stickIron>, <ore:ingotCopper>, <ore:stickIron>], [null, <ore:concrete>, null]]);
 recipes.addShaped(<embers:ember_relay> * 4, [[<ore:ingotCopper>], [<ore:stickIron>], [<ore:concrete>]]);
 recipes.addShaped(<integrateddynamics:squeezer>, [[<ore:stickIron>, <ore:plateIron>, <ore:stickIron>], [<ore:stickIron>, null, <ore:stickIron>], [<ore:concrete>,<ore:concrete>,<ore:concrete>]]);
-recipes.addShaped(<mystgears:windup_box> * 2, [[<ore:plateIron>, null, <ore:plateIron>], [<tfc:brass_mechanisms>, <tfc:brass_mechanisms>, <ore:stickIron>], [<ore:plateIron>, null, <ore:plateIron>]]);
 recipes.addShaped(<immersiveintelligence:metal_decoration:4> * 3, [[<ore:plateBrass>, <ore:dustRedstone>, <ore:plateBrass>], [<ore:ingotIron>, <ore:ingotIron>, <ore:ingotIron>], [<ore:plateBrass>, <ore:dustRedstone>, <ore:plateBrass>]]);
 recipes.addShaped(<immersiveengineering:metal_decoration0:4> * 3, [[<ore:plateIron>, <ore:itemEnchantedFabric>, <ore:plateIron>], [<ore:ingotCopper>, <ore:ingotCopper>, <ore:ingotCopper>], [<ore:plateIron>, <ore:itemEnchantedFabric>, <ore:plateIron>]]);
 recipes.addShaped(<immersiveengineering:metal_decoration0:4> * 2, [[<ore:plateIron>, <ore:leather>, <ore:plateIron>], [<ore:ingotCopper>, <ore:ingotCopper>, <ore:ingotCopper>], [<ore:plateIron>, <ore:leather>, <ore:plateIron>]]);

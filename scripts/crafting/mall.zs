@@ -3,9 +3,6 @@ import crafttweaker.item.IItemStack;
 // Facilitate creation of a "Mall" like in factorio where all your essentials (conveyors, machines, redstone stuff) can be passive-produced
 //This means that some intermediate products will be replaced or cut so automation of this equipment is easier.
 
-mods.rustichromia.Assembler.removeAll();
-mods.rustichromia.Quern.removeAll();
-mods.rustichromia.Gin.removeAll();
 
 <ore:stone>.add(<immersiveengineering:stone_decoration:5>);
 
