@@ -30,9 +30,6 @@ mods.thaumcraft.SmeltingBonus.addSmeltingBonus(<tfc:food/horse_meat>, <thaumcraf
 
 mods.thaumcraft.SmeltingBonus.addSmeltingBonus(<ore:categoryMeat>, <thaumcraft:tallow> % 20);
 
-val tallow = <ore:tallow>;
-tallow.add(<thaumcraft:tallow>);
-
 
 
 furnace.addRecipe(<tfc:food/cooked_bear>, <tfc:food/bear>, 0.2);

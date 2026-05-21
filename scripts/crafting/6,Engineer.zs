@@ -14,7 +14,6 @@ import mods.bloodmagic.BloodAltar;
 
 
 
-recipes.remove(<ic2:ingot>);
 recipes.addShaped(<ic2:ingot>, [[<ore:ingotOsmium>], [<ore:ingotConstantan>], [<ore:ingotZinc>]]);
 recipes.addShaped(<immersiveintelligence:material_ingot:6> * 2, [[<ore:itemSilicon>, <ore:itemSilicon>, <ore:itemSilicon>], [<ore:itemSilicon>, <ore:itemSilicon>, <ore:itemSilicon>]]);
 
@@ -34,86 +33,9 @@ mods.immersiveengineering.Crusher.addRecipe(<appliedenergistics2:material:45>, <
 
 
 
-val processor = <ore:circuitElite>;
-val advcircuit = (<ore:circuitAdvanced>);
-
-advcircuit.remove(<ic2:crafting:2>);
-recipes.remove(<ic2:crafting:2>);
-val plastic = <ore:sheetPlastic>;
-<ore:itemRubber>.add(<tfctech:latex/rubber>);
-plastic.add(<mekanism:polyethene:2>);
-val basecircuit = <ore:circuitBasic>;
 
 
 
-basecircuit.remove(<ic2:crafting:1>);
-basecircuit.add(<cyberware:component:3>);
-
-
-
-
-
-
-
-val wafer = <ore:plateSilicon>;
-
-wafer.remove(<libvulpes:productplate:3>);
-
-
-val silicon_ingot = <ore:ingotSilicon>;
-
-silicon_ingot.remove(<libvulpes:productingot:3>);
-
-
-val silicon_nugget = <ore:nuggetSilicon>;
-
-silicon_nugget.remove(<libvulpes:productnugget:3>);
-
-
-val boule = <ore:bouleSilicon>;
-
-boule.remove(<libvulpes:productboule:3>);
-
-//makes II nukes obtainable with mox fuel
-val nuke = <ore:materialNuke>;
-
-//nuke.add(<ic2:nuclear:4>);
-nuke.add(<ic2:quad_mox_fuel_rod>);
-
-//makes diamond grit the go-to diamond dust bc it's usable in welding and just generally looks better
-
-val diadust = <ore:dustDiamond>;
-
-diadust.add(<tfcthings:diamond_grit>);
-
-
-
-val aluwire = <ore:wireAluminum>;
-aluwire.add(<tfctech:metal/aluminium_wire>);
-
-<ore:ingetAnyBronze>.addAll(<ore:ingotAnyBronze>);
-<ore:destAnyBronze>.addAll(<ore:dustAnyBronze>);
-<ore:naggetAnyBronze>.addAll(<ore:nuggetAnyBronze>);
-<ore:dustAnyBronze>.remove(<tfc:metal/dust/bronze>,<tfc:metal/dust/bismuth_bronze>,<tfc:metal/dust/black_bronze>);
-<ore:ingotAnyBronze>.remove(<tfc:metal/ingot/bronze>,<tfc:metal/ingot/bismuth_bronze>,<tfc:metal/ingot/black_bronze>);
-<ore:nuggetAnyBronze>.remove(<tfc:metal/nugget/bronze>,<tfc:metal/nugget/bismuth_bronze>,<tfc:metal/nugget/black_bronze>);
-
-<ore:stickIron>.addAll(<ore:stickWroughtIron>);
-
-
-<ore:gearCopper>.remove(<immersiveintelligence:motor_gear>);
-<ore:gearBrass>.remove(<immersiveintelligence:motor_gear:1>);
-<ore:gearIron>.remove(<immersiveintelligence:motor_gear:2>);
-<ore:gearSteel>.remove(<immersiveintelligence:motor_gear:3>);
-<ore:gearTungsten>.remove(<immersiveintelligence:motor_gear:4>);
-
-
-
-
-
-
-mods.tconstruct.Alloy.removeRecipe(<liquid:steel>);
-recipes.remove(<ore:dustSteel>);
 //misc recipes
 recipes.addShapeless(<immersiveintelligence:printed_page:1>.withTag({display: {Lore: ["The very paper seems to twist and warp around the symbols and pictograms describing this feat of eldritch engineering"], Name: "Tesseract Plans"}, text: "fwy yn mil a chwalu ei yna, itilaer ein orchudd i hunain eu amlygu rywun i rhaid, dduwiol yn ddod i           ________            \\______/                         .  | ;V; |  Sre'nut alse't          _|___|_  Ne                      | \\  /. | surai'inos r'ed        |   °~ | Ddiarc Laidromirp    |_/_\\_|                                                               __;A;__ /______\\Rezilib'atsliev         T'I ILODDA       TI IL'ODDAef wadd'r ddeoresma ddewid i lewhcmydd ry neh iar rwam       "}), [<immersiveintelligence:printed_page:3>.withTag({RepairCost: 0, display: {Lore: ["Even though the ink is faded beyond recognition, you could swear you can feel reality curling around where the symbols used to be. Perhaps a deeper understanding of the fabric of Reality itself may allow you to decipher it against all odds.... "], Name: "Mangled Tesseract Plans"}}).onlyWithTag({RepairCost: 0, display: {Lore: ["Even though the ink is faded beyond recognition, you could swear you can feel reality curling around where the symbols used to be. Perhaps a deeper understanding of the fabric of Reality itself may allow you to decipher it against all odds.... "], Name: "Mangled Tesseract Plans"}}),<astralsorcery:itemusabledust:1>,<botania:lightrelay>,<astralsorcery:iteminfusedglass>.reuse(),<botania:dice>]);
 recipes.addShaped(<ic2:thick_neutron_reflector>, [[null, <ore:ingotHOPGraphite>, null],[<ic2:neutron_reflector>, <ore:plateBeryllium>, <ic2:neutron_reflector>], [null, <ore:ingotHOPGraphite>, null]]);
@@ -131,10 +53,6 @@ mods.thermalexpansion.Transposer.addFillRecipe(<ic2:lithium_fuel_rod>.withTag({a
 <ic2:lithium_fuel_rod>.addTooltip(format.yellow("Irradiate in an IC2 Nuclear Reactor to transform into Tritium. Yield is proportional to how much radiation it absorbed. Must be next to one or more Uranium/ MOX rods while reactor temp > 30%  BEWARE: Fully irradiated rods are destroyed. Calibrate your timers accordingly."));
 mods.ic2.MetalFormer.addExtrudingRecipe(<ic2:crafting:9>, <ore:plateZircaloy>);
 mods.ic2.MetalFormer.addExtrudingRecipe(<minecraft:bucket>, <ore:plateIron>);
-recipes.remove(<ic2:dual_uranium_fuel_rod>);
-recipes.remove(<ic2:quad_uranium_fuel_rod>);
-recipes.remove(<ic2:dual_mox_fuel_rod>);
-recipes.remove(<ic2:quad_mox_fuel_rod>);
 
 mods.ic2.ThermalCentrifuge.addRecipe([<ic2:nuclear:7>,<ic2:nuclear:3>,<tfc:metal/dust/zircaloy>], <ic2:nuclear:14>, 100);
 mods.ic2.ThermalCentrifuge.addRecipe([<ic2:nuclear:7>*2,<ic2:nuclear:3>*2,<tfc:metal/dust/zircaloy>*2], <ic2:nuclear:15>, 100);
@@ -143,15 +61,11 @@ mods.ic2.ThermalCentrifuge.addRecipe([<ic2:nuclear:7>*4,<ic2:nuclear:3>*4,<tfc:m
 mods.ic2.ThermalCentrifuge.addRecipe([<ic2:nuclear:7>,<ic2:nuclear:2>*4,<tfc:metal/dust/zircaloy>], <ic2:nuclear:11>, 100);
 mods.ic2.ThermalCentrifuge.addRecipe([<ic2:nuclear:7>*2,<ic2:nuclear:2>*8,<tfc:metal/dust/zircaloy>*2], <ic2:nuclear:12>, 100);
 mods.ic2.ThermalCentrifuge.addRecipe([<ic2:nuclear:7>*4,<ic2:nuclear:2>*16,<tfc:metal/dust/zircaloy>*5], <ic2:nuclear:13>, 100);
-//editing AEA to be blue steel since the coils need red steel
-recipes.remove(<immersiveintelligence:material_dust>);
 
 
-
- mods.immersivetechnology.SolarTower.addRecipe(<liquid:ic2hot_coolant>, <liquid:ic2coolant>, 1);
+mods.immersivetechnology.SolarTower.addRecipe(<liquid:ic2hot_coolant>, <liquid:ic2coolant>, 1);
 mods.immersivetechnology.Radiator.addRecipe(<liquid:ic2distilled_water>*100,<liquid:exhauststeam>*800, 40);
 mods.immersivetechnology.Radiator.addRecipe(<liquid:ic2distilled_water>*100,<liquid:steam>*800, 80);
-mods.thermalexpansion.Pulverizer.removeRecipe(<tfc:metal/ingot/bismuth_bronze>);
 mods.thermalexpansion.Pulverizer.addRecipe(<tfc:metal/dust/bismuth_bronze>, <tfc:metal/ingot/bismuth_bronze>, 2000);
 
 mods.thermalexpansion.RedstoneFurnace.addRecipe(<tfc:ceramics/fired/mold/ingot>, <tfc:ceramics/unfired/mold/ingot>, 3600);
@@ -172,10 +86,4 @@ mods.thermalexpansion.RedstoneFurnace.addRecipe(<tfctech:ceramics/mold/sleeve>, 
 mods.thermalexpansion.RedstoneFurnace.addRecipe(<tfctech:ceramics/mold/rackwheel_piece>, <tfctech:ceramics/unfired/rackwheel_piece>, 3600);
 mods.thermalexpansion.RedstoneFurnace.addRecipe(<tfctech:ceramics/mold/glass_pane>, <tfctech:ceramics/unfired/glass_pane>, 3600);
 mods.thermalexpansion.RedstoneFurnace.addRecipe(<tfctech:ceramics/mold/glass_block>, <tfctech:ceramics/unfired/glass_block>, 3600);
-
-//gear crafting is dumb
-recipes.removeByRegex("^thermalfoundation:material_[6-8][0-9]");
-recipes.removeByRegex("^mystgears:recipe_gear.*");
-recipes.removeByRegex("^embers:gear.*");
-recipes.removeByRegex("^railcraft:gear.*");
 

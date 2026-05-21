@@ -21,7 +21,6 @@ mods.thaumcraft.Infusion.registerRecipe("FLEXPACK", "THAUMOSTATIC_HARNESS", <tha
 mods.thaumcraft.Infusion.registerRecipe("RADIOBEACON", "THAUMOSTATIC_HARNESS",<cyberware:beacon_large>,10, [<aspect:aer>*50 , <aspect:volatus>*20, <aspect:permutatio>*20, <aspect:potentia>*20],<thaumcraft:metal_alchemical>,[<thaumcraft:tube>,<thaumcraft:tube>,<thaumcraft:morphic_resonator>,<thaumcraft:tube>,<thaumcraft:tube>,<thaumcraft:morphic_resonator>]);
 mods.thaumcraft.Infusion.registerRecipe("SUPERFUEL", "IGNATIUSFUEL",<contenttweaker:ignatius_fuel>,5, [<aspect:ignis>*10 , <aspect:alkimia>*5, <aspect:permutatio>*5, <aspect:desiderium>*5],<ore:clusterIgnatius>,[<ore:dustPhosphorus>,<advancedrocketry:thermite>,<advancedrocketry:thermite>,<embers:ember_cluster>,<ore:dustPyrotheum>]);
 
-mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:focus_2>);
 mods.thaumcraft.Infusion.registerRecipe("FOCI", "BASEAUROMANCY", <thaumcraft:focus_2>,3, [<aspect:ordo>*50,<aspect:praecantatio>*25,<aspect:machina>*10],<thaumcraft:focus_1>,[<ore:quicksilver>,<ore:quicksilver>,<ore:enderpearl>,<cyberware:component:5>,<ore:gemDiamond>]);
 
 
@@ -29,10 +28,7 @@ mods.thaumcraft.Infusion.registerRecipe("waystones2", "BASEELDRITCH", <thebetwee
 
 
 //Si'vlu Recipes
-mods.botania.ManaInfusion.removeRecipe(<botania:manaresource>);
 mods.botania.ManaInfusion.addInfusion(<botania:manaresource>, <ore:ingetAnyBronze>, 4000);
-
-recipes.remove(<astralsorcery:blockblackmarble>);
 
 			
 			
@@ -78,8 +74,6 @@ mods.astralsorcery.Altar.addTraitAltarRecipe("tainted-forces:shaped/internal/alt
 mods.thermalexpansion.Centrifuge.addRecipe([<mekanism:controlcircuit:3>*12,<astralsorcery:itemrockcrystalsimple>.withTag({astralsorcery: {crystalProperties: {collectiveCapability: 10, size: 20, fract: 0, purity: 10, sizeOverride: -1}}}) ],<pneumaticcraft:transistor>*12, null, 5000);
 mods.thermalexpansion.Centrifuge.addRecipe([<mekanism:controlcircuit:3>*24,<astralsorcery:itemrockcrystalsimple>.withTag({astralsorcery: {crystalProperties: {collectiveCapability: 10, size: 20, fract: 0, purity: 10, sizeOverride: -1}}}) ],<pneumaticcraft:printed_circuit_board>*24, null, 5000);
 
-
-<ore:circuitUltimate>.addItems([<pneumaticcraft:printed_circuit_board>, <pneumaticcraft:transistor>]);
 
 <pneumaticcraft:printed_circuit_board>.displayName = "Rough Ultimate Circuit";
 <pneumaticcraft:transistor>.displayName = "Coarse Ultimate Circuit";

@@ -1,38 +1,4 @@
 import crafttweaker.oredict.IOreDictEntry;
-val bismuth = <ore:oreBismuth>;
-val bismuthinite = <ore:oreBismuthinite>;
-
-bismuth.addAll(bismuthinite);
-bismuth.add(<tfc:ore/bismuthinite/gabbro>);
-bismuth.addAll(bismuthinite);
-bismuthinite.remove(<tfc:ore/bismuthinite/gabbro>);
-
-val irongear =<ore:gearIron>;
-
-irongear.add(<tfctech:metal/wrought_iron_gear>);
-
-
-val metals = <ore:sheetToolMetal>;
-
-
-metals.addAll(<ore:plateIron>);
-metals.addAll(<ore:plateCopper>);
-metals.addAll(<ore:sheetAnyBronze>);
-metals.addAll(<ore:plateSteel>);
-metals.addAll(<ore:plateAluminium>);
-metals.addAll(<ore:plateBlackSteel>);
-metals.addAll(<ore:plateInvar>);
-metals.addAll(<ore:plateBlueSteel>);
-metals.addAll(<ore:plateRedSteel>);
-metals.addAll(<ore:plateMithril>);
-metals.addAll(<ore:plateTungsten>);
-metals.addAll(<ore:plateCobalt>);
-metals.addAll(<ore:plateTungstenSteel>);
-metals.addAll(<ore:plateNickelSilver>);
-metals.addAll(<ore:plateManyullyn>);
-metals.addAll(<ore:plateZircaloy>);
-metals.addAll(<ore:plateOsmium>);
-metals.addAll(<ore:plateTitanium>);
 
 
 

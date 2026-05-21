@@ -1,9 +1,7 @@
 //This file was created via CT-GUI! Editing it is not advised!
 //Don't touch me!
 //#Remove
-recipes.removeShaped(<mekanism:basicblock2> * 4, [[null, <ore:ingotSteel>, null],[<ore:ingotSteel>, <ore:ingotCopper>, <ore:ingotSteel>], [null, <ore:ingotSteel>, null]]);
-recipes.removeShaped(<ic2:thick_neutron_reflector>, [[<ore:plateCopper>, <ic2:neutron_reflector>, <ore:plateCopper>],[<ic2:neutron_reflector>, <ore:plateCopper>, <ic2:neutron_reflector>], [<ore:plateCopper>, <ic2:neutron_reflector>, <ore:plateCopper>]]);
-recipes.removeShaped(<ic2:neutron_reflector>, [[<ore:dustTin>, <ore:dustCoal>, <ore:dustTin>],[<ore:dustCoal>, <ore:plateCopper>, <ore:dustCoal>], [<ore:dustTin>, <ore:dustCoal>, <ore:dustTin>]]);
+
 //Don't touch me!
 //#Add
 recipes.addShaped(<mekanism:machineblock2:9>, [[<ore:scaffoldingAluminum>, <cyberware:leg_upgrades>.withTag({cyberwareQuality: "cyberware.quality.scavenged"}).onlyWithTag({cyberwareQuality: "cyberware.quality.scavenged"}), <ore:scaffoldingAluminum>],[<ore:scaffoldingAluminum>, <tfc:metal/hammer_head/wrought_iron>, <ore:scaffoldingAluminum>], [<ore:scaffoldingAluminum>, null, <ore:scaffoldingAluminum>]]);

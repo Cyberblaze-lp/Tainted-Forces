@@ -10,16 +10,9 @@ mods.botania.ManaInfusion.addInfusion(<botania:managlass>, <ore:sand>, 1000);
 
 mods.botania.ManaInfusion.addInfusion(<tfc:wooden_bucket>.withTag({Fluid: {FluidName: "water", Amount: 1000}}), <tfc:wooden_bucket>.withTag({Fluid: {}}), 500);
 
-mods.botania.Apothecary.removeRecipe("jadedAmaranthus");
 mods.botania.Apothecary.addRecipe("jadedAmaranthus", [ <ore:petalPurple>, <ore:petalPurple>, <botania:manaresource:6>, <botania:fertilizer>]);
-
-mods.botania.Apothecary.removeRecipe("rannuncarpus");
 mods.botania.Apothecary.addRecipe("rannuncarpus", [<ore:petalYellow>, <ore:petalOrange>, <ore:petalOrange>, <botania:manaresource:6>, <botania:livingrock>]);
-
-mods.botania.Apothecary.removeRecipe("daffomill");
 mods.botania.Apothecary.addRecipe("daffomill", [<ore:petalYellow>, <ore:petalYellow>, <botania:manaresource:6>, <botania:manaresource:3>]);
-
-mods.botania.Apothecary.removeRecipe("agricarnation");
 mods.botania.Apothecary.addRecipe("agricarnation", [<ore:petalLime>, <ore:petalLime>, <botania:manaresource:6>, <minecraft:dye:15>]);
 
 
@@ -30,7 +23,6 @@ mods.botania.PureDaisy.addRecipe(<tfc:thatch>,<botania:livingwood>);
 mods.botania.PureDaisy.addRecipe(<minecraft:redstone_block>,<minecraft:redstone_ore>);
 
 
-recipes.remove(<botania:twigwand>);
 
 recipes.addShaped(
     <botania:twigwand>.withLore(["Will have its color determined by the inputted petals", "Also works with the akashic tome"]), 
@@ -61,7 +53,6 @@ recipes.addShaped(<botania:twigwand>.withLore(["Will have its color determined b
 );
 
 
-recipes.remove(<botania:miniisland:*>);
 for i in 0 to 16 {
     recipes.addShapeless(<botania:miniisland>.definition.makeStack(i), [<botania:shinyflower>.definition.makeStack(i), <botania:grassseeds>]);
 }

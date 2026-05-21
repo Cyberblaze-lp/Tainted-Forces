@@ -21,52 +21,21 @@ mods.embers.Mixer.add(<liquid:uranium>, [<liquid:thorium>*2,<liquid:liquid_death
 
 
 //energy generation rebalancing
-mods.immersivetechnology.SteamTurbine.removeFuel(<liquid:steam>);
 mods.immersivetechnology.SteamTurbine.addFuel(<liquid:exhauststeam>*400, <liquid:steam> * 400, 1);
-
-
-
-mods.immersivetechnology.GasTurbine.removeFuel(<liquid:gasoline>);
-mods.immersivetechnology.GasTurbine.removeFuel(<liquid:biodiesel>);
-mods.immersivetechnology.GasTurbine.removeFuel(<liquid:diesel>);
-mods.immersivetechnology.GasTurbine.removeFuel(<liquid:kerosene>);
 
 
 
 GasTurbine.addFuel(null, <liquid:shallowbreath> * 10,15 );
 
 
-
-mods.thermalexpansion.CompressionDynamo.removeFuel(<liquid:fuel>);
-mods.thermalexpansion.CompressionDynamo.removeFuel(<liquid:creosote>);
-mods.thermalexpansion.CompressionDynamo.removeFuel(<liquid:crude_oil>);
-mods.thermalexpansion.CompressionDynamo.removeFuel(<liquid:coal>);
-
-Refinery.removeRecipe(<liquid:refined_oil>);
-Refinery.removeRecipe(<liquid:biocrude>);
-
-Refinery.removeRecipe(<liquid:crude_oil>);
-Refinery.removeRecipe(<liquid:coal>);
-
-
 mods.magneticraft.FluidFuel.addFuel(<liquid:refined_fuel>*120, 2000, 400.0);
 mods.magneticraft.FluidFuel.addFuel(<liquid:refined_biofuel>*120, 2000, 400.0);
 mods.magneticraft.FluidFuel.addFuel(<liquid:shallowbreath>*100, 2000, 400.0);
-
-mods.magneticraft.FluidFuel.removeFuel(<liquid:wood_gas>);
-mods.magneticraft.FluidFuel.removeFuel(<liquid:diesel>);
-mods.magneticraft.FluidFuel.removeFuel(<liquid:biodiesel>);
-mods.magneticraft.FluidFuel.removeFuel(<liquid:creosote>);
-mods.magneticraft.FluidFuel.removeFuel(<liquid:fuel>);
-mods.magneticraft.FluidFuel.removeFuel(<liquid:kerosene>);
-mods.magneticraft.FluidFuel.removeFuel(<liquid:gasoline>);
-mods.magneticraft.FluidFuel.removeFuel(<liquid:natural_gas>);
 
 
 
 <embers:boiler>.addTooltip(format.gold("Now uses LAVA instead of water!"));
 
-mods.embers.Stamper.remove(<embers:dust_ember>);
 
 
 mods.embers.Stamper.add(<thebetweenlands:items_misc:18>, null ,<embers:stamp_flat>,<ore:dustSulfur>*3);
@@ -153,36 +122,17 @@ mods.embers.HeatCoil.add(<tfctech:ceramics/mold/glass_block>, <tfctech:ceramics/
 <tfctech:ceramics/unfired/glass_block>.addTooltip(format.gold("can be fired using a hearth coil"));
 
 
-recipes.remove(<embers:mechanical_pump>);
-recipes.remove(<embers:mech_core>);
-
-recipes.remove(<immersiveengineering:metal_device0:5>);
-
-recipes.remove(<embers:pipe>);
-recipes.remove(<embers:item_pipe>);
-recipes.remove(<embers:pump>);
-recipes.remove(<embers:item_pump>);
 Welding.addRecipe("tinkerhammer",<tfc:metal/hammer/wrought_iron>, <ore:plateLead>, <embers:tinker_hammer>, 2);
 
 
 
-
-mods.embers.EmberGeneration.removeBoilerFluid(<liquid:oil_dwarf>);
-
-
-
-recipes.remove (<thermalexpansion:satchel:100>);
 mods.inworldcrafting.FluidToItem.transform(<thermalexpansion:satchel:100>, <liquid:lava>, [<thermalexpansion:satchel>], true);
-mods.embers.Alchemy.remove(<embers:shifting_scales>);
 
 mods.embers.Alchemy.add(<embers:shifting_scales>*3,[<embers:ashen_cloth>,<thebetweenlands:items_misc:54>,<ore:sheetDoubleLead>,<thebetweenlands:items_misc:54>,<ore:sheetDoubleLead>],{"iron":(16 to 64),"lead":(48 to 128)});
 mods.embers.EmberGeneration.addBoilerFluid(<fluid:fish_oil>, <fluid:shallowbreath>,1.0,[1]);
 
 
-mods.embers.Alchemy.remove(<embers:dust_metallurgic>);
-mods.embers.Alchemy.remove(<embers:blasting_core>);
 
-mods.embers.Alchemy.remove(<embers:catalytic_plug>);
 mods.embers.Alchemy.add(<embers:dust_metallurgic>*5,[<thaumcraft:salis_mundus>,<thaumcraft:nugget:5>,null,null,null],{"dawnstone":(0 to 16),"iron":(0 to 16),"silver":(0 to 16),"copper":(0 to 16),"lead":(0 to 16)});
 mods.embers.Alchemy.add(<embers:dust_metallurgic>*5,[<thaumcraft:salis_mundus>,<minecraft:dye:15>,<minecraft:dye:15>,<minecraft:dye:15>,<minecraft:dye:15>],{"dawnstone":(0 to 16),"iron":(0 to 16),"silver":(0 to 16),"copper":(0 to 16),"lead":(0 to 16)});
 mods.embers.Alchemy.add(<embers:dust_metallurgic>*5,[<thaumcraft:nugget:5>,<minecraft:dye:15>,<minecraft:dye:15>,<minecraft:dye:15>,<minecraft:dye:15>],{"dawnstone":(0 to 16),"iron":(0 to 16),"silver":(0 to 16),"copper":(0 to 16),"lead":(0 to 16)});
@@ -198,9 +148,6 @@ mods.embers.DawnstoneAnvil.add([<tfc:metal/ingot/blue_steel>, <tfc:metal/nugget/
 
 
 
-mods.embers.Mixer.remove(<fluid:dawnstone>*8);
-mods.embers.Mixer.remove(<fluid:oil_dwarf>*10);
-mods.embers.Mixer.remove(<fluid:oil_dwarf>*30);
 mods.embers.Mixer.add(<fluid:dawnstone>*8, [<fluid:rose_gold>*8,<fluid:pyrotheum>*4]);
 
 mods.embers.Mixer.add(<fluid:enrichedlava>*2, [<fluid:ic2pahoehoe_lava>,<fluid:purifying_fluid>]);
@@ -334,8 +281,6 @@ mods.embers.DawnstoneAnvil.add([<tfctech:metal/aluminium_gear>],<ore:sleeveBrass
 
 mods.embers.DawnstoneAnvil.add([<mysticalmechanics:axle_iron>*3],<ore:ingotIron>,<ore:stickIron>);
 mods.embers.DawnstoneAnvil.add([<mysticalmechanics:axle_iron>*3],<ore:stickIron>,<ore:ingotIron>);
-
-recipes.remove(<ore:stickIron>);
 
 
 

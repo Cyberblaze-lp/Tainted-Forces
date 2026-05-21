@@ -18,8 +18,6 @@ import mods.immersivetechnology.MeltingCrucible;
 import mods.thaumcraft.Crucible;
 import crafttweaker.item.IItemStack;
 
-mods.immersivetechnology.MeltingCrucible.removeRecipe(<minecraft:cobblestone>);
-
 
 <immersiveengineering:material:6>.setAspects(<aspect:ignis>*20, <aspect:potentia>*20);
 <tfc:metal/ingot/bismuth>.setAspects(<aspect:metallum>*10, <aspect:sensus>*5);
@@ -76,10 +74,6 @@ mods.thaumcraft.Crucible.registerRecipe("labmeat", "LABMEAT", <tfc:food/bear>*3,
 mods.thaumcraft.Crucible.registerRecipe("labrennet", "LABMEAT", <firmalife:rennet>*5, <firmalife:rennet>, [<aspect:victus>*10, <aspect:permutatio>*5]);
 
 mods.thaumcraft.Crucible.registerRecipe("springwater", "LIQUIDDEATH", <forge:bucketfilled>.withTag({FluidName: "hot_water", Amount: 1000}), <forge:bucketfilled>.withTag({FluidName: "salt_water", Amount: 1000}), [<aspect:victus>*25, <aspect:ignis>*5]);
-mods.thaumcraft.Crucible.removeRecipe(<minecraft:clay_ball>);
-mods.thaumcraft.Crucible.removeRecipe(<minecraft:glowstone_dust>);
-mods.thaumcraft.Crucible.removeRecipe(<minecraft:web>);
-mods.thaumcraft.Crucible.removeRecipe(<minecraft:gunpowder>);
 
 mods.thaumcraft.Crucible.registerRecipe("glowstonefix", "HEDGEALCHEMY@1", <minecraft:glowstone_dust>*2, <minecraft:glowstone_dust>, [<aspect:sensus>*5, <aspect:lux>*10]);
 mods.thaumcraft.Crucible.registerRecipe("gunpowderfix", "HEDGEALCHEMY@1", <minecraft:gunpowder>*2, <minecraft:gunpowder>, [<aspect:ignis>*10, <aspect:perditio>*10, <aspect:alkimia>*5]);
@@ -98,7 +92,6 @@ mods.thaumcraft.Crucible.registerRecipe("firebrick2", "FIREBRICK", <tfc:ceramics
 mods.thaumcraft.Crucible.registerRecipe("firebrick3", "FIREBRICK", <tfc:ceramics/fired/fire_brick>*3, <tfc:ore/wolframite>, [<aspect:ignis>*15,<aspect:praemunio>*6, <aspect:potentia>*15]);
 mods.thaumcraft.Crucible.registerRecipe("firebrick4", "FIREBRICK", <tfc:ceramics/fired/fire_brick>*5, <tfc:ore/wolframite:2>, [<aspect:ignis>*25,<aspect:praemunio>*10, <aspect:potentia>*25]);
 
-mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:mind:1>);
 mods.thaumcraft.Infusion.registerRecipe("biomind", "MINDBIOTHAUMIC", <thaumcraft:mind:1>, 3, [<aspect:aqua>*20, <aspect:cognitio>*10, <aspect:machina>*5], <thaumcraft:mind>, [<thaumcraft:brain>, <thaumcraft:tube>,<thaumcraft:tube>,<thaumcraft:tube>,<thaumcraft:tube>,<thaumcraft:tube>,<thaumcraft:tube>,<thaumcraft:tube>, <thaumcraft:tube>]);
 
 
@@ -121,30 +114,12 @@ mods.thaumcraft.Infusion.registerRecipe("MOXROD", "NUCLEAR", <ic2:mox_fuel_rod>,
 
 
 
-recipes.remove(<minecraft:cauldron>);
- <thaumcraft:amber>.addTooltip(format.gold("Obtained by mining petrified wood ore"));
- <thaumcraft:nugget:10>.addTooltip(format.gold("Obtained from gem and magnetite deposits"));
- <minecraft:quartz>.addTooltip(format.gold("Found in Quartz-rich Stone"));
+<thaumcraft:amber>.addTooltip(format.gold("Obtained by mining petrified wood ore"));
+<thaumcraft:nugget:10>.addTooltip(format.gold("Obtained from gem and magnetite deposits"));
+<minecraft:quartz>.addTooltip(format.gold("Found in Quartz-rich Stone"));
 Anvil.addRecipe("cauldron_from_bronze", <tfc:metal/sheet/black_bronze>, <minecraft:cauldron>, 2,"general","HIT_LAST","DRAW_SECOND_LAST","BEND_THIRD_LAST");
 Anvil.addRecipe("cauldron_from_iron", <tfc:metal/sheet/wrought_iron>, <minecraft:cauldron>, 2,"general","HIT_LAST","DRAW_SECOND_LAST","BEND_THIRD_LAST");
-mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:smelter_vent>);
-mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:tube>);
-mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:tube_valve>);
-mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:tube_buffer>);
-mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:tube_restrict>);
-mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:tube_oneway>);
-mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:metal_alchemical>);
-mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumicaugmentation:glass_tube>);
-mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:smelter_basic>);
-mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:filter>);
-mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:alembic>);
-mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:alembic>);
-mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:turret>);
-mods.thaumcraft.ArcaneWorkbench.removeRecipe(<mystgears:essentia_motor>);
-mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:smelter_aux>);
-mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:centrifuge>);
-mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:mechanism_simple>);
-mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:mind>);
+
 
 mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("minds 2.0", "MINDCLOCKWORK", 50, [<aspect:ordo>,<aspect:ignis>], <thaumcraft:mind>, [[null,<thaumcraft:mechanism_simple>,null],[<ore:ingotRedAlloy>,<thaumcraft:focus_1>,<ore:ingotRedAlloy> ],[<thaumcraft:mechanism_simple>, null, <thaumcraft:mechanism_simple>]]);
 
@@ -179,15 +154,10 @@ ItemRegistry.registerItemMetal(<tfc:brass_mechanisms>, "brass", 72, true);
 
 mods.thaumcraft.Infusion.registerRecipe("dropofevil", "DROPOFEVIL", <extrautils2:ingredients:10>, 5, [<aspect:tenebrae>*25, <aspect:vitium>*10, <aspect:desiderium>*10], <thaumcraft:alumentum>, [<tconstruct:soil:3>, <ore:quicksilver>]);
 
-//quuicksilver stuff
+//quicksilver stuff
 
-val nuggetq = <ore:nuggetQuicksilver>;
-val ingotq = <ore:ingotQuicksilver>;
-
-mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:turret:2>);
 mods.thaumcraft.Infusion.registerRecipe("betterbore", "ARCANEBORE", <thaumcraft:turret:2>, 4, [<aspect:machina>*50, <aspect:vacuos>*25, <aspect:motus>*25,<aspect:potentia>*100,<aspect:terra>*250], <thaumcraft:turret>, [<thaumcraft:vis_resonator>,<thaumcraft:focus_1>.withTag({package: {complexity: 14, nodes: [{type: "MEDIUM", key: "ROOT"}, {type: "MEDIUM", key: "thaumcraft.BOLT"}, {"setting.power": 3, type: "EFFECT", key: "thaumcraft.EARTH"}], index: 0, power: 1.0 as float}, srt: -1937637418, color: -11091968}), <ore:plateBrass>]);
 
-mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:seal:7>);
 mods.thaumcraft.Infusion.registerRecipe("harvestseal", "SEALHARVEST", <thaumcraft:seal:7>, 1, [<aspect:herba>*10, <aspect:ordo>*10, <aspect:humanus>*10], <thaumcraft:seal>, [<minecraft:golden_hoe>, <minecraft:golden_hoe>]);
 
 
@@ -201,19 +171,12 @@ DieselHandler.addDrillFuel(<liquid:hsla_steel>);
 DieselHandler.addDrillFuel(<liquid:shallowbreath>);
 DieselHandler.addDrillFuel(<liquid:refined_fuel>);
 DieselHandler.addDrillFuel(<liquid:refined_biofuel>);
-mods.immersiveengineering.DieselHandler.removeDrillFuel(<liquid:biodiesel>);
-mods.immersiveengineering.DieselHandler.removeDrillFuel(<liquid:diesel>);
-mods.immersiveengineering.DieselHandler.removeDrillFuel(<liquid:fuel>);
 
-mods.immersiveengineering.DieselHandler.removeFuel(<liquid:diesel>);
-mods.immersiveengineering.DieselHandler.removeFuel(<liquid:biodiesel>);
-mods.immersiveengineering.DieselHandler.removeFuel(<liquid:fuel>);
 mods.immersiveengineering.DieselHandler.addFuel(<liquid:refined_fuel>, 3);
 mods.immersiveengineering.DieselHandler.addFuel(<liquid:refined_biofuel>, 2);
 mods.immersiveengineering.DieselHandler.addFuel(<liquid:hsla_steel>, 3);
 mods.immersiveengineering.DieselHandler.addFuel(<liquid:shallowbreath>, 1);
 mods.immersiveengineering.Mixer.addRecipe(<liquid:hsla_steel>*8000, <liquid:creosote>*1000,[<thaumcraft:alumentum>*2,<ore:nuggetQuicksilver>,<thebetweenlands:items_misc:44>], 30000);
-Alloy.removeAlloy("hsla_steel");
 GasTurbine.addFuel(<liquid:carbon_dioxide> * 2000, <liquid:hsla_steel>*250, 10);
 
 
@@ -226,20 +189,14 @@ GasTurbine.addFuel(<liquid:carbon_dioxide> * 2000, <liquid:hsla_steel>*250, 10);
 
 
 //jade for warded jars
-mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:jar_normal>);
 mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("jarschipped", "WARDEDJARS", 10, [], <thaumcraft:jar_normal>*2, [[<ore:gemChippedJade>, <ore:concrete>,<ore:gemChippedJade>],[<ore:gemChippedJade>, null,<ore:gemChippedJade>],[<ore:gemChippedJade>, <ore:gemChippedJade>,<ore:gemChippedJade>]]);
 mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("jarsflawed", "WARDEDJARS", 20, [], <thaumcraft:jar_normal>*4, [[<ore:gemFlawedJade>, <ore:concrete>,<ore:gemFlawedJade>],[<ore:gemFlawedJade>, null,<ore:gemFlawedJade>],[<ore:gemFlawedJade>, <ore:gemFlawedJade>,<ore:gemFlawedJade>]]);
 mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("jarsnormal", "WARDEDJARS", 40, [], <thaumcraft:jar_normal>*8, [[<ore:gemJade>, <ore:concrete>,<ore:gemJade>],[<ore:gemJade>, null,<ore:gemJade>],[<ore:gemJade>, <ore:gemJade>,<ore:gemJade>]]);
 mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("jarsflawless", "WARDEDJARS", 80, [], <thaumcraft:jar_normal>*16, [[<ore:gemFlawlessJade>, <ore:concrete>,<ore:gemFlawlessJade>],[<ore:gemFlawlessJade>, null,<ore:gemFlawlessJade>],[<ore:gemFlawlessJade>, <ore:gemFlawlessJade>,<ore:gemFlawlessJade>]]);
 mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("jarsexquisite", "WARDEDJARS", 160, [], <thaumcraft:jar_normal>*32, [[<ore:gemExquisiteJade>, <ore:concrete>,<ore:gemExquisiteJade>],[<ore:gemExquisiteJade>, null,<ore:gemExquisiteJade>],[<ore:gemExquisiteJade>, <ore:gemExquisiteJade>,<ore:gemExquisiteJade>]]);
 
-mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:vis_resonator>);
-mods.thaumcraft.ArcaneWorkbench.removeRecipe(<mystgears:vis_motor>);
-mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:bellows>);
 mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("bettervisresonator", "UNLOCKAUROMANCY@1", 50, [<aspect:aer>,<aspect:aqua>], <thaumcraft:vis_resonator>, [[<ore:nuggetIron>,<ore:gemQuartz>,<ore:nuggetIron>],[<ore:nuggetIron>,<ore:gemFlawlessOpal>,<ore:nuggetIron>],[<ore:nuggetIron>,<ore:gemQuartz>,<ore:nuggetIron>]]);
-mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:essentia_input>);
 mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("betterinputtransfuser", "ESSENTIATRANSPORT", 500, [<aspect:aer>,<aspect:aqua>], <thaumcraft:essentia_input>, [[<ore:plateBrass>,<minecraft:dispenser>,<ore:plateBrass>],[<ore:plateIron>,<thaumcraft:metal_alchemical_advanced>,<ore:plateIron>]]);
-mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:essentia_output>);
 mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("betteroutputtransfuser", "ESSENTIATRANSPORT", 500, [<aspect:aer>,<aspect:aqua>], <thaumcraft:essentia_output>, [[<ore:plateBrass>,<minecraft:hopper>,<ore:plateBrass>],[<ore:plateIron>,<thaumcraft:metal_alchemical_advanced>,<ore:plateIron>]]);
 
 
@@ -287,8 +244,6 @@ mods.thaumcraft.SalisMundus.addSingleConversion(<ore:chestSilver>, <metalchests:
 mods.thaumcraft.SalisMundus.addSingleConversion(<ore:chestGold>, <metalchests:metal_hungry_chest:3>, "HUNGRYCHEST");
 mods.thaumcraft.SalisMundus.addSingleConversion(<ore:chestDiamond>, <metalchests:metal_hungry_chest:4>, "HUNGRYCHEST");
 mods.thaumcraft.SalisMundus.addSingleConversion(<ore:chestObsidian>, <metalchests:metal_hungry_chest:5>, "HUNGRYCHEST");
-
-recipes.removeByMod("metalchests");
 
 
 

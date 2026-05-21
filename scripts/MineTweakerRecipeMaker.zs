@@ -12,25 +12,12 @@
 
 // ================================================================================
 //#MARKER REMOVE
-recipes.remove(<minecraft:rail>);
-recipes.removeByMod("signals");
-recipes.remove(<botania:fertilizer>);
-recipes.remove(<botania:pylon>);
-recipes.remove(<botania:spreader>);
-recipes.remove(<firmalife:large_planter>);
-recipes.remove(<firmalife:quad_planter>);
 
 // ================================================================================
 //#MARKER REMOVE SHAPELESS
-recipes.removeShapeless(<minecraft:wheat> * 9, [<minecraft:hay_block>]);
-recipes.remove(<immersiveengineering:metal_decoration0:4>);
-recipes.removeShapeless(<minecraft:stone_pressure_plate>, [<ore:concrete>, <ore:concrete>]);
 
 // ================================================================================
 //#MARKER REMOVE SHAPED
-recipes.removeShaped(<minecraft:stone_pressure_plate>, [[<ore:concrete>, <ore:concrete>]]);
-recipes.removeShaped(<thaumcraft:table_stone>, [[<minecraft:stone_slab>, <minecraft:stone_slab>, <minecraft:stone_slab>], [<ore:stone>, null, <ore:stone>]]);
-recipes.removeShaped(<integrateddynamics:squeezer>, [[<ore:stickWood>, <ore:blockIron>, <ore:stickWood>], [<ore:stickWood>, null, <ore:stickWood>], [<ore:plankWood>, <ore:ingotIron>, <ore:plankWood>]]);
 
 // ================================================================================
 //#MARKER ADD
