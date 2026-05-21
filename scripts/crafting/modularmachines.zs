@@ -34,8 +34,6 @@ import mods.modularmachinery.MMEvents;
 import mods.zenutils.NetworkHandler;
 import mods.zenutils.IByteBuf;
 
-recipes.removeByMod("modularmachinery");
-
 <modularmachinery:blockcasing:4>.displayName = "Firebox Casing";
 
 

@@ -2,14 +2,6 @@ import mods.terrafirmacraft.ItemRegistry;
 import mods.embers.DawnstoneAnvil;
 import mods.terrafirmacraft.Anvil;
 
-//remove too cheap unidict recipes
-recipes.removeByRecipeName("unidict:platebrass_x3_shape.aaa");
-recipes.removeByRecipeName("unidict:plateiron_x3_shape.aaa");
-recipes.removeByRecipeName("unidict:plateiron_x1_size.2");
-recipes.removeByRecipeName("unidict:platezinc_x1_size.2");
-recipes.removeByRecipeName("unidict:platebrass_x1_size.2");
-recipes.removeByRecipeName("unidict:plateplatinum_x1_size.2");
-
 
 // efficient sheet recipes
 	//tier 1

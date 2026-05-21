@@ -6,35 +6,29 @@ val nonBLStone as IIngredient = removeStackFromIIngredient(<ore:stone>, <thebetw
 val nonBLCobble as IIngredient = removeStackFromIIngredient(<ore:cobblestone>, <thebetweenlands:betweenstone>);
 val nonBLPlank as IIngredient = removeStackFromIIngredient(<ore:plankWood>, <thebetweenlands:weedwood_planks>);
 
-recipes.removeByRecipeName("minecraft:stone_pressure_plate");
 recipes.addShaped(<minecraft:stone_pressure_plate>, [
     [nonBLStone, nonBLStone]
 ]);
 
-recipes.removeByRecipeName("minecraft:stone_button");
 recipes.addShapeless(<minecraft:stone_button>, [nonBLStone]);
 
-recipes.removeByRecipeName("minecraft:furnace");
 recipes.addShaped(<minecraft:furnace>, [
     [nonBLCobble, nonBLCobble, nonBLCobble],
     [nonBLCobble, null, nonBLCobble],
     [nonBLCobble, nonBLCobble, nonBLCobble]
 ]);
 
-recipes.removeByRecipeName("minecraft:stick");
 recipes.addShaped(<minecraft:stick> * 4, [
     [nonBLPlank],
     [nonBLPlank]
 ]);
 
-recipes.removeByRecipeName("minecraft:sign");
 recipes.addShaped(<minecraft:sign> * 3, [
     [nonBLPlank, nonBLPlank, nonBLPlank],
     [nonBLPlank, nonBLPlank, nonBLPlank],
     [null, <ore:stickWood>, null]
 ]);
 
-recipes.removeByRecipeName("minecraft:bowl");
 recipes.addShaped(<minecraft:bowl> * 4, [
     [nonBLPlank, null, nonBLPlank],
     [null, nonBLPlank, null]

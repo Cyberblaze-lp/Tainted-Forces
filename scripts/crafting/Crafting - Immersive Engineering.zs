@@ -3,66 +3,6 @@ import crafttweaker.item.IIngredient;
 import mods.advancedrocketry.ArcFurnace;
 //=======================================================================================================================================================================
 //Basic Recipes
-	//Remove
-	furnace.remove(<immersiveengineering:metal:0>);
-	furnace.remove(<immersiveengineering:metal:1>);
-	furnace.remove(<immersiveengineering:metal:2>);
-	furnace.remove(<immersiveengineering:metal:3>);
-	furnace.remove(<immersiveengineering:metal:4>);
-	furnace.remove(<immersiveengineering:metal:5>);
-	furnace.remove(<immersiveengineering:metal:6>);
-	furnace.remove(<immersiveengineering:metal:7>);
-	furnace.remove(<immersiveengineering:metal:8>);
-	furnace.remove(<immersiveengineering:material:19>);
-	recipes.remove(<immersiveengineering:material:5>);
-	recipes.remove(<immersiveengineering:pickaxe_steel>);
-	recipes.remove(<immersiveengineering:shovel_steel>);
-	recipes.remove(<immersiveengineering:axe_steel>);
-	recipes.remove(<immersiveengineering:sword_steel>);
-	recipes.remove(<immersiveengineering:tool>);
-	recipes.remove(<immersiveengineering:tool:1>);
-	recipes.remove(<immersiveengineering:material:1>);
-	recipes.remove(<immersiveengineering:material:2>);
-	recipes.remove(<immersiveengineering:material:3>);
-	recipes.remove(<immersiveengineering:stone_decoration>);
-	recipes.remove(<immersiveengineering:stone_decoration:1>);
-	recipes.remove(<immersiveengineering:stone_decoration:2>);
-	recipes.remove(<immersiveengineering:stone_decoration:10>);
-	recipes.remove(<immersiveengineering:steel_armor_head>);
-	recipes.remove(<immersiveengineering:steel_armor_chest>);
-	recipes.remove(<immersiveengineering:steel_armor_legs>);
-	recipes.remove(<immersiveengineering:steel_armor_feet>);
-	recipes.remove(<immersiveengineering:faraday_suit_head>);
-	recipes.remove(<immersiveengineering:faraday_suit_chest>);
-	recipes.remove(<immersiveengineering:faraday_suit_legs>);
-	recipes.remove(<immersiveengineering:faraday_suit_feet>);
-
-	recipes.remove(<immersiveengineering:metal:8>);
-	recipes.remove(<immersiveengineering:metal:30>);
-	recipes.remove(<immersiveengineering:metal:31>);
-	recipes.remove(<immersiveengineering:metal:32>);
-	recipes.remove(<immersiveengineering:metal:33>);
-	recipes.remove(<immersiveengineering:metal:34>);
-	recipes.remove(<immersiveengineering:metal:35>);
-	recipes.remove(<immersiveengineering:metal:36>);
-	recipes.remove(<immersiveengineering:metal:37>);
-	recipes.remove(<immersiveengineering:metal:38>);
-	recipes.remove(<immersiveengineering:metal:39>);
-	recipes.remove(<immersiveengineering:metal:40>);
-	recipes.remove(<immersiveengineering:metal_device1:13>);
-	recipes.remove(<immersiveengineering:metal:20>);
-	recipes.remove(<immersiveengineering:metal:21>);
-	recipes.remove(<immersiveengineering:metal:22>);
-	recipes.remove(<immersiveengineering:metal:23>);
-	recipes.remove(<immersiveengineering:metal:24>);
-	recipes.remove(<immersiveengineering:metal:25>);
-	recipes.remove(<immersiveengineering:metal:26>);
-	recipes.remove(<immersiveengineering:metal:27>);
-	recipes.remove(<immersiveengineering:metal:28>);
-	recipes.remove(<immersiveengineering:metal:29>);
-
-
-	//Add
 	recipes.addShaped(<tfc:metal/ingot/steel>, [[<ore:nuggetSteel>, <ore:nuggetSteel>, <ore:nuggetSteel>],[<ore:nuggetSteel>, <ore:nuggetSteel>, <ore:nuggetSteel>], [<ore:nuggetSteel>, <ore:nuggetSteel>, <ore:nuggetSteel>]]);
 	recipes.addShapeless(<immersiveengineering:material:23>, [<ore:plateSteel>, <ore:shears>]);
 	recipes.addShapeless(<immersiveengineering:material:22>, [<ore:plateAluminum>, <ore:shears>]);
@@ -83,16 +23,6 @@ import mods.advancedrocketry.ArcFurnace;
 //=======================================================================================================================================================================
 //Immersive Engineering Machine Recipes
 
-//Remove Crusher Recipes
-
-
-	mods.immersiveengineering.Crusher.removeRecipe(<immersiveengineering:material:24>);
-	mods.immersiveengineering.Crusher.removeRecipe(<tfc:ore/cinnabar>);
-	mods.immersiveengineering.Crusher.removeRecipesForInput(<tfc:ore/sulfur>);
-	mods.immersiveengineering.Crusher.removeRecipesForInput(<minecraft:diamond_ore>);
-	mods.immersiveengineering.Crusher.removeRecipesForInput(<tfc:ore/graphite>);
-	mods.immersiveengineering.Crusher.removeRecipesForInput(<tfc:ore/kaolinite>);
-	mods.immersiveengineering.Crusher.removeRecipesForInput(<tfc:ore/saltpeter>);
 
 //Crusher
 
@@ -153,8 +83,6 @@ import mods.advancedrocketry.ArcFurnace;
 
 //=======================================================================================================================================================================
 //Fermenter
-
-    mods.immersiveengineering.Fermenter.removeFluidRecipe(<liquid:ethanol>);
 
 	//Alcohol
 	mods.immersiveengineering.Fermenter.addRecipe(<tfc:powder/fertilizer>, <liquid:beer>*250, <tfc:food/barley_flour>, 1024);
@@ -222,13 +150,6 @@ import mods.advancedrocketry.ArcFurnace;
 //=======================================================================================================================================================================
 //Alloy Kiln
 	
-	//Remove
-
-	mods.immersiveengineering.AlloySmelter.removeRecipe(<thaumcraft:ingot:2>);
-	mods.immersiveengineering.AlloySmelter.removeRecipe(<immersiveengineering:metal:6>);
-	mods.immersiveengineering.AlloySmelter.removeRecipe(<immersiveengineering:metal:7>);
-	
-	
 	//Brass
 	mods.immersiveengineering.AlloySmelter.addRecipe(<tfc:metal/ingot/brass> * 4, <ore:ingotCopper> * 3, <ore:ingotZinc>, 1200);
 	mods.immersiveengineering.AlloySmelter.addRecipe(<tfc:metal/ingot/brass> * 4, <ore:dustCopper> * 3, <ore:dustZinc>, 1200);
@@ -249,56 +170,14 @@ import mods.advancedrocketry.ArcFurnace;
 
 
 //=======================================================================================================================================================================
-//Blast Furnace
-	
-	//Remove
-
-	mods.immersiveengineering.BlastFurnace.removeRecipe(<immersiveengineering:metal:8>);
-	mods.advancedrocketry.ArcFurnace.clear();
-
-
-
-//=======================================================================================================================================================================
 //Metal Press
 
-	//Remove Recipes
-	mods.immersiveengineering.MetalPress.removeRecipe(<thaumcraft:plate>);
-	mods.immersiveengineering.MetalPress.removeRecipe(<thaumcraft:plate:1>);
-	mods.immersiveengineering.MetalPress.removeRecipe(<thaumcraft:plate:2>);
-	mods.immersiveengineering.MetalPress.removeRecipe(<thaumcraft:plate:3>);
-	mods.immersiveengineering.MetalPress.removeRecipe(<immersiveengineering:metal>);
-	mods.immersiveengineering.MetalPress.removeRecipe(<immersiveengineering:metal:1>);
-	mods.immersiveengineering.MetalPress.removeRecipe(<immersiveengineering:metal:2>);
-	mods.immersiveengineering.MetalPress.removeRecipe(<immersiveengineering:metal:3>);
-	mods.immersiveengineering.MetalPress.removeRecipe(<immersiveengineering:metal:4>);
-	mods.immersiveengineering.MetalPress.removeRecipe(<immersiveengineering:metal:5>);
-	mods.immersiveengineering.MetalPress.removeRecipe(<immersiveengineering:metal:6>);
-	mods.immersiveengineering.MetalPress.removeRecipe(<immersiveengineering:metal:7>);
-	mods.immersiveengineering.MetalPress.removeRecipe(<immersiveengineering:metal:8>);
-	mods.immersiveengineering.MetalPress.removeRecipe(<immersiveengineering:metal:30>);
-	mods.immersiveengineering.MetalPress.removeRecipe(<immersiveengineering:metal:31>);
-	mods.immersiveengineering.MetalPress.removeRecipe(<immersiveengineering:metal:32>);
-	mods.immersiveengineering.MetalPress.removeRecipe(<immersiveengineering:metal:33>);
-	mods.immersiveengineering.MetalPress.removeRecipe(<immersiveengineering:metal:34>);
-	mods.immersiveengineering.MetalPress.removeRecipe(<immersiveengineering:metal:35>);
-	mods.immersiveengineering.MetalPress.removeRecipe(<immersiveengineering:metal:36>);
-	mods.immersiveengineering.MetalPress.removeRecipe(<immersiveengineering:metal:37>);
-	mods.immersiveengineering.MetalPress.removeRecipe(<immersiveengineering:metal:38>);
-	mods.immersiveengineering.MetalPress.removeRecipe(<immersiveengineering:metal:39>);
-	mods.immersiveengineering.MetalPress.removeRecipe(<immersiveengineering:metal:40>);
-	mods.immersiveengineering.MetalPress.removeRecipe(<immersiveintelligence:material_plate:6>);
-
 	//Add Recipes
-	
-
-
-	
 
 
 	mods.immersiveengineering.MetalPress.addRecipe(<immersiveintelligence:material_plate:6>, <thebetweenlands:items_misc:23>, <immersiveengineering:mold>, 500);
 	mods.immersiveengineering.MetalPress.addRecipe(<immersiveintelligence:material_plate:6>, <ic2:misc_resource:4>, <immersiveengineering:mold>, 500);
 	mods.immersiveengineering.MetalPress.addRecipe(<thebetweenlands:items_misc:23>*4,<immersiveintelligence:material:28>, <immersiveengineering:mold:7>, 5000);
-	furnace.remove(<ic2:crafting>);
 	mods.immersiveengineering.MetalPress.addRecipe(<immersiveintelligence:material_plate:6>*6, <immersiveintelligence:material:28>, <immersiveengineering:mold>, 5000);
 	
 	
@@ -470,21 +349,7 @@ import mods.advancedrocketry.ArcFurnace;
 
 //=======================================================================================================================================================================
 //Arc Furnace
-	
-	//Remove
 
-	mods.immersiveengineering.ArcFurnace.removeRecipe(<thaumcraft:ingot:2>);
-	mods.immersiveengineering.ArcFurnace.removeRecipe(<minecraft:iron_ingot>);
-	mods.immersiveengineering.ArcFurnace.removeRecipe(<minecraft:gold_ingot>);
-	mods.immersiveengineering.ArcFurnace.removeRecipe(<immersiveengineering:metal:0>);
-	mods.immersiveengineering.ArcFurnace.removeRecipe(<immersiveengineering:metal:1>);
-	mods.immersiveengineering.ArcFurnace.removeRecipe(<immersiveengineering:metal:2>);
-	mods.immersiveengineering.ArcFurnace.removeRecipe(<immersiveengineering:metal:3>);
-	mods.immersiveengineering.ArcFurnace.removeRecipe(<immersiveengineering:metal:4>);
-	mods.immersiveengineering.ArcFurnace.removeRecipe(<immersiveengineering:metal:5>);
-	mods.immersiveengineering.ArcFurnace.removeRecipe(<immersiveengineering:metal:6>);
-	mods.immersiveengineering.ArcFurnace.removeRecipe(<immersiveengineering:metal:7>);
-	mods.immersiveengineering.ArcFurnace.removeRecipe(<immersiveengineering:metal:8>);
 
 //Ores
 
@@ -743,7 +608,6 @@ import mods.advancedrocketry.ArcFurnace;
 	mods.terrafirmacraft.Barrel.addRecipe("tfcr:treated_wood_planks", <ore:plankWood>, <liquid:creosote> * 125, <immersiveengineering:treated_wood>, null, 16);
 	mods.terrafirmacraft.Barrel.addRecipe("tfcr:treated_wood_stick", <ore:stickWood>, <liquid:creosote> * 65, <immersiveengineering:material>, null, 16);
 //steel block recipe removal
-mods.immersiveengineering.BlastFurnace.removeRecipe(<immersiveengineering:storage:8>);
 
 //II tungsten unification
 recipes.replaceAllOccurences(<immersiveintelligence:material_ingot:3>,<tfc:metal/ingot/tungsten>);

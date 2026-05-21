@@ -19,30 +19,15 @@ mods.immersiveintelligence.Coagulator.addRecipe(<thebetweenlands:sulfur_block>*2
 mods.immersiveintelligence.Coagulator.addRecipe(<thebetweenlands:sulfur_block>*2, <liquid:refined_oil>*6000, <liquid:steam>*10000, 10000, 400);
 
 
-mods.immersiveengineering.Mixer.removeRecipe(<liquid:concrete>);
 mods.immersiveengineering.Mixer.addRecipe(<liquid:concrete>*1000, <liquid:limewater>*1000,[<tfc:aggregate>*3,<minecraft:clay>], 5000);
 
-recipes.remove(<immersiveengineering:stone_decoration:4>);
-recipes.remove(<immersiveengineering:stone_decoration:5>);
 mods.terrafirmacraft.Barrel.addRecipe("betterconcrete", <tfc:aggregate>, <liquid:limewater> * 125,<immersiveengineering:stone_decoration:5>,null, 1);
 mods.terrafirmacraft.Barrel.addRecipe("betterconcrete2", <ore:gravel>*2, <liquid:limewater> * 250,<immersiveengineering:stone_decoration:5>,null, 1);
 mods.terrafirmacraft.Barrel.addRecipe("betterasphalt", <tfc:aggregate>, <liquid:tar> * 125,<immersivepetroleum:stone_decoration>,null, 1);
 mods.terrafirmacraft.Barrel.addRecipe("betterhempcrete", <tfc:crop/product/jute_fiber>, <liquid:limewater> * 125,<immersiveengineering:stone_decoration:4>,null, 1);
 
-mods.pneumaticcraft.thermopneumaticprocessingplant.removeRecipe(<liquid:lpg>);
-mods.pneumaticcraft.thermopneumaticprocessingplant.removeRecipe(<liquid:fuel>);
-mods.pneumaticcraft.thermopneumaticprocessingplant.removeRecipe(<liquid:kerosene>);
-mods.pneumaticcraft.thermopneumaticprocessingplant.removeRecipe(<liquid:lubricant>);
-mods.pneumaticcraft.thermopneumaticprocessingplant.removeRecipe(<liquid:plastic>);
 
 
-mods.magneticraft.OilHeater.removeRecipe(<liquid:oil>);
-
-mods.magneticraft.Refinery.removeRecipe(<liquid:hot_crude>);
-mods.magneticraft.Refinery.removeRecipe(<liquid:light_oil>);
-mods.magneticraft.Refinery.removeRecipe(<liquid:heavy_oil>);
-mods.magneticraft.Refinery.removeRecipe(<liquid:lpg>);
-mods.thermalexpansion.Refinery.removeRecipe(<liquid:oil>);
 Purifier.addRecipe(<ore:dustAsh>, <tfctech:powder/potash>);
 
 

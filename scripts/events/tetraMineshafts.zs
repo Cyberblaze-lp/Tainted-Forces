@@ -12,9 +12,6 @@ import crafttweaker.data.IData;
 import crafttweaker.item.IItemStack;
 import mods.zenutils.Catenation;
 
-JEI.removeAndHide(<minecraft:chest_minecart>);
-JEI.removeAndHide(<minecraft:tnt_minecart>);
-
 static features as string[] = [
     "extractor_platform",
     "extractor_platform",
