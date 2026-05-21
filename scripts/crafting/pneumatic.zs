@@ -37,7 +37,6 @@ furnace.setFuel(<thaumcraft:alumentum>, 6400 );
   null, 0.0,
   <liquid:olive_oil_water>*250);
 mods.pneumaticcraft.pressurechamber.addRecipe([<ore:ingotIron>, <ore:dustBedrock>], 2.0, [<pneumaticcraft:ingot_iron_compressed>]);
-mods.pneumaticcraft.assembly.removeLaserRecipe(<pneumaticcraft:unassembled_pcb>);
 mods.pneumaticcraft.assembly.addDrillRecipe(<thaumcraft:mechanism_complex>, <pneumaticcraft:advanced_pcb>*2);
 
 

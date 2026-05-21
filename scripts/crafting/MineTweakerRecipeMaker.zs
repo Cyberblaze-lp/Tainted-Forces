@@ -12,128 +12,12 @@
 
 // ================================================================================
 //#MARKER REMOVE
-recipes.remove(<advancedrocketry:thermite>);
-recipes.removeByRecipeName("railcraft:dust#7$1");
-recipes.removeByRecipeName("railcraft:locomotive_steam_solid#0$1");
-recipes.remove(<ore:dustVoid>);
-
-recipes.remove(<minecraft:anvil>);
-recipes.remove(<minecraft:minecart>);
-recipes.remove(<pneumaticcraft:remote>);
-recipes.remove(<pneumaticcraft:network_component:5>);
-recipes.remove(<pneumaticcraft:network_component:3>);
-
-recipes.remove(<embers:boiler>);
-recipes.remove(<immersiveengineering:metal_decoration0:5>);
-recipes.remove(<immersiveengineering:metal_decoration0:3>);
-recipes.remove(<ic2:crafting:1>);
-recipes.remove(<tconstruct:soil>);
-recipes.remove(<thermalfoundation:material:513>);
-recipes.remove(<thermalfoundation:material:514>);
-recipes.remove(<thermalfoundation:material:515>);
-recipes.remove(<minecraft:compass>);
-recipes.remove(<minecraft:enchanting_table>);
-recipes.remove(<minecraft:fishing_rod>);
-recipes.remove(<minecraft:ender_eye>);
-
-recipes.remove(<advancedrocketry:ic:*>);
-recipes.remove(<advancedrocketry:jackhammer>);
-recipes.remove(<extrautils2:filter>);
-recipes.remove(<extrautils2:filterfluids>);
-recipes.remove(<extrautils2:indexer>);
-recipes.remove(<extrautils2:indexerremote>);
-recipes.remove(<extrautils2:grocket>);
-recipes.remove(<extrautils2:grocket:1>);
-recipes.remove(<extrautils2:grocket:2>);
-recipes.remove(<extrautils2:grocket:5>);
-recipes.remove(<extrautils2:grocket:6>);
-recipes.remove(<extrautils2:pipe>);
-recipes.remove(<tetra:duplex_tool_modular>);
-recipes.remove(<tetra:toolbelt_modular>);
-recipes.remove(<thermalexpansion:satchel>);
-recipes.remove(<extrautils2:drum>);
-recipes.remove(<mystgears:ember_gatling_gun>);
-recipes.remove(<embers:mini_boiler>);
-mods.jei.JEI.removeAndHide(<mystgears:windup_box>);
-recipes.remove(<embers:cinder_plinth>);
-recipes.remove(<minecraft:wool>);
-recipes.remove(<immersiveengineering:skyhook>);
-recipes.remove(<bloodmagic:altar>);
-recipes.remove(<bloodmagic:soul_forge>);
-recipes.remove(<bloodmagic:soul_snare>);
-recipes.remove(<embers:steam_engine>);
-recipes.remove(<embers:breaker>);
-recipes.remove(<mysticalmechanics:gearbox_frame>);
-recipes.remove(<mysticalmechanics:mergebox_frame>);
-recipes.remove(<mystgears:drill>);
-recipes.remove(<mystgears:drill_diamond>);
-recipes.remove(<extrautils2:spike_diamond>);
-recipes.remove(<extrautils2:spike_gold>);
-recipes.remove(<extrautils2:spike_iron>);
-recipes.remove(<extrautils2:spike_stone>);
-recipes.remove(<extrautils2:spike_wood>);
-recipes.remove(<ic2:glass>);
-
-recipes.remove(<cyberware:scanner>);
-recipes.remove(<magneticraft:steam_boiler>);
-
-
 
 // ================================================================================
 //#MARKER REMOVE SHAPELESS
-recipes.removeShapeless(<betternether:reeds_block>, [<ore:sugarcane>, <ore:sugarcane>, <ore:sugarcane>, <ore:sugarcane>, <ore:sugarcane>, <ore:sugarcane>, <ore:sugarcane>, <ore:sugarcane>, <ore:sugarcane>]);
-recipes.removeShapeless(<minecraft:flint_and_steel>, [<ore:ingotIron>, <ore:flint>]);
-recipes.removeShapeless(<railcraft:cart_cargo>, [<minecraft:trapped_chest>, <minecraft:minecart>]);
-recipes.removeShapeless(<minecraft:clay_ball> * 2, [<tfc:ceramics/unfired/mold/ingot>]);
-recipes.removeShapeless(<minecraft:paper> * 3, [<ore:sugarcane>, <ore:sugarcane>, <ore:sugarcane>]);
-recipes.removeShapeless(<minecraft:rotten_flesh> * 9, [<thaumcraft:flesh_block>]);
-recipes.removeShapeless(<advancedrocketry:thermitetorch> * 4, [<minecraft:stick>, <advancedrocketry:thermite>]);
 
 // ================================================================================
 //#MARKER REMOVE SHAPED
-recipes.removeShaped(<railcraft:tool_spike_maul_steel>, [[<ore:ingotSteel>, <ore:blockSteel>, <ore:ingotSteel>], [null, <ore:stickWood>, null], [null, <ore:stickWood>, null]]);
-recipes.removeShaped(<railcraft:tool_spike_maul_iron>, [[<ore:ingotIron>, <ore:blockIron>, <ore:ingotIron>], [null, <ore:stickWood>, null], [null, <ore:stickWood>, null]]);
-recipes.removeShaped(<mekanism:basicblock2:7> * 4, [[null, <ore:ingotSteel>, null], [<ore:ingotSteel>, null, <ore:ingotSteel>], [null, <ore:ingotSteel>, null]]);
-recipes.removeShaped(<mekanism:basicblock2:8> * 2, [[null, <mekanism:basicblock2:7>, null], [<mekanism:basicblock2:7>, <ore:circuitAdvanced>, <mekanism:basicblock2:7>], [null, <mekanism:basicblock2:7>, null]]);
-recipes.remove(<clothesline:spinner>);
-recipes.remove(<clothesline:crank>);
-recipes.remove(<clothesline:clothesline_anchor>);
-recipes.remove(<clothesline:clothesline>);
-
-recipes.removeShaped(<quark:chain> * 3, [[<ore:nuggetIron>, <ore:nuggetIron>, null], [<ore:nuggetIron>, <ore:ingotIron>, null], [null, null, <ore:ingotIron>]]);
-recipes.removeShaped(<betternether:reeds_block>, [[<ore:sugarcane>, <ore:sugarcane>, <ore:sugarcane>], [<ore:sugarcane>, <ore:sugarcane>, <ore:sugarcane>], [<ore:sugarcane>, <ore:sugarcane>, <ore:sugarcane>]]);
-recipes.removeShaped(<immersiveintelligence:mechanical_device>, [[<ore:plateBrass>, <immersiveengineering:material:8>, <ore:plateBrass>], [<ore:stickIron>, <ore:scaffoldingTreatedWood>, <ore:stickIron>], [<ore:plateBrass>, null, <ore:plateBrass>]]);
-recipes.removeShaped(<railcraft:cart_cargo>, [[<minecraft:trapped_chest>], [<minecraft:minecart>]]);
-recipes.removeShaped(<pneumaticcraft:gas_lift>, [[null, <pneumaticcraft:pressure_tube>, null], [<pneumaticcraft:pressure_tube>, <ore:blockGlass>, <pneumaticcraft:pressure_tube>], [<ore:ingotIronCompressed>, <ore:ingotIronCompressed>, <ore:ingotIronCompressed>]]);
-recipes.removeShaped(<minecraft:paper> * 3, [[<ore:sugarcane>, <ore:sugarcane>, <ore:sugarcane>]]);
-recipes.removeShaped(<minecraft:paper> * 3, [[<ore:sugarcane>, <ore:sugarcane>, <ore:sugarcane>]]);
-recipes.removeShaped(<minecraft:paper> * 3, [[<ore:sugarcane>, <ore:sugarcane>, <ore:sugarcane>]]);
-recipes.removeShaped(<minecraft:paper> * 3, [[<betternether:nether_reed>, <betternether:nether_reed>, <betternether:nether_reed>]]);
-recipes.removeShaped(<minecraft:paper> * 3, [[<betternether:nether_reed>, <betternether:nether_reed>, <betternether:nether_reed>]]);
-recipes.removeShaped(<minecraft:paper> * 3, [[<betternether:nether_reed>, <betternether:nether_reed>, <betternether:nether_reed>]]);
-recipes.removeShaped(<ic2:wrench_new>, [[null, <ore:ingotBronze>, null], [<ore:ingotBronze>, <ore:ingotBronze>, <ore:ingotBronze>], [<ore:ingotBronze>, null, <ore:ingotBronze>]]);
-recipes.removeShaped(<tfc:blast_furnace>, [[<ore:sheetDoubleWroughtIron>, <ore:sheetDoubleWroughtIron>, <ore:sheetDoubleWroughtIron>], [<ore:sheetDoubleWroughtIron>, <tfc:crucible>, <ore:sheetDoubleWroughtIron>], [<ore:sheetDoubleWroughtIron>, <ore:sheetDoubleWroughtIron>, <ore:sheetDoubleWroughtIron>]]);
-recipes.removeShaped(<minecraft:heavy_weighted_pressure_plate>, [[<ore:ingotIron>, <ore:ingotIron>]]);
-recipes.removeShaped(<tfc:bloomery>, [[<ore:sheetDoubleAnyBronze>, <ore:sheetDoubleAnyBronze>, <ore:sheetDoubleAnyBronze>], [<ore:sheetDoubleAnyBronze>, null, <ore:sheetDoubleAnyBronze>], [<ore:sheetDoubleAnyBronze>, <ore:sheetDoubleAnyBronze>, <ore:sheetDoubleAnyBronze>]]);
-recipes.removeShaped(<minecraft:rotten_flesh> * 9, [[<thaumcraft:flesh_block>]]);
-recipes.removeShaped(<thaumcraft:flesh_block>, [[<minecraft:rotten_flesh>, <minecraft:rotten_flesh>, <minecraft:rotten_flesh>], [<minecraft:rotten_flesh>, <minecraft:rotten_flesh>, <minecraft:rotten_flesh>], [<minecraft:rotten_flesh>, <minecraft:rotten_flesh>, <minecraft:rotten_flesh>]]);
-recipes.removeShaped(<quark:candle> * 2, [[<ore:string>], [<ore:tallow>], [<ore:tallow>]]);
-recipes.remove(<minecraft:piston>);
-recipes.remove(<immersiveengineering:drill>);
-recipes.remove(<extrautils2:analogcrafter>);
-recipes.remove(<extrautils2:crafter>);
-recipes.removeByMod("buildinggadgets");
-recipes.remove(<ore:gearBrass>);
-recipes.remove(<ore:gearSteel>);
-recipes.remove(<ore:gearIron>);
-recipes.remove(<ore:gearGold>);
-recipes.removeShaped(<mekanism:basicblock:14>, [[<ore:circuitAdvanced>, <ore:paneGlass>, <ore:circuitAdvanced>], [<mekanism:basicblock2>, <minecraft:bucket>, <mekanism:basicblock2>], [<mekanism:basicblock2>, <mekanism:basicblock2>, <mekanism:basicblock2>]]);
-recipes.removeShaped(<magneticraft:connector> * 8, [[null, <ore:ingotIron>, null], [<ore:stone>, <ore:ingotCopper>, <ore:stone>]]);
-recipes.remove(<ic2:cover>);
-recipes.remove(<immersiveintelligence:mechanical_device1>);
-recipes.remove(<extrautils2:user>);
-recipes.remove(<extrautils2:miner>);
-recipes.remove(<minecraft:fire_charge>);
 
 // ================================================================================
 //#MARKER ADD
@@ -196,7 +80,6 @@ recipes.addShapeless(<tfc:metal/nugget/blue_steel> * 9, [<ore:ingotBlueSteel>]);
 recipes.addShapeless(<minecraft:blaze_powder>, [<thebetweenlands:pyrad_flame>]);
 recipes.addShapeless(<tfc:metal/nugget/tungsten_steel> * 9, [<ore:ingotTungstenSteel>]);
 recipes.addShapeless(<minecraft:iron_nugget>, [<ore:nuggetWroughtIron>]);
-recipes.remove(<embers:archaic_circuit>);
 
 
 
