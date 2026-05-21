@@ -154,10 +154,7 @@ ItemRegistry.registerItemMetal(<tfc:brass_mechanisms>, "brass", 72, true);
 
 mods.thaumcraft.Infusion.registerRecipe("dropofevil", "DROPOFEVIL", <extrautils2:ingredients:10>, 5, [<aspect:tenebrae>*25, <aspect:vitium>*10, <aspect:desiderium>*10], <thaumcraft:alumentum>, [<tconstruct:soil:3>, <ore:quicksilver>]);
 
-//quuicksilver stuff
-
-val nuggetq = <ore:nuggetQuicksilver>;
-val ingotq = <ore:ingotQuicksilver>;
+//quicksilver stuff
 
 mods.thaumcraft.Infusion.registerRecipe("betterbore", "ARCANEBORE", <thaumcraft:turret:2>, 4, [<aspect:machina>*50, <aspect:vacuos>*25, <aspect:motus>*25,<aspect:potentia>*100,<aspect:terra>*250], <thaumcraft:turret>, [<thaumcraft:vis_resonator>,<thaumcraft:focus_1>.withTag({package: {complexity: 14, nodes: [{type: "MEDIUM", key: "ROOT"}, {type: "MEDIUM", key: "thaumcraft.BOLT"}, {"setting.power": 3, type: "EFFECT", key: "thaumcraft.EARTH"}], index: 0, power: 1.0 as float}, srt: -1937637418, color: -11091968}), <ore:plateBrass>]);
 

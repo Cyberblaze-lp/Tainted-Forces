@@ -34,8 +34,6 @@ Purifier.addRecipe(<ore:dustAsh>, <tfctech:powder/potash>);
 Purifier.addRecipe(<thebetweenlands:sludge_worm_egg_sac>, <thebetweenlands:sludge_worm_arrow>);
 mods.inworldcrafting.FluidToItem.transform(<thebetweenlands:sludge_worm_egg_sac>*6, <liquid:stagnant_water>, [<thebetweenlands:sludge_worm_arrow>, <thebetweenlands:mud>*6, <thebetweenlands:sludge_jello>*6], true);
 
-<ore:dustSulfur>.add(<thebetweenlands:items_misc:18>);
-
 mods.pneumaticcraft.thermopneumaticprocessingplant.addRecipe(<liquid:lubricant>*16000, <thebetweenlands:shock_arrow>, 2.0, 300.0+273.0, <liquid:diesel>*15000);
 mods.pneumaticcraft.thermopneumaticprocessingplant.addRecipe(<liquid:kerosene>*16000, <thebetweenlands:shock_arrow>, 2.0, 300.0+273.0, <liquid:refined_oil>*12000);
 mods.pneumaticcraft.thermopneumaticprocessingplant.addRecipe(<liquid:gasoline>*16000, <thebetweenlands:shock_arrow>, 2.0, 300.0+273.0, <liquid:lpg>*13500);
@@ -43,10 +41,6 @@ mods.pneumaticcraft.thermopneumaticprocessingplant.addRecipe(<liquid:gasoline>*1
 mods.pneumaticcraft.thermopneumaticprocessingplant.addRecipe(<liquid:lpg>*250, <thebetweenlands:items_misc:44>*10, 2.0, 300.0+273.0, <liquid:plastic>*1000);
 
 
-
-
-
-<ore:arrowBL>.addItems([<thebetweenlands:angler_tooth_arrow>,<thebetweenlands:poisoned_angler_tooth_arrow>,<thebetweenlands:octine_arrow>,<thebetweenlands:basilisk_arrow>,<thebetweenlands:sludge_worm_arrow>]);
 
 
 var c as IJeiPanel = JEI.createJei("coagulator", "Coagulator");

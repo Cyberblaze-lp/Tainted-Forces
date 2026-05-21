@@ -16,26 +16,7 @@ import native.net.dries007.tfc.api.registries.TFCRegistries;
 mods.immersiveintelligence.ChemicalBath.addRecipe(<ore:stoneMarble>, <astralsorcery:blockmarble>, <liquid:hydrofluoric_acid>*50, 3000, 30);
 
 
-<ore:seed>.addItems(itemUtils.getItemsByRegexRegistryName(".*crop/seeds.*"));
-<ore:fabricHemp>.add(<tfc:crop/product/burlap_cloth>);
-<ore:logWoodTannin>.add(<botania:livingwood>);
-<ore:logWoodTannin>.add(<thaumcraft:log_greatwood>);
-
-
-
-<ore:blockGlass>.add(<betternether:quartz_glass>);
-<ore:blockGlassColorless>.add(<betternether:quartz_glass>);
-
 mods.immersiveengineering.Squeezer.addRecipe(null,<liquid:plantoil>*120,<ore:seed>, 2500);
-
-<ore:categoryMeat>.addAll(<ore:fish>);
-<ore:categoryCookedMeat>.addAll(<ore:listAllmeatcooked>);
-
-<ore:pressurePlateStone>.add(
-	<thaumicaugmentation:pressure_plate_arcane_stone>,
-	<thaumicaugmentation:warded_pressure_plate_arcane_stone>,
-	<thebetweenlands:betweenstone_pressure_plate>
-);
 
 //ItemRegistry.registerArmor(IIngredient input, float crushingModifier, float piercingModifier, float slashingModifier);
 //ItemRegistry.registerFood(IIngredient input, int hunger, float water, float saturation, float decay, float grain, float veg, float fruit, float meat, float dairy);
@@ -47,17 +28,6 @@ ItemRegistry.registerFood(<ore:fish>, 1, 10.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.5, 0.0
 ItemRegistry.registerFood(<ore:listAllmeatcooked>, 1, 3.0, 5.0, 1.0, 0.0, 0.0, 0.0, 1.5, 0.0);
 ItemRegistry.registerFood(<minecraft:pumpkin_pie>, 4, 100.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0);
 
-<ore:rockMetamorphic>.addAll(<ore:coinIron>);
-<ore:rockSedimentary>.addAll(<ore:coinGold>);
-<ore:rockIgneousIntrusive>.addAll(<ore:coinCopper>);
-<ore:rockIgneousExtrusive>.addAll(<ore:coinTin>);
-/*
-<ore:ballCrystallinePinkSlime>.remove(<thermalfoundation:coin:65>);
-<ore:ballVividAlloy>.remove(<thermalfoundation:coin:64>);
-<ore:coinGold>.remove(<thermalfoundation:coin:1>);
-<ore:coinIron>.remove(<thermalfoundation:coin>);
-mods.thermalexpansion.Compactor.removeMintRecipe(<thermalfoundation:coin:*>);
-*/
 
 
 
@@ -226,12 +196,6 @@ Heating.addRecipe("redAlloy", <projectred-core:resource_item:251>, <projectred-c
 ItemRegistry.registerItemHeat(<tfc:ore/chromite>, 0.5, 1700, false);
 
 //equipment registry
-<ore:damageTypeCrushing>.add(<tconstruct:battlesign>,<tconstruct:frypan>);
-<ore:damageTypeSlashing>.add(<tconstruct:broadsword>,<tconstruct:longsword>,<tconstruct:cleaver>);
-<ore:damageTypePiercing>.add(<tconstruct:rapier>);
-
-
-<ore:stickAluminum>.add(<tfctech:metal/aluminium_rod>);
 
 
 
@@ -283,16 +247,8 @@ mods.terrafirmacraft.Barrel.addRecipe("aquamarine", <tfc:gem/beryl:3>, <liquid:s
 
 Alloy.addAlloy("weak_red_steel").addMetal("steel", 0.5, 0.65).addMetal("red_alloy", 0.1, 0.2).addMetal("ardite", 0.2, 0.3).build();
 Alloy.addAlloy("weak_blue_steel").addMetal("steel", 0.5, 0.65).addMetal("platinum", 0.1, 0.2).addMetal("cobalt", 0.2, 0.3).build();
-<ore:ingotAdvancedElectronicAlloy>.add(<tfc:metal/ingot/blue_steel>);
-<ore:plateAdvancedElectronicAlloy>.add(<tfc:metal/sheet/blue_steel>);
 
-<ore:dustAdvancedElectronicAlloy>.add(<tfc:metal/dust/blue_steel>);
-<ore:nuggetAdvancedElectronicAlloy>.add(<tfc:metal/nugget/blue_steel>);
 
-<ore:ingotAdvancedElectronicAlloy>.remove(<immersiveintelligence:material_ingot>);
-<ore:plateAdvancedElectronicAlloy>.remove(<immersiveintelligence:material_plate>);
-<ore:dustAdvancedElectronicAlloy>.remove(<immersiveintelligence:material_dust>);
-<ore:nuggetAdvancedElectronicAlloy>.remove(<immersiveintelligence:material_nugget>);
 
 
 

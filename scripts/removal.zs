@@ -32,6 +32,7 @@
 		<advancedrocketry:thermite>,
 		<advancedrocketry:ic:*>,
 		<advancedrocketry:jackhammer>,
+		<advancedrocketry:concrete>,
 		<astralsorcery:blockblackmarble>,
 		<botania:corporeaspark>,
 		<botania:corporeaspark:1>,
@@ -210,7 +211,7 @@
 		<immersiveengineering:faraday_suit_feet>,
 		<immersiveengineering:metal_device1:13>,
 		<immersiveengineering:wirecoil:5>,
-		<immersiveengineering:conveyor>.onlyWithTag({}),
+		<immersiveengineering:conveyor>,
 		<immersiveengineering:metal_decoration0:3>,
 		<immersiveengineering:metal_decoration0:4>,
 		<immersiveengineering:metal_decoration0:5>,
@@ -251,6 +252,7 @@
 		<mekanism:transmitter>,
 		<mekanism:transmitter:1>,
 		<mekanism:transmitter:3>,
+		<mekanism:filterupgrade>,
 		<mekanismgenerators:generator>,
 		<mekanismgenerators:generator:1>,
 		<mekanismgenerators:generator:3>,
@@ -302,6 +304,8 @@
 		<minecraft:iron_leggings>,
 		<minecraft:iron_boots>,
 		<minecraft:minecart>,
+		<minecraft:chest_minecart>,
+		<minecraft:tnt_minecart>,
 		<minecraft:cauldron>,
 		<minecraft:rail>,
 		<minecraft:detector_rail>,
@@ -319,6 +323,7 @@
 		<mystgears:drill>,
 		<mystgears:drill_diamond>,
 		<mystgears:ember_gatling_gun>,
+		<mystgears:windup_box>,
 		<ore:dustSteel>,
 		<ore:stickIron>,
 		<ore:blockBronze>,
@@ -388,6 +393,7 @@
 		<tconstruct:materials:18>,
 		<tconstruct:stone_torch>,
 		<tconstruct:soil>,
+		<tconstruct:fancy_frame:*>,
 		<tetra:duplex_tool_modular>,
 		<tetra:toolbelt_modular>,
 		<tfc:brass_mechanisms>,
@@ -680,57 +686,49 @@
 
 	mods.immersivetechnology.MeltingCrucible.removeRecipe(<minecraft:cobblestone>);
 
-//Done!
+//Done! 
 
 
 //JEI
-	mods.jei.JEI.removeAndHide(<advancedrocketry:concrete>);
-	mods.jei.JEI.removeAndHide(<minecraft:chest_minecart>);
-	mods.jei.JEI.removeAndHide(<minecraft:tnt_minecart>);
-	
-	mods.jei.JEI.hide(<thermalexpansion:augment:352>);
-	mods.jei.JEI.hide(<ic2:crafting:2>);
-	mods.jei.JEI.hide(<tfctech:latex/vulcanizing_agents>);
-
-
-	//mods.jei.JEI.hide(<props:props:*>);
-	//mods.jei.JEI.hide(<techguns:itemshared:65>);
-	mods.jei.JEI.removeAndHide(<mekanism:filterupgrade>);
-	//mods.jei.JEI.hide(<randomthings:diviningrod:*>);
-	mods.jei.JEI.removeAndHide(<tconstruct:fancy_frame:*>);
-	mods.jei.JEI.removeAndHide(<mystgears:windup_box>);
-
-
-	mods.jei.JEI.hide(<immersiveengineering:metal_device1:13>);
-	mods.jei.JEI.hide(<immersiveengineering:metal:20>);
-	mods.jei.JEI.hide(<immersiveengineering:metal:21>);
-	mods.jei.JEI.hide(<immersiveengineering:metal:22>);
-	mods.jei.JEI.hide(<immersiveengineering:metal:23>);
-	mods.jei.JEI.hide(<immersiveengineering:metal:24>);
-	mods.jei.JEI.hide(<immersiveengineering:metal:25>);
-	mods.jei.JEI.hide(<immersiveengineering:metal:26>);
-	mods.jei.JEI.hide(<immersiveengineering:metal:27>);
-	mods.jei.JEI.hide(<immersiveengineering:metal:28>);
-	mods.jei.JEI.hide(<immersiveengineering:metal:29>);
-
-	mods.jei.JEI.hide(<immersivecables:coil_block:3>);
-	mods.jei.JEI.hide(<immersivecables:wire_coil:3>);
-
-	mods.jei.JEI.hide(<magneticraft:sluice_box>);
-	mods.jei.JEI.hide(<magneticraft:crushing_table>);
-	mods.jei.JEI.hide(<magneticraft:stone_hammer>);
-	mods.jei.JEI.hide(<magneticraft:iron_hammer>);
-	mods.jei.JEI.hide(<magneticraft:steel_hammer>);
-	mods.jei.JEI.hide(<ic2:forge_hammer>);
-	mods.jei.JEI.hide(<ic2:cutter>);
-	mods.jei.JEI.hide(<ic2:te:50>);
-
-	mods.jei.JEI.hide(<tfc:metal/bucket/blue_steel>);
-	mods.jei.JEI.hide(<tfc:metal/bucket/red_steel>);
-
-	mods.jei.JEI.removeAndHide(<extrautils2:angelring:*>);
-	mods.jei.JEI.hide(<camping:campfire_wood_off>);
-	mods.jei.JEI.hide(<camping:campfire_cook>);
+	for item in [
+		<advancedrocketry:concrete>,
+		<camping:campfire_wood_off>,
+		<camping:campfire_cook>,
+		<extrautils2:angelring:*>,
+		<ic2:crafting:2>,
+		<ic2:forge_hammer>,
+		<ic2:cutter>,
+		<ic2:te:50>,
+		<immersivecables:coil_block:3>,
+		<immersivecables:wire_coil:3>,
+		<immersiveengineering:metal_device1:13>,
+		<immersiveengineering:metal:20>,
+		<immersiveengineering:metal:21>,
+		<immersiveengineering:metal:22>,
+		<immersiveengineering:metal:23>,
+		<immersiveengineering:metal:24>,
+		<immersiveengineering:metal:25>,
+		<immersiveengineering:metal:26>,
+		<immersiveengineering:metal:27>,
+		<immersiveengineering:metal:28>,
+		<immersiveengineering:metal:29>,
+		<magneticraft:sluice_box>,
+		<magneticraft:crushing_table>,
+		<magneticraft:stone_hammer>,
+		<magneticraft:iron_hammer>,
+		<magneticraft:steel_hammer>,
+		<mekanism:filterupgrade>,
+		<minecraft:chest_minecart>,
+		<minecraft:tnt_minecart>,
+		<mystgears:windup_box>,
+		<tconstruct:fancy_frame:*>,
+		<thermalexpansion:augment:352>,
+		<tfctech:latex/vulcanizing_agents>,
+		<tfc:metal/bucket/blue_steel>,
+		<tfc:metal/bucket/red_steel>,
+	]{
+		mods.jei.JEI.hide(item);
+	}
 //Done!
 
 

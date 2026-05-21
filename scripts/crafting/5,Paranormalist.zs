@@ -75,8 +75,6 @@ mods.thermalexpansion.Centrifuge.addRecipe([<mekanism:controlcircuit:3>*12,<astr
 mods.thermalexpansion.Centrifuge.addRecipe([<mekanism:controlcircuit:3>*24,<astralsorcery:itemrockcrystalsimple>.withTag({astralsorcery: {crystalProperties: {collectiveCapability: 10, size: 20, fract: 0, purity: 10, sizeOverride: -1}}}) ],<pneumaticcraft:printed_circuit_board>*24, null, 5000);
 
 
-<ore:circuitUltimate>.addItems([<pneumaticcraft:printed_circuit_board>, <pneumaticcraft:transistor>]);
-
 <pneumaticcraft:printed_circuit_board>.displayName = "Rough Ultimate Circuit";
 <pneumaticcraft:transistor>.displayName = "Coarse Ultimate Circuit";
 

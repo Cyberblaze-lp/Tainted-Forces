@@ -50,8 +50,6 @@ ItemRegistry.registerFood(<thebetweenlands:marshmallow_pink>, 4, 0.0, 5.0, 0.0, 
 ItemRegistry.registerFood(<thebetweenlands:gerts_donut>, 6, 30.0, 30.0, 0.5, 1.0, 0.0, 1.0, 3.0, 0.5);
 ItemRegistry.registerFood(<thebetweenlands:jam_donut>, 10, 10.0, 10.0, 2.0, 1.0, 0.0, 1.0, 0.0, 0.0);
 
-<ore:categoryMeal>.addItems([<thebetweenlands:drinkable_brew:*>,<thebetweenlands:olmlette>,<thebetweenlands:mire_scramble>,<thebetweenlands:weeping_blue_petal_salad>,<thebetweenlands:sushi>,<thebetweenlands:marshmallow>,<thebetweenlands:marshmallow_pink>,<thebetweenlands:gerts_donut>,<thebetweenlands:jam_donut>,<thebetweenlands:christmas_pudding>,<thebetweenlands:mince_pie>,<thebetweenlands:candy_yellow>,<thebetweenlands:candy_red>,<thebetweenlands:candy_blue>]);
-
 ItemRegistry.registerFood(<thebetweenlands:olm_egg_cooked>, 2, 10.0, 10.0, 1.0, 0.0, 0.0, 0.0, 1.0, 0.5);
 ItemRegistry.registerFood(<thebetweenlands:snail_flesh_smoked>,6 , 5.0, 20.0, 0.2, 0.0, 0.0, 0.0, 3.0, 0.0);
 ItemRegistry.registerFood(<thebetweenlands:silt_crab_claw_smoked>,4 , 5.0, 20.0, 0.2, 0.0, 0.0, 0.0, 3.0, 0.0);
@@ -67,22 +65,7 @@ ItemRegistry.registerFood(<thebetweenlands:barnacle_cooked>,2 , 0.0, 10.0, 1.0, 
 ItemRegistry.registerFood(<thebetweenlands:mire_snail_egg_cooked>,4 , 0.0, 10.0, 1.0, 0.0, 0.0, 0.0, 1.0, 0.2);
 ItemRegistry.registerFood(<thebetweenlands:kraken_calamari>,14 , 30.0, 30.0, 0.8, 0.0, 0.0, 0.3, 3.0, 0.0);
 
-<ore:categoryCookedMeat>.addItems([
-<thebetweenlands:olm_egg_cooked>,
-<thebetweenlands:snail_flesh_cooked>,
-<thebetweenlands:snail_flesh_smoked>,
-<thebetweenlands:silt_crab_claw_smoked>,
-<thebetweenlands:crab_stick_smoked>,
-<thebetweenlands:anadia_meat_smoked>,
-<thebetweenlands:anadia_meat_cooked>,
-<thebetweenlands:puffshroom_tendril_smoked>,
-<thebetweenlands:barnacle_smoked>,
-<thebetweenlands:barnacle_cooked>,
-<thebetweenlands:mire_snail_egg_cooked>,
-<thebetweenlands:frog_legs_cooked>,
-<thebetweenlands:frog_legs_smoked>,
-<thebetweenlands:kraken_calamari>
-]);
+
 ItemRegistry.registerFood(<thebetweenlands:reed_donut>,6 , 0.0, 5.0, 0.0, 3.0, 0.0, 0.0, 0.0, 0.0);
 ItemRegistry.registerFood(<thebetweenlands:fried_swamp_kelp>,4 , 0.0, 5.0, 0.0, 3.0, 0.0, 0.0, 0.0, 0.0);
 ItemRegistry.registerFood(<thebetweenlands:weeping_blue_petal>,1 , 20.0, 5.0, 0.0, 3.0, 0.0, 0.2, 0.0, 0.0);
@@ -94,17 +77,11 @@ ItemRegistry.registerFood(<thebetweenlands:middle_fruit_jello>,8 , 25.0, 20.0, 5
 ItemRegistry.registerFood(<thebetweenlands:weeping_blue_petal_salad>,6 , 100.0, 5.0, 0.0, 15.0, 0.0, 1.0, 0.0, 0.0);
 ItemRegistry.registerFood(<thebetweenlands:mire_scramble>,12 , 0.0, 30.0, 2.0, 0.4, 0.2, 1.0, 4.0, 0.4);
 
-<ore:categoryGrain>.addItems([<thebetweenlands:reed_donut>,<thebetweenlands:weeping_blue_petal>,<thebetweenlands:fried_swamp_kelp>,<thebetweenlands:nibblestick>]);
-
-
 ItemRegistry.registerFood(<thebetweenlands:middle_fruit>,6 , 15.0, 5.0, 2.0, 0.2, 0.0, 2.0, 0.0, 0.5);
 ItemRegistry.registerFood(<thebetweenlands:pearled_pear>,6 , 15.0, 5.0, 2.0, 0.2, 0.0, 2.0, 0.0, 0.5);
 ItemRegistry.registerFood(<thebetweenlands:spirit_fruit>,4 , 50.0, 100.0, 0.0, 0.0, 0.0, 50.0, 0.0, 0.0);
 ItemRegistry.registerFood(<thebetweenlands:forbidden_fig>,4 , 50.0, 100.0, 0.0, 0.0, 0.0, 50.0, 0.0, 0.0);
 
-<ore:categoryFruit>.addItems([<thebetweenlands:middle_fruit>,<thebetweenlands:pearled_pear>,<thebetweenlands:spirit_fruit>,<thebetweenlands:forbidden_fig>]);
-<ore:categoryVegetable>.addItems([<thebetweenlands:sludge_jello>,<thebetweenlands:sap_jello>,<thebetweenlands:black_hat_mushroom_item>, <thebetweenlands:flat_head_mushroom_item>]);
-<ore:categoryDairy>.addItems([<thebetweenlands:yellow_dotted_fungus>,<thebetweenlands:bulb_capped_mushroom_item>]);
 ItemRegistry.registerFood(<thebetweenlands:bulb_capped_mushroom_item>,3 , 10.0, 0.0, 1.0, 0.0, 0.2, 0.2, 0.0, 1.0);
 ItemRegistry.registerFood(<thebetweenlands:yellow_dotted_fungus>,6 , 0.0, 10.0, 1.0, 0.0, 0.2, 0.2, 0.0, 1.0);
 ItemRegistry.registerFood(<thebetweenlands:flat_head_mushroom_item>,3 , 10.0, 0.0, 1.0, 0.0, 1.0, 0.2, 0.0, 0.2);

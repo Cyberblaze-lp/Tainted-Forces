@@ -4,10 +4,6 @@ import crafttweaker.item.IItemStack;
 //This means that some intermediate products will be replaced or cut so automation of this equipment is easier.
 
 
-<ore:stone>.add(<immersiveengineering:stone_decoration:5>);
-
-
-
 mods.chisel.Carving.addGroup("prCircuits");
 val circuits as IItemStack[] =[<immersiveengineering:connector:12>,<immersiveengineering:connector:13>,<thermaldynamics:relay>,<extrautils2:redstonelantern>,<extrautils2:redstoneclock>];
 for item in circuits
