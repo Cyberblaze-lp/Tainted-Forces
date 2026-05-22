@@ -139,5 +139,279 @@
       "thaumicaugmentation:glass_tube",
       "thaumcraft:tube_buffer"
     ]
+  },
+  {
+    "id": "custom:330e6422",
+    "displayName": "Biome markers",
+    "backgroundColor": 861230421,
+    "borderColor": -863467384,
+    "itemUids": [
+      "extrautils2:biomemarker"
+    ]
+  },
+  {
+    "id": "custom:451b2961",
+    "displayName": "Fluid Cells",
+    "backgroundColor": 861230421,
+    "borderColor": -863467384,
+    "itemUids": [
+      "ic2:fluid_cell:*"
+    ]
+  },
+  {
+    "id": "custom:7b2991e1",
+    "displayName": "IC2 Seed Bags",
+    "backgroundColor": 861230421,
+    "borderColor": -863467384,
+    "itemUids": [
+      "ic2:crop_seed_bag"
+    ]
+  },
+  {
+    "id": "custom:7f215505",
+    "displayName": "Creative Gas Tanks",
+    "backgroundColor": 861230421,
+    "borderColor": -863467384,
+    "itemUids": [
+      "mekanism:gastank:*"
+    ]
+  },
+  {
+    "id": "custom:08307fd6",
+    "displayName": "Elixirs",
+    "backgroundColor": 861230421,
+    "borderColor": -863467384,
+    "itemUids": [
+      "thebetweenlands:elixir:*"
+    ]
+  },
+  {
+    "id": "custom:49ddf434",
+    "displayName": "Florbs",
+    "backgroundColor": 861230421,
+    "borderColor": -863467384,
+    "itemUids": [
+      "thermalexpansion:florb:*"
+    ]
+  },
+  {
+    "id": "custom:2ea65ac4",
+    "displayName": "Morbs",
+    "backgroundColor": 861230421,
+    "borderColor": -863467384,
+    "itemUids": [
+      "thermalexpansion:morb:*"
+    ]
+  },
+  {
+    "id": "custom:4c7894aa",
+    "displayName": "Shaders",
+    "backgroundColor": 861230421,
+    "borderColor": -863467384,
+    "itemUids": [
+      "immersiveengineering:shader"
+    ]
+  },
+  {
+    "id": "custom:162acc23",
+    "displayName": "Projectors",
+    "backgroundColor": 861230421,
+    "borderColor": -863467384,
+    "itemUids": [
+      "immersivepetroleum:schematic"
+    ]
+  },
+  {
+    "id": "custom:1331708c",
+    "displayName": "Biome Foci",
+    "backgroundColor": 861230421,
+    "borderColor": -863467384,
+    "itemUids": [
+      "thaumicaugmentation:biome_selector:*"
+    ]
+  },
+  {
+    "id": "custom:4e281b70",
+    "displayName": "Full buckets",
+    "backgroundColor": 861230421,
+    "borderColor": -863467384,
+    "itemUids": [
+      "minecraft:water_bucket:*",
+      "minecraft:lava_bucket:*",
+      "forge:bucketfilled:*"
+    ]
+  },
+  {
+    "id": "custom:d453fee7",
+    "displayName": "Full Wooden Buckets",
+    "backgroundColor": 861230421,
+    "borderColor": -863467384,
+    "itemUids": [
+      "tfc:wooden_bucket:zebu_milk;m\u003d0",
+      "tfc:wooden_bucket:salt_water;m\u003d0",
+      "tfc:wooden_bucket:blue_dye;m\u003d0",
+      "tfc:wooden_bucket:vinegar;m\u003d0",
+      "tfc:wooden_bucket:pina_colada;m\u003d0",
+      "tfc:wooden_bucket:purple_dye;m\u003d0",
+      "tfc:wooden_bucket:olive_oil_water;m\u003d0",
+      "tfc:wooden_bucket:black_dye;m\u003d0",
+      "tfc:wooden_bucket:milk_vinegar;m\u003d0",
+      "tfc:wooden_bucket:coconut_milk;m\u003d0",
+      "tfc:wooden_bucket:water;m\u003d0",
+      "tfc:wooden_bucket:flux_goo;m\u003d0",
+      "tfc:wooden_bucket:gray_dye;m\u003d0",
+      "tfc:wooden_bucket:rye_whiskey;m\u003d0",
+      "tfc:wooden_bucket:goat_milk;m\u003d0",
+      "tfc:wooden_bucket:lime_dye;m\u003d0",
+      "tfc:wooden_bucket:light_blue_dye;m\u003d0",
+      "tfc:wooden_bucket:cyan_dye;m\u003d0",
+      "tfc:wooden_bucket:corn_whiskey;m\u003d0",
+      "tfc:wooden_bucket:limewater;m\u003d0",
+      "tfc:wooden_bucket:brine;m\u003d0",
+      "tfc:wooden_bucket:olive_oil;m\u003d0",
+      "tfc:wooden_bucket:brown_dye;m\u003d0",
+      "tfc:wooden_bucket:curdled_yak_milk;m\u003d0",
+      "tfc:wooden_bucket:yellow_dye;m\u003d0",
+      "tfc:wooden_bucket:sake;m\u003d0",
+      "tfc:wooden_bucket:vodka;m\u003d0",
+      "tfc:wooden_bucket:milk_curdled;m\u003d0",
+      "tfc:wooden_bucket:rum;m\u003d0",
+      "tfc:wooden_bucket:white_dye;m\u003d0",
+      "tfc:wooden_bucket:orange_dye;m\u003d0",
+      "tfc:wooden_bucket:tannin;m\u003d0",
+      "tfc:wooden_bucket:light_gray_dye;m\u003d0",
+      "tfc:wooden_bucket:fresh_water;m\u003d0",
+      "tfc:wooden_bucket:green_dye;m\u003d0",
+      "tfc:wooden_bucket:hot_water;m\u003d0",
+      "tfc:wooden_bucket:red_dye;m\u003d0",
+      "tfc:wooden_bucket:cider;m\u003d0",
+      "tfc:wooden_bucket:curdled_goat_milk;m\u003d0",
+      "tfc:wooden_bucket:beer;m\u003d0",
+      "tfc:wooden_bucket:yeast_starter;m\u003d0",
+      "tfc:wooden_bucket:pink_dye;m\u003d0",
+      "tfc:wooden_bucket:yak_milk;m\u003d0",
+      "tfc:wooden_bucket:magenta_dye;m\u003d0",
+      "tfc:wooden_bucket:whiskey;m\u003d0",
+      "tfc:wooden_bucket:milk;m\u003d0"
+    ]
+  },
+  {
+    "id": "custom:1a5b0e9a",
+    "displayName": "Full Weedwood Buckets",
+    "backgroundColor": 861230421,
+    "borderColor": -863467384,
+    "itemUids": [
+      "thebetweenlands:bl_bucket:0{Fluid:{Amount:1000,FluidName:\"steam\"}}",
+      "thebetweenlands:bl_bucket:0{Fluid:{Amount:1000,FluidName:\"experience\"}}",
+      "thebetweenlands:bl_bucket:0{Fluid:{Amount:1000,FluidName:\"creosote\"}}",
+      "thebetweenlands:bl_bucket:0{Fluid:{Amount:1000,FluidName:\"ic2creosote\"}}",
+      "thebetweenlands:bl_bucket:0{Fluid:{Amount:1000,FluidName:\"aerotheum\"}}",
+      "thebetweenlands:bl_bucket:0{Fluid:{Amount:1000,FluidName:\"ender\"}}",
+      "thebetweenlands:bl_bucket:0{Fluid:{Amount:1000,FluidName:\"liquidlithium\"}}",
+      "thebetweenlands:bl_bucket:0{Fluid:{Amount:1000,FluidName:\"refined_oil\"}}",
+      "thebetweenlands:bl_bucket:0{Fluid:{Amount:1000,FluidName:\"resin\"}}",
+      "thebetweenlands:bl_bucket:0{Fluid:{Amount:1000,FluidName:\"ic2construction_foam\"}}",
+      "thebetweenlands:bl_bucket:0{Fluid:{Amount:1000,FluidName:\"ic2oxygen\"}}",
+      "thebetweenlands:bl_bucket:0{Fluid:{Amount:1000,FluidName:\"ic2distilled_water\"}}",
+      "thebetweenlands:bl_bucket:0{Fluid:{Amount:1000,FluidName:\"coal\"}}",
+      "thebetweenlands:bl_bucket:0{Fluid:{Amount:1000,FluidName:\"ic2heavy_water\"}}",
+      "thebetweenlands:bl_bucket:0{Fluid:{Amount:1000,FluidName:\"mana\"}}",
+      "thebetweenlands:bl_bucket:0{Fluid:{Amount:1000,FluidName:\"ic2uu_matter\"}}",
+      "thebetweenlands:bl_bucket:0{Fluid:{Amount:1000,FluidName:\"ic2biogas\"}}",
+      "thebetweenlands:bl_bucket:0{Fluid:{Amount:1000,FluidName:\"petrotheum\"}}",
+      "thebetweenlands:bl_bucket:0{Fluid:{Amount:1000,FluidName:\"ic2coolant\"}}",
+      "thebetweenlands:bl_bucket:0{Fluid:{Amount:1000,FluidName:\"mushroom_stew\"}}",
+      "thebetweenlands:bl_bucket:0{Fluid:{Amount:1000,FluidName:\"ic2hydrogen\"}}",
+      "thebetweenlands:bl_bucket:0{Fluid:{Amount:1000,FluidName:\"refined_fuel\"}}",
+      "thebetweenlands:bl_bucket:0{Fluid:{Amount:1000,FluidName:\"sap\"}}",
+      "thebetweenlands:bl_bucket:0{Fluid:{Amount:1000,FluidName:\"glowstone\"}}",
+      "thebetweenlands:bl_bucket:0{Fluid:{Amount:1000,FluidName:\"ic2steam\"}}",
+      "thebetweenlands:bl_bucket:0{Fluid:{Amount:1000,FluidName:\"syrup\"}}",
+      "thebetweenlands:bl_bucket:0{Fluid:{Amount:1000,FluidName:\"cryotheum\"}}",
+      "thebetweenlands:bl_bucket:0{Fluid:{Amount:1000,FluidName:\"redstone\"}}",
+      "thebetweenlands:bl_bucket:0{Fluid:{Amount:1000,FluidName:\"ic2biomass\"}}",
+      "thebetweenlands:bl_bucket:0{Fluid:{Amount:1000,FluidName:\"seed_oil\"}}",
+      "thebetweenlands:bl_bucket:0{Fluid:{Amount:1000,FluidName:\"potion_splash\"}}",
+      "thebetweenlands:bl_bucket:0{Fluid:{Amount:1000,FluidName:\"refined_biofuel\"}}",
+      "thebetweenlands:bl_bucket:0{Fluid:{Amount:1000,FluidName:\"heavywater\"}}",
+      "thebetweenlands:bl_bucket:0{Fluid:{Amount:1000,FluidName:\"brine\"}}",
+      "thebetweenlands:bl_bucket:0{Fluid:{Amount:1000,FluidName:\"crude_oil\"}}",
+      "thebetweenlands:bl_bucket:0{Fluid:{Amount:1000,FluidName:\"tree_oil\"}}",
+      "thebetweenlands:bl_bucket:0{Fluid:{Amount:1000,FluidName:\"potion\"}}",
+      "thebetweenlands:bl_bucket:0{Fluid:{Amount:1000,FluidName:\"ic2hot_water\"}}",
+      "thebetweenlands:bl_bucket:0{Fluid:{Amount:1000,FluidName:\"biocrude\"}}",
+      "thebetweenlands:bl_bucket:0{Fluid:{Amount:1000,FluidName:\"potion_lingering\"}}",
+      "thebetweenlands:bl_bucket:0{Fluid:{Amount:1000,FluidName:\"ic2weed_ex\"}}",
+      "thebetweenlands:bl_bucket:0{Fluid:{Amount:1000,FluidName:\"ic2milk\"}}",
+      "thebetweenlands:bl_bucket:0{Fluid:{Amount:1000,FluidName:\"ic2air\"}}",
+      "thebetweenlands:bl_bucket_fish_oil:fish_oil;m\u003d0",
+      "thebetweenlands:bl_bucket_infusion:*",
+      "thebetweenlands:bl_bucket_rubber:rubber;m\u003d0"
+    ]
+  },
+  {
+    "id": "custom:aa48147b",
+    "displayName": "Full Symorite Buckets",
+    "backgroundColor": 861230421,
+    "borderColor": -863467384,
+    "itemUids": [
+      "thebetweenlands:bl_bucket_fish_oil:fish_oil;m\u003d1",
+      "thebetweenlands:syrmorite_bucket_solid_rubber",
+      "thebetweenlands:bl_bucket_rubber:rubber;m\u003d1",
+      "thebetweenlands:bl_bucket:1{Fluid:{Amount:1000,FluidName:\"ic2hydrogen\"}}",
+      "thebetweenlands:bl_bucket:1{Fluid:{Amount:1000,FluidName:\"tree_oil\"}}",
+      "thebetweenlands:bl_bucket:1{Fluid:{Amount:1000,FluidName:\"mushroom_stew\"}}",
+      "thebetweenlands:bl_bucket:1{Fluid:{Amount:1000,FluidName:\"cryotheum\"}}",
+      "thebetweenlands:bl_bucket:1{Fluid:{Amount:1000,FluidName:\"pyrotheum\"}}",
+      "thebetweenlands:bl_bucket:1{Fluid:{Amount:1000,FluidName:\"ic2steam\"}}",
+      "thebetweenlands:bl_bucket:1{Fluid:{Amount:1000,FluidName:\"syrup\"}}",
+      "thebetweenlands:bl_bucket:1{Fluid:{Amount:1000,FluidName:\"invar\"}}",
+      "thebetweenlands:bl_bucket:1{Fluid:{Amount:1000,FluidName:\"ic2oxygen\"}}",
+      "thebetweenlands:bl_bucket:1{Fluid:{Amount:1000,FluidName:\"enderium\"}}",
+      "thebetweenlands:bl_bucket:1{Fluid:{Amount:1000,FluidName:\"redstone\"}}",
+      "thebetweenlands:bl_bucket:1{Fluid:{Amount:1000,FluidName:\"ic2distilled_water\"}}",
+      "thebetweenlands:bl_bucket:1{Fluid:{Amount:1000,FluidName:\"ic2air\"}}",
+      "thebetweenlands:bl_bucket:1{Fluid:{Amount:1000,FluidName:\"ic2pahoehoe_lava\"}}",
+      "thebetweenlands:bl_bucket:1{Fluid:{Amount:1000,FluidName:\"steam\"}}",
+      "thebetweenlands:bl_bucket:1{Fluid:{Amount:1000,FluidName:\"ic2coolant\"}}",
+      "thebetweenlands:bl_bucket:1{Fluid:{Amount:1000,FluidName:\"liquidlithium\"}}",
+      "thebetweenlands:bl_bucket:1{Fluid:{Amount:1000,FluidName:\"ic2hot_water\"}}",
+      "thebetweenlands:bl_bucket:1{Fluid:{Amount:1000,FluidName:\"potion\"}}",
+      "thebetweenlands:bl_bucket:1{Fluid:{Amount:1000,FluidName:\"brine\"}}",
+      "thebetweenlands:bl_bucket:1{Fluid:{Amount:1000,FluidName:\"biocrude\"}}",
+      "thebetweenlands:bl_bucket:1{Fluid:{Amount:1000,FluidName:\"experience\"}}",
+      "thebetweenlands:bl_bucket:1{Fluid:{Amount:1000,FluidName:\"resin\"}}",
+      "thebetweenlands:bl_bucket:1{Fluid:{Amount:1000,FluidName:\"mana\"}}",
+      "thebetweenlands:bl_bucket:1{Fluid:{Amount:1000,FluidName:\"ic2biogas\"}}",
+      "thebetweenlands:bl_bucket:1{Fluid:{Amount:1000,FluidName:\"ic2creosote\"}}",
+      "thebetweenlands:bl_bucket:1{Fluid:{Amount:1000,FluidName:\"lumium\"}}",
+      "thebetweenlands:bl_bucket:1{Fluid:{Amount:1000,FluidName:\"ic2heavy_water\"}}",
+      "thebetweenlands:bl_bucket:1{Fluid:{Amount:1000,FluidName:\"coal\"}}",
+      "thebetweenlands:bl_bucket:1{Fluid:{Amount:1000,FluidName:\"refined_oil\"}}",
+      "thebetweenlands:bl_bucket:1{Fluid:{Amount:1000,FluidName:\"ic2biomass\"}}",
+      "thebetweenlands:bl_bucket:1{Fluid:{Amount:1000,FluidName:\"refined_fuel\"}}",
+      "thebetweenlands:bl_bucket:1{Fluid:{Amount:1000,FluidName:\"ic2construction_foam\"}}",
+      "thebetweenlands:bl_bucket:1{Fluid:{Amount:1000,FluidName:\"ender\"}}",
+      "thebetweenlands:bl_bucket:1{Fluid:{Amount:1000,FluidName:\"ic2milk\"}}",
+      "thebetweenlands:bl_bucket:1{Fluid:{Amount:1000,FluidName:\"refined_biofuel\"}}",
+      "thebetweenlands:bl_bucket:1{Fluid:{Amount:1000,FluidName:\"ic2hot_coolant\"}}",
+      "thebetweenlands:bl_bucket:1{Fluid:{Amount:1000,FluidName:\"potion_lingering\"}}",
+      "thebetweenlands:bl_bucket:1{Fluid:{Amount:1000,FluidName:\"iridium\"}}",
+      "thebetweenlands:bl_bucket:1{Fluid:{Amount:1000,FluidName:\"petrotheum\"}}",
+      "thebetweenlands:bl_bucket:1{Fluid:{Amount:1000,FluidName:\"ic2superheated_steam\"}}",
+      "thebetweenlands:bl_bucket:1{Fluid:{Amount:1000,FluidName:\"platinum\"}}",
+      "thebetweenlands:bl_bucket:1{Fluid:{Amount:1000,FluidName:\"ic2weed_ex\"}}",
+      "thebetweenlands:bl_bucket:1{Fluid:{Amount:1000,FluidName:\"constantan\"}}",
+      "thebetweenlands:bl_bucket:1{Fluid:{Amount:1000,FluidName:\"creosote\"}}",
+      "thebetweenlands:bl_bucket:1{Fluid:{Amount:1000,FluidName:\"potion_splash\"}}",
+      "thebetweenlands:bl_bucket:1{Fluid:{Amount:1000,FluidName:\"signalum\"}}",
+      "thebetweenlands:bl_bucket:1{Fluid:{Amount:1000,FluidName:\"sap\"}}",
+      "thebetweenlands:bl_bucket:1{Fluid:{Amount:1000,FluidName:\"seed_oil\"}}",
+      "thebetweenlands:bl_bucket:1{Fluid:{Amount:1000,FluidName:\"glowstone\"}}",
+      "thebetweenlands:bl_bucket:1{Fluid:{Amount:1000,FluidName:\"heavywater\"}}",
+      "thebetweenlands:bl_bucket:1{Fluid:{Amount:1000,FluidName:\"crude_oil\"}}",
+      "thebetweenlands:bl_bucket:1{Fluid:{Amount:1000,FluidName:\"aerotheum\"}}",
+      "thebetweenlands:bl_bucket:1{Fluid:{Amount:1000,FluidName:\"ic2uu_matter\"}}"
+    ]
   }
 ]
