@@ -14,18 +14,25 @@ import crafttweaker.command.ICommandManager;
 import crafttweaker.server.IServer;
 import crafttweaker.event.ProjectileImpactArrowEvent;
 import crafttweaker.util.IAxisAlignedBB;
+import native.java.lang.Class;
+import native.thaumcraft.client.renderers.entity.mob.LayerTainted;
+import native.java.lang.Integer;
+
 
 //Applies potion effects to entities upon spawning
 //i thought RotM covered this but here we are
 //special thanks to Girouxdudes on the ct support discord for helping me get this to work
 
+
+//Helper functions
+//Returns if the entity has visible tendrils
+function isTainted(entity as IEntity) as bool{
+    return LayerTainted.taintLayers has (entity.native.getEntityId() as Integer);
+}
+
 //stupid band-aid fix: makes taint swarms able to properly fly again by applying constant levitation.
 events.onEntityJoinWorld(function(event as crafttweaker.event.EntityJoinWorldEvent){
-    if(isNull(event.entity.definition)){
-        return;
-    }
-
-    if (event.entity.definition.id == <entity:thaumcraft:taintswarm>.id)
+    if (event.entity.hasDefinition(<entity:thaumcraft:taintswarm>))
     {
         val levi1 = <potion:minecraft:levitation>.makePotionEffect(999999, 0 ,false, false) as IPotionEffect;
         val levi2 = <potion:minecraft:levitation>.makePotionEffect(999999, 0 ,true, false) as IPotionEffect;
@@ -34,7 +41,7 @@ events.onEntityJoinWorld(function(event as crafttweaker.event.EntityJoinWorldEve
         entity.addPotionEffect(levi2);
     }
 
-    if !(event.entity.definition.id == <entity:thaumcraft:taintseed>.id)
+    if !(event.entity.hasDefinition(<entity:thaumcraft:taintseed>))
     {
         return;
     }
@@ -48,12 +55,7 @@ events.onEntityJoinWorld(function(event as crafttweaker.event.EntityJoinWorldEve
 
         for entity in Entities
         {
-            if(isNull(entity.definition))
-            {
-                continue;
-            }
-
-            if (entity.definition.id == <entity:thaumcraft:taintseed>.id && !(entity.tags has "nest"))
+            if (entity.hasDefinition(<entity:thaumcraft:taintseed>) && !(entity.tags has "nest"))
             {
                 entity.setDead();
                 return;
@@ -66,7 +68,7 @@ events.onEntityJoinWorld(function(event as crafttweaker.event.EntityJoinWorldEve
 //applies taint poison when standing on taint fibers
 events.onEntityLivingUpdate(function(event as crafttweaker.event.EntityLivingUpdateEvent){
     var world = event.entityLivingBase.world;
-    if(isNull(event.entityLivingBase.definition)||isNull(world)||world.getWorldTime() % 100 !=0 || world.isRemote())
+    if(isNull(world)||world.getWorldTime() % 100 !=0 || world.isRemote())
     {
         return;
     }
@@ -90,25 +92,26 @@ events.onEntityLivingUpdate(function(event as crafttweaker.event.EntityLivingUpd
 });
 
 
-val gooOnly as string = <entity:thaumcraft:thaumslime>.id + <entity:thaumcraft:taintswarm>.id + <entity:thaumcraft:taintseed>.id;
+val gooOnly as Class[] = [<entity:thaumcraft:thaumslime>.getClass(), <entity:thaumcraft:taintswarm>.getClass(), <entity:thaumcraft:taintseed>.getClass()];
 
 // taint death effect: tainted mobs now explode into goo instead of keeling over
 // also replaces their drops with tendrils and goo
 events.onEntityLivingDeathDrops(function(event as crafttweaker.event.EntityLivingDeathDropsEvent){
     val world = event.entityLivingBase.world;
-    if(isNull(event.entityLivingBase.definition)||isNull(world) || world.isRemote())
+    val entityDef = event.entityLivingBase.definition;
+    if(isNull(entityDef)||isNull(world) || world.isRemote())
     {
         return;
     }
 	
-    if !(event.entityLivingBase.nbt.asString() has "istainted" || event.entityLivingBase.definition.id has "taint" ||event.entityLivingBase.definition.id has "thaumslime" )
+    if !(isTainted(event.entityLivingBase) || entityDef.id has "taint" || event.entityLivingBase.hasDefinition(<entity:thaumcraft:thaumslime>))
     {
         return;
     }
 
     //death effect (swarms look better without this so we exclude them)
 
-    if ! (event.entityLivingBase.definition.id has "taintswarm")
+    if !(event.entityLivingBase.hasDefinition(<entity:thaumcraft:taintswarm>))
     {
         val invis = <potion:minecraft:invisibility>.makePotionEffect(1000, 3 ,false, false) as IPotionEffect;
         event.entityLivingBase.addPotionEffect(invis);
@@ -124,7 +127,7 @@ events.onEntityLivingDeathDrops(function(event as crafttweaker.event.EntityLivin
         return;
     }
 
-    if(gooOnly has event.entityLivingBase.definition.id)
+    if(gooOnly has event.entityLivingBase.getClass())
     {
         event.addItem(<contenttweaker:taint_goo>);
         return;
@@ -150,43 +153,47 @@ events.onEntityLivingDeathDrops(function(event as crafttweaker.event.EntityLivin
 
 
 
-
 //replace tainted mobs with CNPC variant where applicable
-val entries = ["creeper","sheep","cow","pig","chicken","villager","creeper"] as string[];
+val entries = {
+    <entity:tfc:sheeptfc>.getClass():"sheep",
+    <entity:tfc:cowtfc>.getClass():"cow",
+    <entity:tfc:pigtfc>.getClass():"pig",
+    <entity:tfc:chickentfc>.getClass():"chicken",
+    <entity:minecraft:villager>.getClass():"villager",
+    <entity:minecraft:creeper>.getClass():"creeper"
+} as string[Class];
 
 events.onEntityLivingUpdate(function(event as crafttweaker.event.EntityLivingUpdateEvent){
-    var world = event.entityLivingBase.world;
-    if(isNull(event.entityLivingBase.definition)||isNull(world) || world.isRemote()||isNull(server))
-    {
+    val entityLivingBase = event.entityLivingBase;
+    val entityClass = entityLivingBase.getClass();
+    val world = entityLivingBase.world;
+
+    if(isNull(world) || world.isRemote() || isNull(server)){
         return;
     }
 
-    var entityPosOld = event.entityLivingBase.position3f;
-	
-
-
-
-    for entityType in entries
-     {
-
-        if (event.entityLivingBase.definition.id has entityType && event.entityLivingBase.getY()>-10)
-        {
-            if (event.entityLivingBase.nbt.asString() has "tainted"){
-            var invis = <potion:minecraft:invisibility>.makePotionEffect(100, 3 ,false, false) as IPotionEffect;
-            event.entityLivingBase.addPotionEffect(invis);
-            server.commandManager.executeCommandSilent(event.entityLivingBase, "noppes clone spawn tainted_"+entityType+" 1");
-
-            server.commandManager.executeCommandSilent(event.entityLivingBase, "playsound thaumcraft:gore hostile @a ~ ~ ~");
-            server.commandManager.executeCommandSilent(event.entityLivingBase, "tp @s ~ ~-500 ~");
-            server.commandManager.executeCommandSilent(event.entityLivingBase, "kill @s");
-           
-           
-        }
+    if(entityLivingBase.getY() <= -10){
+        return;
     }
-}
+
+    val entityString as string = entries[entityClass];
+    if(isNull(entityString)){
+        return;
+    }
 
 
-    
+    if(!isTainted(entityLivingBase)){
+        return;
+    }
+
+
+    val invis = <potion:minecraft:invisibility>.makePotionEffect(100, 3 ,false, false) as IPotionEffect;
+    entityLivingBase.addPotionEffect(invis);
+    server.commandManager.executeCommandSilent(entityLivingBase, "noppes clone spawn tainted_"+ entityString +" 1");
+
+    server.commandManager.executeCommandSilent(entityLivingBase, "playsound thaumcraft:gore hostile @a ~ ~ ~");
+    server.commandManager.executeCommandSilent(entityLivingBase, "tp @s ~ ~-500 ~");
+    server.commandManager.executeCommandSilent(entityLivingBase, "kill @s");
 });
 
 //make taint seeds incapable of suffocation and starvation
@@ -198,15 +205,16 @@ events.onEntityLivingHurt(function(event as crafttweaker.event.EntityLivingHurtE
         return;
     }
 
-if(event.damageSource.damageType has "arve"||event.damageSource.damageType has "all")
-{
-    if(event.entityLivingBase.definition.id has "aint")
+    if(event.damageSource.damageType has "arve"||event.damageSource.damageType has "all")
     {
-        event.cancel();
+        if(event.entityLivingBase.definition.id has "aint")
+        {
+            event.cancel();
+        }
     }
-}
 
 });
+
 val dist as double = 1.8 as double;
 events.onProjectileImpactArrow(function(event as crafttweaker.event.ProjectileImpactArrowEvent){
 

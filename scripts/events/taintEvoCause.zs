@@ -43,20 +43,15 @@ function difficulty(world as IWorld) as int
 
 
 events.onEntityLivingDeath(function(event as crafttweaker.event.EntityLivingDeathEvent){
-var world = event.entityLivingBase.world;
-if(isNull (event.entityLivingBase.definition))
-{
-	return;
-}
-if (event.entityLivingBase.definition.id == <entity:thaumcraft:taintseed>.id)
-{
-    evolve("taintEvo",1*difficulty(world), world);
-}
-else if (event.entityLivingBase.definition.id == <entity:thaumcraft:taintseedprime>.id)
-{
-evolve("taintEvo", 200*difficulty(world), world);
-}
-
+	var world = event.entityLivingBase.world;
+	if (event.entityLivingBase.hasDefinition(<entity:thaumcraft:taintseed>))
+	{
+		evolve("taintEvo",1*difficulty(world), world);
+	}
+	else if (event.entityLivingBase.hasDefinition(<entity:thaumcraft:taintseedprime>))
+	{
+		evolve("taintEvo", 200*difficulty(world), world);
+	}
 });
 
 

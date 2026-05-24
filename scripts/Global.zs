@@ -4,6 +4,12 @@ import native.net.dries007.tfc.api.capability.food.CapabilityFood;
 import native.net.minecraft.item.ItemStack;
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
+import crafttweaker.entity.IEntity;
+import crafttweaker.entity.IEntityDefinition;
+import native.java.lang.Class;
+import native.java.util.Objects;
+
+
 
 global rocktypes as string[] =
 [
@@ -63,6 +69,17 @@ $expand IItemStack$isRotten() as bool
 }
 
 
+//Returns the native class of an entity. Mostly useful for maps or arrays. 
+//Note that you cannot == two class objects
+//For knowing if an entity is of a specific definition, prefer using IEntity$hasDefinition
+$expand IEntity$getClass() as Class {
+    return this.native.class;
+}
 
+$expand IEntityDefinition$getClass() as Class {
+    return this.native.getEntityClass();
+}
 
-
+$expand IEntity$hasDefinition(definition as IEntityDefinition) as bool {
+    return Objects.equals(this.getClass(), definition.getClass());
+}
