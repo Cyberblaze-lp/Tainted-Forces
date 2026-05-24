@@ -86,8 +86,12 @@ mods.modularmachinery.RecipeBuilder.newBuilder("basicflux", "calcifier_t0", 300)
         
         Sync.addSyncTask(
             function(){
-                NetworkHandler.sendToDimension(
+                NetworkHandler.sendToAllAround(
                     "spawn_condensation_cloud",
+                    offset.getX(),
+                    offset.getY(),
+                    offset.getZ(),
+                    256.0d,
                     controller.getWorld().wrapper.getDimension(),
                     function(buffer as IByteBuf){
                         buffer.writeBlockPos(offset);
