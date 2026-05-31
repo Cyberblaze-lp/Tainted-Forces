@@ -5,6 +5,7 @@
 	mods.rustichromia.Quern.removeAll();
 	mods.rustichromia.Gin.removeAll();
 	mods.advancedrocketry.ArcFurnace.clear();
+	mods.immersiveengineering.Excavator.removeAllMinerals();
 //Done!
 
 
@@ -583,11 +584,6 @@
 
 
 //Immersive Engineering
-	//Removes all registered minerals
-	for mix in mods.immersiveengineering.Excavator.getRegisteredMinerals(){
-		mods.immersiveengineering.Excavator.removeMineral(mix as string);
-	}
-
 	mods.immersiveengineering.Crusher.removeRecipe(<immersiveengineering:material:24>);
 	mods.immersiveengineering.Crusher.removeRecipe(<tfc:ore/cinnabar>);
 	mods.immersiveengineering.Crusher.removeRecipesForInput(<tfc:ore/sulfur>);

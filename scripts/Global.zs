@@ -79,7 +79,3 @@ $expand IEntity$getClass() as Class {
 $expand IEntityDefinition$getClass() as Class {
     return this.native.getEntityClass();
 }
-
-$expand IEntity$hasDefinition(definition as IEntityDefinition) as bool {
-    return Objects.equals(this.getClass(), definition.getClass());
-}
