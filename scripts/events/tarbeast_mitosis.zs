@@ -14,7 +14,7 @@ if(isNull(event.item) || isNull(event.item.liquid)) ||isNull(event.target.defini
     }
 
 
-if (event.target.definition.id == <entity:thebetweenlands:tar_beast>.id &&
+if (event.target.hasDefinition(<entity:thebetweenlands:tar_beast>) &&
 event.item.liquid.amount >= 1000 && event.item.liquid.name =="tar" )
 {
 

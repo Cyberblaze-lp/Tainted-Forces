@@ -31,7 +31,7 @@ function evoNr(evo as string, world as IWorld) as int
     var rules =world.getGameRules();
     if(isNull(rules.getInt("taintEvo")))
     {
-        return false;
+        return 0;
     }   
 
     return rules.getInt("taintEvo");

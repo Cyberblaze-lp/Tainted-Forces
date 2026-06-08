@@ -55,10 +55,7 @@ events.onWorldTick(function(event as crafttweaker.event.WorldTickEvent){
 
 
 events.onEntityJoinWorld(function(event as crafttweaker.event.EntityJoinWorldEvent){
-	if isNull(event.entity.definition){
-		return;
-	}
-	if(event.entity.definition.id has <entity:botania:mana_burst>.id)
+	if(event.entity.hasDefinition(<entity:botania:mana_burst>))
 	{
 		var entityPosOld = event.entity.position3f;
 		var entityPosNew = crafttweaker.world.IBlockPos.create(Math.floor(entityPosOld.x),Math.floor(entityPosOld.y),Math.floor(entityPosOld.z)) as IBlockPos;

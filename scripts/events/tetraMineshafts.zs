@@ -44,15 +44,12 @@ static pillarfeatures as string[] = [
 
 
 events.onEntityJoinWorld(function (event as crafttweaker.event.EntityJoinWorldEvent){
-    if (isNull(event.entity.definition) || isNull(event.entity.definition.id) ||event.world.isRemote())
+    if (event.world.isRemote())
     {
         return;
     }
     
-
-    var ID as string = event.entity.definition.id;
-
-    if( ID has <entity:minecraft:chest_minecart>.id || ID has <entity:railcraft:cart_chest>.id )
+    if(event.entity.hasDefinition(<entity:minecraft:chest_minecart>) || event.entity.hasDefinition(<entity:railcraft:cart_chest>))
     {
         if( 16.5 < event.entity.getY() || 16.0 > event.entity.getY())
         {
@@ -106,7 +103,7 @@ events.onEntityJoinWorld(function (event as crafttweaker.event.EntityJoinWorldEv
         return;
     }
 
-    else if(ID has <entity:minecraft:tnt_minecart>.id || ID has <entity:railcraft:cart_tnt>.id)
+    else if(event.entity.hasDefinition(<entity:minecraft:tnt_minecart>) || event.entity.hasDefinition(<entity:railcraft:cart_tnt>))
     {
         if event.entity.getY() > 40.0 
         {

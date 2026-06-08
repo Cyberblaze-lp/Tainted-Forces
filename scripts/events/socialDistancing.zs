@@ -8,11 +8,7 @@ import crafttweaker.util.IAxisAlignedBB;
 function socialDistancing (IwasHereFirst as IEntityDefinition, OkIllSkedaddle as IEntityDefinition, dist as float){
 
     events.onEntityJoinWorld(function(event as crafttweaker.event.EntityJoinWorldEvent){
-        if isNull(event.entity.definition)
-        {
-            return;
-        }
-        if !(event.entity.definition.id == OkIllSkedaddle.id)
+        if !(event.entity.hasDefinition(OkIllSkedaddle))
         {
             return;
         }
@@ -22,14 +18,9 @@ function socialDistancing (IwasHereFirst as IEntityDefinition, OkIllSkedaddle as
         var Entities = event.world.getEntitiesWithinAABB(IAxisAlignedBB.create(Xpos - dist, Ypos - dist, Zpos - dist, Xpos + dist, Ypos + dist, Zpos + dist));
         for entity in Entities
         {
-            if !isNull(entity.definition)
-            {
-                if entity.definition.id == IwasHereFirst.id
-                {
-                    event.cancel();
-                    
-                    return;
-                }
+            if(entity.hasDefinition(IwasHereFirst)){
+                event.cancel();
+                return;
             }
         }
     });
