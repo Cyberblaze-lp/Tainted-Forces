@@ -203,7 +203,6 @@ recipes.addShaped(<minecraft:rail> * 64, [[<ore:stickIron>, <ore:concrete>, <ore
 recipes.addShaped(<minecraft:lever> * 4, [[<ore:stickIron>], [<ore:concrete>]]);
 recipes.addShaped(<magneticraft:inserter> * 3, [[null, <ore:stickIron>, <ore:stickIron>], [<ore:stickIron>, <thaumcraft:mechanism_simple>, null], [<ore:concrete>, <ore:concrete>, <ore:concrete>]]);
 recipes.addShaped(<magneticraft:inserter> * 2, [[null, <ore:stickIron>, <ore:stickIron>], [<ore:stickIron>, <tfc:brass_mechanisms>, null], [<ore:concrete>, <ore:concrete>, <ore:concrete>]]);
-recipes.addShaped(<tfc:bellows> * 2, [[<ore:stickIron>, <ore:stickIron>, <ore:stickIron>], [<ore:leather>, <ore:leather>, <ore:leather>], [<ore:stickIron>, <ore:stickIron>, <ore:stickIron>]]);
 recipes.addShaped(<advancedrocketry:landingpad>*2, [[<ore:concrete>, <ore:concrete>, <ore:concrete>], [<ore:concrete>, <ore:concrete>, <ore:concrete>], [<ore:concrete>, <ore:concrete>, <ore:concrete>]]);
 recipes.addShaped(<advancedrocketry:launchpad>, [[<ore:concrete>, <ore:concrete>, <ore:concrete>], [<ore:concrete>, <ore:concrete>, <ore:concrete>]]);
 recipes.addShaped(<minecraft:repeater>, [[<minecraft:redstone_torch>, <ore:dustRedstone>, <minecraft:redstone_torch>], [<ore:concrete>, <ore:concrete>, <ore:concrete>]]);

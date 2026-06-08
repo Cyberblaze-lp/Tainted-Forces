@@ -401,6 +401,7 @@
 		<tfc:metal/sheet/brass>,
 		<tfc:crucible>,
 		<tfc:sluice>,
+		<tfc:bellows>,
 		<tfc:metal/bucket/blue_steel>,
 		<tfc:metal/bucket/red_steel>,
 		<tfc:powder/flux>,
@@ -726,6 +727,7 @@
 		<tfctech:latex/vulcanizing_agents>,
 		<tfc:metal/bucket/blue_steel>,
 		<tfc:metal/bucket/red_steel>,
+		<tfc:bellows>
 	]{
 		mods.jei.JEI.hide(item);
 	}

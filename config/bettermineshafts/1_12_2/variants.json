@@ -105,10 +105,10 @@
         "defaultBlock": "tetra:forged_wall"
       },
       "mainBlock": "tetra:forged_wall",
-      "supportBlock": "immersiveengineering:metal_decoration1[type=steel_fence,east=false,north=false,south=false,west=false]",
+      "supportBlock": "cyberware:radio_post[transformed=false,east=false,north=false,south=false,west=false]",
       "slabBlock": "tetra:forged_platform_slab[half=bottom]",
       "gravelBlock": "minecraft:gravel",
-      "stoneWallBlock": "immersiveengineering:metal_decoration1[type=steel_fence,east=false,north=false,south=false,west=false]",
+      "stoneWallBlock": "cyberware:radio_post[transformed=false,east=false,north=false,south=false,west=false]",
       "stoneSlabBlock": "tetra:forged_platform_slab[half=top]",
       "minY": 15,
       "maxY": 15,

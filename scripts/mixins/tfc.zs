@@ -121,7 +121,12 @@ zenClass MixinBellowsCompat {
     #mixin Inject {method: "func_73660_a", at: {value: "TAIL"}}
     function AddAirTicks(ci as CallbackInfo) as void 
     {
-        val mod = this0.rotationModifier;
+        val mod = this0.currentPower as double ;
+
+        if (mod <9.9)
+        {
+            return;
+        }
         val world as World = this0.field_145850_b;
         val pos = this0.func_174877_v();
         val f1 = world.func_180495_p(pos).func_177229_b(BotaniaStateProps.CARDINALS) as EnumFacing;
@@ -130,7 +135,7 @@ zenClass MixinBellowsCompat {
 
         if( block1 instanceof IBellowsConsumerBlock)
         {
-            (block1 as IBellowsConsumerBlock).onAirIntake(world, pos1, 3*mod as int);
+            (block1 as IBellowsConsumerBlock).onAirIntake(world, pos1, (mod / 9.99 + 1) as int);
             return;
             
         }
@@ -140,7 +145,7 @@ zenClass MixinBellowsCompat {
 
         if( block2 instanceof IBellowsConsumerBlock)
         {
-            (block2 as IBellowsConsumerBlock).onAirIntake(world, pos2, 4*mod as int);
+            (block2 as IBellowsConsumerBlock).onAirIntake(world, pos2, (mod / 9.99 + 1) as int);
             
             return;
         }     

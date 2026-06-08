@@ -91,7 +91,6 @@ Welding.addRecipe("irondrill",<ore:sheetDoubleIron>, <tfc:metal/mace_head/wrough
 Welding.addRecipe("steeldrill",<ore:sheetDoubleSteel>, <tfc:metal/mace_head/steel>, <immersiveengineering:drillhead>, 3);
 Welding.addRecipe("diairondrill",<immersiveengineering:drillhead:1>, <tfcthings:diamond_grit>, <immersiveintelligence:drillhead:1>, 3);
 Welding.addRecipe("diasteeldrill",<immersiveengineering:drillhead>, <tfcthings:diamond_grit>, <immersiveintelligence:drillhead:2>, 4);
-Welding.addRecipe("engineershammer",<tfcthings:prospectors_hammer/wrought_iron>, <ore:ingotNickel>, <immersiveengineering:tool>, 3);
 
 
 Grindstone.addRecipe(<tfc:ore/saltpeter>, <tfc:powder/saltpeter>*3, 0.5f);
