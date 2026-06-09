@@ -49,11 +49,6 @@ customization {
 }
 
 customization {
-  identifier = %id=button_compatibility_id:mc_titlescreen_realms_button%
-  action = hidebutton
-}
-
-customization {
   orientation = top-left
   hidden = true
   x = 186
@@ -122,6 +117,7 @@ customization {
 }
 
 customization {
+  advanced_height = {"placeholder":"calc","values":{"expression":"1*{"placeholder":"guiheight"}","decimal":"true"}}
   path = resources/fancymenu/background.png
   orientation = top-left
   x = 0
@@ -129,140 +125,160 @@ customization {
   actionid = 72d7ece2-f539-45b4-8e9b-24e21f2be0181776465753427
   action = addtexture
   y = 0
+  advanced_posx = 0
+  advanced_width = {"placeholder":"calc","values":{"expression":"1*{"placeholder":"guiwidth"}","decimal":"true"}}
+  advanced_posy = 0
   height = %guiheight%
 }
 
 customization {
-  advanced_height = {"placeholder":"calc","values":{"expression":"{"placeholder":"guiheight"}*32/360","decimal":"true"}}
+  advanced_height = {"placeholder":"calc","values":{"expression":"25*{"placeholder":"guiheight"}/360","decimal":"true"}}
   orientation = top-left
   restartbackgroundanimations = true
   buttonaction = opengui;net.minecraft.client.gui.GuiMultiplayer%btnaction_splitter_fm%
   backgroundhovered = resources/fancymenu/aqua_glitch.png
   label = Play Together
-  advanced_posx = {"placeholder":"calc","values":{"expression":"240*{"placeholder":"guiwidth"}/640","decimal":"true"}}
-  advanced_width = {"placeholder":"calc","values":{"expression":"159*{"placeholder":"guiwidth"}/640","decimal":"true"}}
-  advanced_posy = {"placeholder":"calc","values":{"expression":"{"placeholder":"guiheight"}*168/360","decimal":"true"}}
+  advanced_posx = {"placeholder":"calc","values":{"expression":"56*{"placeholder":"guiwidth"}/640","decimal":"true"}}
+  advanced_width = {"placeholder":"calc","values":{"expression":"126*{"placeholder":"guiwidth"}/640","decimal":"true"}}
+  advanced_posy = {"placeholder":"calc","values":{"expression":"120*{"placeholder":"guiheight"}/360","decimal":"true"}}
   loopbackgroundanimations = true
   x = 0
-  width = 159
+  width = 126
   action = addbutton
   actionid = c5809a24-6273-46f9-b40e-9c93aef7aa2c1776465837758
   y = 0
   backgroundnormal = resources/fancymenu/blank.png
-  height = 32
+  height = 25
 }
 
 customization {
-  advanced_height = {"placeholder":"calc","values":{"expression":"103*{"placeholder":"guiheight"}/360","decimal":"true"}}
+  advanced_height = {"placeholder":"calc","values":{"expression":"1/2*{"placeholder":"guiheight"}","decimal":"true"}}
   orientation = top-left
   restartbackgroundanimations = true
   backgroundanimationhovered = machinery_24_a
   buttonaction = opengui;net.minecraft.client.gui.GuiOptions%btnaction_splitter_fm%
   label = 
-  advanced_posx = {"placeholder":"calc","values":{"expression":"58*{"placeholder":"guiwidth"}/640","decimal":"true"}}
-  backgroundanimationnormal = machinery_24_a
-  advanced_width = {"placeholder":"calc","values":{"expression":"153*{"placeholder":"guiwidth"}/640","decimal":"true"}}
-  advanced_posy = {"placeholder":"calc","values":{"expression":"66*{"placeholder":"guiheight"}/360","decimal":"true"}}
+  advanced_posx = {"placeholder":"calc","values":{"expression":"195*{"placeholder":"guiwidth"}/640","decimal":"true"}}
+  advanced_width = {"placeholder":"calc","values":{"expression":"1/2*246*{"placeholder":"guiwidth"}/640","decimal":"true"}}
+  advanced_posy = 0
   loopbackgroundanimations = true
   hoverlabel = Options
   x = 0
-  width = 153
+  width = 123
   action = addbutton
   actionid = 154f7c29-83c9-4d54-8c1e-ff2547d4333a1776465870017
   y = 0
-  height = 103
+  backgroundnormal = resources/fancymenu/animation/machinery_24_a/frames_main/10.png
+  height = 180
 }
 
 customization {
-  advanced_height = {"placeholder":"calc","values":{"expression":"{"placeholder":"guiheight"}*32/360","decimal":"true"}}
+  advanced_height = {"placeholder":"calc","values":{"expression":"{"placeholder":"guiheight"}*25/360","decimal":"true"}}
   orientation = top-left
   restartbackgroundanimations = true
   buttonaction = quitgame%btnaction_splitter_fm%
-  backgroundhovered = resources/fancymenu/blue_noise.png
+  backgroundhovered = resources/fancymenu/aqua_glitch.png
   label = Quit
-  advanced_posx = {"placeholder":"calc","values":{"expression":"{"placeholder":"guiwidth"}*240/640","decimal":"true"}}
-  advanced_width = {"placeholder":"calc","values":{"expression":"64*{"placeholder":"guiwidth"}/640","decimal":"true"}}
-  advanced_posy = {"placeholder":"calc","values":{"expression":"232*{"placeholder":"guiheight"}/360","decimal":"true"}}
+  advanced_posx = {"placeholder":"calc","values":{"expression":"{"placeholder":"guiwidth"}*73/640","decimal":"true"}}
+  advanced_width = {"placeholder":"calc","values":{"expression":"56*{"placeholder":"guiwidth"}/640","decimal":"true"}}
+  advanced_posy = {"placeholder":"calc","values":{"expression":"170*{"placeholder":"guiheight"}/360","decimal":"true"}}
   loopbackgroundanimations = true
   x = 0
-  width = 64
+  width = 56
   action = addbutton
   actionid = ee620881-adbe-462c-9b16-a25eaefa928e1776465868209
   y = 0
   backgroundnormal = resources/fancymenu/blank.png
-  height = 32
+  height = 25
 }
 
 customization {
+  advanced_height = {"placeholder":"calc","values":{"expression":"1/2*264*{"placeholder":"guiheight"}/360","decimal":"true"}}
   orientation = top-left
-  restartbackgroundanimations = true
+  restartbackgroundanimations = false
   backgroundanimationhovered = controller_on_24_a
   buttonaction = opengui;net.minecraftforge.fml.client.GuiModList%btnaction_splitter_fm%
   label = 
+  advanced_posx = {"placeholder":"calc","values":{"expression":"321*{"placeholder":"guiwidth"}/640","decimal":"true"}}
   backgroundanimationnormal = controller_off_24_a
+  advanced_width = {"placeholder":"calc","values":{"expression":"1/2*144*{"placeholder":"guiwidth"}/640","decimal":"true"}}
+  advanced_posy = 0
   loopbackgroundanimations = true
   hoverlabel = Configs
-  x = 72
-  width = 114
+  x = 0
+  width = 72
   action = addbutton
   actionid = 4878b91a-4a5d-4d4e-8d3a-3b2d75db825c1776465869479
-  y = 192
-  height = 114
+  y = 0
+  height = 132
 }
 
 customization {
+  advanced_height = {"placeholder":"calc","values":{"expression":"1/2*594*{"placeholder":"guiheight"}/360","decimal":"true"}}
   orientation = top-left
   restartbackgroundanimations = true
   backgroundanimationhovered = sparks_orange_24_a
   label = 
-  advanced_posx = {"placeholder":"calc","values":{"expression":"398*{"placeholder":"guiwidth"}/640","decimal":"true"}}
+  advanced_posx = {"placeholder":"calc","values":{"expression":"409*{"placeholder":"guiwidth"}/640","decimal":"true"}}
   backgroundanimationnormal = sparks_orange_24_a
-  advanced_posy = {"placeholder":"calc","values":{"expression":"85*{"placeholder":"guiheight"}/360","decimal":"true"}}
+  advanced_width = {"placeholder":"calc","values":{"expression":"1/2*282*{"placeholder":"guiwidth"}/640","decimal":"true"}}
+  advanced_posy = {"placeholder":"calc","values":{"expression":"48*{"placeholder":"guiheight"}/360","decimal":"true"}}
   loopbackgroundanimations = true
   x = 0
-  width = 102
+  width = 141
   action = addbutton
   actionid = 1a4631d7-52bd-4dcc-825d-68855c81ce451776465936711
   y = 0
-  height = 225
+  height = 297
 }
 
 customization {
-  advanced_height = {"placeholder":"calc","values":{"expression":"32*{"placeholder":"guiheight"}/360","decimal":"true"}}
+  advanced_height = {"placeholder":"calc","values":{"expression":"25*{"placeholder":"guiheight"}/360","decimal":"true"}}
   orientation = top-left
   restartbackgroundanimations = true
   buttonaction = opengui;net.minecraft.client.gui.GuiWorldSelection%btnaction_splitter_fm%
   backgroundhovered = resources/fancymenu/aqua_glitch.png
-  label = Play Alone
-  advanced_posx = {"placeholder":"calc","values":{"expression":"240*{"placeholder":"guiwidth"}/640","decimal":"true"}}
-  advanced_width = {"placeholder":"calc","values":{"expression":"159*{"placeholder":"guiwidth"}/640","decimal":"true"}}
-  advanced_posy = {"placeholder":"calc","values":{"expression":"{"placeholder":"guiheight"}*105/360","decimal":"true"}}
+  label = Play Alone...
+  advanced_posx = {"placeholder":"calc","values":{"expression":"57*{"placeholder":"guiwidth"}/640","decimal":"true"}}
+  advanced_width = {"placeholder":"calc","values":{"expression":"125*{"placeholder":"guiwidth"}/640","decimal":"true"}}
+  advanced_posy = {"placeholder":"calc","values":{"expression":"70*{"placeholder":"guiheight"}/360","decimal":"true"}}
   loopbackgroundanimations = true
   x = 0
-  width = 159
+  width = 125
   action = addbutton
   actionid = efa043a5-5596-42de-ba1c-c30848cba8d71776465870222
   y = 0
   backgroundnormal = resources/fancymenu/blank.png
-  height = 32
+  height = 25
 }
 
 customization {
-  advanced_height = {"placeholder":"calc","values":{"expression":"115*{"placeholder":"guiheight"}/360","decimal":"true"}}
+  advanced_height = {"placeholder":"calc","values":{"expression":"3/2*78*{"placeholder":"guiheight"}/360","decimal":"true"}}
   orientation = top-left
   restartbackgroundanimations = false
   backgroundanimationhovered = taintacle_24_a
   label = 
-  advanced_posx = {"placeholder":"calc","values":{"expression":"192*{"placeholder":"guiwidth"}/640","decimal":"true"}}
+  advanced_posx = {"placeholder":"calc","values":{"expression":"121*{"placeholder":"guiwidth"}/640","decimal":"true"}}
   backgroundanimationnormal = taintacle_24_a
-  advanced_width = {"placeholder":"calc","values":{"expression":"106*{"placeholder":"guiwidth"}/640","decimal":"true"}}
-  advanced_posy = {"placeholder":"calc","values":{"expression":"50*{"placeholder":"guiheight"}/360","decimal":"true"}}
+  advanced_width = {"placeholder":"calc","values":{"expression":"3/2*46*{"placeholder":"guiwidth"}/640","decimal":"true"}}
+  advanced_posy = -1
   loopbackgroundanimations = true
-  x = 1
-  width = 106
+  x = 0
+  width = 69
   action = addbutton
   actionid = 2960a7ab-647b-4464-adc3-f13a817a34e01776465835064
-  y = -1
-  height = 115
+  y = 0
+  height = 117
+}
+
+customization {
+  path = 
+  orientation = top-left
+  x = 0
+  width = 0
+  actionid = 3e3e9541-70e7-43cb-b8f9-12a9b7f9659b1780952138770
+  action = addtexture
+  y = 6
+  height = 100
 }
 

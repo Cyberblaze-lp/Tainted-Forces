@@ -164,8 +164,6 @@ mods.embers.DawnstoneAnvil.add([<tfc:metal/shears/copper>],<tfc:metal/knife_blad
 mods.embers.DawnstoneAnvil.add([<tfc:metal/shears/bronze>],<tfc:metal/knife_blade/bronze>,<tfc:metal/knife_blade/bronze>);
 mods.embers.DawnstoneAnvil.add([<tfc:metal/shears/bismuth_bronze>],<tfc:metal/knife_blade/bismuth_bronze>,<tfc:metal/knife_blade/bismuth_bronze>);
 mods.embers.DawnstoneAnvil.add([<tfc:metal/shears/black_bronze>],<tfc:metal/knife_blade/black_bronze>,<tfc:metal/knife_blade/black_bronze>);
-mods.embers.DawnstoneAnvil.add([<tfc:metal/shears/mithril>],<tfc:metal/knife_blade/mithril>,<tfc:metal/knife_blade/mithril>);
-mods.embers.DawnstoneAnvil.add([<tfc:metal/shears/nickel_silver>],<tfc:metal/knife_blade/nickel_silver>,<tfc:metal/knife_blade/nickel_silver>);
 
 mods.embers.DawnstoneAnvil.add([<tfctech:metal/bismuth_gear>],<ore:rackwheelBismuth>,<ore:sleeveTin>);
 mods.embers.DawnstoneAnvil.add([<tfctech:metal/bismuth_gear>],<ore:sleeveTin>,<ore:rackwheelBismuth>);
@@ -212,9 +210,6 @@ mods.embers.DawnstoneAnvil.add([<tfctech:metal/sterling_silver_gear>],<ore:sleev
 mods.embers.DawnstoneAnvil.add([<tfctech:metal/wrought_iron_gear>],<ore:rackwheelWroughtIron>,<ore:sleeveBrass>);
 mods.embers.DawnstoneAnvil.add([<tfctech:metal/wrought_iron_gear>],<ore:sleeveBrass>,<ore:rackwheelWroughtIron>);
 
-mods.embers.DawnstoneAnvil.add([<tfctech:metal/lithium_gear>],<ore:rackwheelLithium>,<ore:sleeveTin>);
-mods.embers.DawnstoneAnvil.add([<tfctech:metal/lithium_gear>],<ore:sleeveTin>,<ore:rackwheelLithium>);
-
 mods.embers.DawnstoneAnvil.add([<tfctech:metal/pig_iron_gear>],<ore:rackwheelPigIron>,<ore:sleeveBrass>);
 mods.embers.DawnstoneAnvil.add([<tfctech:metal/pig_iron_gear>],<ore:sleeveBrass>,<ore:rackwheelPigIron>);
 
@@ -239,8 +234,6 @@ mods.embers.DawnstoneAnvil.add([<tfctech:metal/constantan_gear>],<ore:sleeveTin>
 mods.embers.DawnstoneAnvil.add([<tfctech:metal/electrum_gear>],<ore:rackwheelElectrum>,<ore:sleeveTin>);
 mods.embers.DawnstoneAnvil.add([<tfctech:metal/electrum_gear>],<ore:sleeveTin>,<ore:rackwheelElectrum>);
 
-mods.embers.DawnstoneAnvil.add([<tfctech:metal/nickel_silver_gear>],<ore:rackwheelNickelSilver>,<ore:sleeveTin>);
-mods.embers.DawnstoneAnvil.add([<tfctech:metal/nickel_silver_gear>],<ore:sleeveTin>,<ore:rackwheelNickelSilver>);
 
 mods.embers.DawnstoneAnvil.add([<tfctech:metal/red_alloy_gear>],<ore:rackwheelRedAlloy>,<ore:sleeveTin>);
 mods.embers.DawnstoneAnvil.add([<tfctech:metal/red_alloy_gear>],<ore:sleeveTin>,<ore:rackwheelRedAlloy>);
@@ -269,15 +262,11 @@ mods.embers.DawnstoneAnvil.add([<tfctech:metal/tungsten_gear>],<ore:sleeveSteel>
 mods.embers.DawnstoneAnvil.add([<tfctech:metal/tungsten_steel_gear>],<ore:rackwheeTungstenSteell>,<ore:sleeveSteel>);
 mods.embers.DawnstoneAnvil.add([<tfctech:metal/tungsten_steel_gear>],<ore:sleeveSteel>,<ore:rackwheelTungstenSteel>);
 
-mods.embers.DawnstoneAnvil.add([<tfctech:metal/osmium_gear>],<ore:rackwheelOsmium>,<ore:sleeveSteel>);
-mods.embers.DawnstoneAnvil.add([<tfctech:metal/osmium_gear>],<ore:sleeveSteel>,<ore:rackwheelOsmium>);
 
 mods.embers.DawnstoneAnvil.add([<tfctech:metal/titanium_gear>],<ore:rackwheelTitanium>,<ore:sleeveSteel>);
 mods.embers.DawnstoneAnvil.add([<tfctech:metal/titanium_gear>],<ore:sleeveSteel>,<ore:rackwheelTitanium>);
 
 
-mods.embers.DawnstoneAnvil.add([<tfctech:metal/aluminium_gear>],<ore:rackwheelAluminium>,<ore:sleeveBrass>);
-mods.embers.DawnstoneAnvil.add([<tfctech:metal/aluminium_gear>],<ore:sleeveBrass>,<ore:rackwheelAluminium>);
 
 mods.embers.DawnstoneAnvil.add([<mysticalmechanics:axle_iron>*3],<ore:ingotIron>,<ore:stickIron>);
 mods.embers.DawnstoneAnvil.add([<mysticalmechanics:axle_iron>*3],<ore:stickIron>,<ore:ingotIron>);

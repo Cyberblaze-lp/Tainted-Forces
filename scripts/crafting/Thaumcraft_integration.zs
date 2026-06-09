@@ -87,10 +87,10 @@ mods.thaumcraft.Crucible.registerRecipe("jute", "HEDGEALCHEMY@2", <tfc:crop/prod
 mods.thaumcraft.Crucible.registerRecipe("THORIUMTRANSMUTATION", "NUCLEAR", <tfc:metal/ingot/uranium>, <ore:ingotThorium>, [<aspect:potentia>*10,<aspect:permutatio>*5, <aspect:mortuus>*5]);
 mods.thaumcraft.Crucible.registerRecipe("coolant", "NUCLEAR", <forge:bucketfilled>.withTag({FluidName: "ic2coolant", Amount: 1000}), <minecraft:bucket>, [<aspect:ignis>*20,<aspect:permutatio>*20, <aspect:gelum>*20]);
 
-mods.thaumcraft.Crucible.registerRecipe("firebrick1", "FIREBRICK", <tfc:ceramics/fired/fire_brick>, <tfc:ore/small/wolframite>, [<aspect:ignis>*5,<aspect:praemunio>*2, <aspect:potentia>*5]);
-mods.thaumcraft.Crucible.registerRecipe("firebrick2", "FIREBRICK", <tfc:ceramics/fired/fire_brick>*2, <tfc:ore/wolframite:1>, [<aspect:ignis>*10,<aspect:praemunio>*4, <aspect:potentia>*10]);
-mods.thaumcraft.Crucible.registerRecipe("firebrick3", "FIREBRICK", <tfc:ceramics/fired/fire_brick>*3, <tfc:ore/wolframite>, [<aspect:ignis>*15,<aspect:praemunio>*6, <aspect:potentia>*15]);
-mods.thaumcraft.Crucible.registerRecipe("firebrick4", "FIREBRICK", <tfc:ceramics/fired/fire_brick>*5, <tfc:ore/wolframite:2>, [<aspect:ignis>*25,<aspect:praemunio>*10, <aspect:potentia>*25]);
+mods.thaumcraft.Crucible.registerRecipe("firebrick1", "FIREBRICK", <tfc:ceramics/fired/fire_brick>, <tfc:ore/small/wolframite>, [<aspect:ignis>*5,<aspect:praemunio>, <aspect:terra>*5]);
+mods.thaumcraft.Crucible.registerRecipe("firebrick2", "FIREBRICK", <tfc:ceramics/fired/fire_brick>*2, <tfc:ore/wolframite:1>, [<aspect:ignis>*10,<aspect:praemunio>*2, <aspect:terra>*10]);
+mods.thaumcraft.Crucible.registerRecipe("firebrick3", "FIREBRICK", <tfc:ceramics/fired/fire_brick>*3, <tfc:ore/wolframite>, [<aspect:ignis>*15,<aspect:praemunio>*3, <aspect:terra>*15]);
+mods.thaumcraft.Crucible.registerRecipe("firebrick4", "FIREBRICK", <tfc:ceramics/fired/fire_brick>*5, <tfc:ore/wolframite:2>, [<aspect:ignis>*25,<aspect:praemunio>*5, <aspect:terra>*25]);
 
 mods.thaumcraft.Infusion.registerRecipe("biomind", "MINDBIOTHAUMIC", <thaumcraft:mind:1>, 3, [<aspect:aqua>*20, <aspect:cognitio>*10, <aspect:machina>*5], <thaumcraft:mind>, [<thaumcraft:brain>, <thaumcraft:tube>,<thaumcraft:tube>,<thaumcraft:tube>,<thaumcraft:tube>,<thaumcraft:tube>,<thaumcraft:tube>,<thaumcraft:tube>, <thaumcraft:tube>]);
 
@@ -275,11 +275,8 @@ var itemplusOres =
     itemPlusOre(<tfc:metal/nugget/silver>,"Silver"),
     itemPlusOre(<tfc:metal/nugget/lead>,"Lead"),
     itemPlusOre(<tfc:metal/nugget/nickel>,"Nickel"),
-    itemPlusOre(<tfc:metal/nugget/aluminium>,"Aluminium"),
     itemPlusOre(<tfc:metal/nugget/platinum>,"Platinum"),
-    itemPlusOre(<tfc:metal/nugget/lithium>,"Lithium"),
-    itemPlusOre(<tfc:metal/nugget/thorium>,"Thorium"),
-    itemPlusOre(<tfc:metal/nugget/antimony>,"Antimony"),
+    itemPlusOre(<tfc:metal/nugget/thorium>,"Thorium")
 ] as itemPlusOre[];
 
 var aspectsempty1 as AspectList = AspectList();

@@ -48,6 +48,8 @@ recipes.addShapeless(<ic2:reactor_heat_vent>, [<ic2:heat_vent>, <ic2:crafting:7>
 
 // ================================================================================
 //#MARKER ADD SHAPED
+recipes.addShaped(<minecraft:cauldron>, [[<ore:ingotLead>, null, <ore:ingotLead>], [<ore:ingotLead>, null, <ore:ingotLead>], [<ore:ingotLead>, <ore:ingotLead>, <ore:ingotLead>]]);
+recipes.addShaped(<rustichromia:assembler2>, [[<magneticraft:inserter>, <magneticraft:inserter>, <magneticraft:inserter>], [<thaumcraft:mechanism_simple>, <ore:gearIron>, <thaumcraft:mechanism_simple>], [<ore:plateIron>, <ore:plateIron>, <ore:plateIron>]]);
 recipes.addShaped(<rustichromia:quern>, [[null, <ore:stickIron>, null], [<ore:concrete>, <ore:gearIron>, <ore:concrete>], [<ore:concrete>, <ore:concrete>, <ore:concrete>]]);
 recipes.addShaped(<extrautils2:user>, [[<ore:concrete>, <ore:gearIron>, <ore:concrete>], [<tfc:brass_mechanisms>, <thaumcraft:mind:1>, <tfc:brass_mechanisms>], [<ore:concrete>, <tfc:brass_mechanisms>, <ore:concrete>]]);
 recipes.addShaped(<minecraft:cauldron>, [[<ore:ingotManasteel>, null, <ore:ingotManasteel>], [<ore:ingotManasteel>, null, <ore:ingotManasteel>], [<ore:ingotManasteel>, <ore:ingotManasteel>, <ore:ingotManasteel>]]);

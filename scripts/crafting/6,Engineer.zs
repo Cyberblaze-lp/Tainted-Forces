@@ -47,20 +47,19 @@ mods.immersiveengineering.Mixer.addRecipe(<liquid:ic2heavy_water>*4000, <liquid:
 mods.thermalexpansion.Refinery.addRecipe(<liquid:heavywater> * 10000, <astralsorcery:itemrockcrystalsimple>.withTag({astralsorcery: {crystalProperties: {collectiveCapability: 20, size: 200, fract: 0, purity: 20, sizeOverride: -1}}}), <liquid:ic2heavy_water> * 4000, 5000);
 mods.jei.JEI.addDescription(<liquid:ic2heavy_water>, "The crystal used in its creation needs to be max Size and Cutting, and attuned to Octans. Purity does not matter.");
 
-mods.thermalexpansion.Transposer.addFillRecipe(<ic2:lithium_fuel_rod>.withTag({advDmg: 0}),<tfc:metal/sheet/zircaloy> , <liquid:lithium>*1440, 2000);
-mods.thermalexpansion.Transposer.addFillRecipe(<ic2:lithium_fuel_rod>.withTag({advDmg: 0}),<tfc:metal/sheet/zircaloy> , <liquid:liquidlithium>*1440, 2000);
+mods.thermalexpansion.Transposer.addFillRecipe(<ic2:lithium_fuel_rod>.withTag({advDmg: 0}),<tfc:metal/sheet/black_steel> , <liquid:lithium>*1440, 2000);
+mods.thermalexpansion.Transposer.addFillRecipe(<ic2:lithium_fuel_rod>.withTag({advDmg: 0}),<tfc:metal/sheet/black_steel> , <liquid:liquidlithium>*1440, 2000);
 
-<ic2:lithium_fuel_rod>.addTooltip(format.yellow("Irradiate in an IC2 Nuclear Reactor to transform into Tritium. Yield is proportional to how much radiation it absorbed. Must be next to one or more Uranium/ MOX rods while reactor temp > 30%  BEWARE: Fully irradiated rods are destroyed. Calibrate your timers accordingly."));
-mods.ic2.MetalFormer.addExtrudingRecipe(<ic2:crafting:9>, <ore:plateZircaloy>);
+<ic2:lithium_fuel_rod>.addTooltip(format.yellow("Irradiate in an IC2 Nuclear Reactor to transform into Tritium. Yield is proportional to how much radiation it absorbed. Must be next to one or more Uranium/ MOX rods while reactor temp > 30%  BEWARE: Fully irradiated rods are destroyed."));
 mods.ic2.MetalFormer.addExtrudingRecipe(<minecraft:bucket>, <ore:plateIron>);
 
-mods.ic2.ThermalCentrifuge.addRecipe([<ic2:nuclear:7>,<ic2:nuclear:3>,<tfc:metal/dust/zircaloy>], <ic2:nuclear:14>, 100);
-mods.ic2.ThermalCentrifuge.addRecipe([<ic2:nuclear:7>*2,<ic2:nuclear:3>*2,<tfc:metal/dust/zircaloy>*2], <ic2:nuclear:15>, 100);
-mods.ic2.ThermalCentrifuge.addRecipe([<ic2:nuclear:7>*4,<ic2:nuclear:3>*4,<tfc:metal/dust/zircaloy>*5], <ic2:nuclear:16>, 100);
+mods.ic2.ThermalCentrifuge.addRecipe([<ic2:nuclear:7>,<ic2:nuclear:3>,<tfc:metal/dust/black_steel>], <ic2:nuclear:14>, 100);
+mods.ic2.ThermalCentrifuge.addRecipe([<ic2:nuclear:7>*2,<ic2:nuclear:3>*2,<tfc:metal/dust/black_steel>*2], <ic2:nuclear:15>, 100);
+mods.ic2.ThermalCentrifuge.addRecipe([<ic2:nuclear:7>*4,<ic2:nuclear:3>*4,<tfc:metal/dust/black_steel>*5], <ic2:nuclear:16>, 100);
 
-mods.ic2.ThermalCentrifuge.addRecipe([<ic2:nuclear:7>,<ic2:nuclear:2>*4,<tfc:metal/dust/zircaloy>], <ic2:nuclear:11>, 100);
-mods.ic2.ThermalCentrifuge.addRecipe([<ic2:nuclear:7>*2,<ic2:nuclear:2>*8,<tfc:metal/dust/zircaloy>*2], <ic2:nuclear:12>, 100);
-mods.ic2.ThermalCentrifuge.addRecipe([<ic2:nuclear:7>*4,<ic2:nuclear:2>*16,<tfc:metal/dust/zircaloy>*5], <ic2:nuclear:13>, 100);
+mods.ic2.ThermalCentrifuge.addRecipe([<ic2:nuclear:7>,<ic2:nuclear:2>*4,<tfc:metal/dust/black_steel>], <ic2:nuclear:11>, 100);
+mods.ic2.ThermalCentrifuge.addRecipe([<ic2:nuclear:7>*2,<ic2:nuclear:2>*8,<tfc:metal/dust/black_steel>*2], <ic2:nuclear:12>, 100);
+mods.ic2.ThermalCentrifuge.addRecipe([<ic2:nuclear:7>*4,<ic2:nuclear:2>*16,<tfc:metal/dust/black_steel>*5], <ic2:nuclear:13>, 100);
 
 
 mods.immersivetechnology.SolarTower.addRecipe(<liquid:ic2hot_coolant>, <liquid:ic2coolant>, 1);

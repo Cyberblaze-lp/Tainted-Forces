@@ -4,12 +4,8 @@ import mods.advancedrocketry.ArcFurnace;
 //=======================================================================================================================================================================
 //Basic Recipes
 	recipes.addShaped(<tfc:metal/ingot/steel>, [[<ore:nuggetSteel>, <ore:nuggetSteel>, <ore:nuggetSteel>],[<ore:nuggetSteel>, <ore:nuggetSteel>, <ore:nuggetSteel>], [<ore:nuggetSteel>, <ore:nuggetSteel>, <ore:nuggetSteel>]]);
-	recipes.addShapeless(<immersiveengineering:material:23>, [<ore:plateSteel>, <ore:shears>]);
-	recipes.addShapeless(<immersiveengineering:material:22>, [<ore:plateAluminum>, <ore:shears>]);
-	recipes.addShapeless(<immersiveengineering:material:21>, [<ore:plateElectrum>, <ore:shears>]);
-	recipes.addShapeless(<immersiveengineering:material:20>, [<ore:plateCopper>, <ore:shears>]);
+	
 	recipes.addShapeless(<tfc:metal/sheet/copper>, [<immersiveengineering:sheetmetal>]);
-	recipes.addShapeless(<tfc:metal/sheet/aluminium>, [<immersiveengineering:sheetmetal:1>]);
 	recipes.addShapeless(<tfc:metal/sheet/lead>, [<immersiveengineering:sheetmetal:2>]);
 	recipes.addShapeless(<tfc:metal/sheet/silver>, [<immersiveengineering:sheetmetal:3>]);
 	recipes.addShapeless(<tfc:metal/sheet/nickel>, [<immersiveengineering:sheetmetal:4>]);
@@ -245,17 +241,12 @@ import mods.advancedrocketry.ArcFurnace;
 	mods.immersiveengineering.MetalPress.addRecipe(<tfc:metal/double_ingot/lead>, <tfc:metal/ingot/lead>, <tfc:metal/hammer_head/steel>, 500, 2);
 	mods.immersiveengineering.MetalPress.addRecipe(<tfc:metal/double_ingot/wrought_iron>, <tfc:metal/ingot/wrought_iron>, <tfc:metal/hammer_head/steel>, 500, 2);
 	mods.immersiveengineering.MetalPress.addRecipe(<tfc:metal/double_ingot/black_bronze>, <tfc:metal/ingot/black_bronze>, <tfc:metal/hammer_head/steel>, 500, 2);
-	mods.immersiveengineering.MetalPress.addRecipe(<tfc:metal/double_ingot/aluminium>, <tfc:metal/ingot/aluminium>, <tfc:metal/hammer_head/steel>, 500, 2);
 	mods.immersiveengineering.MetalPress.addRecipe(<tfc:metal/double_ingot/ardite>, <tfc:metal/ingot/ardite>, <tfc:metal/hammer_head/steel>, 500, 2);
 	mods.immersiveengineering.MetalPress.addRecipe(<tfc:metal/double_ingot/cobalt>, <tfc:metal/ingot/cobalt>, <tfc:metal/hammer_head/steel>, 500, 2);
 	mods.immersiveengineering.MetalPress.addRecipe(<tfc:metal/double_ingot/constantan>, <tfc:metal/ingot/constantan>, <tfc:metal/hammer_head/steel>, 500, 2);
 	mods.immersiveengineering.MetalPress.addRecipe(<tfc:metal/double_ingot/electrum>, <tfc:metal/ingot/electrum>, <tfc:metal/hammer_head/steel>, 500, 2);
 	mods.immersiveengineering.MetalPress.addRecipe(<tfc:metal/double_ingot/manyullyn>, <tfc:metal/ingot/manyullyn>, <tfc:metal/hammer_head/steel>, 500, 2);	
-	mods.immersiveengineering.MetalPress.addRecipe(<tfc:metal/double_ingot/invar>, <tfc:metal/ingot/invar>, <tfc:metal/hammer_head/steel>, 500, 2);	
-	mods.immersiveengineering.MetalPress.addRecipe(<tfc:metal/double_ingot/mithril>, <tfc:metal/ingot/mithril>, <tfc:metal/hammer_head/steel>, 500, 2);	
-	mods.immersiveengineering.MetalPress.addRecipe(<tfc:metal/double_ingot/aluminium_brass>, <tfc:metal/ingot/aluminium_brass>, <tfc:metal/hammer_head/steel>, 500, 2);	
-	mods.immersiveengineering.MetalPress.addRecipe(<tfc:metal/double_ingot/antimony>, <tfc:metal/ingot/antimony>, <tfc:metal/hammer_head/steel>, 500, 2);	
-	mods.immersiveengineering.MetalPress.addRecipe(<tfc:metal/double_ingot/osmium>, <tfc:metal/ingot/osmium>, <tfc:metal/hammer_head/steel>, 500, 2);	
+
 	mods.immersiveengineering.MetalPress.addRecipe(<tfc:metal/double_ingot/titanium>, <tfc:metal/ingot/titanium>, <tfc:metal/hammer_head/steel>, 500, 2);	
 	mods.immersiveengineering.MetalPress.addRecipe(<tfc:metal/double_ingot/tungsten>, <tfc:metal/ingot/tungsten>, <tfc:metal/hammer_head/steel>, 500, 2);	
 	mods.immersiveengineering.MetalPress.addRecipe(<tfc:metal/double_ingot/tungsten_steel>, <tfc:metal/ingot/tungsten_steel>, <tfc:metal/hammer_head/steel>, 500, 2);	
@@ -285,17 +276,14 @@ import mods.advancedrocketry.ArcFurnace;
 	mods.immersiveengineering.MetalPress.addRecipe(<tfc:metal/sheet/lead>*2, <tfc:metal/double_ingot/lead>, <tfc:metal/hammer_head/steel>, 500);
 	mods.immersiveengineering.MetalPress.addRecipe(<tfc:metal/sheet/wrought_iron>*2, <tfc:metal/double_ingot/wrought_iron>, <tfc:metal/hammer_head/steel>, 500);
 	mods.immersiveengineering.MetalPress.addRecipe(<tfc:metal/sheet/black_bronze>*2, <tfc:metal/double_ingot/black_bronze>, <tfc:metal/hammer_head/steel>, 500);
-	mods.immersiveengineering.MetalPress.addRecipe(<tfc:metal/sheet/aluminium>*2, <tfc:metal/double_ingot/aluminium>, <tfc:metal/hammer_head/steel>, 500);
+
 	mods.immersiveengineering.MetalPress.addRecipe(<tfc:metal/sheet/ardite>*2, <tfc:metal/double_ingot/ardite>, <tfc:metal/hammer_head/steel>, 500);
 	mods.immersiveengineering.MetalPress.addRecipe(<tfc:metal/sheet/cobalt>*2, <tfc:metal/double_ingot/cobalt>, <tfc:metal/hammer_head/steel>, 500);
 	mods.immersiveengineering.MetalPress.addRecipe(<tfc:metal/sheet/constantan>*2, <tfc:metal/double_ingot/constantan>, <tfc:metal/hammer_head/steel>, 500);
 	mods.immersiveengineering.MetalPress.addRecipe(<tfc:metal/sheet/electrum>*2, <tfc:metal/double_ingot/electrum>, <tfc:metal/hammer_head/steel>, 500);
 	mods.immersiveengineering.MetalPress.addRecipe(<tfc:metal/sheet/manyullyn>*2, <tfc:metal/double_ingot/manyullyn>, <tfc:metal/hammer_head/steel>, 500);	
 	mods.immersiveengineering.MetalPress.addRecipe(<tfc:metal/sheet/invar>*2, <tfc:metal/double_ingot/invar>, <tfc:metal/hammer_head/steel>, 500);	
-	mods.immersiveengineering.MetalPress.addRecipe(<tfc:metal/sheet/mithril>*2, <tfc:metal/double_ingot/mithril>, <tfc:metal/hammer_head/steel>, 500);	
-	mods.immersiveengineering.MetalPress.addRecipe(<tfc:metal/sheet/aluminium_brass>*2, <tfc:metal/double_ingot/aluminium_brass>, <tfc:metal/hammer_head/steel>, 500);	
-	mods.immersiveengineering.MetalPress.addRecipe(<tfc:metal/sheet/antimony>*2, <tfc:metal/double_ingot/antimony>, <tfc:metal/hammer_head/steel>, 500);	
-	mods.immersiveengineering.MetalPress.addRecipe(<tfc:metal/sheet/osmium>*2, <tfc:metal/double_ingot/osmium>, <tfc:metal/hammer_head/steel>, 500);	
+
 	mods.immersiveengineering.MetalPress.addRecipe(<tfc:metal/sheet/titanium>*2, <tfc:metal/double_ingot/titanium>, <tfc:metal/hammer_head/steel>, 500);	
 	mods.immersiveengineering.MetalPress.addRecipe(<tfc:metal/sheet/tungsten>*2, <tfc:metal/double_ingot/tungsten>, <tfc:metal/hammer_head/steel>, 500);	
 	mods.immersiveengineering.MetalPress.addRecipe(<tfc:metal/sheet/tungsten_steel>*2, <tfc:metal/double_ingot/tungsten_steel>, <tfc:metal/hammer_head/steel>, 500);	
@@ -325,17 +313,13 @@ import mods.advancedrocketry.ArcFurnace;
 	mods.immersiveengineering.MetalPress.addRecipe(<tfc:metal/double_sheet/lead>, <tfc:metal/sheet/lead>, <tfc:metal/hammer_head/steel>, 500, 2);
 	mods.immersiveengineering.MetalPress.addRecipe(<tfc:metal/double_sheet/wrought_iron>, <tfc:metal/sheet/wrought_iron>, <tfc:metal/hammer_head/steel>, 500, 2);
 	mods.immersiveengineering.MetalPress.addRecipe(<tfc:metal/double_sheet/black_bronze>, <tfc:metal/sheet/black_bronze>, <tfc:metal/hammer_head/steel>, 500, 2);
-	mods.immersiveengineering.MetalPress.addRecipe(<tfc:metal/double_sheet/aluminium>, <tfc:metal/sheet/aluminium>, <tfc:metal/hammer_head/steel>, 500, 2);
 	mods.immersiveengineering.MetalPress.addRecipe(<tfc:metal/double_sheet/ardite>, <tfc:metal/sheet/ardite>, <tfc:metal/hammer_head/steel>, 500, 2);
 	mods.immersiveengineering.MetalPress.addRecipe(<tfc:metal/double_sheet/cobalt>, <tfc:metal/sheet/cobalt>, <tfc:metal/hammer_head/steel>, 500, 2);
 	mods.immersiveengineering.MetalPress.addRecipe(<tfc:metal/double_sheet/constantan>, <tfc:metal/sheet/constantan>, <tfc:metal/hammer_head/steel>, 500, 2);
 	mods.immersiveengineering.MetalPress.addRecipe(<tfc:metal/double_sheet/electrum>, <tfc:metal/sheet/electrum>, <tfc:metal/hammer_head/steel>, 500, 2);
 	mods.immersiveengineering.MetalPress.addRecipe(<tfc:metal/double_sheet/manyullyn>, <tfc:metal/sheet/manyullyn>, <tfc:metal/hammer_head/steel>, 500, 2);
 	mods.immersiveengineering.MetalPress.addRecipe(<tfc:metal/double_sheet/invar>, <tfc:metal/sheet/invar>, <tfc:metal/hammer_head/steel>, 500, 2);	
-	mods.immersiveengineering.MetalPress.addRecipe(<tfc:metal/double_sheet/mithril>, <tfc:metal/sheet/mithril>, <tfc:metal/hammer_head/steel>, 500, 2);	
-	mods.immersiveengineering.MetalPress.addRecipe(<tfc:metal/double_sheet/aluminium_brass>, <tfc:metal/sheet/aluminium_brass>, <tfc:metal/hammer_head/steel>, 500, 2);	
-	mods.immersiveengineering.MetalPress.addRecipe(<tfc:metal/double_sheet/antimony>, <tfc:metal/sheet/antimony>, <tfc:metal/hammer_head/steel>, 500, 2);	
-	mods.immersiveengineering.MetalPress.addRecipe(<tfc:metal/double_sheet/osmium>, <tfc:metal/sheet/osmium>, <tfc:metal/hammer_head/steel>, 500, 2);	
+
 	mods.immersiveengineering.MetalPress.addRecipe(<tfc:metal/double_sheet/titanium>, <tfc:metal/sheet/titanium>, <tfc:metal/hammer_head/steel>, 500, 2);	
 	mods.immersiveengineering.MetalPress.addRecipe(<tfc:metal/double_sheet/tungsten>, <tfc:metal/sheet/tungsten>, <tfc:metal/hammer_head/steel>, 500, 2);	
 	mods.immersiveengineering.MetalPress.addRecipe(<tfc:metal/double_sheet/tungsten_steel>, <tfc:metal/sheet/tungsten_steel>, <tfc:metal/hammer_head/steel>, 500, 2);	
@@ -408,12 +392,7 @@ import mods.advancedrocketry.ArcFurnace;
 	mods.immersiveengineering.ArcFurnace.addRecipe(<tfc:metal/ingot/zinc>, <ore:oreZincSmall>, <immersiveengineering:material:7> * 8, 512, 400, [<ore:oreZincSmall>, <ore:oreZincSmall>, <ore:oreZincSmall>, <ore:oreZincSmall>], "Ores");
 
 
-	//Aluminium
-	mods.immersiveengineering.ArcFurnace.addRecipe(<tfc:metal/ingot/aluminium>, <ore:oreAluminiumRich>, <immersiveengineering:material:7> * 2, 512, 200, [<ore:oreAluminiumRich>], "Ores");
-	mods.immersiveengineering.ArcFurnace.addRecipe(<tfc:metal/ingot/aluminium>, <ore:oreAluminiumNormal>, <immersiveengineering:material:7> * 3, 512, 300, [<ore:oreAluminiumNormal>, <ore:oreAluminiumNormal>], "Ores");
-	mods.immersiveengineering.ArcFurnace.addRecipe(<tfc:metal/ingot/aluminium>, <ore:oreAluminiumPoor>, <immersiveengineering:material:7> * 6, 512, 400, [<ore:oreAluminiumPoor>, <ore:oreAluminiumPoor>, <ore:oreAluminiumPoor>], "Ores");
-	mods.immersiveengineering.ArcFurnace.addRecipe(<tfc:metal/ingot/aluminium>, <ore:oreAluminiumSmall>, <immersiveengineering:material:7> * 8, 512, 400, [<ore:oreAluminiumSmall>, <ore:oreAluminiumSmall>, <ore:oreAluminiumSmall>, <ore:oreAluminiumSmall>], "Ores");
-
+	
 	//Ardite
 	mods.immersiveengineering.ArcFurnace.addRecipe(<tfc:metal/ingot/ardite>, <ore:oreArditeRich>, <immersiveengineering:material:7> * 2, 512, 200, [<ore:oreArditeRich>], "Ores");
 	mods.immersiveengineering.ArcFurnace.addRecipe(<tfc:metal/ingot/ardite>, <ore:oreArditeNormal>, <immersiveengineering:material:7> * 3, 512, 300, [<ore:oreArditeNormal>, <ore:oreArditeNormal>], "Ores");
@@ -432,11 +411,6 @@ import mods.advancedrocketry.ArcFurnace;
 	mods.immersiveengineering.ArcFurnace.addRecipe(<tfc:metal/ingot/tungsten>, <ore:oreTungstenPoor>, <immersiveengineering:material:7> * 6, 512, 400, [<ore:oreTungstenPoor>, <ore:oreTungstenPoor>, <ore:oreTungstenPoor>], "Ores");
 	mods.immersiveengineering.ArcFurnace.addRecipe(<tfc:metal/ingot/tungsten>, <ore:oreTungstenSmall>, <immersiveengineering:material:7> * 8, 512, 400, [<ore:oreTungstenSmall>, <ore:oreTungstenSmall>, <ore:oreTungstenSmall>, <ore:oreTungstenSmall>], "Ores");
 
-	//Osmium
-	mods.immersiveengineering.ArcFurnace.addRecipe(<tfc:metal/ingot/osmium>, <ore:oreOsmiumRich>, <immersiveengineering:material:7> * 2, 512, 200, [<ore:oreOsmiumRich>], "Ores");
-	mods.immersiveengineering.ArcFurnace.addRecipe(<tfc:metal/ingot/osmium>, <ore:oreOsmiumNormal>, <immersiveengineering:material:7> * 3, 512, 300, [<ore:oreOsmiumNormal>, <ore:oreOsmiumNormal>], "Ores");
-	mods.immersiveengineering.ArcFurnace.addRecipe(<tfc:metal/ingot/osmium>, <ore:oreOsmiumPoor>, <immersiveengineering:material:7> * 6, 512, 400, [<ore:oreOsmiumPoor>, <ore:oreOsmiumPoor>, <ore:oreOsmiumPoor>], "Ores");
-	mods.immersiveengineering.ArcFurnace.addRecipe(<tfc:metal/ingot/osmium>, <ore:oreOsmiumSmall>, <immersiveengineering:material:7> * 8, 512, 400, [<ore:oreOsmiumSmall>, <ore:oreOsmiumSmall>, <ore:oreOsmiumSmall>, <ore:oreOsmiumSmall>], "Ores");
 
 	//Titanium
 	mods.immersiveengineering.ArcFurnace.addRecipe(<tfc:metal/ingot/titanium>, <ore:oreTitaniumRich>, <immersiveengineering:material:7> * 2, 512, 200, [<ore:oreTitaniumRich>], "Ores");
@@ -444,11 +418,6 @@ import mods.advancedrocketry.ArcFurnace;
 	mods.immersiveengineering.ArcFurnace.addRecipe(<tfc:metal/ingot/titanium>, <ore:oreTitaniumPoor>, <immersiveengineering:material:7> * 6, 512, 400, [<ore:oreTitaniumPoor>, <ore:oreTitaniumPoor>, <ore:oreTitaniumPoor>], "Ores");
 	mods.immersiveengineering.ArcFurnace.addRecipe(<tfc:metal/ingot/titanium>, <ore:oreTitaniumSmall>, <immersiveengineering:material:7> * 8, 512, 400, [<ore:oreTitaniumSmall>, <ore:oreTitaniumSmall>, <ore:oreTitaniumSmall>, <ore:oreTitaniumSmall>], "Ores");
 
-	//Antimony
-	mods.immersiveengineering.ArcFurnace.addRecipe(<tfc:metal/ingot/antimony>, <ore:oreAntimonyRich>, <immersiveengineering:material:7> * 2, 512, 200, [<ore:oreAntimonyRich>], "Ores");
-	mods.immersiveengineering.ArcFurnace.addRecipe(<tfc:metal/ingot/antimony>, <ore:oreAntimonyNormal>, <immersiveengineering:material:7> * 3, 512, 300, [<ore:oreAntimonyNormal>, <ore:oreAntimonyNormal>], "Ores");
-	mods.immersiveengineering.ArcFurnace.addRecipe(<tfc:metal/ingot/antimony>, <ore:oreAntimonyPoor>, <immersiveengineering:material:7> * 6, 512, 400, [<ore:oreAntimonyPoor>, <ore:oreAntimonyPoor>, <ore:oreAntimonyPoor>], "Ores");
-	mods.immersiveengineering.ArcFurnace.addRecipe(<tfc:metal/ingot/antimony>, <ore:oreAntimonySmall>, <immersiveengineering:material:7> * 8, 512, 400, [<ore:oreAntimonySmall>, <ore:oreAntimonySmall>, <ore:oreAntimonySmall>, <ore:oreAntimonySmall>], "Ores");
 
 
 //Metal Alloys
@@ -496,15 +465,11 @@ import mods.advancedrocketry.ArcFurnace;
 	//Electrum
 	mods.immersiveengineering.ArcFurnace.addRecipe(<tfc:metal/ingot/electrum> * 2, <ore:ingotGold>, <immersiveengineering:material:7> * 1, 512, 200, [<ore:dustFlux>, <ore:ingotSilver>], "Alloying");
 
-	//Mithril
-	mods.immersiveengineering.ArcFurnace.addRecipe(<tfc:metal/ingot/mithril> * 5, <ore:ingotCopper>, <immersiveengineering:material:7> * 1, 512, 300, [<ore:dustFlux>, <ore:ingotCopper>, <ore:ingotCopper>, <ore:ingotAntimony>], "Alloying");
-
+	
 	//Invar
 	mods.immersiveengineering.ArcFurnace.addRecipe(<tfc:metal/ingot/invar> * 5, <ore:ingotNickel>, <immersiveengineering:material:7> * 1, 512, 300, [<ore:dustFlux>, <ore:ingotIron>, <ore:ingotIron>], "Alloying");
 
-	//Aluminium Brass
-	mods.immersiveengineering.ArcFurnace.addRecipe(<tfc:metal/ingot/aluminium_brass> * 5, <ore:ingotAluminium>, <immersiveengineering:material:7> * 1, 512, 300, [<ore:dustFlux>, <ore:ingotAluminium>, <ore:ingotAluminium>, <ore:ingotCopper>], "Alloying");
-
+	
 	//Manyullyn
 	mods.immersiveengineering.ArcFurnace.addRecipe(<tfc:metal/ingot/manyullyn> * 2, <ore:ingotCobalt>, <immersiveengineering:material:7> * 1, 512, 300, [<ore:dustFlux>, <ore:ingotArdite>], "Alloying");
 
@@ -533,15 +498,11 @@ import mods.advancedrocketry.ArcFurnace;
 	//Electrum
 	mods.immersiveengineering.ArcFurnace.addRecipe(<tfc:metal/dust/electrum> * 2, <ore:dustGold>, <immersiveengineering:material:7> * 1, 512, 200, [<ore:dustFlux>, <ore:dustSilver>], "Alloying");
 
-	//Mithril
-	mods.immersiveengineering.ArcFurnace.addRecipe(<tfc:metal/dust/mithril> * 5, <ore:dustCopper>, <immersiveengineering:material:7> * 1, 512, 300, [<ore:dustFlux>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustAntimony>], "Alloying");
-
+	
 	//Invar
 	mods.immersiveengineering.ArcFurnace.addRecipe(<tfc:metal/dust/invar> * 5, <ore:dustNickel>, <immersiveengineering:material:7> * 1, 512, 300, [<ore:dustFlux>, <ore:dustIron>, <ore:dustIron>], "Alloying");
 
-	//Aluminium Brass
-	mods.immersiveengineering.ArcFurnace.addRecipe(<tfc:metal/dust/aluminium_brass> * 5, <ore:dustAluminium>, <immersiveengineering:material:7> * 1, 512, 300, [<ore:dustFlux>, <ore:dustAluminium>, <ore:dustAluminium>, <ore:dustCopper>], "Alloying");
-
+	
 	//Manyullyn
 	mods.immersiveengineering.ArcFurnace.addRecipe(<tfc:metal/dust/manyullyn> * 2, <ore:dustCobalt>, <immersiveengineering:material:7> * 1, 512, 300, [<ore:dustFlux>, <ore:dustArdite>], "Alloying");
 
@@ -600,10 +561,10 @@ import mods.advancedrocketry.ArcFurnace;
 //Add Armor Forging
 
 	//Faraday
-	mods.terrafirmacraft.Anvil.addRecipe("tfcr:ie_faraday_helmet", <ore:sheetDoubleAluminium>, <immersiveengineering:faraday_suit_head>, 2, "armor", "HIT_LAST", "BEND_SECOND_LAST", "BEND_THIRD_LAST");
-	mods.terrafirmacraft.Anvil.addRecipe("tfcr:ie_faraday_chestplate", <ore:sheetDoubleAluminium>, <immersiveengineering:faraday_suit_chest>, 2, "armor", "HIT_LAST", "HIT_SECOND_LAST", "UPSET_THIRD_LAST");
-	mods.terrafirmacraft.Anvil.addRecipe("tfcr:ie_faraday_leggings", <ore:sheetDoubleAluminium>, <immersiveengineering:faraday_suit_legs>, 2, "armor", "BEND_ANY", "DRAW_ANY", "HIT_ANY");
-	mods.terrafirmacraft.Anvil.addRecipe("tfcr:ie_faraday_boots", <ore:sheetDoubleAluminium>, <immersiveengineering:faraday_suit_feet>, 2, "armor", "BEND_LAST", "BEND_SECOND_LAST", "SHRINK_THIRD_LAST");
+	mods.terrafirmacraft.Anvil.addRecipe("tfcr:ie_faraday_helmet", <ore:sheetDoubleElectrum>, <immersiveengineering:faraday_suit_head>, 2, "armor", "HIT_LAST", "BEND_SECOND_LAST", "BEND_THIRD_LAST");
+	mods.terrafirmacraft.Anvil.addRecipe("tfcr:ie_faraday_chestplate", <ore:sheetDoubleElectrum>, <immersiveengineering:faraday_suit_chest>, 2, "armor", "HIT_LAST", "HIT_SECOND_LAST", "UPSET_THIRD_LAST");
+	mods.terrafirmacraft.Anvil.addRecipe("tfcr:ie_faraday_leggings", <ore:sheetDoubleElectrum>, <immersiveengineering:faraday_suit_legs>, 2, "armor", "BEND_ANY", "DRAW_ANY", "HIT_ANY");
+	mods.terrafirmacraft.Anvil.addRecipe("tfcr:ie_faraday_boots", <ore:sheetDoubleElectrum>, <immersiveengineering:faraday_suit_feet>, 2, "armor", "BEND_LAST", "BEND_SECOND_LAST", "SHRINK_THIRD_LAST");
 
 	mods.terrafirmacraft.Barrel.addRecipe("tfcr:treated_wood_planks", <ore:plankWood>, <liquid:creosote> * 125, <immersiveengineering:treated_wood>, null, 16);
 	mods.terrafirmacraft.Barrel.addRecipe("tfcr:treated_wood_stick", <ore:stickWood>, <liquid:creosote> * 65, <immersiveengineering:material>, null, 16);

@@ -58,9 +58,9 @@
 
     //Metal
     <ore:dustDiamond>.add(<tfcthings:diamond_grit>);
-    <ore:wireAluminum>.add(<tfctech:metal/aluminium_wire>);
+    
     <ore:dustSulfur>.add(<thebetweenlands:items_misc:18>);
-    <ore:stickAluminum>.add(<tfctech:metal/aluminium_rod>);
+  
     <ore:stickIron>.addAll(<ore:stickWroughtIron>);
     <ore:ingotAdvancedElectronicAlloy>.add(<tfc:metal/ingot/blue_steel>);
     <ore:plateAdvancedElectronicAlloy>.add(<tfc:metal/sheet/blue_steel>);
@@ -80,19 +80,13 @@
     metals.addAll(<ore:plateCopper>);
     metals.addAll(<ore:sheetAnyBronze>);
     metals.addAll(<ore:plateSteel>);
-    metals.addAll(<ore:plateAluminium>);
     metals.addAll(<ore:plateBlackSteel>);
-    metals.addAll(<ore:plateInvar>);
     metals.addAll(<ore:plateBlueSteel>);
     metals.addAll(<ore:plateRedSteel>);
-    metals.addAll(<ore:plateMithril>);
     metals.addAll(<ore:plateTungsten>);
     metals.addAll(<ore:plateCobalt>);
     metals.addAll(<ore:plateTungstenSteel>);
-    metals.addAll(<ore:plateNickelSilver>);
     metals.addAll(<ore:plateManyullyn>);
-    metals.addAll(<ore:plateZircaloy>);
-    metals.addAll(<ore:plateOsmium>);
     metals.addAll(<ore:plateTitanium>);
 //Done!
 

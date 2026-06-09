@@ -54,22 +54,12 @@ mods.immersiveengineering.Squeezer.addRecipe(<thermalfoundation:ore:6>, null, <o
 
 
 
-mods.immersiveengineering.Squeezer.addRecipe(<ic2:resource:4>, null, <ore:gemPitchblende>*2, 2048);
-mods.immersiveengineering.BottlingMachine.addRecipe(<ic2:resource:4>,<ore:scrapUranium>, <liquid:lava>*200);
-
-//Osmium
-mods.immersiveengineering.Squeezer.addRecipe(<mekanism:oreblock>, null, <ore:oreSmallOsmium>*10, 2048);
-mods.immersiveengineering.Squeezer.addRecipe(<mekanism:oreblock>, null, <ore:orePoorOsmium>*7, 2048);
-mods.immersiveengineering.Squeezer.addRecipe(<mekanism:oreblock>, null, <ore:oreNormalOsmium>*4, 2048);
-mods.immersiveengineering.Squeezer.addRecipe(<mekanism:oreblock>, null, <ore:oreRichOsmium>*3, 2048);
-
-
 
 
 mods.immersiveengineering.Squeezer.addRecipe(<tconstruct:ore>, null, <ore:oreSmallCobalt>*10, 2048);
 mods.immersiveengineering.Squeezer.addRecipe(<tconstruct:ore>, null, <ore:orePoorCobalt>*7, 2048);
 mods.immersiveengineering.Squeezer.addRecipe(<tconstruct:ore>, null, <ore:oreNormalCobalt>*4, 2048);
-mods.immersiveengineering.Squeezer.addRecipe(<tconstruct:ore>, null, <ore:oreRichCobaltCobalt>*3, 2048);
+mods.immersiveengineering.Squeezer.addRecipe(<tconstruct:ore>, null, <ore:oreRichCobalt>*3, 2048);
 
 
 mods.immersiveengineering.Squeezer.addRecipe(<tconstruct:ore:1>, null, <ore:oreSmallArdite>*10, 2048);
@@ -78,32 +68,16 @@ mods.immersiveengineering.Squeezer.addRecipe(<tconstruct:ore:1>, null, <ore:oreN
 mods.immersiveengineering.Squeezer.addRecipe(<tconstruct:ore:1>, null, <ore:oreRichArdite>*3, 2048);
 
 
-mods.immersiveengineering.Squeezer.addRecipe(<tfc:ore/stibnite/gabbro>, null, <ore:oreSmallAntimony>*10, 2048);
-mods.immersiveengineering.Squeezer.addRecipe(<tfc:ore/stibnite/gabbro>, null, <ore:orePoorAntimony>*7, 2048);
-mods.immersiveengineering.Squeezer.addRecipe(<tfc:ore/stibnite/gabbro>, null, <ore:oreNormalAntimony>*4, 2048);
-mods.immersiveengineering.Squeezer.addRecipe(<tfc:ore/stibnite/gabbro>, null, <ore:oreRichAntimony>*3, 2048);
 
 mods.immersiveengineering.Squeezer.addRecipe(<immersiveintelligence:ore:2>, null, <ore:oreSmallTungsten>*10, 2048);
 mods.immersiveengineering.Squeezer.addRecipe(<immersiveintelligence:ore:2>, null, <ore:orePoorTungsten>*7, 2048);
 mods.immersiveengineering.Squeezer.addRecipe(<immersiveintelligence:ore:2>, null, <ore:oreNormalTungsten>*4, 2048);
 mods.immersiveengineering.Squeezer.addRecipe(<immersiveintelligence:ore:2>, null, <ore:oreRichTungsten>*3, 2048);
 
-mods.immersiveengineering.Squeezer.addRecipe(<tfc:ore/zircon/gabbro>, null, <ore:oreSmallZirconium>*10, 2048);
-mods.immersiveengineering.Squeezer.addRecipe(<tfc:ore/zircon/gabbro>, null, <ore:orePoorZirconium>*7, 2048);
-mods.immersiveengineering.Squeezer.addRecipe(<tfc:ore/zircon/gabbro>, null, <ore:oreNormalZirconium>*4, 2048);
-mods.immersiveengineering.Squeezer.addRecipe(<tfc:ore/zircon/gabbro>, null, <ore:oreRichZirconium>*3, 2048);
-
-mods.immersiveengineering.Squeezer.addRecipe(<thermalfoundation:ore:4>, null, <ore:oreSmallAluminium>*10, 2048);
-mods.immersiveengineering.Squeezer.addRecipe(<thermalfoundation:ore:4>, null, <ore:orePoorAluminium>*7, 2048);
-mods.immersiveengineering.Squeezer.addRecipe(<thermalfoundation:ore:4>, null, <ore:oreNormalAluminium>*4, 2048);
-mods.immersiveengineering.Squeezer.addRecipe(<thermalfoundation:ore:4>, null, <ore:oreRichAluminium>*3, 2048);
 
 
 
-mods.immersiveengineering.Squeezer.addRecipe(<tfc:ore/spodumene/gabbro>, null, <ore:oreSmallLithium>*10, 2048);
-mods.immersiveengineering.Squeezer.addRecipe(<tfc:ore/spodumene/gabbro>, null, <ore:orePoorLithium>*7, 2048);
-mods.immersiveengineering.Squeezer.addRecipe(<tfc:ore/spodumene/gabbro>, null, <ore:oreNormalLithium>*4, 2048);
-mods.immersiveengineering.Squeezer.addRecipe(<tfc:ore/spodumene/gabbro>, null, <ore:oreRichLithium>*3, 2048);
+
 
 
 mods.immersiveengineering.Squeezer.addRecipe(<tfc:ore/thorianite/gabbro>, null, <ore:oreSmallThorium>*10, 2048);
@@ -124,7 +98,7 @@ mods.immersiveengineering.BottlingMachine.addRecipe(<nuclearcraft:ore:5>,<ore:sc
 
 
 
-
+/*
 mods.ic2.Macerator.addRecipe(<thermalfoundation:material:893>*2, <tfc:ore/cinnabar>);
 mods.ic2.Macerator.addRecipe(<thermalfoundation:material:893>*2, <tfc:ore/cryolite>);
 mods.ic2.OreWasher.addRecipe([<minecraft:redstone>*5,<thaumcraft:nugget:5>*5,<extrautils2:ingredients>],<ore:clathrateRedstone>, 1000);
@@ -134,3 +108,4 @@ mods.ic2.OreWasher.addRecipe([<minecraft:redstone>*5,<thaumcraft:nugget:5>*5,<ex
 mods.ic2.Macerator.addRecipe(<ic2:crushed:2>*10, <ore:oreRichIron>*9);
 mods.immersiveengineering.Crusher.addRecipe(<ic2:crushed:2>*10, <ore:oreRichIron>*9, 48000);
 
+*/
