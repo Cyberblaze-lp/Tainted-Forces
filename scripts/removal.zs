@@ -795,7 +795,6 @@
 
 	mods.terrafirmacraft.Alloy.removeAlloy("weak_red_steel");
 	mods.terrafirmacraft.Alloy.removeAlloy("weak_blue_steel");
-	mods.terrafirmacraft.Alloy.removeAlloy("hsla_steel");
 
 
 	mods.terrafirmacraft.Barrel.removeRecipe(<tfctech:latex/rubber_mix>*6);
