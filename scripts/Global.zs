@@ -68,6 +68,7 @@ $expand IItemStack$isRotten() as bool
 
 }
 
+/* Provided natively as part of TFUtils for performance reasons
 
 //Returns the native class of an entity. Mostly useful for maps or arrays. 
 //Note that you cannot == two class objects
@@ -75,7 +76,7 @@ $expand IItemStack$isRotten() as bool
 $expand IEntity$getClass() as Class {
     return this.native.class;
 }
-
+*/
 $expand IEntityDefinition$getClass() as Class {
     return this.native.getEntityClass();
 }
