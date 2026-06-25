@@ -21,7 +21,8 @@
 		"mekanism",
 		"modularmachinery",
 		"signals",
-		"thermalexpansion"
+		"thermalexpansion",
+		"rustichromia"
 	]{
 		recipes.removeByMod(mod);
 	}
@@ -545,6 +546,7 @@
 
 
 //Botania
+	mods.botania.ManaInfusion.removeRecipe(<botania:manacookie>);
 	mods.botania.ManaInfusion.removeRecipe(<botania:manaresource>);
 
 	mods.botania.Apothecary.removeRecipe("agricarnation");
@@ -795,8 +797,7 @@
 
 	mods.terrafirmacraft.Alloy.removeAlloy("weak_red_steel");
 	mods.terrafirmacraft.Alloy.removeAlloy("weak_blue_steel");
-	mods.terrafirmacraft.Alloy.removeAlloy("hsla_steel");
-
+	
 
 	mods.terrafirmacraft.Barrel.removeRecipe(<tfctech:latex/rubber_mix>*6);
 	mods.terrafirmacraft.Barrel.removeRecipe(<minecraft:clay_ball>);
@@ -807,6 +808,9 @@
 	mods.terrafirmacraft.Anvil.removeRecipe(<tfc:metal/rod/steel>);
 	mods.terrafirmacraft.Anvil.removeRecipe(<tfc:metal/rod/wrought_iron>);
 	mods.terrafirmacraft.Anvil.removeRecipe(<firmalife:spout>);
+	mods.terrafirmacraft.Welding.removeRecipe(<tfc:metal/double_ingot/bismuth_bronze>);
+	mods.terrafirmacraft.Welding.removeRecipe(<tfc:metal/double_ingot/bronze>);
+	mods.terrafirmacraft.Welding.removeRecipe(<tfc:metal/double_ingot/black_bronze>);
 
 	mods.terrafirmacraft.Heating.removeRecipe(<tfc:crucible>);
 	mods.terrafirmacraft.Heating.removeRecipe(<tfc:ceramics/fired/fire_brick>);

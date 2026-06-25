@@ -117,9 +117,6 @@ mods.thaumcraft.Infusion.registerRecipe("MOXROD", "NUCLEAR", <ic2:mox_fuel_rod>,
 <thaumcraft:amber>.addTooltip(format.gold("Obtained by mining petrified wood ore"));
 <thaumcraft:nugget:10>.addTooltip(format.gold("Obtained from gem and magnetite deposits"));
 <minecraft:quartz>.addTooltip(format.gold("Found in Quartz-rich Stone"));
-Anvil.addRecipe("cauldron_from_bronze", <tfc:metal/sheet/black_bronze>, <minecraft:cauldron>, 2,"general","HIT_LAST","DRAW_SECOND_LAST","BEND_THIRD_LAST");
-Anvil.addRecipe("cauldron_from_iron", <tfc:metal/sheet/wrought_iron>, <minecraft:cauldron>, 2,"general","HIT_LAST","DRAW_SECOND_LAST","BEND_THIRD_LAST");
-
 
 mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("minds 2.0", "MINDCLOCKWORK", 50, [<aspect:ordo>,<aspect:ignis>], <thaumcraft:mind>, [[null,<thaumcraft:mechanism_simple>,null],[<ore:ingotRedAlloy>,<thaumcraft:focus_1>,<ore:ingotRedAlloy> ],[<thaumcraft:mechanism_simple>, null, <thaumcraft:mechanism_simple>]]);
 
@@ -161,23 +158,23 @@ mods.thaumcraft.Infusion.registerRecipe("betterbore", "ARCANEBORE", <thaumcraft:
 mods.thaumcraft.Infusion.registerRecipe("harvestseal", "SEALHARVEST", <thaumcraft:seal:7>, 1, [<aspect:herba>*10, <aspect:ordo>*10, <aspect:humanus>*10], <thaumcraft:seal>, [<minecraft:golden_hoe>, <minecraft:golden_hoe>]);
 
 
-//changes hsla steel to be a liquid version of alumentum, a high-efficiency fuel for mining drill and such
+
 mods.inworldcrafting.ExplosionCrafting.explodeItemRecipe(<minecraft:coal:1>*4, <thaumcraft:alumentum>, 85);
 
 
 
-mods.immersiveengineering.DieselHandler.addFuel(<liquid:hsla_steel>, 20000);
-DieselHandler.addDrillFuel(<liquid:hsla_steel>);
+mods.immersiveengineering.DieselHandler.addFuel(<liquid:liquefacted_lumen>, 20000);
+DieselHandler.addDrillFuel(<liquid:liquefacted_lumen>);
 DieselHandler.addDrillFuel(<liquid:shallowbreath>);
 DieselHandler.addDrillFuel(<liquid:refined_fuel>);
 DieselHandler.addDrillFuel(<liquid:refined_biofuel>);
 
 mods.immersiveengineering.DieselHandler.addFuel(<liquid:refined_fuel>, 3);
 mods.immersiveengineering.DieselHandler.addFuel(<liquid:refined_biofuel>, 2);
-mods.immersiveengineering.DieselHandler.addFuel(<liquid:hsla_steel>, 3);
+mods.immersiveengineering.DieselHandler.addFuel(<liquid:liquefacted_lumen>, 3);
 mods.immersiveengineering.DieselHandler.addFuel(<liquid:shallowbreath>, 1);
-mods.immersiveengineering.Mixer.addRecipe(<liquid:hsla_steel>*8000, <liquid:creosote>*1000,[<thaumcraft:alumentum>*2,<ore:nuggetQuicksilver>,<thebetweenlands:items_misc:44>], 30000);
-GasTurbine.addFuel(<liquid:carbon_dioxide> * 2000, <liquid:hsla_steel>*250, 10);
+mods.immersiveengineering.Mixer.addRecipe(<liquid:liquefacted_lumen>*8000, <liquid:creosote>*1000,[<thaumcraft:alumentum>*2,<ore:nuggetQuicksilver>,<thebetweenlands:items_misc:44>], 30000);
+GasTurbine.addFuel(<liquid:carbon_dioxide> * 2000, <liquid:liquefacted_lumen>*250, 10);
 
 
 

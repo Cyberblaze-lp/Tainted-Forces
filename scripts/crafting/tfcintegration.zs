@@ -51,7 +51,6 @@ recipes.addShapeless(<tfctech:powder/potash> * 8, [<tfctech:pot_potash>]);
 recipes.addShapeless(<tfc:metal/ingot/brass>, [<thaumcraft:ingot:2>]);
 
 
-
 <minecraft:coal:1>.addTooltip(format.yellow("Burns at 1350°C (Yellow White***) for 1min 30s"));
 
 ItemRegistry.registerFuel(<immersiveengineering:material:6>, 3600, 1350.0,true, true);
@@ -72,6 +71,9 @@ ItemRegistry.registerFuel(<advancedrocketry:thermite>,12000 , 2000.0,true, true)
 <advancedrocketry:thermite>.addTooltip(format.blue("Burns at 2000°C (>Brilliant White) for 10min"));
 
 
+Welding.addRecipe("dingotbibronze", <tfc:metal/ingot/bismuth_bronze>, <tfc:metal/ingot/bismuth_bronze>, <tfc:metal/double_ingot/bismuth_bronze>, 0);
+Welding.addRecipe("dingottibronze", <tfc:metal/ingot/bronze>, <tfc:metal/ingot/bronze>, <tfc:metal/double_ingot/bronze>, 0);
+Welding.addRecipe("dingotblbronze", <tfc:metal/ingot/black_bronze>, <tfc:metal/ingot/black_bronze>, <tfc:metal/double_ingot/black_bronze>, 0);
 
 ItemRegistry.registerItemMetal(<tfcthings:metal_bracing>,"wrought_iron",72,true);
 Welding.addRecipe("diapick", <tfcthings:diamond_grit>, <tfc:metal/pick/black_steel>, <minecraft:diamond_pickaxe>, 5);

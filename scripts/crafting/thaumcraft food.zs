@@ -59,3 +59,6 @@ val decayMod as float = 22.0f*24000.0f /ticksToDecay as float;
 ItemRegistry.registerFood(<contenttweaker:taint_goo>, 0, 0.0, 0.0, decayMod, 0.0, 0.0, 0.0, 0.0, 0.0);
 ItemRegistry.registerFood(<contenttweaker:taint_tendril>, 0, 0.0, 0.0, decayMod, 0.0, 0.0, 0.0, 0.0, 0.0);
 
+
+ItemRegistry.registerFood(<botania:manacookie>, 8, 10.0, 10.0, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0);
+
