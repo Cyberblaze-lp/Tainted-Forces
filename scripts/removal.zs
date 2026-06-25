@@ -797,7 +797,7 @@
 
 	mods.terrafirmacraft.Alloy.removeAlloy("weak_red_steel");
 	mods.terrafirmacraft.Alloy.removeAlloy("weak_blue_steel");
-	
+
 
 	mods.terrafirmacraft.Barrel.removeRecipe(<tfctech:latex/rubber_mix>*6);
 	mods.terrafirmacraft.Barrel.removeRecipe(<minecraft:clay_ball>);
