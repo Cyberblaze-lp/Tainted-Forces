@@ -443,7 +443,6 @@
 		"minecraft:furnace",
 		"minecraft:stick",
 		"minecraft:sign",
-		"minecraft:leather",
 		"minecraft:bowl",
 		"railcraft:dust#7$1",
 		"railcraft:locomotive_steam_solid#0$1",

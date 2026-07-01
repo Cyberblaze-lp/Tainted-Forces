@@ -168,7 +168,7 @@ customization {
   action = addbutton
   actionid = 154f7c29-83c9-4d54-8c1e-ff2547d4333a1776465870017
   y = 0
-  backgroundnormal = resources/fancymenu/animation/machinery_24_a/frames_main/10.png
+  backgroundnormal = resources/fancymenu/animation/machinery_24_a/frames_main/1.png
   height = 180
 }
 
