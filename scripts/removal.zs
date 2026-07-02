@@ -438,12 +438,13 @@
 	}
 
 	for name in [
-		"minecraft:stone_pressure_plate",
-		"minecraft:stone_button",
-		"minecraft:furnace",
-		"minecraft:stick",
-		"minecraft:sign",
 		"minecraft:bowl",
+		"minecraft:furnace",
+		"minecraft:leather",
+		"minecraft:sign",
+		"minecraft:stick",
+		"minecraft:stone_button",
+		"minecraft:stone_pressure_plate",
 		"railcraft:dust#7$1",
 		"railcraft:locomotive_steam_solid#0$1",
 
