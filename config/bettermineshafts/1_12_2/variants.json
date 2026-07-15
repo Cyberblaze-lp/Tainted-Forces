@@ -107,7 +107,7 @@
       "mainBlock": "tetra:forged_wall",
       "supportBlock": "cyberware:radio_post[transformed=false,east=false,north=false,south=false,west=false]",
       "slabBlock": "tetra:forged_platform_slab[half=bottom]",
-      "gravelBlock": "minecraft:gravel",
+      "gravelBlock": "chisel:factory[variation=1]",
       "stoneWallBlock": "cyberware:radio_post[transformed=false,east=false,north=false,south=false,west=false]",
       "stoneSlabBlock": "tetra:forged_platform_slab[half=top]",
       "minY": 15,

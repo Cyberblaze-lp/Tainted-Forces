@@ -162,7 +162,7 @@ customization {
   advanced_width = {"placeholder":"calc","values":{"expression":"1/2*246*{"placeholder":"guiwidth"}/640","decimal":"true"}}
   advanced_posy = 0
   loopbackgroundanimations = true
-  hoverlabel = Options
+  hoverlabel = 
   x = 0
   width = 123
   action = addbutton
@@ -204,7 +204,7 @@ customization {
   advanced_width = {"placeholder":"calc","values":{"expression":"1/2*144*{"placeholder":"guiwidth"}/640","decimal":"true"}}
   advanced_posy = 0
   loopbackgroundanimations = true
-  hoverlabel = Configs
+  hoverlabel = 
   x = 0
   width = 72
   action = addbutton
@@ -280,5 +280,43 @@ customization {
   action = addtexture
   y = 6
   height = 100
+}
+
+customization {
+  advanced_height = {"placeholder":"calc","values":{"expression":"24*{"placeholder":"guiwidth"}/640","decimal":"true"}}
+  orientation = top-left
+  restartbackgroundanimations = true
+  backgroundhovered = resources/fancymenu/gear_button_hover.png
+  label = 
+  advanced_posx = {"placeholder":"calc","values":{"expression":"233*{"placeholder":"guiwidth"}/640","decimal":"true"}}
+  advanced_width = {"placeholder":"calc","values":{"expression":"1/2*48*{"placeholder":"guiwidth"}/640","decimal":"true"}}
+  advanced_posy = {"placeholder":"calc","values":{"expression":"71*{"placeholder":"guiheight"}/360","decimal":"true"}}
+  loopbackgroundanimations = true
+  x = 0
+  width = 24
+  action = addbutton
+  actionid = 265d690e-e02a-49e3-9327-1ad91af79a5d1782951088386
+  y = 0
+  backgroundnormal = resources/fancymenu/gear_button.png
+  height = 24
+}
+
+customization {
+  advanced_height = {"placeholder":"calc","values":{"expression":"25*{"placeholder":"guiwidth"}/640","decimal":"true"}}
+  orientation = top-left
+  restartbackgroundanimations = true
+  backgroundhovered = resources/fancymenu/slider_button_hover.png
+  label = 
+  advanced_posx = {"placeholder":"calc","values":{"expression":"335*{"placeholder":"guiwidth"}/640","decimal":"true"}}
+  advanced_width = {"placeholder":"calc","values":{"expression":"1/2*52*{"placeholder":"guiwidth"}/640","decimal":"true"}}
+  advanced_posy = {"placeholder":"calc","values":{"expression":"92*{"placeholder":"guiheight"}/360","decimal":"true"}}
+  loopbackgroundanimations = true
+  x = 0
+  width = 26
+  action = addbutton
+  actionid = 08dc24c6-09a4-43e5-8119-47d2e71c78be1784064902651
+  y = 0
+  backgroundnormal = resources/fancymenu/slider_button.png
+  height = 25
 }
 

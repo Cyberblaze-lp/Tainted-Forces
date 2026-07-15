@@ -714,9 +714,10 @@
 		<tfc:metal/bucket/red_steel>,
 		<tfctech:latex/vulcanizing_agents>,
 		<thermalexpansion:augment:352>,
-		<tfc:bellows>
+		<tfc:bellows>,
+		<tfc:metal/anvil/copper>
 	]{
-		mods.jei.JEI.hide(item);
+		mods.jei.JEI.removeAndHide(item);
 	}
 //Done!
 

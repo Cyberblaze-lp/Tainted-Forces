@@ -116,16 +116,74 @@ container.addItemEntry(<thaumcraft:seal:13>, 3, 2);
 container.addItemEntry(<extrautils2:scanner>, 5);
 
 
+LootTweaker.getTable("tetra:forged/metal_scrap_salvage").clear();
+LootTweaker.getTable("tetra:forged/metal_scrap_salvage").addPool("forged/metal_scrap_salvage", 3.0, 5.0, 0.0, 2.0);
 val scrap = LootTweaker.getTable("tetra:forged/metal_scrap_salvage").getPool("forged/metal_scrap_salvage");
-scrap.addItemEntry(<tfc:metal/nugget/black_steel>, 1, 3);
-scrap.addItemEntry(<tfc:metal/nugget/steel>, 1, 2);
+
+scrap.addItemEntry(<tfc:metal/nugget/black_steel>, 10, 3);
+scrap.addItemEntry(<tfc:metal/nugget/steel>, 10, 2);
 scrap.addItemEntry(<tfc:metal/nugget/wrought_iron>, 4);
-scrap.addItemEntry(<tfc:metal/nugget/titanium>, 1);
-scrap.addItemEntry(<tfc:metal/nugget/tin>, 4);
-scrap.addItemEntry(<tfc:metal/nugget/lead>, 6);
+scrap.addItemEntry(<tfc:metal/nugget/titanium>, 20, 2);
+scrap.addItemEntry(<tfc:metal/nugget/tin>, 40);
+scrap.addItemEntry(<thaumcraft:nugget:5>, 60);
+scrap.addItemEntry(<tfc:metal/nugget/lead>, 60);
+scrap.addItemEntry(<thaumcraft:nugget:7>, 5);
 
 
 
+LootTweaker.getTable("tetra:forged/beam_salvage").clear();
+LootTweaker.getTable("tetra:forged/beam_salvage").addPool("forged/beam_salvage", 3.0, 5.0, 0.0, 2.0);
+val beam = LootTweaker.getTable("tetra:forged/beam_salvage").getPool("forged/beam_salvage");
+
+beam.addItemEntry(<tfc:metal/nugget/black_steel>, 15, 3);
+beam.addItemEntry(<thaumcraft:nugget:5>, 20);
+beam.addItemEntry(<tfc:metal/nugget/steel>, 10, 2);
+beam.addItemEntry(<tfc:metal/nugget/wrought_iron>, 4);
+beam.addItemEntry(<tfc:metal/nugget/titanium>, 40, 2);
+beam.addItemEntry(<tfc:metal/nugget/tin>, 12);
+beam.addItemEntry(<tfc:metal/nugget/lead>, 12);
+beam.addItemEntry(<thaumcraft:nugget:7>, 5);
+beam.addItemEntry(<mysticalmechanics:axle_iron>, 50, 1);
+
+LootTweaker.getTable("tetra:forged/bolt_salvage").clear();
+LootTweaker.getTable("tetra:forged/bolt_salvage").addPool("forged/bolt_salvage", 3.0, 5.0, 0.0, 2.0);
+val bolt = LootTweaker.getTable("tetra:forged/bolt_salvage").getPool("forged/bolt_salvage");
+
+bolt.addItemEntry(<tfc:metal/nugget/black_steel>, 15, 3);
+bolt.addItemEntry(<tfc:metal/nugget/bronze>, 4);
+bolt.addItemEntry(<tfc:metal/nugget/platinum>, 40, 2);
+bolt.addItemEntry(<tfc:metal/ingot/copper>, 12);
+bolt.addItemEntry(<tfc:metal/nugget/copper>, 12);
+bolt.addItemEntry(<thaumcraft:nugget:5>, 60);
+bolt.addItemEntry(<thaumcraft:nugget:7>, 5);
+bolt.addItemEntry(<tfc:brass_mechanisms>, 50, 1);
+
+LootTweaker.getTable("tetra:forged/vent_plate_salvage").clear();
+LootTweaker.getTable("tetra:forged/vent_plate_salvage").addPool("forged/vent_plate_salvage", 3.0, 5.0, 0.0, 2.0);
+val vent = LootTweaker.getTable("tetra:forged/vent_plate_salvage").getPool("forged/vent_plate_salvage");
+
+vent.addItemEntry(<tfc:metal/nugget/black_steel>, 15, 3);
+vent.addItemEntry(<tfc:metal/sheet/bronze>, 4);
+vent.addItemEntry(<tfc:metal/nugget/platinum>, 40, 2);
+vent.addItemEntry(<tfc:metal/sheet/copper>, 12);
+vent.addItemEntry(<tfc:metal/nugget/copper>, 12);
+vent.addItemEntry(<thaumcraft:nugget:5>, 30);
+vent.addItemEntry(<thaumcraft:plate:3>, 5);
+vent.addItemEntry(<mekanism:polyethene:2>, 30, 1);
+vent.addItemEntry(<thaumcraft:nugget:7>, 5);
+vent.addItemEntry(<contenttweaker:taint_tendril>, 5);
+
+LootTweaker.getTable("tetra:forged/mesh_salvage").clear();
+LootTweaker.getTable("tetra:forged/mesh_salvage").addPool("forged/mesh_salvage", 3.0, 5.0, 0.0, 2.0);
+val mesh = LootTweaker.getTable("tetra:forged/mesh_salvage").getPool("forged/mesh_salvage");
+
+mesh.addItemEntry(<tfc:metal/nugget/black_steel>, 15, 3);
+mesh.addItemEntry(<tfc:metal/nugget/steel>, 4);
+mesh.addItemEntry(<tfc:metal/nugget/tin>, 40, 2);
+mesh.addItemEntry(<thaumcraft:nugget:5>, 30);
+mesh.addItemEntry(<cyberware:component:2>, 40, 1);
+mesh.addItemEntry(<thaumcraft:nugget:7>, 15);
+mesh.addItemEntry(<contenttweaker:taint_tendril>, 50);
 
 
 

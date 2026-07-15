@@ -24,6 +24,7 @@
 
 // ================================================================================
 //#MARKER ADD SHAPELESS
+recipes.addShapeless(<botania:lens>, [<botania:manaresource>, <ore:blockGlass>, <ore:blockGlass>, <ore:blockGlass>, <ore:blockGlass>]);
 recipes.addShapeless(<botania:manacookie> * 2, [<ore:dustRedstone>, <ore:powderMana>, <ore:powderMana>, <ore:powderMana>, <ore:powderMana>, <ore:powderMana>, <liquid:water>*1000]);
 recipes.addShapeless(<minecraft:book>, [<ore:paper>, <ore:paper>, <ore:paper>, <ore:lumber>, <ore:lumber>, <ore:string>]);
 recipes.addShapeless(<tconevo:material>, [<ore:ingotBlueSteel>, <ore:ingotThaumium>, <ore:ingotThaumium>, <ore:ingotThaumium>, <appliedenergistics2:material:47>]);

@@ -5,6 +5,10 @@ import native.net.minecraft.client.gui.inventory.GuiInventory;
 import native.net.minecraft.util.ResourceLocation;
 import native.net.minecraft.client.renderer.GlStateManager;
 
+/*And on a comment these words appear:
+"My name is Flare, scripter of mixins:
+Look on my works, ye Mighty, and despair!" 
+*/
 
 
 //makes thequark oddities backpack render on the side of the inv. 
@@ -72,6 +76,7 @@ zenClass MoveBackpackGUI extends GuiInventory {
     #mixin Overwrite
     function func_146976_a(parttialTicks as float, mouseX as int, mouseY as int) as void
     {
+        this0.field_147045_u = false;
         super.func_146976_a(parttialTicks, mouseX, mouseY);
 
         GlStateManager.func_179131_c(1.0F, 1.0F, 1.0F, 1.0F);
@@ -82,6 +87,7 @@ zenClass MoveBackpackGUI extends GuiInventory {
         this0.func_73729_b(i, j, 0, 0, 60, this0.field_147000_g);
     }
 
+    
 
     #mixin ModifyConstant {method: "func_73866_w_", constant:{intValue: 29}}
     function noOffsetY1(value as int) as int
@@ -95,4 +101,5 @@ zenClass MoveBackpackGUI extends GuiInventory {
     {
         return 166;
     }
+    
 }
