@@ -1,18 +1,19 @@
+
 {
     "parent": "builtin/image",
     "image": "customloadingscreen:image/tainted_forces/memory_bar.png",
     "position_type": "CENTER",
     "offset_pos": "CENTER",
     "position": {
-        "y": "screen_height * 0.5 - 165 * screen_height / 1088 -memory_used() * screen_height * 287 /1088 /2 / memory_total()",
-        "x": "-screen_width * 0.5 + 335 * screen_width / 1920",
-        "height": "-memory_used() * screen_height * 287 /1088 / memory_total()",
-        "width": "screen_width * 55 /1920"
+        "x": "(-0.5*1920 + 569 + 780*(memory_used())/2 /memory_total())*screen_width/1920",
+        "y": "(-0.5*1080 + 868) *screen_height / 1080",
+        "height": "screen_height *35 /1080",
+        "width": "memory_used()* screen_width * 780 /1920 / memory_total() "
     },
     "texture": {
         "x": "0",
         "y": "0",
-        "height": "memory_used() / memory_total()",
-        "width": "1"
+        "height": "screen_height * 35/1080",
+        "width": "4"
     }
 }

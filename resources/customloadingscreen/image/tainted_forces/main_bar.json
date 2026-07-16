@@ -4,15 +4,15 @@
     "position_type": "CENTER",
     "offset_pos": "CENTER",
     "position": {
-        "y": "screen_height* 0.5 - 165 *screen_height / 1088 -(percentage * screen_height *293 /1088 /2)",
-        "x": "-screen_width* 0.5 + 187 *screen_width / 1920",
-        "height": "-percentage * screen_height *293 /1088",
-        "width": "screen_width * 103 /1920 "
+        "x": "(-0.5*1920 + 569 + 780*percentage/2)*screen_width/1920",
+        "y": "(-0.5*1080 + 836) *screen_height / 1080",
+        "height": "screen_height *35 /1088",
+        "width": "percentage* screen_width * 780 /1920 "
     },
     "texture": {
         "x": "0",
         "y": "0",
-        "height": "percentage",
-        "width": "1"
+        "height": "screen_height * 35/1080",
+        "width": "4"
     }
 }
