@@ -4,6 +4,7 @@ import mods.modularmachinery.RecipeFinishEvent;
 import mods.modularmachinery.RecipeStartEvent;
 import mods.modularmachinery.RecipeCheckEvent;
 import mods.modularmachinery.MachineTickEvent;
+import mods.modularmachinery.RecipeTickEvent;
 import native.net.dries007.tfc.objects.blocks.stone.BlockOreTFC;
 import native.net.dries007.tfc.objects.items.metal.ItemOreTFC;
 import native.net.dries007.tfc.world.classic.worldgen.WorldGenOreVeins;
@@ -541,6 +542,14 @@ mods.modularmachinery.RecipeBuilder.newBuilder("basicflux", "calcifier_t0", 300)
         if !isPowerEnough(20.0f, event.controller)
         {
             event.setFailed("no power or attempting to use solid fuel recipe");
+        }
+
+    })
+    .addPreTickHandler(function(event as RecipeTickEvent)
+    {
+        if !isPowerEnough(20.0f, event.controller)
+        {
+            event.setFailed(false, "No power or attempting to use solid fuel recipe");
         }
 
     })
