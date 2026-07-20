@@ -5,10 +5,10 @@ import native.net.minecraft.client.gui.inventory.GuiInventory;
 import native.net.minecraft.util.ResourceLocation;
 import native.net.minecraft.client.renderer.GlStateManager;
 
-/*And on a comment these words appear:
-"My name is Flare, scripter of mixins:
-Look on my works, ye Mighty, and despair!" 
-*/
+//And on a comment these words appear:
+//"My name is Flare, scripter of mixins:
+//Look on my works, ye Modders, and despair!" 
+
 
 
 //makes thequark oddities backpack render on the side of the inv. 
