@@ -1,0 +1,40 @@
+# This is the default extra filter file for Async Logger. The filters in this file (and any other *.toml files in this directory) are combined with the filters in the main config.
+# You can freely write comments and format this file as you wish - it will not get overwritten.
+[filtering]
+	levels = []
+	#Messages logged by loggers with the specified names will be filtered out and not logged.
+	loggers = [
+        "thelm.jaopca.modules.ModuleHandler", 
+        "net.minecraft.client.audio.SoundHandler", 
+        "org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider",
+        "blusunrize.immersiveengineering.common.util.compat.RailcraftHelper",
+        "de.keksuccino.fancymenu.menu.animation.ResourcePackAnimationRenderer",
+        "immersivetech",
+        "net.minecraft.advancements.AdvancementManager",
+        "net.minecraft.advancements.AdvancementList",
+        "com.personthecat.cavegenerator.config.PresetReader"
+    ]
+	#Messages containing the specified substrings will be filtered out and not logged.
+	strings = [
+        #Railcraft
+        "Module performing stage", 
+        "as a recipe, but it was missing an ingredient", 
+        "mods.railcraft.common.blocks.aesthetics.post.BlockPostMetalBase.defineRecipes", 
+        #Tconstruct api
+        "Registered head drop for", 
+        "Registered entity melting for",
+        #LibVulpes
+        "Sucessfully added recipe to", 
+        #LibVulpes
+        "Overwriting recipe true", 
+        #StellarCore
+        "java.lang.RuntimeException: broken aspect ratio and not an animation",
+        "Parsing error loading recipe",
+        "Parsing error loading built-in advancement",
+        "org.embeddedt.vintagefix.util.FastFileNotFoundException",
+        #BlahajASM log spam on crash
+        "Failed to reflectively call untransformName",
+        "Failed to untransform class name"
+    ]
+	#Messages that match the specified regexes will be filtered out and not logged.
+	regexes = []
