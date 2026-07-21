@@ -9,12 +9,12 @@
 		},
 		{
 			"addonId": 1214906,
-			"fileId": 7292567,
+			"fileId": 8471479,
 			"metadata": {
 				"side": "CLIENT"
 			},
 			"installationPolicy": {
-				"description": "Optional! Downloads Cleanroom Relauncher Unofficial from CurseForge. This mod will load Tainted Forces with Cleanroom Loader, a fork of Forge, allowing for Java 24 to be used. For many, this will reduce memory usage and startup time, increase world generation speed, and other performance improvements. However, some users have reported a significant performance decrease, especially on older systems. Try it and compare with/without Cleanroom Relauncher. Note that you must have a Java 21+ runtime installation to use this. https://www.graalvm.org/downloads/"
+				"description": "Optional! Downloads Cleanroom Relauncher Unofficial from CurseForge. This mod will load Tainted Forces with Cleanroom Loader, a fork of Forge, allowing for Java 24 to be used. For many, this will reduce memory usage and startup time, increase world generation speed, and other performance improvements. However, some users have reported a significant performance decrease, especially on older systems. Try it and compare with/without Cleanroom Relauncher. Note that you must have a Java 25+ runtime installation to use this. https://www.graalvm.org/downloads/"
 			}
 		
 		}
