@@ -25,12 +25,13 @@
         "Registered entity melting for",
         #LibVulpes
         "Sucessfully added recipe to", 
-        #LibVulpes
         "Overwriting recipe true", 
         #StellarCore
         "java.lang.RuntimeException: broken aspect ratio and not an animation",
+        #Advancements
         "Parsing error loading recipe",
         "Parsing error loading built-in advancement",
+        #Model issues. VFIX + SCORE
         "org.embeddedt.vintagefix.util.FastFileNotFoundException",
         #BlahajASM log spam on crash
         "Failed to reflectively call untransformName",
