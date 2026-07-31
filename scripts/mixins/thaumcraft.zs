@@ -1,19 +1,31 @@
 #loader mixin
+import native.baubles.api.BaubleType;
 import native.java.util.ArrayList;
 import native.java.util.Iterator;
+import native.net.minecraft.block.Block;
 import native.net.minecraft.block.BlockFlower;
 import native.net.minecraft.block.material.Material;
+import native.net.minecraft.block.state.IBlockState;
 import native.net.minecraft.entity.Entity;
-import native.net.minecraft.init.Blocks;
 import native.net.minecraft.entity.EntityLivingBase;
+import native.net.minecraft.init.Blocks;
 import native.net.minecraft.item.ItemStack;
+import native.net.minecraft.util.BlockRenderLayer;
+import native.net.minecraft.util.EnumFacing;
 import native.net.minecraft.util.math.BlockPos;
 import native.net.minecraft.world.World;
 import native.net.minecraftforge.common.IPlantable;
-import native.thaumcraft.api.ThaumcraftMaterials;
+import native.roidrole.tfutils.config.TFUtilsConfig;
 import native.thaumcraft.api.aura.AuraHelper;
 import native.thaumcraft.api.blocks.BlocksTC;
+import native.thaumcraft.api.items.IRechargable;
+import native.thaumcraft.api.items.RechargeHelper;
+import native.thaumcraft.api.ThaumcraftMaterials;
 import native.thaumcraft.common.blocks.IBlockFacing;
+import native.thaumcraft.common.blocks.world.taint.BlockTaintFibre;
+import native.thaumcraft.common.blocks.world.taint.BlockTaintLog;
+import native.thaumcraft.common.blocks.world.taint.TaintHelper;
+import native.thaumcraft.common.config.ModConfig;
 import native.thaumcraft.common.config.ModConfig.CONFIG_MISC;
 import native.thaumcraft.common.config.ModConfig.CONFIG_WORLD;
 import native.thaumcraft.common.entities.monster.tainted.EntityTaintSeed;
@@ -22,12 +34,7 @@ import native.thaumcraft.common.lib.utils.EntityUtils;
 import native.thaumcraft.common.lib.utils.Utils;
 import native.thaumcraft.common.world.aura.AuraHandler;
 import native.thaumcraft.common.world.aura.AuraThread;
-import native.thaumcraft.api.items.IRechargable;
-import native.thaumcraft.api.items.RechargeHelper;
-import native.net.minecraft.block.Block;
-import native.net.minecraft.util.BlockRenderLayer;
 import native.thecodex6824.thaumicaugmentation.common.item.ItemThaumostaticHarness;
-import native.baubles.api.BaubleType;
 
 
 
@@ -292,7 +299,114 @@ zenClass MixinAdvCrossbowRange {
 }
 
 
+#mixin {targets: "thaumcraft.common.blocks.world.taint.TaintHelper"}
+zenClass MixinTaintHelper {
+    #mixin Overwrite
+    function spreadFibres(world as World, pos as BlockPos, ignore as bool) as void {
+		if(!ignore && ModConfig.CONFIG_MISC.wussMode){
+			return;
+		}
+		val mod as float = AuraHandler.getFluxSaturation(world, pos) * 2.0F;
+		if(!ignore && (world.rand.nextFloat() > ModConfig.CONFIG_WORLD.taintSpreadRate * mod)){
+			return;
+		}
+		if(!TaintHelper.isNearTaintSeed(world, pos)){
+			return;
+		}
+		val xx as int = pos.getX() + world.rand.nextInt(3) - 1;
+		val yy as int = pos.getY() + world.rand.nextInt(3) - 1;
+		val zz as int = pos.getZ() + world.rand.nextInt(3) - 1;
+		val t as BlockPos = BlockPos(xx, yy, zz);
+		if (t.equals(pos)) {
+			return;
+		}
 
+		val blockState as IBlockState = world.getBlockState(t);
+		val material as Material = blockState.getMaterial();
+		val hardness as float = blockState.getBlockHardness(world, t);
+		if (hardness < 0.0F || hardness > 10.0F) {
+			return;
+		}
+
+		if (!blockState.getBlock().isLeaves(blockState, world, t) && !material.isLiquid() && (world.isAirBlock(t) || blockState.getBlock().isReplaceable(world, t) || blockState.getBlock() instanceof BlockFlower || blockState.getBlock() instanceof IPlantable) && BlockUtils.isAdjacentToSolidBlock(world, t) && !BlockTaintFibre.isOnlyAdjacentToTaint(world, t)) {
+			world.setBlockState(t, BlocksTC.taintFibre.getDefaultState());
+			world.addBlockEvent(t, BlocksTC.taintFibre, 1, 0);
+			AuraHelper.drainFlux(world, t, 0.01F, false);
+			return;
+		}
+
+		var entity as EntityTaintSeed;
+		if (blockState.getBlock().isLeaves(blockState, world, t)) {
+			var face as EnumFacing;
+			if (world.rand.nextFloat() as double < 0.6D && (face = BlockUtils.getFaceBlockTouching(world, t, BlocksTC.taintLog)) != null) {
+				world.setBlockState(t, BlocksTC.taintFeature.getDefaultState().withProperty(IBlockFacing.FACING, face.getOpposite()));
+			} else {
+				world.setBlockState(t, BlocksTC.taintFibre.getDefaultState());
+				world.addBlockEvent(t, BlocksTC.taintFibre, 1, 0);
+				AuraHelper.drainFlux(world, t, 0.01F, false);
+			}
+
+			return;
+		}
+
+		if (BlockTaintFibre.isHemmedByTaint(world, t) && Utils.isWoodLog(world, t) && blockState.getMaterial() != ThaumcraftMaterials.MATERIAL_TAINT) {
+			world.setBlockState(t, BlocksTC.taintLog.getDefaultState().withProperty(BlockTaintLog.AXIS, BlockUtils.getBlockAxis(world, t)));
+			return;
+		}
+		//TODO: Make the max hardness dependent on taint evolution
+		if (BlockTaintFibre.isHemmedByTaint(world, t) && blockState.getBlockHardness(world, t) < 5.0F) {
+			if (blockState.getBlock() == Blocks.RED_MUSHROOM_BLOCK || blockState.getBlock() == Blocks.BROWN_MUSHROOM_BLOCK || material == Material.GOURD || material == Material.CACTUS || material == Material.CORAL || material == Material.SPONGE || material == Material.WOOD) {
+				world.setBlockState(t, BlocksTC.taintCrust.getDefaultState());
+				world.addBlockEvent(t, BlocksTC.taintCrust, 1, 0);
+				AuraHelper.drainFlux(world, t, 0.01F, false);
+				return;
+			}
+
+			if (material == Material.SAND || material == Material.GROUND || material == Material.GRASS || material == Material.CLAY) {
+				world.setBlockState(t, BlocksTC.taintSoil.getDefaultState());
+				world.addBlockEvent(t, BlocksTC.taintSoil, 1, 0);
+				AuraHelper.drainFlux(world, t, 0.01F, false);
+				return;
+			}
+
+			if (material == Material.ROCK && mod > TFUtilsConfig.rockTaintificationThreashold) {
+				world.setBlockState(t, BlocksTC.taintRock.getDefaultState());
+				world.addBlockEvent(t, BlocksTC.taintRock, 1, 0);
+				AuraHelper.drainFlux(world, t, 0.02F, false);
+				return;
+			}
+
+			if (material == Material.IRON && mod > TFUtilsConfig.rockTaintificationThreashold && world.getGameRules().getInt("taintEvo") > TFUtilsConfig.metalMinEvo){
+				world.setBlockState(t, BlocksTC.taintCrust.getDefaultState());
+				world.addBlockEvent(t, BlocksTC.taintRock, 1, 0);
+				AuraHelper.drainFlux(world, t, 0.02F, false);
+				return;
+			}
+
+			if (material == Material.GLASS && mod > TFUtilsConfig.rockTaintificationThreashold && world.getGameRules().getInt("taintEvo") > TFUtilsConfig.metalMinEvo){
+				world.setBlockState(t, BlocksTC.taintRock.getDefaultState());
+				world.addBlockEvent(t, BlocksTC.taintRock, 1, 0);
+				AuraHelper.drainFlux(world, t, 0.02F, false);
+				return;
+			}
+		}
+
+		if (
+			(blockState.getBlock() == BlocksTC.taintFibre || blockState.getBlock() == BlocksTC.taintSoil || blockState.getBlock() == BlocksTC.taintRock)
+		 && world.isAirBlock(t.up())
+		 && AuraHelper.getFlux(world, t) >= 5.0F
+		 && (world.rand.nextFloat() as double) < ((ModConfig.CONFIG_WORLD.taintSpreadRate as double) / 100.0F) * 0.33D
+		 && TaintHelper.isAtTaintSeedEdge(world, t)
+		){
+			entity = EntityTaintSeed(world);
+			entity.setLocationAndAngles(t.getX() as float + 0.5F, t.up().getY(), t.getZ() as float + 0.5F, world.rand.nextInt(360) as float, 0.0F);
+			if (entity.getCanSpawnHere()) {
+				AuraHelper.drainFlux(world, t, 5.0F, false);
+				world.spawnEntity(entity);
+			}
+		}
+    }
+}
 
 
 
