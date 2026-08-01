@@ -35,7 +35,9 @@
         "org.embeddedt.vintagefix.util.FastFileNotFoundException",
         #BlahajASM log spam on crash
         "Failed to reflectively call untransformName",
-        "Failed to untransform class name"
+        "Failed to untransform class name",
+        #All those signatures "Errors"
+        "is expecting signature"
     ]
 	#Messages that match the specified regexes will be filtered out and not logged.
 	regexes = []
