@@ -15,7 +15,6 @@ import native.net.minecraft.util.EnumFacing;
 import native.net.minecraft.util.math.BlockPos;
 import native.net.minecraft.world.World;
 import native.net.minecraftforge.common.IPlantable;
-import native.roidrole.tfutils.config.TFUtilsConfig;
 import native.thaumcraft.api.aura.AuraHelper;
 import native.thaumcraft.api.blocks.BlocksTC;
 import native.thaumcraft.api.items.IRechargable;
@@ -298,9 +297,12 @@ zenClass MixinAdvCrossbowRange {
     
 }
 
-
 #mixin {targets: "thaumcraft.common.blocks.world.taint.TaintHelper"}
 zenClass MixinTaintHelper {
+
+    val rockTaintificationThreashold as float = 0.35f;
+    val metalMinEvo as int = 10000;
+    
     #mixin Overwrite
     function spreadFibres(world as World, pos as BlockPos, ignore as bool) as void {
 		if(!ignore && ModConfig.CONFIG_MISC.wussMode){
@@ -369,21 +371,21 @@ zenClass MixinTaintHelper {
 				return;
 			}
 
-			if (material == Material.ROCK && mod > TFUtilsConfig.rockTaintificationThreashold) {
+			if (material == Material.ROCK && mod > rockTaintificationThreashold) {
 				world.setBlockState(t, BlocksTC.taintRock.getDefaultState());
 				world.addBlockEvent(t, BlocksTC.taintRock, 1, 0);
 				AuraHelper.drainFlux(world, t, 0.02F, false);
 				return;
 			}
 
-			if (material == Material.IRON && mod > TFUtilsConfig.rockTaintificationThreashold && world.getGameRules().getInt("taintEvo") > TFUtilsConfig.metalMinEvo){
+			if (material == Material.IRON && mod > rockTaintificationThreashold && world.getGameRules().getInt("taintEvo") > metalMinEvo){
 				world.setBlockState(t, BlocksTC.taintCrust.getDefaultState());
 				world.addBlockEvent(t, BlocksTC.taintRock, 1, 0);
 				AuraHelper.drainFlux(world, t, 0.02F, false);
 				return;
 			}
 
-			if (material == Material.GLASS && mod > TFUtilsConfig.rockTaintificationThreashold && world.getGameRules().getInt("taintEvo") > TFUtilsConfig.metalMinEvo){
+			if (material == Material.GLASS && mod > rockTaintificationThreashold && world.getGameRules().getInt("taintEvo") > metalMinEvo){
 				world.setBlockState(t, BlocksTC.taintRock.getDefaultState());
 				world.addBlockEvent(t, BlocksTC.taintRock, 1, 0);
 				AuraHelper.drainFlux(world, t, 0.02F, false);
