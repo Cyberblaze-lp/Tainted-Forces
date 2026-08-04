@@ -64,28 +64,39 @@ events.onEntityJoinWorld(function (event as crafttweaker.event.EntityJoinWorldEv
             val entityPosOffset = crafttweaker.world.IBlockPos.create(x - 16 , -60, z - 16) as IBlockPos;
 
         if (mods.ctutils.utils.Math.getRandom().nextInt(0, 2) == 1)
+        //Warning: the following content has been called "so cursed" and "crazy" by unnecessarymb.
+        //Consider everything in these brackets an Infohazard
         {
-          
-            var posModX as int = x & - 16;
-            var posModZ as int = z & -16;
+            //seriously, turn back now
 
+
+            //roid's suggestion. effectively just deletes the last 4 bits of the blockPos, making the result chunk-aligned
+            var alignedPosX as int = x & -16;
+            var alignedPosZ as int = z & -16;
+
+            //yepp, put a catenation around the whole thing bc there was some stupid race condition
             event.world.catenation()
 				.sleep(10)
 				.then(function(world, context) 
                 {
-				    server.commandManager.executeCommandSilent(event.entity, "fill " + toString(posModX) + " 4 " + toString(posModZ) + " " + toString(posModX +2) + " 4 " + toString(posModZ + 2) + " minecraft:air" );
+                    //fill a chunk-aligned box with air
+				    server.commandManager.executeCommandSilent(event.entity, "fill " + toString(alignedPosX) + " 4 " + toString(alignedPosZ) + " " + toString(alignedPosX +2) + " 4 " + toString(alignedPosZ + 2) + " minecraft:air" );
                 })
 				
 				.sleep(1)
 				.then(function(world, context)
                 {
+                    //tp the cart 1 chunkin negative x and z
                     event.entity.setPosition(entityPosOffset);
+
+                    //spawn a chunk-aligned container at y= 4 in the chunk in +x +z direction
+                    //the other stuff is basically just here to compensate for this
 				    server.commandManager.executeCommandSilent(event.entity, "tgen tetra:forged_container");
 				})
                 .sleep(1)
 				.then(function(world, context)
-                {
-                    server.commandManager.executeCommandSilent(event.entity, "clone " + toString(posModX) + " 4 " + toString(posModZ) + " " + toString(posModX+2 ) + " 4 " + toString(posModZ + 2) + " ~17 16 ~17 replace move" );
+                {//actually move the container to where we want it
+                    server.commandManager.executeCommandSilent(event.entity, "clone " + toString(alignedPosX) + " 4 " + toString(alignedPosZ) + " " + toString(alignedPosX+2 ) + " 4 " + toString(alignedPosZ + 2) + " ~17 16 ~17 replace move" );
 				})
                 .sleep(1)
                 .then(function(world, context)

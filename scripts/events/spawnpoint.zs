@@ -1,4 +1,5 @@
 import crafttweaker.event.PlayerChangedDimensionEvent;
+import crafttweaker.event.PlayerLoggedInEvent;
 import crafttweaker.command.ICommandManager;
 import crafttweaker.events.IEventManager;
 import crafttweaker.block.IBlock;
@@ -9,10 +10,16 @@ import crafttweaker.player.IPlayer;
 import mods.zenutils.Catenation;
 import crafttweaker.potions.IPotionEffect;
 import crafttweaker.potions.IPotion;
+import crafttweaker.entity.IEntity;
+import crafttweaker.util.Position3f;
 
+// sets your spawn back in overworld so you don't have to walk for miles if you die
 events.onPlayerChangedDimension(function(event as crafttweaker.event.PlayerChangedDimensionEvent){
+	
 if(event.to != 0 || event.from !=-3 || event.player.hasGameStage("setspawn")){
+	
 	return;
+	
 }
 		event.toWorld.catenation()
 				
@@ -41,4 +48,24 @@ if(event.to != 0 || event.from !=-3 || event.player.hasGameStage("setspawn")){
 			
 			
 });
+
+//I'll make my own perfectspawn, with blackjack and hookers!
+
+events.onPlayerLoggedIn(function(event as crafttweaker.event.PlayerLoggedInEvent){
+	if (event.player.hasGameStage("beentospace"))
+	{
+		return;
+	}
+	
+
+	var entityPlayer = event.player as IEntity;
+	event.player.addGameStage("beentospace");
+	val x as int = -12693;
+	val y as int = 58;
+	val z as int = -9781;
+	server.commandManager.executeCommandSilent(event.player, "forge setdimension @s -3 "+ toString(x) + " " + toString(y) + " " + toString(z));
+
+
+});
+
 

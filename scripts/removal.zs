@@ -803,6 +803,8 @@
 
 	mods.terrafirmacraft.Barrel.removeRecipe(<tfctech:latex/rubber_mix>*6);
 	mods.terrafirmacraft.Barrel.removeRecipe(<minecraft:clay_ball>);
+	mods.terrafirmacraft.Barrel.removeRecipe(<liquid:olive_oil_water>);
+
 
 	mods.immersiveengineering.Squeezer.removeFluidRecipe(<liquid:plantoil>);
 
@@ -894,6 +896,9 @@
 	mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:bellows>);
 	mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:essentia_output>);
 	mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:essentia_input>);
+	mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:pattern_crafter>);
+	mods.thaumcraft.ArcaneWorkbench.removeRecipe(<mystgears:crafter_mechanical>);
+
 
 //Done!
 
