@@ -172,10 +172,11 @@ DieselHandler.addDrillFuel(<liquid:refined_biofuel>);
 mods.immersiveengineering.DieselHandler.addFuel(<liquid:refined_fuel>, 3);
 mods.immersiveengineering.DieselHandler.addFuel(<liquid:refined_biofuel>, 2);
 mods.immersiveengineering.DieselHandler.addFuel(<liquid:liquefacted_lumen>, 3);
-mods.immersiveengineering.DieselHandler.addFuel(<liquid:shallowbreath>, 1);
-mods.immersiveengineering.Mixer.addRecipe(<liquid:liquefacted_lumen>*8000, <liquid:creosote>*1000,[<thaumcraft:alumentum>*2,<ore:nuggetQuicksilver>,<thebetweenlands:items_misc:44>], 30000);
 GasTurbine.addFuel(<liquid:carbon_dioxide> * 2000, <liquid:liquefacted_lumen>*250, 10);
 
+mods.terrafirmacraft.Barrel.addRecipe("lumen1", <thaumcraft:alumentum>*16, <liquid:creosote> * 10000, null, <liquid:liquefacted_lumen>*2000, 12);
+mods.terrafirmacraft.Barrel.addRecipe("lumen2", <thaumcraft:alumentum>*16, <liquid:ethanol> * 2000, null, <liquid:liquefacted_lumen>*3000, 12);
+mods.terrafirmacraft.Barrel.addRecipe("lumen3", <thaumcraft:alumentum>*8, <liquid:olive_oil> * 1000, null, <liquid:liquefacted_lumen>*5000, 12);
 
 
 <contenttweaker:taint_tendril>.displayName = "Taint Tendril";

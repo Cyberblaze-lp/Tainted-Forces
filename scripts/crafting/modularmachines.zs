@@ -122,8 +122,6 @@ mods.modularmachinery.RecipeBuilder.newBuilder("basicflux", "calcifier_t0", 300)
         cloud.rotationPitch = mods.ctutils.utils.Math.getRandom().nextInt(0, 314) as float / 100.0f;
         pb.initParticle(cloud);
         pb.particles.add(cloud);
-        val tm = Minecraft.getMinecraft().getTextureManager();
-        val rpm = RotatingParticleManager(world, tm);
         cloud.spawnAsWeatherEffect();
         cloud.setGravity(-1.3f*yfactor);
         cloud.setFacePlayer(true);
