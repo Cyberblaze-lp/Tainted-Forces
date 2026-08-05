@@ -297,12 +297,16 @@ zenClass MixinAdvCrossbowRange {
     
 }
 
+
+//Overwrite spreadFibres method so we can modify it
+//Mostly for integrating taint evolution and different cutoff I don't really remember, but this is load-bearing
 #mixin {targets: "thaumcraft.common.blocks.world.taint.TaintHelper"}
 zenClass MixinTaintHelper {
 
-    val rockTaintificationThreashold as float = 0.35f;
-    val metalMinEvo as int = 10000;
+    static rockTaintificationThreashold as float = 0.35f;
+    static metalMinEvo as int = 10000;
     
+    #mixin Static
     #mixin Overwrite
     function spreadFibres(world as World, pos as BlockPos, ignore as bool) as void {
 		if(!ignore && ModConfig.CONFIG_MISC.wussMode){
