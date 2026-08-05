@@ -9,6 +9,12 @@ import native.net.minecraft.client.renderer.GlStateManager;
 //"My name is Flare, scripter of mixins:
 //Look on my works, ye Modders, and despair!" 
 
+//"what" -Vazkii
+//"ZenScript?!?!?!" -Titop54
+//"what the hell you SCRIPTED this?"-deepacat
+//"Oh how far you've come"-roidrole
+//"how did you manage this"-CalaMariGold
+
 
 
 //makes thequark oddities backpack render on the side of the inv. 
@@ -76,6 +82,7 @@ zenClass MoveBackpackGUI extends GuiInventory {
     #mixin Overwrite
     function func_146976_a(parttialTicks as float, mouseX as int, mouseY as int) as void
     {
+        //sets activePotionEffects to false before calling the superclass. disables the potion effect display
         this0.field_147045_u = false;
         super.func_146976_a(parttialTicks, mouseX, mouseY);
 

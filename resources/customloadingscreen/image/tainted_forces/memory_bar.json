@@ -5,10 +5,10 @@
     "position_type": "CENTER",
     "offset_pos": "CENTER",
     "position": {
-        "x": "(-0.5*1920 + 569 + 780*(memory_used())/2 /memory_total())*screen_width/1920",
+        "x": "(-0.5*1920 + 569 + 780*(memory_used())/2 /memory_max())*screen_width/1920",
         "y": "(-0.5*1080 + 868) *screen_height / 1080",
         "height": "screen_height *35 /1080",
-        "width": "memory_used()* screen_width * 780 /1920 / memory_total() "
+        "width": "memory_used()* screen_width * 780 /1920 / memory_max() "
     },
     "texture": {
         "x": "0",

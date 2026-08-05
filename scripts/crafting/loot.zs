@@ -22,10 +22,10 @@ for item in [
 }
 
 val dungeon = LootTweaker.getTable("minecraft:chests/simple_dungeon");
-dungeon.removePool("ic2");
+dungeon.clear();
+dungeon.addPool("main", 3.0, 5.0, 0.0, 2.0);
 val dungeonMain = dungeon.getPool("main");
 
-dungeonMain.removeEntry("quark:ancient_tome");
 
 dungeonMain.addItemEntry(<thaumcraft:amulet_vis>, 2000);
 dungeonMain.addItemEntry(<thaumcraft:curio>, 4000);
@@ -47,8 +47,8 @@ dungeonMain.addItemEntry(<thaumcraft:baubles:3>, 1000);
 dungeonMain.addItemEntry(<thaumcraft:pech_wand>, 2000);
 dungeonMain.addItemEntry(<thaumcraft:curio:6>, 3000);
 
-val dungeonEnchant = dungeon.addPool("tf:enchants", 1, 2, 0, 0);
-dungeonEnchant.addConditions([Conditions.randomChance(0.50)]);
+val dungeonEnchant = dungeon.addPool("tf:enchants", 4, 5, 0, 0);
+dungeonEnchant.addConditions([Conditions.randomChance(1.0)]);
 
 for enchant in game.enchantments {
     var weight as int;
