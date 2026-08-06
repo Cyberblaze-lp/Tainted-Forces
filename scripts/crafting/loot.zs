@@ -1,6 +1,7 @@
 import loottweaker.LootTweaker;
 import loottweaker.Functions;
 import loottweaker.Conditions;
+import loottweaker.LootPool;
 
 for item in [
     "minecraft:iron_ingot", 
@@ -47,41 +48,34 @@ dungeonMain.addItemEntry(<thaumcraft:baubles:3>, 1000);
 dungeonMain.addItemEntry(<thaumcraft:pech_wand>, 2000);
 dungeonMain.addItemEntry(<thaumcraft:curio:6>, 3000);
 
-val dungeonEnchant = dungeon.addPool("tf:enchants", 4, 5, 0, 0);
-dungeonEnchant.addConditions([Conditions.randomChance(1.0)]);
 
-for enchant in game.enchantments {
-    var weight as int;
-    if(enchant.registryName has "minecraft"){
-        weight = 4;
-    } else {
-        weight = 2;
+
+
+function addEnchBooks(pool as LootPool){
+    
+
+    for enchant in game.enchantments {
+        var weight as int;
+        if(enchant.registryName has "minecraft"){
+            weight = 4;
+        } else {
+            weight = 2;
+        }
+        pool.addItemEntry(<minecraft:enchanted_book>, weight, 2, [
+            Functions.zenscript(function(stack, random, context){
+                return <minecraft:enchanted_book>.withTag(
+                    {StoredEnchantments: [{lvl: random.nextInt(1, enchant.maxLevel), id: enchant.id}]}
+                );
+            })
+        ], []);
     }
-    dungeonEnchant.addItemEntry(<minecraft:enchanted_book>, weight, 2, [
-        Functions.zenscript(function(stack, random, context){
-            return <minecraft:enchanted_book>.withTag(
-                {StoredEnchantments: [{lvl: random.nextInt(1, enchant.maxLevel), id: enchant.id}]}
-            );
-        })
-    ], []);
 }
 
-dungeonEnchant.addItemEntry(<quark:ancient_tome>.withTag({StoredEnchantments: [{lvl: 5 , id: 32 }]}), 1, 4);
-dungeonEnchant.addItemEntry(<quark:ancient_tome>.withTag({StoredEnchantments: [{lvl: 3 , id: 34 }]}), 1, 4);
-dungeonEnchant.addItemEntry(<quark:ancient_tome>.withTag({StoredEnchantments: [{lvl: 3 , id: 35 }]}), 1, 4);
-dungeonEnchant.addItemEntry(<quark:ancient_tome>.withTag({StoredEnchantments: [{lvl: 5 , id: 48 }]}), 1, 4);
-dungeonEnchant.addItemEntry(<quark:ancient_tome>.withTag({StoredEnchantments: [{lvl: 2 , id: 49 }]}), 1, 4);
-dungeonEnchant.addItemEntry(<quark:ancient_tome>.withTag({StoredEnchantments: [{lvl: 3 , id: 61 }]}), 1, 4);
-dungeonEnchant.addItemEntry(<quark:ancient_tome>.withTag({StoredEnchantments: [{lvl: 3 , id: 62 }]}), 1, 4);
-dungeonEnchant.addItemEntry(<quark:ancient_tome>.withTag({StoredEnchantments: [{lvl: 4 , id: 2 }]}), 1, 4);
-dungeonEnchant.addItemEntry(<quark:ancient_tome>.withTag({StoredEnchantments: [{lvl: 3 , id: 7 }]}), 1, 4);
-dungeonEnchant.addItemEntry(<quark:ancient_tome>.withTag({StoredEnchantments: [{lvl: 5 , id: 16 }]}), 1, 4);
-dungeonEnchant.addItemEntry(<quark:ancient_tome>.withTag({StoredEnchantments: [{lvl: 5 , id: 17 }]}), 1, 4);
-dungeonEnchant.addItemEntry(<quark:ancient_tome>.withTag({StoredEnchantments: [{lvl: 5 , id: 18 }]}), 1, 4);
-dungeonEnchant.addItemEntry(<quark:ancient_tome>.withTag({StoredEnchantments: [{lvl: 2 , id: 19 }]}), 1, 4);
-dungeonEnchant.addItemEntry(<quark:ancient_tome>.withTag({StoredEnchantments: [{lvl: 2 , id: 20 }]}), 1, 4);
-dungeonEnchant.addItemEntry(<quark:ancient_tome>.withTag({StoredEnchantments: [{lvl: 3 , id: 21 }]}), 1, 4);
-dungeonEnchant.addItemEntry(<quark:ancient_tome>.withTag({StoredEnchantments: [{lvl: 3 , id: 22 }]}), 1, 4);
+
+val dungeonEnchant = dungeon.addPool("tf:enchants", 2, 3, 0, 0);
+dungeonEnchant.addConditions([Conditions.randomChance(0.8)]);
+addEnchBooks(dungeonEnchant);
+
 
 
 
@@ -89,6 +83,9 @@ val container = LootTweaker.getTable("tetra:forged/container_content").getPool("
 container.removeEntry("minecraft:diamond");
 container.removeEntry("minecraft:emerald");
 container.removeEntry("minecraft:golden_rail");
+val containerEnchant = LootTweaker.getTable("tetra:forged/container_content").addPool("tf:enchants", 2, 3, 0, 4);
+containerEnchant.addConditions([Conditions.randomChance(0.8)]);
+addEnchBooks(containerEnchant);
 
 
 container.addItemEntry(<quark:ancient_tome>.withTag({StoredEnchantments: [{lvl: 5 , id: 32 }]}), 1);

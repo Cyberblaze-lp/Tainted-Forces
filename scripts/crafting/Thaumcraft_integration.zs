@@ -9,12 +9,12 @@ import native.thaumcraft.api.aspects.AspectList;
 
 import mods.thaumcraft.Infusion;
 import mods.immersiveengineering.DieselHandler;
-import mods.immersivetechnology.GasTurbine;
+
 import mods.terrafirmacraft.Alloy;
 import mods.terrafirmacraft.Anvil;
 import mods.terrafirmacraft.ItemRegistry;
 import mods.thaumcraft.ArcaneWorkbench;
-import mods.immersivetechnology.MeltingCrucible;
+
 import mods.thaumcraft.Crucible;
 import crafttweaker.item.IItemStack;
 
@@ -172,7 +172,6 @@ DieselHandler.addDrillFuel(<liquid:refined_biofuel>);
 mods.immersiveengineering.DieselHandler.addFuel(<liquid:refined_fuel>, 3);
 mods.immersiveengineering.DieselHandler.addFuel(<liquid:refined_biofuel>, 2);
 mods.immersiveengineering.DieselHandler.addFuel(<liquid:liquefacted_lumen>, 3);
-GasTurbine.addFuel(<liquid:carbon_dioxide> * 2000, <liquid:liquefacted_lumen>*250, 10);
 
 mods.terrafirmacraft.Barrel.addRecipe("lumen1", <thaumcraft:alumentum>*16, <liquid:creosote> * 10000, null, <liquid:liquefacted_lumen>*2000, 12);
 mods.terrafirmacraft.Barrel.addRecipe("lumen2", <thaumcraft:alumentum>*16, <liquid:ethanol> * 2000, null, <liquid:liquefacted_lumen>*3000, 12);

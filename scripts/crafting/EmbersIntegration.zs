@@ -5,8 +5,6 @@ import mods.terrafirmacraft.Welding;
 import mods.terrafirmacraft.Anvil;
 import mods.embers.Mixer;
 import mods.thaumcraft.Infusion;
-import mods.immersivetechnology.GasTurbine;
-import mods.immersivetechnology.SteamTurbine;
 import mods.embers.Melter;
 import mods.thermalexpansion.CompressionDynamo;
 import mods.thermalexpansion.Refinery;
@@ -21,12 +19,6 @@ mods.embers.Mixer.add(<liquid:uranium>, [<liquid:thorium>*2,<liquid:liquid_death
 
 
 //energy generation rebalancing
-mods.immersivetechnology.SteamTurbine.addFuel(<liquid:exhauststeam>*400, <liquid:steam> * 400, 1);
-
-
-
-GasTurbine.addFuel(null, <liquid:shallowbreath> * 10,15 );
-
 
 mods.magneticraft.FluidFuel.addFuel(<liquid:refined_fuel>*120, 2000, 400.0);
 mods.magneticraft.FluidFuel.addFuel(<liquid:refined_biofuel>*120, 2000, 400.0);
