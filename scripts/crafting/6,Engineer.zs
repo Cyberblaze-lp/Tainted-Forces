@@ -61,10 +61,6 @@ mods.ic2.ThermalCentrifuge.addRecipe([<ic2:nuclear:7>,<ic2:nuclear:2>*4,<tfc:met
 mods.ic2.ThermalCentrifuge.addRecipe([<ic2:nuclear:7>*2,<ic2:nuclear:2>*8,<tfc:metal/dust/black_steel>*2], <ic2:nuclear:12>, 100);
 mods.ic2.ThermalCentrifuge.addRecipe([<ic2:nuclear:7>*4,<ic2:nuclear:2>*16,<tfc:metal/dust/black_steel>*5], <ic2:nuclear:13>, 100);
 
-
-mods.immersivetechnology.SolarTower.addRecipe(<liquid:ic2hot_coolant>, <liquid:ic2coolant>, 1);
-mods.immersivetechnology.Radiator.addRecipe(<liquid:ic2distilled_water>*100,<liquid:exhauststeam>*800, 40);
-mods.immersivetechnology.Radiator.addRecipe(<liquid:ic2distilled_water>*100,<liquid:steam>*800, 80);
 mods.thermalexpansion.Pulverizer.addRecipe(<tfc:metal/dust/bismuth_bronze>, <tfc:metal/ingot/bismuth_bronze>, 2000);
 
 mods.thermalexpansion.RedstoneFurnace.addRecipe(<tfc:ceramics/fired/mold/ingot>, <tfc:ceramics/unfired/mold/ingot>, 3600);

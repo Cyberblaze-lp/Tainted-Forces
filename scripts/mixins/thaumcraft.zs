@@ -303,8 +303,9 @@ zenClass MixinAdvCrossbowRange {
 #mixin {targets: "thaumcraft.common.blocks.world.taint.TaintHelper"}
 zenClass MixinTaintHelper {
 
-    static rockTaintificationThreashold as float = 0.35f;
-    static metalMinEvo as int = 10000;
+    static rockTaintificationThreashold as float = 0.15f;
+    static metalMinEvo as int = 3*3*3 *600;
+    static rockMinEvo as int = 2*2*2 *600;
     
     #mixin Static
     #mixin Overwrite
@@ -375,7 +376,7 @@ zenClass MixinTaintHelper {
 				return;
 			}
 
-			if (material == Material.ROCK && mod > rockTaintificationThreashold) {
+			if (material == Material.ROCK && mod > rockTaintificationThreashold && world.getGameRules().getInt("taintEvo") > metalMinEvo) {
 				world.setBlockState(t, BlocksTC.taintRock.getDefaultState());
 				world.addBlockEvent(t, BlocksTC.taintRock, 1, 0);
 				AuraHelper.drainFlux(world, t, 0.02F, false);

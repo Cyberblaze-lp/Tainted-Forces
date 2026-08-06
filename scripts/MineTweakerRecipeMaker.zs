@@ -24,6 +24,7 @@
 
 // ================================================================================
 //#MARKER ADD SHAPELESS
+recipes.addShapeless(<tfc:metal/nugget/pig_iron> * 9, [<ore:ingotPigIron>]);
 recipes.addShapeless(<botania:lens>, [<botania:manaresource>, <ore:blockGlass>, <ore:blockGlass>, <ore:blockGlass>, <ore:blockGlass>]);
 recipes.addShapeless(<botania:manacookie> * 2, [<ore:dustRedstone>, <ore:powderMana>, <ore:powderMana>, <ore:powderMana>, <ore:powderMana>, <ore:powderMana>, <liquid:water>*1000]);
 recipes.addShapeless(<minecraft:book>, [<ore:paper>, <ore:paper>, <ore:paper>, <ore:lumber>, <ore:lumber>, <ore:string>]);
@@ -50,6 +51,7 @@ recipes.addShapeless(<ic2:reactor_heat_vent>, [<ic2:heat_vent>, <ic2:crafting:7>
 
 // ================================================================================
 //#MARKER ADD SHAPED
+recipes.addShaped(<tfc:metal/ingot/pig_iron>, [[<ore:nuggetPigIron>, <ore:nuggetPigIron>, <ore:nuggetPigIron>], [<ore:nuggetPigIron>, <ore:nuggetPigIron>, <ore:nuggetPigIron>], [<ore:nuggetPigIron>, <ore:nuggetPigIron>, <ore:nuggetPigIron>]]);
 recipes.addShaped(<tconstruct:wooden_hopper> * 2, [[<ore:lumber>, null, <ore:lumber>], [<ore:lumber>, <ore:gearWood>, <ore:lumber>], [null, <ore:lumber>, null]]);
 recipes.addShaped(<minecraft:cauldron>, [[<ore:ingotLead>, null, <ore:ingotLead>], [<ore:ingotLead>, null, <ore:ingotLead>], [<ore:ingotLead>, <ore:ingotLead>, <ore:ingotLead>]]);
 recipes.addShaped(<rustichromia:assembler2>, [[<magneticraft:inserter>, <magneticraft:inserter>, <magneticraft:inserter>], [<thaumcraft:mechanism_simple>, <ore:gearIron>, <thaumcraft:mechanism_simple>], [<ore:plateIron>, <ore:plateIron>, <ore:plateIron>]]);

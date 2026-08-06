@@ -666,15 +666,6 @@
 //Done!
 
 
-//Immersive Technology
-	mods.immersivetechnology.SteamTurbine.removeFuel(<liquid:steam>);
-
-	mods.immersivetechnology.GasTurbine.removeFuel(<liquid:gasoline>);
-	mods.immersivetechnology.GasTurbine.removeFuel(<liquid:biodiesel>);
-	mods.immersivetechnology.GasTurbine.removeFuel(<liquid:diesel>);
-	mods.immersivetechnology.GasTurbine.removeFuel(<liquid:kerosene>);
-
-	mods.immersivetechnology.MeltingCrucible.removeRecipe(<minecraft:cobblestone>);
 
 //Done! 
 

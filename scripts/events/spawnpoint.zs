@@ -66,7 +66,7 @@ events.onPlayerLoggedIn(function(event as crafttweaker.event.PlayerLoggedInEvent
 	val x as int = -12693;
 	val y as int = 58;
 	val z as int = -9781;
-	server.commandManager.executeCommandSilent(event.player, "forge setdimension " + event.player.name + " -3 "+ toString(x) + " " + toString(y) + " " + toString(z));
+	//server.commandManager.executeCommandSilent(server, "forge setdimension " + event.player.name + " -3 "+ toString(x) + " " + toString(y) + " " + toString(z));
 	
 
 });
