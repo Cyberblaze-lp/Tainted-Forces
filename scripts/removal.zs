@@ -432,7 +432,8 @@
 		<thermalfoundation:material:514>,
 		<thermalfoundation:material:515>,
 		<weather2:weather_deflector>,
-		<weather2:weather_machine>
+		<weather2:weather_machine>,
+		<tconstruct:wooden_hopper>
 	]{
 		recipes.remove(output);
 	}

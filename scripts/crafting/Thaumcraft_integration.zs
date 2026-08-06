@@ -109,8 +109,8 @@ mods.inworldcrafting.ExplosionCrafting.explodeItemRecipe(<ic2:nuclear:7>*40, <ic
 mods.thaumcraft.Infusion.registerRecipe("EMBERCRYSTALLIZATION", "EMBERCRYSTALLIZATION", <embers:crystal_ember>, 1, [<aspect:ordo>*10, <aspect:vitreus>*10], <thaumcraft:alumentum>, [<embers:dust_ember>,<embers:dust_ember>]);
 
 
-mods.thaumcraft.Infusion.registerRecipe("URANIUMROD", "NUCLEAR", <ic2:uranium_fuel_rod>, 7, [<aspect:potentia>*150, <aspect:mortuus>*100, <aspect:alkimia>*50], <ic2:nuclear:0>, [<ore:plateZircaloy>,<ore:plateZircaloy>,<embers:blasting_core>]);
-mods.thaumcraft.Infusion.registerRecipe("MOXROD", "NUCLEAR", <ic2:mox_fuel_rod>, 7, [<aspect:potentia>*150, <aspect:mortuus>*100, <aspect:alkimia>*50], <ic2:nuclear:4>, [<ore:plateZircaloy>,<ore:plateZircaloy>,<embers:blasting_core>]);
+mods.thaumcraft.Infusion.registerRecipe("URANIUMROD", "NUCLEAR", <ic2:uranium_fuel_rod>, 7, [<aspect:potentia>*150, <aspect:mortuus>*100, <aspect:alkimia>*50], <ic2:nuclear:0>, [<ore:plateBlackSteel>,<ore:plateBlackSteel>,<embers:blasting_core>]);
+mods.thaumcraft.Infusion.registerRecipe("MOXROD", "NUCLEAR", <ic2:mox_fuel_rod>, 7, [<aspect:potentia>*150, <aspect:mortuus>*100, <aspect:alkimia>*50], <ic2:nuclear:4>, [<ore:plateBlackSteel>,<ore:plateBlackSteel>,<embers:blasting_core>]);
 
 
 
