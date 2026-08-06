@@ -50,6 +50,7 @@ recipes.addShapeless(<ic2:reactor_heat_vent>, [<ic2:heat_vent>, <ic2:crafting:7>
 
 // ================================================================================
 //#MARKER ADD SHAPED
+recipes.addShaped(<tconstruct:wooden_hopper> * 2, [[<ore:lumber>, null, <ore:lumber>], [<ore:lumber>, <ore:gearWood>, <ore:lumber>], [null, <ore:lumber>, null]]);
 recipes.addShaped(<minecraft:cauldron>, [[<ore:ingotLead>, null, <ore:ingotLead>], [<ore:ingotLead>, null, <ore:ingotLead>], [<ore:ingotLead>, <ore:ingotLead>, <ore:ingotLead>]]);
 recipes.addShaped(<rustichromia:assembler2>, [[<magneticraft:inserter>, <magneticraft:inserter>, <magneticraft:inserter>], [<thaumcraft:mechanism_simple>, <ore:gearIron>, <thaumcraft:mechanism_simple>], [<ore:plateIron>, <ore:plateIron>, <ore:plateIron>]]);
 recipes.addShaped(<rustichromia:quern>, [[null, <ore:stickIron>, null], [<ore:concrete>, <ore:gearIron>, <ore:concrete>], [<ore:concrete>, <ore:concrete>, <ore:concrete>]]);
@@ -233,7 +234,6 @@ recipes.addShaped(<botania:opencrate:1>, [[<ore:powderMana>, <ore:workbench>, <o
 recipes.addShaped(<ic2:crafting:8>, [[<thermaldynamics:duct_16:1>, <thermaldynamics:duct_16:1>, <thermaldynamics:duct_16:1>], [<thermaldynamics:duct_16:1>, <thermaldynamics:duct_16:1>, <thermaldynamics:duct_16:1>]]);
 recipes.addShaped(<thermaldynamics:duct_16:1> * 6, [[<ore:plateCopper>, <ore:plateCopper>, <ore:plateCopper>]]);
 recipes.addShaped(<immersiveengineering:metal_device1:6> * 24, [[<ore:plateSteel>, <ore:plateSteel>, <ore:plateSteel>],[null,null,null], [<ore:plateSteel>, <ore:plateSteel>, <ore:plateSteel>]]);
-recipes.addShaped(<tconstruct:wooden_hopper>, [[<ore:lumberOak>, null, <ore:lumberOak>], [<ore:lumberOak>, <ore:gearWood>, <ore:lumberOak>], [null, <ore:lumberOak>, null]]);
 recipes.addShaped(<ic2:nuclear:4>, [[<ore:blockUranium>, <ore:blockUranium>, <ore:blockUranium>], [<ore:blockUranium>, <ic2:nuclear:3>, <ore:blockUranium>], [<ore:blockUranium>, <ore:blockUranium>, <ore:blockUranium>]]);
 
 recipes.addShaped(<ic2:overclocked_heat_vent> * 2, [[<ore:stickElectrum>, <cyberware:component:2>, <ore:stickElectrum>], [<ore:stickElectrum>, <ore:fanSteel>, <ore:stickElectrum>], [<ore:stickElectrum>, <cyberware:component:2>, <ore:stickElectrum>]]);

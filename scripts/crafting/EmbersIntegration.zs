@@ -139,8 +139,9 @@ mods.embers.Alchemy.add(<embers:dust_metallurgic>*5,[<thaumcraft:nugget:5>,<mine
 mods.embers.Alchemy.add(<embers:blasting_core>,[<minecraft:fire_charge>,<ore:plateIron>,<ore:gearIron>,<ic2:crafting:8>,<ore:plateIron>],{"copper":(0 to 16)});
 
 
-mods.embers.DawnstoneAnvil.add([<tfc:metal/ingot/high_carbon_steel>,<immersiveengineering:material:7>], <tfc:metal/ingot/pig_iron>,null);
-mods.embers.DawnstoneAnvil.add([<tfc:metal/ingot/steel>,<tfc:powder/charcoal>], <tfc:metal/ingot/high_carbon_steel>,null);
+mods.embers.DawnstoneAnvil.add([<tfc:metal/nugget/steel>*2], <tfc:metal/nugget/pig_iron>,null);
+mods.embers.DawnstoneAnvil.add([<tfc:metal/nugget/steel>*3], <tfc:metal/nugget/pig_iron>,<tfc:metal/nugget/pig_iron>);
+
 
 mods.embers.DawnstoneAnvil.add([<tfc:metal/ingot/black_steel>, <tfc:metal/nugget/black_steel>*5],<tfc:metal/ingot/weak_steel>, <tfc:metal/ingot/pig_iron>);
 mods.embers.DawnstoneAnvil.add([<tfc:metal/ingot/red_steel>, <tfc:metal/nugget/red_steel>*5],<tfc:metal/ingot/weak_red_steel>, <tfc:metal/ingot/black_steel>);
