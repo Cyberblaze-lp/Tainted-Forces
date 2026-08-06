@@ -21,15 +21,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "autoclaim:1": 0,
-          "name:8": "Salvaging the Wreckage",
           "snd_complete:8": "minecraft:entity.player.levelup",
           "issilent:1": 0,
           "repeattime:3": -1,
-          "globalshare:1": 0,
+          "name:8": "Salvaging the Wreckage",
+          "autoclaim:1": 0,
+          "desc:8": "",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": ""
+          "globalshare:1": 0
         }
       },
       "questID:3": 0,
@@ -46,7 +46,13 @@
           "icon:10": {
             "Count:3": 1,
             "Damage:2": 0,
-            "id:8": "minecraft:nether_star",
+            "ForgeCaps:10": {
+              "Parent:10": {
+                "Items:9": {},
+                "Size:3": 2
+              }
+            },
+            "id:8": "immersiveengineering:skyhook",
             "OreDict:8": ""
           },
           "questlogic:8": "AND",
@@ -54,20 +60,22 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
+          "repeattime:3": -1,
+          "name:8": "New Quest",
           "autoclaim:1": 0,
           "issilent:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "name:8": "New Quest",
-          "repeattime:3": -1,
-          "desc:8": "No Description",
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "No Description"
         }
       },
       "questID:3": 1,
       "rewards:9": {},
-      "preRequisites:11": []
+      "preRequisites:11": [
+        49
+      ]
     },
     "2:10": {
       "tasks:9": {},
@@ -85,15 +93,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "autoclaim:1": 0,
-          "issilent:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
           "name:8": "New Quest",
           "repeattime:3": -1,
-          "desc:8": "No Description",
+          "issilent:1": 0,
+          "autoclaim:1": 0,
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "No Description"
         }
       },
       "questID:3": 2,
@@ -116,15 +124,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "issilent:1": 0,
           "repeattime:3": -1,
           "name:8": "New Quest",
           "autoclaim:1": 0,
-          "desc:8": "No Description",
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "No Description"
         }
       },
       "questID:3": 3,
@@ -147,15 +155,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "autoclaim:1": 0,
-          "issilent:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
           "name:8": "New Quest",
           "repeattime:3": -1,
-          "desc:8": "No Description",
+          "issilent:1": 0,
+          "autoclaim:1": 0,
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "No Description"
         }
       },
       "questID:3": 4,
@@ -178,15 +186,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "autoclaim:1": 0,
-          "issilent:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
           "name:8": "Tainted Animal Autopsy",
           "repeattime:3": -1,
-          "desc:8": "No Description",
+          "issilent:1": 0,
+          "autoclaim:1": 0,
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "No Description"
         }
       },
       "questID:3": 5,
@@ -211,15 +219,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "autoclaim:1": 0,
-          "issilent:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
           "name:8": "New Quest",
           "repeattime:3": -1,
-          "desc:8": "No Description",
+          "issilent:1": 0,
+          "autoclaim:1": 0,
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "No Description"
         }
       },
       "questID:3": 6,
@@ -242,15 +250,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "name:8": "New Quest",
           "repeattime:3": -1,
           "issilent:1": 0,
           "autoclaim:1": 0,
-          "globalshare:1": 0,
+          "name:8": "New Quest",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "desc:8": "No Description",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "No Description"
+          "globalshare:1": 0
         }
       },
       "questID:3": 7,
@@ -275,15 +283,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "name:8": "New Quest",
           "repeattime:3": -1,
           "issilent:1": 0,
           "autoclaim:1": 0,
-          "globalshare:1": 0,
+          "name:8": "New Quest",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "desc:8": "No Description",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "No Description"
+          "globalshare:1": 0
         }
       },
       "questID:3": 8,
@@ -308,15 +316,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "name:8": "New Quest",
           "repeattime:3": -1,
           "issilent:1": 0,
           "autoclaim:1": 0,
-          "globalshare:1": 0,
+          "name:8": "New Quest",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "desc:8": "No Description",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "No Description"
+          "globalshare:1": 0
         }
       },
       "questID:3": 9,
@@ -341,15 +349,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "name:8": "New Quest",
           "repeattime:3": -1,
           "issilent:1": 0,
           "autoclaim:1": 0,
-          "globalshare:1": 0,
+          "name:8": "New Quest",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "desc:8": "No Description",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "No Description"
+          "globalshare:1": 0
         }
       },
       "questID:3": 10,
@@ -374,15 +382,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "name:8": "New Quest",
           "repeattime:3": -1,
           "issilent:1": 0,
           "autoclaim:1": 0,
-          "globalshare:1": 0,
+          "name:8": "New Quest",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "desc:8": "No Description",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "No Description"
+          "globalshare:1": 0
         }
       },
       "questID:3": 11,
@@ -449,15 +457,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "autoclaim:1": 0,
-          "name:8": "Tissue Samples",
           "snd_complete:8": "minecraft:entity.player.levelup",
           "issilent:1": 0,
           "repeattime:3": -1,
-          "globalshare:1": 0,
+          "name:8": "Tissue Samples",
+          "autoclaim:1": 0,
+          "desc:8": "In order to better understand the nature of this \"Taint\", you should gather samples of biomass. \n\nMost of these shoud be easily obtainable from infected creatures, though in a pinch some of the tainted blocks can drop them aswell.",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "In order to better understand the nature of this \"Taint\", you should gather samples of biomass. \n\nMost of these shoud be easily obtainable from infected creatures, though in a pinch some of the tainted blocks can drop them aswell."
+          "globalshare:1": 0
         }
       },
       "questID:3": 12,
@@ -488,15 +496,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "repeattime:3": -1,
-          "name:8": "Pollution Mechanics",
           "autoclaim:1": 0,
           "issilent:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "globalshare:1": 0,
+          "name:8": "Pollution Mechanics",
+          "repeattime:3": -1,
+          "desc:8": "By now you surely ought to have noticed the noxious purple smoke some of your machines give off. It looks strangely taint-colored. Might just be a coincidence though.",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "By now you surely ought to have noticed the noxious purple smoke some of your machines give off. It looks strangely taint-colored. Might just be a coincidence though."
+          "globalshare:1": 0
         }
       },
       "questID:3": 13,
@@ -527,15 +535,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "repeattime:3": -1,
-          "name:8": "The Disease",
           "autoclaim:1": 0,
           "issilent:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "globalshare:1": 0,
+          "name:8": "The Disease",
+          "repeattime:3": -1,
+          "desc:8": "What in the- this stuff is completely different to all life as we know it. Fungi and slime molds come close, but it also shares molecules with §osilicone rubber and lead paint§f of all things, aswell as some as of yet unidentified compounds.\nThere\u0027s no way something like this evolved here naturally, it feels out of place even in this biosphere.\n\nFrom what i could tell it also has no metabolism to speak of. As if it was lying dormant, waiting for new food to appear. Whatever that may be.\n\nIt will infect nearby living creatures however, presumably to defend itself in an energy-efficient \nmanner. ",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "What in the- this stuff is completely different to all life as we know it. Fungi and slime molds come close, but it also shares molecules with §osilicone rubber and lead paint§f of all things, aswell as some as of yet unidentified compounds.\nThere\u0027s no way something like this evolved here naturally, it feels out of place even in this biosphere.\n\nFrom what i could tell it also has no metabolism to speak of. As if it was lying dormant, waiting for new food to appear. Whatever that may be.\n\nIt will infect nearby living creatures however, presumably to defend itself in an energy-efficient \nmanner. "
+          "globalshare:1": 0
         }
       },
       "questID:3": 14,
@@ -560,15 +568,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "name:8": "New Quest",
           "repeattime:3": -1,
           "issilent:1": 0,
           "autoclaim:1": 0,
-          "globalshare:1": 0,
+          "name:8": "New Quest",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "desc:8": "No Description",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "No Description"
+          "globalshare:1": 0
         }
       },
       "questID:3": 15,
@@ -593,15 +601,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "name:8": "New Quest",
           "repeattime:3": -1,
           "issilent:1": 0,
           "autoclaim:1": 0,
-          "globalshare:1": 0,
+          "name:8": "New Quest",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "desc:8": "No Description",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "No Description"
+          "globalshare:1": 0
         }
       },
       "questID:3": 16,
@@ -654,15 +662,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "name:8": "Alien Flora",
           "repeattime:3": -1,
           "issilent:1": 0,
           "autoclaim:1": 0,
-          "globalshare:1": 0,
+          "name:8": "Alien Flora",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "desc:8": "First scans show that much of the plantlife here is very familiar- grass, trees, flowers, you name it. However, there are a few that stick out. Would you mind breaking some for examination? Whether you get them back intact does not matter.\n\nNote: any Mystical Flower will work",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "First scans show that much of the plantlife here is very familiar- grass, trees, flowers, you name it. However, there are a few that stick out. Would you mind breaking some for examination? Whether you get them back intact does not matter.\n\nNote: any Mystical Flower will work"
+          "globalshare:1": 0
         }
       },
       "questID:3": 17,
@@ -709,15 +717,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "name:8": "Useless(?) Flowers",
           "repeattime:3": -1,
           "issilent:1": 0,
           "autoclaim:1": 0,
-          "globalshare:1": 0,
+          "name:8": "Useless(?) Flowers",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "desc:8": "These flowers are extraordinary! They emit faint beta radiation and have an otherwise unnatural sparkle to them that I can\u0027t quite describe. Mind sending some samples? Some fertilizer would also be neat so we can propagate them up here. Most nimals here drop bones when killed, so getting some shouldn\u0027t be an issue.",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "These flowers are extraordinary! They emit faint beta radiation and have an otherwise unnatural sparkle to them that I can\u0027t quite describe. Mind sending some samples? Some fertilizer would also be neat so we can propagate them up here. Most nimals here drop bones when killed, so getting some shouldn\u0027t be an issue."
+          "globalshare:1": 0
         }
       },
       "questID:3": 18,
@@ -760,15 +768,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "name:8": "What is this Thing?",
           "repeattime:3": -1,
           "issilent:1": 0,
           "autoclaim:1": 0,
-          "globalshare:1": 0,
+          "name:8": "What is this Thing?",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "desc:8": "This Digital Interface lets you communicate with us Researchers and the crew at large. \nTogether with your Map and \"World Analysis Interpretive Lexicographical Agent\" (WAILA), it is part of a small suite of tools we managed to get to the surface with you unscathed.\n\n\nWhy don\u0027t you check whether the scanner is working and send us a piece of dirt? ",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "This Digital Interface lets you communicate with us Researchers and the crew at large. \nTogether with your Map and \"World Analysis Interpretive Lexicographical Agent\" (WAILA), it is part of a small suite of tools we managed to get to the surface with you unscathed.\n\n\nWhy don\u0027t you check whether the scanner is working and send us a piece of dirt? "
+          "globalshare:1": 0
         }
       },
       "questID:3": 19,
@@ -796,15 +804,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "autoclaim:1": 0,
-          "issilent:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
           "name:8": "You found clay!",
           "repeattime:3": -1,
-          "desc:8": "So this plant isn\u0027t particularly notable in the paranormal sense. However, it only grows on top of §3Clay§f. Might be worth keeping in mind when looking for it.",
+          "issilent:1": 0,
+          "autoclaim:1": 0,
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "So this plant isn\u0027t particularly notable in the paranormal sense. However, it only grows on top of §3Clay§f. Might be worth keeping in mind when looking for it."
         }
       },
       "questID:3": 20,
@@ -830,15 +838,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "issilent:1": 0,
           "repeattime:3": -1,
           "name:8": "New Quest",
           "autoclaim:1": 0,
-          "desc:8": "No Description",
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "No Description"
         }
       },
       "questID:3": 21,
@@ -861,15 +869,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "autoclaim:1": 0,
-          "issilent:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
           "name:8": "Taint Trigger",
           "repeattime:3": -1,
-          "desc:8": "No Description",
+          "issilent:1": 0,
+          "autoclaim:1": 0,
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "No Description"
         }
       },
       "questID:3": 22,
@@ -892,15 +900,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "repeattime:3": -1,
-          "issilent:1": 0,
           "autoclaim:1": 0,
           "name:8": "New Quest",
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "desc:8": "No Description",
+          "issilent:1": 0,
+          "repeattime:3": -1,
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "No Description"
         }
       },
       "questID:3": 23,
@@ -961,15 +969,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "issilent:1": 0,
           "repeattime:3": -1,
           "name:8": "Floral Fusion",
           "autoclaim:1": 0,
-          "desc:8": "Ok so you won\u0027t believe this, but I just went to wash the petals you sent and somehow they spontaneously fused into... this? It does look mildly more useful than the other flowers by themselves.\n\n\nLet\u0027s see if you can replicate the process. A stone basin filled with water should be enough. Throw in some petals in a valid combination aswell as a seed to finish it.Looks like it just ate my lead crystal seeds so it should really not matter what type. ",
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "Ok so you won\u0027t believe this, but I just went to wash the petals you sent and somehow they spontaneously fused into... this? It does look mildly more useful than the other flowers by themselves.\n\n\nLet\u0027s see if you can replicate the process. A stone basin filled with water should be enough. Throw in some petals in a valid combination aswell as a seed to finish it.Looks like it just ate my lead crystal seeds so it should really not matter what type. "
         }
       },
       "questID:3": 24,
@@ -997,15 +1005,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "issilent:1": 0,
           "repeattime:3": -1,
           "name:8": "New Quest",
           "autoclaim:1": 0,
-          "desc:8": "No Description",
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "No Description"
         }
       },
       "questID:3": 25,
@@ -1033,15 +1041,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "autoclaim:1": 0,
-          "issilent:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
           "name:8": "New Quest",
           "repeattime:3": -1,
-          "desc:8": "No Description",
+          "issilent:1": 0,
+          "autoclaim:1": 0,
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "No Description"
         }
       },
       "questID:3": 26,
@@ -1066,15 +1074,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "autoclaim:1": 0,
-          "issilent:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
           "name:8": "New Quest",
           "repeattime:3": -1,
-          "desc:8": "No Description",
+          "issilent:1": 0,
+          "autoclaim:1": 0,
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "No Description"
         }
       },
       "questID:3": 27,
@@ -1100,15 +1108,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "issilent:1": 0,
           "repeattime:3": -1,
           "name:8": "New Quest",
           "autoclaim:1": 0,
-          "desc:8": "No Description",
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "No Description"
         }
       },
       "questID:3": 28,
@@ -1133,15 +1141,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "autoclaim:1": 0,
-          "issilent:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
           "name:8": "New Quest",
           "repeattime:3": -1,
-          "desc:8": "No Description",
+          "issilent:1": 0,
+          "autoclaim:1": 0,
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "No Description"
         }
       },
       "questID:3": 29,
@@ -1164,15 +1172,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "autoclaim:1": 0,
-          "issilent:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
           "name:8": "New Quest",
           "repeattime:3": -1,
-          "desc:8": "No Description",
+          "issilent:1": 0,
+          "autoclaim:1": 0,
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "No Description"
         }
       },
       "questID:3": 30,
@@ -1200,21 +1208,1026 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "issilent:1": 0,
           "repeattime:3": -1,
           "name:8": "New Quest",
           "autoclaim:1": 0,
-          "desc:8": "No Description",
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "No Description"
         }
       },
       "questID:3": 31,
       "rewards:9": {},
       "preRequisites:11": [
         24
+      ]
+    },
+    "32:10": {
+      "tasks:9": {},
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "NORMAL",
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "id:8": "embers:fluid_gauge",
+            "OreDict:8": ""
+          },
+          "questlogic:8": "AND",
+          "lockedprogress:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "repeattime:3": -1,
+          "name:8": "New Quest",
+          "autoclaim:1": 0,
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "globalshare:1": 0,
+          "simultaneous:1": 0,
+          "tasklogic:8": "AND",
+          "desc:8": "No Description"
+        }
+      },
+      "questID:3": 32,
+      "rewards:9": {},
+      "preRequisites:11": []
+    },
+    "33:10": {
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "groupDetect:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 2,
+              "Damage:2": 0,
+              "id:8": "clothesline:clothesline_anchor",
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "id:8": "clothesline:clothesline",
+              "OreDict:8": ""
+            }
+          },
+          "partialMatch:1": 1,
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "taskID:8": "bq_standard:retrieval",
+          "ignoreNBT:1": 0
+        }
+      },
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "NORMAL",
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "id:8": "clothesline:clothesline",
+            "OreDict:8": ""
+          },
+          "questlogic:8": "AND",
+          "lockedprogress:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "autoclaim:1": 0,
+          "name:8": "Clotheslines",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "issilent:1": 0,
+          "repeattime:3": -1,
+          "globalshare:1": 0,
+          "simultaneous:1": 0,
+          "tasklogic:8": "AND",
+          "desc:8": "§fAwesome, with Iron and Jute in hand, we can now create §dClotheslines§f. These jute ropes can be used to link §dClothesline Anchors§f, forming a loop that can transport items.\n\nKeep in mind that at least one Anchor must be powered using §6Mechanical Power§f (speed 5.0R or more) Adding more power will speed it up, but it caps out at ~40R.\nAnchors can only accept mechanical power from a block they are directly attached to, and only if they are facing either up or down.\n\nAnchors can be interacted with like regular inventories, but will act like they can only hold 1 item. They will also attempt to auto-output to the block they are attached to.\n\nThe notable benefit of these compared to conveyors is that they are easier to set up and expand. They also go both ways, so every point on the line can be in- or output. Lastly, Clotheslines will get saturated and stop accepting items if all outputs are full. Contrary to conveyor belts which will happily let any excess accumulate on the final belt segment without additional redstone control.\n\nAn annoying caveat is that in order to connect two anchors, §6you have to hold down right-click while dragging your cursor from one to the other§f."
+        }
+      },
+      "questID:3": 33,
+      "rewards:9": {},
+      "preRequisites:11": [
+        34
+      ]
+    },
+    "34:10": {
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "groupDetect:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 32767,
+              "tag:10": {
+                "conveyorType:8": "immersiveengineering:conveyor"
+              },
+              "id:8": "immersiveengineering:conveyor",
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "id:8": "chisel:chisel_iron",
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "Count:3": 1,
+              "Damage:2": 32767,
+              "ForgeCaps:10": {
+                "Parent:10": {
+                  "heat:5": 0.0,
+                  "forge:10": {
+                    "steps:10": {
+                      "second:3": -1,
+                      "third:3": -1,
+                      "last:3": -1
+                    },
+                    "work:3": 0
+                  },
+                  "ticks:4": -1
+                }
+              },
+              "id:8": "tfc:metal/hammer/steel",
+              "OreDict:8": "hammer"
+            }
+          },
+          "partialMatch:1": 1,
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "taskID:8": "bq_standard:retrieval",
+          "ignoreNBT:1": 0
+        }
+      },
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "NORMAL",
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "tag:10": {
+              "conveyorType:8": "immersiveengineering:conveyor"
+            },
+            "id:8": "immersiveengineering:conveyor",
+            "OreDict:8": ""
+          },
+          "questlogic:8": "AND",
+          "lockedprogress:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "autoclaim:1": 0,
+          "name:8": "Basic Item Logistics",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "issilent:1": 0,
+          "repeattime:3": -1,
+          "globalshare:1": 0,
+          "simultaneous:1": 0,
+          "tasklogic:8": "AND",
+          "desc:8": "§dConveyor Belts§f are the simplest way of getting items from A to B.\nThere\u0027s several variants that can all be cycled through using the §dChisel§f. \n\nA §dHammer§f is able to rotate them in any of the 4 cardinal directions. Shift-clicking a regular "
+        }
+      },
+      "questID:3": 34,
+      "rewards:9": {},
+      "preRequisites:11": []
+    },
+    "35:10": {
+      "tasks:9": {},
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "NORMAL",
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "tag:10": {
+              "model:8": "railcraft:default"
+            },
+            "id:8": "railcraft:locomotive_steam_solid",
+            "OreDict:8": ""
+          },
+          "questlogic:8": "AND",
+          "lockedprogress:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "name:8": "New Quest",
+          "repeattime:3": -1,
+          "issilent:1": 0,
+          "autoclaim:1": 0,
+          "globalshare:1": 0,
+          "simultaneous:1": 0,
+          "tasklogic:8": "AND",
+          "desc:8": "No Description"
+        }
+      },
+      "questID:3": 35,
+      "rewards:9": {},
+      "preRequisites:11": [
+        36
+      ]
+    },
+    "36:10": {
+      "tasks:9": {},
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "NORMAL",
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "id:8": "magneticraft:inserter",
+            "OreDict:8": ""
+          },
+          "questlogic:8": "AND",
+          "lockedprogress:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "name:8": "New Quest",
+          "repeattime:3": -1,
+          "issilent:1": 0,
+          "autoclaim:1": 0,
+          "globalshare:1": 0,
+          "simultaneous:1": 0,
+          "tasklogic:8": "AND",
+          "desc:8": "No Description"
+        }
+      },
+      "questID:3": 36,
+      "rewards:9": {},
+      "preRequisites:11": [
+        34
+      ]
+    },
+    "37:10": {
+      "tasks:9": {},
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "NORMAL",
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "id:8": "tconstruct:channel",
+            "OreDict:8": ""
+          },
+          "questlogic:8": "AND",
+          "lockedprogress:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "repeattime:3": -1,
+          "name:8": "Basic Fluid Logistics",
+          "autoclaim:1": 0,
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "globalshare:1": 0,
+          "simultaneous:1": 0,
+          "tasklogic:8": "AND",
+          "desc:8": "§dFaucets §fand §dCasting Channels§f are the simplest form of fluid transport. Their throughput is quite limited and they cannot move liquids vertically upwards. \n\nA Faucet will, if given a redstone signal, pour any liquid from the block it\u0027s attached to into the container below. Should this process stall, either because of the input draining completely or the output filling up, it requires another signal. \n\nChannels have a very limited throughput of ~36 mb/t total."
+        }
+      },
+      "questID:3": 37,
+      "rewards:9": {},
+      "preRequisites:11": []
+    },
+    "38:10": {
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "groupDetect:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 1,
+              "id:8": "thermaldynamics:duct_16",
+              "OreDict:8": ""
+            }
+          },
+          "partialMatch:1": 1,
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "taskID:8": "bq_standard:retrieval",
+          "ignoreNBT:1": 0
+        }
+      },
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "NORMAL",
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 1,
+            "id:8": "thermaldynamics:duct_16",
+            "OreDict:8": ""
+          },
+          "questlogic:8": "AND",
+          "lockedprogress:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "name:8": "Copper Ducts",
+          "repeattime:3": -1,
+          "issilent:1": 0,
+          "autoclaim:1": 0,
+          "globalshare:1": 0,
+          "simultaneous:1": 0,
+          "tasklogic:8": "AND",
+          "desc:8": "Copper is a decently ductile material for making, well, §dDucts§f. \nThese pipes, due to their closed-top nature, have the ability to be pressurized to allow for virtually unlimited throughput. However, valves at the in- and outlets mean that the Throughput §6Per Connection (aka interfacing with machines and tanks, but not other ducts) §fis limited.\n\nFurthermore, thermal stress is a serious concern with these pipes, and as such they will rupture if made to transfer very hot or cold liquids."
+        }
+      },
+      "questID:3": 38,
+      "rewards:9": {},
+      "preRequisites:11": [
+        37
+      ]
+    },
+    "39:10": {
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "groupDetect:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 6,
+              "id:8": "immersiveengineering:metal_device1",
+              "OreDict:8": ""
+            }
+          },
+          "partialMatch:1": 1,
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "taskID:8": "bq_standard:retrieval",
+          "ignoreNBT:1": 0
+        }
+      },
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "NORMAL",
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 6,
+            "id:8": "immersiveengineering:metal_device1",
+            "OreDict:8": ""
+          },
+          "questlogic:8": "AND",
+          "lockedprogress:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "autoclaim:1": 0,
+          "name:8": "Smart Pipes",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "issilent:1": 0,
+          "repeattime:3": -1,
+          "globalshare:1": 0,
+          "simultaneous:1": 0,
+          "tasklogic:8": "AND",
+          "desc:8": "Steel is robust enough to allow for some truly heinous valve trickery. these §dPipes§f have no internal buffer and instead relay fluids directly to their destination. §6This makes it possible to have multiple fluid types flowing through the same pipe. §f\n\nThese pipes work for any temperature fluid.\nhowever, the Speed is fairly limited unless using §dMechanical or Electric Pumps§f between segments.\n\n§TThe Internal mechanisms require outside pressure to not fluctuate too rapidly, say, through §3High Wind Speeds§f.\n\n\n\n"
+        }
+      },
+      "questID:3": 39,
+      "rewards:9": {},
+      "preRequisites:11": [
+        37
+      ]
+    },
+    "40:10": {
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "groupDetect:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 7,
+              "id:8": "thermaldynamics:duct_16",
+              "OreDict:8": ""
+            }
+          },
+          "partialMatch:1": 1,
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "taskID:8": "bq_standard:retrieval",
+          "ignoreNBT:1": 0
+        }
+      },
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "NORMAL",
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 6,
+            "id:8": "thermaldynamics:duct_16",
+            "OreDict:8": ""
+          },
+          "questlogic:8": "AND",
+          "lockedprogress:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "name:8": "Super-Laminar Ducts",
+          "repeattime:3": -1,
+          "issilent:1": 0,
+          "autoclaim:1": 0,
+          "globalshare:1": 0,
+          "simultaneous:1": 0,
+          "tasklogic:8": "AND",
+          "desc:8": "A pricey upgrade to the Copper Ducts.\nThese Pipes can transfer unlimited amounts of liquid of any temperature, now also unrestricted by ports."
+        }
+      },
+      "questID:3": 40,
+      "rewards:9": {},
+      "preRequisites:11": [
+        39
+      ]
+    },
+    "41:10": {
+      "tasks:9": {},
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "NORMAL",
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "id:8": "immersiveintelligence:mechanical_device1",
+            "OreDict:8": ""
+          },
+          "questlogic:8": "AND",
+          "lockedprogress:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "repeattime:3": -1,
+          "name:8": "Fluid Pumps",
+          "autoclaim:1": 0,
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "globalshare:1": 0,
+          "simultaneous:1": 0,
+          "tasklogic:8": "AND",
+          "desc:8": ""
+        }
+      },
+      "questID:3": 41,
+      "rewards:9": {},
+      "preRequisites:11": [
+        37
+      ]
+    },
+    "42:10": {
+      "tasks:9": {},
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "NORMAL",
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "tag:10": {
+              "props:4": 0
+            },
+            "id:8": "thaumcraft:golem",
+            "OreDict:8": ""
+          },
+          "questlogic:8": "AND",
+          "lockedprogress:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "autoclaim:1": 0,
+          "name:8": "New Quest",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "issilent:1": 0,
+          "repeattime:3": -1,
+          "globalshare:1": 0,
+          "simultaneous:1": 0,
+          "tasklogic:8": "AND",
+          "desc:8": "No Description"
+        }
+      },
+      "questID:3": 42,
+      "rewards:9": {},
+      "preRequisites:11": [
+        34
+      ]
+    },
+    "43:10": {
+      "tasks:9": {},
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "NORMAL",
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 5,
+            "id:8": "immersiveengineering:wirecoil",
+            "OreDict:8": ""
+          },
+          "questlogic:8": "AND",
+          "lockedprogress:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "repeattime:3": -1,
+          "name:8": "New Quest",
+          "autoclaim:1": 0,
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "globalshare:1": 0,
+          "simultaneous:1": 0,
+          "tasklogic:8": "AND",
+          "desc:8": "No Description"
+        }
+      },
+      "questID:3": 43,
+      "rewards:9": {},
+      "preRequisites:11": []
+    },
+    "44:10": {
+      "tasks:9": {},
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "NORMAL",
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "id:8": "thaumcraft:grapple_gun",
+            "OreDict:8": ""
+          },
+          "questlogic:8": "AND",
+          "lockedprogress:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "name:8": "New Quest",
+          "repeattime:3": -1,
+          "issilent:1": 0,
+          "autoclaim:1": 0,
+          "globalshare:1": 0,
+          "simultaneous:1": 0,
+          "tasklogic:8": "AND",
+          "desc:8": "No Description"
+        }
+      },
+      "questID:3": 44,
+      "rewards:9": {},
+      "preRequisites:11": [
+        49
+      ]
+    },
+    "45:10": {
+      "tasks:9": {},
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "NORMAL",
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "id:8": "thermaldynamics:duct_64",
+            "OreDict:8": ""
+          },
+          "questlogic:8": "AND",
+          "lockedprogress:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "name:8": "New Quest",
+          "repeattime:3": -1,
+          "issilent:1": 0,
+          "autoclaim:1": 0,
+          "globalshare:1": 0,
+          "simultaneous:1": 0,
+          "tasklogic:8": "AND",
+          "desc:8": "No Description"
+        }
+      },
+      "questID:3": 45,
+      "rewards:9": {},
+      "preRequisites:11": [
+        1
+      ]
+    },
+    "46:10": {
+      "tasks:9": {},
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "NORMAL",
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "ForgeCaps:10": {
+              "Parent:10": {
+                "slots:3": 1
+              }
+            },
+            "id:8": "thaumicaugmentation:thaumostatic_harness",
+            "OreDict:8": ""
+          },
+          "questlogic:8": "AND",
+          "lockedprogress:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "name:8": "New Quest",
+          "repeattime:3": -1,
+          "issilent:1": 0,
+          "autoclaim:1": 0,
+          "globalshare:1": 0,
+          "simultaneous:1": 0,
+          "tasklogic:8": "AND",
+          "desc:8": "No Description"
+        }
+      },
+      "questID:3": 46,
+      "rewards:9": {},
+      "preRequisites:11": [
+        44
+      ]
+    },
+    "47:10": {
+      "tasks:9": {},
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "NORMAL",
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "id:8": "minecraft:lead",
+            "OreDict:8": ""
+          },
+          "questlogic:8": "AND",
+          "lockedprogress:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "repeattime:3": -1,
+          "name:8": "New Quest",
+          "autoclaim:1": 0,
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "globalshare:1": 0,
+          "simultaneous:1": 0,
+          "tasklogic:8": "AND",
+          "desc:8": "No Description"
+        }
+      },
+      "questID:3": 47,
+      "rewards:9": {},
+      "preRequisites:11": []
+    },
+    "48:10": {
+      "tasks:9": {},
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "NORMAL",
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "id:8": "thaumcraft:tube_valve",
+            "OreDict:8": ""
+          },
+          "questlogic:8": "AND",
+          "lockedprogress:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "repeattime:3": -1,
+          "name:8": "New Quest",
+          "autoclaim:1": 0,
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "globalshare:1": 0,
+          "simultaneous:1": 0,
+          "tasklogic:8": "AND",
+          "desc:8": "No Description"
+        }
+      },
+      "questID:3": 48,
+      "rewards:9": {},
+      "preRequisites:11": []
+    },
+    "49:10": {
+      "tasks:9": {},
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "NORMAL",
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "id:8": "minecraft:leather_boots",
+            "OreDict:8": ""
+          },
+          "questlogic:8": "AND",
+          "lockedprogress:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "repeattime:3": -1,
+          "name:8": "New Quest",
+          "autoclaim:1": 0,
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "globalshare:1": 0,
+          "simultaneous:1": 0,
+          "tasklogic:8": "AND",
+          "desc:8": "No Description"
+        }
+      },
+      "questID:3": 49,
+      "rewards:9": {},
+      "preRequisites:11": []
+    },
+    "50:10": {
+      "tasks:9": {},
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "NORMAL",
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "id:8": "mysticalmechanics:axle_iron",
+            "OreDict:8": ""
+          },
+          "questlogic:8": "AND",
+          "lockedprogress:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "repeattime:3": -1,
+          "name:8": "New Quest",
+          "autoclaim:1": 0,
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "globalshare:1": 0,
+          "simultaneous:1": 0,
+          "tasklogic:8": "AND",
+          "desc:8": "No Description"
+        }
+      },
+      "questID:3": 50,
+      "rewards:9": {},
+      "preRequisites:11": []
+    },
+    "51:10": {
+      "tasks:9": {},
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "NORMAL",
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "id:8": "botania:spreader",
+            "OreDict:8": ""
+          },
+          "questlogic:8": "AND",
+          "lockedprogress:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "repeattime:3": -1,
+          "name:8": "New Quest",
+          "autoclaim:1": 0,
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "globalshare:1": 0,
+          "simultaneous:1": 0,
+          "tasklogic:8": "AND",
+          "desc:8": "No Description"
+        }
+      },
+      "questID:3": 51,
+      "rewards:9": {},
+      "preRequisites:11": []
+    },
+    "52:10": {
+      "tasks:9": {},
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "NORMAL",
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "id:8": "minecraft:piston",
+            "OreDict:8": ""
+          },
+          "questlogic:8": "AND",
+          "lockedprogress:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "repeattime:3": -1,
+          "name:8": "New Quest",
+          "autoclaim:1": 0,
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "globalshare:1": 0,
+          "simultaneous:1": 0,
+          "tasklogic:8": "AND",
+          "desc:8": "No Description"
+        }
+      },
+      "questID:3": 52,
+      "rewards:9": {},
+      "preRequisites:11": []
+    },
+    "53:10": {
+      "tasks:9": {},
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "NORMAL",
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "id:8": "signals:block_signal",
+            "OreDict:8": ""
+          },
+          "questlogic:8": "AND",
+          "lockedprogress:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "name:8": "New Quest",
+          "repeattime:3": -1,
+          "issilent:1": 0,
+          "autoclaim:1": 0,
+          "globalshare:1": 0,
+          "simultaneous:1": 0,
+          "tasklogic:8": "AND",
+          "desc:8": "No Description"
+        }
+      },
+      "questID:3": 53,
+      "rewards:9": {},
+      "preRequisites:11": [
+        35
+      ]
+    },
+    "54:10": {
+      "tasks:9": {},
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "NORMAL",
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 4,
+            "id:8": "railcraft:manipulator",
+            "OreDict:8": ""
+          },
+          "questlogic:8": "AND",
+          "lockedprogress:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "name:8": "New Quest",
+          "repeattime:3": -1,
+          "issilent:1": 0,
+          "autoclaim:1": 0,
+          "globalshare:1": 0,
+          "simultaneous:1": 0,
+          "tasklogic:8": "AND",
+          "desc:8": "No Description"
+        }
+      },
+      "questID:3": 54,
+      "rewards:9": {},
+      "preRequisites:11": [
+        35
+      ]
+    },
+    "55:10": {
+      "tasks:9": {},
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "NORMAL",
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "id:8": "minecraft:rail",
+            "OreDict:8": ""
+          },
+          "questlogic:8": "AND",
+          "lockedprogress:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "name:8": "New Quest",
+          "repeattime:3": -1,
+          "issilent:1": 0,
+          "autoclaim:1": 0,
+          "globalshare:1": 0,
+          "simultaneous:1": 0,
+          "tasklogic:8": "AND",
+          "desc:8": "No Description"
+        }
+      },
+      "questID:3": 55,
+      "rewards:9": {},
+      "preRequisites:11": [
+        35
+      ]
+    },
+    "56:10": {
+      "tasks:9": {},
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "NORMAL",
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 3,
+            "id:8": "railcraft:equipment",
+            "OreDict:8": ""
+          },
+          "questlogic:8": "AND",
+          "lockedprogress:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "repeattime:3": -1,
+          "name:8": "New Quest",
+          "autoclaim:1": 0,
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "globalshare:1": 0,
+          "simultaneous:1": 0,
+          "tasklogic:8": "AND",
+          "desc:8": "No Description"
+        }
+      },
+      "questID:3": 56,
+      "rewards:9": {},
+      "preRequisites:11": []
+    },
+    "57:10": {
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "groupDetect:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "id:8": "botania:corporeaspark",
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "Count:3": 1,
+              "Damage:2": 1,
+              "id:8": "botania:corporeaspark",
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "id:8": "botania:corporeaindex",
+              "OreDict:8": ""
+            }
+          },
+          "partialMatch:1": 1,
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "taskID:8": "bq_standard:retrieval",
+          "ignoreNBT:1": 0
+        }
+      },
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "NORMAL",
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "id:8": "botania:corporeaindex",
+            "OreDict:8": ""
+          },
+          "questlogic:8": "AND",
+          "lockedprogress:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "repeattime:3": -1,
+          "name:8": "Basic Corporea Network",
+          "autoclaim:1": 0,
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "globalshare:1": 0,
+          "simultaneous:1": 0,
+          "tasklogic:8": "AND",
+          "desc:8": "I have run some experiments on the §dPink Dust§f you made, and it turns out that with some finesse, you can use it to take care of your §5§dstorage system§f!\n\nPlace regular §dCorporea Sparks§f above any containers you want to link to the network. each network also requires a §dMaster Spark§f to orchestrate everything. The master spark cannot take items from its inventory, so best place it above an index or similar. \n\nThe §dCorporea Index§f is where things get interesting. You can request items from your network using either §a§6Chat §for §6By Pressing C over an item in JEI §fwhile in its range. §6Pressing shift + C requests a stack.\n\n\n§6§5§4§d\n"
+        }
+      },
+      "questID:3": 57,
+      "rewards:9": {},
+      "preRequisites:11": [
+        49
       ]
     }
   },
@@ -1226,14 +2239,14 @@
           "name:8": "The Survivalist",
           "desc:8": "No Descriptio",
           "visibility:8": "NORMAL",
-          "bg_image:8": "",
+          "bg_size:3": 256,
           "icon:10": {
             "Count:3": 1,
             "Damage:2": 0,
             "id:8": "tfc:stone/axe/igneous_extrusive",
             "OreDict:8": ""
           },
-          "bg_size:3": 256
+          "bg_image:8": ""
         }
       },
       "quests:9": {
@@ -1282,7 +2295,7 @@
           "name:8": "The Logistician",
           "desc:8": "§6§aCorporal Logan§f reporting for Duty! I\u0027m from supply chain management and have just been, uh, prematurely promoted to head of logistics.\nIf you have any deliveries to make or need help with getting things where they need to be, come to §mus§f me.",
           "visibility:8": "NORMAL",
-          "bg_image:8": "",
+          "bg_size:3": 256,
           "icon:10": {
             "Count:3": 1,
             "Damage:2": 0,
@@ -1292,16 +2305,198 @@
             "id:8": "railcraft:locomotive_steam_solid",
             "OreDict:8": ""
           },
-          "bg_size:3": 256
+          "bg_image:8": ""
         }
       },
       "quests:9": {
         "0:10": {
           "sizeY:3": 24,
           "id:3": 1,
+          "y:3": -132,
+          "sizeX:3": 24,
+          "x:3": -48
+        },
+        "1:10": {
+          "sizeY:3": 24,
+          "id:3": 32,
+          "y:3": -12,
+          "sizeX:3": 24,
+          "x:3": -324
+        },
+        "2:10": {
+          "sizeY:3": 24,
+          "id:3": 33,
+          "y:3": -132,
+          "sizeX:3": 24,
+          "x:3": -324
+        },
+        "3:10": {
+          "sizeY:3": 24,
+          "id:3": 34,
+          "y:3": -168,
+          "sizeX:3": 24,
+          "x:3": -288
+        },
+        "4:10": {
+          "sizeY:3": 24,
+          "id:3": 35,
+          "y:3": -96,
+          "sizeX:3": 24,
+          "x:3": -252
+        },
+        "5:10": {
+          "sizeY:3": 24,
+          "id:3": 36,
+          "y:3": -132,
+          "sizeX:3": 24,
+          "x:3": -252
+        },
+        "6:10": {
+          "sizeY:3": 24,
+          "id:3": 37,
+          "y:3": -168,
+          "sizeX:3": 24,
+          "x:3": -168
+        },
+        "7:10": {
+          "sizeY:3": 24,
+          "id:3": 38,
+          "y:3": -132,
+          "sizeX:3": 24,
+          "x:3": -168
+        },
+        "8:10": {
+          "sizeY:3": 24,
+          "id:3": 39,
+          "y:3": -132,
+          "sizeX:3": 24,
+          "x:3": -132
+        },
+        "9:10": {
+          "sizeY:3": 24,
+          "id:3": 40,
+          "y:3": -96,
+          "sizeX:3": 24,
+          "x:3": -132
+        },
+        "10:10": {
+          "sizeY:3": 24,
+          "id:3": 41,
+          "y:3": -132,
+          "sizeX:3": 24,
+          "x:3": -204
+        },
+        "11:10": {
+          "sizeY:3": 24,
+          "id:3": 42,
+          "y:3": -132,
+          "sizeX:3": 24,
+          "x:3": -288
+        },
+        "12:10": {
+          "sizeY:3": 24,
+          "id:3": 43,
+          "y:3": -12,
+          "sizeX:3": 24,
+          "x:3": -288
+        },
+        "13:10": {
+          "sizeY:3": 24,
+          "id:3": 44,
+          "y:3": -132,
+          "sizeX:3": 24,
+          "x:3": -84
+        },
+        "14:10": {
+          "sizeY:3": 24,
+          "id:3": 45,
+          "y:3": -96,
+          "sizeX:3": 24,
+          "x:3": -48
+        },
+        "15:10": {
+          "sizeY:3": 24,
+          "id:3": 46,
+          "y:3": -96,
+          "sizeX:3": 24,
+          "x:3": -84
+        },
+        "16:10": {
+          "sizeY:3": 24,
+          "id:3": 47,
+          "y:3": -12,
+          "sizeX:3": 24,
+          "x:3": -12
+        },
+        "17:10": {
+          "sizeY:3": 24,
+          "id:3": 48,
+          "y:3": -12,
+          "sizeX:3": 24,
+          "x:3": -168
+        },
+        "18:10": {
+          "sizeY:3": 24,
+          "id:3": 49,
+          "y:3": -168,
+          "sizeX:3": 24,
+          "x:3": -48
+        },
+        "19:10": {
+          "sizeY:3": 24,
+          "id:3": 50,
+          "y:3": -12,
+          "sizeX:3": 24,
+          "x:3": -204
+        },
+        "20:10": {
+          "sizeY:3": 24,
+          "id:3": 51,
+          "y:3": -12,
+          "sizeX:3": 24,
+          "x:3": -132
+        },
+        "21:10": {
+          "sizeY:3": 24,
+          "id:3": 52,
+          "y:3": -12,
+          "sizeX:3": 24,
+          "x:3": -84
+        },
+        "22:10": {
+          "sizeY:3": 24,
+          "id:3": 53,
           "y:3": -72,
           "sizeX:3": 24,
-          "x:3": -96
+          "x:3": -216
+        },
+        "23:10": {
+          "sizeY:3": 24,
+          "id:3": 54,
+          "y:3": -72,
+          "sizeX:3": 24,
+          "x:3": -288
+        },
+        "24:10": {
+          "sizeY:3": 24,
+          "id:3": 55,
+          "y:3": -48,
+          "sizeX:3": 24,
+          "x:3": -252
+        },
+        "25:10": {
+          "sizeY:3": 24,
+          "id:3": 56,
+          "y:3": -12,
+          "sizeX:3": 24,
+          "x:3": -48
+        },
+        "26:10": {
+          "sizeY:3": 24,
+          "id:3": 57,
+          "y:3": -156,
+          "sizeX:3": 24,
+          "x:3": -12
         }
       },
       "lineID:3": 1
@@ -1313,7 +2508,7 @@
           "name:8": "The Engineer",
           "desc:8": "You know what they say: an engineer\u0027s job is not done whennothing more can be added, but when nothing more can be removed. Did not think i\u0027d ever have to design around removing... all of technology as we know it, \nbut nothing you and renowned mechanical Engineer §6Dr. Izawa§f can\u0027t solve if we put our\nheads together, right?",
           "visibility:8": "NORMAL",
-          "bg_image:8": "",
+          "bg_size:3": 256,
           "icon:10": {
             "Count:3": 1,
             "Damage:2": 0,
@@ -1334,7 +2529,7 @@
             "id:8": "tfc:brass_mechanisms",
             "OreDict:8": ""
           },
-          "bg_size:3": 256
+          "bg_image:8": ""
         }
       },
       "quests:9": {
@@ -1355,14 +2550,14 @@
           "name:8": "The Metaphysicist",
           "desc:8": "Hello there! I\u0027m §bQuinn Collins§f, Particle Physicist and Spatial Technician. Or at least that\u0027s what is on my diploma.\nSince I doubt that we\u0027ll be taking a closer look at warp drives or colliders anytime soon, I\u0027m basically sitting on my hands right now.\n\nMaybe my colleagues will find §5something§f they need my help explaining...",
           "visibility:8": "NORMAL",
-          "bg_image:8": "",
+          "bg_size:3": 256,
           "icon:10": {
             "Count:3": 1,
             "Damage:2": 1,
             "id:8": "botania:corporeaspark",
             "OreDict:8": ""
           },
-          "bg_size:3": 256
+          "bg_image:8": ""
         }
       },
       "quests:9": {
@@ -1390,14 +2585,14 @@
           "name:8": "The Cartographer",
           "desc:8": "No Description",
           "visibility:8": "NORMAL",
-          "bg_image:8": "",
+          "bg_size:3": 256,
           "icon:10": {
             "Count:3": 1,
             "Damage:2": 0,
             "id:8": "tfcthings:hiking_boots",
             "OreDict:8": ""
           },
-          "bg_size:3": 256
+          "bg_image:8": ""
         }
       },
       "quests:9": {
@@ -1418,7 +2613,7 @@
           "name:8": "The Xenobiologist",
           "desc:8": "Name\u0027s §5Dr. Xavier§f, Sociologist and Tactical Xenobiologist. \n\nOr in other words, I show our soldiers what body parts to shoot at and how to destroy enemy morale. \nLet\u0027s hope this next mission includes a little less violence.",
           "visibility:8": "NORMAL",
-          "bg_image:8": "",
+          "bg_size:3": 256,
           "icon:10": {
             "Count:3": 1,
             "Damage:2": 0,
@@ -1431,7 +2626,7 @@
             "id:8": "contenttweaker:taint_tendril",
             "OreDict:8": ""
           },
-          "bg_size:3": 256
+          "bg_image:8": ""
         }
       },
       "quests:9": {
@@ -1592,14 +2787,14 @@
           "name:8": "The Lieutenant",
           "desc:8": "No Description",
           "visibility:8": "NORMAL",
-          "bg_image:8": "",
+          "bg_size:3": 256,
           "icon:10": {
             "Count:3": 1,
             "Damage:2": 0,
             "id:8": "pneumaticcraft:gun_ammo_incendiary",
             "OreDict:8": ""
           },
-          "bg_size:3": 256
+          "bg_image:8": ""
         }
       },
       "quests:9": {
@@ -1616,18 +2811,18 @@
   },
   "questSettings:10": {
     "betterquesting:10": {
-      "livesdef:3": 3,
+      "livesmax:3": 10,
       "home_anchor_x:5": 0.5,
       "home_offset_x:3": -128,
-      "livesmax:3": 10,
+      "livesdef:3": 3,
       "home_image:8": "betterquesting:textures/gui/default_title.png",
-      "party_enable:1": 1,
-      "pack_name:8": "",
-      "editmode:1": 1,
-      "hardcore:1": 0,
       "pack_version:3": 0,
-      "home_offset_y:3": 0,
-      "home_anchor_y:5": 0.0
+      "hardcore:1": 0,
+      "editmode:1": 1,
+      "pack_name:8": "",
+      "party_enable:1": 1,
+      "home_anchor_y:5": 0.0,
+      "home_offset_y:3": 0
     }
   },
   "format:8": "2.0.0"
