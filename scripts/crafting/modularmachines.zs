@@ -111,191 +111,55 @@ mods.modularmachinery.RecipeBuilder.newBuilder("basicflux", "calcifier_t0", 300)
         {
             return;
         }
-        val yfactor as float = 0.25f;
-
+        val yfactor as float = 2.9f;
+        val maxLifetime as int= 1600;
+        val random = mods.ctutils.utils.Math.getRandom();
         val icon =ParticleRegistry.cloud256;
         val offset as IBlockPos = pos;
         var vec = Vec3(offset);
         var pb = ParticleBehaviorFog(vec);
         
         var cloud = pb.spawnNewParticleIconFX(world.native, icon, offset.x as double, offset.y as double, offset.z as double, 0.0d, 5.0d, 0.0d, 1);
-        cloud.rotationPitch = mods.ctutils.utils.Math.getRandom().nextInt(0, 314) as float / 100.0f;
+        cloud.rotationPitch = random.nextInt(0, 314) as float / 100.0f;
         pb.initParticle(cloud);
         pb.particles.add(cloud);
         cloud.spawnAsWeatherEffect();
-        cloud.setGravity(-1.3f*yfactor);
+        cloud.setGravity(-0.3f*yfactor);
         cloud.setFacePlayer(true);
 
-        cloud.setScale(145.0f + mods.ctutils.utils.Math.getRandom().nextInt(0, 20) as float );
+        cloud.setScale(145.0f + random.nextInt(0, 20) as float );
         ClientTickHandler.weatherManager.addWeatheredParticle(cloud);
+
+        
         client.catenation()
-            .sleep(2)
-            .then(function(world, context) 
-            {
-                
-                cloud.setGravity(1.0f*yfactor);
+            .then(function(world, context){
+                context.data = 0 as IData;
             })
-            
-            .sleep(8)
-            .then(function(world, context) 
-            {
-                cloud.setGravity(-0.85f*yfactor);
-            })
-            .sleep(8)
-            .then(function(world, context) 
-            {
-                cloud.setGravity(-0.65f*yfactor);
-                
-            })
-            .sleep(8)
-            .then(function(world, context) 
-            {
-                cloud.setGravity(-0.5f*yfactor);
-                cloud.setMotionX(100.0/1000.0 - mods.ctutils.utils.Math.getRandom().nextInt(0, 100) as float / 500.0f);
-                cloud.setMotionZ(100.0/1000.0 - mods.ctutils.utils.Math.getRandom().nextInt(0, 100) as float / 500.0f);
+            .sleepUntil(function(world, context){
+                val counter = context.data.asInt();
+                cloud.setGravity(-yfactor/(1.5f+counter as float));
+                cloud.setScale(155.0f+((counter as float)*0.6f as int)as float);
+                if counter > 150
+                {
 
-            })
-            .sleep(8)
-            .then(function(world, context) 
-            {
-                cloud.setGravity(-0.35f);
-            })
-            .sleep(8)
-            .then(function(world, context) 
-            {
-                cloud.setGravity(-0.25f);
-            })
-            .sleep(10)
-            .then(function(world, context) 
-            {
-                
-                cloud.setGravity(-0.15f);
-                cloud.setMotionX(8.0/160.0 - mods.ctutils.utils.Math.getRandom().nextInt(0, 8) as float / 80.0f);
-                cloud.setMotionZ(8.0/160.0 - mods.ctutils.utils.Math.getRandom().nextInt(0, 8) as float / 80.0f);
-                
-            })
+                    cloud.func_82338_g(mods.ctutils.utils.Math.exp(0.5,(150.0f/counter as float)));
+                }
 
-            .sleep(50)
-            .then(function(world, context) 
-            {
-                cloud.setGravity(-0.1f);
-                cloud.setScale(200.0f);
+                context.data =  (counter + random.nextInt(0, 2)) as IData;
+                return (counter > maxLifetime);
             })
-
-            .sleep(50)
-            .then(function(world, context) 
-            {
-                
-                cloud.setGravity(-0.05f);
-                cloud.setMotionX(8.0/160.0 - mods.ctutils.utils.Math.getRandom().nextInt(0, 8) as float / 80.0f);
-                cloud.setMotionZ(8.0/160.0 - mods.ctutils.utils.Math.getRandom().nextInt(0, 8) as float / 80.0f);
-                
-
-            })
-            .sleep(100)
-            .then(function(world, context) 
-            {
-                
-                cloud.setGravity(-0.02f);
-                cloud.setMotionX(8.0/160.0 - mods.ctutils.utils.Math.getRandom().nextInt(0, 8) as float / 80.0f);
-                cloud.setMotionZ(8.0/160.0 - mods.ctutils.utils.Math.getRandom().nextInt(0, 8) as float / 80.0f);
-                
-            })
-
-            .sleep(100)
-            .then(function(world, context) 
-            {
-                cloud.setMotionX(8.0/160.0 - mods.ctutils.utils.Math.getRandom().nextInt(0, 8) as float / 80.0f);
-                cloud.setMotionZ(8.0/160.0 - mods.ctutils.utils.Math.getRandom().nextInt(0, 8) as float / 80.0f);
-                cloud.setMotionY(8.0/160.0 - mods.ctutils.utils.Math.getRandom().nextInt(0, 8) as float / 80.0f);
-                cloud.setGravity(-0.01f);
-                cloud.setScale(210.0f);
-            })
-            .sleep(100)
-            .then(function(world, context) 
-            {
-                
-                cloud.setScale(220.0f);
-                cloud.setMotionX(8.0/160.0 - mods.ctutils.utils.Math.getRandom().nextInt(0, 8) as float / 80.0f);
-                cloud.setMotionZ(8.0/160.0 - mods.ctutils.utils.Math.getRandom().nextInt(0, 8) as float / 80.0f);
-                cloud.setMotionY(8.0/160.0 - mods.ctutils.utils.Math.getRandom().nextInt(0, 8) as float / 80.0f);
-            })
-            .sleep(80)
-            .then(function(world, context) 
-            {
-                
-                cloud.setScale(240.0f);
-                cloud.setMotionX(8.0/160.0 - mods.ctutils.utils.Math.getRandom().nextInt(0, 8) as float / 80.0f);
-                cloud.setMotionZ(8.0/160.0 - mods.ctutils.utils.Math.getRandom().nextInt(0, 8) as float / 80.0f);
-                
-            })
-            .sleep(80)
-            .then(function(world, context) 
-            {
-                
-                cloud.setScale(260.0f);
-                cloud.setMotionX(8.0/160.0 - mods.ctutils.utils.Math.getRandom().nextInt(0, 8) as float / 80.0f);
-                cloud.setMotionZ(8.0/160.0 - mods.ctutils.utils.Math.getRandom().nextInt(0, 8) as float / 80.0f);
-                cloud.setMotionY(8.0/160.0 - mods.ctutils.utils.Math.getRandom().nextInt(0, 8) as float / 80.0f);
-            })
-            .sleep(80)
-            .then(function(world, context) 
-            {
-                
-                cloud.setScale(300.0f);
-                cloud.setMotionX(8.0/160.0 - mods.ctutils.utils.Math.getRandom().nextInt(0, 8) as float / 80.0f);
-                cloud.setMotionZ(8.0/160.0 - mods.ctutils.utils.Math.getRandom().nextInt(0, 8) as float / 80.0f);
-                cloud.setMotionY(8.0/160.0 - mods.ctutils.utils.Math.getRandom().nextInt(0, 8) as float / 80.0f);
-            })
-            .sleep(200)
-            .then(function(world, context) 
-            {
-                
-                cloud.setScale(400.0f);
-            })
-            .sleep(200)
-            .then(function(world, context) 
-            {
-                
-                cloud.setScale(500.0f);
-                cloud.setMotionX(8.0/100.0 - mods.ctutils.utils.Math.getRandom().nextInt(0, 8) as float / 50.0f);
-                cloud.setMotionZ(8.0/100.0 - mods.ctutils.utils.Math.getRandom().nextInt(0, 8) as float / 50.0f);
-                cloud.setMotionY(8.0/100.0 - mods.ctutils.utils.Math.getRandom().nextInt(0, 8) as float / 50.0f);
-            })
-            .sleep(200)
-            .then(function(world, context) 
-            {
-                
-                cloud.setScale(600.0f);
-                cloud.setMotionX(8.0/60.0 - mods.ctutils.utils.Math.getRandom().nextInt(0, 8) as float / 30.0f);
-                cloud.setMotionZ(8.0/60.0 - mods.ctutils.utils.Math.getRandom().nextInt(0, 8) as float / 30.0f);
-                cloud.setMotionY(8.0/60.0 - mods.ctutils.utils.Math.getRandom().nextInt(0, 8) as float / 30.0f);
-
-            })
-            .sleep(200)
-            .then(function(world, context) 
-            {
-                
-                cloud.setScale(800.0f);
+            .then(function(world, context){
                 cloud.startDeath();
             })
-
             .start();
-
     }
+        
 
 
 
-    mods.modularmachinery.RecipeBuilder.newBuilder("coolingtowerrecipe_waterfromExhaustSteamW", "cooling_tower_t2", 5)
-    .addFluidInput(<liquid:water>*2000)
-    .addFluidInput(<liquid:exhauststeam>*1000)
-    .addItemOutput(<thebetweenlands:items_misc:27>)
-    .setChance(0.65)
-    .addFluidOutput(<liquid:ic2distilled_water>*80)
-    .addStartHandler(function (event as RecipeStartEvent){
-        addCloudsServer(event.controller);
-    })
-    .build();
+
+
+    
 
     mods.modularmachinery.RecipeBuilder.newBuilder("coolingtowerrecipe_waterfromSteamW", "cooling_tower_t2", 5)
     .addFluidInput(<liquid:water>*2000)
