@@ -1316,7 +1316,7 @@ research.FIREBRICK.stage.1=Bricks and concrete will not be able to withstand the
 research.FIREBRICK.stage.2=I was able to alchemically combine tungsten ore with the aspects of coal to create a form of tungsten-carbide. This should help drive down the cost of metallurgy by a good amount.
 #
 research.MOTOR.title=Rotational Power Systems
-research.MOTOR.stage.1=Most mundane technology is inaccessible to me s of now, including steam engines, which need better fuel or more pressure-resilient materials. <BR> With liquid essentia now at my disposal, including those embodying the very concept of motion and power, I don't see what's stopping me from converting that into rotary power instead.
+research.MOTOR.stage.1=Most mundane technology is inaccessible to me as of now, including steam engines, which need better fuel or more pressure-resilient materials. <BR> With liquid essentia now at my disposal, including those embodying the very concept of motion and power, I don't see what's stopping me from converting that into rotary power instead.
 research.MOTOR.stage.2=Success! I have managed to create a Motor capable of using essentia. Liquid essentia must be piped in via connecting a tube to the brass-colored end of the device while rotary power can be extracted from the iron end.<PAGE>It should be able to run on 3 types of essentia:<LINE> Potentia:<BR> Speed: 40.0R<BR>Duration: 12.5s<LINE>Motus:<BR>Speed: 20.0R<BR>Duration: 25.0s<LINE>Machina:<BR>Speed: 20.0R<BR>Durtion: 41.6s
 #
 research.LABMEAT.title=Meat Growth
