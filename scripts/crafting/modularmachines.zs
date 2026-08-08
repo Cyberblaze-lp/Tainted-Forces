@@ -3,7 +3,6 @@ import mods.modularmachinery.IMachineController;
 import mods.modularmachinery.RecipeFinishEvent;
 import mods.modularmachinery.RecipeStartEvent;
 import mods.modularmachinery.RecipeCheckEvent;
-import mods.modularmachinery.MachineTickEvent;
 import mods.modularmachinery.RecipeTickEvent;
 import native.net.dries007.tfc.objects.blocks.stone.BlockOreTFC;
 import native.net.dries007.tfc.objects.items.metal.ItemOreTFC;
@@ -15,23 +14,8 @@ import crafttweaker.block.IBlock;
 import crafttweaker.world.IFacing;
 import crafttweaker.util.Math;
 import crafttweaker.data.IData;
-import crafttweaker.player.IPlayer;
-import crafttweaker.world.IWorld;
-import native.extendedrenderer.particle.entity.EntityRotFX;
-import native.extendedrenderer.particle.behavior.ParticleBehaviors;
-import native.extendedrenderer.render.RotatingParticleManager;
-import native.extendedrenderer.particle.behavior.ParticleBehaviorFog;
-import native.net.minecraft.client.renderer.texture.TextureAtlasSprite;
-import native.net.minecraft.client.renderer.texture.TextureManager;
-import native.net.minecraft.client.Minecraft;
-import native.CoroUtil.util.Vec3;
-import native.weather2.ClientTickHandler;
 import mods.modularmachinery.Sync;
-import native.extendedrenderer.particle.ParticleRegistry;
 import native.net.minecraft.tileentity.TileEntity;
-import crafttweaker.entity.IEntity;
-import crafttweaker.event.EntityJoinWorldEvent;
-import mods.modularmachinery.MMEvents;
 import mods.zenutils.NetworkHandler;
 import mods.zenutils.IByteBuf;
 
@@ -45,10 +29,6 @@ mods.modularmachinery.RecipeBuilder.newBuilder("basicflux", "calcifier_t0", 300)
 .build();
 
 //Cooling Tower
-    //Setting up the packet
-    NetworkHandler.registerServer2ClientMessage("spawn_condensation_cloud", function(player as IPlayer, byteBuf as IByteBuf){
-        addCloudsClient(client.player.world, byteBuf.readBlockPos());
-    });
 
     //ic2 boiler to tower ratio should be ~ 16:1
     function addCloudsServer (controller as TileEntity) as void
@@ -85,6 +65,7 @@ mods.modularmachinery.RecipeBuilder.newBuilder("basicflux", "calcifier_t0", 300)
         .getOffset(facing, -15)
         .getOffset(IFacing.up(), 22);
         
+        //See modularmachines_client.zs for the client-side handling
         Sync.addSyncTask(
             function(){
                 NetworkHandler.sendToAllAround(
@@ -103,63 +84,8 @@ mods.modularmachinery.RecipeBuilder.newBuilder("basicflux", "calcifier_t0", 300)
                                 
                                 
     }
-
-    function addCloudsClient (world as IWorld, pos as IBlockPos) as void
-    {
-        
-        if isNull(ClientTickHandler.weatherManager)
-        {
-            return;
-        }
-        val yfactor as float = 2.9f;
-        val maxLifetime as int= 1600;
-        val random = mods.ctutils.utils.Math.getRandom();
-        val icon =ParticleRegistry.cloud256;
-        val offset as IBlockPos = pos;
-        var vec = Vec3(offset);
-        var pb = ParticleBehaviorFog(vec);
-        
-        var cloud = pb.spawnNewParticleIconFX(world.native, icon, offset.x as double, offset.y as double, offset.z as double, 0.0d, 5.0d, 0.0d, 1);
-        cloud.rotationPitch = random.nextInt(0, 314) as float / 100.0f;
-        pb.initParticle(cloud);
-        pb.particles.add(cloud);
-        cloud.spawnAsWeatherEffect();
-        cloud.setGravity(-0.3f*yfactor);
-        cloud.setFacePlayer(true);
-
-        cloud.setScale(145.0f + random.nextInt(0, 20) as float );
-        ClientTickHandler.weatherManager.addWeatheredParticle(cloud);
-
-        
-        client.catenation()
-            .then(function(world, context){
-                context.data = 0 as IData;
-            })
-            .sleepUntil(function(world, context){
-                val counter = context.data.asInt();
-                cloud.setGravity(-yfactor/(1.5f+counter as float));
-                cloud.setScale(155.0f+((counter as float)*0.6f as int)as float);
-                if counter > 150
-                {
-
-                    cloud.func_82338_g(mods.ctutils.utils.Math.exp(0.5,(150.0f/counter as float)));
-                }
-
-                context.data =  (counter + random.nextInt(0, 2)) as IData;
-                return (counter > maxLifetime);
-            })
-            .then(function(world, context){
-                cloud.startDeath();
-            })
-            .start();
-    }
         
 
-
-
-
-
-    
 
     mods.modularmachinery.RecipeBuilder.newBuilder("coolingtowerrecipe_waterfromSteamW", "cooling_tower_t2", 5)
     .addFluidInput(<liquid:water>*2000)
