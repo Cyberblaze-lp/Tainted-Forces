@@ -45,7 +45,6 @@ mods.pneumaticcraft.assembly.addDrillRecipe(<thaumcraft:mechanism_complex>, <pne
 
 
 // to need plastic for rubber
-Barrel.addRecipe("cruderubber", <pneumaticcraft:plastic:*>, <liquid:latex>*500,<tfctech:latex/rubber_mix>, 8);
 
 
 

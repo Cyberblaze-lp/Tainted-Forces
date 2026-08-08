@@ -43,35 +43,6 @@ mods.pneumaticcraft.thermopneumaticprocessingplant.addRecipe(<liquid:lpg>*250, <
 
 
 
-var c as IJeiPanel = JEI.createJei("coagulator", "Coagulator");
-c.setBackground(mods.randomtweaker.jei.IJeiUtils.createBackground(105, 32));
-c.setIcon(<tconstruct:edible:34>);
-c.setModid("immersiveintelligence");
-
-c.addSlot(mods.randomtweaker.jei.IJeiUtils.createLiquidSlot(0,0, 10, 30, 16000, true, true));
-c.addSlot(mods.randomtweaker.jei.IJeiUtils.createLiquidSlot( 18, 0, 10, 30, 16000, true, true));
-c.addElement(mods.randomtweaker.jei.IJeiUtils.createArrowElement(40, 8, 0));
-c.addSlot(IJeiUtils.createItemSlot( 80, 9, false));
-c.register();
-
-var c1 as IJeiRecipe = JEI.createJeiRecipe("coagulator");
-	c1.addInput(<liquid:latex>*5500)
-	.addInput(<liquid:formic_acid>*500)
-    .addOutput(<immersiveintelligence:material:28>*8)
-    .build();
-
-	
-	var c2 as IJeiRecipe = JEI.createJeiRecipe("coagulator");
-    c2.addInput(<liquid:refined_oil>*3000)
-	.addInput(<liquid:fog>*10000)
-    .addOutput(<thebetweenlands:sulfur_block>*2)
-    .build();
-	
-	var c3 as IJeiRecipe = JEI.createJeiRecipe("coagulator");
-    c3.addInput(<liquid:refined_oil>*6000)
-	.addInput(<liquid:steam>*10000)
-    .addOutput(<thebetweenlands:sulfur_block>*2)
-    .build();
 
 
 var b as IJeiPanel = JEI.createJei("bllightning", "Throw in Lightning");
