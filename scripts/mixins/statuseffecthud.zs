@@ -1,3 +1,4 @@
+#sideonly client
 #loader mixin
 import mixin.CallbackInfo;
 import mixin.CallbackInfoReturnable;
