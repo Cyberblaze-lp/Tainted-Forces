@@ -1,0 +1,4 @@
+# For files that always change, but can't be gitignored
+
+icon.png
+config/cleanroom_relauncher.cfg
