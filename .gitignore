@@ -9,6 +9,7 @@ minecraftinstance.json
 .curseclient
 /mods/memory_repo
 /mods/.index
+/resourcepacks/.index
 
 # Minecraft/Forge files
 usernamecache.json
@@ -84,9 +85,8 @@ OpenComputersMod*
 
 /config/ftblib.cfg
 /config/ftbutilities.cfg
-config/spark/activity.json
-config/AppliedEnergistics2/CustomRecipes.cfg
-config/AppliedEnergistics2/CustomRecipes.cfg
-config/splash.properties
-config/ichunutil.cfg
-mods/PerfectSpawn-MC1.12.2-2.1.jar
+/config/spark/activity.json
+/config/AppliedEnergistics2/CustomRecipes.cfg
+/config/AppliedEnergistics2/CustomRecipes.cfg
+/config/splash.properties
+/config/ichunutil.cfg
