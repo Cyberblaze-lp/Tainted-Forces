@@ -69,6 +69,8 @@ for item in <ore:concrete>.itemArray
 
 
 mods.thaumcraft.Crucible.registerRecipe("alumentumfromcoke", "ALUMENTUM", <thaumcraft:alumentum>*2, <ore:fuelCoke>, [<aspect:ignis>*20, <aspect:potentia>*20, <aspect:perditio>*10]);
+mods.thaumcraft.Crucible.registerRecipe("alumentumfrombituminous", "ALUMENTUM", <thaumcraft:alumentum>, <tfc:ore/bituminous_coal>, [<aspect:ignis>*10, <aspect:potentia>*10, <aspect:perditio>*5]);
+
 
 mods.thaumcraft.Crucible.registerRecipe("labmeat", "LABMEAT", <tfc:food/bear>*3, <tfc:food/bear>, [<aspect:victus>*10, <aspect:fabrico>*5]);
 mods.thaumcraft.Crucible.registerRecipe("labrennet", "LABMEAT", <firmalife:rennet>*5, <firmalife:rennet>, [<aspect:victus>*10, <aspect:permutatio>*5]);
@@ -159,7 +161,7 @@ mods.thaumcraft.Infusion.registerRecipe("harvestseal", "SEALHARVEST", <thaumcraf
 
 
 
-mods.inworldcrafting.ExplosionCrafting.explodeItemRecipe(<minecraft:coal:1>*4, <thaumcraft:alumentum>, 85);
+mods.inworldcrafting.ExplosionCrafting.explodeItemRecipe(<tfc:ore/bituminous_coal>*4, <thaumcraft:alumentum>, 85);
 
 
 
@@ -278,23 +280,22 @@ var itemplusOres =
 
 var aspectsempty1 as AspectList = AspectList();
 var aspectsnugget as AspectList = aspectsempty1
- .merge(Aspect.ORDER, 1)
  .merge(Aspect.METAL,1);
 
  var aspectsempty2 as AspectList = AspectList();
 var aspectspoor as AspectList = aspectsempty2
- .merge(Aspect.ORDER, 2)
- .merge(Aspect.METAL,2);
+ .merge(Aspect.ORDER, 1)
+ .merge(Aspect.METAL,1);
 
  var aspectsempty3 as AspectList = AspectList();
 var aspectsnormal as AspectList = aspectsempty3
- .merge(Aspect.ORDER, 3)
- .merge(Aspect.METAL,3);
+ .merge(Aspect.ORDER, 2)
+ .merge(Aspect.METAL,2);
 
  var aspectsempty4 as AspectList = AspectList();
 var aspectsrich as AspectList = aspectsempty4
- .merge(Aspect.ORDER, 5)
- .merge(Aspect.METAL,5);
+ .merge(Aspect.ORDER, 3)
+ .merge(Aspect.METAL,4);
 
 
 
