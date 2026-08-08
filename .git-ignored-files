@@ -3,7 +3,9 @@
 icon.png
 config/cleanroom_relauncher.cfg
 config/IC2.ini
-config.cyberware.cfg
+config/cyberware.cfg
 config/astralsorcery.cfg
 config/advancedrocketry.cfg
 config/Guide-API.cfg
+
+mods/!mod-director-launchwrapper-1.9.1.jar
