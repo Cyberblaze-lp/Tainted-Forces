@@ -1,22 +1,15 @@
-import crafttweaker.event.EntityLivingSpawnEvent;
+import crafttweaker.entity.AttributeInstance;
+import crafttweaker.entity.IEntity;
+import crafttweaker.entity.IEntityLivingBase;
 import crafttweaker.event.EntityJoinWorldEvent;
-import crafttweaker.event.EntityLivingFallEvent;
 import crafttweaker.event.EntityLivingDeathDropsEvent;
 import crafttweaker.event.EntityLivingHurtEvent;
-import crafttweaker.entity.IEntity;
-import crafttweaker.entity.IEntityDefinition;
+import crafttweaker.event.ProjectileImpactArrowEvent;
 import crafttweaker.potions.IPotionEffect;
-import crafttweaker.entity.IEntityLivingBase;
+import crafttweaker.util.IAxisAlignedBB;
 import crafttweaker.util.Math;
 import crafttweaker.world.IBlockPos;
-import crafttweaker.util.IRandom;
-import crafttweaker.command.ICommandManager;
-import crafttweaker.server.IServer;
-import crafttweaker.event.ProjectileImpactArrowEvent;
-import crafttweaker.util.IAxisAlignedBB;
 import native.java.lang.Class;
-import native.thaumcraft.client.renderers.entity.mob.LayerTainted;
-import native.java.lang.Integer;
 
 
 //Applies potion effects to entities upon spawning
@@ -25,9 +18,9 @@ import native.java.lang.Integer;
 
 
 //Helper functions
-//Returns if the entity has visible tendrils
-function isTainted(entity as IEntity) as bool{
-    return LayerTainted.taintLayers has (entity.native.getEntityId() as Integer);
+function isTainted(entity as IEntityLivingBase) as bool{
+    val entityAttribute as AttributeInstance = entity.getAttribute("tc.mobmodtaint");
+    return entityAttribute.getAttributeValue() == 1;
 }
 
 //stupid band-aid fix: makes taint swarms able to properly fly again by applying constant levitation.
