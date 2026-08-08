@@ -60,7 +60,7 @@ events.onPlayerLoggedIn(function(event as crafttweaker.event.PlayerLoggedInEvent
 		return;
 	}
 	
-
+	
 	
 	event.player.addGameStage("beentospace");
 	val x as int = -12693;

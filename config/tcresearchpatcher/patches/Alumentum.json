@@ -7,8 +7,8 @@
 
     {
     "op":"add",
-    "path":"stages/1/recipes/1",
-    "value":["thaumcraft:alumentumfromcoke"]
+    "path":"stages/1/recipes/",
+    "value":["thaumcraft:alumentum","thaumcraft:alumentumfromcoke","thaumcraft:alumentumfrombituminous"]
       
 }  
 ]

@@ -1,3 +1,4 @@
+#sideonly client
 #loader mixin
 import mixin.CallbackInfo;
 import mixin.CallbackInfoReturnable;
@@ -104,7 +105,7 @@ zenClass MoveBackpackGUI extends GuiInventory {
 
 
     #mixin ModifyConstant {method: "func_73866_w_", constant:{intValue: 224}}
-    function noOffsetY1(value as int) as int
+    function noOffsetY2(value as int) as int
     {
         return 166;
     }
