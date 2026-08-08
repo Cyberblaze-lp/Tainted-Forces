@@ -20,6 +20,9 @@ import native.java.lang.Class;
 //Helper functions
 function isTainted(entity as IEntityLivingBase) as bool{
     val entityAttribute as AttributeInstance = entity.getAttribute("tc.mobmodtaint");
+    if(isNull(entityAttribute)){
+        return false;
+    }
     return entityAttribute.getAttributeValue() == 1;
 }
 
