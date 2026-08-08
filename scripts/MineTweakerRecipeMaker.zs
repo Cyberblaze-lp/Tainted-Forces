@@ -51,6 +51,8 @@ recipes.addShapeless(<ic2:reactor_heat_vent>, [<ic2:heat_vent>, <ic2:crafting:7>
 
 // ================================================================================
 //#MARKER ADD SHAPED
+recipes.addShaped(<immersiveintelligence:mechanical_device1>, [[<ore:leather>, <tfc:brass_mechanisms>, <ore:leather>], [<ore:leather>, <tfc:brass_mechanisms>, <ore:leather>], [<ore:plateIron>, <ore:plateIron>, <ore:plateIron>]]);
+recipes.addShaped(<modularmachinery:cooling_tower_t2_controller>, [[<ore:concrete>, <ore:concrete>, <ore:concrete>], [<ore:concrete>, <thaumcraft:mind>, <ore:concrete>], [<ore:concrete>, <ore:concrete>, <ore:concrete>]]);
 recipes.addShaped(<thaumcraft:turret>, [[null, <botania:livingwoodbow>, null], [<ore:livingwoodTwig>, <minecraft:repeater>, <ore:livingwoodTwig>], [<ore:livingwoodTwig>, null, <ore:livingwoodTwig>]]);
 recipes.addShaped(<tfc:metal/ingot/pig_iron>, [[<ore:nuggetPigIron>, <ore:nuggetPigIron>, <ore:nuggetPigIron>], [<ore:nuggetPigIron>, <ore:nuggetPigIron>, <ore:nuggetPigIron>], [<ore:nuggetPigIron>, <ore:nuggetPigIron>, <ore:nuggetPigIron>]]);
 recipes.addShaped(<tconstruct:wooden_hopper> * 2, [[<ore:lumber>, null, <ore:lumber>], [<ore:lumber>, <ore:gearWood>, <ore:lumber>], [null, <ore:lumber>, null]]);

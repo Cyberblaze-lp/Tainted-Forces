@@ -25,7 +25,7 @@ Squeezer.addRecipe(<tetra:magmatic_cell>,
 
 furnace.setFuel(<embers:dust_ember>, 0);
 furnace.setFuel(<minecraft:coal>, 0);
-furnace.setFuel(<minecraft:coal:1>, 0);
+
 
 furnace.setFuel(<thaumcraft:alumentum>, 6400 );
 

@@ -124,7 +124,7 @@ for item in casting
 
 
 mods.chisel.Carving.addGroup("mechStuff");
-val mechStuff as IItemStack[] =[<immersiveengineering:metal_decoration0:4>, <embers:mech_core>,<mystgears:drill>,<modularmachinery:burnerdrill_t1_controller>,<modularmachinery:blockcasing:2>,<modularmachinery:blockcasing:4>, <modularmachinery:blockinputbus:1>,<modularmachinery:blockoutputbus:1>];
+val mechStuff as IItemStack[] =[<immersiveengineering:metal_decoration0:4>, <embers:mech_core>,<mystgears:drill>,<modularmachinery:burnerdrill_t1_controller>,<modularmachinery:blockcasing:2>,<modularmachinery:blockcasing:4>, <modularmachinery:blockinputbus:1>,<modularmachinery:blockoutputbus:1>,<modularmachinery:blockfluidinputhatch:2>,<modularmachinery:blockfluidoutputhatch:2>];
 for item in mechStuff
 {
     mods.chisel.Carving.addVariation("mechStuff", item);
