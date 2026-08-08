@@ -1,0 +1,32 @@
+#!/bin/bash
+# Automatically unstages any file listed in .git-ignored-files
+
+IGNORE_LIST=".git-ignored-files"
+REPO_ROOT="$(git rev-parse --show-toplevel)"
+
+# Check if file exists
+if [ ! -f "$REPO_ROOT/$IGNORE_LIST" ]; then
+    exit 0
+fi
+
+
+while IFS= read -r file || [ -n "$file" ]; do
+    # Skip blank lines and comments
+    if [[ -z "$file" || "$file" == \#* ]]; then
+        continue
+    fi
+
+
+    # Never unstage the list file itself
+    if [ "$file" == "$IGNORE_LIST" ]; then
+        continue
+    fi
+
+    # If this file is staged, unstage it and apply skip-worktree
+    if ! git diff --cached --quiet -- "$file"; then
+        git reset -- "$file" 2>/dev/null
+        git update-index --skip-worktree "$file" 2>/dev/null
+    fi
+done < "$REPO_ROOT/$IGNORE_LIST"
+
+exit 0

@@ -1,0 +1,37 @@
+#!/bin/bash
+# Sync skip-worktree flags with the current .git-ignored-files after a pull
+
+IGNORE_LIST=".git-ignored-files"
+REPO_ROOT="$(git rev-parse --show-toplevel)"
+
+# Check if file exists
+if [ ! -f "$REPO_ROOT/$IGNORE_LIST" ]; then
+    exit 0
+fi
+
+# Clear all --skip-worktree to reapply them later. 
+# This is so that removing items from .git-ignored-files makes them trackable.
+# Dirty, but works well enough.
+git ls-files -v | grep '^S' | while read -r tag file; do
+    git update-index --no-skip-worktree "$file"
+done
+
+# Refresh --skip-worktree flag
+while IFS= read -r file || [ -n "$file" ]; do
+    # Skip blank lines and comments
+    if [[ -z "$file" || "$file" == \#* ]]; then
+        continue
+    fi
+
+    # Never unstage the list file itself
+    if [ "$file" == "$IGNORE_LIST" ]; then
+        continue
+    fi
+
+    # Only apply if the file actually exists in the repo (avoid error messages)
+    if git ls-files --error-unmatch "$file" >/dev/null 2>&1; then
+        git update-index --skip-worktree "$file" 2>/dev/null
+    fi
+done < "$REPO_ROOT/$IGNORE_LIST"
+
+exit 0

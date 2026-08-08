@@ -10,7 +10,6 @@ import native.net.minecraft.entity.Entity;
 import native.net.minecraft.entity.EntityLivingBase;
 import native.net.minecraft.init.Blocks;
 import native.net.minecraft.item.ItemStack;
-import native.net.minecraft.util.BlockRenderLayer;
 import native.net.minecraft.util.EnumFacing;
 import native.net.minecraft.util.math.BlockPos;
 import native.net.minecraft.world.World;
@@ -109,16 +108,6 @@ zenClass passivePollute {
 
 
 //taint aesthetics
-
-
-#mixin {targets: "thaumcraft.common.blocks.world.taint.BlockTaintFibre"}
-zenClass MixinFiberTransparentBorder {
-    #mixin Overwrite 
-    function func_180664_k() as BlockRenderLayer {
-        return BlockRenderLayer.TRANSLUCENT;
-    }
-}
-
 
 #mixin {targets: "thaumcraft.common.blocks.world.taint.BlockTaintFibre"}
 zenClass MixinFiberLight {
@@ -303,9 +292,8 @@ zenClass MixinAdvCrossbowRange {
 #mixin {targets: "thaumcraft.common.blocks.world.taint.TaintHelper"}
 zenClass MixinTaintHelper {
 
-    static rockTaintificationThreashold as float = 0.15f;
-    static metalMinEvo as int = 3*3*3 *600;
-    static rockMinEvo as int = 2*2*2 *600;
+    static rockTaintificationThreashold as float = 0.35f;
+    static metalMinEvo as int = 10000;
     
     #mixin Static
     #mixin Overwrite
@@ -376,7 +364,7 @@ zenClass MixinTaintHelper {
 				return;
 			}
 
-			if (material == Material.ROCK && mod > rockTaintificationThreashold && world.getGameRules().getInt("taintEvo") > metalMinEvo) {
+			if (material == Material.ROCK && mod > rockTaintificationThreashold) {
 				world.setBlockState(t, BlocksTC.taintRock.getDefaultState());
 				world.addBlockEvent(t, BlocksTC.taintRock, 1, 0);
 				AuraHelper.drainFlux(world, t, 0.02F, false);
