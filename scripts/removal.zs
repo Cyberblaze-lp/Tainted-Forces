@@ -20,6 +20,7 @@
 		"metalchests",
 		"mekanism",
 		"modularmachinery",
+		"mystgears",
 		"signals",
 		"thermalexpansion",
 		"rustichromia",
@@ -67,35 +68,6 @@
 		<cyberware:radio_post>,
 		<cyberware:scanner>,
 		<cyberware:surgery_chamber>,
-		<embers:archaic_circuit>,
-		<embers:block_caminite_brick>,
-		<embers:boiler>,
-		<embers:breaker>,
-		<embers:catalyzer>,
-		<embers:cinder_plinth>,
-		<embers:clockwork_attenuator>,
-		<embers:combustor>,
-		<embers:ember_detector>,
-		<embers:ember_gauge>,
-		<embers:ember_injector>,
-		<embers:fluid_gauge>,
-		<embers:fluid_transfer>,
-		<embers:inferno_forge>,
-		<embers:item_dropper>,
-		<embers:item_gauge>,
-		<embers:item_pipe>,
-		<embers:item_pump>,
-		<embers:item_transfer>,
-		<embers:mech_core>,
-		<embers:mech_core>,
-		<embers:mechanical_pump>,
-		<embers:mini_boiler>,
-		<embers:pipe>,
-		<embers:pump>,
-		<embers:reactor>,
-		<embers:steam_engine>,
-		<embers:stirling>,
-		<embers:vacuum>,
 		<extrautils2:analogcrafter>,
 		<extrautils2:angelring:*>,
 		<extrautils2:crafter>,
@@ -231,27 +203,6 @@
 		<immersiveintelligence:sawblade:2>,
 		<immersiveintelligence:sawblade>,
 		<immersiveintelligence:small_wirecoil>,
-		<magneticraft:conveyor_belt>,
-		<magneticraft:crushing_table>,
-		<magneticraft:inserter>,
-		<magneticraft:iron_hammer>,
-		<magneticraft:iron_pipe>,
-		<magneticraft:multiblock_column>,
-		<magneticraft:multiblock_parts:5>,
-		<magneticraft:sluice_box>,
-		<magneticraft:steam_boiler>,
-		<magneticraft:steel_hammer>,
-		<magneticraft:stone_hammer>,
-		<magneticraft:thermopile>,
-		<magneticraft:wind_turbine>,
-		<mekanism:basicblock:8>,
-		<mekanism:filterupgrade>,
-		<mekanism:machineblock:8>,
-		<mekanism:machineblock3:1>,
-		<mekanism:teleportationcore>,
-		<mekanism:transmitter:1>,
-		<mekanism:transmitter:3>,
-		<mekanism:transmitter>,
 		<mekanismgenerators:generator:1>,
 		<mekanismgenerators:generator:3>,
 		<mekanismgenerators:generator:4>,
@@ -313,11 +264,6 @@
 		<minecraft:wooden_shovel>,
 		<minecraft:wooden_sword>,
 		<minecraft:wool>,
-		<mystgears:drill_diamond>,
-		<mystgears:drill>,
-		<mystgears:ember_gatling_gun>,
-		<mystgears:mechanical_dial>,
-		<mystgears:windup_box>,
 		<mysticalmechanics:gear_gold_off>,
 		<mysticalmechanics:gear_gold_on>,
 		<mysticalmechanics:gearbox_frame>,
@@ -370,8 +316,6 @@
 		<railcraft:mow_undercutter>,
 		<railcraft:track_kit:*>,
 		<railcraft:worldspike:*>,
-		<rustichromia:mech_torch_toggle>,
-		<rustichromia:mech_torch>,
 		<tconstruct:casting:1>,
 		<tconstruct:casting>,
 		<tconstruct:channel>,
@@ -433,8 +377,6 @@
 		<thermalfoundation:material:513>,
 		<thermalfoundation:material:514>,
 		<thermalfoundation:material:515>,
-		<weather2:weather_deflector>,
-		<weather2:weather_machine>,
 		<tconstruct:wooden_hopper>,
 		<railcraft:charge:5>
 	]{
@@ -471,11 +413,6 @@
 	recipes.removeShaped(<immersiveengineering:metal_device0:6>, [[<ore:plateIron>, <ore:barsIron>, <ore:plateIron>], [<ore:barsIron>, null, <ore:barsIron>], [<ore:plateIron>, <ore:barsIron>, <ore:plateIron>]]);
 	recipes.removeShaped(<immersiveintelligence:mechanical_device>, [[<ore:plateBrass>, <immersiveengineering:material:8>, <ore:plateBrass>], [<ore:stickIron>, <ore:scaffoldingTreatedWood>, <ore:stickIron>], [<ore:plateBrass>, null, <ore:plateBrass>]]);
 	recipes.removeShaped(<integrateddynamics:squeezer>, [[<ore:stickWood>, <ore:blockIron>, <ore:stickWood>], [<ore:stickWood>, null, <ore:stickWood>], [<ore:plankWood>, <ore:ingotIron>, <ore:plankWood>]]);
-	recipes.removeShaped(<magneticraft:connector> * 8, [[null, <ore:ingotIron>, null], [<ore:stone>, <ore:ingotCopper>, <ore:stone>]]);
-	recipes.removeShaped(<mekanism:basicblock:14>, [[<ore:circuitAdvanced>, <ore:paneGlass>, <ore:circuitAdvanced>], [<mekanism:basicblock2>, <minecraft:bucket>, <mekanism:basicblock2>], [<mekanism:basicblock2>, <mekanism:basicblock2>, <mekanism:basicblock2>]]);
-	recipes.removeShaped(<mekanism:basicblock2:7> * 4, [[null, <ore:ingotSteel>, null], [<ore:ingotSteel>, null, <ore:ingotSteel>], [null, <ore:ingotSteel>, null]]);
-	recipes.removeShaped(<mekanism:basicblock2:8> * 2, [[null, <mekanism:basicblock2:7>, null], [<mekanism:basicblock2:7>, <ore:circuitAdvanced>, <mekanism:basicblock2:7>], [null, <mekanism:basicblock2:7>, null]]);
-	recipes.removeShaped(<mekanism:basicblock2> * 4, [[null, <ore:ingotSteel>, null],[<ore:ingotSteel>, <ore:ingotCopper>, <ore:ingotSteel>], [null, <ore:ingotSteel>, null]]);
 	recipes.removeShaped(<minecraft:chest> * 4, [[<ore:logWood>, <ore:logWood>, <ore:logWood>], [<ore:logWood>, null, <ore:logWood>], [<ore:logWood>, <ore:logWood>, <ore:logWood>]]);
 	recipes.removeShaped(<minecraft:chest>, [[<ore:plankWood>, <ore:plankWood>, <ore:plankWood>], [<ore:plankWood>, null, <ore:plankWood>], [<ore:plankWood>, <ore:plankWood>, <ore:plankWood>]]);
 	recipes.removeShaped(<minecraft:heavy_weighted_pressure_plate>, [[<ore:ingotIron>, <ore:ingotIron>]]);
@@ -520,8 +457,6 @@
 	recipes.removeShapeless(<thaumcraft:plank_silverwood> * 4, [<thaumcraft:log_silverwood>]);
 	
 
-	recipes.removeByRegex("^embers:gear.*");
-	recipes.removeByRegex("^mystgears:recipe_gear.*");
 	recipes.removeByRegex("^railcraft:gear.*");
 	recipes.removeByRegex("^thermalfoundation:material_[6-8][0-9]");
 //Done!

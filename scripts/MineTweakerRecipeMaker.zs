@@ -246,4 +246,4 @@ recipes.addShaped(<ic2:heat_exchanger> * 4, [[null, <ore:plateIron>, null], [<or
 recipes.addShaped(<ic2:component_heat_vent>, [[null, <ore:plasticLightGray>, null], [<ore:plasticLightGray>, <ic2:heat_vent>, <ore:plasticLightGray>], [null, <ore:plasticLightGray>, null]]);
 recipes.addShaped(<ic2:advanced_heat_vent>, [[null, <ore:quicksilver>, null], [<ic2:heat_vent>, <ore:dustDiamond>, <ic2:heat_vent>], [null, <ore:quicksilver>, null]]);
 recipes.addShaped(<ic2:heat_vent> * 2, [[<ore:barsIron>, <ore:barsIron>, <ore:barsIron>], [<ore:barsIron>, <mysticalmechanics:gear_fan>, <ore:barsIron>], [<ore:barsIron>, <ore:barsIron>, <ore:barsIron>]]);
-
+recipes.addShaped(<mystgears:mechanical_turret>, [[<ore:leather>, <ore:gearGold>, null], [<ore:stickIron>, <mysticalmechanics:gearbox_frame>, <ore:gearGold>], [<mysticalmechanics:gearbox_frame>, <ore:gearGold>, null]]);
