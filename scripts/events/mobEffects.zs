@@ -17,7 +17,13 @@ import native.java.lang.Class;
 //special thanks to Girouxdudes on the ct support discord for helping me get this to work
 
 
+
+
 //Helper functions
+
+val FluxGooParticleIDNum as int = native.net.minecraft.block.Block.func_176210_f(<blockstate:thaumcraft:flux_goo>.native);
+val FluxGooParticleID as string = toString(FluxGooParticleIDNum);
+
 function isTainted(entity as IEntityLivingBase) as bool{
     val entityAttribute as AttributeInstance = entity.getAttribute("tc.mobmodtaint");
     if(isNull(entityAttribute)){
@@ -111,7 +117,7 @@ events.onEntityLivingDeathDrops(function(event as crafttweaker.event.EntityLivin
     {
         val invis = <potion:minecraft:invisibility>.makePotionEffect(1000, 3 ,false, false) as IPotionEffect;
         event.entityLivingBase.addPotionEffect(invis);
-        server.commandManager.executeCommandSilent(event.entityLivingBase, "particle blockcrack ~ ~" + toString(event.entityLivingBase.eyeHeight /2) +" ~ 0.3 "+toString(event.entityLivingBase.eyeHeight /2)+ " 0.3 0 300 force @a 1107");
+        server.commandManager.executeCommandSilent(event.entityLivingBase, "particle blockcrack ~ ~" + toString(event.entityLivingBase.eyeHeight /2) +" ~ 0.3 "+toString(event.entityLivingBase.eyeHeight /2)+ " 0.3 0 300 force @a "+FluxGooParticleID);
         server.commandManager.executeCommandSilent(event.entityLivingBase, "playsound thaumcraft:gore hostile @a ~ ~ ~");
     }
     //drops
