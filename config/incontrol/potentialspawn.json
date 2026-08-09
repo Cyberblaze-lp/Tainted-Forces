@@ -12,15 +12,6 @@
         "groupcountmax": 1
       },
       {
-        "mob": "quark:ashen",
-      "block": [
-          "tetra:forged-platform"
-        ],
-        "weight": 6,
-        "groupcountmin": 1,
-        "groupcountmax": 1
-      },
-      {
         "mob": "quark:dweller",
        "block": [
           "tetra:forged-platform"

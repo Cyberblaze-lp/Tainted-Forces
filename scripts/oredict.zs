@@ -17,7 +17,7 @@
     <ore:dustAdvancedElectronicAlloy>.remove(<immersiveintelligence:material_dust>);
     <ore:nuggetAdvancedElectronicAlloy>.remove(<immersiveintelligence:material_nugget>);
 
-    for i in 1 to 7
+    for i in 1 to 8
     {
         <ore:blockCopper>.remove(<deeperdepths:copper_block>.definition.makeStack(i));
     }
