@@ -51,6 +51,9 @@ for stone in rocktypes
 
 }
 
+mods.rustichromia.Assembler.add("machineblock", 2,[<ore:plateSteel>*10,<ore:itemRubber>*5,<cyberware:component:4>*2], [<ic2:resource:12>], 40.0, 120.0, 200);
+mods.rustichromia.Assembler.add("redstoneblock", 2,[<ore:plateSteel>*10,<ore:itemRubber>*10,<cyberware:component:4>*2], [<immersiveengineering:metal_decoration0:3>], 40.0, 120.0, 200);
+
 
 
 

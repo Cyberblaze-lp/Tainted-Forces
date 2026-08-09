@@ -109,6 +109,10 @@ events.onEntityJoinWorld(function (event as crafttweaker.event.EntityJoinWorldEv
 
         val r1 = event.world.random.nextInt(0, features.length - 1);
         val feature as string = features[r1];
+        if (mods.ctutils.utils.Math.getRandom().nextInt(0, 3) == 1)
+        {
+            server.commandManager.executeCommandSilent(event.entity, "summon thaumcraft:eldritchguardian ~ ~ ~ {PersistenceRequired:1b}");
+        }
         event.entity.setPosition(entityPosOffset);
         server.commandManager.executeCommandSilent(event.entity, "tgen tetra:forged_" + feature);
         return;

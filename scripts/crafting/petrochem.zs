@@ -22,7 +22,7 @@ mods.immersiveintelligence.Coagulator.addRecipe(<thebetweenlands:sulfur_block>*2
 mods.immersiveengineering.Mixer.addRecipe(<liquid:concrete>*1000, <liquid:limewater>*1000,[<tfc:aggregate>*3,<minecraft:clay>], 5000);
 
 mods.terrafirmacraft.Barrel.addRecipe("betterconcrete", <tfc:aggregate>, <liquid:limewater> * 125,<immersiveengineering:stone_decoration:5>,null, 1);
-mods.terrafirmacraft.Barrel.addRecipe("betterconcrete2", <ore:gravel>*2, <liquid:limewater> * 250,<immersiveengineering:stone_decoration:5>,null, 1);
+mods.terrafirmacraft.Barrel.addRecipe("betterconcrete2", <ore:gravel>*3, <liquid:limewater> * 150,<immersiveengineering:stone_decoration:5>,null, 1);
 mods.terrafirmacraft.Barrel.addRecipe("betterasphalt", <tfc:aggregate>, <liquid:tar> * 125,<immersivepetroleum:stone_decoration>,null, 1);
 mods.terrafirmacraft.Barrel.addRecipe("betterhempcrete", <tfc:crop/product/jute_fiber>, <liquid:limewater> * 125,<immersiveengineering:stone_decoration:4>,null, 1);
 
