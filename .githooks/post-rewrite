@@ -1,3 +1,0 @@
-#!/bin/bash
-# Just call post-merge here. Maybe separate to another file in the future.
-exec .githooks/post-merge
