@@ -144,6 +144,18 @@ for item in clockwork
     mods.chisel.Carving.addVariation("clockwork", item);
 }
 
+mods.chisel.Carving.addGroup("lamiDucts");
+mods.chisel.Carving.addVariation("lamiDucts", <thermaldynamics:duct_16:6>);
+mods.chisel.Carving.addVariation("lamiDucts", <thermaldynamics:duct_16:7>);
+
+mods.chisel.Carving.addGroup("strongGlass");
+
+for i in 0 to 16
+{
+    mods.chisel.Carving.addVariation("lamiDucts", <railcraft:glass>.definition.makeStack(i));
+
+}
+
 
 
 

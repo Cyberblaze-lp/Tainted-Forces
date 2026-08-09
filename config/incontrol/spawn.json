@@ -44,7 +44,7 @@
 		"mob": "quark:forgotten",
 		"onjoin": true,
 		"maxcount": {
-			"amount": 3,
+			"amount": 1,
 			"mob": "quark:forgotten",
 			"perplayer": true
 		},
@@ -55,28 +55,13 @@
 		"groupsizemin": 1,
 		"groupsizemax": 1
 	},
-	{
-		"dimension": 0,
-		"mob": "quark:ashen",
-		"onjoin": true,
-		"maxcount": {
-			"amount": 15,
-			"mob": "quark:ashen",
-			"perplayer": true
-		},
-		"block": ["tetra:forged_platform"],
-		"maxY": 30,
-		"maxlight": 2,
-		"result": "allow",
-		"groupsizemin": 1,
-		"groupsizemax": 1
-	},
+	
 	{
 		"dimension": 0,
 		"mob": "quark:dweller",
 		"onjoin": true,
 		"maxcount": {
-			"amount": 10,
+			"amount": 4,
 			"mob": "quark:dweller",
 			"perplayer": true
 		},
@@ -259,12 +244,6 @@
 	{
 		"dimension": 0,
 		"mob": "quark:dweller",
-		"onjoin": false,
-		"result": "deny"
-	},
-	{
-		"dimension": 0,
-		"mob": "quark:ashen",
 		"onjoin": false,
 		"result": "deny"
 	},

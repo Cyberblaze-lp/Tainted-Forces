@@ -19,7 +19,10 @@ recipes.addShaped(<immersiveintelligence:material_ingot:6> * 2, [[<ore:itemSilic
 
 mods.tconstruct.Casting.addBasinRecipe(<magneticraft:multiblock_column>, <quark:sturdy_stone>, <liquid:lead>, 576, true, 160);
 mods.tconstruct.Casting.addBasinRecipe(<magneticraft:multiblock_parts:5>, <quark:iron_plate>, <liquid:iron>, 576, true, 160);
-mods.tconstruct.Casting.addBasinRecipe(<immersiveengineering:metal_decoration0:3>, <immersiveintelligence:metal_decoration:1>, <liquid:redstone>, 2000, true, 160);
+
+mods.tconstruct.Casting.addBasinRecipe(<thebetweenlands:rubber_block>, null, <liquid:rubber>, 1000, false, 160);
+mods.tconstruct.Casting.addTableRecipe(<immersiveintelligence:material_plate:6>, null, <liquid:latex>, 250, false, 160);
+
 
 
 

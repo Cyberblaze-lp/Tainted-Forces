@@ -22,7 +22,9 @@
 		"modularmachinery",
 		"signals",
 		"thermalexpansion",
-		"rustichromia"
+		"rustichromia",
+		"sync",
+		"weather2"
 	]{
 		recipes.removeByMod(mod);
 	}
@@ -433,7 +435,8 @@
 		<thermalfoundation:material:515>,
 		<weather2:weather_deflector>,
 		<weather2:weather_machine>,
-		<tconstruct:wooden_hopper>
+		<tconstruct:wooden_hopper>,
+		<railcraft:charge:5>
 	]{
 		recipes.remove(output);
 	}
@@ -708,7 +711,11 @@
 		<tfctech:latex/vulcanizing_agents>,
 		<thermalexpansion:augment:352>,
 		<tfc:bellows>,
-		<tfc:metal/anvil/copper>
+		<tfc:metal/anvil/copper>,
+		<extrautils2:interactionproxy>,
+		<railcraft:charge>,
+		<railcraft:charge:1>,
+		<railcraft:charge:2>,
 	]{
 		mods.jei.JEI.removeAndHide(item);
 	}

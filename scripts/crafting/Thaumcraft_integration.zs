@@ -71,6 +71,8 @@ for item in <ore:concrete>.itemArray
 mods.thaumcraft.Crucible.registerRecipe("alumentumfromcoke", "ALUMENTUM", <thaumcraft:alumentum>*2, <ore:fuelCoke>, [<aspect:ignis>*20, <aspect:potentia>*20, <aspect:perditio>*10]);
 mods.thaumcraft.Crucible.registerRecipe("alumentumfrombituminous", "ALUMENTUM", <thaumcraft:alumentum>, <tfc:ore/bituminous_coal>, [<aspect:ignis>*10, <aspect:potentia>*10, <aspect:perditio>*5]);
 
+mods.thaumcraft.Crucible.registerRecipe("rubber_bad", "", <immersiveintelligence:material:29>, <thebetweenlands:rubber_block>, [<aspect:instrumentum>*30, <aspect:motus>*30]);
+mods.thaumcraft.Crucible.registerRecipe("rubber_good", "", <immersiveintelligence:material:29>, <immersiveintelligence:material_plate:6>, [<aspect:instrumentum>*2, <aspect:motus>*2]);
 
 mods.thaumcraft.Crucible.registerRecipe("labmeat", "LABMEAT", <tfc:food/bear>*3, <tfc:food/bear>, [<aspect:victus>*10, <aspect:fabrico>*5]);
 mods.thaumcraft.Crucible.registerRecipe("labrennet", "LABMEAT", <firmalife:rennet>*5, <firmalife:rennet>, [<aspect:victus>*10, <aspect:permutatio>*5]);

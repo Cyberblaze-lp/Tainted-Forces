@@ -25,7 +25,6 @@
 
 // ================================================================================
 //#MARKER ADD SHAPELESS
-recipes.addShapeless(<quark:diamond_heart>, [<ore:gemExquisiteDiamond>, <ore:ingotUnstable>]);
 recipes.addShapeless(<immersiveintelligence:material_ingot:5> * 2, [<thaumcraft:nugget:10>, <ore:ingotIron>, <ore:ingotIron>]);
 recipes.addShapeless(<tfc:fire_bricks>, [<tfc:ceramics/fired/fire_brick>, <tfc:ceramics/fired/fire_brick>, <ore:ingotBrickNether>, <ore:ingotBrickNether>, <tfc:mortar>]);
 recipes.addShapeless(<projectred-core:resource_item:251>, [<ore:ingotCopper>, <ore:dustRedstone>, <ore:dustRedstone>, <ore:dustRedstone>, <ore:dustRedstone>,<ore:dustRedstone>, <ore:dustRedstone>, <ore:dustRedstone>, <ore:dustRedstone>]);
@@ -74,7 +73,6 @@ recipes.addShapeless(<tfc:raw/limestone>, [<thebetweenlands:limestone>]);
 recipes.addShaped(<tfc:metal/sheet/wrought_iron>, [[<ore:blockSheetmetalIron>]]);
 recipes.addShaped(<tfc:metal/sheet/brass>, [[<ore:sheetmetalBrass>]]);
 recipes.addShaped(<thaumcraft:primordial_pearl:7>, [[<extrautils2:decorativesolid:8>]]);
-recipes.addShaped(<quark:diamond_heart>, [[<ore:gemDiamond>, <ore:gemDiamond>, <ore:gemDiamond>], [<ore:gemDiamond>, <ore:ingotUnstable>, <ore:gemDiamond>], [<ore:gemDiamond>, <ore:gemDiamond>, <ore:gemDiamond>]]);
 recipes.addShaped(<minecraft:dye:4>, [[<ore:gemLapis>]]);
 recipes.addShaped(<extrautils2:decorativesolid:2>, [[<ore:stonePolished>]]);
 recipes.addShaped(<minecraft:coal_block>, [[<ore:mineralLignite>, <ore:mineralLignite>, <ore:mineralLignite>], [<ore:mineralLignite>, <ore:mineralLignite>, <ore:mineralLignite>], [<ore:mineralLignite>, <ore:mineralLignite>, <ore:mineralLignite>]]);

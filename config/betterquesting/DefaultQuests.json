@@ -101,14 +101,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "repeattime:3": -1,
-          "name:8": "Salvaging the Wreckage",
-          "autoclaim:1": 0,
           "issilent:1": 0,
+          "autoclaim:1": 0,
+          "name:8": "Salvaging the Wreckage",
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "globalshare:1": 0,
+          "desc:8": "The Rocket you landed in can definitely not make another trip, it\u0027s for the best if you disassemble it and recycle the scraps. Please take cover when you do, though. I don\u0027t trust §6Izawa §fto have made it any more stable than absolutely necessary, so treat it like it\u0027s rigged to explode.",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "The Rocket you landed in can definitely not make another trip, it\u0027s for the best if you disassemble it and recycle the scraps. Please take cover when you do, though. I don\u0027t trust §6Izawa §fto have made it any more stable than absolutely necessary, so treat it like it\u0027s rigged to explode."
+          "globalshare:1": 0
         }
       },
       "questID:3": 0,
@@ -140,14 +140,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "autoclaim:1": 0,
-          "issilent:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
           "name:8": "Ziplines",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "issilent:1": 0,
           "repeattime:3": -1,
-          "desc:8": "Using a §dSkyhook§f, you can ride along Powerlines. Rope, steel cable, etc. also work. simply right-click with it while near a wire.",
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "Using a §dSkyhook§f, you can ride along Powerlines. Rope, steel cable, etc. also work. simply right-click with it while near a wire."
         }
       },
       "questID:3": 1,
@@ -179,14 +179,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "name:8": "Fireproof Bricks",
-          "repeattime:3": -1,
           "issilent:1": 0,
+          "repeattime:3": -1,
+          "name:8": "Fireproof Bricks",
           "autoclaim:1": 0,
-          "globalshare:1": 0,
+          "desc:8": "No Description",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "No Description"
+          "globalshare:1": 0
         }
       },
       "questID:3": 2,
@@ -218,14 +218,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "repeattime:3": -1,
-          "name:8": "New Quest",
-          "autoclaim:1": 0,
           "issilent:1": 0,
+          "autoclaim:1": 0,
+          "name:8": "New Quest",
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "globalshare:1": 0,
+          "desc:8": "No Description",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "No Description"
+          "globalshare:1": 0
         }
       },
       "questID:3": 3,
@@ -249,14 +249,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "issilent:1": 0,
-          "repeattime:3": -1,
           "name:8": "Tainted Animal Autopsy",
+          "repeattime:3": -1,
+          "issilent:1": 0,
           "autoclaim:1": 0,
-          "desc:8": "No Description",
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "No Description"
         }
       },
       "questID:3": 5,
@@ -288,14 +288,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "name:8": "New Quest",
-          "repeattime:3": -1,
           "issilent:1": 0,
+          "repeattime:3": -1,
+          "name:8": "New Quest",
           "autoclaim:1": 0,
-          "globalshare:1": 0,
+          "desc:8": "No Description",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "No Description"
+          "globalshare:1": 0
         }
       },
       "questID:3": 6,
@@ -321,14 +321,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "repeattime:3": -1,
-          "name:8": "New Quest",
-          "autoclaim:1": 0,
           "issilent:1": 0,
+          "autoclaim:1": 0,
+          "name:8": "New Quest",
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "globalshare:1": 0,
+          "desc:8": "No Description",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "No Description"
+          "globalshare:1": 0
         }
       },
       "questID:3": 7,
@@ -354,14 +354,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "repeattime:3": -1,
-          "name:8": "New Quest",
-          "autoclaim:1": 0,
           "issilent:1": 0,
+          "autoclaim:1": 0,
+          "name:8": "New Quest",
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "globalshare:1": 0,
+          "desc:8": "No Description",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "No Description"
+          "globalshare:1": 0
         }
       },
       "questID:3": 8,
@@ -387,14 +387,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "repeattime:3": -1,
-          "name:8": "New Quest",
-          "autoclaim:1": 0,
           "issilent:1": 0,
+          "autoclaim:1": 0,
+          "name:8": "New Quest",
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "globalshare:1": 0,
+          "desc:8": "No Description",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "No Description"
+          "globalshare:1": 0
         }
       },
       "questID:3": 9,
@@ -420,14 +420,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "repeattime:3": -1,
-          "name:8": "New Quest",
-          "autoclaim:1": 0,
           "issilent:1": 0,
+          "autoclaim:1": 0,
+          "name:8": "New Quest",
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "globalshare:1": 0,
+          "desc:8": "No Description",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "No Description"
+          "globalshare:1": 0
         }
       },
       "questID:3": 10,
@@ -453,14 +453,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "repeattime:3": -1,
-          "name:8": "New Quest",
-          "autoclaim:1": 0,
           "issilent:1": 0,
+          "autoclaim:1": 0,
+          "name:8": "New Quest",
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "globalshare:1": 0,
+          "desc:8": "No Description",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "No Description"
+          "globalshare:1": 0
         }
       },
       "questID:3": 11,
@@ -528,14 +528,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "name:8": "Tissue Samples",
-          "repeattime:3": -1,
           "issilent:1": 0,
+          "repeattime:3": -1,
+          "name:8": "Tissue Samples",
           "autoclaim:1": 0,
-          "globalshare:1": 0,
+          "desc:8": "In order to better understand the nature of this \"Taint\", you should gather samples of biomass. \n\nMost of these shoud be easily obtainable from infected creatures, though in a pinch some of the tainted blocks can drop them aswell.",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "In order to better understand the nature of this \"Taint\", you should gather samples of biomass. \n\nMost of these shoud be easily obtainable from infected creatures, though in a pinch some of the tainted blocks can drop them aswell."
+          "globalshare:1": 0
         }
       },
       "questID:3": 12,
@@ -567,14 +567,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "name:8": "Pollution Mechanics",
-          "repeattime:3": -1,
           "issilent:1": 0,
+          "repeattime:3": -1,
+          "name:8": "Pollution Mechanics",
           "autoclaim:1": 0,
-          "globalshare:1": 0,
+          "desc:8": "So turns out all this purple smoke you\u0027ve been haphazardly dumping into the atmosphere is the nutrients the Taint has been waiting for all this time. When the pollution reaches it, it will try to infect any and all soil between it and its food source- your factory.\nHowever, I have good news: In order to digest pollution, the Taint sprouts \"Taint Seeds\" which are quite fragile compared to the rest of the biomass. it should be easy enough for ranged weaponry to take care of them. I suspect that you won\u0027t just stop polluting, however. go ask Lieutenant ",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "So turns out all this purple smoke you\u0027ve been haphazardly dumping into the atmosphere is the nutrients the Taint has been waiting for all this time. When the pollution reaches it, it will try to infect any and all soil between it and its food source- your factory.\nHowever, I have good news: In order to digest pollution, the Taint sprouts \"Taint Seeds\" which are quite fragile compared to the rest of the biomass. it should be easy enough for ranged weaponry to take care of them. I suspect that you won\u0027t just stop polluting, however. go ask Lieutenant "
+          "globalshare:1": 0
         }
       },
       "questID:3": 13,
@@ -606,14 +606,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "autoclaim:1": 0,
-          "name:8": "The Disease",
-          "snd_complete:8": "minecraft:entity.player.levelup",
           "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "name:8": "The Disease",
           "repeattime:3": -1,
-          "globalshare:1": 0,
+          "desc:8": "What in the- this stuff is completely different to all life as we know it. Fungi and slime molds come close, but it also shares molecules with §osilicone rubber and lead paint§f of all things, aswell as some as of yet unidentified compounds.\nThere\u0027s no way something like this evolved here naturally, it feels out of place even in this biosphere.\n\nFrom what i could tell it also has no metabolism to speak of. As if it was lying dormant, waiting for new food to appear. Whatever that may be.\n\nIt will infect nearby living creatures however, presumably to defend itself in an energy-efficient \nmanner. ",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "What in the- this stuff is completely different to all life as we know it. Fungi and slime molds come close, but it also shares molecules with §osilicone rubber and lead paint§f of all things, aswell as some as of yet unidentified compounds.\nThere\u0027s no way something like this evolved here naturally, it feels out of place even in this biosphere.\n\nFrom what i could tell it also has no metabolism to speak of. As if it was lying dormant, waiting for new food to appear. Whatever that may be.\n\nIt will infect nearby living creatures however, presumably to defend itself in an energy-efficient \nmanner. "
+          "globalshare:1": 0
         }
       },
       "questID:3": 14,
@@ -639,14 +639,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "repeattime:3": -1,
-          "name:8": "New Quest",
-          "autoclaim:1": 0,
           "issilent:1": 0,
+          "autoclaim:1": 0,
+          "name:8": "New Quest",
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "globalshare:1": 0,
+          "desc:8": "No Description",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "No Description"
+          "globalshare:1": 0
         }
       },
       "questID:3": 15,
@@ -672,14 +672,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "repeattime:3": -1,
-          "name:8": "New Quest",
-          "autoclaim:1": 0,
           "issilent:1": 0,
+          "autoclaim:1": 0,
+          "name:8": "New Quest",
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "globalshare:1": 0,
+          "desc:8": "No Description",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "No Description"
+          "globalshare:1": 0
         }
       },
       "questID:3": 16,
@@ -733,14 +733,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "repeattime:3": -1,
-          "name:8": "Alien Flora",
-          "autoclaim:1": 0,
           "issilent:1": 0,
+          "autoclaim:1": 0,
+          "name:8": "Alien Flora",
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "globalshare:1": 0,
+          "desc:8": "First scans show that much of the plantlife here is very familiar- grass, trees, flowers, you name it. However, there are a few that stick out. Would you mind breaking some for examination? Whether you get them back intact does not matter.\n\nNote: any Mystical Flower will work",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "First scans show that much of the plantlife here is very familiar- grass, trees, flowers, you name it. However, there are a few that stick out. Would you mind breaking some for examination? Whether you get them back intact does not matter.\n\nNote: any Mystical Flower will work"
+          "globalshare:1": 0
         }
       },
       "questID:3": 17,
@@ -788,14 +788,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "repeattime:3": -1,
-          "name:8": "Useless(?) Flowers",
-          "autoclaim:1": 0,
           "issilent:1": 0,
+          "autoclaim:1": 0,
+          "name:8": "Useless(?) Flowers",
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "globalshare:1": 0,
+          "desc:8": "These flowers are extraordinary! They emit faint beta radiation and have an otherwise unnatural sparkle to them that I can\u0027t quite describe. Mind sending some samples? Some fertilizer would also be neat so we can propagate them up here. Most nimals here drop bones when killed, so getting some shouldn\u0027t be an issue.",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "These flowers are extraordinary! They emit faint beta radiation and have an otherwise unnatural sparkle to them that I can\u0027t quite describe. Mind sending some samples? Some fertilizer would also be neat so we can propagate them up here. Most nimals here drop bones when killed, so getting some shouldn\u0027t be an issue."
+          "globalshare:1": 0
         }
       },
       "questID:3": 18,
@@ -839,14 +839,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "repeattime:3": -1,
-          "name:8": "What is this Thing?",
-          "autoclaim:1": 0,
           "issilent:1": 0,
+          "autoclaim:1": 0,
+          "name:8": "What is this Thing?",
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "globalshare:1": 0,
+          "desc:8": "This Digital Interface lets you communicate with us Researchers and the crew at large. \nTogether with your Map and \"World Analysis Interpretive Lexicographical Agent\" (WAILA), it is part of a small suite of tools we managed to get to the surface with you unscathed.\n\n\nWhy don\u0027t you check whether the scanner is working and send us a piece of dirt? ",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "This Digital Interface lets you communicate with us Researchers and the crew at large. \nTogether with your Map and \"World Analysis Interpretive Lexicographical Agent\" (WAILA), it is part of a small suite of tools we managed to get to the surface with you unscathed.\n\n\nWhy don\u0027t you check whether the scanner is working and send us a piece of dirt? "
+          "globalshare:1": 0
         }
       },
       "questID:3": 19,
@@ -875,14 +875,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "issilent:1": 0,
-          "repeattime:3": -1,
           "name:8": "You found clay!",
+          "repeattime:3": -1,
+          "issilent:1": 0,
           "autoclaim:1": 0,
-          "desc:8": "So this plant isn\u0027t particularly notable in the paranormal sense. However, it only grows on top of §3Clay§f. Might be worth keeping in mind when looking for it.",
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "So this plant isn\u0027t particularly notable in the paranormal sense. However, it only grows on top of §3Clay§f. Might be worth keeping in mind when looking for it."
         }
       },
       "questID:3": 20,
@@ -908,14 +908,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "name:8": "New Quest",
-          "repeattime:3": -1,
           "issilent:1": 0,
+          "repeattime:3": -1,
+          "name:8": "New Quest",
           "autoclaim:1": 0,
-          "globalshare:1": 0,
+          "desc:8": "No Description",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "No Description"
+          "globalshare:1": 0
         }
       },
       "questID:3": 21,
@@ -941,14 +941,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "issilent:1": 0,
-          "repeattime:3": -1,
           "name:8": "Taint Trigger",
+          "repeattime:3": -1,
+          "issilent:1": 0,
           "autoclaim:1": 0,
-          "desc:8": "No Description",
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "No Description"
         }
       },
       "questID:3": 22,
@@ -1008,14 +1008,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "repeattime:3": -1,
-          "issilent:1": 0,
-          "autoclaim:1": 0,
           "name:8": "Floral Fusion",
+          "autoclaim:1": 0,
+          "issilent:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "desc:8": "Ok so you won\u0027t believe this, but I just went to wash the petals you sent and somehow they spontaneously fused into... this? It does look mildly more useful than the other flowers by themselves.\n\n\nLet\u0027s see if you can replicate the process. A stone basin filled with water should be enough. Throw in some petals in a valid combination aswell as a seed to finish it.Looks like it just ate my lead crystal seeds so it should really not matter what type. ",
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "Ok so you won\u0027t believe this, but I just went to wash the petals you sent and somehow they spontaneously fused into... this? It does look mildly more useful than the other flowers by themselves.\n\n\nLet\u0027s see if you can replicate the process. A stone basin filled with water should be enough. Throw in some petals in a valid combination aswell as a seed to finish it.Looks like it just ate my lead crystal seeds so it should really not matter what type. "
         }
       },
       "questID:3": 24,
@@ -1044,14 +1044,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "repeattime:3": -1,
-          "issilent:1": 0,
-          "autoclaim:1": 0,
           "name:8": "New Quest",
+          "autoclaim:1": 0,
+          "issilent:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "desc:8": "No Description",
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "No Description"
         }
       },
       "questID:3": 25,
@@ -1080,14 +1080,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "issilent:1": 0,
-          "repeattime:3": -1,
           "name:8": "New Quest",
+          "repeattime:3": -1,
+          "issilent:1": 0,
           "autoclaim:1": 0,
-          "desc:8": "No Description",
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "No Description"
         }
       },
       "questID:3": 26,
@@ -1119,14 +1119,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "repeattime:3": -1,
-          "issilent:1": 0,
-          "autoclaim:1": 0,
           "name:8": "New Quest",
+          "autoclaim:1": 0,
+          "issilent:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "desc:8": "No Description",
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "No Description"
         }
       },
       "questID:3": 27,
@@ -1155,14 +1155,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "repeattime:3": -1,
-          "issilent:1": 0,
-          "autoclaim:1": 0,
           "name:8": "New Quest",
+          "autoclaim:1": 0,
+          "issilent:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "desc:8": "No Description",
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "No Description"
         }
       },
       "questID:3": 28,
@@ -1188,14 +1188,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "autoclaim:1": 0,
-          "name:8": "New Quest",
-          "snd_complete:8": "minecraft:entity.player.levelup",
           "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "name:8": "New Quest",
           "repeattime:3": -1,
-          "globalshare:1": 0,
+          "desc:8": "No Description",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "No Description"
+          "globalshare:1": 0
         }
       },
       "questID:3": 29,
@@ -1221,14 +1221,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "issilent:1": 0,
-          "repeattime:3": -1,
           "name:8": "New Quest",
+          "repeattime:3": -1,
+          "issilent:1": 0,
           "autoclaim:1": 0,
-          "desc:8": "No Description",
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "No Description"
         }
       },
       "questID:3": 30,
@@ -1257,14 +1257,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "repeattime:3": -1,
-          "issilent:1": 0,
-          "autoclaim:1": 0,
           "name:8": "New Quest",
+          "autoclaim:1": 0,
+          "issilent:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "desc:8": "No Description",
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "No Description"
         }
       },
       "questID:3": 31,
@@ -1334,14 +1334,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "autoclaim:1": 0,
-          "issilent:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
           "name:8": "Sensors- When Comparators aren\u0027t enough",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "issilent:1": 0,
           "repeattime:3": -1,
-          "desc:8": "Some devices have too many variables for a comparator to keep track of. The §dBarrel §ffor instance features both a fluid and item buffer, aswell as the signal the comparator actually winds up outputting which is whether the barrel is sealed or not.\n\nThis is where §dDials §fcome in. chiselled from some §dBrass Mechanisms§f, they can be used to relay specific types of information to comparators attached to them. This even allows for §6reading of containers that do not have built-in comparator support§f like individual clothesline anchors or mini chests. Other dial Types can query the fill level of fluid tanks or the speed of Mechanical devices.\n\n§dLight Sensors§f, made by chiselling a §dNAND Gate§f, will by default detect both block and skylight. §6You can cycle through its modes by shift-clicking with a screwdriver§f. Blue means skylight only, red means block light only. §6Useful for devices that emit light or create light-emitting blocks during operation.§f\n\nThe §dScanner §fis a versatile device capable of §6reading the Blockstate§f of whereever its \"eye\" is pointing and emits a redstone signal if it matches the criteria listed in its GUI.",
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "Some devices have too many variables for a comparator to keep track of. The §dBarrel §ffor instance features both a fluid and item buffer, aswell as the signal the comparator actually winds up outputting which is whether the barrel is sealed or not.\n\nThis is where §dDials §fcome in. chiselled from some §dBrass Mechanisms§f, they can be used to relay specific types of information to comparators attached to them. This even allows for §6reading of containers that do not have built-in comparator support§f like individual clothesline anchors or mini chests. Other dial Types can query the fill level of fluid tanks or the speed of Mechanical devices.\n\n§dLight Sensors§f, made by chiselling a §dNAND Gate§f, will by default detect both block and skylight. §6You can cycle through its modes by shift-clicking with a screwdriver§f. Blue means skylight only, red means block light only. §6Useful for devices that emit light or create light-emitting blocks during operation.§f\n\nThe §dScanner §fis a versatile device capable of §6reading the Blockstate§f of whereever its \"eye\" is pointing and emits a redstone signal if it matches the criteria listed in its GUI."
         }
       },
       "questID:3": 32,
@@ -1389,14 +1389,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "autoclaim:1": 0,
-          "issilent:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
           "name:8": "Clotheslines",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "issilent:1": 0,
           "repeattime:3": -1,
-          "desc:8": "§fAwesome, with Iron and Jute in hand, we can now create §dClotheslines§f. These jute ropes can be used to link §dClothesline Anchors§f, forming a loop that can transport items.\n\nKeep in mind that at least one Anchor must be powered using §6Mechanical Power§f (speed 5.0R or more) Adding more power will speed it up, but it caps out at ~40R.\nAnchors can only accept mechanical power from a block they are directly attached to, and only if they are facing either up or down.\n\nAnchors can be interacted with like regular inventories, but will act like they can only hold 1 item. They will also attempt to auto-output to the block they are attached to.\n\nThe notable benefit of these compared to conveyors is that they are easier to set up and expand. They also go both ways, so every point on the line can be in- or output. Lastly, Clotheslines will get saturated and stop accepting items if all outputs are full. Contrary to conveyor belts which will happily let any excess accumulate on the final belt segment without additional redstone control.\n\nAn annoying caveat is that in order to connect two anchors, §6you have to hold down right-click while dragging your cursor from one to the other§f.",
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "§fAwesome, with Iron and Jute in hand, we can now create §dClotheslines§f. These jute ropes can be used to link §dClothesline Anchors§f, forming a loop that can transport items.\n\nKeep in mind that at least one Anchor must be powered using §6Mechanical Power§f (speed 5.0R or more) Adding more power will speed it up, but it caps out at ~40R.\nAnchors can only accept mechanical power from a block they are directly attached to, and only if they are facing either up or down.\n\nAnchors can be interacted with like regular inventories, but will act like they can only hold 1 item. They will also attempt to auto-output to the block they are attached to.\n\nThe notable benefit of these compared to conveyors is that they are easier to set up and expand. They also go both ways, so every point on the line can be in- or output. Lastly, Clotheslines will get saturated and stop accepting items if all outputs are full. Contrary to conveyor belts which will happily let any excess accumulate on the final belt segment without additional redstone control.\n\nAn annoying caveat is that in order to connect two anchors, §6you have to hold down right-click while dragging your cursor from one to the other§f."
         }
       },
       "questID:3": 33,
@@ -1472,14 +1472,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "repeattime:3": -1,
-          "issilent:1": 0,
-          "autoclaim:1": 0,
           "name:8": "Basic Item Logistics",
+          "autoclaim:1": 0,
+          "issilent:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "desc:8": "§dConveyor Belts§f are the simplest way of getting items from A to B.\nThere\u0027s several variants that can all be cycled through using the §dChisel§f. \n\nA §dHammer§f is able to rotate them in any of the 4 cardinal directions. Shift-clicking a regular ",
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "§dConveyor Belts§f are the simplest way of getting items from A to B.\nThere\u0027s several variants that can all be cycled through using the §dChisel§f. \n\nA §dHammer§f is able to rotate them in any of the 4 cardinal directions. Shift-clicking a regular "
         }
       },
       "questID:3": 34,
@@ -1508,14 +1508,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "issilent:1": 0,
-          "repeattime:3": -1,
           "name:8": "New Quest",
+          "repeattime:3": -1,
+          "issilent:1": 0,
           "autoclaim:1": 0,
-          "desc:8": "No Description",
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "No Description"
         }
       },
       "questID:3": 35,
@@ -1540,15 +1540,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
+          "autoclaim:1": 0,
+          "name:8": "Inserters",
           "snd_complete:8": "minecraft:entity.player.levelup",
           "issilent:1": 0,
           "repeattime:3": -1,
-          "name:8": "New Quest",
-          "autoclaim:1": 0,
-          "desc:8": "No Description",
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "No Description"
         }
       },
       "questID:3": 36,
@@ -1574,14 +1574,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "repeattime:3": -1,
-          "issilent:1": 0,
-          "autoclaim:1": 0,
           "name:8": "Basic Fluid Logistics",
+          "autoclaim:1": 0,
+          "issilent:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "desc:8": "§dFaucets §fand §dCasting Channels§f are the simplest form of fluid transport. Their throughput is quite limited and they cannot move liquids vertically upwards. \n\nA Faucet will, if given a redstone signal, pour any liquid from the block it\u0027s attached to into the container below. Should this process stall, either because of the input draining completely or the output filling up, it requires another signal. \n\nChannels have a very limited throughput of ~36 mb/t total.",
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "§dFaucets §fand §dCasting Channels§f are the simplest form of fluid transport. Their throughput is quite limited and they cannot move liquids vertically upwards. \n\nA Faucet will, if given a redstone signal, pour any liquid from the block it\u0027s attached to into the container below. Should this process stall, either because of the input draining completely or the output filling up, it requires another signal. \n\nChannels have a very limited throughput of ~36 mb/t total."
         }
       },
       "questID:3": 37,
@@ -1629,14 +1629,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "autoclaim:1": 0,
-          "issilent:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
           "name:8": "Copper Ducts",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "issilent:1": 0,
           "repeattime:3": -1,
-          "desc:8": "Copper is a decently ductile material for making, well, §dDucts§f. \nThese pipes, due to their closed-top nature, have the ability to be pressurized to allow for virtually unlimited throughput. However, valves at the in- and outlets mean that the Throughput §6Per Connection (aka interfacing with machines and tanks, but not other ducts) §fis limited.\n\nFurthermore, thermal stress is a serious concern with these pipes, and as such they will rupture if made to transfer very hot or cold liquids.\n\n§dServos§f can be attached to Inlets to automatically extract fluid if the machine does not output automatically already. by default they need a redstone signal to activate, but you can change this in its GUI.",
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "Copper is a decently ductile material for making, well, §dDucts§f. \nThese pipes, due to their closed-top nature, have the ability to be pressurized to allow for virtually unlimited throughput. However, valves at the in- and outlets mean that the Throughput §6Per Connection (aka interfacing with machines and tanks, but not other ducts) §fis limited.\n\nFurthermore, thermal stress is a serious concern with these pipes, and as such they will rupture if made to transfer very hot or cold liquids.\n\n§dServos§f can be attached to Inlets to automatically extract fluid if the machine does not output automatically already. by default they need a redstone signal to activate, but you can change this in its GUI."
         }
       },
       "questID:3": 38,
@@ -1680,14 +1680,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "autoclaim:1": 0,
-          "issilent:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
           "name:8": "Smart Pipes",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "issilent:1": 0,
           "repeattime:3": -1,
-          "desc:8": "Steel is robust enough to allow for some truly heinous valve trickery. these §dPipes§f have no internal buffer and instead relay fluids directly to their destination. §6This makes it possible to have multiple fluid types flowing through the same pipe. §f\n\nThese pipes work for any temperature fluid.\nhowever, the Speed is fairly limited unless using §dMechanical or Electric Pumps§f between segments.\n\n§TThe Internal mechanisms require outside pressure to not fluctuate too rapidly, say, through §3High Wind Speeds§f.\n\n\n\n",
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "Steel is robust enough to allow for some truly heinous valve trickery. these §dPipes§f have no internal buffer and instead relay fluids directly to their destination. §6This makes it possible to have multiple fluid types flowing through the same pipe. §f\n\nThese pipes work for any temperature fluid.\nhowever, the Speed is fairly limited unless using §dMechanical or Electric Pumps§f between segments.\n\n§TThe Internal mechanisms require outside pressure to not fluctuate too rapidly, say, through §3High Wind Speeds§f.\n\n\n\n"
         }
       },
       "questID:3": 39,
@@ -1731,14 +1731,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "issilent:1": 0,
-          "repeattime:3": -1,
           "name:8": "Super-Laminar Ducts",
+          "repeattime:3": -1,
+          "issilent:1": 0,
           "autoclaim:1": 0,
-          "desc:8": "A pricey upgrade to the Copper Ducts.\nThese Pipes can transfer unlimited amounts of liquid of any temperature, now also unrestricted by ports.",
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "A pricey upgrade to the Copper Ducts.\nThese Pipes can transfer unlimited amounts of liquid of any temperature, now also unrestricted by ports."
         }
       },
       "questID:3": 40,
@@ -1788,14 +1788,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "repeattime:3": -1,
-          "issilent:1": 0,
-          "autoclaim:1": 0,
           "name:8": "Fluid Pumps",
+          "autoclaim:1": 0,
+          "issilent:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "desc:8": "Fluids can be moved from Tank to Tank just fine, but when it comes to picking them up from a Puddle in the world, this method breaks down. Usually this can be remedied by giving a bucket to a dispenser, but I can tell you are yearning for something simpler. \n\nEnter: the §dMechanical Pump§f! \n\n§e§fTo set it up, configure the in- and outputs using your hammer and apply a redstone signal.\nif you are using this for extracting fluids that renew themselves or get placed in the world via automation, I recommend shift-clicking the top with a hammer to stop it from replacing blocks with cobblestone.\n\nthe §6Blue Port §fon the top is used for §6Mechanical Power Input§f.\nAs with other machinery of this type, the §6Mechanical Power from your axles must be fed through a transmission box first§f to serve as a sort of \"Adapter\".\n\nusually transmission boxes are connected to machines like pumps via §dMotor Belts and Wheels§f, but a direct connection is also possible. §c\n\n\nRight now there is a bug where devices like the pump stop working after a short while if you directly connect it to the transmission box. I recommend using belts in between. if you insist on using a direct connection, you can also force it to update again by varying the mechanical power you apply, like by briefly cutting it every few seconds.\n\n\n",
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "Fluids can be moved from Tank to Tank just fine, but when it comes to picking them up from a Puddle in the world, this method breaks down. Usually this can be remedied by giving a bucket to a dispenser, but I can tell you are yearning for something simpler. \n\nEnter: the §dMechanical Pump§f! \n\n§e§fTo set it up, configure the in- and outputs using your hammer and apply a redstone signal.\nif you are using this for extracting fluids that renew themselves or get placed in the world via automation, I recommend shift-clicking the top with a hammer to stop it from replacing blocks with cobblestone.\n\nthe §6Blue Port §fon the top is used for §6Mechanical Power Input§f.\nAs with other machinery of this type, the §6Mechanical Power from your axles must be fed through a transmission box first§f to serve as a sort of \"Adapter\".\n\nusually transmission boxes are connected to machines like pumps via §dMotor Belts and Wheels§f, but a direct connection is also possible. §c\n\n\nRight now there is a bug where devices like the pump stop working after a short while if you directly connect it to the transmission box. I recommend using belts in between. if you insist on using a direct connection, you can also force it to update again by varying the mechanical power you apply, like by briefly cutting it every few seconds.\n\n\n"
         }
       },
       "questID:3": 41,
@@ -1824,14 +1824,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "autoclaim:1": 0,
-          "issilent:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
           "name:8": "New Quest",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "issilent:1": 0,
           "repeattime:3": -1,
-          "desc:8": "No Description",
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "No Description"
         }
       },
       "questID:3": 42,
@@ -1857,14 +1857,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "repeattime:3": -1,
-          "issilent:1": 0,
-          "autoclaim:1": 0,
           "name:8": "New Quest",
+          "autoclaim:1": 0,
+          "issilent:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "desc:8": "No Description",
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "No Description"
         }
       },
       "questID:3": 43,
@@ -1888,14 +1888,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "issilent:1": 0,
-          "repeattime:3": -1,
           "name:8": "New Quest",
+          "repeattime:3": -1,
+          "issilent:1": 0,
           "autoclaim:1": 0,
-          "desc:8": "No Description",
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "No Description"
         }
       },
       "questID:3": 44,
@@ -1921,14 +1921,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "issilent:1": 0,
-          "repeattime:3": -1,
           "name:8": "Viaducts",
+          "repeattime:3": -1,
+          "issilent:1": 0,
           "autoclaim:1": 0,
-          "desc:8": "§dViaducts §fare a more sophisticated way of personal transport. simply create a network of ducts and use a crescent hammer on any end points that you want to designate as a station. ",
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "§dViaducts §fare a more sophisticated way of personal transport. simply create a network of ducts and use a crescent hammer on any end points that you want to designate as a station. "
         }
       },
       "questID:3": 45,
@@ -1959,14 +1959,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "issilent:1": 0,
-          "repeattime:3": -1,
           "name:8": "New Quest",
+          "repeattime:3": -1,
+          "issilent:1": 0,
           "autoclaim:1": 0,
-          "desc:8": "No Description",
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "No Description"
         }
       },
       "questID:3": 46,
@@ -1992,14 +1992,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "repeattime:3": -1,
-          "issilent:1": 0,
-          "autoclaim:1": 0,
           "name:8": "New Quest",
+          "autoclaim:1": 0,
+          "issilent:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "desc:8": "No Description",
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "No Description"
         }
       },
       "questID:3": 47,
@@ -2023,14 +2023,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "repeattime:3": -1,
-          "issilent:1": 0,
-          "autoclaim:1": 0,
           "name:8": "New Quest",
+          "autoclaim:1": 0,
+          "issilent:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "desc:8": "No Description",
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "No Description"
         }
       },
       "questID:3": 48,
@@ -2054,14 +2054,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "repeattime:3": -1,
-          "issilent:1": 0,
-          "autoclaim:1": 0,
           "name:8": "New Quest",
+          "autoclaim:1": 0,
+          "issilent:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "desc:8": "No Description",
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "No Description"
         }
       },
       "questID:3": 49,
@@ -2085,14 +2085,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "repeattime:3": -1,
-          "issilent:1": 0,
-          "autoclaim:1": 0,
           "name:8": "New Quest",
+          "autoclaim:1": 0,
+          "issilent:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "desc:8": "No Description",
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "No Description"
         }
       },
       "questID:3": 50,
@@ -2116,14 +2116,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "repeattime:3": -1,
-          "issilent:1": 0,
-          "autoclaim:1": 0,
           "name:8": "New Quest",
+          "autoclaim:1": 0,
+          "issilent:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "desc:8": "No Description",
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "No Description"
         }
       },
       "questID:3": 51,
@@ -2131,7 +2131,37 @@
       "preRequisites:11": []
     },
     "50:10": {
-      "tasks:9": {},
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "groupDetect:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "id:8": "minecraft:piston",
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "id:8": "botania:pistonrelay",
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "Count:3": 1,
+              "Damage:2": 32767,
+              "id:8": "tconstruct:slime",
+              "OreDict:8": "blockSlime"
+            }
+          },
+          "partialMatch:1": 1,
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "taskID:8": "bq_standard:retrieval",
+          "ignoreNBT:1": 0
+        }
+      },
       "properties:10": {
         "betterquesting:10": {
           "visibility:8": "NORMAL",
@@ -2147,14 +2177,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "repeattime:3": -1,
-          "issilent:1": 0,
+          "name:8": "Block Transfer",
           "autoclaim:1": 0,
-          "name:8": "New Quest",
+          "issilent:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "desc:8": "No Description",
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "Sometimes, moving blocks whole is the only viable way to solve a particular problem.\n\nTo make this easier, we have devised a couple utilities for you to try and expand the capabilities of pistons and slime blocks:\n\n§dForce Relays §fcan be bound to non-TileEntity blocks using a wand of the forest. when pushed by a piston, the bound block will move aswell. if the force relay is pushed or pulled by a sticky piston, it has no effect on the bound block, making it very easy to make a block \"run along\" a straight line.\n\n§dColored Slime Blocks§f act independently and will slide past one another.\n\n§dGlazed Trracotta§f is an interesting blockset. it can be pushed by pistons, but its smoothness means it will not stick to slime or sticky pistons trying to pull on it."
         }
       },
       "questID:3": 52,
@@ -2178,14 +2208,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "issilent:1": 0,
-          "repeattime:3": -1,
           "name:8": "New Quest",
+          "repeattime:3": -1,
+          "issilent:1": 0,
           "autoclaim:1": 0,
-          "desc:8": "No Description",
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "No Description"
         }
       },
       "questID:3": 53,
@@ -2211,14 +2241,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "issilent:1": 0,
-          "repeattime:3": -1,
           "name:8": "New Quest",
+          "repeattime:3": -1,
+          "issilent:1": 0,
           "autoclaim:1": 0,
-          "desc:8": "No Description",
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "No Description"
         }
       },
       "questID:3": 54,
@@ -2244,14 +2274,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "issilent:1": 0,
-          "repeattime:3": -1,
           "name:8": "New Quest",
+          "repeattime:3": -1,
+          "issilent:1": 0,
           "autoclaim:1": 0,
-          "desc:8": "No Description",
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "No Description"
         }
       },
       "questID:3": 55,
@@ -2277,14 +2307,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "repeattime:3": -1,
-          "issilent:1": 0,
-          "autoclaim:1": 0,
           "name:8": "New Quest",
+          "autoclaim:1": 0,
+          "issilent:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "desc:8": "No Description",
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "No Description"
         }
       },
       "questID:3": 56,
@@ -2338,14 +2368,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "issilent:1": 0,
-          "repeattime:3": -1,
           "name:8": "Basic Corporea Network",
+          "repeattime:3": -1,
+          "issilent:1": 0,
           "autoclaim:1": 0,
-          "desc:8": "I have run some experiments on the §dPink Dust§f you made, and it turns out that with some finesse, you can use it to take care of your §5§dstorage system§f!\n\nPlace regular §dCorporea Sparks§f above any containers you want to link to the network. Each network also requires a §dMaster Spark§f to orchestrate everything. The master spark cannot take items from its inventory, so best place it above an index or similar. \n\nThe §dCorporea Index§f is where things get interesting. You can request items from your network using either §a§6Chat §for §6By Pressing C over an item in JEI §fwhile in its range. §6Pressing shift + C requests a stack.\n\n\n§6§5§4§d\n",
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "I have run some experiments on the §dPink Dust§f you made, and it turns out that with some finesse, you can use it to take care of your §5§dstorage system§f!\n\nPlace regular §dCorporea Sparks§f above any containers you want to link to the network. Each network also requires a §dMaster Spark§f to orchestrate everything. The master spark cannot take items from its inventory, so best place it above an index or similar. \n\nThe §dCorporea Index§f is where things get interesting. You can request items from your network using either §a§6Chat §for §6By Pressing C over an item in JEI §fwhile in its range. §6Pressing shift + C requests a stack.\n\n\n§6§5§4§d\n"
         }
       },
       "questID:3": 57,
@@ -2386,14 +2416,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "name:8": "Fluid Storage",
-          "repeattime:3": -1,
           "issilent:1": 0,
+          "repeattime:3": -1,
+          "name:8": "Fluid Storage",
           "autoclaim:1": 0,
-          "globalshare:1": 0,
+          "desc:8": "§dPortable §fTanks are a fairly simplistic way of storing fluids. they accept it from any side and can auto-output to the bottom if configured to do so using a §dCrescent Hammer§f. Their fill level can be read with comparators, but they do not interface with items. they retain their contents when broken.\n\n§dMultiblock Tanks§f can hold more fluid and can also be used to directly fill and empty buckets and other container items. The smallest one is made of a hollow 3x4x3 cuboid of Tank Wall. non-edge blocks can also be swapped for strengthened glass or tank valves.",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "§dPortable §fTanks are a fairly simplistic way of storing fluids. they accept it from any side and can auto-output to the bottom if configured to do so using a §dCrescent Hammer§f. Their fill level can be read with comparators, but they do not interface with items. they retain their contents when broken.\n\n§dMultiblock Tanks§f can hold more fluid and can also be used to directly fill and empty buckets and other container items. The smallest one is made of a hollow 3x4x3 cuboid of Tank Wall. non-edge blocks can also be swapped for strengthened glass or tank valves."
+          "globalshare:1": 0
         }
       },
       "questID:3": 58,
@@ -2419,14 +2449,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "autoclaim:1": 0,
-          "name:8": "Liquid Essentia",
-          "snd_complete:8": "minecraft:entity.player.levelup",
           "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "name:8": "Liquid Essentia",
           "repeattime:3": -1,
-          "globalshare:1": 0,
+          "desc:8": "No Description",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "No Description"
+          "globalshare:1": 0
         }
       },
       "questID:3": 59,
@@ -2452,14 +2482,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "repeattime:3": -1,
-          "name:8": "New Quest",
-          "autoclaim:1": 0,
           "issilent:1": 0,
+          "autoclaim:1": 0,
+          "name:8": "New Quest",
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "globalshare:1": 0,
+          "desc:8": "No Description",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "No Description"
+          "globalshare:1": 0
         }
       },
       "questID:3": 60,
@@ -2485,14 +2515,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "repeattime:3": -1,
-          "name:8": "New Quest",
-          "autoclaim:1": 0,
           "issilent:1": 0,
+          "autoclaim:1": 0,
+          "name:8": "New Quest",
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "globalshare:1": 0,
+          "desc:8": "No Description",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "No Description"
+          "globalshare:1": 0
         }
       },
       "questID:3": 61,
@@ -2518,14 +2548,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "autoclaim:1": 0,
-          "name:8": "New Quest",
-          "snd_complete:8": "minecraft:entity.player.levelup",
           "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "name:8": "New Quest",
           "repeattime:3": -1,
-          "globalshare:1": 0,
+          "desc:8": "No Description",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "No Description"
+          "globalshare:1": 0
         }
       },
       "questID:3": 62,
@@ -2551,14 +2581,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "repeattime:3": -1,
-          "name:8": "New Quest",
-          "autoclaim:1": 0,
           "issilent:1": 0,
+          "autoclaim:1": 0,
+          "name:8": "New Quest",
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "globalshare:1": 0,
+          "desc:8": "No Description",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "No Description"
+          "globalshare:1": 0
         }
       },
       "questID:3": 63,
@@ -2582,14 +2612,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "name:8": "New Quest",
-          "repeattime:3": -1,
           "issilent:1": 0,
+          "repeattime:3": -1,
+          "name:8": "New Quest",
           "autoclaim:1": 0,
-          "globalshare:1": 0,
+          "desc:8": "No Description",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "No Description"
+          "globalshare:1": 0
         }
       },
       "questID:3": 64,
@@ -2615,14 +2645,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "repeattime:3": -1,
-          "name:8": "New Quest",
-          "autoclaim:1": 0,
           "issilent:1": 0,
+          "autoclaim:1": 0,
+          "name:8": "New Quest",
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "globalshare:1": 0,
+          "desc:8": "No Description",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "No Description"
+          "globalshare:1": 0
         }
       },
       "questID:3": 65,
@@ -2648,14 +2678,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "autoclaim:1": 0,
-          "name:8": "New Quest",
-          "snd_complete:8": "minecraft:entity.player.levelup",
           "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "name:8": "New Quest",
           "repeattime:3": -1,
-          "globalshare:1": 0,
+          "desc:8": "No Description",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "No Description"
+          "globalshare:1": 0
         }
       },
       "questID:3": 66,
@@ -2679,14 +2709,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "autoclaim:1": 0,
-          "name:8": "New Quest",
-          "snd_complete:8": "minecraft:entity.player.levelup",
           "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "name:8": "New Quest",
           "repeattime:3": -1,
-          "globalshare:1": 0,
+          "desc:8": "No Description",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "No Description"
+          "globalshare:1": 0
         }
       },
       "questID:3": 67,
@@ -2710,14 +2740,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "autoclaim:1": 0,
-          "name:8": "New Quest",
-          "snd_complete:8": "minecraft:entity.player.levelup",
           "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "name:8": "New Quest",
           "repeattime:3": -1,
-          "globalshare:1": 0,
+          "desc:8": "No Description",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "No Description"
+          "globalshare:1": 0
         }
       },
       "questID:3": 68,
@@ -2741,14 +2771,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "autoclaim:1": 0,
-          "name:8": "Magical Fuel",
-          "snd_complete:8": "minecraft:entity.player.levelup",
           "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "name:8": "Magical Fuel",
           "repeattime:3": -1,
-          "globalshare:1": 0,
+          "desc:8": "No Description",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "No Description"
+          "globalshare:1": 0
         }
       },
       "questID:3": 69,
@@ -2774,14 +2804,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "name:8": "New Quest",
-          "repeattime:3": -1,
           "issilent:1": 0,
+          "repeattime:3": -1,
+          "name:8": "New Quest",
           "autoclaim:1": 0,
-          "globalshare:1": 0,
+          "desc:8": "No Description",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "No Description"
+          "globalshare:1": 0
         }
       },
       "questID:3": 70,
@@ -2807,14 +2837,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "autoclaim:1": 0,
-          "name:8": "New Quest",
-          "snd_complete:8": "minecraft:entity.player.levelup",
           "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "name:8": "New Quest",
           "repeattime:3": -1,
-          "globalshare:1": 0,
+          "desc:8": "No Description",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "No Description"
+          "globalshare:1": 0
         }
       },
       "questID:3": 71,
@@ -2838,14 +2868,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "repeattime:3": -1,
-          "name:8": "New Quest",
-          "autoclaim:1": 0,
           "issilent:1": 0,
+          "autoclaim:1": 0,
+          "name:8": "New Quest",
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "globalshare:1": 0,
+          "desc:8": "No Description",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "No Description"
+          "globalshare:1": 0
         }
       },
       "questID:3": 72,
@@ -2869,14 +2899,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "name:8": "New Quest",
-          "repeattime:3": -1,
           "issilent:1": 0,
+          "repeattime:3": -1,
+          "name:8": "New Quest",
           "autoclaim:1": 0,
-          "globalshare:1": 0,
+          "desc:8": "No Description",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "No Description"
+          "globalshare:1": 0
         }
       },
       "questID:3": 73,
@@ -2900,14 +2930,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "repeattime:3": -1,
-          "name:8": "New Quest",
-          "autoclaim:1": 0,
           "issilent:1": 0,
+          "autoclaim:1": 0,
+          "name:8": "New Quest",
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "globalshare:1": 0,
+          "desc:8": "No Description",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "No Description"
+          "globalshare:1": 0
         }
       },
       "questID:3": 74,
@@ -2931,14 +2961,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "autoclaim:1": 0,
-          "name:8": "New Quest",
-          "snd_complete:8": "minecraft:entity.player.levelup",
           "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "name:8": "New Quest",
           "repeattime:3": -1,
-          "globalshare:1": 0,
+          "desc:8": "No Description",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "No Description"
+          "globalshare:1": 0
         }
       },
       "questID:3": 75,
@@ -2962,14 +2992,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "autoclaim:1": 0,
-          "name:8": "New Quest",
-          "snd_complete:8": "minecraft:entity.player.levelup",
           "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "name:8": "New Quest",
           "repeattime:3": -1,
-          "globalshare:1": 0,
+          "desc:8": "No Description",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "No Description"
+          "globalshare:1": 0
         }
       },
       "questID:3": 76,
@@ -2993,14 +3023,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "repeattime:3": -1,
-          "name:8": "New Quest",
-          "autoclaim:1": 0,
           "issilent:1": 0,
+          "autoclaim:1": 0,
+          "name:8": "New Quest",
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "globalshare:1": 0,
+          "desc:8": "No Description",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "No Description"
+          "globalshare:1": 0
         }
       },
       "questID:3": 77,
@@ -3024,14 +3054,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "repeattime:3": -1,
-          "name:8": "New Quest",
-          "autoclaim:1": 0,
           "issilent:1": 0,
+          "autoclaim:1": 0,
+          "name:8": "New Quest",
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "globalshare:1": 0,
+          "desc:8": "No Description",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "No Description"
+          "globalshare:1": 0
         }
       },
       "questID:3": 78,
@@ -3055,14 +3085,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "name:8": "New Quest",
-          "repeattime:3": -1,
           "issilent:1": 0,
+          "repeattime:3": -1,
+          "name:8": "New Quest",
           "autoclaim:1": 0,
-          "globalshare:1": 0,
+          "desc:8": "No Description",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "No Description"
+          "globalshare:1": 0
         }
       },
       "questID:3": 79,
@@ -3102,14 +3132,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "name:8": "New Quest",
-          "repeattime:3": -1,
           "issilent:1": 0,
+          "repeattime:3": -1,
+          "name:8": "New Quest",
           "autoclaim:1": 0,
-          "globalshare:1": 0,
+          "desc:8": "No Description",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "No Description"
+          "globalshare:1": 0
         }
       },
       "questID:3": 80,
@@ -3141,14 +3171,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "name:8": "New Quest",
-          "repeattime:3": -1,
           "issilent:1": 0,
+          "repeattime:3": -1,
+          "name:8": "New Quest",
           "autoclaim:1": 0,
-          "globalshare:1": 0,
+          "desc:8": "No Description",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "No Description"
+          "globalshare:1": 0
         }
       },
       "questID:3": 81,
@@ -3174,14 +3204,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "repeattime:3": -1,
-          "name:8": "New Quest",
-          "autoclaim:1": 0,
           "issilent:1": 0,
+          "autoclaim:1": 0,
+          "name:8": "New Quest",
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "globalshare:1": 0,
+          "desc:8": "No Description",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "No Description"
+          "globalshare:1": 0
         }
       },
       "questID:3": 82,
@@ -3225,14 +3255,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "autoclaim:1": 0,
-          "name:8": "New Quest",
-          "snd_complete:8": "minecraft:entity.player.levelup",
           "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "name:8": "New Quest",
           "repeattime:3": -1,
-          "globalshare:1": 0,
+          "desc:8": "No Description",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "No Description"
+          "globalshare:1": 0
         }
       },
       "questID:3": 83,
@@ -3273,15 +3303,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "name:8": "Mining Safety",
           "repeattime:3": -1,
           "issilent:1": 0,
           "autoclaim:1": 0,
-          "globalshare:1": 0,
+          "name:8": "Mining Safety",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "desc:8": "While mining you will have to be aware of collapses, these occur when mining unsupported stone, or when causing explosions nearby. Note that ore blocks are exempt from collapses.\n\nHowever a sturdy arch of wooden support beams should be able to support about 8 meters of mineshaft in each horizontal direction.\nTo form a minimum viable support structure, place 2 columns of at least 3 support beams 1 block apart and connect them by clicking on one of them with another beam. §6Only the horizontal beams count towards protection.",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "While mining you will have to be aware of collapses, these occur when mining unsupported stone.\n\nHowever a sturdy arch of wooden support beams should be able to support about 8 meters of mineshaft in each horizontal direction."
+          "globalshare:1": 0
         }
       },
       "questID:3": 84,
@@ -3317,15 +3347,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "issilent:1": 0,
           "repeattime:3": -1,
           "name:8": "Hopeful Prospects",
           "autoclaim:1": 0,
-          "issilent:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "globalshare:1": 0,
+          "desc:8": "You don\u0027t have much education in geology do you? I can give a basic rundown on what you need to know.\n\nUnderground ore veins will be your main source of useful metals and minerals, however due to being underground you can\u0027t exactly spot them easily.\nHowever surface samples typically indicate that there\u0027s ores below, just dig straight down as nothing bad ever comes of that right?",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "You don\u0027t have much education in geology do you? I can give a basic rundown on what you need to know.\n\nUnderground ore veins will be your main source of useful metals and minerals, however due to being underground you can\u0027t exactly spot them easily.\nHowever surface samples typically indicated that there\u0027s ores bellow, just dig straight down as nothing bad ever comes of that right?"
+          "globalshare:1": 0
         }
       },
       "questID:3": 85,
@@ -3351,14 +3381,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "name:8": "New Quest",
-          "repeattime:3": -1,
           "issilent:1": 0,
+          "repeattime:3": -1,
+          "name:8": "New Quest",
           "autoclaim:1": 0,
-          "globalshare:1": 0,
+          "desc:8": "No Description",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "No Description"
+          "globalshare:1": 0
         }
       },
       "questID:3": 86,
@@ -3402,14 +3432,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "autoclaim:1": 0,
-          "name:8": "The Search for Redstone",
-          "snd_complete:8": "minecraft:entity.player.levelup",
           "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "name:8": "The Search for Redstone",
           "repeattime:3": -1,
-          "globalshare:1": 0,
+          "desc:8": "§dRedstone§r is an essential material for technology, and as we want to automate stuff your probably gonna have to get it as fast as possible.\nIt can be primarily obtained from §dCinnabar§r and §dCryolite§r.\n\n§dQuicksilver§r and §dRedstone§r as surface samples will both signify a redstone bearing vein bellow.",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "§dRedstone§r is an essential material for technology, and as we want to automate stuff your probably gonna have to get it as fast as possible.\nIt can be primarily obtained from §dCinnabar§r and §dCryolite§r.\n\n§dQuicksilver§r and §dRedstone§r as surface samples will both signify a redstone bearing vein bellow."
+          "globalshare:1": 0
         }
       },
       "questID:3": 87,
@@ -3436,14 +3466,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "name:8": "Gas Floodlight",
-          "repeattime:3": -1,
           "issilent:1": 0,
+          "repeattime:3": -1,
+          "name:8": "Gas Floodlight",
           "autoclaim:1": 0,
-          "globalshare:1": 0,
+          "desc:8": "No Description",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "No Description"
+          "globalshare:1": 0
         }
       },
       "questID:3": 88,
@@ -3469,14 +3499,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "repeattime:3": -1,
-          "name:8": "New Quest",
-          "autoclaim:1": 0,
           "issilent:1": 0,
+          "autoclaim:1": 0,
+          "name:8": "New Quest",
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "globalshare:1": 0,
+          "desc:8": "No Description",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "No Description"
+          "globalshare:1": 0
         }
       },
       "questID:3": 89,
@@ -3502,14 +3532,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "name:8": "New Quest",
-          "repeattime:3": -1,
           "issilent:1": 0,
+          "repeattime:3": -1,
+          "name:8": "New Quest",
           "autoclaim:1": 0,
-          "globalshare:1": 0,
+          "desc:8": "No Description",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "No Description"
+          "globalshare:1": 0
         }
       },
       "questID:3": 90,
@@ -3535,18 +3565,18 @@
                   "food:3": 4,
                   "sat:5": 3.0,
                   "buffed:1": 0,
-                  "veg:5": 0.0,
-                  "grain:5": 0.0,
-                  "meat:5": 0.0,
                   "dairy:5": 0.0,
-                  "decay:5": 5.0
+                  "decay:5": 5.0,
+                  "meat:5": 0.0,
+                  "grain:5": 0.0,
+                  "veg:5": 0.0
                 },
                 "traits:9": {},
                 "bowl:10": {
+                  "tag:10": {},
                   "id:8": "minecraft:air",
                   "Count:3": 1,
-                  "Damage:2": 0,
-                  "tag:10": {}
+                  "Damage:2": 0
                 }
               },
               "tfc:food:10": {
@@ -3563,14 +3593,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "name:8": "New Quest",
-          "repeattime:3": -1,
           "issilent:1": 0,
+          "repeattime:3": -1,
+          "name:8": "New Quest",
           "autoclaim:1": 0,
-          "globalshare:1": 0,
+          "desc:8": "No Description",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "No Description"
+          "globalshare:1": 0
         }
       },
       "questID:3": 91,
@@ -3602,14 +3632,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "repeattime:3": -1,
-          "name:8": "Oil Lamps",
-          "autoclaim:1": 0,
           "issilent:1": 0,
+          "autoclaim:1": 0,
+          "name:8": "Oil Lamps",
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "globalshare:1": 0,
+          "desc:8": "No Description",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "No Description"
+          "globalshare:1": 0
         }
       },
       "questID:3": 92,
@@ -3636,14 +3666,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "name:8": "New Quest",
-          "repeattime:3": -1,
           "issilent:1": 0,
+          "repeattime:3": -1,
+          "name:8": "New Quest",
           "autoclaim:1": 0,
-          "globalshare:1": 0,
+          "desc:8": "No Description",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "No Description"
+          "globalshare:1": 0
         }
       },
       "questID:3": 93,
@@ -3669,14 +3699,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "autoclaim:1": 0,
-          "name:8": "New Quest",
-          "snd_complete:8": "minecraft:entity.player.levelup",
           "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "name:8": "New Quest",
           "repeattime:3": -1,
-          "globalshare:1": 0,
+          "desc:8": "No Description",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "No Description"
+          "globalshare:1": 0
         }
       },
       "questID:3": 94,
@@ -3709,14 +3739,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "name:8": "New Quest",
-          "repeattime:3": -1,
           "issilent:1": 0,
+          "repeattime:3": -1,
+          "name:8": "New Quest",
           "autoclaim:1": 0,
-          "globalshare:1": 0,
+          "desc:8": "No Description",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "No Description"
+          "globalshare:1": 0
         }
       },
       "questID:3": 95,
@@ -3748,14 +3778,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "repeattime:3": -1,
-          "name:8": "New Quest",
-          "autoclaim:1": 0,
           "issilent:1": 0,
+          "autoclaim:1": 0,
+          "name:8": "New Quest",
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "globalshare:1": 0,
+          "desc:8": "No Description",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "No Description"
+          "globalshare:1": 0
         }
       },
       "questID:3": 96,
@@ -3787,14 +3817,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "name:8": "New Quest",
-          "repeattime:3": -1,
           "issilent:1": 0,
+          "repeattime:3": -1,
+          "name:8": "New Quest",
           "autoclaim:1": 0,
-          "globalshare:1": 0,
+          "desc:8": "No Description",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "No Description"
+          "globalshare:1": 0
         }
       },
       "questID:3": 97,
@@ -3820,14 +3850,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "name:8": "New Quest",
-          "repeattime:3": -1,
           "issilent:1": 0,
+          "repeattime:3": -1,
+          "name:8": "New Quest",
           "autoclaim:1": 0,
-          "globalshare:1": 0,
+          "desc:8": "No Description",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "No Description"
+          "globalshare:1": 0
         }
       },
       "questID:3": 98,
@@ -3858,14 +3888,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "repeattime:3": -1,
-          "name:8": "Personal Weaponry",
-          "autoclaim:1": 0,
           "issilent:1": 0,
+          "autoclaim:1": 0,
+          "name:8": "Personal Weaponry",
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "globalshare:1": 0,
+          "desc:8": "In order to be able to defend yourself efficiently, you must know what options are vailable to you. This will be a non-exhaustive list, but i think it should cover the most interesting options.",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "In order to be able to defend yourself efficiently, you must know what options are vailable to you. This will be a non-exhaustive list, but i think it should cover the most interesting options."
+          "globalshare:1": 0
         }
       },
       "questID:3": 99,
@@ -3889,14 +3919,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "autoclaim:1": 0,
-          "name:8": "Automated Defense",
-          "snd_complete:8": "minecraft:entity.player.levelup",
           "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "name:8": "Automated Defense",
           "repeattime:3": -1,
-          "globalshare:1": 0,
+          "desc:8": "As your sphere of influence expands, it becomes simply infeasible to patrol your base\u0027s perimeter all on your own. Instead, consider fortifying it with some Turrets! Here\u0027s some I\u0027ve been able to ",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "As your sphere of influence expands, it becomes simply infeasible to patrol your base\u0027s perimeter all on your own. Instead, consider fortifying it with some Turrets! Here\u0027s some I\u0027ve been able to "
+          "globalshare:1": 0
         }
       },
       "questID:3": 100,
@@ -3920,14 +3950,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "name:8": "New Quest",
-          "repeattime:3": -1,
           "issilent:1": 0,
+          "repeattime:3": -1,
+          "name:8": "New Quest",
           "autoclaim:1": 0,
-          "globalshare:1": 0,
+          "desc:8": "No Description",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "No Description"
+          "globalshare:1": 0
         }
       },
       "questID:3": 101,
@@ -3958,14 +3988,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "name:8": "[i] Bullet Train",
-          "repeattime:3": -1,
           "issilent:1": 0,
+          "repeattime:3": -1,
+          "name:8": "[i] Bullet Train",
           "autoclaim:1": 0,
-          "globalshare:1": 0,
+          "desc:8": "§cArrow collisions have been modified such that they do not happen if a minecart or Turret are nearby. Effectively, this means that Crossbow Turrets will not engage in friendly fire and can be placed in greater numbers and even on Trains!*\n\n*sometimes when going on a very specific angle it may still destroy minecarts. beware of adding unnecessary slopes if you use this.",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "§cArrow collisions have been modified such that they do not happen if a minecart or Turret are nearby. Effectively, this means that Crossbow Turrets will not engage in friendly fire and can be placed in greater numbers and even on Trains!*\n\n*sometimes when going on a very specific angle it may still destroy minecarts. beware of adding unnecessary slopes if you use this."
+          "globalshare:1": 0
         }
       },
       "questID:3": 102,
@@ -4033,14 +4063,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "name:8": "New Quest",
-          "repeattime:3": -1,
           "issilent:1": 0,
+          "repeattime:3": -1,
+          "name:8": "New Quest",
           "autoclaim:1": 0,
-          "globalshare:1": 0,
+          "desc:8": "No Description",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "No Description"
+          "globalshare:1": 0
         }
       },
       "questID:3": 103,
@@ -4080,14 +4110,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "name:8": "New Quest",
-          "repeattime:3": -1,
           "issilent:1": 0,
+          "repeattime:3": -1,
+          "name:8": "New Quest",
           "autoclaim:1": 0,
-          "globalshare:1": 0,
+          "desc:8": "No Description",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "No Description"
+          "globalshare:1": 0
         }
       },
       "questID:3": 104,
@@ -4113,14 +4143,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "name:8": "New Quest",
-          "repeattime:3": -1,
           "issilent:1": 0,
+          "repeattime:3": -1,
+          "name:8": "New Quest",
           "autoclaim:1": 0,
-          "globalshare:1": 0,
+          "desc:8": "No Description",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "No Description"
+          "globalshare:1": 0
         }
       },
       "questID:3": 105,
@@ -4146,14 +4176,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "name:8": "New Quest",
-          "repeattime:3": -1,
           "issilent:1": 0,
+          "repeattime:3": -1,
+          "name:8": "New Quest",
           "autoclaim:1": 0,
-          "globalshare:1": 0,
+          "desc:8": "No Description",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "No Description"
+          "globalshare:1": 0
         }
       },
       "questID:3": 106,
@@ -4179,14 +4209,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "name:8": "New Quest",
-          "repeattime:3": -1,
           "issilent:1": 0,
+          "repeattime:3": -1,
+          "name:8": "New Quest",
           "autoclaim:1": 0,
-          "globalshare:1": 0,
+          "desc:8": "No Description",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "No Description"
+          "globalshare:1": 0
         }
       },
       "questID:3": 107,
@@ -4212,14 +4242,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "name:8": "New Quest",
-          "repeattime:3": -1,
           "issilent:1": 0,
+          "repeattime:3": -1,
+          "name:8": "New Quest",
           "autoclaim:1": 0,
-          "globalshare:1": 0,
+          "desc:8": "No Description",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "No Description"
+          "globalshare:1": 0
         }
       },
       "questID:3": 108,
@@ -4245,14 +4275,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "repeattime:3": -1,
-          "name:8": "New Quest",
-          "autoclaim:1": 0,
           "issilent:1": 0,
+          "autoclaim:1": 0,
+          "name:8": "New Quest",
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "globalshare:1": 0,
+          "desc:8": "No Description",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "No Description"
+          "globalshare:1": 0
         }
       },
       "questID:3": 115,
@@ -4276,14 +4306,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "repeattime:3": -1,
-          "name:8": "New Quest",
-          "autoclaim:1": 0,
           "issilent:1": 0,
+          "autoclaim:1": 0,
+          "name:8": "New Quest",
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "globalshare:1": 0,
+          "desc:8": "No Description",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "No Description"
+          "globalshare:1": 0
         }
       },
       "questID:3": 116,
@@ -4307,14 +4337,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "name:8": "New Quest",
-          "repeattime:3": -1,
           "issilent:1": 0,
+          "repeattime:3": -1,
+          "name:8": "New Quest",
           "autoclaim:1": 0,
-          "globalshare:1": 0,
+          "desc:8": "No Description",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "No Description"
+          "globalshare:1": 0
         }
       },
       "questID:3": 117,
@@ -4330,14 +4360,14 @@
           "name:8": "The Survivalist",
           "desc:8": "No Descriptio",
           "visibility:8": "NORMAL",
-          "bg_image:8": "",
+          "bg_size:3": 256,
           "icon:10": {
             "Count:3": 1,
             "Damage:2": 0,
             "id:8": "tfc:stone/axe/igneous_extrusive",
             "OreDict:8": ""
           },
-          "bg_size:3": 256
+          "bg_image:8": ""
         }
       },
       "quests:9": {
@@ -4505,7 +4535,7 @@
           "name:8": "The Logistician",
           "desc:8": "§6§aCorporal Logan§f reporting for Duty! I\u0027m from supply chain management and have just been, uh, prematurely promoted to head of logistics.\nIf you have any deliveries to make or need help with getting things where they need to be, come to §mus§f me.",
           "visibility:8": "NORMAL",
-          "bg_image:8": "",
+          "bg_size:3": 256,
           "icon:10": {
             "Count:3": 1,
             "Damage:2": 0,
@@ -4515,7 +4545,7 @@
             "id:8": "railcraft:locomotive_steam_solid",
             "OreDict:8": ""
           },
-          "bg_size:3": 256
+          "bg_image:8": ""
         }
       },
       "quests:9": {
@@ -4725,7 +4755,7 @@
           "name:8": "The Engineer",
           "desc:8": "You know what they say: an engineer\u0027s job is not done whennothing more can be added, but when nothing more can be removed. Did not think i\u0027d ever have to design around removing... all of technology as we know it, \nbut nothing you and renowned mechanical Engineer §6Dr. Izawa§f can\u0027t solve if we put our\nheads together, right?",
           "visibility:8": "NORMAL",
-          "bg_image:8": "",
+          "bg_size:3": 256,
           "icon:10": {
             "Count:3": 1,
             "Damage:2": 0,
@@ -4746,7 +4776,7 @@
             "id:8": "tfc:brass_mechanisms",
             "OreDict:8": ""
           },
-          "bg_size:3": 256
+          "bg_image:8": ""
         }
       },
       "quests:9": {
@@ -4816,14 +4846,14 @@
           "name:8": "The Metaphysicist",
           "desc:8": "Hello there! I\u0027m §bQuinn Collins§f, Particle Physicist and Spatial Technician. Or at least that\u0027s what is on my diploma.\nSince I doubt that we\u0027ll be taking a closer look at warp drives or colliders anytime soon, I\u0027m basically sitting on my hands right now.\n\nMaybe my colleagues will find §5something§f they need my help explaining...",
           "visibility:8": "NORMAL",
-          "bg_image:8": "",
+          "bg_size:3": 256,
           "icon:10": {
             "Count:3": 1,
             "Damage:2": 1,
             "id:8": "botania:corporeaspark",
             "OreDict:8": ""
           },
-          "bg_size:3": 256
+          "bg_image:8": ""
         }
       },
       "quests:9": {
@@ -4921,14 +4951,14 @@
           "name:8": "The Cartographer",
           "desc:8": "No Description",
           "visibility:8": "NORMAL",
-          "bg_image:8": "",
+          "bg_size:3": 256,
           "icon:10": {
             "Count:3": 1,
             "Damage:2": 0,
             "id:8": "tfcthings:hiking_boots",
             "OreDict:8": ""
           },
-          "bg_size:3": 256
+          "bg_image:8": ""
         }
       },
       "quests:9": {
@@ -4963,7 +4993,7 @@
           "name:8": "The Xenobiologist",
           "desc:8": "Name\u0027s §5Dr. Xavier§f, Sociologist and Tactical Xenobiologist. \n\nOr in other words, I show our soldiers what body parts to shoot at and how to destroy enemy morale. \nLet\u0027s hope this next mission includes a little less violence.",
           "visibility:8": "NORMAL",
-          "bg_image:8": "",
+          "bg_size:3": 256,
           "icon:10": {
             "Count:3": 1,
             "Damage:2": 0,
@@ -4976,7 +5006,7 @@
             "id:8": "contenttweaker:taint_tendril",
             "OreDict:8": ""
           },
-          "bg_size:3": 256
+          "bg_image:8": ""
         }
       },
       "quests:9": {
@@ -5144,14 +5174,14 @@
           "name:8": "The Lieutenant",
           "desc:8": "§8Lieutenant Briggs§f here. I have served on many a military vessel, faced countless alien threats. And through It all, there was only one thing that protected me. Gun. And if that didn\u0027t work, we got more Gun.",
           "visibility:8": "NORMAL",
-          "bg_image:8": "",
+          "bg_size:3": 256,
           "icon:10": {
             "Count:3": 1,
             "Damage:2": 0,
             "id:8": "pneumaticcraft:gun_ammo_incendiary",
             "OreDict:8": ""
           },
-          "bg_size:3": 256
+          "bg_image:8": ""
         }
       },
       "quests:9": {
@@ -5266,18 +5296,18 @@
   },
   "questSettings:10": {
     "betterquesting:10": {
-      "livesmax:3": 10,
+      "livesdef:3": 3,
       "home_anchor_x:5": 0.5,
       "home_offset_x:3": -128,
-      "livesdef:3": 3,
+      "livesmax:3": 10,
       "home_image:8": "betterquesting:textures/gui/default_title.png",
-      "pack_version:3": 0,
-      "hardcore:1": 0,
-      "editmode:1": 1,
       "pack_name:8": "",
       "party_enable:1": 1,
-      "home_anchor_y:5": 0.0,
-      "home_offset_y:3": 0
+      "editmode:1": 1,
+      "hardcore:1": 0,
+      "pack_version:3": 0,
+      "home_offset_y:3": 0,
+      "home_anchor_y:5": 0.0
     }
   },
   "format:8": "2.0.0"
