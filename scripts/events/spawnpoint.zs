@@ -33,8 +33,8 @@ if(event.to != 0 || event.from !=-3 || event.player.hasGameStage("setspawn")){
 				})
 				.sleep(5)
 				.then(function(world, context){
-					server.commandManager.executeCommand(event.player,"spawnpoint @s ~ ~ ~");
-					server.commandManager.executeCommand(event.player, "gamestage silentadd @s setspawn");
+					server.commandManager.executeCommand(server,"spawnpoint "+ event.player.name+ " ~ ~ ~");
+					server.commandManager.executeCommand(server, "gamestage silentadd "+event.player.name+" setspawn");
 					event.player.clearActivePotions();
 				}
 				)

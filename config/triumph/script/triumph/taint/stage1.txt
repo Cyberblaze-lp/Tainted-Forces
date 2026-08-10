@@ -6,7 +6,7 @@ setIcon(<thaumcraft:taint_fibre>)
 setTitle("Taint Stage 1")
 
 //Set description String
-setDescription("NYI, no changes")
+setDescription("So it begins")
 setCompletedIconColor(##660060)
 setCompletedTitleColor(##660060)
 

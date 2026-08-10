@@ -156,6 +156,13 @@ for i in 0 to 16
 
 }
 
+for stone in rocktypes
+{
+    mods.chisel.Carving.addGroup("smooth"+stone);
+    mods.chisel.Carving.addVariation("smooth"+stone, itemUtils.getItem("tfc:raw/"+stone) );
+    mods.chisel.Carving.addVariation("smooth"+stone, itemUtils.getItem("tfc:smooth/"+stone) );
+}
+
 
 
 

@@ -49,6 +49,12 @@ recipes.addShapeless(<ic2:reactor_heat_vent>, [<ic2:heat_vent>, <ic2:crafting:7>
 
 // ================================================================================
 //#MARKER ADD SHAPED
+recipes.addShaped(<botania:altar>, [[<ore:cobblestone>, null, <ore:cobblestone>], [null, <ore:cobblestone>, null], [<ore:cobblestone>, <ore:cobblestone>, <ore:cobblestone>]]);
+recipes.addShaped(<chisel:chisel_iron>, [[null, <ore:sheetPigIron>], [<ore:stickWood>, null]]);
+recipes.addShaped(<tfc:metal/shovel/copper>, [[<ore:stickWood>], [<ore:sheetPigIron>]]);
+recipes.addShaped(<tfc:metal/pick/copper>, [[<ore:sheetPigIron>], [<ore:stickWood>]]);
+recipes.addShaped(<tfc:metal/saw/copper>, [[<ore:stickWood>, null], [<ore:sheetPigIron>, <ore:stickWood>]]);
+recipes.addShaped(<railcraft:worldspike:3>, [[null, <ore:enderpearl>, null], [<tfc:brass_mechanisms>, <tfc:brass_mechanisms>, <tfc:brass_mechanisms>], [<tfc:brass_mechanisms>, <ore:obsidian>, <tfc:brass_mechanisms>]]);
 recipes.addShaped(<thermaldynamics:duct_16:6>, [[<ore:plateBlackSteel>, <railcraft:glass:*>, <ore:plateBlackSteel>]]);
 recipes.addShaped(<immersiveintelligence:mechanical_device1>, [[<ore:leather>, <tfc:brass_mechanisms>, <ore:leather>], [<ore:leather>, <tfc:brass_mechanisms>, <ore:leather>], [<ore:plateIron>, <ore:plateIron>, <ore:plateIron>]]);
 recipes.addShaped(<modularmachinery:cooling_tower_t2_controller>, [[<ore:concrete>, <ore:concrete>, <ore:concrete>], [<ore:concrete>, <thaumcraft:mind>, <ore:concrete>], [<ore:concrete>, <ore:concrete>, <ore:concrete>]]);
@@ -77,7 +83,6 @@ recipes.addShaped(<firmalife:quad_planter>, [[<ore:ingotBrick>, <ore:dirt>, <ore
 recipes.addShaped(<chisel:factory> * 32, [[<ore:concrete>, <ore:concrete>, <ore:concrete>], [null, <ore:ingetAnyBronze>, null], [<ore:concrete>, <ore:concrete>, <ore:concrete>]]);
 recipes.addShaped(<chisel:factory> * 32, [[<ore:concrete>, <ore:concrete>, <ore:concrete>], [null, <ore:ingotIron>, null], [<ore:concrete>, <ore:concrete>, <ore:concrete>]]);
 recipes.addShaped(<firmalife:climate_station_4>, [[<ore:blockGlass>, <ore:blockGlass>, <ore:blockGlass>], [<ore:blockGlass>, <ore:ingotIron>, <ore:blockGlass>], [<tfc:brass_mechanisms>, <tfc:brass_mechanisms>, <tfc:brass_mechanisms>]]);
-recipes.addShaped(<railcraft:locomotive_steam_solid>, [[<ore:plateIron>, <ore:plateIron>, <ore:plateIron>], [<tfc:brass_mechanisms>, <minecraft:minecart>, <tfc:brass_mechanisms>]]);
 recipes.addShaped(<botania:spreader>, [[<botania:livingwood:1>, <botania:livingwood:1>, <botania:livingwood:1>], [null, <botania:petalblock:4>, <botania:livingwood:1>], [<botania:livingwood:1>, <botania:livingwood:1>, <botania:livingwood:1>]]);
 recipes.addShaped(<botania:spreader>, [[<botania:livingwood:1>, <botania:livingwood:1>, <botania:livingwood:1>], [<botania:livingwood:1>, <botania:petalblock:4>, null], [<botania:livingwood:1>, <botania:livingwood:1>, <botania:livingwood:1>]]);
 recipes.addShaped(<metalchests:metal_chest:3> * 2, [[<ore:plateGold>, <ore:plateGold>, <ore:plateGold>], [<ore:plateGold>, null, <ore:plateGold>], [<ore:plateGold>, <ore:plateGold>, <ore:plateGold>]]);
