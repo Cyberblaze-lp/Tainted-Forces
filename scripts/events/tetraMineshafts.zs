@@ -11,7 +11,7 @@ import crafttweaker.util.Math;
 import crafttweaker.data.IData;
 import crafttweaker.item.IItemStack;
 import mods.zenutils.Catenation;
-
+import crafttweaker.world.IFacing;
 static features as string[] = [
     "extractor_platform",
     "extractor_platform",
@@ -42,7 +42,7 @@ static pillarfeatures as string[] = [
     "lampforged"
 ] as string[];
 
-
+val rand = mods.ctutils.utils.Math.getRandom();
 events.onEntityJoinWorld(function (event as crafttweaker.event.EntityJoinWorldEvent){
     if (event.world.isRemote())
     {
@@ -51,22 +51,22 @@ events.onEntityJoinWorld(function (event as crafttweaker.event.EntityJoinWorldEv
     
     if(event.entity.hasDefinition(<entity:minecraft:chest_minecart>) || event.entity.hasDefinition(<entity:railcraft:cart_chest>))
     {
-        if( 16.5 < event.entity.getY() || 16.0 > event.entity.getY())
+        if( 16.6 > event.entity.getY() && 15.9 < event.entity.getY())
         {
-            event.cancel();
-            return;
-        }
-          val entityPosOld = event.entity.position3f;
+
+            
+        
+            val entityPosOld = event.entity.position3f;
             val x as int =Math.floor(entityPosOld.x) as int;
             val y as int =Math.floor(entityPosOld.y) as int;
             val z as int =Math.floor(entityPosOld.z) as int;
             val entityPosNew = crafttweaker.world.IBlockPos.create(x, y, z) as IBlockPos;
             val entityPosOffset = crafttweaker.world.IBlockPos.create(x - 16 , -60, z - 16) as IBlockPos;
 
-        if (mods.ctutils.utils.Math.getRandom().nextInt(0, 2) == 1)
-        //Warning: the following content has been called "so cursed" and "crazy" by unnecessarymb.
-        //Consider everything in these brackets an Infohazard
-        {
+            if (mods.ctutils.utils.Math.getRandom().nextInt(0, 2) == 1)
+            //Warning: the following content has been called "so cursed" and "crazy" by unnecessarymb.
+            //Consider everything in these brackets an Infohazard
+            {
             //seriously, turn back now
 
 
@@ -105,17 +105,30 @@ events.onEntityJoinWorld(function (event as crafttweaker.event.EntityJoinWorldEv
                 })
 				.start();
             return;
+            }
+        
+            val r1 = event.world.random.nextInt(0, features.length - 1);
+            val feature as string = features[r1];
+            if (mods.ctutils.utils.Math.getRandom().nextInt(0, 3) == 1)
+            {
+                server.commandManager.executeCommandSilent(event.entity, "summon thaumcraft:eldritchguardian ~ ~ ~ {PersistenceRequired:1b}");
+            }
+            event.entity.setPosition(entityPosOffset);
+            server.commandManager.executeCommandSilent(event.entity, "tgen tetra:forged_" + feature);
+            return;
         }
-
-        val r1 = event.world.random.nextInt(0, features.length - 1);
-        val feature as string = features[r1];
-        if (mods.ctutils.utils.Math.getRandom().nextInt(0, 3) == 1)
+        else if(  event.entity.getY() < 130.0 && event.entity.getY() > 50.0)
         {
-            server.commandManager.executeCommandSilent(event.entity, "summon thaumcraft:eldritchguardian ~ ~ ~ {PersistenceRequired:1b}");
+            val chestPos as IBlockPos = (event.entity.position3f as IBlockPos)
+                .getOffset(IFacing.north(), 2)
+                .getOffset(IFacing.west(), 2);
+            if (rand.nextInt(0, 5) == 1)
+            {
+                event.world.setBlockState(<blockstate:tfc:wood/chest/birch>, {LootTable:"minecraft:chests/simple_dungeon"} as IData,  chestPos );
+            }
+            event.cancel();
+            return;
         }
-        event.entity.setPosition(entityPosOffset);
-        server.commandManager.executeCommandSilent(event.entity, "tgen tetra:forged_" + feature);
-        return;
     }
 
     else if(event.entity.hasDefinition(<entity:minecraft:tnt_minecart>) || event.entity.hasDefinition(<entity:railcraft:cart_tnt>))

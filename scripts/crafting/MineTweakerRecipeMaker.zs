@@ -173,9 +173,7 @@ recipes.addShaped(<immersiveengineering:connector:6> * 16, [[<ore:stickSteel>], 
 recipes.addShaped(<immersiveengineering:skyhook>, [[null, <immersiveengineering:material:8>, null], [<ore:gungripWood>, null, <ore:gungripWood>]]);
 recipes.addShaped(<immersiveengineering:material:13>, [[<ore:stickWood>, <ore:stickWood>], [<ore:ingotCopper>, <ore:leather>], [<ore:stickWood>, <ore:stickWood>]]);
 recipes.addShaped(<magneticraft:multiblock_parts:5>, [[<ore:sheetWroughtIron>, <immersiveengineering:metal_device0:4>, <ore:sheetWroughtIron>]]);
-recipes.addShaped(<railcraft:locomotive_steam_solid>, [[<embers:steam_engine>], [<minecraft:minecart>]]);
 recipes.addShaped(<ic2:crafting:5>, [[<ore:itemCopperCable>, <ore:itemCopperCable>, <ore:itemCopperCable>], [<ore:itemCopperCable>, <ore:rodSteel>, <ore:itemCopperCable>], [<ore:itemCopperCable>, <ore:itemCopperCable>, <ore:itemCopperCable>]]);
-recipes.addShaped(<railcraft:cart_cargo>, [[<thermalexpansion:cache>], [<minecraft:minecart>]]);
 recipes.addShaped(<embers:fluid_transfer> * 2, [[<ore:stickWroughtIron>, <ore:plateWroughtIron>, <ore:stickWroughtIron>], [<ore:stickWroughtIron>, <ore:paper>, <ore:stickWroughtIron>]]);
 recipes.addShaped(<pneumaticcraft:gas_lift>, [[<ore:ingotIronCompressed>, <ore:ingotIronCompressed>, <ore:ingotIronCompressed>], [<ore:itemRubber>, <pneumaticcraft:pressure_tube>, <ore:itemRubber>], [<ore:itemRubber>, <pneumaticcraft:pressure_tube>, <ore:itemRubber>]]);
 recipes.addShaped(<minecraft:speckled_melon>, [[<ore:nuggetGold>, <ore:nuggetGold>, <ore:nuggetGold>], [<ore:nuggetGold>, <ore:melon>, <ore:nuggetGold>], [<ore:nuggetGold>, <ore:nuggetGold>, <ore:nuggetGold>]]);

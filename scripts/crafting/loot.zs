@@ -24,7 +24,7 @@ for item in [
 
 val dungeon = LootTweaker.getTable("minecraft:chests/simple_dungeon");
 dungeon.clear();
-dungeon.addPool("main", 3.0, 5.0, 0.0, 2.0);
+dungeon.addPool("main", 5.0, 8.0, 0.0, 2.0);
 val dungeonMain = dungeon.getPool("main");
 
 
@@ -47,6 +47,7 @@ dungeonMain.addItemEntry(<thaumcraft:fabric>, 30000);
 dungeonMain.addItemEntry(<thaumcraft:baubles:3>, 1000);
 dungeonMain.addItemEntry(<thaumcraft:pech_wand>, 2000);
 dungeonMain.addItemEntry(<thaumcraft:curio:6>, 3000);
+dungeonMain.addItemEntry(<minecraft:lapis_block>, 8000);
 
 
 

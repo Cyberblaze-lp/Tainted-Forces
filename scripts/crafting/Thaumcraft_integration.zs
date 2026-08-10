@@ -19,7 +19,7 @@ import mods.thaumcraft.Crucible;
 import crafttweaker.item.IItemStack;
 
 
-<immersiveengineering:material:6>.setAspects(<aspect:ignis>*20, <aspect:potentia>*20);
+<immersiveengineering:material:6>.setAspects(<aspect:terra>*10,<aspect:ignis>*10, <aspect:potentia>*10);
 <tfc:metal/ingot/bismuth>.setAspects(<aspect:metallum>*10, <aspect:sensus>*5);
 <tfc:metal/ingot/zinc>.setAspects(<aspect:metallum>*10, <aspect:perditio>*5);
 <tfc:metal/ingot/lithium>.setAspects(<aspect:metallum>*10, <aspect:potentia>*5);
@@ -60,10 +60,10 @@ for item in <ore:concrete>.itemArray
 <entity:thaumcraft:taintacle>.setAspects([<aspect:vitium>*15, <aspect:victus>*10, <aspect:sensus>*10]);
 <entity:thaumcraft:taintseed>.setAspects([<aspect:vitium>*25, <aspect:victus>*10, <aspect:aqua>*10, <aspect:permutatio>*10]);
 
-<minecraft:coal>.setAspects(<aspect:ignis>*4,<aspect:potentia>*4);
-<minecraft:coal:1>.setAspects(<aspect:ignis>*4,<aspect:potentia>*4);
-<tfc:ore/bituminous_coal>.setAspects(<aspect:ignis>*4,<aspect:potentia>*4);
-<tfc:ore/lignite>.setAspects(<aspect:ignis>*4,<aspect:potentia>*4);
+<minecraft:coal>.setAspects(<aspect:terra>*10, <aspect:ignis>*5,<aspect:potentia>*5);
+<minecraft:coal:1>.setAspects(<aspect:herba>*10,<aspect:ignis>*5,<aspect:potentia>*5);
+<tfc:ore/bituminous_coal>.setAspects(<aspect:terra>*10,<aspect:ignis>*5,<aspect:potentia>*5);
+<tfc:ore/lignite>.setAspects(<aspect:herba>*5,<aspect:terra>*5,<aspect:ignis>*5,<aspect:potentia>*5);
 
 
 

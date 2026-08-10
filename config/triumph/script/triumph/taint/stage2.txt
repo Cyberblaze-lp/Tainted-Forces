@@ -6,7 +6,7 @@ setIcon(<thaumcraft:bottle_taint>)
 setTitle("Taint Stage 2")
 
 //Set description String
-setDescription("NYI, no changes")
+setDescription("Taint Infects Rock, Taintacles spawn")
 setCompletedIconColor(##660060)
 setCompletedTitleColor(##660060)
 
