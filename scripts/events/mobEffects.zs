@@ -25,6 +25,9 @@ val FluxGooParticleIDNum as int = native.net.minecraft.block.Block.func_176210_f
 val FluxGooParticleID as string = toString(FluxGooParticleIDNum);
 
 function isTainted(entity as IEntityLivingBase) as bool{
+    if(isNull(entity)){
+        return false;
+    }
     val entityAttribute as AttributeInstance = entity.getAttribute("tc.mobmodtaint");
     if(isNull(entityAttribute)){
         return false;
