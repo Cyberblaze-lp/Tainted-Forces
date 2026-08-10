@@ -22,39 +22,30 @@ if(event.to != 0 || event.from !=-3 || event.player.hasGameStage("setspawn")){
 	return;
 	
 }
-		event.toWorld.catenation()
-				
-				.then(function(world, context) {
-					var resi = <potion:minecraft:resistance>.makePotionEffect(10000, 5, true, true);
-					event.player.addPotionEffect(resi);
-        		})
-				.sleepUntil(function(world, context){
-					return (!isNull(event.toWorld.getBlock(event.player.getX(),-1 + event.player.getY(),event.player.getZ()))&& event.toWorld.getBlock(event.player.getX(),-1 + event.player.getY(),event.player.getZ()).definition.id != "minecraft:air");
-				})
-				.sleep(5)
-				.then(function(world, context){
-					server.commandManager.executeCommand(server,"spawnpoint "+ event.player.name+ " ~ ~ ~");
-					server.commandManager.executeCommand(server, "gamestage silentadd "+event.player.name+" setspawn");
-					event.player.clearActivePotions();
-				}
-				)
-				
-				.start();
-		
-		
-				
-				
-				  
-			
-			
-			
+event.toWorld.catenation()
+	.then(function(world, context) {
+		var resi = <potion:minecraft:resistance>.makePotionEffect(10000, 5, true, true);
+		event.player.addPotionEffect(resi);
+	})
+	.sleepUntil(function(world, context){
+		return (!isNull(event.toWorld.getBlock(event.player.getX(),-1 + event.player.getY(),event.player.getZ()))&& event.toWorld.getBlock(event.player.getX(),-1 + event.player.getY(),event.player.getZ()).definition.id != "minecraft:air");
+	})
+	.sleep(5)
+	.then(function(world, context){
+		server.commandManager.executeCommand(server,"spawnpoint "+ event.player.name+ " ~ ~ ~");
+		server.commandManager.executeCommand(server, "gamestage silentadd "+event.player.name+" setspawn");
+		event.player.clearActivePotions();
+	}
+	)
+	
+	.start();
 });
 
 //I'll make my own perfectspawn, with blackjack and hookers!
 
 
 events.onPlayerLoggedIn(function(event as crafttweaker.event.PlayerLoggedInEvent){
-	var rules =event.player.world.getGameRules();
+	var rules = event.player.world.getGameRules();
 	if (event.player.hasGameStage("beentospace")||!rules.getBoolean("spaceSpawn"))
 	{
 		return;
@@ -67,7 +58,8 @@ events.onPlayerLoggedIn(function(event as crafttweaker.event.PlayerLoggedInEvent
 	val y as int = 58;
 	val z as int = -9781;
 	server.commandManager.executeCommandSilent(server, "forge setdimension " + event.player.name + " -3 "+ toString(x) + " " + toString(y) + " " + toString(z));
-	
+	//We make the player start the world in adventure
+	server.commandManager.executeCommandSilent(server, "gamerule 0 " + event.player.name);
 
 });
 
