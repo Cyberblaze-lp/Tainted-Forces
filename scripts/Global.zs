@@ -4,7 +4,6 @@ import native.java.util.Objects;
 import native.net.dries007.tfc.api.capability.food.CapabilityFood;
 import native.net.dries007.tfc.api.capability.food.IFood;
 import native.net.minecraft.item.ItemStack;
-import native.net.minecraftforge.common.util.ITeleporter;
 
 import crafttweaker.entity.IEntity;
 import crafttweaker.entity.IEntityDefinition;
