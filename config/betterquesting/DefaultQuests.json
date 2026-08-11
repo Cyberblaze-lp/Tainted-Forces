@@ -100,15 +100,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "repeattime:3": -1,
-          "issilent:1": 0,
           "autoclaim:1": 0,
           "name:8": "Salvaging the Wreckage",
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "desc:8": "The Rocket you landed in can definitely not make another trip, it\u0027s for the best if you disassemble it and recycle the scraps. Please take cover when you do, though. I don\u0027t trust §6Izawa §fto have made it any more stable than absolutely necessary, so treat it like it\u0027s rigged to explode.",
+          "issilent:1": 0,
+          "repeattime:3": -1,
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "The Rocket you landed in can definitely not make another trip, it\u0027s for the best if you disassemble it and recycle the scraps. Please take cover when you do, though. I don\u0027t trust §6Izawa §fto have made it any more stable than absolutely necessary, so treat it like it\u0027s rigged to explode."
         }
       },
       "questID:3": 0,
@@ -175,15 +175,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "repeattime:3": -1,
-          "name:8": "Ziplines",
           "autoclaim:1": 0,
           "issilent:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "globalshare:1": 0,
+          "name:8": "Ziplines",
+          "repeattime:3": -1,
+          "desc:8": "Using a §dSkyhook§f, you can ride along Powerlines. Rope, steel cable, etc. also work. simply right-click with it while near a wire.",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "Using a §dSkyhook§f, you can ride along Powerlines. Rope, steel cable, etc. also work. simply right-click with it while near a wire."
+          "globalshare:1": 0
         }
       },
       "questID:3": 1,
@@ -214,15 +214,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "issilent:1": 0,
           "repeattime:3": -1,
           "name:8": "Fireproof Bricks",
           "autoclaim:1": 0,
-          "desc:8": "No Description",
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "No Description"
         }
       },
       "questID:3": 2,
@@ -263,15 +263,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "repeattime:3": -1,
-          "name:8": "Mana Powder",
           "autoclaim:1": 0,
           "issilent:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "globalshare:1": 0,
+          "name:8": "Mana Powder",
+          "repeattime:3": -1,
+          "desc:8": "Using some of the leftover petals, we can make floral powder and steep that in mana to create a potent substance with all kinds of interesting properties!",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "Using some of the leftover petals, we can make floral powder and steep that in mana to create a potent substance with all kinds of interesting properties!"
+          "globalshare:1": 0
         }
       },
       "questID:3": 3,
@@ -314,15 +314,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "repeattime:3": -1,
-          "name:8": "Advanced Logic Components",
           "autoclaim:1": 0,
           "issilent:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "globalshare:1": 0,
+          "name:8": "Advanced Logic Components",
+          "repeattime:3": -1,
+          "desc:8": "Tired of manually calibrating timers and counters, logic gates taking up half your real estate? Then you\u0027ll love our new and §dimproved Logic Gates§f made from quartz and red alloy. they can be chiselled into whatever circuit you need. §6NAND, AND, XOR, Timers, Latches, §fand even some §6sensors§f,whatever your heart desires. \n\nLike red alloy wire, you can put these on walls and the ceiling, aswell as have multiple in the same blockspace.",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "Tired of manually calibrating timers and counters, logic gates taking up half your real estate? Then you\u0027ll love our new and §dimproved Logic Gates§f made from quartz and red alloy. they can be chiselled into whatever circuit you need. §6NAND, AND, XOR, Timers, Latches, §fand even some §6sensors§f,whatever your heart desires. \n\nLike red alloy wire, you can put these on walls and the ceiling, aswell as have multiple in the same blockspace."
+          "globalshare:1": 0
         }
       },
       "questID:3": 4,
@@ -346,8 +346,8 @@
             "DeathTime:2": 0,
             "Leashed:1": 0,
             "UUIDLeast:4": -4957811741034314380,
-            "LeftHanded:1": 0,
             "OnGround:1": 0,
+            "LeftHanded:1": 0,
             "AbsorptionAmount:5": 0.0,
             "Attributes:9": {
               "0:10": {
@@ -443,8 +443,8 @@
                 "amuletSlots:3": 1
               },
               "dsurround:data:10": {
-                "f:1": 0,
-                "a:1": 0
+                "a:1": 0,
+                "f:1": 0
               },
               "thaumicaugmentation:portal_state:10": {
                 "inPortal:1": 0
@@ -479,7 +479,7 @@
             },
             "Air:2": 300,
             "ForgeData:10": {},
-            "PersistenceRequired:1": 0,
+            "Fire:2": -1,
             "boost:3": 0,
             "FallDistance:5": 0.0,
             "id:8": "thaumcraft:taintseed",
@@ -488,11 +488,10 @@
               "1:6": 0.0,
               "2:6": 0.0
             },
-            "Pos:9": {
-              "0:6": 0.0,
-              "1:6": 0.0,
-              "2:6": 0.0
-            },
+            "FallFlying:1": 0,
+            "HurtTime:2": 0,
+            "CanPickUpLoot:1": 0,
+            "Health:5": 75.0,
             "AABB:9": {
               "0:6": -0.75,
               "1:6": 0.0,
@@ -501,11 +500,12 @@
               "4:6": 1.25,
               "5:6": 0.75
             },
-            "CanPickUpLoot:1": 0,
-            "Health:5": 75.0,
-            "HurtTime:2": 0,
-            "FallFlying:1": 0,
-            "Fire:2": -1,
+            "Pos:9": {
+              "0:6": 0.0,
+              "1:6": 0.0,
+              "2:6": 0.0
+            },
+            "PersistenceRequired:1": 0,
             "PortalCooldown:3": 0
           },
           "ignoreNBT:1": 1
@@ -525,15 +525,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "repeattime:3": -1,
-          "name:8": "Taint Seed Autopsy",
           "autoclaim:1": 0,
           "issilent:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "globalshare:1": 0,
+          "name:8": "Taint Seed Autopsy",
+          "repeattime:3": -1,
+          "desc:8": "These things\u0027 insides look like a horribly mutated form of lung tissue. I suspect it\u0027s some kind of metabolic organ.",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "These things\u0027 insides look like a horribly mutated form of lung tissue. I suspect it\u0027s some kind of metabolic organ."
+          "globalshare:1": 0
         }
       },
       "questID:3": 5,
@@ -576,15 +576,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "issilent:1": 0,
           "repeattime:3": -1,
           "name:8": "Advanced Bow Turrets",
           "autoclaim:1": 0,
-          "desc:8": "A direct upgrade to the Crossbow Turret. It sports faster firing rate aswell as an adjustable target filter.\n",
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "A direct upgrade to the Crossbow Turret. It sports faster firing rate aswell as an adjustable target filter.\n"
         }
       },
       "questID:3": 6,
@@ -606,8 +606,8 @@
             "DeathTime:2": 0,
             "Leashed:1": 0,
             "UUIDLeast:4": -7026779247948424167,
-            "LeftHanded:1": 0,
             "OnGround:1": 0,
+            "LeftHanded:1": 0,
             "AbsorptionAmount:5": 0.0,
             "Attributes:9": {
               "0:10": {
@@ -703,8 +703,8 @@
                 "amuletSlots:3": 1
               },
               "dsurround:data:10": {
-                "f:1": 0,
-                "a:1": 0
+                "a:1": 0,
+                "f:1": 0
               },
               "thaumicaugmentation:portal_state:10": {
                 "inPortal:1": 0
@@ -739,7 +739,7 @@
             },
             "Air:2": 300,
             "ForgeData:10": {},
-            "PersistenceRequired:1": 0,
+            "Fire:2": -1,
             "FallDistance:5": 0.0,
             "id:8": "thaumcraft:taintacle",
             "Motion:9": {
@@ -747,11 +747,10 @@
               "1:6": 0.0,
               "2:6": 0.0
             },
-            "Pos:9": {
-              "0:6": 0.0,
-              "1:6": 0.0,
-              "2:6": 0.0
-            },
+            "FallFlying:1": 0,
+            "HurtTime:2": 0,
+            "CanPickUpLoot:1": 0,
+            "Health:5": 50.0,
             "AABB:9": {
               "0:6": -0.4000000059604645,
               "1:6": 0.0,
@@ -760,11 +759,12 @@
               "4:6": 3.0,
               "5:6": 0.4000000059604645
             },
-            "CanPickUpLoot:1": 0,
-            "Health:5": 50.0,
-            "HurtTime:2": 0,
-            "FallFlying:1": 0,
-            "Fire:2": -1,
+            "Pos:9": {
+              "0:6": 0.0,
+              "1:6": 0.0,
+              "2:6": 0.0
+            },
+            "PersistenceRequired:1": 0,
             "PortalCooldown:3": 0
           },
           "ignoreNBT:1": 1
@@ -784,15 +784,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "repeattime:3": -1,
-          "issilent:1": 0,
           "autoclaim:1": 0,
           "name:8": "Taintacle Autopsy",
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "desc:8": "These Tentacles are mostly made up of muscly tendrils, but the tip houses what appears to be various primitive eyes and olfactory receptors. I suspect it acts as a fortified sensory organ, allowing the Infection to sense intruders easier. This hypothesis is supported by its primary form of attack, which is sprouting smaller tendrils from surrounding infected ground.",
+          "issilent:1": 0,
+          "repeattime:3": -1,
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "These Tentacles are mostly made up of muscly tendrils, but the tip houses what appears to be various primitive eyes and olfactory receptors. I suspect it acts as a fortified sensory organ, allowing the Infection to sense intruders easier. This hypothesis is supported by its primary form of attack, which is sprouting smaller tendrils from surrounding infected ground."
         }
       },
       "questID:3": 7,
@@ -814,8 +814,8 @@
             "DeathTime:2": 0,
             "Leashed:1": 0,
             "UUIDLeast:4": -8181544562074533900,
-            "LeftHanded:1": 0,
             "OnGround:1": 0,
+            "LeftHanded:1": 0,
             "AbsorptionAmount:5": 0.0,
             "Attributes:9": {
               "0:10": {
@@ -911,8 +911,8 @@
                 "amuletSlots:3": 1
               },
               "dsurround:data:10": {
-                "f:1": 0,
-                "a:1": 0
+                "a:1": 0,
+                "f:1": 0
               },
               "thaumicaugmentation:portal_state:10": {
                 "inPortal:1": 0
@@ -948,7 +948,7 @@
             },
             "Air:2": 300,
             "summoned:1": 0,
-            "Fire:2": -1,
+            "PersistenceRequired:1": 0,
             "FallDistance:5": 0.0,
             "id:8": "thaumcraft:taintswarm",
             "Motion:9": {
@@ -956,11 +956,10 @@
               "1:6": 0.0,
               "2:6": 0.0
             },
-            "Pos:9": {
-              "0:6": 0.0,
-              "1:6": 0.0,
-              "2:6": 0.0
-            },
+            "FallFlying:1": 0,
+            "HurtTime:2": 0,
+            "CanPickUpLoot:1": 0,
+            "Health:5": 30.0,
             "AABB:9": {
               "0:6": -1.0,
               "1:6": 0.0,
@@ -969,11 +968,12 @@
               "4:6": 2.0,
               "5:6": 1.0
             },
-            "CanPickUpLoot:1": 0,
-            "Health:5": 30.0,
-            "HurtTime:2": 0,
-            "FallFlying:1": 0,
-            "PersistenceRequired:1": 0,
+            "Pos:9": {
+              "0:6": 0.0,
+              "1:6": 0.0,
+              "2:6": 0.0
+            },
+            "Fire:2": -1,
             "PortalCooldown:3": 0
           },
           "ignoreNBT:1": 1
@@ -993,15 +993,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "autoclaim:1": 0,
-          "issilent:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
           "name:8": "Taint Swarm Autopsy",
           "repeattime:3": -1,
-          "desc:8": "I hope these tiny flying critters didn\u0027t cause you too much trouble. They sport tiny stingers that inject a muscle relaxant, weakening your attacks.\n\nIf you want to prevent more from spawning, it is advised to keep any and all §6Trees§f out of tainted Territory.",
+          "issilent:1": 0,
+          "autoclaim:1": 0,
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "I hope these tiny flying critters didn\u0027t cause you too much trouble. They sport tiny stingers that inject a muscle relaxant, weakening your attacks.\n\nIf you want to prevent more from spawning, it is advised to keep any and all §6Trees§f out of tainted Territory."
         }
       },
       "questID:3": 8,
@@ -1046,15 +1046,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "repeattime:3": -1,
-          "name:8": "You made a what?",
           "autoclaim:1": 0,
           "issilent:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "globalshare:1": 0,
+          "name:8": "You made a what?",
+          "repeattime:3": -1,
+          "desc:8": "Ok, so let me get this straight. you made a book with some petals and a zombie brain and now it just has... fully legible writing in it? in our language? I\u0027m going to need a copy of this.",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "Ok, so let me get this straight. you made a book with some petals and a zombie brain and now it just has... fully legible writing in it? in our language? I\u0027m going to need a copy of this."
+          "globalshare:1": 0
         }
       },
       "questID:3": 9,
@@ -1103,15 +1103,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "issilent:1": 0,
           "repeattime:3": -1,
           "name:8": "Not that big of a Fan...",
           "autoclaim:1": 0,
-          "desc:8": "Conveyors are practical for precise item transport, but sometimes you need to collect things from a wide area or places where the ground needs to be exposed. Fortunately, §5Dr. Xavier §flet me tinker with those flowers a bit, and i think i\u0027ve come up with something. \n\nI\u0027ll be the first to admit that it\u0027s far from optimal, but this §dDaffomill§f uses a small amount of mana to push items on the ground in the direction it is facing.",
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "Conveyors are practical for precise item transport, but sometimes you need to collect things from a wide area or places where the ground needs to be exposed. Fortunately, §5Dr. Xavier §flet me tinker with those flowers a bit, and i think i\u0027ve come up with something. \n\nI\u0027ll be the first to admit that it\u0027s far from optimal, but this §dDaffomill§f uses a small amount of mana to push items on the ground in the direction it is facing."
         }
       },
       "questID:3": 10,
@@ -1141,15 +1141,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "issilent:1": 0,
           "repeattime:3": -1,
           "name:8": "Building Gadgets",
           "autoclaim:1": 0,
-          "desc:8": "",
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": ""
         }
       },
       "questID:3": 11,
@@ -1216,15 +1216,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "issilent:1": 0,
           "repeattime:3": -1,
           "name:8": "Tissue Samples",
           "autoclaim:1": 0,
-          "desc:8": "In order to better understand the nature of this \"Taint\", you should gather samples of biomass. \n\nMost of these shoud be easily obtainable from infected creatures, though in a pinch some of the tainted blocks can drop them aswell.",
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "In order to better understand the nature of this \"Taint\", you should gather samples of biomass. \n\nMost of these shoud be easily obtainable from infected creatures, though in a pinch some of the tainted blocks can drop them aswell."
         }
       },
       "questID:3": 12,
@@ -1260,15 +1260,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "issilent:1": 0,
           "repeattime:3": -1,
           "name:8": "Pollution Mechanics",
           "autoclaim:1": 0,
-          "desc:8": "So turns out all this purple smoke you\u0027ve been haphazardly dumping into the atmosphere is the nutrients the Taint has been waiting for all this time. When the pollution reaches it, it will try to infect any and all soil between it and its food source- your factory.\nHowever, I have good news: In order to digest pollution, the Taint sprouts Taint Seeds which are quite fragile compared to the rest of the biomass. it should be easy enough for ranged weaponry to take care of them. I suspect that you won\u0027t just stop polluting, however. go ask §7Lieutenant Briggs§f if she can set you up with some automated defenses.",
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "So turns out all this purple smoke you\u0027ve been haphazardly dumping into the atmosphere is the nutrients the Taint has been waiting for all this time. When the pollution reaches it, it will try to infect any and all soil between it and its food source- your factory.\nHowever, I have good news: In order to digest pollution, the Taint sprouts Taint Seeds which are quite fragile compared to the rest of the biomass. it should be easy enough for ranged weaponry to take care of them. I suspect that you won\u0027t just stop polluting, however. go ask §7Lieutenant Briggs§f if she can set you up with some automated defenses."
         }
       },
       "questID:3": 13,
@@ -1299,15 +1299,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "autoclaim:1": 0,
-          "issilent:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
           "name:8": "The Disease",
           "repeattime:3": -1,
-          "desc:8": "What in the- this stuff is completely different to all life as we know it. Fungi and slime molds come close, but it also shares molecules with §osilicone rubber and lead paint§f of all things, aswell as some as of yet unidentified compounds.\nThere\u0027s no way something like this evolved here naturally, it feels out of place even in this biosphere.\n\nFrom what i could tell it also has no metabolism to speak of. As if it was lying dormant, waiting for new food to appear. Whatever that may be.\n\nIt will infect nearby living creatures however, presumably to defend itself in an energy-efficient \nmanner. ",
+          "issilent:1": 0,
+          "autoclaim:1": 0,
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "What in the- this stuff is completely different to all life as we know it. Fungi and slime molds come close, but it also shares molecules with §osilicone rubber and lead paint§f of all things, aswell as some as of yet unidentified compounds.\nThere\u0027s no way something like this evolved here naturally, it feels out of place even in this biosphere.\n\nFrom what i could tell it also has no metabolism to speak of. As if it was lying dormant, waiting for new food to appear. Whatever that may be.\n\nIt will infect nearby living creatures however, presumably to defend itself in an energy-efficient \nmanner. "
         }
       },
       "questID:3": 14,
@@ -1350,15 +1350,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "repeattime:3": -1,
-          "issilent:1": 0,
           "autoclaim:1": 0,
           "name:8": "Pollution Monitoring",
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "desc:8": "While it is possible to run around the area with a thaumometer like a maniac, it is certainly not avised. If you consult your fullscreen map, there is a setting called §6Toggle Aura/Flux Display§f on the right. If this is active, any §dThaumic Dioptras§f in Flux Mode will broadcast the current §5§lFlux §flevel in their scanning area (13x13 chunks) to any Agents that have interacted with it.\n\nThe Pollution Overlay will not update automatically, but closing and re-opening the fullscreen map will refresh it.",
+          "issilent:1": 0,
+          "repeattime:3": -1,
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "While it is possible to run around the area with a thaumometer like a maniac, it is certainly not avised. If you consult your fullscreen map, there is a setting called §6Toggle Aura/Flux Display§f on the right. If this is active, any §dThaumic Dioptras§f in Flux Mode will broadcast the current §5§lFlux §flevel in their scanning area (13x13 chunks) to any Agents that have interacted with it.\n\nThe Pollution Overlay will not update automatically, but closing and re-opening the fullscreen map will refresh it."
         }
       },
       "questID:3": 15,
@@ -1392,15 +1392,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "repeattime:3": -1,
-          "issilent:1": 0,
           "autoclaim:1": 0,
           "name:8": "Evolution",
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "desc:8": "Maybe §6killing off those Taint Seeds§f wasn\u0027t such a bright idea afterall... This stuff §6adapts rather quickly the more you try to hold it off like this§f. It can already infect solid rock, I don\u0027t think i want to know what else it\u0027s capable of if you keep going.\nOk, i\u0027m a biologist, of course I would want to know... but maybe from a bit more distance.\n\nI don\u0027t think it\u0027s avoidable though. Best course of action would probably be to §6look into ways to reduce pollution§f.",
+          "issilent:1": 0,
+          "repeattime:3": -1,
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "Maybe §6killing off those Taint Seeds§f wasn\u0027t such a bright idea afterall... This stuff §6adapts rather quickly the more you try to hold it off like this§f. It can already infect solid rock, I don\u0027t think i want to know what else it\u0027s capable of if you keep going.\nOk, i\u0027m a biologist, of course I would want to know... but maybe from a bit more distance.\n\nI don\u0027t think it\u0027s avoidable though. Best course of action would probably be to §6look into ways to reduce pollution§f."
         }
       },
       "questID:3": 16,
@@ -1453,15 +1453,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "repeattime:3": -1,
-          "issilent:1": 0,
           "autoclaim:1": 0,
           "name:8": "Alien Flora",
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "desc:8": "First scans show that much of the plantlife here is very familiar- grass, trees, flowers, you name it. However, there are a few that stick out. Would you mind breaking some for examination? Whether you get them back intact does not matter.\n\nNote: any Mystical Flower will work",
+          "issilent:1": 0,
+          "repeattime:3": -1,
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "First scans show that much of the plantlife here is very familiar- grass, trees, flowers, you name it. However, there are a few that stick out. Would you mind breaking some for examination? Whether you get them back intact does not matter.\n\nNote: any Mystical Flower will work"
         }
       },
       "questID:3": 17,
@@ -1508,15 +1508,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "issilent:1": 0,
           "repeattime:3": -1,
           "name:8": "Useless(?) Flowers",
           "autoclaim:1": 0,
-          "desc:8": "These flowers are extraordinary! They emit faint beta radiation and have an otherwise unnatural sparkle to them that I can\u0027t quite describe. Mind sending some samples? Some fertilizer would also be neat so we can propagate them up here. Most animals here drop bones when killed, so getting some shouldn\u0027t be an issue.",
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "These flowers are extraordinary! They emit faint beta radiation and have an otherwise unnatural sparkle to them that I can\u0027t quite describe. Mind sending some samples? Some fertilizer would also be neat so we can propagate them up here. Most animals here drop bones when killed, so getting some shouldn\u0027t be an issue."
         }
       },
       "questID:3": 18,
@@ -1559,15 +1559,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "repeattime:3": -1,
-          "issilent:1": 0,
           "autoclaim:1": 0,
           "name:8": "What is this Thing?",
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "desc:8": "This Digital Interface lets you communicate with us Researchers and the crew at large. \nTogether with your Map and \"World Analysis Interpretive Lexicographical Agent\" (WAILA), it is part of a small suite of tools we managed to get to the surface with you unscathed.\n\n\nWhy don\u0027t you check whether the scanner is working and send us a piece of dirt? ",
+          "issilent:1": 0,
+          "repeattime:3": -1,
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "This Digital Interface lets you communicate with us Researchers and the crew at large. \nTogether with your Map and \"World Analysis Interpretive Lexicographical Agent\" (WAILA), it is part of a small suite of tools we managed to get to the surface with you unscathed.\n\n\nWhy don\u0027t you check whether the scanner is working and send us a piece of dirt? "
         }
       },
       "questID:3": 19,
@@ -1608,15 +1608,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "repeattime:3": -1,
-          "name:8": "You found clay!",
           "autoclaim:1": 0,
           "issilent:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "globalshare:1": 0,
+          "name:8": "You found clay!",
+          "repeattime:3": -1,
+          "desc:8": "So this Fern isn\u0027t particularly notable in the paranormal sense. However, it only grows on top of §6§dClay§f. Might be worth keeping in mind when looking for it.",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "So this Fern isn\u0027t particularly notable in the paranormal sense. However, it only grows on top of §6§dClay§f. Might be worth keeping in mind when looking for it."
+          "globalshare:1": 0
         }
       },
       "questID:3": 20,
@@ -1647,15 +1647,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "name:8": "Taint Trigger",
           "repeattime:3": -1,
           "issilent:1": 0,
           "autoclaim:1": 0,
-          "globalshare:1": 0,
+          "name:8": "Taint Trigger",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "desc:8": "No Description",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "No Description"
+          "globalshare:1": 0
         }
       },
       "questID:3": 22,
@@ -1702,15 +1702,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "issilent:1": 0,
           "repeattime:3": -1,
           "name:8": "Mirror Transport",
           "autoclaim:1": 0,
-          "desc:8": "If you do not wish to engage with trains, Collins told me there\u0027s something in this Thaumonomicon called \"§dMagic Mirrors§f\". Might be worth loking into. Though they also said §6something about it destabilizing local spacetime, creating §5§lFlux§6 at both end points§f. Still sounds better than dealing with signals though, amirite?",
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "If you do not wish to engage with trains, Collins told me there\u0027s something in this Thaumonomicon called \"§dMagic Mirrors§f\". Might be worth loking into. Though they also said §6something about it destabilizing local spacetime, creating §5§lFlux§6 at both end points§f. Still sounds better than dealing with signals though, amirite?"
         }
       },
       "questID:3": 23,
@@ -1771,19 +1771,32 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "issilent:1": 0,
           "repeattime:3": -1,
           "name:8": "Floral Fusion",
           "autoclaim:1": 0,
-          "issilent:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "globalshare:1": 0,
+          "desc:8": "Ok so you won\u0027t believe this, but I just went to wash the petals you sent and somehow they spontaneously fused into... this? It does look mildly more useful than the other flowers by themselves.\n\n\nLet\u0027s see if you can replicate the process. A stone basin filled with water should be enough. Throw in some petals in a valid combination aswell as a seed to finish it.Looks like it just ate my lead crystal seeds so it should really not matter what type. ",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "Ok so you won\u0027t believe this, but I just went to wash the petals you sent and somehow they spontaneously fused into... this? It does look mildly more useful than the other flowers by themselves.\n\n\nLet\u0027s see if you can replicate the process. A stone basin filled with water should be enough. Throw in some petals in a valid combination aswell as a seed to finish it.Looks like it just ate my lead crystal seeds so it should really not matter what type. "
+          "globalshare:1": 0
         }
       },
       "questID:3": 24,
-      "rewards:9": {},
+      "rewards:9": {
+        "0:10": {
+          "rewards:9": {
+            "0:10": {
+              "Count:3": 128,
+              "Damage:2": 0,
+              "id:8": "minecraft:redstone",
+              "OreDict:8": ""
+            }
+          },
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0
+        }
+      },
       "preRequisites:11": [
         18
       ]
@@ -1807,15 +1820,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "repeattime:3": -1,
-          "name:8": "Pure Daisy",
           "autoclaim:1": 0,
           "issilent:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "globalshare:1": 0,
+          "name:8": "Pure Daisy",
+          "repeattime:3": -1,
+          "desc:8": "The very first Flower you should make. Don\u0027t ask me how fusing 4 petals of the same color results in an entirely new plant, or how it can transform blocks in the world around itself.",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "The very first Flower you should make. Don\u0027t ask me how fusing 4 petals of the same color results in an entirely new plant, or how it can transform blocks in the world around itself."
+          "globalshare:1": 0
         }
       },
       "questID:3": 25,
@@ -1864,15 +1877,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "repeattime:3": -1,
-          "name:8": "Jaded Amaranth",
           "autoclaim:1": 0,
           "issilent:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "globalshare:1": 0,
+          "name:8": "Jaded Amaranth",
+          "repeattime:3": -1,
+          "desc:8": "In order to guarantee fully automatic flower production, this thing is a must. i tried feeding it with some mana i squeezed from a hydroangeas and it immediately started extending its roots, sprouting more mystical flowers around itself!\n\nA horn of the wild can produce a strong enough gust to uproot them, but that\u0027s a bit manual. Maybe we could apply the same principles to a drum or something?\n\nOnly downside is that i have yet to find a way to make it only produce the colors we want instead of a homogenous mix of everything...\n",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "In order to guarantee fully automatic flower production, this thing is a must. i tried feeding it with some mana i squeezed from a hydroangeas and it immediately started extending its roots, sprouting more mystical flowers around itself!\n\nA horn of the wild can produce a strong enough gust to uproot them, but that\u0027s a bit manual. Maybe we could apply the same principles to a drum or something?\n\nOnly downside is that i have yet to find a way to make it only produce the colors we want instead of a homogenous mix of everything...\n"
+          "globalshare:1": 0
         }
       },
       "questID:3": 26,
@@ -1927,15 +1940,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "autoclaim:1": 0,
-          "name:8": "Junk Food",
           "snd_complete:8": "minecraft:entity.player.levelup",
           "issilent:1": 0,
           "repeattime:3": -1,
-          "globalshare:1": 0,
+          "name:8": "Junk Food",
+          "autoclaim:1": 0,
+          "desc:8": "A busy industrialist like you will certainly not want to entertain the idea of having to stop automating just to forage for some food. Fortunately, this mana powder makes for some very filling flour substitute.\n\nBut while its §6Caloric Value§f might be immense, this stuff has §6next to no Nutritional Value§f.",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "A busy industrialist like you will certainly not want to entertain the idea of having to stop automating just to forage for some food. Fortunately, this mana powder makes for some very filling flour substitute.\n\nBut while its §6Caloric Value§f might be immense, this stuff has §6next to no Nutritional Value§f."
+          "globalshare:1": 0
         }
       },
       "questID:3": 27,
@@ -1984,15 +1997,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "name:8": "Agricarnation",
           "repeattime:3": -1,
           "issilent:1": 0,
           "autoclaim:1": 0,
-          "globalshare:1": 0,
+          "name:8": "Agricarnation",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "desc:8": "This flower is brimming with nutrients and is willing to share them with any plants around, provided you feed it some mana as compensation.",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "This flower is brimming with nutrients and is willing to share them with any plants around, provided you feed it some mana as compensation."
+          "globalshare:1": 0
         }
       },
       "questID:3": 28,
@@ -2041,15 +2054,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "repeattime:3": -1,
-          "issilent:1": 0,
           "autoclaim:1": 0,
           "name:8": "Gathering Stone",
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "desc:8": "In order to get raw Stone, you will need to carve it out of the rock: Whenever you mine all 6 cardinal neighbors of a stone block, it will pop right off.\n\nIf you want to get chiseled/smooth stone instead, you can left-click it with a §dChisel§f in hand and then mine it directly.",
+          "issilent:1": 0,
+          "repeattime:3": -1,
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "In order to get raw Stone, you will need to carve it out of the rock: Whenever you mine all 6 cardinal neighbors of a stone block, it will pop right off.\n\nIf you want to get chiseled/smooth stone instead, you can left-click it with a §dChisel§f in hand and then mine it directly."
         }
       },
       "questID:3": 29,
@@ -2092,15 +2105,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "autoclaim:1": 0,
-          "name:8": "Red Orchids",
           "snd_complete:8": "minecraft:entity.player.levelup",
           "issilent:1": 0,
           "repeattime:3": -1,
-          "globalshare:1": 0,
+          "name:8": "Red Orchids",
+          "autoclaim:1": 0,
+          "desc:8": "In case you\u0027re having trouble getting Redstone, I somehow managed to fuse several redstone roots and red petals into a flower that can renewably leech it from redstone ore. To create redstone ore, simply expose a redstone block to a pure daisy.\n\n§cProbably gonna be replaced by sth requiring cinnabar/cryolite at some point\n\n§fThe Agricarnation works wonders on these §dRed Orchids§f, so growing them at a good rate shouldn\u0027t pose any issues. it is noteworthy that their deep roots prevent them from being harvested by the drum of the wild or similar, but other, more standard methods may still work.",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "In case you\u0027re having trouble getting Redstone, I somehow managed to fuse several redstone roots and red petals into a flower that can renewably leech it from redstone ore. To create redstone ore, simply expose a redstone block to a pure daisy.\n\n§cProbably gonna be replaced by sth requiring cinnabar/cryolite at some point\n\n§fThe Agricarnation works wonders on these §dRed Orchids§f, so growing them at a good rate shouldn\u0027t pose any issues. it is noteworthy that their deep roots prevent them from being harvested by the drum of the wild or similar, but other, more standard methods may still work."
+          "globalshare:1": 0
         }
       },
       "questID:3": 30,
@@ -2128,15 +2141,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "repeattime:3": -1,
-          "name:8": "Rannuncarpus",
           "autoclaim:1": 0,
           "issilent:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "globalshare:1": 0,
+          "name:8": "Rannuncarpus",
+          "repeattime:3": -1,
+          "desc:8": "This flower is strangely shaped like a hand of sorts and will attempt to place any blocks you feed it in item form around itself, on the block you specify. This is done by placing said block below the dirt the flower is planted on. I recommend using the floating version of the flower, that way it can directly be placed on the block in question.",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "This flower is strangely shaped like a hand of sorts and will attempt to place any blocks you feed it in item form around itself, on the block you specify. This is done by placing said block below the dirt the flower is planted on. I recommend using the floating version of the flower, that way it can directly be placed on the block in question."
+          "globalshare:1": 0
         }
       },
       "questID:3": 31,
@@ -2205,15 +2218,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "autoclaim:1": 0,
-          "name:8": "Sensors- When Comparators aren\u0027t enough",
           "snd_complete:8": "minecraft:entity.player.levelup",
           "issilent:1": 0,
           "repeattime:3": -1,
-          "globalshare:1": 0,
+          "name:8": "Sensors- When Comparators aren\u0027t enough",
+          "autoclaim:1": 0,
+          "desc:8": "Some devices have too many variables for a comparator to keep track of. The §dBarrel §ffor instance features both a fluid and item buffer, aswell as the signal the comparator actually winds up outputting which is whether the barrel is sealed or not.\n\nThis is where §dDials §fcome in. chiselled from some §dBrass Mechanisms§f, they can be used to relay specific types of information to comparators attached to them. This even allows for §6reading of containers that do not have built-in comparator support§f like individual clothesline anchors or mini chests. Other dial Types can query the fill level of fluid tanks or the speed of Mechanical devices.\n\n§dLight Sensors§f, made by chiselling a §dNAND Gate§f, will by default detect both block and skylight. §6You can cycle through its modes by shift-clicking with a screwdriver§f. Blue means skylight only, red means block light only. §6Useful for devices that emit light or create light-emitting blocks during operation.§f\n\nThe §dScanner §fis a versatile device capable of §6reading the Blockstate§f of whereever its \"eye\" is pointing and emits a redstone signal if it matches the criteria listed in its GUI.",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "Some devices have too many variables for a comparator to keep track of. The §dBarrel §ffor instance features both a fluid and item buffer, aswell as the signal the comparator actually winds up outputting which is whether the barrel is sealed or not.\n\nThis is where §dDials §fcome in. chiselled from some §dBrass Mechanisms§f, they can be used to relay specific types of information to comparators attached to them. This even allows for §6reading of containers that do not have built-in comparator support§f like individual clothesline anchors or mini chests. Other dial Types can query the fill level of fluid tanks or the speed of Mechanical devices.\n\n§dLight Sensors§f, made by chiselling a §dNAND Gate§f, will by default detect both block and skylight. §6You can cycle through its modes by shift-clicking with a screwdriver§f. Blue means skylight only, red means block light only. §6Useful for devices that emit light or create light-emitting blocks during operation.§f\n\nThe §dScanner §fis a versatile device capable of §6reading the Blockstate§f of whereever its \"eye\" is pointing and emits a redstone signal if it matches the criteria listed in its GUI."
+          "globalshare:1": 0
         }
       },
       "questID:3": 32,
@@ -2260,15 +2273,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "autoclaim:1": 0,
-          "name:8": "Clotheslines",
           "snd_complete:8": "minecraft:entity.player.levelup",
           "issilent:1": 0,
           "repeattime:3": -1,
-          "globalshare:1": 0,
+          "name:8": "Clotheslines",
+          "autoclaim:1": 0,
+          "desc:8": "§fAwesome, with Iron and Jute in hand, we can now create §dClotheslines§f. These jute ropes can be used to link §dClothesline Anchors§f, forming a loop that can transport items.\n\nKeep in mind that at least one Anchor must be powered using §6Mechanical Power§f (speed 5.0R or more) Adding more power will speed it up, but it caps out at ~40R.\nAnchors can only accept mechanical power from a block they are directly attached to, and only if they are facing either up or down.\n\nAnchors can be interacted with like regular inventories, but will act like they can only hold 1 item. They will also attempt to auto-output to the block they are attached to.\n\nThe notable benefit of these compared to conveyors is that they are easier to set up and expand. They also go both ways, so every point on the line can be in- or output. Lastly, Clotheslines will get saturated and stop accepting items if all outputs are full. Contrary to conveyor belts which will happily let any excess accumulate on the final belt segment without additional redstone control.\n\nAn annoying caveat is that in order to connect two anchors, §6you have to hold down right-click while dragging your cursor from one to the other§f.",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "§fAwesome, with Iron and Jute in hand, we can now create §dClotheslines§f. These jute ropes can be used to link §dClothesline Anchors§f, forming a loop that can transport items.\n\nKeep in mind that at least one Anchor must be powered using §6Mechanical Power§f (speed 5.0R or more) Adding more power will speed it up, but it caps out at ~40R.\nAnchors can only accept mechanical power from a block they are directly attached to, and only if they are facing either up or down.\n\nAnchors can be interacted with like regular inventories, but will act like they can only hold 1 item. They will also attempt to auto-output to the block they are attached to.\n\nThe notable benefit of these compared to conveyors is that they are easier to set up and expand. They also go both ways, so every point on the line can be in- or output. Lastly, Clotheslines will get saturated and stop accepting items if all outputs are full. Contrary to conveyor belts which will happily let any excess accumulate on the final belt segment without additional redstone control.\n\nAn annoying caveat is that in order to connect two anchors, §6you have to hold down right-click while dragging your cursor from one to the other§f."
+          "globalshare:1": 0
         }
       },
       "questID:3": 33,
@@ -2329,15 +2342,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "name:8": "Basic Item Logistics",
           "repeattime:3": -1,
           "issilent:1": 0,
           "autoclaim:1": 0,
-          "globalshare:1": 0,
+          "name:8": "Basic Item Logistics",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "desc:8": "§dConveyor Belts§f are the simplest way of getting items from A to B.\nThere\u0027s several variants that can all be cycled through using the §dChisel§f. \n\nA §dHammer§f is able to rotate them in any of the 4 cardinal directions. Shift-clicking makes it slope up or down.",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "§dConveyor Belts§f are the simplest way of getting items from A to B.\nThere\u0027s several variants that can all be cycled through using the §dChisel§f. \n\nA §dHammer§f is able to rotate them in any of the 4 cardinal directions. Shift-clicking makes it slope up or down."
+          "globalshare:1": 0
         }
       },
       "questID:3": 34,
@@ -2420,15 +2433,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "autoclaim:1": 0,
-          "name:8": "Railway Transport",
           "snd_complete:8": "minecraft:entity.player.levelup",
           "issilent:1": 0,
           "repeattime:3": -1,
-          "globalshare:1": 0,
+          "name:8": "Railway Transport",
+          "autoclaim:1": 0,
+          "desc:8": "Trains are the go-to way of transporting goods across long distances, like from a §6distant resource outpost§f to your main base. \n\nIn order for your trains to work, they will need 3 things:\n\n-A §dLocomotive§f needs to be filled with water (from something like a fluid loader) and solid fuel such as alumentum and will pull the train without any need for pricy booster tracks. Its speed can be set either manually in its GUI or through certain types of track.\n\n-A §dcargo section. §fThis can be anything from crates and fluid wagons to mana pools.\nFor some reason, Ship Command has disallowed putting regular chests or TNT into carts. Treated wood crates should work just fine though.\n\n-A §dWorldspike Cart §fensures that the train remains properly supervised. i don\u0027t know what exactly this entails, but §bCollins§f said it had something to do with how quantum mechanics behaves differently here and almost nothing will work unless observed.\n\nLastly, use a §dCrowbar§f while sneaking to link the carts together into a train. ",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "Trains are the go-to way of transporting goods across long distances, like from a §6distant resource outpost§f to your main base. \n\nIn order for your trains to work, they will need 3 things:\n\n-A §dLocomotive§f needs to be filled with water (from something like a fluid loader) and solid fuel such as alumentum and will pull the train without any need for pricy booster tracks. Its speed can be set either manually in its GUI or through certain types of track.\n\n-A §dcargo section. §fThis can be anything from crates and fluid wagons to mana pools.\nFor some reason, Ship Command has disallowed putting regular chests or TNT into carts. Treated wood crates should work just fine though.\n\n-A §dWorldspike Cart §fensures that the train remains properly supervised. i don\u0027t know what exactly this entails, but §bCollins§f said it had something to do with how quantum mechanics behaves differently here and almost nothing will work unless observed.\n\nLastly, use a §dCrowbar§f while sneaking to link the carts together into a train. "
+          "globalshare:1": 0
         }
       },
       "questID:3": 35,
@@ -2471,15 +2484,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "autoclaim:1": 0,
-          "name:8": "Inserters",
           "snd_complete:8": "minecraft:entity.player.levelup",
           "issilent:1": 0,
           "repeattime:3": -1,
-          "globalshare:1": 0,
+          "name:8": "Inserters",
+          "autoclaim:1": 0,
+          "desc:8": "§dInserters§f are sort of like hoppers, but better looking, faster, and horizontal.\n\nThey will transfer any matching items from their input side (where the arm is pointing when idle) and transfer it to the opposite side. They are peculiar in this in that they can interact with inventories §6both at their Level and one block below, both in-and output,§f though they will usually bind to the first valid target they find. (so you cannot input from 2 chests at once, for instance)\n\nwhen transferring \"diagonally\" like this, they ignore any solid blocks in the way. This property makes them very useful on §6flying machines§f where every block counts.\n\nInserters have a §6wide range of filtering options§f and can §6pick up/ drop off items in-world§f. This, too, works if the items are one block below.\n\nInserters also §6interact with minecarts just like hoppers§f would, making for aesthetically pleasing train stations.\n\nTheir only downside is that they cannot be shut off using redstone.\n",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "§dInserters§f are sort of like hoppers, but better looking, faster, and horizontal.\n\nThey will transfer any matching items from their input side (where the arm is pointing when idle) and transfer it to the opposite side. They are peculiar in this in that they can interact with inventories §6both at their Level and one block below, both in-and output,§f though they will usually bind to the first valid target they find. (so you cannot input from 2 chests at once, for instance)\n\nwhen transferring \"diagonally\" like this, they ignore any solid blocks in the way. This property makes them very useful on §6flying machines§f where every block counts.\n\nInserters have a §6wide range of filtering options§f and can §6pick up/ drop off items in-world§f. This, too, works if the items are one block below.\n\nInserters also §6interact with minecarts just like hoppers§f would, making for aesthetically pleasing train stations.\n\nTheir only downside is that they cannot be shut off using redstone.\n"
+          "globalshare:1": 0
         }
       },
       "questID:3": 36,
@@ -2504,15 +2517,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "name:8": "Basic Fluid Logistics",
           "repeattime:3": -1,
           "issilent:1": 0,
           "autoclaim:1": 0,
-          "globalshare:1": 0,
+          "name:8": "Basic Fluid Logistics",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "desc:8": "§dFaucets §fand §dCasting Channels§f are the simplest form of fluid transport. Their throughput is quite limited and they cannot move liquids vertically upwards. \n\nA Faucet will, if given a redstone signal, pour any liquid from the block it\u0027s attached to into the container below. Should this process stall, either because of the input draining completely or the output filling up, it requires another signal. \n\nChannels have a very limited throughput of ~36 mb/t total.",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "§dFaucets §fand §dCasting Channels§f are the simplest form of fluid transport. Their throughput is quite limited and they cannot move liquids vertically upwards. \n\nA Faucet will, if given a redstone signal, pour any liquid from the block it\u0027s attached to into the container below. Should this process stall, either because of the input draining completely or the output filling up, it requires another signal. \n\nChannels have a very limited throughput of ~36 mb/t total."
+          "globalshare:1": 0
         }
       },
       "questID:3": 37,
@@ -2561,15 +2574,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "autoclaim:1": 0,
-          "name:8": "Copper Ducts",
           "snd_complete:8": "minecraft:entity.player.levelup",
           "issilent:1": 0,
           "repeattime:3": -1,
-          "globalshare:1": 0,
+          "name:8": "Copper Ducts",
+          "autoclaim:1": 0,
+          "desc:8": "Copper is a decently ductile material for making, well, §dDucts§f. \nThese pipes, due to their closed-top nature, have the ability to be pressurized to allow for virtually unlimited throughput. However, valves at the in- and outlets mean that the Throughput §6Per Connection (aka interfacing with machines and tanks, but not other ducts) §fis limited.\n\nFurthermore, thermal stress is a serious concern with these pipes, and as such they will rupture if made to transfer very hot or cold liquids.\n\n§dServos§f can be attached to Inlets to automatically extract fluid if the machine does not output automatically already. by default they need a redstone signal to activate, but you can change this in its GUI.",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "Copper is a decently ductile material for making, well, §dDucts§f. \nThese pipes, due to their closed-top nature, have the ability to be pressurized to allow for virtually unlimited throughput. However, valves at the in- and outlets mean that the Throughput §6Per Connection (aka interfacing with machines and tanks, but not other ducts) §fis limited.\n\nFurthermore, thermal stress is a serious concern with these pipes, and as such they will rupture if made to transfer very hot or cold liquids.\n\n§dServos§f can be attached to Inlets to automatically extract fluid if the machine does not output automatically already. by default they need a redstone signal to activate, but you can change this in its GUI."
+          "globalshare:1": 0
         }
       },
       "questID:3": 38,
@@ -2612,15 +2625,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "autoclaim:1": 0,
-          "name:8": "Smart Pipes",
           "snd_complete:8": "minecraft:entity.player.levelup",
           "issilent:1": 0,
           "repeattime:3": -1,
-          "globalshare:1": 0,
+          "name:8": "Smart Pipes",
+          "autoclaim:1": 0,
+          "desc:8": "Steel is robust enough to allow for some truly heinous valve trickery. these §dPipes§f have no internal buffer and instead relay fluids directly to their destination. §6This makes it possible to have multiple fluid types flowing through the same pipe. §f\n\nThese pipes work for any temperature fluid.\nhowever, the Speed is fairly limited unless using §dMechanical or Electric Pumps§f between segments.\n\n§TThe Internal mechanisms require outside pressure to not fluctuate too rapidly, say, through §3High Wind Speeds§f.\n\n\n\n",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "Steel is robust enough to allow for some truly heinous valve trickery. these §dPipes§f have no internal buffer and instead relay fluids directly to their destination. §6This makes it possible to have multiple fluid types flowing through the same pipe. §f\n\nThese pipes work for any temperature fluid.\nhowever, the Speed is fairly limited unless using §dMechanical or Electric Pumps§f between segments.\n\n§TThe Internal mechanisms require outside pressure to not fluctuate too rapidly, say, through §3High Wind Speeds§f.\n\n\n\n"
+          "globalshare:1": 0
         }
       },
       "questID:3": 39,
@@ -2663,15 +2676,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "name:8": "Super-Laminar Ducts",
           "repeattime:3": -1,
           "issilent:1": 0,
           "autoclaim:1": 0,
-          "globalshare:1": 0,
+          "name:8": "Super-Laminar Ducts",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "desc:8": "A pricey upgrade to the Copper Ducts.\nThese Pipes can transfer unlimited amounts of liquid of any temperature, now also unrestricted by ports.",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "A pricey upgrade to the Copper Ducts.\nThese Pipes can transfer unlimited amounts of liquid of any temperature, now also unrestricted by ports."
+          "globalshare:1": 0
         }
       },
       "questID:3": 40,
@@ -2720,15 +2733,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "repeattime:3": -1,
-          "name:8": "Fluid Pumps",
           "autoclaim:1": 0,
           "issilent:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "globalshare:1": 0,
+          "name:8": "Fluid Pumps",
+          "repeattime:3": -1,
+          "desc:8": "Fluids can be moved from Tank to Tank just fine, but when it comes to picking them up from a Puddle in the world, this method breaks down. Usually this can be remedied by giving a bucket to a dispenser, but I can tell you are yearning for something simpler. \n\nEnter: the §dMechanical Pump§f! \n\n§e§fTo set it up, configure the in- and outputs using your hammer and apply a redstone signal.\nif you are using this for extracting fluids that renew themselves or get placed in the world via automation, I recommend shift-clicking the top with a hammer to stop it from replacing blocks with cobblestone.\n\nthe §6Blue Port §fon the top is used for §6Mechanical Power Input§f.\nAs with other machinery of this type, the §6Mechanical Power from your axles must be fed through a transmission box first§f to serve as a sort of \"Adapter\".\n\nusually transmission boxes are connected to machines like pumps via §dMotor Belts and Wheels§f, but a direct connection is also possible. §c\n\n\nRight now there is a bug where devices like the pump stop working after a short while if you directly connect it to the transmission box. I recommend using belts in between. if you insist on using a direct connection, you can also force it to update again by varying the mechanical power you apply, like by briefly cutting it every few seconds.\n\n\n",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "Fluids can be moved from Tank to Tank just fine, but when it comes to picking them up from a Puddle in the world, this method breaks down. Usually this can be remedied by giving a bucket to a dispenser, but I can tell you are yearning for something simpler. \n\nEnter: the §dMechanical Pump§f! \n\n§e§fTo set it up, configure the in- and outputs using your hammer and apply a redstone signal.\nif you are using this for extracting fluids that renew themselves or get placed in the world via automation, I recommend shift-clicking the top with a hammer to stop it from replacing blocks with cobblestone.\n\nthe §6Blue Port §fon the top is used for §6Mechanical Power Input§f.\nAs with other machinery of this type, the §6Mechanical Power from your axles must be fed through a transmission box first§f to serve as a sort of \"Adapter\".\n\nusually transmission boxes are connected to machines like pumps via §dMotor Belts and Wheels§f, but a direct connection is also possible. §c\n\n\nRight now there is a bug where devices like the pump stop working after a short while if you directly connect it to the transmission box. I recommend using belts in between. if you insist on using a direct connection, you can also force it to update again by varying the mechanical power you apply, like by briefly cutting it every few seconds.\n\n\n"
+          "globalshare:1": 0
         }
       },
       "questID:3": 41,
@@ -2813,15 +2826,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "repeattime:3": -1,
-          "name:8": "Golem Logistics",
           "autoclaim:1": 0,
           "issilent:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "globalshare:1": 0,
+          "name:8": "Golem Logistics",
+          "repeattime:3": -1,
+          "desc:8": "§dGolems§f are useful for many things, chief among them being item transport and sorting.\n\nSeals such as §dProvide§f, §dStock§f, and §dEmpty§f/§dStore§f do not even require any special components beyond the most basic golem variant.\n\nIf you want to increase their speed, consider making them from §6light materials§f and giving them §6Wheels for Legs§f using the various selectors in the Golem Press.\nadd the fact that golems can carry up to 2 stacks at a time, and you will find that on shorter distances, they can reach remarkable throughput numbers this way.\n\nHowever, be warned that golems are still somewhat alive and unpredictable, even without misappropriated zombie brains inside. As such it is advisable to assume Murphy\u0027s Law:\n§6If there is even the slightest chance for a golem to get itself killed or stuck, it will find it.§f \nMake sure to child-proof your golem setups and encase them with solid walls or §dBarrier Stones§f.\n\nIf this is not possible for whatever reason, make sure to make your golems in a way where they can handle the environment they are deployed in, like by making them §6fire-or blastproof §fshould they encounter those hazards, or giving them §6flight/climbing legs§f if the terrain is unwieldy.",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "§dGolems§f are useful for many things, chief among them being item transport and sorting.\n\nSeals such as §dProvide§f, §dStock§f, and §dEmpty§f/§dStore§f do not even require any special components beyond the most basic golem variant.\n\nIf you want to increase their speed, consider making them from §6light materials§f and giving them §6Wheels for Legs§f using the various selectors in the Golem Press.\nadd the fact that golems can carry up to 2 stacks at a time, and you will find that on shorter distances, they can reach remarkable throughput numbers this way.\n\nHowever, be warned that golems are still somewhat alive and unpredictable, even without misappropriated zombie brains inside. As such it is advisable to assume Murphy\u0027s Law:\n§6If there is even the slightest chance for a golem to get itself killed or stuck, it will find it.§f \nMake sure to child-proof your golem setups and encase them with solid walls or §dBarrier Stones§f.\n\nIf this is not possible for whatever reason, make sure to make your golems in a way where they can handle the environment they are deployed in, like by making them §6fire-or blastproof §fshould they encounter those hazards, or giving them §6flight/climbing legs§f if the terrain is unwieldy."
+          "globalshare:1": 0
         }
       },
       "questID:3": 42,
@@ -2846,15 +2859,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "repeattime:3": -1,
-          "name:8": "New Quest",
           "autoclaim:1": 0,
           "issilent:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "globalshare:1": 0,
+          "name:8": "New Quest",
+          "repeattime:3": -1,
+          "desc:8": "No Description",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "No Description"
+          "globalshare:1": 0
         }
       },
       "questID:3": 43,
@@ -2895,15 +2908,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "autoclaim:1": 0,
-          "name:8": "Grappling Hooks",
           "snd_complete:8": "minecraft:entity.player.levelup",
           "issilent:1": 0,
           "repeattime:3": -1,
-          "globalshare:1": 0,
+          "name:8": "Grappling Hooks",
+          "autoclaim:1": 0,
+          "desc:8": "The Arcane Grappler, when charged with Vis, can be used to swing around like some sort of man-spider. Very useful for traversing rough terrain.",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "The Arcane Grappler, when charged with Vis, can be used to swing around like some sort of man-spider. Very useful for traversing rough terrain."
+          "globalshare:1": 0
         }
       },
       "questID:3": 44,
@@ -2958,15 +2971,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "autoclaim:1": 0,
-          "name:8": "Viaducts",
           "snd_complete:8": "minecraft:entity.player.levelup",
           "issilent:1": 0,
           "repeattime:3": -1,
-          "globalshare:1": 0,
+          "name:8": "Viaducts",
+          "autoclaim:1": 0,
+          "desc:8": "§dViaducts §fare a more sophisticated way of Infrastructure-guided personal transport. simply create a network of ducts and use a crescent hammer on any end points that you want to designate as a station. \n\n\nif you wish to get around faster, §dLong Range Viaducts§f are your friend, though the require a bit more setup.\n\nFirstly, they do not work on their own, but rather connect two ends comprised of regular Viaducts.\n\nThe long-range versions cannot branch: If you wish to make a \"travel hub\" that connects multiple long-range connections, the junction will have to be made from regular Viaducts.\n\nTo set up a long-range connection, §dLinking Viaducts§f have to be placed at the transition between duct types. once both ends have been built, update one of the linking ducts via right-click.  ",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "§dViaducts §fare a more sophisticated way of Infrastructure-guided personal transport. simply create a network of ducts and use a crescent hammer on any end points that you want to designate as a station. \n\n\nif you wish to get around faster, §dLong Range Viaducts§f are your friend, though the require a bit more setup.\n\nFirstly, they do not work on their own, but rather connect two ends comprised of regular Viaducts.\n\nThe long-range versions cannot branch: If you wish to make a \"travel hub\" that connects multiple long-range connections, the junction will have to be made from regular Viaducts.\n\nTo set up a long-range connection, §dLinking Viaducts§f have to be placed at the transition between duct types. once both ends have been built, update one of the linking ducts via right-click.  "
+          "globalshare:1": 0
         }
       },
       "questID:3": 45,
@@ -2996,15 +3009,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "repeattime:3": -1,
-          "name:8": "Flight",
           "autoclaim:1": 0,
           "issilent:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "globalshare:1": 0,
+          "name:8": "Flight",
+          "repeattime:3": -1,
+          "desc:8": "We both know you\u0027ve been waiting for this",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "We both know you\u0027ve been waiting for this"
+          "globalshare:1": 0
         }
       },
       "questID:3": 46,
@@ -3029,15 +3042,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "repeattime:3": -1,
-          "name:8": "New Quest",
           "autoclaim:1": 0,
           "issilent:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "globalshare:1": 0,
+          "name:8": "New Quest",
+          "repeattime:3": -1,
+          "desc:8": "No Description",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "No Description"
+          "globalshare:1": 0
         }
       },
       "questID:3": 47,
@@ -3060,15 +3073,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "repeattime:3": -1,
-          "name:8": "New Quest",
           "autoclaim:1": 0,
           "issilent:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "globalshare:1": 0,
+          "name:8": "New Quest",
+          "repeattime:3": -1,
+          "desc:8": "No Description",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "No Description"
+          "globalshare:1": 0
         }
       },
       "questID:3": 48,
@@ -3096,15 +3109,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "repeattime:3": -1,
-          "name:8": "Personal Amendities",
           "autoclaim:1": 0,
           "issilent:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "globalshare:1": 0,
+          "name:8": "Personal Amendities",
+          "repeattime:3": -1,
+          "desc:8": "A collection of entries relating to mostly quality of life. From how to get around faster to easier building and storage systems, I got it all.",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "A collection of entries relating to mostly quality of life. From how to get around faster to easier building and storage systems, I got it all."
+          "globalshare:1": 0
         }
       },
       "questID:3": 49,
@@ -3127,15 +3140,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "name:8": "New Quest",
           "repeattime:3": -1,
           "issilent:1": 0,
           "autoclaim:1": 0,
-          "globalshare:1": 0,
+          "name:8": "New Quest",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "desc:8": "No Description",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "No Description"
+          "globalshare:1": 0
         }
       },
       "questID:3": 50,
@@ -3160,15 +3173,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "repeattime:3": -1,
-          "name:8": "New Quest",
           "autoclaim:1": 0,
           "issilent:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "globalshare:1": 0,
+          "name:8": "New Quest",
+          "repeattime:3": -1,
+          "desc:8": "No Description",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "No Description"
+          "globalshare:1": 0
         }
       },
       "questID:3": 51,
@@ -3221,15 +3234,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "repeattime:3": -1,
-          "name:8": "Block Transfer",
           "autoclaim:1": 0,
           "issilent:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "globalshare:1": 0,
+          "name:8": "Block Transfer",
+          "repeattime:3": -1,
+          "desc:8": "Sometimes, moving blocks whole is the only viable way to solve a particular problem.\n\nTo make this easier, we have devised a couple utilities for you to try and expand the capabilities of pistons and slime blocks:\n\n§dForce Relays §fcan be bound to non-TileEntity blocks using a wand of the forest. when pushed by a piston, the bound block will move aswell. if the force relay is pushed or pulled by a sticky piston, it has no effect on the bound block, making it very easy to make a block \"run along\" a straight line.\n\n§dColored Slime Blocks§f act independently and will slide past one another.\n\n§dGlazed Trracotta§f is an interesting blockset. it can be pushed by pistons, but its smoothness means it will not stick to slime or sticky pistons trying to pull on it.",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "Sometimes, moving blocks whole is the only viable way to solve a particular problem.\n\nTo make this easier, we have devised a couple utilities for you to try and expand the capabilities of pistons and slime blocks:\n\n§dForce Relays §fcan be bound to non-TileEntity blocks using a wand of the forest. when pushed by a piston, the bound block will move aswell. if the force relay is pushed or pulled by a sticky piston, it has no effect on the bound block, making it very easy to make a block \"run along\" a straight line.\n\n§dColored Slime Blocks§f act independently and will slide past one another.\n\n§dGlazed Trracotta§f is an interesting blockset. it can be pushed by pistons, but its smoothness means it will not stick to slime or sticky pistons trying to pull on it."
+          "globalshare:1": 0
         }
       },
       "questID:3": 52,
@@ -3252,15 +3265,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "name:8": "Signals: Automated Railway",
           "repeattime:3": -1,
           "issilent:1": 0,
           "autoclaim:1": 0,
-          "globalshare:1": 0,
+          "name:8": "Signals: Automated Railway",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "desc:8": "§dBlock Signals §fcan be placed on the side of a track to denote a §6Railway Block§f. should a Block already contain a Train, the signal will turn red.\n\nWhen holding Tracks or signal-related items, the Blocks will show as differently colored strips along the track, along with the direction trains are able to pass in.\n\n§dChain Signals §fAct the same way Block Signals do, but they also turn red if the signal in the Block before it is red.\n\nSignals emit a redstone signal when green, but only to their immediate left, aka into the track they\u0027re attached to.\n\n\n",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "§dBlock Signals §fcan be placed on the side of a track to denote a §6Railway Block§f. should a Block already contain a Train, the signal will turn red.\n\nWhen holding Tracks or signal-related items, the Blocks will show as differently colored strips along the track, along with the direction trains are able to pass in.\n\n§dChain Signals §fAct the same way Block Signals do, but they also turn red if the signal in the Block before it is red.\n\nSignals emit a redstone signal when green, but only to their immediate left, aka into the track they\u0027re attached to.\n\n\n"
+          "globalshare:1": 0
         }
       },
       "questID:3": 53,
@@ -3285,15 +3298,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "repeattime:3": -1,
-          "name:8": "Train Loading/Unloading",
           "autoclaim:1": 0,
           "issilent:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "globalshare:1": 0,
+          "name:8": "Train Loading/Unloading",
+          "repeattime:3": -1,
+          "desc:8": "No Description",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "No Description"
+          "globalshare:1": 0
         }
       },
       "questID:3": 54,
@@ -3318,15 +3331,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "autoclaim:1": 0,
-          "name:8": "Tracks and Track Kits",
           "snd_complete:8": "minecraft:entity.player.levelup",
           "issilent:1": 0,
           "repeattime:3": -1,
-          "globalshare:1": 0,
+          "name:8": "Tracks and Track Kits",
+          "autoclaim:1": 0,
+          "desc:8": "No Description",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "No Description"
+          "globalshare:1": 0
         }
       },
       "questID:3": 55,
@@ -3351,15 +3364,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "repeattime:3": -1,
-          "name:8": "New Quest",
           "autoclaim:1": 0,
           "issilent:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "globalshare:1": 0,
+          "name:8": "New Quest",
+          "repeattime:3": -1,
+          "desc:8": "No Description",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "No Description"
+          "globalshare:1": 0
         }
       },
       "questID:3": 56,
@@ -3412,15 +3425,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "name:8": "Basic Corporea Network",
           "repeattime:3": -1,
           "issilent:1": 0,
           "autoclaim:1": 0,
-          "globalshare:1": 0,
+          "name:8": "Basic Corporea Network",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "desc:8": "I have run some experiments on the §dPink Dust§f you made, and it turns out that with some finesse, you can use it to take care of your §5§dstorage system§f!\n\nPlace regular §dCorporea Sparks§f above any containers you want to link to the network. Each network also requires a §dMaster Spark§f to orchestrate everything. The master spark cannot take items from its inventory, so best place it above an index or similar. \n\nThe §dCorporea Index§f is where things get interesting. You can request items from your network using either §a§6Chat §for §6By Pressing C over an item in JEI §fwhile in its range. §6Pressing shift + C requests a stack.\n\n\n§6§5§4§d\n",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "I have run some experiments on the §dPink Dust§f you made, and it turns out that with some finesse, you can use it to take care of your §5§dstorage system§f!\n\nPlace regular §dCorporea Sparks§f above any containers you want to link to the network. Each network also requires a §dMaster Spark§f to orchestrate everything. The master spark cannot take items from its inventory, so best place it above an index or similar. \n\nThe §dCorporea Index§f is where things get interesting. You can request items from your network using either §a§6Chat §for §6By Pressing C over an item in JEI §fwhile in its range. §6Pressing shift + C requests a stack.\n\n\n§6§5§4§d\n"
+          "globalshare:1": 0
         }
       },
       "questID:3": 57,
@@ -3483,15 +3496,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "autoclaim:1": 0,
-          "issilent:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
           "name:8": "Fluid Storage",
           "repeattime:3": -1,
-          "desc:8": "§dPortable §fTanks are a fairly simplistic way of storing fluids. they accept it from any side and can auto-output to the bottom if configured to do so using a §dCrescent Hammer§f. Their fill level can be read with comparators, but they do not interface with items. they retain their contents when broken.\n\n§dMultiblock Tanks§f can hold more fluid and can also be used to directly fill and empty buckets and other container items. The smallest one is made of a hollow 3x4x3 cuboid of Tank Wall. non-edge blocks can also be swapped for strengthened glass or tank valves.",
+          "issilent:1": 0,
+          "autoclaim:1": 0,
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "§dPortable §fTanks are a fairly simplistic way of storing fluids. they accept it from any side and can auto-output to the bottom if configured to do so using a §dCrescent Hammer§f. Their fill level can be read with comparators, but they do not interface with items. they retain their contents when broken.\n\n§dMultiblock Tanks§f can hold more fluid and can also be used to directly fill and empty buckets and other container items. The smallest one is made of a hollow 3x4x3 cuboid of Tank Wall. non-edge blocks can also be swapped for strengthened glass or tank valves."
         }
       },
       "questID:3": 58,
@@ -3540,15 +3553,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "repeattime:3": -1,
-          "issilent:1": 0,
           "autoclaim:1": 0,
           "name:8": "Mana Enchanting",
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "desc:8": "§1Weller §ffound that there\u0027s lots of enchanted tomes in the ruins around here! The Lexicon speaks of a way to apply them to equipment without consuming the books. What do you say? want to build a mana enchanter?",
+          "issilent:1": 0,
+          "repeattime:3": -1,
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "§1Weller §ffound that there\u0027s lots of enchanted tomes in the ruins around here! The Lexicon speaks of a way to apply them to equipment without consuming the books. What do you say? want to build a mana enchanter?"
         }
       },
       "questID:3": 63,
@@ -3573,15 +3586,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "issilent:1": 0,
           "repeattime:3": -1,
           "name:8": "New Quest",
           "autoclaim:1": 0,
-          "desc:8": "No Description",
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "No Description"
         }
       },
       "questID:3": 64,
@@ -3630,15 +3643,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "issilent:1": 0,
           "repeattime:3": -1,
           "name:8": "Calcination Oven",
           "autoclaim:1": 0,
-          "desc:8": "I have come up with a way to extract useable quicklime from mana powder using a specialized furnace. Unfortunately, this requires boiling off some of the other paranormal components, releasing them into the atmosphere. Nothing to worry about, i\u0027m sure.",
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "I have come up with a way to extract useable quicklime from mana powder using a specialized furnace. Unfortunately, this requires boiling off some of the other paranormal components, releasing them into the atmosphere. Nothing to worry about, i\u0027m sure."
         }
       },
       "questID:3": 66,
@@ -3687,15 +3700,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "autoclaim:1": 0,
-          "issilent:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
           "name:8": "The Hydro-Loop",
           "repeattime:3": -1,
-          "desc:8": "With a jaded amaranth flower farm and pasture seeds under our belt, I think there\u0027s nothing preventing us from making as many hydroangeas as we want and automatically replace any that decay! Way better than those stupid endoflames that need manual intervention. this could be fully automatic!\n\nThe Petal apothecary can be given water by dropping a full bucket on it, returning an empty one. It can be filled again either via dispenser or by infusing it with mana.",
+          "issilent:1": 0,
+          "autoclaim:1": 0,
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "With a jaded amaranth flower farm and pasture seeds under our belt, I think there\u0027s nothing preventing us from making as many hydroangeas as we want and automatically replace any that decay! Way better than those stupid endoflames that need manual intervention. this could be fully automatic!\n\nThe Petal apothecary can be given water by dropping a full bucket on it, returning an empty one. It can be filled again either via dispenser or by infusing it with mana."
         }
       },
       "questID:3": 67,
@@ -3750,15 +3763,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "autoclaim:1": 0,
-          "issilent:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
           "name:8": "Mana Conversion",
           "repeattime:3": -1,
-          "desc:8": "Pointing one of these spreaders at a pool makes it slowly accumulate mana that we can soak certain items in to convert them by dropping them in.\n\nFor instance, throwing in some petals will cause them to grow into straw, and throwing that in again yields pasture seeds.\n\nThe latter is particularly interesting because it counts as a valid seed for the Apothecary. Bygone are the days of needing to sacrifice valuable crop seeds to make flowers!",
+          "issilent:1": 0,
+          "autoclaim:1": 0,
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "Pointing one of these spreaders at a pool makes it slowly accumulate mana that we can soak certain items in to convert them by dropping them in.\n\nFor instance, throwing in some petals will cause them to grow into straw, and throwing that in again yields pasture seeds.\n\nThe latter is particularly interesting because it counts as a valid seed for the Apothecary. Bygone are the days of needing to sacrifice valuable crop seeds to make flowers!"
         }
       },
       "questID:3": 68,
@@ -3805,15 +3818,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "autoclaim:1": 0,
-          "issilent:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
           "name:8": "Strange Trees",
           "repeattime:3": -1,
-          "desc:8": "These Silverwood Trees are a peculiar bunch. No, not because of the whole \"Aura Replenishing\" thing. They are also leeching §6Quicksilver§f from the ground. As such, their §dSaplings§f can only be planted in locations with §6Cinnabar §fnearby. The price for growing them is a steady stream of Mercurial goodness from breaking the leaves.",
+          "issilent:1": 0,
+          "autoclaim:1": 0,
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "These Silverwood Trees are a peculiar bunch. No, not because of the whole \"Aura Replenishing\" thing. They are also leeching §6Quicksilver§f from the ground. As such, their §dSaplings§f can only be planted in locations with §6Cinnabar §fnearby. The price for growing them is a steady stream of Mercurial goodness from breaking the leaves."
         }
       },
       "questID:3": 70,
@@ -3856,15 +3869,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "repeattime:3": -1,
-          "issilent:1": 0,
           "autoclaim:1": 0,
           "name:8": "Engineer\u0027s best Friend",
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "desc:8": "Noone wants to manually craft the exact flavor of conveyor or logic gate they need at the moment.\n\nEnter:§d The Chisel§f.\nNot Only can it be used to chisel stone in the ground using left-click, but opening up its GUI and inserting an item allows you to pick the variant you want. should you ever make to much of one kind, you can just put it back in and re-chisel it.",
+          "issilent:1": 0,
+          "repeattime:3": -1,
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "Noone wants to manually craft the exact flavor of conveyor or logic gate they need at the moment.\n\nEnter:§d The Chisel§f.\nNot Only can it be used to chisel stone in the ground using left-click, but opening up its GUI and inserting an item allows you to pick the variant you want. should you ever make to much of one kind, you can just put it back in and re-chisel it."
         }
       },
       "questID:3": 71,
@@ -3887,15 +3900,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "repeattime:3": -1,
-          "issilent:1": 0,
           "autoclaim:1": 0,
           "name:8": "New Quest",
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "desc:8": "No Description",
+          "issilent:1": 0,
+          "repeattime:3": -1,
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "No Description"
         }
       },
       "questID:3": 72,
@@ -3936,15 +3949,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "issilent:1": 0,
           "repeattime:3": -1,
           "name:8": "Mechanical Power Generation",
           "autoclaim:1": 0,
-          "desc:8": "Turns out, §bCollins§f Did not promise me too much at all. Mechanical Power is like one of the few things thusfar that we have prior knowledge on. This Engine is going to be revolutionary.\n\nI suggest convening with §aLogan (The Logistician)§f about how to route mechanical power.",
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "Turns out, §bCollins§f Did not promise me too much at all. Mechanical Power is like one of the few things thusfar that we have prior knowledge on. This Engine is going to be revolutionary.\n\nI suggest convening with §aLogan (The Logistician)§f about how to route mechanical power."
         }
       },
       "questID:3": 73,
@@ -3985,15 +3998,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "autoclaim:1": 0,
-          "issilent:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
           "name:8": "Concrete",
           "repeattime:3": -1,
-          "desc:8": "With Flux secured, we can start thinking about some more industrial materials. Concrete is a good start.\n\nUsually, concrete is made from aggregate, a gravel/sand mixture. if that\u0027s too inconvenient for you however, just using gravel also works, albeit at a less efficient rate.",
+          "issilent:1": 0,
+          "autoclaim:1": 0,
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "With Flux secured, we can start thinking about some more industrial materials. Concrete is a good start.\n\nUsually, concrete is made from aggregate, a gravel/sand mixture. if that\u0027s too inconvenient for you however, just using gravel also works, albeit at a less efficient rate."
         }
       },
       "questID:3": 74,
@@ -4054,15 +4067,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "autoclaim:1": 0,
-          "issilent:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
           "name:8": "Simple Logic Components",
           "repeattime:3": -1,
-          "desc:8": "Oh my, these flowers and devices don\u0027t appear to come with brains pre-installed, do they?\nWell, now that we have access to redstone, this shouldn\u0027t be too much of a hassle. Simply Build their Brains for them using §dRedstone Logic! §f\n\nMost Components can be interacted with through redstone. For instance, most containers like chests or Wooden Hoppers can have their contents read by a §dComparator§f and mana spreaders can be disabled by applying a signal. \n\n",
+          "issilent:1": 0,
+          "autoclaim:1": 0,
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "Oh my, these flowers and devices don\u0027t appear to come with brains pre-installed, do they?\nWell, now that we have access to redstone, this shouldn\u0027t be too much of a hassle. Simply Build their Brains for them using §dRedstone Logic! §f\n\nMost Components can be interacted with through redstone. For instance, most containers like chests or Wooden Hoppers can have their contents read by a §dComparator§f and mana spreaders can be disabled by applying a signal. \n\n"
         }
       },
       "questID:3": 77,
@@ -4085,15 +4098,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "autoclaim:1": 0,
-          "issilent:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
           "name:8": "Basic Fluid Processing",
           "repeattime:3": -1,
-          "desc:8": "The §dBarrel §fis a device capable of performing simple fluid recipes. \n\nMost recipes take time to complete, during which the lid must be sealed. This can simply be done by applying a redstone signal.",
+          "issilent:1": 0,
+          "autoclaim:1": 0,
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "The §dBarrel §fis a device capable of performing simple fluid recipes. \n\nMost recipes take time to complete, during which the lid must be sealed. This can simply be done by applying a redstone signal."
         }
       },
       "questID:3": 78,
@@ -4130,15 +4143,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "issilent:1": 0,
           "repeattime:3": -1,
           "name:8": "New Quest",
           "autoclaim:1": 0,
-          "desc:8": "No Description",
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "No Description"
         }
       },
       "questID:3": 80,
@@ -4169,15 +4182,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "issilent:1": 0,
           "repeattime:3": -1,
           "name:8": "New Quest",
           "autoclaim:1": 0,
-          "desc:8": "No Description",
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "No Description"
         }
       },
       "questID:3": 81,
@@ -4202,15 +4215,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "repeattime:3": -1,
-          "issilent:1": 0,
           "autoclaim:1": 0,
           "name:8": "New Quest",
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "desc:8": "No Description",
+          "issilent:1": 0,
+          "repeattime:3": -1,
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "No Description"
         }
       },
       "questID:3": 82,
@@ -4253,15 +4266,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "issilent:1": 0,
           "repeattime:3": -1,
           "name:8": "Grindstone",
           "autoclaim:1": 0,
-          "desc:8": "The Grindstone will be your most basic way of crushing things like redstone ore. Right-click the item to be processed on it and click some more until done. Extract the finished product using shift-click.\n\n\n\n§cThe Quern has been replaced by this because somehow this one was more automatable. \n\n§f",
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "The Grindstone will be your most basic way of crushing things like redstone ore. Right-click the item to be processed on it and click some more until done. Extract the finished product using shift-click.\n\n\n\n§cThe Quern has been replaced by this because somehow this one was more automatable. \n\n§f"
         }
       },
       "questID:3": 83,
@@ -4302,15 +4315,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "repeattime:3": -1,
-          "issilent:1": 0,
           "autoclaim:1": 0,
           "name:8": "Mining Safety",
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "desc:8": "While mining you will have to be aware of collapses, these occur when mining unsupported stone, or when causing explosions nearby. Note that ore blocks are exempt from collapses.\n\nHowever a sturdy arch of wooden support beams should be able to support about 8 meters of mineshaft in each horizontal direction.\nTo form a minimum viable support structure, place 2 columns of at least 3 support beams 1 block apart and connect them by clicking on one of them with another beam. §6Only the horizontal beams count towards protection.",
+          "issilent:1": 0,
+          "repeattime:3": -1,
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "While mining you will have to be aware of collapses, these occur when mining unsupported stone, or when causing explosions nearby. Note that ore blocks are exempt from collapses.\n\nHowever a sturdy arch of wooden support beams should be able to support about 8 meters of mineshaft in each horizontal direction.\nTo form a minimum viable support structure, place 2 columns of at least 3 support beams 1 block apart and connect them by clicking on one of them with another beam. §6Only the horizontal beams count towards protection."
         }
       },
       "questID:3": 84,
@@ -4346,15 +4359,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "issilent:1": 0,
           "repeattime:3": -1,
           "name:8": "Hopeful Prospects",
           "autoclaim:1": 0,
-          "desc:8": "You don\u0027t have much education in geology do you? I can give a basic rundown on what you need to know.\n\nUnderground ore veins will be your main source of useful metals and minerals, however due to being underground you can\u0027t exactly spot them easily.\nHowever surface samples typically indicate that there\u0027s ores below, just dig straight down as nothing bad ever comes of that right?",
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "You don\u0027t have much education in geology do you? I can give a basic rundown on what you need to know.\n\nUnderground ore veins will be your main source of useful metals and minerals, however due to being underground you can\u0027t exactly spot them easily.\nHowever surface samples typically indicate that there\u0027s ores below, just dig straight down as nothing bad ever comes of that right?"
         }
       },
       "questID:3": 85,
@@ -4397,15 +4410,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "repeattime:3": -1,
-          "issilent:1": 0,
           "autoclaim:1": 0,
           "name:8": "Wild Crops",
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "desc:8": "Every now and then, you will stumble across wild crops that can be harvested for produce and seeds.§6 The seeds might be useful for other things than farming, too.",
+          "issilent:1": 0,
+          "repeattime:3": -1,
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "Every now and then, you will stumble across wild crops that can be harvested for produce and seeds.§6 The seeds might be useful for other things than farming, too."
         }
       },
       "questID:3": 86,
@@ -4448,15 +4461,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "autoclaim:1": 0,
-          "issilent:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
           "name:8": "The Search for Redstone",
           "repeattime:3": -1,
-          "desc:8": "§dRedstone§r is an essential material for technology, and as we want to automate stuff your probably gonna have to get it as fast as possible.\nIt can be primarily obtained from §dCinnabar§r and §dCryolite§r.\n\n§dQuicksilver§r and §dRedstone§r as surface samples will both signify a redstone bearing vein bellow.",
+          "issilent:1": 0,
+          "autoclaim:1": 0,
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "§dRedstone§r is an essential material for technology, and as we want to automate stuff your probably gonna have to get it as fast as possible.\nIt can be primarily obtained from §dCinnabar§r and §dCryolite§r.\n\n§dQuicksilver§r and §dRedstone§r as surface samples will both signify a redstone bearing vein bellow."
         }
       },
       "questID:3": 87,
@@ -4518,15 +4531,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "issilent:1": 0,
           "repeattime:3": -1,
           "name:8": "Campfire",
           "autoclaim:1": 0,
-          "desc:8": "Cooking things is one of the most fundamental ways of processing. You can create a Firepit by using a §dFirestarter§f on 3 sticks and a log dropped on the ground.\n\nThe firepit can be turned into an automatable version of itself by shift-clicking on it with an empty hand.\n\n§cFirepits and other TFC devices like it will keep consuming fuel even if the chunks aren\u0027t loaded. if you automate them, keep a supply of firestarters, flint and steel, or fire charges ready.",
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "Cooking things is one of the most fundamental ways of processing. You can create a Firepit by using a §dFirestarter§f on 3 sticks and a log dropped on the ground.\n\nThe firepit can be turned into an automatable version of itself by shift-clicking on it with an empty hand.\n\n§cFirepits and other TFC devices like it will keep consuming fuel even if the chunks aren\u0027t loaded. if you automate them, keep a supply of firestarters, flint and steel, or fire charges ready."
         }
       },
       "questID:3": 89,
@@ -4569,15 +4582,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "autoclaim:1": 0,
-          "issilent:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
           "name:8": "Primitive Lighting",
           "repeattime:3": -1,
-          "desc:8": "Torches are very simple to make, just light some sticks on fire! \n\nKeep in mind that they will burn out after 3 days and will have to be re-lit, so it would be best to look into alternative sources of lighting.",
+          "issilent:1": 0,
+          "autoclaim:1": 0,
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "Torches are very simple to make, just light some sticks on fire! \n\nKeep in mind that they will burn out after 3 days and will have to be re-lit, so it would be best to look into alternative sources of lighting."
         }
       },
       "questID:3": 90,
@@ -4616,18 +4629,18 @@
                     "food:3": 4,
                     "sat:5": 3.0,
                     "buffed:1": 0,
-                    "dairy:5": 0.0,
-                    "decay:5": 3.5,
-                    "meat:5": 0.0,
+                    "veg:5": 0.0,
                     "grain:5": 0.0,
-                    "veg:5": 0.0
+                    "meat:5": 0.0,
+                    "dairy:5": 0.0,
+                    "decay:5": 3.5
                   },
                   "traits:9": {},
                   "bowl:10": {
-                    "tag:10": {},
                     "id:8": "minecraft:air",
                     "Count:3": 1,
-                    "Damage:2": 0
+                    "Damage:2": 0,
+                    "tag:10": {}
                   }
                 },
                 "tfc:food:10": {
@@ -4661,18 +4674,18 @@
                   "food:3": 4,
                   "sat:5": 3.0,
                   "buffed:1": 0,
-                  "dairy:5": 0.0,
-                  "decay:5": 5.0,
-                  "meat:5": 0.0,
+                  "veg:5": 0.0,
                   "grain:5": 0.0,
-                  "veg:5": 0.0
+                  "meat:5": 0.0,
+                  "dairy:5": 0.0,
+                  "decay:5": 5.0
                 },
                 "traits:9": {},
                 "bowl:10": {
-                  "tag:10": {},
                   "id:8": "minecraft:air",
                   "Count:3": 1,
-                  "Damage:2": 0
+                  "Damage:2": 0,
+                  "tag:10": {}
                 }
               },
               "tfc:food:10": {
@@ -4688,15 +4701,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "autoclaim:1": 0,
-          "issilent:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
           "name:8": "Dietary Variety",
           "repeattime:3": -1,
-          "desc:8": "If you look to the right in your inventory, there should be 4 new tabs. the lowest one is your §6Nutrition§f, spllit between dairy, fruit, grain, vegetables, and protein. The lower your overall nutrition, the lower your effective max health. \n\nFor Nutrition, only the last 20 foods count toward it. if you want to maximize your health pool, it is advised to use meals like sandwiches or stews. the former is created in a crafting table using bread while the latter is made in a §dCeramic Pot §fover a Firepit.",
+          "issilent:1": 0,
+          "autoclaim:1": 0,
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "If you look to the right in your inventory, there should be 4 new tabs. the lowest one is your §6Nutrition§f, spllit between dairy, fruit, grain, vegetables, and protein. The lower your overall nutrition, the lower your effective max health. \n\nFor Nutrition, only the last 20 foods count toward it. if you want to maximize your health pool, it is advised to use meals like sandwiches or stews. the former is created in a crafting table using bread while the latter is made in a §dCeramic Pot §fover a Firepit."
         }
       },
       "questID:3": 91,
@@ -4739,15 +4752,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "repeattime:3": -1,
-          "issilent:1": 0,
           "autoclaim:1": 0,
           "name:8": "Charcoal and the Forge",
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "desc:8": "To make charcoal, put piles of logs (shift-click while placing logs) in an airtight space and light it on fire. When the smoke particles subside, it\u0027s safe to dig up.\n\nTo form a charcoal forge, place 7-8 charcoal in a 1x1 hole surrounded by stone* and light it. As with the firepit, it can be shift-clicked to make a more automatable version with item I/O.\n\n*Anything made of stone will work. Even things like mechanical users and droppers.",
+          "issilent:1": 0,
+          "repeattime:3": -1,
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "To make charcoal, put piles of logs (shift-click while placing logs) in an airtight space and light it on fire. When the smoke particles subside, it\u0027s safe to dig up.\n\nTo form a charcoal forge, place 7-8 charcoal in a 1x1 hole surrounded by stone* and light it. As with the firepit, it can be shift-clicked to make a more automatable version with item I/O.\n\n*Anything made of stone will work. Even things like mechanical users and droppers."
         }
       },
       "questID:3": 93,
@@ -4796,15 +4809,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "issilent:1": 0,
           "repeattime:3": -1,
           "name:8": "Coke Oven",
           "autoclaim:1": 0,
-          "desc:8": "Despite what certain outdated forms of documentation may tell you, the §6Coke Oven§f is now built using §dFire Bricks§f.\n\nAlso, any old smithing hammer will do for assembling it. No need for fancy engineer\u0027s tools.\n\nThe Coke Oven allows for refining of bituminous coal, lignite or peat into §6Coal Coke§f, a better, but still lackluster Solid Fuel. It also produces §6Creosote Oil§f which can be used as a basic liquid fuel. It also provides a better ratio and Creosote Byproduct for Turning logs into §6Charcoal§f.",
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "Despite what certain outdated forms of documentation may tell you, the §6Coke Oven§f is now built using §dFire Bricks§f.\n\nAlso, any old smithing hammer will do for assembling it. No need for fancy engineer\u0027s tools.\n\nThe Coke Oven allows for refining of bituminous coal, lignite or peat into §6Coal Coke§f, a better, but still lackluster Solid Fuel. It also produces §6Creosote Oil§f which can be used as a basic liquid fuel. It also provides a better ratio and Creosote Byproduct for Turning logs into §6Charcoal§f."
         }
       },
       "questID:3": 94,
@@ -4854,15 +4867,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "name:8": "Generating Flowers",
           "repeattime:3": -1,
           "issilent:1": 0,
           "autoclaim:1": 0,
-          "globalshare:1": 0,
+          "name:8": "Generating Flowers",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "desc:8": "This pearticular flower seems to delight in consuming flammable materials. I could have used that info *before* it ate through half of my Coat, but here we are. \n\nGenerating flowers have to be placed next to a mana spreader in order to work, or be bound to one afterwards via a wand of the forest or similar.\n\n§6I suspect that burnable fuel comes at a premium to you right now. Perhaps start looking into alternative sources of Mana.\n\n",
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "desc:8": "This pearticular flower seems to delight in consuming flammable materials. I could have used that info *before* it ate through half of my Coat, but here we are. \n\nGenerating flowers have to be placed next to a mana spreader in order to work, or be bound to one afterwards via a wand of the forest or similar.\n\n§6I suspect that burnable fuel comes at a premium to you right now. Perhaps start looking into alternative sources of Mana.\n\n"
+          "globalshare:1": 0
         }
       },
       "questID:3": 95,
@@ -4924,15 +4937,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "repeattime:3": -1,
-          "issilent:1": 0,
           "autoclaim:1": 0,
           "name:8": "Haaaaans!",
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "desc:8": "The §dChemthrower §fis perhaps the most overkill weapon in your arsenal right now. Fed with the right ammunition, it can deal ludicrous amounts of damage in an area. \n\nThe Price you pay is of course that it guzzles Fuel like there is no tomorrow.\n\na §dReservoir§f might be able to alleviate any storage space concerns at least: Acting effectively like an upgraded jerrycan, they can be \"activated\" with shift-click. any fluid you put in it will automatically be transferred to held items.",
+          "issilent:1": 0,
+          "repeattime:3": -1,
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "The §dChemthrower §fis perhaps the most overkill weapon in your arsenal right now. Fed with the right ammunition, it can deal ludicrous amounts of damage in an area. \n\nThe Price you pay is of course that it guzzles Fuel like there is no tomorrow.\n\na §dReservoir§f might be able to alleviate any storage space concerns at least: Acting effectively like an upgraded jerrycan, they can be \"activated\" with shift-click. any fluid you put in it will automatically be transferred to held items."
         }
       },
       "questID:3": 97,
@@ -4981,15 +4994,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "repeattime:3": -1,
-          "issilent:1": 0,
           "autoclaim:1": 0,
           "name:8": "I am... Evitable!",
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "desc:8": "The Gauntlet you\u0027ve devised makes for a great weapon when combined with the right foci.",
+          "issilent:1": 0,
+          "repeattime:3": -1,
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "The Gauntlet you\u0027ve devised makes for a great weapon when combined with the right foci."
         }
       },
       "questID:3": 98,
@@ -5019,15 +5032,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "repeattime:3": -1,
-          "issilent:1": 0,
           "autoclaim:1": 0,
           "name:8": "Personal Weaponry",
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "desc:8": "In order to be able to defend yourself efficiently, you must know what options are vailable to you. This will be a non-exhaustive list, but i think it should cover the most interesting options.",
+          "issilent:1": 0,
+          "repeattime:3": -1,
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "In order to be able to defend yourself efficiently, you must know what options are vailable to you. This will be a non-exhaustive list, but i think it should cover the most interesting options."
         }
       },
       "questID:3": 99,
@@ -5055,15 +5068,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "repeattime:3": -1,
-          "issilent:1": 0,
           "autoclaim:1": 0,
           "name:8": "Automated Defense",
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "desc:8": "As your sphere of influence expands, it becomes simply infeasible to patrol your base\u0027s perimeter all on your own. Instead, consider fortifying it with some Turrets! Here\u0027s some I\u0027ve been able to ",
+          "issilent:1": 0,
+          "repeattime:3": -1,
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "As your sphere of influence expands, it becomes simply infeasible to patrol your base\u0027s perimeter all on your own. Instead, consider fortifying it with some Turrets! Here\u0027s some I\u0027ve been able to "
         }
       },
       "questID:3": 100,
@@ -5104,15 +5117,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "autoclaim:1": 0,
-          "issilent:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
           "name:8": "Crossbow Turrets",
           "repeattime:3": -1,
-          "desc:8": "Possibly the simplest kind of Turret there is, using common arrows as ammunition. \n\nIt can grab arrows from a dropper below itself to refill.\nYou can also make it ride minecarts, so you can have one defense train for sections that only need infrequent sweeps.\n\n",
+          "issilent:1": 0,
+          "autoclaim:1": 0,
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "Possibly the simplest kind of Turret there is, using common arrows as ammunition. \n\nIt can grab arrows from a dropper below itself to refill.\nYou can also make it ride minecarts, so you can have one defense train for sections that only need infrequent sweeps.\n\n"
         }
       },
       "questID:3": 101,
@@ -5142,15 +5155,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "issilent:1": 0,
           "repeattime:3": -1,
           "name:8": "[i] Bullet Train",
           "autoclaim:1": 0,
-          "desc:8": "§cArrow collisions have been modified such that they do not happen if a minecart or Turret are nearby. Effectively, this means that Crossbow Turrets will not engage in friendly fire and can be placed in greater numbers and even on Trains!*\n\n*sometimes when going on a very specific angle it may still destroy minecarts. beware of adding unnecessary slopes if you use this.",
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "§cArrow collisions have been modified such that they do not happen if a minecart or Turret are nearby. Effectively, this means that Crossbow Turrets will not engage in friendly fire and can be placed in greater numbers and even on Trains!*\n\n*sometimes when going on a very specific angle it may still destroy minecarts. beware of adding unnecessary slopes if you use this."
         }
       },
       "questID:3": 102,
@@ -5193,15 +5206,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "repeattime:3": -1,
-          "issilent:1": 0,
           "autoclaim:1": 0,
           "name:8": "It costs $400,000 to fire this weapon for 12 seconds",
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "desc:8": "The §dMinigun §fIs a fast-firing weapon that must be charged with compressed air and up to 4 magazines. It sports a wide-ish variety of ammo types, like incendiary, AP, HE, and freezing.",
+          "issilent:1": 0,
+          "repeattime:3": -1,
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "The §dMinigun §fIs a fast-firing weapon that must be charged with compressed air and up to 4 magazines. It sports a wide-ish variety of ammo types, like incendiary, AP, HE, and freezing."
         }
       },
       "questID:3": 107,
@@ -5244,15 +5257,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "issilent:1": 0,
           "repeattime:3": -1,
           "name:8": "Gun Turrets",
           "autoclaim:1": 0,
-          "desc:8": "This Turret runs on Minigun Ammunition and cannot be targeted by hostiles. You can increase its range using upgrades.",
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "This Turret runs on Minigun Ammunition and cannot be targeted by hostiles. You can increase its range using upgrades."
         }
       },
       "questID:3": 108,
@@ -5277,15 +5290,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "repeattime:3": -1,
-          "issilent:1": 0,
           "autoclaim:1": 0,
           "name:8": "New Quest",
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "desc:8": "No Description",
+          "issilent:1": 0,
+          "repeattime:3": -1,
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "No Description"
         }
       },
       "questID:3": 115,
@@ -5308,15 +5321,15 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "repeattime:3": -1,
-          "issilent:1": 0,
           "autoclaim:1": 0,
           "name:8": "New Quest",
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "desc:8": "No Description",
+          "issilent:1": 0,
+          "repeattime:3": -1,
+          "globalshare:1": 0,
           "simultaneous:1": 0,
           "tasklogic:8": "AND",
-          "globalshare:1": 0
+          "desc:8": "No Description"
         }
       },
       "questID:3": 116,
@@ -5332,14 +5345,14 @@
           "name:8": "The Survivalist",
           "desc:8": "Hello there, I\u0027m §4Dr. Alice Velvet §fand I am here to teach you about the basics of surviving on an alien planet! I hope a geology degree and my meager carpentry skills will suffice in helping you not die.",
           "visibility:8": "NORMAL",
-          "bg_size:3": 256,
+          "bg_image:8": "",
           "icon:10": {
             "Count:3": 1,
             "Damage:2": 0,
             "id:8": "tfc:stone/axe/igneous_extrusive",
             "OreDict:8": ""
           },
-          "bg_image:8": ""
+          "bg_size:3": 256
         }
       },
       "quests:9": {
@@ -5486,7 +5499,7 @@
           "name:8": "The Logistician",
           "desc:8": "§6§aCorporal Logan§f reporting for Duty! I\u0027m from supply chain management and have just been, uh, prematurely promoted to head of logistics.\nIf you have any deliveries to make or need help with getting things where they need to be, come to §mus§f me.",
           "visibility:8": "NORMAL",
-          "bg_size:3": 256,
+          "bg_image:8": "",
           "icon:10": {
             "Count:3": 1,
             "Damage:2": 0,
@@ -5496,7 +5509,7 @@
             "id:8": "railcraft:locomotive_steam_solid",
             "OreDict:8": ""
           },
-          "bg_image:8": ""
+          "bg_size:3": 256
         }
       },
       "quests:9": {
@@ -5727,7 +5740,7 @@
           "name:8": "The Engineer",
           "desc:8": "You know what they say: an engineer\u0027s job is not done whennothing more can be added, but when nothing more can be removed. Did not think i\u0027d ever have to design around removing... all of technology as we know it, \nbut nothing you and renowned mechanical Engineer §6Dr. Izawa§f can\u0027t solve if we put our\nheads together, right?",
           "visibility:8": "NORMAL",
-          "bg_size:3": 256,
+          "bg_image:8": "",
           "icon:10": {
             "Count:3": 1,
             "Damage:2": 0,
@@ -5748,7 +5761,7 @@
             "id:8": "tfc:brass_mechanisms",
             "OreDict:8": ""
           },
-          "bg_image:8": ""
+          "bg_size:3": 256
         }
       },
       "quests:9": {
@@ -5811,14 +5824,14 @@
           "name:8": "The Metaphysicist",
           "desc:8": "Hello there! I\u0027m §bQuinn Collins§f, Particle Physicist and Spatial Technician. Or at least that\u0027s what is on my diploma.\nSince I doubt that we\u0027ll be taking a closer look at warp drives or colliders anytime soon, I\u0027m basically sitting on my hands right now.\n\nMaybe my colleagues will find §5something§f they need my help explaining...",
           "visibility:8": "NORMAL",
-          "bg_size:3": 256,
+          "bg_image:8": "",
           "icon:10": {
             "Count:3": 1,
             "Damage:2": 1,
             "id:8": "botania:corporeaspark",
             "OreDict:8": ""
           },
-          "bg_image:8": ""
+          "bg_size:3": 256
         }
       },
       "quests:9": {
@@ -5867,14 +5880,14 @@
           "name:8": "The Cartographer",
           "desc:8": "This is §1Dr. Cave Dave Weller §freporting from the Comms Bridge! The sensors are... in bad shape and we have considerable interference, but I think we\u0027ll manage. Let\u0027s familiarize ourselves with our surroundings, shall we? ",
           "visibility:8": "NORMAL",
-          "bg_size:3": 256,
+          "bg_image:8": "",
           "icon:10": {
             "Count:3": 1,
             "Damage:2": 0,
             "id:8": "tfcthings:hiking_boots",
             "OreDict:8": ""
           },
-          "bg_image:8": ""
+          "bg_size:3": 256
         }
       },
       "quests:9": {
@@ -5902,7 +5915,7 @@
           "name:8": "The Xenobiologist",
           "desc:8": "Name\u0027s §5Dr. Xavier§f, Sociologist and Tactical Xenobiologist. \n\nOr in other words, I show our soldiers what body parts to shoot at and how to destroy enemy morale. \nLet\u0027s hope this next mission includes a little less violence.",
           "visibility:8": "NORMAL",
-          "bg_size:3": 256,
+          "bg_image:8": "",
           "icon:10": {
             "Count:3": 1,
             "Damage:2": 0,
@@ -5915,7 +5928,7 @@
             "id:8": "contenttweaker:taint_tendril",
             "OreDict:8": ""
           },
-          "bg_image:8": ""
+          "bg_size:3": 256
         }
       },
       "quests:9": {
@@ -6076,14 +6089,14 @@
           "name:8": "The Lieutenant",
           "desc:8": "§7Lieutenant Briggs§f here. I have served on many a military vessel, faced countless alien threats. And through It all, there was only one thing that protected me. Gun. And if that didn\u0027t work, we got more Gun.",
           "visibility:8": "NORMAL",
-          "bg_size:3": 256,
+          "bg_image:8": "",
           "icon:10": {
             "Count:3": 1,
             "Damage:2": 0,
             "id:8": "pneumaticcraft:gun_ammo_incendiary",
             "OreDict:8": ""
           },
-          "bg_image:8": ""
+          "bg_size:3": 256
         }
       },
       "quests:9": {
@@ -6156,18 +6169,18 @@
   },
   "questSettings:10": {
     "betterquesting:10": {
-      "livesdef:3": 3,
+      "livesmax:3": 10,
       "home_anchor_x:5": 0.5,
       "home_offset_x:3": -128,
-      "livesmax:3": 10,
+      "livesdef:3": 3,
       "home_image:8": "betterquesting:textures/gui/default_title.png",
+      "pack_version:3": 0,
+      "hardcore:1": 0,
+      "editmode:1": 1,
       "pack_name:8": "",
       "party_enable:1": 1,
-      "editmode:1": 1,
-      "hardcore:1": 0,
-      "pack_version:3": 0,
-      "home_offset_y:3": 0,
-      "home_anchor_y:5": 0.0
+      "home_anchor_y:5": 0.0,
+      "home_offset_y:3": 0
     }
   },
   "format:8": "2.0.0"
