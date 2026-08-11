@@ -47,7 +47,7 @@ dungeonMain.addItemEntry(<thaumcraft:fabric>, 30000);
 dungeonMain.addItemEntry(<thaumcraft:baubles:3>, 1000);
 dungeonMain.addItemEntry(<thaumcraft:pech_wand>, 2000);
 dungeonMain.addItemEntry(<thaumcraft:curio:6>, 3000);
-dungeonMain.addItemEntry(<minecraft:lapis_block>, 8000);
+dungeonMain.addItemEntry(<minecraft:dye:4>, 70000);
 
 
 
