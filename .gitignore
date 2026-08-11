@@ -3,6 +3,7 @@
 /*.log
 /crash-reports
 crafttweaker.log
+/WailaErrorOutput.txt
 
 # Launcher files
 minecraftinstance.json
