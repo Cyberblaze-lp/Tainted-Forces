@@ -21,8 +21,8 @@ import native.java.lang.Class;
 
 //Helper functions
 
-val FluxGooParticleIDNum as int = native.net.minecraft.block.Block.func_176210_f(<blockstate:thaumcraft:flux_goo>.native);
-val FluxGooParticleID as string = toString(FluxGooParticleIDNum);
+
+
 
 function isTainted(entity as IEntityLivingBase) as bool{
     if(isNull(entity)){
@@ -120,8 +120,13 @@ events.onEntityLivingDeathDrops(function(event as crafttweaker.event.EntityLivin
     {
         val invis = <potion:minecraft:invisibility>.makePotionEffect(1000, 3 ,false, false) as IPotionEffect;
         event.entityLivingBase.addPotionEffect(invis);
-        server.commandManager.executeCommandSilent(event.entityLivingBase, "particle blockcrack ~ ~" + toString(event.entityLivingBase.eyeHeight /2) +" ~ 0.3 "+toString(event.entityLivingBase.eyeHeight /2)+ " 0.3 0 300 force @a "+FluxGooParticleID);
-        server.commandManager.executeCommandSilent(event.entityLivingBase, "playsound thaumcraft:gore hostile @a ~ ~ ~");
+        if(!isNull(server))
+        {
+            var FluxGooParticleIDNum as int = native.net.minecraft.block.Block.func_176210_f(<blockstate:thaumcraft:flux_goo>.native);
+            var FluxGooParticleID as string = toString(FluxGooParticleIDNum);
+            server.commandManager.executeCommandSilent(event.entityLivingBase, "particle blockcrack ~ ~" + toString(event.entityLivingBase.eyeHeight /2) +" ~ 0.3 "+toString(event.entityLivingBase.eyeHeight /2)+ " 0.3 0 300 force @a "+FluxGooParticleID);
+            server.commandManager.executeCommandSilent(event.entityLivingBase, "playsound thaumcraft:gore hostile @a ~ ~ ~");
+        }
     }
     //drops
     val rand = mods.ctutils.utils.Math.getRandom().nextInt(0, 3);
@@ -194,11 +199,14 @@ events.onEntityLivingUpdate(function(event as crafttweaker.event.EntityLivingUpd
 
     val invis = <potion:minecraft:invisibility>.makePotionEffect(100, 3 ,false, false) as IPotionEffect;
     entityLivingBase.addPotionEffect(invis);
-    server.commandManager.executeCommandSilent(entityLivingBase, "noppes clone spawn tainted_"+ entityString +" 1");
 
-    server.commandManager.executeCommandSilent(entityLivingBase, "playsound thaumcraft:gore hostile @a ~ ~ ~");
-    server.commandManager.executeCommandSilent(entityLivingBase, "tp @s ~ ~-500 ~");
-    server.commandManager.executeCommandSilent(entityLivingBase, "kill @s");
+    if !isNull(server)
+    {
+        server.commandManager.executeCommandSilent(entityLivingBase, "noppes clone spawn tainted_"+ entityString +" 1");
+        server.commandManager.executeCommandSilent(entityLivingBase, "playsound thaumcraft:gore hostile @a ~ ~ ~");
+        server.commandManager.executeCommandSilent(entityLivingBase, "tp @s ~ ~-500 ~");
+        server.commandManager.executeCommandSilent(entityLivingBase, "kill @s");
+    }
 });
 
 //make taint seeds incapable of suffocation and starvation

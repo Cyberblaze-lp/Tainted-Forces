@@ -44,7 +44,7 @@ function evoNr(evo as string, world as IWorld) as int
 
 
 events.onWorldTick(function(event as crafttweaker.event.WorldTickEvent){
-if !(event.world.random.nextInt(0, 500) == 0)
+if isNull(server) || !(event.world.random.nextInt(0, 500) == 0)
 {
     return;
 }

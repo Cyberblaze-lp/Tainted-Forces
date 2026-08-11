@@ -1,3 +1,4 @@
+
 import crafttweaker.event.PlayerChangedDimensionEvent;
 import crafttweaker.event.PlayerLoggedInEvent;
 import crafttweaker.event.PlayerRespawnEvent;
@@ -46,6 +47,10 @@ event.toWorld.catenation()
 
 //I'll make my own perfectspawn, with blackjack and hookers!
 events.onPlayerLoggedIn(function(event as PlayerLoggedInEvent){
+	if (event.player.world.isRemote())
+	{
+    	return;
+	}
 	var rules = event.player.world.getGameRules();
 	if (event.player.hasGameStage("beentospace") || !rules.getBoolean("spaceSpawn"))
 	{
@@ -54,12 +59,22 @@ events.onPlayerLoggedIn(function(event as PlayerLoggedInEvent){
 	
 	
 	
-	event.player.addGameStage("beentospace");
+	event.player.world.catenation()
+		.sleepUntil(function(world, context) as bool
+		{
+			return !isNull(server);
+		})
+		.then(function(world, context)
+		{
+			event.player.addGameStage("beentospace");
 	val x as int = -12693;
 	val y as int = 58;
 	val z as int = -9781;
 	server.commandManager.executeCommandSilent(server, "forge setdimension " + event.player.name + " -3 "+ toString(x) + " " + toString(y) + " " + toString(z));
 
+		})
+		.start();
+	
 });
 
 //Security in case the player dies in space, then spawn on the OW. They would be adventure-locked otherwise
@@ -70,7 +85,18 @@ events.onPlayerRespawn(function(event as crafttweaker.event.PlayerRespawnEvent){
 		return;
 	}
 	if(player.adventure){
-		server.commandManager.executeCommandSilent(server, "gamemode 0 " + player.name);
+		player.world.catenation()
+		.sleepUntil(function(world, context) as bool
+		{
+			return !isNull(server);
+		})
+		.then(function(world, context)
+		{
+			server.commandManager.executeCommandSilent(server, "gamemode 0 " + player.name);
+			player.addGameStage("beentospace");
+		})
+		.start();
+		
 	}
-	player.addGameStage("beentospace");
+	
 });
