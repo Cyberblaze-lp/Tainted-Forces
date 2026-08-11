@@ -42,6 +42,18 @@ static pillarfeatures as string[] = [
     "lampforged"
 ] as string[];
 
+/*event.world.catenation()
+                .sleepUntil(function(world, context) as bool
+		        {
+                    return !isNull(server);
+		        })
+		        .then(function(world, context)
+		        {
+                    
+                })
+                .start();
+                */
+
 val rand = mods.ctutils.utils.Math.getRandom();
 events.onEntityJoinWorld(function (event as crafttweaker.event.EntityJoinWorldEvent){
     if (event.world.isRemote())
@@ -77,6 +89,10 @@ events.onEntityJoinWorld(function (event as crafttweaker.event.EntityJoinWorldEv
             //yepp, put a catenation around the whole thing bc there was some stupid race condition
             event.world.catenation()
 				.sleep(10)
+                 .sleepUntil(function(world, context) as bool
+		        {
+                    return !isNull(server);
+		        })
 				.then(function(world, context) 
                 {
                     //fill a chunk-aligned box with air
@@ -109,12 +125,30 @@ events.onEntityJoinWorld(function (event as crafttweaker.event.EntityJoinWorldEv
         
             val r1 = event.world.random.nextInt(0, features.length - 1);
             val feature as string = features[r1];
-            if (mods.ctutils.utils.Math.getRandom().nextInt(0, 3) == 1)
-            {
-                server.commandManager.executeCommandSilent(event.entity, "summon thaumcraft:eldritchguardian ~ ~ ~ {PersistenceRequired:1b}");
-            }
-            event.entity.setPosition(entityPosOffset);
-            server.commandManager.executeCommandSilent(event.entity, "tgen tetra:forged_" + feature);
+            
+                event.world.catenation()
+                .sleepUntil(function(world, context) as bool
+		        {
+			        return !isNull(server);
+		        })
+		        .then(function(world, context)
+		        {
+                    if (mods.ctutils.utils.Math.getRandom().nextInt(0, 3) == 1)
+                    {
+                        server.commandManager.executeCommandSilent(event.entity, "summon thaumcraft:eldritchguardian ~ ~ ~ {PersistenceRequired:1b}");
+
+                    }
+                })
+                
+               
+            
+		        .then(function(world, context)
+		        {
+                    event.entity.setPosition(entityPosOffset);
+                    server.commandManager.executeCommandSilent(event.entity, "tgen tetra:forged_" + feature);
+                })
+                .start();
+            
             return;
         }
         else if(  event.entity.getY() < 130.0 && event.entity.getY() > 50.0)
@@ -141,9 +175,19 @@ events.onEntityJoinWorld(function (event as crafttweaker.event.EntityJoinWorldEv
 
         val r2 as int = mods.ctutils.utils.Math.getRandom().nextInt(0, pillarfeatures.length - 1);
         val pillarfeature as string = pillarfeatures[r2];
-
-        server.commandManager.executeCommandSilent(event.entity, "pillar-spawn " + pillarfeature);
+        event.world.catenation()
+                .sleepUntil(function(world, context) as bool
+		        {
+                    return !isNull(server);
+		        })
+		        .then(function(world, context)
+		        {
+                    server.commandManager.executeCommandSilent(event.entity, "pillar-spawn " + pillarfeature);
+                    
+                })
+                .start();
         event.cancel();
+        
     }
 });
 
