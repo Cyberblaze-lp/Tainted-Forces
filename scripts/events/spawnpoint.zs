@@ -35,6 +35,8 @@ event.toWorld.catenation()
 	.then(function(world, context){
 		server.commandManager.executeCommand(server,"spawnpoint "+ event.player.name+ " ~ ~ ~");
 		server.commandManager.executeCommand(server, "gamestage silentadd "+event.player.name+" setspawn");
+		//We make the player start the world in adventure
+		server.commandManager.executeCommandSilent(server, "gamemode 0 " + event.player.name);
 		event.player.clearActivePotions();
 	}
 	)
@@ -57,8 +59,6 @@ events.onPlayerLoggedIn(function(event as PlayerLoggedInEvent){
 	val y as int = 58;
 	val z as int = -9781;
 	server.commandManager.executeCommandSilent(server, "forge setdimension " + event.player.name + " -3 "+ toString(x) + " " + toString(y) + " " + toString(z));
-	//We make the player start the world in adventure
-	server.commandManager.executeCommandSilent(server, "gamemode 0 " + event.player.name);
 
 });
 
