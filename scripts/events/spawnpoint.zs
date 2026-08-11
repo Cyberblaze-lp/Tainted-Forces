@@ -63,12 +63,14 @@ events.onPlayerLoggedIn(function(event as PlayerLoggedInEvent){
 });
 
 //Security in case the player dies in space, then spawn on the OW. They would be adventure-locked otherwise
-events.onPlayerRespawn(function(event as crafttweaker.event.PlayerRespawnEvent)){
-	if(event.player.hasGameStage("beentospace") || !rules.getBoolean("spaceSpawn")){
+events.onPlayerRespawn(function(event as crafttweaker.event.PlayerRespawnEvent){
+	val player as IPlayer = event.player;
+	val rules = player.world.getGameRules();
+	if(player.hasGameStage("beentospace") || !rules.getBoolean("spaceSpawn")){
 		return;
 	}
 	if(player.adventure){
-		server.commandManager.executeCommandSilent(server, "gamemode 0 " + event.player.name);
+		server.commandManager.executeCommandSilent(server, "gamemode 0 " + player.name);
 	}
-	event.player.addGameStage("beentospace");
-}
+	player.addGameStage("beentospace");
+});
