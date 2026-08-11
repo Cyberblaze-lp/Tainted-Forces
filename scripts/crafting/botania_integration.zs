@@ -17,6 +17,7 @@ mods.botania.Apothecary.addRecipe("agricarnation", [<ore:petalLime>, <ore:petalL
 
 
 mods.botania.Apothecary.addRecipe(<extrautils2:redorchid>, [<botania:manaresource:6>,<botania:manaresource:6>,<botania:manaresource:6>,<ore:petalRed>, <ore:petalRed>, <ore:petalRed>]);
+mods.botania.Apothecary.addRecipe(<botania:lexicon>.withTag({}), [<thaumcraft:brain>,<ore:paper>,<ore:paper>, <ore:paper>, <ore:petalGreen>, <ore:petalGreen>]);
 
 
 mods.botania.PureDaisy.addRecipe(<tfc:thatch>,<botania:livingwood>);

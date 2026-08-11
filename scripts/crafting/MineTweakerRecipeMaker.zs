@@ -221,7 +221,6 @@ recipes.addShaped(<pneumaticcraft:assembly_io_unit>, [[null, <tfctech:metal/iron
 recipes.addShaped(<pneumaticcraft:assembly_controller>, [[null, <thaumcraft:mind:1>, null], [<pneumaticcraft:pressure_tube>, <thaumcraft:mechanism_simple>, null], [<ore:ingotIronCompressed>, <ore:ingotIronCompressed>, <ore:ingotIronCompressed>]]);
 recipes.addShaped(<tconstruct:dried_clay:1> * 2, [[<tconstruct:materials:2>, <ore:mortar>, <tconstruct:materials:2>], [<ore:mortar>, <tconstruct:materials:2>, <ore:mortar>], [<tconstruct:materials:2>, <ore:mortar>, <tconstruct:materials:2>]]);
 
-recipes.addShaped(<immersiveengineering:chemthrower>, [[null, <immersiveengineering:toolupgrade>, <ore:gungripWood>], [<immersiveengineering:toolupgrade>, <thaumcraft:metal_alchemical>, <ore:gungripWood>], [<immersiveengineering:material:8>, null, <ore:bucket>]]);
 recipes.addShaped(<immersiveengineering:metal_device0:5> * 2, [[null, <ore:plateIron>, null], [<ore:barsIron>, <immersiveengineering:material:8>, <ore:barsIron>], [<ore:plateIron>, <ore:barsIron>, <ore:plateIron>]]);
 recipes.addShaped(<embers:bin> * 2, [[<ore:nuggetIron>, null, <ore:nuggetIron>], [<ore:nuggetIron>, null, <ore:nuggetIron>], [<ore:nuggetIron>, <ore:nuggetIron>, <ore:nuggetIron>]]);
 
