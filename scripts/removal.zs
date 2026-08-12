@@ -378,7 +378,8 @@
 		<thermalfoundation:material:514>,
 		<thermalfoundation:material:515>,
 		<tconstruct:wooden_hopper>,
-		<railcraft:charge:5>
+		<railcraft:charge:5>,
+		<quark:gravisand>
 	]{
 		recipes.remove(output);
 	}
@@ -704,6 +705,9 @@
 	mods.tconstruct.Casting.removeBasinRecipe(<tconstruct:seared>);
 	mods.tconstruct.Casting.removeBasinRecipe(<tconstruct:seared:1>);
 	mods.tconstruct.Casting.removeBasinRecipe(<tconstruct:seared_glass>);
+	mods.tconstruct.Casting.removeTableRecipe(<tconstruct:cast_custom:3>);
+
+
 
 	mods.tconstruct.Melting.removeRecipe(<liquid:stone>, <tconstruct:seared>);
 	mods.tconstruct.Melting.removeRecipe(<liquid:stone>, <tconstruct:seared:1>);

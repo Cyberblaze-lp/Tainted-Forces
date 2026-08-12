@@ -21,6 +21,8 @@ mods.botania.Apothecary.addRecipe(<botania:lexicon>.withTag({}), [<thaumcraft:br
 
 
 mods.botania.PureDaisy.addRecipe(<tfc:thatch>,<botania:livingwood>);
+mods.botania.PureDaisy.addRecipe(<quark:gravisand>,<minecraft:sand>);
+
 mods.botania.PureDaisy.addRecipe(<minecraft:redstone_block>,<minecraft:redstone_ore>);
 
 

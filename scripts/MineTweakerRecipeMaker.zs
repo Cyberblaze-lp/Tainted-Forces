@@ -24,6 +24,7 @@
 
 // ================================================================================
 //#MARKER ADD SHAPELESS
+recipes.addShapeless(<tfc:sand/conglomerate>, [<ore:sand>]);
 recipes.addShapeless(<thaumcraft:seal>, [<ore:dustRedstone>, <ore:dustRedstone>, <ore:dustRedstone>, <ore:tallow>, <ore:tallow>, <ore:tallow>]);
 recipes.addShapeless(<tfc:metal/nugget/pig_iron> * 9, [<ore:ingotPigIron>]);
 recipes.addShapeless(<botania:lens>, [<botania:manaresource>, <ore:blockGlass>, <ore:blockGlass>, <ore:blockGlass>, <ore:blockGlass>]);
@@ -49,6 +50,9 @@ recipes.addShapeless(<ic2:reactor_heat_vent>, [<ic2:heat_vent>, <ic2:crafting:7>
 
 // ================================================================================
 //#MARKER ADD SHAPED
+recipes.addShaped(<tconstruct:smeltery_controller>, [[<tfc:ceramics/fired/fire_brick>, <tfc:ceramics/fired/fire_brick>, <tfc:ceramics/fired/fire_brick>], [<tetra:vent_plate>, null, <tetra:vent_plate>], [<tfc:ceramics/fired/fire_brick>, <tfc:ceramics/fired/fire_brick>, <tfc:ceramics/fired/fire_brick>]]);
+recipes.addShaped(<pneumaticcraft:spawner_agitator>, [[<ore:plateIron>, <ore:rodBlaze>, <ore:plateIron>], [<ore:rodBlaze>, null, <ore:rodBlaze>], [<ore:plateIron>, <ore:rodBlaze>, <ore:plateIron>]]);
+recipes.addShaped(<quark:gravisand> * 2, [[<ore:powderMana>, <ore:powderMana>], [<ore:powderMana>, <ore:powderMana>]]);
 recipes.addShaped(<botania:altar>, [[<ore:cobblestone>, null, <ore:cobblestone>], [null, <ore:cobblestone>, null], [<ore:cobblestone>, <ore:cobblestone>, <ore:cobblestone>]]);
 recipes.addShaped(<chisel:chisel_iron>, [[null, <ore:sheetPigIron>], [<ore:stickWood>, null]]);
 recipes.addShaped(<tfc:metal/shovel/copper>, [[<ore:stickWood>], [<ore:sheetPigIron>]]);

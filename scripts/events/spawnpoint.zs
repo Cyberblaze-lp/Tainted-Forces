@@ -34,7 +34,7 @@ event.toWorld.catenation()
 	})
 	.sleep(5)
 	.then(function(world, context){
-		server.commandManager.executeCommand(server,"spawnpoint "+ event.player.name+ " ~ ~ ~");
+		server.commandManager.executeCommand(server,"spawnpoint "+ event.player.name+ " " + toString(event.player.x) +" "+ toString(event.player.y) +" "+toString(event.player.z));
 		server.commandManager.executeCommand(server, "gamestage silentadd "+event.player.name+" setspawn");
 		//We make the player start the world in adventure
 		server.commandManager.executeCommandSilent(server, "gamemode 0 " + event.player.name);

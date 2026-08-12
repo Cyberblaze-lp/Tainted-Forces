@@ -164,6 +164,12 @@ for stone in rocktypes
 }
 
 
+val seared as IItemStack[] =[<tfc:fire_bricks>,<tconstruct:seared_ladder>,<tconstruct:seared_tank>,<tconstruct:seared_tank:1>,<tconstruct:seared_tank:2>,<tconstruct:smeltery_io>,<tconstruct:tinker_tank_controller>,<tconstruct:seared_furnace_controller>];
+for item in seared
+{
+    mods.chisel.Carving.addVariation("seared_block", item);
+}
+
 
 
 

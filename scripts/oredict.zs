@@ -1,6 +1,7 @@
 #priority 253
 
 //Removal
+    <ore:blockFuelCoke>.remove(<railcraft:generic:6>);
     <ore:circuitAdvanced>.remove(<ic2:crafting:2>);
     <ore:circuitBasic>.remove(<ic2:crafting:1>);
     <ore:plateSilicon>.remove(<libvulpes:productplate:3>);
@@ -16,6 +17,10 @@
     <ore:plateAdvancedElectronicAlloy>.remove(<immersiveintelligence:material_plate>);
     <ore:dustAdvancedElectronicAlloy>.remove(<immersiveintelligence:material_dust>);
     <ore:nuggetAdvancedElectronicAlloy>.remove(<immersiveintelligence:material_nugget>);
+    <ore:itemRubber>.remove(<ic2:crafting>);
+    <ore:itemRubber>.remove(<tfctech:latex/rubber>);
+    
+
 
     for i in 1 to 8
     {

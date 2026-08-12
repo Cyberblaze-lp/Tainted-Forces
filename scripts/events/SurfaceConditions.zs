@@ -136,7 +136,8 @@ import native.net.minecraftforge.common.DimensionManager;
 		<embers:reactor>,
 		<embers:alchemy_tablet>,
 		<embers:alchemy_pedestal>,
-		<embers:inferno_forge>
+		<embers:inferno_forge>,
+		<tconstruct:smeltery_controller>
 	] as IItemStack[];
 	for item in netherStuff {
 		addRestriction(true, true, [-1], item);

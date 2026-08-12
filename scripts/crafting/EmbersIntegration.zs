@@ -79,42 +79,28 @@ mods.embers.Stamper.add(<tfctech:ceramics/unfired/glass_block>, null ,<immersive
 mods.embers.Stamper.add(<tfctech:ceramics/unfired/glass_pane>, null ,<tfc:metal/sheet/wrought_iron>,<minecraft:clay_ball>*3);
 
 //ceramics firing 
-mods.embers.HeatCoil.add(<tfc:ceramics/fired/mold/ingot>, <tfc:ceramics/unfired/mold/ingot>);
-mods.embers.HeatCoil.add(<tfc:ceramics/fired/mold/pick_head>, <tfc:ceramics/unfired/mold/pick_head>);
-mods.embers.HeatCoil.add(<tfc:ceramics/fired/mold/shovel_head>, <tfc:ceramics/unfired/mold/shovel_head>);
-mods.embers.HeatCoil.add(<tfc:ceramics/fired/mold/axe_head>, <tfc:ceramics/unfired/mold/axe_head>);
-mods.embers.HeatCoil.add(<tfc:ceramics/fired/mold/hoe_head>, <tfc:ceramics/unfired/mold/hoe_head>);
-mods.embers.HeatCoil.add(<tfc:ceramics/fired/mold/chisel_head>, <tfc:ceramics/unfired/mold/chisel_head>);
-mods.embers.HeatCoil.add(<tfc:ceramics/fired/mold/sword_blade>, <tfc:ceramics/unfired/mold/sword_blade>);
-mods.embers.HeatCoil.add(<tfc:ceramics/fired/mold/mace_head>, <tfc:ceramics/unfired/mold/mace_head>);
-mods.embers.HeatCoil.add(<tfc:ceramics/fired/mold/saw_blade>, <tfc:ceramics/unfired/mold/saw_blade>);
-mods.embers.HeatCoil.add(<tfc:ceramics/fired/mold/javelin_head>, <tfc:ceramics/unfired/mold/javelin_head>);
-mods.embers.HeatCoil.add(<tfc:ceramics/fired/mold/hammer_head>, <tfc:ceramics/unfired/mold/hammer_head>);
-mods.embers.HeatCoil.add(<tfc:ceramics/fired/mold/propick_head>, <tfc:ceramics/unfired/mold/propick_head>);
-mods.embers.HeatCoil.add(<tfc:ceramics/fired/mold/knife_blade>, <tfc:ceramics/unfired/mold/knife_blade>);
-mods.embers.HeatCoil.add(<tfc:ceramics/fired/mold/scythe_blade>, <tfc:ceramics/unfired/mold/scythe_blade>);
-mods.embers.HeatCoil.add(<tfctech:ceramics/mold/sleeve>, <tfctech:ceramics/unfired/sleeve>);
-mods.embers.HeatCoil.add(<tfctech:ceramics/mold/rackwheel_piece>, <tfctech:ceramics/unfired/rackwheel_piece>);
-mods.embers.HeatCoil.add(<tfctech:ceramics/mold/glass_pane>, <tfctech:ceramics/unfired/glass_pane>);
-mods.embers.HeatCoil.add(<tfctech:ceramics/mold/glass_block>, <tfctech:ceramics/unfired/glass_block>);
-<tfc:ceramics/unfired/mold/ingot>.addTooltip(format.gold("can be fired using a hearth coil"));
-<tfc:ceramics/unfired/mold/pick_head>.addTooltip(format.gold("can be fired using a hearth coil"));
-<tfc:ceramics/unfired/mold/shovel_head>.addTooltip(format.gold("can be fired using a hearth coil"));
-<tfc:ceramics/unfired/mold/axe_head>.addTooltip(format.gold("can be fired using a hearth coil"));
-<tfc:ceramics/unfired/mold/hoe_head>.addTooltip(format.gold("can be fired using a hearth coil"));
-<tfc:ceramics/unfired/mold/chisel_head>.addTooltip(format.gold("can be fired using a hearth coil"));
-<tfc:ceramics/unfired/mold/sword_blade>.addTooltip(format.gold("can be fired using a hearth coil"));
-<tfc:ceramics/unfired/mold/mace_head>.addTooltip(format.gold("can be fired using a hearth coil"));
-<tfc:ceramics/unfired/mold/saw_blade>.addTooltip(format.gold("can be fired using a hearth coil"));
-<tfc:ceramics/unfired/mold/javelin_head>.addTooltip(format.gold("can be fired using a hearth coil"));
-<tfc:ceramics/unfired/mold/hammer_head>.addTooltip(format.gold("can be fired using a hearth coil"));
-<tfc:ceramics/unfired/mold/propick_head>.addTooltip(format.gold("can be fired using a hearth coil"));
-<tfc:ceramics/unfired/mold/knife_blade>.addTooltip(format.gold("can be fired using a hearth coil"));
-<tfc:ceramics/unfired/mold/scythe_blade>.addTooltip(format.gold("can be fired using a hearth coil"));
-<tfctech:ceramics/unfired/sleeve>.addTooltip(format.gold("can be fired using a hearth coil"));
-<tfctech:ceramics/unfired/rackwheel_piece>.addTooltip(format.gold("can be fired using a hearth coil"));
-<tfctech:ceramics/unfired/glass_pane>.addTooltip(format.gold("can be fired using a hearth coil"));
-<tfctech:ceramics/unfired/glass_block>.addTooltip(format.gold("can be fired using a hearth coil"));
+mods.inworldcrafting.FireCrafting.addRecipe(<tfc:ceramics/fired/mold/ingot>, <tfc:ceramics/unfired/mold/ingot>, 60);
+mods.inworldcrafting.FireCrafting.addRecipe(<tfc:ceramics/fired/mold/pick_head>, <tfc:ceramics/unfired/mold/pick_head>, 60);
+mods.inworldcrafting.FireCrafting.addRecipe(<tfc:ceramics/fired/mold/shovel_head>, <tfc:ceramics/unfired/mold/shovel_head>, 60);
+mods.inworldcrafting.FireCrafting.addRecipe(<tfc:ceramics/fired/mold/axe_head>, <tfc:ceramics/unfired/mold/axe_head>, 60);
+mods.inworldcrafting.FireCrafting.addRecipe(<tfc:ceramics/fired/mold/hoe_head>, <tfc:ceramics/unfired/mold/hoe_head>, 60);
+mods.inworldcrafting.FireCrafting.addRecipe(<tfc:ceramics/fired/mold/chisel_head>, <tfc:ceramics/unfired/mold/chisel_head>, 60);
+mods.inworldcrafting.FireCrafting.addRecipe(<tfc:ceramics/fired/mold/sword_blade>, <tfc:ceramics/unfired/mold/sword_blade>, 60);
+mods.inworldcrafting.FireCrafting.addRecipe(<tfc:ceramics/fired/mold/mace_head>, <tfc:ceramics/unfired/mold/mace_head>, 60);
+mods.inworldcrafting.FireCrafting.addRecipe(<tfc:ceramics/fired/mold/saw_blade>, <tfc:ceramics/unfired/mold/saw_blade>, 60 );
+mods.inworldcrafting.FireCrafting.addRecipe(<tfc:ceramics/fired/mold/javelin_head>, <tfc:ceramics/unfired/mold/javelin_head>, 60);
+mods.inworldcrafting.FireCrafting.addRecipe(<tfc:ceramics/fired/mold/hammer_head>, <tfc:ceramics/unfired/mold/hammer_head>, 60);
+mods.inworldcrafting.FireCrafting.addRecipe(<tfc:ceramics/fired/mold/propick_head>, <tfc:ceramics/unfired/mold/propick_head>, 60);
+mods.inworldcrafting.FireCrafting.addRecipe(<tfc:ceramics/fired/mold/knife_blade>, <tfc:ceramics/unfired/mold/knife_blade>, 60);
+mods.inworldcrafting.FireCrafting.addRecipe(<tfc:ceramics/fired/mold/scythe_blade>, <tfc:ceramics/unfired/mold/scythe_blade>, 60);
+mods.inworldcrafting.FireCrafting.addRecipe(<tfctech:ceramics/mold/sleeve>, <tfctech:ceramics/unfired/sleeve>, 60);
+mods.inworldcrafting.FireCrafting.addRecipe(<tfctech:ceramics/mold/rackwheel_piece>, <tfctech:ceramics/unfired/rackwheel_piece>, 60);
+mods.inworldcrafting.FireCrafting.addRecipe(<tfctech:ceramics/mold/glass_pane>, <tfctech:ceramics/unfired/glass_pane>, 60);
+mods.inworldcrafting.FireCrafting.addRecipe(<tfctech:ceramics/mold/glass_block>, <tfctech:ceramics/unfired/glass_block>, 60);
+
+
+
+
 
 
 Welding.addRecipe("tinkerhammer",<tfc:metal/hammer/wrought_iron>, <ore:plateLead>, <embers:tinker_hammer>, 2);
@@ -144,10 +130,13 @@ mods.embers.DawnstoneAnvil.add([<tfc:metal/ingot/blue_steel>, <tfc:metal/nugget/
 
 
 
-mods.embers.Mixer.add(<fluid:dawnstone>*8, [<fluid:rose_gold>*8,<fluid:pyrotheum>*4]);
+mods.tconstruct.Alloy.addRecipe(<liquid:dawnstone> * 1, [<liquid:gold> * 1, <liquid:blazing_blood> * 50]);
+mods.tconstruct.Alloy.addRecipe(<liquid:steel> * 1, [<liquid:iron> * 1, <liquid:blazing_blood> * 15, <liquid:limewater>*15]);
 
-mods.embers.Mixer.add(<fluid:enrichedlava>*2, [<fluid:ic2pahoehoe_lava>,<fluid:purifying_fluid>]);
-mods.embers.Melter.add(<fluid:pyrotheum>*100, <ore:dustPyrotheum>);
+brewing.addBrew(<minecraft:potion>.withTag({Potion: "minecraft:awkward"}), <betternether:gray_mold>, <minecraft:potion>.withTag({Potion: "minecraft:healing"}));
+
+
+
 
 
 mods.embers.DawnstoneAnvil.add([<tfc:brass_mechanisms>*3],<ore:ingotBrass>,<tfc:brass_mechanisms>);
