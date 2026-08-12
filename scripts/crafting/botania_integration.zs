@@ -10,6 +10,7 @@ mods.botania.ManaInfusion.addInfusion(<botania:managlass>, <ore:sand>, 1000);
 
 mods.botania.ManaInfusion.addInfusion(<tfc:wooden_bucket>.withTag({Fluid: {FluidName: "water", Amount: 1000}}), <tfc:wooden_bucket>.withTag({Fluid: {}}), 500);
 
+
 mods.botania.Apothecary.addRecipe("jadedAmaranthus", [ <ore:petalPurple>, <ore:petalPurple>, <botania:manaresource:6>, <botania:fertilizer>]);
 mods.botania.Apothecary.addRecipe("rannuncarpus", [<ore:petalYellow>, <ore:petalOrange>, <ore:petalOrange>, <botania:manaresource:6>, <botania:livingrock>]);
 mods.botania.Apothecary.addRecipe("daffomill", [<ore:petalYellow>, <ore:petalYellow>, <botania:manaresource:6>, <botania:manaresource:3>]);

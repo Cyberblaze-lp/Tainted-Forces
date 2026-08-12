@@ -97,6 +97,9 @@ mods.inworldcrafting.FireCrafting.addRecipe(<tfctech:ceramics/mold/sleeve>, <tfc
 mods.inworldcrafting.FireCrafting.addRecipe(<tfctech:ceramics/mold/rackwheel_piece>, <tfctech:ceramics/unfired/rackwheel_piece>, 60);
 mods.inworldcrafting.FireCrafting.addRecipe(<tfctech:ceramics/mold/glass_pane>, <tfctech:ceramics/unfired/glass_pane>, 60);
 mods.inworldcrafting.FireCrafting.addRecipe(<tfctech:ceramics/mold/glass_block>, <tfctech:ceramics/unfired/glass_block>, 60);
+mods.inworldcrafting.FireCrafting.addRecipe(<tfc:ceramics/fired/large_vessel>, <tfc:ceramics/unfired/large_vessel>, 200);
+mods.inworldcrafting.FireCrafting.addRecipe(<minecraft:torch>*2, <minecraft:stick>, 200);
+
 
 
 
@@ -131,7 +134,7 @@ mods.embers.DawnstoneAnvil.add([<tfc:metal/ingot/blue_steel>, <tfc:metal/nugget/
 
 
 mods.tconstruct.Alloy.addRecipe(<liquid:dawnstone> * 1, [<liquid:gold> * 1, <liquid:blazing_blood> * 50]);
-mods.tconstruct.Alloy.addRecipe(<liquid:steel> * 1, [<liquid:iron> * 1, <liquid:blazing_blood> * 15, <liquid:limewater>*15]);
+mods.tconstruct.Alloy.addRecipe(<liquid:steel> * 1, [<liquid:iron> * 1, <liquid:blazing_blood> * 10, <liquid:limewater>*10]);
 
 brewing.addBrew(<minecraft:potion>.withTag({Potion: "minecraft:awkward"}), <betternether:gray_mold>, <minecraft:potion>.withTag({Potion: "minecraft:healing"}));
 

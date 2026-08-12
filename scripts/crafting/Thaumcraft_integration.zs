@@ -141,7 +141,7 @@ mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("constructs 2.0", "TUBES", 
 mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("buffers 2.0", "TUBES", 15, [], <thaumcraft:tube_buffer>, [[null,<thaumcraft:tube>,null],[<thaumcraft:tube>,<thaumcraft:mechanism_simple>,<thaumcraft:tube>],[null,<thaumcraft:tube>,null] ]);
 mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("tubes 2.0", "TUBES", 15, [<aspect:aqua>*2], <thaumcraft:tube>*16, [[<ore:nuggetQuicksilver>,<ore:nuggetQuicksilver>,<ore:nuggetQuicksilver>],[<ore:plateLead>,<ore:plateLead>,<ore:plateLead>],[<ore:nuggetQuicksilver>,<ore:nuggetQuicksilver>,<ore:nuggetQuicksilver>]]);
 mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("alembics 2.0", "ESSENTIASMELTER", 15, [<aspect:aqua>,<aspect:ordo>,<aspect:perditio>], <thaumcraft:alembic>, [[<thaumcraft:plank_greatwood>, <tfc:brass_mechanisms>, <thaumcraft:plank_greatwood>],[<thaumcraft:plank_greatwood>, <tfc:brass_mechanisms>, <thaumcraft:plank_greatwood>],[<thaumcraft:plank_greatwood>, <tfc:brass_mechanisms>, <thaumcraft:plank_greatwood>]]);
-mods.thaumcraft.ArcaneWorkbench.registerShapelessRecipe("betterbellows", "BELLOWS", 15, [<aspect:aer>], <thaumcraft:bellows>, [<tfc:bellows>,<thaumcraft:mechanism_simple>]);
+mods.thaumcraft.ArcaneWorkbench.registerShapelessRecipe("betterbellows", "BELLOWS", 15, [<aspect:aer>], <thaumcraft:bellows>, [<ore:leather>,<thaumcraft:mechanism_simple>]);
 mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("betterturrets", "BASICTURRET", 100, [<aspect:aer>], <thaumcraft:turret>*3, [[null, <thaumcraft:mechanism_simple>,null],[<ore:stickIron>, <thaumcraft:mind>,<ore:stickIron>],[<ore:stickIron>, null, <ore:stickIron>]]);
 
 mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("bettervent", "IMPROVEDSMELTING2", 150, [<aspect:aer>,<aspect:ordo>], <thaumcraft:smelter_vent>, [[<thaumcraft:fabric>,<thaumcraft:fabric>, <thaumcraft:fabric>],[<thaumcraft:fabric>,<embers:blasting_core>, <thaumcraft:fabric>],[<ore:plateIron>,<embers:blasting_core>, <ore:plateIron>]]);
@@ -200,6 +200,7 @@ mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("bettervisresonator", "UNLO
 mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("betterinputtransfuser", "ESSENTIATRANSPORT", 500, [<aspect:aer>,<aspect:aqua>], <thaumcraft:essentia_input>, [[<ore:plateBrass>,<minecraft:dispenser>,<ore:plateBrass>],[<ore:plateIron>,<thaumcraft:metal_alchemical_advanced>,<ore:plateIron>]]);
 mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("betteroutputtransfuser", "ESSENTIATRANSPORT", 500, [<aspect:aer>,<aspect:aqua>], <thaumcraft:essentia_output>, [[<ore:plateBrass>,<minecraft:hopper>,<ore:plateBrass>],[<ore:plateIron>,<thaumcraft:metal_alchemical_advanced>,<ore:plateIron>]]);
 
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumometerbrass", "", 50, [<aspect:aer>,<aspect:terra>,<aspect:ignis>, <aspect:ignis>,<aspect:aqua>, <aspect:ordo>, <aspect:perditio>], <thaumcraft:thaumometer>, [[null,<ore:ingotBrass>,null],[<ore:ingotBrass>,<paneGlass>,<ore:ingotBrass>],[null,<ore:ingotBrass>,null]]);
 
 
 
@@ -323,6 +324,11 @@ for items in oreDict.get("oreSmall" +itemPlusOre.ore).items
 
     ThaumcraftApi.addCrucibleRecipe(resource, recipe);
     recipe.setGroup(ResourceLocation("thaumcraft:groupOre"+ itemPlusOre.ore));
+
+    if ! (itemPlusOre.ore has "Iron")
+    {
+    mods.inworldcrafting.FireCrafting.addRecipe(itemstack, items, 100);
+    }
 }
 
 
@@ -335,6 +341,10 @@ for items in oreDict.get("orePoor" +itemPlusOre.ore).items
 
     ThaumcraftApi.addCrucibleRecipe(resource, recipe);
     recipe.setGroup(ResourceLocation("thaumcraft:groupOre"+ itemPlusOre.ore));
+    if ! (itemPlusOre.ore has "Iron")
+    {
+    mods.inworldcrafting.FireCrafting.addRecipe(itemstack*2, items, 100);
+    }
 }
 
 for items in oreDict.get("oreNormal" +itemPlusOre.ore).items
@@ -346,6 +356,10 @@ for items in oreDict.get("oreNormal" +itemPlusOre.ore).items
 
     ThaumcraftApi.addCrucibleRecipe(resource, recipe);
     recipe.setGroup(ResourceLocation("thaumcraft:groupOre"+ itemPlusOre.ore));
+    if ! (itemPlusOre.ore has "Iron")
+    {
+    mods.inworldcrafting.FireCrafting.addRecipe(itemstack*3, items, 100);
+    }
 }
 
 for items in oreDict.get("oreRich" +itemPlusOre.ore).items
@@ -357,6 +371,10 @@ for items in oreDict.get("oreRich" +itemPlusOre.ore).items
 
     ThaumcraftApi.addCrucibleRecipe(resource, recipe);
     recipe.setGroup(ResourceLocation("thaumcraft:groupOre"+ itemPlusOre.ore));
+    if ! (itemPlusOre.ore has "Iron")
+    {
+    mods.inworldcrafting.FireCrafting.addRecipe(itemstack*5, items, 100);
+    }
 }
 
 
