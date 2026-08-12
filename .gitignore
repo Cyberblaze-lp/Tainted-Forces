@@ -47,7 +47,7 @@ patchouli_data.json
 /config/customloadingscreen_timings.nbt
 /config/cleanroom_load_timings.dat
 /config/cleanroom_mod_list_favourites.txt
-
+/config/cleanroom_relauncher.cfg
 hotbar.nbt
 # Client stuff
 /config/jei/worldSettings.cfg
@@ -91,3 +91,4 @@ OpenComputersMod*
 /config/AppliedEnergistics2/CustomRecipes.cfg
 /config/splash.properties
 /config/ichunutil.cfg
+config/cleanroom_relauncher.cfg
