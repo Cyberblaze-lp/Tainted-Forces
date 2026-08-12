@@ -29,6 +29,7 @@ mods.thaumcraft.Infusion.registerRecipe("waystones2", "BASEELDRITCH", <thebetwee
 
 //Si'vlu Recipes
 mods.botania.ManaInfusion.addInfusion(<botania:manaresource>, <ore:ingetAnyBronze>, 4000);
+mods.botania.ManaInfusion.addInfusion(<botania:manaresource:17>*3, <ore:ingotCopper>, 3000);
 
 			
 			

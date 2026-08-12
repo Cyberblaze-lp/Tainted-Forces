@@ -24,6 +24,7 @@
 
 // ================================================================================
 //#MARKER ADD SHAPELESS
+recipes.addShapeless(<mystgears:bellows_mechanical>, [<botania:bellows>, <thaumcraft:mechanism_simple>]);
 recipes.addShapeless(<tfc:sand/conglomerate>, [<ore:sand>]);
 recipes.addShapeless(<thaumcraft:seal>, [<ore:dustRedstone>, <ore:dustRedstone>, <ore:dustRedstone>, <ore:tallow>, <ore:tallow>, <ore:tallow>]);
 recipes.addShapeless(<tfc:metal/nugget/pig_iron> * 9, [<ore:ingotPigIron>]);
@@ -50,6 +51,9 @@ recipes.addShapeless(<ic2:reactor_heat_vent>, [<ic2:heat_vent>, <ic2:crafting:7>
 
 // ================================================================================
 //#MARKER ADD SHAPED
+recipes.addShaped(<thaumcraft:dioptra>, [[<tfc:brass_mechanisms>, <ore:gemOpal>, <tfc:brass_mechanisms>], [<thaumcraft:stone_arcane>, <ore:gemAmethyst>, <thaumcraft:stone_arcane>], [<thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>]]);
+recipes.addShaped(<botania:lens:15>, [[null, <minecraft:flint>, null], [<minecraft:flint>, <botania:lens>, <minecraft:flint>], [null, <minecraft:flint>, null]]);
+recipes.addShaped(<thermaldynamics:duct_64> * 2, [[<ore:ingotCopper>, <botania:managlass>, <ore:ingotCopper>], [<botania:managlass>, null, <botania:managlass>], [<ore:ingotCopper>, <botania:managlass>, <ore:ingotCopper>]]);
 recipes.addShaped(<tconstruct:smeltery_controller>, [[<tfc:ceramics/fired/fire_brick>, <tfc:ceramics/fired/fire_brick>, <tfc:ceramics/fired/fire_brick>], [<tetra:vent_plate>, null, <tetra:vent_plate>], [<tfc:ceramics/fired/fire_brick>, <tfc:ceramics/fired/fire_brick>, <tfc:ceramics/fired/fire_brick>]]);
 recipes.addShaped(<pneumaticcraft:spawner_agitator>, [[<ore:plateIron>, <ore:rodBlaze>, <ore:plateIron>], [<ore:rodBlaze>, null, <ore:rodBlaze>], [<ore:plateIron>, <ore:rodBlaze>, <ore:plateIron>]]);
 recipes.addShaped(<quark:gravisand> * 2, [[<ore:powderMana>, <ore:powderMana>], [<ore:powderMana>, <ore:powderMana>]]);
