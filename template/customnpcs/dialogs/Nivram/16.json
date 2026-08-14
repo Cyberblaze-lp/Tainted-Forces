@@ -23,7 +23,7 @@
         "Time": 0L,
         "Message": {
         },
-        "TimePast": 1745711084483L,
+        "TimePast": 1786744301116L,
         "Subject": "",
         "MailQuest": -1,
         "BeenRead": 0b,
@@ -31,7 +31,7 @@
         ]
     },
     "DialogTitle": "Xselect",
-    "DialogCommand": "/give @dp advancedrocketry:spacestationchip 1 0 {dimid0: {dests: [{name: \"X\", x: 1097.5, y: 1000.162, z: -1451.5}]}, RepairCost: 0, display: {Name: \"Landing Site X\"}, UUID: 1}",
+    "DialogCommand": "/pillar-spawn rocket_x -12721 59 -9750",
     "AvailabilityDayTime": 0,
     "AvailabilityScoreboard2Type": 1,
     "AvailabilityScoreboard2Objective": "",
