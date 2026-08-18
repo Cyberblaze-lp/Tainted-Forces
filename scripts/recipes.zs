@@ -3,6 +3,8 @@
 //#Remove
 //Don't touch me!
 //#Add
+recipes.addShaped(<immersiveengineering:blueprint>.withTag({blueprint: "Simple Redstone Components"}), [[null, <ore:dustRedstone>, null],[<ore:dyeBlue>, <ore:dyeBlue>, <ore:dyeBlue>], [<ore:paper>, <ore:paper>, <ore:paper>]]);
+recipes.addShaped(<immersiveengineering:blueprint>.withTag({blueprint: "Equipment"}), [[null, <thaumcraft:mechanism_simple>, null],[<ore:dyeBlue>, <ore:dyeBlue>, <ore:dyeBlue>], [<ore:paper>, <ore:paper>, <ore:paper>]]);
 recipes.addShapeless(<tfc:ceramics/fired/fire_brick>, [<ore:clay>,<ore:clay>,<ore:clay>,<thaumcraft:salis_mundus>,<thaumcraft:salis_mundus>,<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "praemunio"}]}).onlyWithTag({Aspects: [{amount: 1, key: "praemunio"}]})]);
 recipes.addShaped(<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:conveyor"}) * 48, [[<ore:leather>, <ore:leather>, <ore:leather>], [<ore:stickWroughtIron>, <ore:stickWroughtIron>, <ore:stickWroughtIron>]]);
 recipes.addShaped(<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:conveyor"}) * 2, [[<ore:petalBrown>, <ore:petalBrown>, <ore:petalBrown>],[<ore:petalBrown>, <ore:petalBrown>, <ore:petalBrown>]]);

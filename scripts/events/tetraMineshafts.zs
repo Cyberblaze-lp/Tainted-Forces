@@ -156,7 +156,7 @@ events.onEntityJoinWorld(function (event as crafttweaker.event.EntityJoinWorldEv
             val chestPos as IBlockPos = (event.entity.position3f as IBlockPos)
                 .getOffset(IFacing.north(), 2)
                 .getOffset(IFacing.west(), 2);
-            if (rand.nextInt(0, 5) == 1)
+            if (rand.nextInt(0, 3) == 1)
             {
                 event.world.setBlockState(<blockstate:tfc:wood/chest/birch>, {LootTable:"minecraft:chests/simple_dungeon"} as IData,  chestPos );
             }

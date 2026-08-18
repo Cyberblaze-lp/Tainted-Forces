@@ -85,18 +85,6 @@ recipes.addShapeless(<minecraft:iron_nugget>, [<ore:nuggetWroughtIron>]);
 
 
 
-recipes.addShapeless(<immersiveintelligence:metal_device>, [<immersiveintelligence:small_crate:5>]);
-recipes.addShapeless(<immersiveintelligence:small_crate:5>, [<immersiveintelligence:small_crate:3>]);
-recipes.addShapeless(<immersiveintelligence:small_crate:3>, [<immersiveintelligence:small_crate:4>]);
-recipes.addShapeless(<immersiveintelligence:small_crate:4>, [<immersiveintelligence:metal_device>]);
-recipes.addShapeless(<immersiveengineering:wooden_device0>, [<immersiveintelligence:small_crate:2>]);
-recipes.addShapeless(<immersiveintelligence:small_crate:2>, [<immersiveintelligence:small_crate>]);
-recipes.addShapeless(<immersiveintelligence:small_crate>, [<immersiveintelligence:small_crate:1>]);
-recipes.addShapeless(<immersiveintelligence:small_crate:1>, [<immersiveengineering:wooden_device0>]);
-recipes.addShapeless(<immersiveengineering:wooden_device0:5>, [<immersiveintelligence:small_crate:8>]);
-recipes.addShapeless(<immersiveintelligence:small_crate:8>, [<immersiveintelligence:small_crate:6>]);
-recipes.addShapeless(<immersiveintelligence:small_crate:6>, [<immersiveintelligence:small_crate:7>]);
-recipes.addShapeless(<immersiveintelligence:small_crate:7>, [<immersiveengineering:wooden_device0:5>]);
 recipes.addShapeless(<minecraft:ender_eye>, [<ore:enderpearl>, <thaumcraft:void_seed>, <ore:powderBlaze>]);
 recipes.addShapeless(<advancedrocketry:thermite> * 8, [<ore:dustAluminium>, <ore:dustPigIron>, <thaumcraft:alumentum>]);
 recipes.addShapeless(<camping:parts> * 2, [<ore:leatherArtificial>, <minecraft:rabbit_hide>, <camping:knife>.reuse()]);
@@ -131,7 +119,6 @@ recipes.addShaped(<minecraft:minecart>, [[<ore:naggetAnyBronze>, null, <ore:nagg
 recipes.addShaped(<minecraft:minecart>*2, [[<ore:nuggetIron>, null, <ore:nuggetIron>], [<ore:nuggetIron>, <ore:nuggetIron>, <ore:nuggetIron>]]);
 recipes.addShaped(<minecraft:minecart>*3, [[<ore:nuggetSteel>, null, <ore:nuggetSteel>], [<ore:nuggetSteel>, <ore:nuggetSteel>, <ore:nuggetSteel>]]);
 recipes.addShaped(<railcraft:mow_undercutter>, [[<ore:dyeYellow>, <ore:lamp>, <ore:dyeYellow>], [<ore:shovel>, <minecraft:minecart>, <ore:shovel>]]);
-recipes.addShaped(<railcraft:worldspike:3>, [[null, <ore:enderpearl>, null], [<ore:nuggetGold>, <ore:obsidian>, <ore:nuggetGold>], [<ore:dustDiamond>, <ore:nuggetGold>, <ore:dustDiamond>]]);
 recipes.addShaped(<railcraft:bore>, [[null, <immersiveintelligence:metal_decoration:4>], [<minecraft:minecart>, <minecraft:minecart>]]);
 recipes.addShaped(<railcraft:bore>, [[<immersiveintelligence:metal_decoration:4>, null], [<minecraft:minecart>, <minecraft:minecart>]]);
 recipes.addShaped(<railcraft:mow_track_relayer>, [[<ore:dyeYellow>, <ore:lamp>, <ore:dyeYellow>], [<ore:toolCrowbar>, <minecraft:minecart>, <ore:hammer>]]);
@@ -190,8 +177,6 @@ recipes.addShaped(<immersiveengineering:metal_device0:2>, [[<cyberware:dense_bat
 recipes.addShaped(<immersiveengineering:metal_device0:1>, [[<ore:plankTreatedWood>, <ore:plateElectrum>, <ore:plankTreatedWood>], [<cyberware:dense_battery>, null, <cyberware:dense_battery>], [<ore:plankTreatedWood>, <ore:plateElectrum>, <ore:plankTreatedWood>]]);
 recipes.addShaped(<immersiveengineering:metal_device0>, [[<ore:plankTreatedWood>, <ore:plateCopper>, <ore:plankTreatedWood>], [<cyberware:lower_organs_upgrades:2>, null, <cyberware:lower_organs_upgrades:2>], [<ore:plankTreatedWood>, <ore:plateCopper>, <ore:plankTreatedWood>]]);
 
-recipes.addShaped(<tconstruct:smeltery_io> * 2, [[<ore:ingotBrickSeared>, <tetra:metal_scrap>, <ore:ingotBrickSeared>], [<ore:ingotBrickSeared>, <tfc:metal/tuyere/tungsten_steel>, <ore:ingotBrickSeared>], [<ore:ingotBrickSeared>, <tetra:metal_scrap>, <ore:ingotBrickSeared>]]);
-recipes.addShaped(<tconstruct:smeltery_io> * 2, [[<ore:ingotBrickSeared>, <tetra:metal_scrap>, <ore:ingotBrickSeared>], [<ore:ingotBrickSeared>, <tfc:metal/tuyere/tungsten>, <ore:ingotBrickSeared>], [<ore:ingotBrickSeared>, <tetra:metal_scrap>, <ore:ingotBrickSeared>]]);
 recipes.addShaped(<ic2:wrench_new>, [[<ore:ingetAnyBronze>, null, <ore:ingetAnyBronze>], [null, <tfc:brass_mechanisms>, <ore:ingetAnyBronze>], [null, <ore:ingetAnyBronze>, null]]);
 
 recipes.addShaped(<pneumaticcraft:assembly_platform>, [[<pneumaticcraft:pneumatic_cylinder>, <pneumaticcraft:plastic:14>, <pneumaticcraft:pneumatic_cylinder>], [<ore:ingotIronCompressed>, <ore:ingotIronCompressed>, <ore:ingotIronCompressed>]]);
@@ -344,7 +329,6 @@ recipes.addShaped(<tetra:toolbelt_modular>.withTag({"toolbelt/belt_material": "b
 recipes.addShaped(<tetra:duplex_tool_modular>.withTag({"duplex/basic_hammer_right_material": "basic_hammer/log", "duplex/basic_hammer_left_material": "basic_hammer/log", "duplex/handle": "duplex/basic_handle", "duplex/head_left": "duplex/basic_hammer_left", "duplex/basic_handle_material": "basic_handle/stick", "duplex/head_right": "duplex/basic_hammer_right"}), [[null, <ore:logWood>], [<ore:stickWood>, <ore:slimeball>]]);
 recipes.addShaped(<minecraft:wooden_sword>, [[<ore:lumber>, null], [<ore:lumber>, <ore:slimeball>], [<ore:stickWood>, <ore:slimeball>]]);
 recipes.addShaped(<immersiveengineering:toolupgrade:1>, [[<liquid:olive_oil>*1000, <ore:ingotIron>, null], [<ore:ingotIron>, <liquid:olive_oil>*1000, <ore:ingotIron>], [null, <ore:ingotIron>, <immersiveengineering:material:8>]]);
-recipes.addShaped(<immersiveengineering:drill>, [[null, <tfc:brass_mechanisms>, <ore:gungripWood>], [null, <embers:blasting_core>, <ore:gungripWood>], [<ore:rodIron>, null, null]]);
 recipes.addShaped(<tfctech:induction_crucible>, [[<ore:ingotElectricalSteel>, null, <ore:ingotElectricalSteel>], [<ic2:crafting:5>, <tfc:crucible>, <ic2:crafting:5>], [<ore:ingotElectricalSteel>, <ore:circuitBasic>, <ore:ingotElectricalSteel>]]);
 recipes.addShaped(<tfctech:fridge>, [[<ic2:casing:6>, <magneticraft:heat_sink>], [<ic2:casing:6>, <ic2:te:43>], [<ic2:casing:6>, <ore:doorIron>]]);
 recipes.addShaped(<tfctech:electric_forge>, [[<ore:ingotElectricalSteel>, null, <ore:ingotElectricalSteel>], [<ic2:crafting:5>, <tfc:fire_bricks>, <ic2:crafting:5>], [<ore:ingotElectricalSteel>, <ore:circuitBasic>, <ore:ingotElectricalSteel>]]);

@@ -379,7 +379,13 @@
 		<thermalfoundation:material:515>,
 		<tconstruct:wooden_hopper>,
 		<railcraft:charge:5>,
-		<quark:gravisand>
+		<quark:gravisand>,
+		<immersiveengineering:wooden_device0:2>,
+		<immersiveengineering:drill>,
+		<immersiveengineering:chemthrower>,
+		<pneumaticcraft:minigun:*>,
+		<pneumaticcraft:sentry_turret>,
+		<minecraft:furnace>
 	]{
 		recipes.remove(output);
 	}
@@ -394,6 +400,8 @@
 		"minecraft:stone_pressure_plate",
 		"railcraft:dust#7$1",
 		"railcraft:locomotive_steam_solid#0$1",
+		"railcraft:charge#2$1",
+		"railcraft:charge#4$1",
 
 		//Too cheap plate recipes
 		"unidict:platebrass_x3_shape.aaa",

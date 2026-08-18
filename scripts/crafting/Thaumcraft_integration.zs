@@ -200,7 +200,7 @@ mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("bettervisresonator", "UNLO
 mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("betterinputtransfuser", "ESSENTIATRANSPORT", 500, [<aspect:aer>,<aspect:aqua>], <thaumcraft:essentia_input>, [[<ore:plateBrass>,<minecraft:dispenser>,<ore:plateBrass>],[<ore:plateIron>,<thaumcraft:metal_alchemical_advanced>,<ore:plateIron>]]);
 mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("betteroutputtransfuser", "ESSENTIATRANSPORT", 500, [<aspect:aer>,<aspect:aqua>], <thaumcraft:essentia_output>, [[<ore:plateBrass>,<minecraft:hopper>,<ore:plateBrass>],[<ore:plateIron>,<thaumcraft:metal_alchemical_advanced>,<ore:plateIron>]]);
 
-mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumometerbrass", "", 50, [<aspect:aer>,<aspect:terra>,<aspect:ignis>, <aspect:ignis>,<aspect:aqua>, <aspect:ordo>, <aspect:perditio>], <thaumcraft:thaumometer>, [[null,<ore:ingotBrass>,null],[<ore:ingotBrass>,<paneGlass>,<ore:ingotBrass>],[null,<ore:ingotBrass>,null]]);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumometerbrass", "", 50, [<aspect:aer>,<aspect:terra>, <aspect:ignis>,<aspect:aqua>, <aspect:ordo>, <aspect:perditio>], <thaumcraft:thaumometer>, [[null,<ore:ingotBrass>,null],[<ore:ingotBrass>,<ore:paneGlass>,<ore:ingotBrass>],[null,<ore:ingotBrass>,null]]);
 
 
 

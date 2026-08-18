@@ -48,6 +48,7 @@ dungeonMain.addItemEntry(<thaumcraft:baubles:3>, 1000);
 dungeonMain.addItemEntry(<thaumcraft:pech_wand>, 2000);
 dungeonMain.addItemEntry(<thaumcraft:curio:6>, 3000);
 dungeonMain.addItemEntry(<minecraft:dye:4>, 70000);
+dungeonMain.addItemEntry(<quark:backpack>, 20000);
 
 
 
