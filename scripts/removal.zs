@@ -385,7 +385,11 @@
 		<immersiveengineering:chemthrower>,
 		<pneumaticcraft:minigun:*>,
 		<pneumaticcraft:sentry_turret>,
-		<minecraft:furnace>
+		<minecraft:furnace>,
+		<botania:grasshorn:1>,
+		<botania:grasshorn:2>,
+		<quark:paper_wall_big>,
+		<quark:paper_wall_sakura>
 	]{
 		recipes.remove(output);
 	}
@@ -779,8 +783,8 @@
 	mods.thermalexpansion.Crucible.removeRecipe(<minecraft:cobblestone>);
 	mods.thermalexpansion.Crucible.removeRecipe(<minecraft:magma>);
 
-	mods.thermalexpansion.Pulverizer.removeRecipe(<tfc:metal/ingot/bismuth_bronze>);
 
+/* 
 	mods.thermalexpansion.InductionSmelter.removeRecipe(<minecraft:bucket>, <minecraft:sand>);
 	mods.thermalexpansion.InductionSmelter.removeRecipe(<minecraft:anvil>, <minecraft:sand>);
 	mods.thermalexpansion.InductionSmelter.removeRecipe(<minecraft:minecart>, <minecraft:sand>);
@@ -791,7 +795,7 @@
 	mods.thermalexpansion.InductionSmelter.removeRecipe(<thermalfoundation:material>,<thermalfoundation:material:768>*4);
 	mods.thermalexpansion.InductionSmelter.removeRecipe(<thermalfoundation:material>,<thermalfoundation:material:769>*4);
 	mods.thermalexpansion.InductionSmelter.removeRecipe(<thermalfoundation:material>,<thermalfoundation:material:802>);
-
+*/
 	mods.thermalexpansion.CompressionDynamo.removeFuel(<liquid:fuel>);
 	mods.thermalexpansion.CompressionDynamo.removeFuel(<liquid:creosote>);
 	mods.thermalexpansion.CompressionDynamo.removeFuel(<liquid:crude_oil>);

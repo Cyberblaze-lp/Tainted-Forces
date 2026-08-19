@@ -55,6 +55,8 @@ recipes.addShapeless(<ic2:reactor_heat_vent>, [<ic2:heat_vent>, <ic2:crafting:7>
 
 // ================================================================================
 //#MARKER ADD SHAPED
+recipes.addShaped(<thaumcraft:table_wood>, [[<ore:livingwood>, <ore:livingwood>, <ore:livingwood>], [null, <ore:livingwood>, null]]);
+recipes.addShaped(<tconstruct:slime:4>, [[<minecraft:magma_cream>, <minecraft:magma_cream>, <minecraft:magma_cream>], [<minecraft:magma_cream>, <minecraft:magma_cream>, <minecraft:magma_cream>], [<minecraft:magma_cream>, <minecraft:magma_cream>, <minecraft:magma_cream>]]);
 recipes.addShaped(<quark:backpack>, [[<ore:leather>, <tfc:brass_mechanisms>, <ore:leather>], [<ore:leather>, null, <ore:leather>], [<ore:leather>, <tfc:brass_mechanisms>, <ore:leather>]]);
 recipes.addShaped(<immersiveengineering:wooden_device0>, [[<ore:livingwood>, <ore:livingwood>, <ore:livingwood>], [<ore:livingwood>, null, <ore:livingwood>], [<ore:livingwood>, <ore:livingwood>, <ore:livingwood>]]);
 recipes.addShaped(<immersiveengineering:wooden_device0:2>, [[<ore:livingwood>, <ore:livingwood>, <ore:livingwood>], [<ore:livingwood>, null, <ore:livingwood>]]);
@@ -99,8 +101,6 @@ recipes.addShaped(<firmalife:quad_planter>, [[<ore:ingotBrick>, <ore:dirt>, <ore
 recipes.addShaped(<chisel:factory> * 32, [[<ore:concrete>, <ore:concrete>, <ore:concrete>], [null, <ore:ingetAnyBronze>, null], [<ore:concrete>, <ore:concrete>, <ore:concrete>]]);
 recipes.addShaped(<chisel:factory> * 32, [[<ore:concrete>, <ore:concrete>, <ore:concrete>], [null, <ore:ingotIron>, null], [<ore:concrete>, <ore:concrete>, <ore:concrete>]]);
 recipes.addShaped(<firmalife:climate_station_4>, [[<ore:blockGlass>, <ore:blockGlass>, <ore:blockGlass>], [<ore:blockGlass>, <ore:ingotIron>, <ore:blockGlass>], [<tfc:brass_mechanisms>, <tfc:brass_mechanisms>, <tfc:brass_mechanisms>]]);
-recipes.addShaped(<botania:spreader>, [[<botania:livingwood:1>, <botania:livingwood:1>, <botania:livingwood:1>], [null, <botania:petalblock:4>, <botania:livingwood:1>], [<botania:livingwood:1>, <botania:livingwood:1>, <botania:livingwood:1>]]);
-recipes.addShaped(<botania:spreader>, [[<botania:livingwood:1>, <botania:livingwood:1>, <botania:livingwood:1>], [<botania:livingwood:1>, <botania:petalblock:4>, null], [<botania:livingwood:1>, <botania:livingwood:1>, <botania:livingwood:1>]]);
 recipes.addShaped(<metalchests:metal_chest:3> * 2, [[<ore:plateGold>, <ore:plateGold>, <ore:plateGold>], [<ore:plateGold>, null, <ore:plateGold>], [<ore:plateGold>, <ore:plateGold>, <ore:plateGold>]]);
 recipes.addShaped(<metalchests:metal_chest:2> * 2, [[<ore:plateSilver>, <ore:plateSilver>, <ore:plateSilver>], [<ore:plateSilver>, null, <ore:plateSilver>], [<ore:plateSilver>, <ore:plateSilver>, <ore:plateSilver>]]);
 recipes.addShaped(<metalchests:metal_chest:4> * 2, [[<ore:platePlatinum>, <ore:platePlatinum>, <ore:platePlatinum>], [<ore:platePlatinum>, null, <ore:platePlatinum>], [<ore:platePlatinum>, <ore:platePlatinum>, <ore:platePlatinum>]]);
