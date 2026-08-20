@@ -1,0 +1,33 @@
+{
+    "QuestData": {
+        "ActiveQuests": [
+        ],
+        "CompletedQuests": [
+        ]
+    },
+    "NpcsTimers": [
+    ],
+    "PlayerName": "Cyberblaze_lp",
+    "UUID": "d2380754-f10f-4f8f-9e1b-cbb0e04d4c99",
+    "MailData": [
+    ],
+    "FactionData": [
+        {
+            "Faction": 0,
+            "Points": 2000
+        }
+    ],
+    "ItemGiverChained": [
+    ],
+    "ScriptStoreddata": {
+    },
+    "BankData": [
+    ],
+    "ItemGiversList": [
+    ],
+    "TransportData": [
+    ],
+    "PlayerCompanionId": 0,
+    "DialogData": [
+    ]
+}
