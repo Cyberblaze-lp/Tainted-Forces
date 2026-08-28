@@ -150,7 +150,7 @@ import mods.chisel.Carving;
 
     addChiselGroupDef("bthorns", [<botania:grasshorn>.definition]);
 
-
+    addChiselGroupDef("bDrums", [<botania:forestdrum>.definition]);
 
 
 //Engineers Workbench
