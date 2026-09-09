@@ -313,7 +313,7 @@
 		<projectred-transmission:wire:*>,
 		<quark:gravisand>,
 		<quark:paper_wall_big>,
-		<quark:paper_wall_sakura>
+		<quark:paper_wall_sakura>,
 		<questionablyimmersive:metal_device>,
 		<railcraft:boiler_firebox_fluid>,
 		<railcraft:boiler_firebox_solid>,
@@ -389,7 +389,7 @@
 		<thermaldynamics:relay>,
 		<thermalfoundation:material:513>,
 		<thermalfoundation:material:514>,
-		<thermalfoundation:material:515>,
+		<thermalfoundation:material:515>
 	]{
 		recipes.remove(output);
 	}
