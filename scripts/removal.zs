@@ -389,7 +389,7 @@
 		<thermaldynamics:relay>,
 		<thermalfoundation:material:513>,
 		<thermalfoundation:material:514>,
-		<thermalfoundation:material:515>,
+		<thermalfoundation:material:515>
 	]{
 		recipes.remove(output);
 	}

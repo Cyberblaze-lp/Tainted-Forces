@@ -8,6 +8,7 @@
 - Buff Thaumic Augmentation railgun
 - Pneumaticraft Minigun explosion breaks blocks
 - Kerosene lamp takes hotter fuels, but fuels last longer
+- Blacklist spoilage overlay from always rotten food (rotten flesh, spider eyes, zombie brain)
 
 **Removed**:
 - Removed disabled mods from the export
