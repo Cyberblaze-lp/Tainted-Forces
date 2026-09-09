@@ -33,7 +33,8 @@ import native.thaumcraft.common.lib.utils.Utils;
 import native.thaumcraft.common.world.aura.AuraHandler;
 import native.thaumcraft.common.world.aura.AuraThread;
 import native.thecodex6824.thaumicaugmentation.common.item.ItemThaumostaticHarness;
-
+import native.net.minecraft.init.Items;
+import native.thaumcraft.api.crafting.Part;
 
 
 //Aura & Flux
@@ -404,6 +405,87 @@ zenClass MixinTaintHelper {
 }
 
 
+//golem press shenanigans
+
+#mixin {targets:"thaumcraft.common.config.ConfigRecipes"}
+zenClass simplerGolemPress1 {
+    #mixin Static
+    #mixin ModifyVariable
+    #{
+    #    method: "initializeCompoundRecipes",
+    #   name: "GP1",
+    #    at: {      
+    #        value: "STORE",
+    #        ordinal:0,
+    #        target: "GP1"
+    #    }
+    #}
+    function noBars(value as Part) as Part
+    {
+        return Part(BlocksTC.metalBlockBrass, ItemStack(BlocksTC.placeholderBars));
+    }
+    #mixin Static
+    #mixin ModifyVariable
+    #{
+    #    method: "initializeCompoundRecipes",
+    #   name: "GP2",
+    #    at: {      
+    #        value: "STORE",
+    #        ordinal:0,
+    #        target: "GP2"
+    #    }
+    #}
+    function noCauldron(value as Part) as Part
+    {
+        return Part(BlocksTC.stoneArcane, ItemStack(BlocksTC.placeholderCauldron));
+    }
+    #mixin Static
+    #mixin ModifyVariable
+    #{
+    #    method: "initializeCompoundRecipes",
+    #   name: "GP3",
+    #    at: {      
+    #        value: "STORE",
+    #        ordinal:0,
+    #        target: "GP3"
+    #    }
+    #}
+    function noPiston(value as Part) as Part
+    {
+        return Part(BlocksTC.metalBlockBrass, BlocksTC.golemBuilder);
+    }
+    #mixin Static
+    #mixin ModifyVariable
+    #{
+    #    method: "initializeCompoundRecipes",
+    #   name: "GP4",
+    #    at: {      
+    #        value: "STORE",
+    #        ordinal:0,
+    #        target: "GP4"
+    #    }
+    #}
+    function noAnvil(value as Part) as Part
+    {
+        return Part(BlocksTC.stoneArcane, ItemStack(BlocksTC.placeholderAnvil));
+    }
+    #mixin Static
+    #mixin ModifyVariable
+    #{
+    #    method: "initializeCompoundRecipes",
+    #   name: "GP5",
+    #    at: {      
+    #        value: "STORE",
+    #        ordinal:0,
+    #        target: "GP5"
+    #    }
+    #}
+    function noTable(value as Part) as Part
+    {
+        return Part(BlocksTC.stoneArcane, ItemStack(BlocksTC.placeholderTable));
+    }
+
+}
 
 
 
