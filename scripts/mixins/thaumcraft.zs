@@ -35,7 +35,7 @@ import native.thaumcraft.common.world.aura.AuraThread;
 import native.thecodex6824.thaumicaugmentation.common.item.ItemThaumostaticHarness;
 import native.net.minecraft.init.Items;
 import native.thaumcraft.api.crafting.Part;
-
+import native.net.minecraft.item.Item;
 
 //Aura & Flux
 
@@ -485,7 +485,120 @@ zenClass simplerGolemPress1 {
         return Part(BlocksTC.stoneArcane, ItemStack(BlocksTC.placeholderTable));
     }
 
+    #mixin Static
+    #mixin Redirect
+    #{
+    #    method: "initializeCompoundRecipes",
+    #   
+    #    at: {      
+    #        value: "INVOKE",
+    #        ordinal:5,
+    #        target: "Lthaumcraft/api/ThaumcraftApi;addMultiblockRecipeToCatalog(Lnet/minecraft/util/ResourceLocation;Lthaumcraft/api/ThaumcraftApi$BluePrint;)V"
+    #    }
+    #}
+    function ChangeRecipe(RL as native.net.minecraft.util.ResourceLocation, bp as native.thaumcraft.api.ThaumcraftApi.BluePrint ) as void
+    {
+        val GP1 as Part = Part(BlocksTC.metalBlockBrass, ItemStack(BlocksTC.placeholderBars));
+        val GP2 as Part = Part(BlocksTC.stoneArcane, ItemStack(BlocksTC.placeholderCauldron));
+        val GP3 as Part = Part(BlocksTC.metalBlockBrass, BlocksTC.golemBuilder);
+        val GP4 as Part = Part(BlocksTC.stoneArcane, ItemStack(BlocksTC.placeholderAnvil));
+        val GP5 as Part = Part(BlocksTC.stoneArcane, ItemStack(BlocksTC.placeholderTable));
+        
+        native.thaumcraft.api.ThaumcraftApi.addMultiblockRecipeToCatalog(native.net.minecraft.util.ResourceLocation("thaumcraft:GolemPress"), native.thaumcraft.api.ThaumcraftApi.BluePrint("MINDCLOCKWORK", ItemStack(BlocksTC.golemBuilder), [[[null, null], [GP1, null]], [[GP2, GP4], [GP3, GP5]]] as Part[][][], [ItemStack(BlocksTC.metalBlockBrass, 2), ItemStack(BlocksTC.stoneArcane, 3)] as ItemStack[]));
+   
+    }
+
+    
+
 }
 
+#mixin {targets:"thaumcraft.common.blocks.misc.BlockPlaceholder" }
+zenClass simplerGolemPress2 {
+
+    #mixin Redirect {method: "func_180660_a", at:{value:"INVOKE", ordinal:2, target:"Lnet/minecraft/item/Item;func_150898_a(Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;"}} 
+    function noBars(instance as Block) as Item {
+        return Item.func_150898_a(BlocksTC.metalBlockBrass);
+    }
+    #mixin Redirect {method: "func_180660_a", at:{value:"INVOKE", ordinal:3, target:"Lnet/minecraft/item/Item;func_150898_a(Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;"}} 
+    function noAnvil(instance as Block) as Item {
+        return Item.func_150898_a(BlocksTC.stoneArcane);
+    }
+    
+    
+    #mixin Redirect {method: "func_180660_a", at:{value:"INVOKE", ordinal:4, target:"Lnet/minecraft/item/Item;func_150898_a(Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;"}} 
+    function noCauldron(instance as Block) as Item {
+        return Item.func_150898_a(BlocksTC.stoneArcane);
+    }
+    #mixin Redirect {method: "func_180660_a", at:{value:"INVOKE", ordinal:5, target:"Lnet/minecraft/item/Item;func_150898_a(Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;"}} 
+    function noTable(instance as Block) as Item {
+        return Item.func_150898_a(BlocksTC.stoneArcane);
+    }
+
+    
+    #mixin Redirect {method: "func_180660_a", at:{value:"INVOKE", ordinal:4, target:"Lnet/minecraft/item/Item;func_150898_a(Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;"}} 
+    function noCauldron(instance as Block) as Item {
+        return Item.func_150898_a(BlocksTC.stoneArcane);
+    }
+    
+}
+
+#mixin {targets:"thaumcraft.common.blocks.crafting.BlockGolemBuilder"}
+zenClass simplerGolemPress3 {
+    #mixin Overwrite
+    function func_180660_a(state as IBlockState, rand as native.java.util.Random, fortune as int) as Item
+    {
+        return Item.func_150898_a(BlocksTC.metalBlockBrass);
+    }
+    
+    #mixin Static
+    #mixin Redirect {method: "destroy", at:{ordinal:0, value:"INVOKE", target:"Lnet/minecraft/block/Block;func_176223_P()Lnet/minecraft/block/state/IBlockState;"}} 
+    function noBars(instance as Block) as IBlockState {
+        return BlocksTC.metalBlockBrass.func_176223_P();
+    }
+    #mixin Static
+    #mixin Overwrite
+    function destroy( worldIn as World, pos as BlockPos, state as IBlockState, startpos as BlockPos) as void {
+      if (!worldIn.field_72995_K) {
+         
+
+         for a in -1 to 2 {
+            for b in -1 to 2 {
+               for c in -1 to 2 {
+                  if (pos.func_177982_a(a, b, c) != startpos) {
+                      var bs as IBlockState = worldIn.func_180495_p(pos.func_177982_a(a, b, c));
+                     if (bs.func_177230_c() == BlocksTC.placeholderBars) {
+                        worldIn.func_175656_a(pos.func_177982_a(a, b, c), BlocksTC.metalBlockBrass.func_176223_P());
+                     }
+
+                     if (bs.func_177230_c() == BlocksTC.placeholderAnvil) {
+                        worldIn.func_175656_a(pos.func_177982_a(a, b, c), BlocksTC.stoneArcane.func_176223_P());
+                     }
+
+                     if (bs.func_177230_c() == BlocksTC.placeholderCauldron) {
+                        worldIn.func_175656_a(pos.func_177982_a(a, b, c), BlocksTC.stoneArcane.func_176223_P());
+                     }
+
+                     if (bs.func_177230_c() == BlocksTC.placeholderTable) {
+                        worldIn.func_175656_a(pos.func_177982_a(a, b, c), BlocksTC.stoneArcane.func_176223_P());
+                     }
+                  }
+               }
+            }
+         }
+
+         if (pos != startpos) {
+            worldIn.func_175656_a(pos, BlocksTC.metalBlockBrass.func_176223_P());
+         }
+
+         
+      }
+   }
+
+
+
+
+
+
+}
 
 
