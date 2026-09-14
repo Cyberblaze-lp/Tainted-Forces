@@ -22,6 +22,7 @@ import native.net.minecraft.util.math.Vec3i;
 import native.vazkii.botania.api.state.BotaniaStateProps;
 
 
+
 #mixin {targets: "net.dries007.tfc.objects.items.ItemsTFC"}
 zenClass MixinWeights {
     #mixin Static
@@ -186,6 +187,15 @@ zenClass MixinBellowsCompat2 {
             
             return;
         }     
+    }
+}
+
+#mixin {targets:"net.dries007.tfc.objects.te.TEBarrel"}
+zenClass RegularWaterfromRain {
+    #mixin Redirect{method:"func_73660_a", at: { value:"INVOKE", ordinal:0, target:"Lnet/minecraftforge/fluids/FluidRegistry;getFluid(Ljava/lang/String;)Lnet/minecraftforge/fluids/Fluid;"}}
+    function regularRainWater(input as string) as Fluid
+    {
+        return native.net.minecraftforge.fluids.FluidRegistry.WATER;
     }
 }
 
