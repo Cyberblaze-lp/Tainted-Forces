@@ -147,6 +147,8 @@ import mods.chisel.Carving;
     ]);
 
     addChiselGroup("paperwall", [<quark:paper_wall>, <quark:paper_wall_big>, <quark:paper_wall_sakura>]);
+    addChiselGroup("halos", [<botania:craftinghalo>, <botania:autocraftinghalo>]);
+    
 
     addChiselGroupDef("bthorns", [<botania:grasshorn>.definition]);
 

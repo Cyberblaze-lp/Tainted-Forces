@@ -55,6 +55,8 @@ recipes.addShapeless(<ic2:reactor_heat_vent>, [<ic2:heat_vent>, <ic2:crafting:7>
 
 // ================================================================================
 //#MARKER ADD SHAPED
+recipes.addShaped(<botania:craftinghalo>, [[null, <ore:ingotManasteel>, null], [<ore:ingotManasteel>, null, <ore:ingotManasteel>], [null, <ore:ingotManasteel>, null]]);
+recipes.addShaped(<thermaldynamics:duct_64> * 4, [[<ore:ingotCopper>, <railcraft:glass:*>, <ore:ingotCopper>], [<railcraft:glass:*>, null, <railcraft:glass:*>], [<ore:ingotCopper>, <railcraft:glass:*>, <ore:ingotCopper>]]);
 recipes.addShaped(<thaumcraft:table_wood>, [[<ore:livingwood>, <ore:livingwood>, <ore:livingwood>], [null, <ore:livingwood>, null]]);
 recipes.addShaped(<tconstruct:slime:4>, [[<minecraft:magma_cream>, <minecraft:magma_cream>, <minecraft:magma_cream>], [<minecraft:magma_cream>, <minecraft:magma_cream>, <minecraft:magma_cream>], [<minecraft:magma_cream>, <minecraft:magma_cream>, <minecraft:magma_cream>]]);
 recipes.addShaped(<quark:backpack>, [[<ore:leather>, <tfc:brass_mechanisms>, <ore:leather>], [<ore:leather>, null, <ore:leather>], [<ore:leather>, <tfc:brass_mechanisms>, <ore:leather>]]);
