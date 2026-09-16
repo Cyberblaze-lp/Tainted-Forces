@@ -46,7 +46,7 @@ for item in <ore:concrete>.itemArray
 
 
 
-
+<deeperdepths:material:1>.setAspects([<aspect:vitreus>*5, <aspect:praecantatio>*2, <aspect:auram>]);
 <entity:minecraft:zombie>.setAspects([<aspect:exanimis>*5, <aspect:humanus>*10, <aspect:terra>*5]);
 <entity:cyberware:cyberzombie>.setAspects([<aspect:exanimis>*5, <aspect:humanus>*10, <aspect:machina>*10, <aspect:metallum>*5]);
 <entity:minecraft:skeleton>.setAspects([<aspect:exanimis>*5, <aspect:humanus>*10, <aspect:mortuus>*5]);
@@ -123,7 +123,7 @@ mods.thaumcraft.Infusion.registerRecipe("MOXROD", "NUCLEAR", <ic2:mox_fuel_rod>,
 <thaumcraft:nugget:10>.addTooltip(format.gold("Obtained from gem and magnetite deposits"));
 <minecraft:quartz>.addTooltip(format.gold("Found in Quartz-rich Stone"));
 
-mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("minds 2.0", "MINDCLOCKWORK", 50, [<aspect:ordo>,<aspect:ignis>], <thaumcraft:mind>, [[null,<thaumcraft:mechanism_simple>,null],[<ore:ingotRedAlloy>,<thaumcraft:focus_1>,<ore:ingotRedAlloy> ],[<thaumcraft:mechanism_simple>, null, <thaumcraft:mechanism_simple>]]);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("minds 2.0", "MINDCLOCKWORK", 50, [<aspect:ordo>,<aspect:aer>], <thaumcraft:mind>, [[null,<thaumcraft:focus_1>,null],[<thaumcraft:mechanism_simple>,<thaumcraft:focus_1>,<thaumcraft:mechanism_simple> ],[<tfc:brass_mechanisms>, <tfc:brass_mechanisms>, <tfc:brass_mechanisms>]]);
 
 mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("auracrafter 2.0", "ARCANEPATTERNCRAFTER", 50, [<aspect:ordo>,<aspect:terra>], <thaumcraft:pattern_crafter>, [[<thaumcraft:mechanism_simple>,<thaumcraft:plank_greatwood>,<thaumcraft:mechanism_simple>],[<thaumcraft:vis_resonator>,<thaumcraft:plank_greatwood>,<thaumcraft:mechanism_simple>]]);
 mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("mechcrafter 2.0", "ARCANEPATTERNCRAFTER", 50, [<aspect:ordo>,<aspect:terra>], <mystgears:crafter_mechanical>, [[<thaumcraft:mechanism_simple>,<thaumcraft:plank_greatwood>,<thaumcraft:mechanism_simple>],[<thaumcraft:mechanism_simple>,<thaumcraft:plank_greatwood>,<thaumcraft:mechanism_simple>]]);
