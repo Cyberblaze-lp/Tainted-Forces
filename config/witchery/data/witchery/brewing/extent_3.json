@@ -1,0 +1,6 @@
+{
+  "type": "witchery:extent",
+  "item": "witchery:wispy_cotton",
+  "power_cost": 150,
+  "limit": 3
+}

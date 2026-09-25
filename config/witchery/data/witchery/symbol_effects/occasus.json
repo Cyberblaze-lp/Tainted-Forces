@@ -1,0 +1,12 @@
+{
+  "type": "witchery:symbol_effect",
+  "default": true,
+  "strokes": [
+    "up",
+    "left",
+    "down",
+    "down",
+    "right"
+  ],
+  "result": "witchery:occasus"
+}

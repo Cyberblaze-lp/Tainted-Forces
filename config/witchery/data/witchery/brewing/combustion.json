@@ -1,0 +1,8 @@
+{
+  "type": "witchery:effect",
+  "item": "minecraft:coal,1",
+  "capacity_required": 1,
+  "group": 2,
+  "has_note": true,
+  "effect": "witchery:combustion"
+}

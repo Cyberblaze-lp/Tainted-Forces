@@ -1,0 +1,30 @@
+{
+  "sacrifices": {
+    "items": [
+      {
+        "ingredient": {
+          "item": "witchery:otherwhere_spirit"
+        }
+      }
+    ],
+    "power": 4000.0
+  },
+  "circles": [
+    {
+      "glyph": "witchery:otherwhere_circle_glyph",
+      "size": 1
+    },
+    {
+      "glyph": "witchery:otherwhere_circle_glyph",
+      "size": 2
+    }
+  ],
+  "sorting": {
+    "left": "witchery:earth_infusion",
+    "right": "witchery:infernal_infusion"
+  },
+  "result": {
+    "type": "witchery:infuse_player",
+    "infusion": "witchery:otherwhere"
+  }
+}

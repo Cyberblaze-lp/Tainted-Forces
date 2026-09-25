@@ -1,0 +1,10 @@
+{
+  "type": "witchery:symbol_effect",
+  "default": true,
+  "strokes": [
+    "right",
+    "right",
+    "left"
+  ],
+  "result": "witchery:flipendo"
+}

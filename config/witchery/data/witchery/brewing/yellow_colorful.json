@@ -1,0 +1,8 @@
+{
+  "type": "witchery:effect",
+  "item": "minecraft:dye,11",
+  "secret": true,
+  "capacity_required": 1,
+  "effect": "witchery:tinting",
+  "color": "yellow"
+}

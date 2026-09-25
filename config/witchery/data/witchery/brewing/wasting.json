@@ -1,0 +1,8 @@
+{
+  "type": "witchery:effect",
+  "item": "witchery:subdued_spirit",
+  "power_cost": 500,
+  "capacity_required": 4,
+  "effect": "witchery:wasting",
+  "invertible": true
+}

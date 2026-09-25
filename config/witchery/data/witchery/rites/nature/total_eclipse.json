@@ -1,0 +1,35 @@
+{
+  "conditions": [
+    {
+      "type": "witchery:night",
+      "negate": true
+    }
+  ],
+  "sacrifices": {
+    "items": [
+      {
+        "ingredient": {
+          "item": "minecraft:stone_axe",
+          "data": 32767
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:quicklime"
+        }
+      }
+    ],
+    "power": 3000.0
+  },
+  "circles": [
+    {
+      "glyph": "witchery:ritual_circle_glyph",
+      "size": 1
+    }
+  ],
+  "sorting": {
+    "left": "witchery:portable_sky_wrath",
+    "right": "witchery:portable_total_eclipse"
+  },
+  "result": "witchery:total_eclipse"
+}

@@ -1,0 +1,7 @@
+{
+  "type": "witchery:effect",
+  "item": "minecraft:ender_eye",
+  "power_cost": 2000,
+  "capacity_required": 5,
+  "effect": "witchery:ice_world"
+}

@@ -1,0 +1,12 @@
+{
+  "type": "witchery:symbol_effect",
+  "default": true,
+  "strokes": [
+    "left",
+    "down",
+    "right",
+    "right",
+    "up"
+  ],
+  "result": "witchery:baratrum"
+}

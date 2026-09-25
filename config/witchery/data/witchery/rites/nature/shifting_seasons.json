@@ -1,0 +1,56 @@
+{
+  "sacrifices": {
+    "items": [
+      {
+        "ingredient": {
+          "item": "minecraft:spider_eye"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:frogs_toe"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:bat_wool"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:dog_tongue"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:owlets_wing"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:attuned_stone"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:charged_attuned_stone"
+        },
+        "returns": {
+          "type": "witchery:copy_data",
+          "item": "witchery:attuned_stone"
+        }
+      }
+    ]
+  },
+  "circles": [
+    {
+      "glyph": "witchery:ritual_circle_glyph",
+      "size": 3
+    }
+  ],
+  "sorting": {
+    "left": "witchery:portable_broiling",
+    "right": "witchery:oak_forestation"
+  },
+  "result": "witchery:shifting_seasons"
+}

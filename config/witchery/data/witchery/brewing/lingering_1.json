@@ -1,0 +1,6 @@
+{
+  "type": "witchery:linger",
+  "item": "witchery:belladonna_flower",
+  "power_cost": 50,
+  "limit": 1
+}

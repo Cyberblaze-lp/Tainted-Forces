@@ -1,0 +1,41 @@
+{
+  "sacrifices": {
+    "items": [
+      {
+        "ingredient": {
+          "item": "minecraft:obsidian"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "minecraft:glowstone_dust"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:bound_waystone"
+        },
+        "action": "witchery:set_location",
+        "optional": true
+      }
+    ],
+    "power": 1000.0
+  },
+  "circles": [
+    {
+      "glyph": "witchery:ritual_circle_glyph",
+      "size": 2
+    }
+  ],
+  "sorting": {
+    "left": "witchery:protection",
+    "right": "witchery:portable_protection"
+  },
+  "result": {
+    "type": "witchery:protection",
+    "radius": 6,
+    "height": 6,
+    "power": 1.4,
+    "block_players": true
+  }
+}

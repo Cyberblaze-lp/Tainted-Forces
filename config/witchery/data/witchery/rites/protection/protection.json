@@ -1,0 +1,41 @@
+{
+  "sacrifices": {
+    "items": [
+      {
+        "ingredient": {
+          "item": "minecraft:obsidian"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "minecraft:redstone"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:bound_waystone"
+        },
+        "action": "witchery:set_location",
+        "optional": true
+      }
+    ],
+    "power": 500.0
+  },
+  "circles": [
+    {
+      "glyph": "witchery:ritual_circle_glyph",
+      "size": 1
+    }
+  ],
+  "sorting": {
+    "left": "witchery:imprisonment",
+    "right": "witchery:large_protection"
+  },
+  "result": {
+    "type": "witchery:protection",
+    "radius": 4,
+    "height": 5,
+    "power": 1.2,
+    "block_players": false
+  }
+}

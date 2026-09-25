@@ -1,0 +1,6 @@
+{
+  "type": "witchery:modifier",
+  "item": "minecraft:fermented_spider_eye",
+  "power_cost": 25,
+  "modifier": "invert"
+}

@@ -1,0 +1,29 @@
+{
+  "type": "witchery:kettle",
+  "hat_bonus": 1,
+  "ingredients": [
+    {
+      "item": "witchery:rowan_sapling"
+    },
+    {
+      "item": "witchery:alder_sapling"
+    },
+    {
+      "item": "witchery:hawthorn_sapling"
+    },
+    {
+      "item": "witchery:dog_tongue"
+    },
+    {
+      "item": "witchery:mandrake_root"
+    },
+    {
+      "item": "minecraft:red_flower",
+      "data": 0
+    }
+  ],
+  "result": {
+    "item": "witchery:sprouting_brew",
+    "count": 3
+  }
+}

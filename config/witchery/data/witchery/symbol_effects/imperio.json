@@ -1,0 +1,12 @@
+{
+  "type": "witchery:symbol_effect",
+  "default": true,
+  "strokes": [
+    "right",
+    "down",
+    "down",
+    "down",
+    "down"
+  ],
+  "result": "witchery:imperio"
+}

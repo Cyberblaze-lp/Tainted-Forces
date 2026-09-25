@@ -1,0 +1,31 @@
+{
+  "type": "witchery:kettle",
+  "power_required": 2000.0,
+  "ingredients": [
+    {
+      "item": "witchery:redstone_soup"
+    },
+    {
+      "type": "minecraft:item_nbt",
+      "item": "minecraft:potion",
+      "nbt": {
+        "Potion": "minecraft:long_night_vision"
+      }
+    },
+    {
+      "item": "minecraft:ender_eye"
+    },
+    {
+      "item": "minecraft:golden_carrot"
+    },
+    {
+      "item": "minecraft:spider_eye"
+    },
+    {
+      "item": "witchery:mandrake_root"
+    }
+  ],
+  "result": {
+    "item": "witchery:happenstance_oil"
+  }
+}

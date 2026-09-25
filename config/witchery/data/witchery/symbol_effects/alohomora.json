@@ -1,0 +1,12 @@
+{
+  "type": "witchery:symbol_effect",
+  "default": true,
+  "strokes": [
+    "right",
+    "up",
+    "right",
+    "right",
+    "down"
+  ],
+  "result": "witchery:alohomora"
+}

@@ -1,0 +1,53 @@
+{
+  "conditions": [
+    {
+      "type": "witchery:thunder"
+    }
+  ],
+  "sacrifices": {
+    "items": [
+      {
+        "ingredient": {
+          "item": "witchery:bound_taglock_kit"
+        },
+        "identifier": "taglock"
+      },
+      {
+        "ingredient": {
+          "item": "witchery:horned_one_exhale"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "minecraft:poisonous_potato"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "minecraft:sugar"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:grotesque_brew"
+        }
+      }
+    ],
+    "power": 2000.0
+  },
+  "circles": [
+    {
+      "glyph": "witchery:infernal_circle_glyph",
+      "size": 2
+    }
+  ],
+  "sorting": {
+    "left": "witchery:misfortune_curse",
+    "right": "witchery:sinking_curse"
+  },
+  "result": {
+    "type": "witchery:curse",
+    "curse": "witchery:insanity",
+    "target": "taglock"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "witchery:symbol_effect",
+  "default": true,
+  "strokes": [
+    "left",
+    "left",
+    "up",
+    "up",
+    "right"
+  ],
+  "result": "witchery:confundus"
+}

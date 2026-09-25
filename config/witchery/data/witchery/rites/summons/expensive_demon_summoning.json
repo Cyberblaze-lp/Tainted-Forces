@@ -1,0 +1,53 @@
+{
+  "sacrifices": {
+    "items": [
+      {
+        "ingredient": {
+          "item": "witchery:refined_evil"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "minecraft:blaze_rod"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "minecraft:ender_pearl"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:attuned_stone"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:charged_attuned_stone"
+        },
+        "returns": {
+          "type": "witchery:copy_data",
+          "item": "witchery:attuned_stone"
+        }
+      }
+    ],
+    "power": 3000.0
+  },
+  "circles": [
+    {
+      "glyph": "witchery:infernal_circle_glyph",
+      "size": 3
+    }
+  ],
+  "sorting": {
+    "left": "witchery:demon_summoning",
+    "right": "witchery:wither_summoning"
+  },
+  "name_type": "by_path",
+  "name_path": "demon_summoning",
+  "result": {
+    "type": "witchery:entity_summoning",
+    "entity": "witchery:demon",
+    "persistent": true
+  }
+}

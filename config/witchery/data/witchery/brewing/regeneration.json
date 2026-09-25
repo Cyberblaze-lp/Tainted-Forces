@@ -1,0 +1,10 @@
+{
+  "type": "witchery:effect",
+  "item": "minecraft:ghast_tear",
+  "power_cost": 200,
+  "capacity_required": 2,
+  "effect": "witchery:potion",
+  "potion": "minecraft:regeneration",
+  "inverted_potion": "minecraft:poison",
+  "duration": 900
+}

@@ -1,0 +1,10 @@
+{
+  "type": "witchery:symbol_effect",
+  "default": true,
+  "strokes": [
+    "down",
+    "down",
+    "up"
+  ],
+  "result": "witchery:protego"
+}

@@ -1,0 +1,78 @@
+{
+  "form": "witchery:wolf",
+  "trait": "witchery:lycanthropy",
+  "width": 0.6,
+  "height": 0.8,
+  "step_height": 1.0,
+  "eye_height": 0.68,
+  "wears_armor": false,
+  "howling": true,
+  "stats": [
+    {
+      "level": 0,
+      "damage_cap": 4.0
+    },
+    {
+      "level": 1,
+      "damage": 2.3,
+      "fall": 2,
+      "speed": 0.5,
+      "jump": 0.2,
+      "leap": 0.2
+    },
+    {
+      "level": 2,
+      "damage_cap": 3.0
+    },
+    {
+      "level": 3,
+      "damage": 4.6,
+      "speed": 0.75,
+      "leap": 0.3
+    },
+    {
+      "level": 4,
+      "fall": 3,
+      "leap": 0.4
+    },
+    {
+      "level": 5,
+      "damage_cap": 2.0,
+      "leap": 0.5
+    },
+    {
+      "level": 6,
+      "resistance": 1.0,
+      "speed": 1.0,
+      "leap": 0.6
+    },
+    {
+      "level": 7,
+      "health": 4,
+      "speed": 1.25,
+      "fall": 4,
+      "jump": 0.3,
+      "leap": 0.7
+    },
+    {
+      "level": 8,
+      "health": 8,
+      "damage": 6.9,
+      "resistance": 2.0,
+      "speed": 1.5,
+      "leap": 0.8
+    },
+    {
+      "level": 9,
+      "health": 12,
+      "resistance": 3.0,
+      "speed": 1.75,
+      "fall": 5,
+      "leap": 0.9
+    },
+    {
+      "level": 10,
+      "leap": 1.0
+    }
+  ]
+}

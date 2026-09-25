@@ -1,0 +1,14 @@
+{
+  "sacrifice_charges": 2,
+  "abilities": [
+    {
+      "type": "witchery:potion",
+      "potion": "minecraft:instant_health",
+      "duration": 10
+    },
+    {
+      "type": "witchery:sound",
+      "sound": "minecraft:block.fire.extinguish"
+    }
+  ]
+}

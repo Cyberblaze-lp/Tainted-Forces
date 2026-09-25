@@ -1,0 +1,21 @@
+{
+  "type": "witchery:distillery",
+  "primary_ingredient": {
+    "item": "minecraft:diamond"
+  },
+  "secondary_ingredient": {
+    "item": "witchery:vitriol_oil"
+  },
+  "clay_jars": 3,
+  "result": [
+    {
+      "item": "witchery:diamond_vapor"
+    },
+    {
+      "item": "witchery:diamond_vapor"
+    },
+    {
+      "item": "witchery:purity_odor"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "type": "witchery:effect",
+  "item": "witchery:mellifluous_hunger",
+  "power_cost": 10000,
+  "capacity_required": 4,
+  "effect": "witchery:curse",
+  "potion": "witchery:waking_nightmare",
+  "duration": 3600
+}

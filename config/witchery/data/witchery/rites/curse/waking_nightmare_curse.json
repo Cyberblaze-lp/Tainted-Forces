@@ -1,0 +1,58 @@
+{
+  "conditions": [
+    {
+      "type": "witchery:thunder"
+    }
+  ],
+  "sacrifices": {
+    "items": [
+      {
+        "ingredient": {
+          "item": "witchery:bound_taglock_kit"
+        },
+        "identifier": "target"
+      },
+      {
+        "ingredient": {
+          "item": "witchery:horned_one_exhale"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:mellifluous_hunger"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:tormented_twine"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "minecraft:diamond"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:grotesque_brew"
+        }
+      }
+    ],
+    "power": 10000.0
+  },
+  "circles": [
+    {
+      "glyph": "witchery:infernal_circle_glyph",
+      "size": 2
+    }
+  ],
+  "sorting": {
+    "left": "witchery:overheating_curse",
+    "right": "witchery:wolf_curse"
+  },
+  "result": {
+    "type": "witchery:curse",
+    "target": "target",
+    "curse": "witchery:waking_nightmare"
+  }
+}

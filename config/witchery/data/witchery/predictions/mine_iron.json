@@ -1,0 +1,13 @@
+{
+  "type": "witchery:mining_fortune",
+  "weight": 8,
+  "fulfillment_duration": 1212,
+  "block": "minecraft:iron_ore",
+  "drop": {
+    "item": "minecraft:iron_ore"
+  },
+  "extra": {
+    "min": 8,
+    "max": 20
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "type": "witchery:capacity",
+  "item": "minecraft:nether_wart",
+  "power_cost": 50,
+  "increment": 2,
+  "ceiling": 2
+}

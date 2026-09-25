@@ -1,0 +1,7 @@
+{
+  "type": "witchery:power",
+  "item": "witchery:charged_attuned_stone",
+  "power_cost": 150,
+  "increment": 1,
+  "ceiling": 3
+}

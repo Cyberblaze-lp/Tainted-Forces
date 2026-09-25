@@ -1,0 +1,20 @@
+{
+  "type": "witchery:symbol_effect",
+  "default": true,
+  "strokes": [
+    "down",
+    "down",
+    "right",
+    "right",
+    "up",
+    "up",
+    "left",
+    "left",
+    "left",
+    "left",
+    "down",
+    "down",
+    "right"
+  ],
+  "result": "witchery:avada_kedavra"
+}

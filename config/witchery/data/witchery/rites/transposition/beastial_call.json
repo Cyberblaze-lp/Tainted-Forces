@@ -1,0 +1,70 @@
+{
+  "sacrifices": {
+    "items": [
+      {
+        "ingredient": {
+          "item": "minecraft:milk_bucket"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "minecraft:hay_block"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "minecraft:apple"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "minecraft:beef"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "minecraft:fish",
+          "data": 0
+        }
+      },
+      {
+        "ingredient": {
+          "item": "minecraft:red_mushroom"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "minecraft:carrot"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "minecraft:wheat_seeds"
+        }
+      }
+    ],
+    "power": 6000.0
+  },
+  "circles": [
+    {
+      "glyph": "witchery:otherwhere_circle_glyph",
+      "size": 3
+    }
+  ],
+  "sorting": {
+    "left": "witchery:ore_transposition",
+    "right": "witchery:manifestation"
+  },
+  "result": {
+    "type": "witchery:beastial_call",
+    "entities": [
+      "minecraft:pig",
+      "minecraft:chicken",
+      "minecraft:cow",
+      "minecraft:sheep",
+      "minecraft:mooshroom",
+      "minecraft:wolf",
+      "minecraft:ocelot"
+    ]
+  }
+}

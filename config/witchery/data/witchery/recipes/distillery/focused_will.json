@@ -1,0 +1,26 @@
+{
+  "type": "witchery:distillery",
+  "primary_ingredient": {
+    "item": "witchery:flowing_spirit_brew"
+  },
+  "secondary_ingredient": {
+    "item": "witchery:vitriol_oil"
+  },
+  "clay_jars": 2,
+  "result": [
+    {
+      "item": "witchery:focused_will"
+    },
+    {
+      "item": "witchery:condensed_fear"
+    },
+    {
+      "item": "witchery:hollow_tears_brew",
+      "count": 4
+    },
+    {
+      "item": "witchery:hollow_tears_brew",
+      "count": 4
+    }
+  ]
+}

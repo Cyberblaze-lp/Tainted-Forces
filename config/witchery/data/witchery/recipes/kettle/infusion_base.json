@@ -1,0 +1,28 @@
+{
+  "type": "witchery:kettle",
+  "power_required": 3000.0,
+  "ingredients": [
+    {
+      "item": "witchery:redstone_soup"
+    },
+    {
+      "item": "witchery:flowing_spirit_brew"
+    },
+    {
+      "item": "witchery:rebirth_hint"
+    },
+    {
+      "item": "witchery:mandrake_root"
+    },
+    {
+      "item": "witchery:bat_wool"
+    },
+    {
+      "item": "witchery:wild_bramble"
+    }
+  ],
+  "result": {
+    "item": "witchery:infused_brew_base",
+    "count": 2
+  }
+}

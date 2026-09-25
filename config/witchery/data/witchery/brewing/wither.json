@@ -1,0 +1,9 @@
+{
+  "type": "witchery:effect",
+  "item": "minecraft:skull,1",
+  "power_cost": 200,
+  "capacity_required": 4,
+  "effect": "witchery:potion",
+  "potion": "minecraft:wither",
+  "duration": 300
+}

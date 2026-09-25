@@ -1,0 +1,9 @@
+{
+  "type": "witchery:effect",
+  "item": "witchery:frogs_toe",
+  "power_cost": 500,
+  "capacity_required": 4,
+  "effect": "witchery:potion",
+  "potion": "witchery:frogs_leg",
+  "duration": 7200
+}

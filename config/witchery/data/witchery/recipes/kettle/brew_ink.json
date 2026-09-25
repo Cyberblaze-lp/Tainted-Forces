@@ -1,0 +1,29 @@
+{
+  "type": "witchery:kettle",
+  "hat_bonus": 1,
+  "ingredients": [
+    {
+      "item": "minecraft:dye",
+      "data": 0
+    },
+    {
+      "item": "witchery:quicklime"
+    },
+    {
+      "item": "witchery:vitriol_oil"
+    },
+    {
+      "item": "minecraft:slime_ball"
+    },
+    {
+      "item": "witchery:belladonna_flower"
+    },
+    {
+      "item": "witchery:rowan_berries"
+    }
+  ],
+  "result": {
+    "item": "witchery:ink_brew",
+    "count": 3
+  }
+}

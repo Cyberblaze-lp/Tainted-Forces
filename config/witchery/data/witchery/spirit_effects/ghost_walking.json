@@ -1,0 +1,8 @@
+{
+  "ghosts": {
+    "witchery:spirit": 3,
+    "witchery:spectre": 1,
+    "witchery:banshee": 1
+  },
+  "result": "witchery:ghost_walking"
+}

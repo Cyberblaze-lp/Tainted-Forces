@@ -1,0 +1,11 @@
+{
+  "type": "witchery:symbol_effect",
+  "strokes": [
+    "left",
+    "left",
+    "left",
+    "right",
+    "right"
+  ],
+  "result": "witchery:impedimenta"
+}

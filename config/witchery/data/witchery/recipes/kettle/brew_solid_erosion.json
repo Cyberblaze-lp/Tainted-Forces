@@ -1,0 +1,29 @@
+{
+  "type": "witchery:kettle",
+  "hat_bonus": 1,
+  "power_required": 2000.0,
+  "ingredients": [
+    {
+      "item": "witchery:erosion_brew"
+    },
+    {
+      "item": "witchery:foul_fume"
+    },
+    {
+      "item": "witchery:purity_odor"
+    },
+    {
+      "item": "witchery:mutandis"
+    },
+    {
+      "item": "witchery:wood_ash"
+    },
+    {
+      "item": "witchery:spanish_moss"
+    }
+  ],
+  "result": {
+    "item": "witchery:solidifying_erosion_brew",
+    "count": 3
+  }
+}

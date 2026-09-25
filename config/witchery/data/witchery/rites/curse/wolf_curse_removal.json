@@ -1,0 +1,59 @@
+{
+  "conditions": [
+    {
+      "type": "witchery:night"
+    }
+  ],
+  "sacrifices": {
+    "items": [
+      {
+        "ingredient": {
+          "item": "witchery:bound_taglock_kit"
+        },
+        "identifier": "target"
+      },
+      {
+        "ingredient": {
+          "item": "witchery:goddess_breath"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:silver_sword",
+          "data": 32767
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:wolfsbane"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "minecraft:diamond"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:love_brew"
+        }
+      }
+    ],
+    "power": 10000.0
+  },
+  "circles": [
+    {
+      "glyph": "witchery:ritual_circle_glyph",
+      "size": 1
+    }
+  ],
+  "sorting": {
+    "left": "witchery:waking_nightmare_curse_removal",
+    "right": "witchery:vampirism_curse_removal"
+  },
+  "result": {
+    "type": "witchery:wolf_curse",
+    "target": "target",
+    "remove": true
+  }
+}

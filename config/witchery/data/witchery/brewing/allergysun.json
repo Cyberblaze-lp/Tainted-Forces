@@ -1,0 +1,9 @@
+{
+  "type": "witchery:effect",
+  "item": "minecraft:fish,1",
+  "power_cost": 1000,
+  "capacity_required": 6,
+  "effect": "witchery:potion",
+  "potion": "witchery:undeads_curse",
+  "duration": 1200
+}

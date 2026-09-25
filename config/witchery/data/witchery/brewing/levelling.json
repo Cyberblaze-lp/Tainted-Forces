@@ -1,0 +1,8 @@
+{
+  "type": "witchery:effect",
+  "item": "minecraft:netherrack",
+  "power_cost": 200,
+  "capacity_required": 2,
+  "group": 2,
+  "effect": "witchery:levelling"
+}

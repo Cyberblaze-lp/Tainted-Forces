@@ -1,0 +1,33 @@
+{
+  "type": "witchery:cauldron",
+  "group": "end_stone",
+  "ingredients": [
+    {
+      "ingredient": {
+        "item": "witchery:mandrake_root"
+      }
+    },
+    {
+      "ingredient": {
+        "item": "minecraft:stone",
+        "data": 0
+      }
+    },
+    {
+      "ingredient": {
+        "item": "minecraft:end_stone"
+      },
+      "power": 210
+    }
+  ],
+  "trigger_ingredient": {
+    "ingredient": {
+      "item": "witchery:mutandis_extremis"
+    },
+    "power": 2520
+  },
+  "result": {
+    "item": "minecraft:end_stone",
+    "count": 2
+  }
+}

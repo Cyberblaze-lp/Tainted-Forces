@@ -1,0 +1,31 @@
+{
+  "type": "witchery:kettle",
+  "power_required": 3000.0,
+  "ingredients": [
+    {
+      "item": "witchery:redstone_soup"
+    },
+    {
+      "type": "minecraft:item_nbt",
+      "item": "minecraft:potion",
+      "nbt": {
+        "Potion": "minecraft:long_strength"
+      }
+    },
+    {
+      "item": "minecraft:diamond"
+    },
+    {
+      "item": "witchery:rowan_sapling"
+    },
+    {
+      "item": "witchery:creeper_heart"
+    },
+    {
+      "item": "witchery:demonic_blood"
+    }
+  ],
+  "result": {
+    "item": "witchery:mystic_unguent"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "witchery:brazier_entity_summoning",
+  "ingredients": [
+    {
+      "item": "witchery:wormwood"
+    },
+    {
+      "item": "witchery:bat_wool"
+    },
+    {
+      "item": "witchery:graveyard_dust"
+    }
+  ],
+  "burn_time": 600,
+  "entity": "witchery:spectre",
+  "extra": "witchery:poltergeist"
+}

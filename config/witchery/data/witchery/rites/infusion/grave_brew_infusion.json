@@ -1,0 +1,53 @@
+{
+  "sacrifices": {
+    "items": [
+      {
+        "ingredient": {
+          "item": "witchery:infused_brew_base"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "minecraft:bone"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:dense_web"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:necromantic_stone"
+        },
+        "returns": {
+          "type": "witchery:self"
+        }
+      }
+    ],
+    "entities": [
+      "minecraft:zombie"
+    ],
+    "power": 3000.0
+  },
+  "circles": [
+    {
+      "glyph": "witchery:ritual_circle_glyph",
+      "size": 1
+    },
+    {
+      "glyph": "witchery:ritual_circle_glyph",
+      "size": 2
+    }
+  ],
+  "sorting": {
+    "left": "witchery:soaring_brew_infusion",
+    "right": "witchery:mirror_infusion"
+  },
+  "result": {
+    "type": "witchery:item_summoning",
+    "stack": {
+      "item": "witchery:infused_grave_brew"
+    }
+  }
+}

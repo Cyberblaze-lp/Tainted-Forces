@@ -1,0 +1,12 @@
+{
+  "type": "witchery:symbol_effect",
+  "default": true,
+  "strokes": [
+    "right",
+    "right",
+    "up",
+    "down",
+    "down"
+  ],
+  "result": "witchery:carnosa_diem"
+}

@@ -1,0 +1,8 @@
+{
+  "type": "witchery:effect",
+  "item": "minecraft:sapling,2",
+  "power_cost": 200,
+  "capacity_required": 2,
+  "group": 3,
+  "effect": "witchery:grow_birch"
+}

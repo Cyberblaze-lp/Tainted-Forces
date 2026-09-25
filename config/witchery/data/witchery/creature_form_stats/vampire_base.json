@@ -1,0 +1,7 @@
+{
+  "trait": "witchery:vampirism",
+  "features": [
+    "sun_damage",
+    "immortality"
+  ]
+}

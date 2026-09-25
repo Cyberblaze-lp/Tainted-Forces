@@ -1,0 +1,56 @@
+{
+  "conditions": [
+    {
+      "type": "witchery:night"
+    }
+  ],
+  "sacrifices": {
+    "items": [
+      {
+        "ingredient": {
+          "item": "witchery:necromantic_stone"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:congealed_spirit"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:condensed_fear"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:spectral_dust"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:boline"
+        },
+        "returns": {
+          "type": "witchery:self"
+        }
+      }
+    ],
+    "power": 6000.0
+  },
+  "circles": [
+    {
+      "glyph": "witchery:ritual_circle_glyph",
+      "size": 1
+    }
+  ],
+  "sorting": {
+    "left": "witchery:necromantic_stone_necromancy",
+    "right": "witchery:prior_incarnation"
+  },
+  "result": {
+    "type": "witchery:item_summoning",
+    "stack": {
+      "item": "witchery:spectral_stone"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "witchery:effect",
+  "item": "minecraft:dye,1",
+  "capacity_required": 1,
+  "group": 2,
+  "has_note": true,
+  "effect": "witchery:tinting",
+  "color": "red"
+}

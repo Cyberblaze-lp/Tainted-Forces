@@ -1,0 +1,9 @@
+{
+  "type": "witchery:effect",
+  "item": "minecraft:rotten_flesh",
+  "power_cost": 2000,
+  "capacity_required": 4,
+  "effect": "witchery:curse",
+  "potion": "witchery:disease",
+  "duration": 3600
+}

@@ -1,0 +1,17 @@
+{
+  "type": "witchery:symbol_effect",
+  "level": 3,
+  "strokes": [
+    "up",
+    "up",
+    "up",
+    "up",
+    "right",
+    "right",
+    "right",
+    "down",
+    "down",
+    "down"
+  ],
+  "result": "witchery:aguamenti"
+}

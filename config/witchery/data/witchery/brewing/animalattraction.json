@@ -1,0 +1,9 @@
+{
+  "type": "witchery:effect",
+  "item": "witchery:golden_heart",
+  "power_cost": 500,
+  "capacity_required": 4,
+  "group": 1,
+  "effect": "witchery:animal_attraction",
+  "invertible": true
+}

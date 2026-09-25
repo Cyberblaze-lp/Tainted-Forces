@@ -1,0 +1,10 @@
+{
+  "type": "witchery:effect",
+  "item": "minecraft:leather",
+  "power_cost": 200,
+  "capacity_required": 2,
+  "group": 1,
+  "effect": "witchery:potion",
+  "potion": "minecraft:jump_boost",
+  "duration": 3600
+}

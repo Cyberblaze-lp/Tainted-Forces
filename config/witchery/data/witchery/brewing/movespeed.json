@@ -1,0 +1,11 @@
+{
+  "type": "witchery:effect",
+  "item": "minecraft:sugar",
+  "power_cost": 100,
+  "capacity_required": 2,
+  "effect": "witchery:potion",
+  "potion": "minecraft:speed",
+  "inverted_potion": "minecraft:slowness",
+  "duration": 3600,
+  "inverted_duration": 1800
+}

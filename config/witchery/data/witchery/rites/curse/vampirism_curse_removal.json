@@ -1,0 +1,52 @@
+{
+  "sacrifices": {
+    "items": [
+      {
+        "ingredient": {
+          "item": "witchery:bound_taglock_kit"
+        },
+        "identifier": "target"
+      },
+      {
+        "ingredient": {
+          "item": "witchery:goddess_breath"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:silver_sword",
+          "data": 32767
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:garlic"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "minecraft:diamond"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:love_brew"
+        }
+      }
+    ],
+    "power": 10000.0
+  },
+  "circles": [
+    {
+      "glyph": "witchery:ritual_circle_glyph",
+      "size": 1
+    }
+  ],
+  "sorting": {
+    "left": "witchery:wolf_curse_removal"
+  },
+  "result": {
+    "type": "witchery:vampirism_curse_removal",
+    "target": "target"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "type": "witchery:kettle",
+  "hat_bonus": 1,
+  "ingredients": [
+    {
+      "item": "witchery:vitriol_oil"
+    },
+    {
+      "item": "witchery:vitriol_oil"
+    },
+    {
+      "item": "witchery:quicklime"
+    },
+    {
+      "item": "witchery:belladonna_flower"
+    },
+    {
+      "item": "minecraft:yellow_flower",
+      "data": 0
+    },
+    {
+      "item": "minecraft:magma_cream"
+    }
+  ],
+  "result": {
+    "item": "witchery:erosion_brew",
+    "count": 3
+  }
+}

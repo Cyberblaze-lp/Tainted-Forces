@@ -1,0 +1,17 @@
+{
+  "type": "witchery:brazier_effect",
+  "ingredients": [
+    {
+      "item": "minecraft:ender_pearl"
+    },
+    {
+      "item": "minecraft:spider_eye"
+    },
+    {
+      "item": "minecraft:blaze_rod"
+    }
+  ],
+  "burn_time": 12000,
+  "effect": "minecraft:invisibility",
+  "radius": 6
+}

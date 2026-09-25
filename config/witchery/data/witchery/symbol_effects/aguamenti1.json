@@ -1,0 +1,12 @@
+{
+  "type": "witchery:symbol_effect",
+  "strokes": [
+    "up",
+    "up",
+    "right",
+    "right",
+    "right",
+    "down"
+  ],
+  "result": "witchery:aguamenti"
+}

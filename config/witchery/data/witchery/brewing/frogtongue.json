@@ -1,0 +1,8 @@
+{
+  "type": "witchery:effect",
+  "item": "minecraft:slime_ball",
+  "power_cost": 150,
+  "capacity_required": 2,
+  "group": 2,
+  "effect": "witchery:frogs_tongue"
+}

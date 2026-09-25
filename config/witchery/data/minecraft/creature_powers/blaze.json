@@ -1,0 +1,11 @@
+{
+  "abilities": [
+    {
+      "type": "witchery:small_fireballs",
+      "count": 3
+    },
+    {
+      "type": "witchery:fire_protection"
+    }
+  ]
+}

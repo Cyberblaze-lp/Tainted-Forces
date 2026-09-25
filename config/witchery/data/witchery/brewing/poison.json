@@ -1,0 +1,8 @@
+{
+  "type": "witchery:effect",
+  "item": "minecraft:spider_eye",
+  "capacity_required": 2,
+  "effect": "witchery:potion",
+  "potion": "minecraft:poison",
+  "duration": 900
+}

@@ -1,0 +1,43 @@
+{
+  "sacrifices": {
+    "items": [
+      {
+        "ingredient": {
+          "item": "witchery:spectral_stone"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:spectral_dust"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:boline"
+        },
+        "returns": {
+          "type": "witchery:self"
+        }
+      }
+    ],
+    "power": 5000.0
+  },
+  "circles": [
+    {
+      "glyph": "witchery:ritual_circle_glyph",
+      "size": 2
+    }
+  ],
+  "sorting": {
+    "left": "witchery:familiar_binding",
+    "right": "witchery:fetish_binding"
+  },
+  "result": {
+    "type": "witchery:spectral_binding",
+    "entities": [
+      "witchery:banshee",
+      "witchery:poltergeist",
+      "witchery:spectre"
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "witchery:symbol_effect",
+  "strokes": [
+    "left",
+    "left",
+    "down",
+    "down",
+    "down",
+    "right"
+  ],
+  "result": "witchery:colloportus"
+}

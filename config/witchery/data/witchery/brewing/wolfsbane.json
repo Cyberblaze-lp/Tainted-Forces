@@ -1,0 +1,9 @@
+{
+  "type": "witchery:effect",
+  "item": "witchery:wolfsbane",
+  "capacity_required": 1,
+  "group": 2,
+  "effect": "witchery:potion",
+  "potion": "witchery:wolfsbane",
+  "duration": 1200
+}

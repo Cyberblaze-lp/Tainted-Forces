@@ -1,0 +1,11 @@
+{
+  "type": "witchery:effect",
+  "item": "witchery:luck_drop",
+  "power_cost": 5000,
+  "capacity_required": 4,
+  "effect": "witchery:curse",
+  "potion": "witchery:decanting",
+  "inverted_potion": "witchery:insanity",
+  "duration": 7200,
+  "inverted_duration": 3600
+}

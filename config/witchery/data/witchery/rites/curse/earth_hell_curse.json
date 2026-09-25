@@ -1,0 +1,64 @@
+{
+  "conditions": [
+    {
+      "type": "witchery:overworld"
+    },
+    {
+      "type": "witchery:night"
+    }
+  ],
+  "sacrifices": {
+    "items": [
+      {
+        "ingredient": {
+          "item": "witchery:redstone_soup"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:demon_heart"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:waystone"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "minecraft:nether_star"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:bound_waystone"
+        },
+        "action": "witchery:set_location",
+        "optional": true
+      }
+    ],
+    "entities": [
+      "minecraft:villager"
+    ],
+    "power": 5000.0
+  },
+  "circles": [
+    {
+      "glyph": "witchery:infernal_circle_glyph",
+      "size": 1
+    },
+    {
+      "glyph": "witchery:otherwhere_circle_glyph",
+      "size": 2
+    },
+    {
+      "glyph": "witchery:infernal_circle_glyph",
+      "size": 3
+    }
+  ],
+  "sorting": {
+    "left": "witchery:blindness_curse",
+    "right": "witchery:corrupt_poppet_curse"
+  },
+  "result": "witchery:earth_hell_curse"
+}

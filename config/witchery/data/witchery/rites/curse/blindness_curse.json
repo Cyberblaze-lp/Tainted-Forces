@@ -1,0 +1,61 @@
+{
+  "sacrifices": {
+    "items": [
+      {
+        "ingredient": {
+          "item": "witchery:redstone_soup"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:misfortune_reek"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:horned_one_exhale"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:ink_brew"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "minecraft:poisonous_potato"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "minecraft:spider_eye"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "minecraft:diamond"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:charged_attuned_stone"
+        },
+        "returns": {
+          "type": "witchery:copy_data",
+          "item": "witchery:attuned_stone"
+        }
+      }
+    ]
+  },
+  "circles": [
+    {
+      "glyph": "witchery:infernal_circle_glyph",
+      "size": 1
+    }
+  ],
+  "sorting": {
+    "left": "witchery:blight_curse",
+    "right": "witchery:earth_hell_curse"
+  },
+  "result": "witchery:blindness_curse"
+}

@@ -1,0 +1,9 @@
+{
+  "type": "witchery:effect",
+  "item": "witchery:demon_heart",
+  "power_cost": 750,
+  "capacity_required": 4,
+  "effect": "witchery:potion",
+  "potion": "witchery:paralysed",
+  "duration": 200
+}

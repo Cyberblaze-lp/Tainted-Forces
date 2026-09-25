@@ -1,0 +1,48 @@
+{
+  "sacrifices": {
+    "items": [
+      {
+        "ingredient": {
+          "item": "witchery:bound_taglock_kit"
+        },
+        "identifier": "target"
+      },
+      {
+        "ingredient": {
+          "item": "witchery:goddess_breath"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "minecraft:golden_carrot"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:tormented_twine"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:love_brew"
+        }
+      }
+    ],
+    "power": 2000.0
+  },
+  "circles": [
+    {
+      "glyph": "witchery:ritual_circle_glyph",
+      "size": 1
+    }
+  ],
+  "sorting": {
+    "left": "witchery:overheating_curse_removal",
+    "right": "witchery:wolf_curse_removal"
+  },
+  "result": {
+    "type": "witchery:curse_removal",
+    "target": "target",
+    "curse": "witchery:waking_nightmare"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "witchery:effect",
+  "item": "minecraft:soul_sand",
+  "power_cost": 4000,
+  "capacity_required": 4,
+  "effect": "witchery:potion",
+  "potion": "witchery:grues_prey",
+  "duration": 2400
+}

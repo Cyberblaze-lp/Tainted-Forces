@@ -1,0 +1,14 @@
+{
+  "type": "witchery:symbol_effect",
+  "level": 2,
+  "strokes": [
+    "right",
+    "right",
+    "right",
+    "right",
+    "left",
+    "left",
+    "left"
+  ],
+  "result": "witchery:flipendo"
+}

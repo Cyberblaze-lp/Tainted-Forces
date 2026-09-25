@@ -1,0 +1,23 @@
+{
+  "type": "witchery:distillery",
+  "primary_ingredient": {
+    "item": "minecraft:ender_pearl"
+  },
+  "clay_jars": 6,
+  "result": [
+    {
+      "item": "witchery:ender_dew",
+      "count": 2
+    },
+    {
+      "item": "witchery:ender_dew",
+      "count": 2
+    },
+    {
+      "item": "witchery:ender_dew"
+    },
+    {
+      "item": "witchery:magic_whiff"
+    }
+  ]
+}

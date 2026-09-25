@@ -1,0 +1,13 @@
+{
+  "type": "witchery:symbol_effect",
+  "strokes": [
+    "left",
+    "left",
+    "left",
+    "left",
+    "up",
+    "down",
+    "down"
+  ],
+  "result": "witchery:ignianima"
+}

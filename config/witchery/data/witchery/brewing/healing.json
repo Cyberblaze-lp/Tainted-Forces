@@ -1,0 +1,11 @@
+{
+  "type": "witchery:effect",
+  "item": "minecraft:speckled_melon",
+  "power_cost": 200,
+  "capacity_required": 2,
+  "effect": "witchery:potion",
+  "potion": "minecraft:instant_health",
+  "inverted_potion": "minecraft:instant_damage",
+  "duration": 0,
+  "power_limit": 1
+}

@@ -1,0 +1,59 @@
+{
+  "sacrifices": {
+    "items": [
+      {
+        "ingredient": {
+          "item": "minecraft:dye",
+          "data": 15
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:rebirth_hint"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:diamond_vapor"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:quicklime"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:gypsum"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:mutandis_extremis"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:charged_attuned_stone"
+        },
+        "returns": {
+          "type": "witchery:copy_data",
+          "item": "witchery:attuned_stone"
+        }
+      }
+    ]
+  },
+  "circles": [
+    {
+      "glyph": "witchery:ritual_circle_glyph",
+      "size": 1
+    }
+  ],
+  "sorting": {
+    "left": "witchery:fertility",
+    "right": "witchery:natures_power"
+  },
+  "name_type": "by_path",
+  "name_path": "fertility",
+  "result": "witchery:fertility"
+}

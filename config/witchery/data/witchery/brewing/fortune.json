@@ -1,0 +1,9 @@
+{
+  "type": "witchery:effect",
+  "item": "minecraft:clay_ball",
+  "power_cost": 1000,
+  "capacity_required": 6,
+  "effect": "witchery:potion",
+  "potion": "witchery:fortune",
+  "duration": 3600
+}

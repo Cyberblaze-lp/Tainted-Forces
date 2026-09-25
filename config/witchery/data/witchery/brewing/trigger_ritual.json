@@ -1,0 +1,5 @@
+{
+  "type": "witchery:trigger_ritual",
+  "item": "witchery:dog_tongue",
+  "power_cost": 250
+}

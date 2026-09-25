@@ -1,0 +1,59 @@
+{
+  "conditions": [
+    {
+      "type": "witchery:night"
+    }
+  ],
+  "sacrifices": {
+    "items": [
+      {
+        "ingredient": {
+          "item": "witchery:attuned_stone"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "minecraft:bone"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "minecraft:rotten_flesh"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:wood_ash"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "minecraft:iron_sword",
+          "data": 32767
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:spectral_dust"
+        }
+      }
+    ],
+    "power": 1000.0
+  },
+  "circles": [
+    {
+      "glyph": "witchery:ritual_circle_glyph",
+      "size": 1
+    }
+  ],
+  "sorting": {
+    "left": "witchery:mirror_infusion",
+    "right": "witchery:spectral_stone_necromancy"
+  },
+  "result": {
+    "type": "witchery:item_summoning",
+    "stack": {
+      "item": "witchery:necromantic_stone"
+    }
+  }
+}

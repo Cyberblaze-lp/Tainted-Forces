@@ -1,0 +1,8 @@
+{
+  "type": "witchery:effect",
+  "item": "minecraft:waterlily",
+  "power_cost": 200,
+  "capacity_required": 1,
+  "group": 2,
+  "effect": "witchery:lilify"
+}

@@ -1,0 +1,13 @@
+{
+  "type": "witchery:symbol_effect",
+  "level": 2,
+  "strokes": [
+    "down",
+    "left",
+    "down",
+    "down",
+    "down",
+    "right"
+  ],
+  "result": "witchery:crucio"
+}

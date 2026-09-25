@@ -1,0 +1,17 @@
+{
+  "type": "witchery:symbol_effect",
+  "level": 2,
+  "strokes": [
+    "up",
+    "up",
+    "up",
+    "up",
+    "left",
+    "left",
+    "down",
+    "down",
+    "down",
+    "right"
+  ],
+  "result": "witchery:defodio"
+}

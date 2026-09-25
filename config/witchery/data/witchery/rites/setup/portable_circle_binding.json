@@ -1,0 +1,44 @@
+{
+  "sacrifices": {
+    "items": [
+      {
+        "ingredient": {
+          "item": "witchery:circle_talisman"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "minecraft:glowstone_dust"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:charged_attuned_stone"
+        },
+        "returns": {
+          "type": "witchery:copy_data",
+          "item": "witchery:attuned_stone"
+        }
+      }
+    ]
+  },
+  "sorting": {
+    "left": "witchery:circle_binding",
+    "right": "witchery:waystone_binding"
+  },
+  "name_type": "by_path",
+  "name_path": "circle_binding",
+  "result": {
+    "type": "witchery:item_summoning",
+    "stack": {
+      "item": "witchery:circle_talisman",
+      "actions": [
+        "witchery:circle_binding"
+      ]
+    },
+    "particles": "portal",
+    "particle_offset": 3,
+    "position": 0.05,
+    "motion": 0
+  }
+}

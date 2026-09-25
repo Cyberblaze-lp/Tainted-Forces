@@ -1,0 +1,30 @@
+{
+  "sacrifices": {
+    "items": [
+      {
+        "ingredient": {
+          "item": "witchery:infernal_animus"
+        }
+      }
+    ],
+    "power": 4000.0
+  },
+  "circles": [
+    {
+      "glyph": "witchery:infernal_circle_glyph",
+      "size": 1
+    },
+    {
+      "glyph": "witchery:infernal_circle_glyph",
+      "size": 2
+    }
+  ],
+  "sorting": {
+    "left": "witchery:otherwhere_infusion",
+    "right": "witchery:sky_broom_infusion"
+  },
+  "result": {
+    "type": "witchery:infuse_player",
+    "infusion": "witchery:infernal"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "witchery:brazier_graveyard_mist",
+  "ingredients": [
+    {
+      "item": "minecraft:gunpowder"
+    },
+    {
+      "item": "witchery:quicklime"
+    },
+    {
+      "item": "minecraft:glowstone_dust"
+    }
+  ]
+}

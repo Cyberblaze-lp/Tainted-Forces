@@ -1,0 +1,7 @@
+{
+  "type": "witchery:effect",
+  "item": "witchery:silver_deposits",
+  "power_cost": 1000,
+  "capacity_required": 4,
+  "effect": "witchery:harm_werewolves"
+}

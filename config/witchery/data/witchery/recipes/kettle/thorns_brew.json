@@ -1,0 +1,30 @@
+{
+  "type": "witchery:kettle",
+  "hat_bonus": 1,
+  "ingredients": [
+    {
+      "item": "minecraft:dye",
+      "data": 2
+    },
+    {
+      "item": "minecraft:brown_mushroom"
+    },
+    {
+      "item": "witchery:vitriol_oil"
+    },
+    {
+      "item": "witchery:purity_odor"
+    },
+    {
+      "item": "minecraft:red_flower",
+      "data": 0
+    },
+    {
+      "item": "witchery:mandrake_root"
+    }
+  ],
+  "result": {
+    "item": "witchery:thorns_brew",
+    "count": 3
+  }
+}

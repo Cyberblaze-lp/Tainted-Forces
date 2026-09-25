@@ -1,0 +1,9 @@
+{
+  "ghosts": {
+    "witchery:spectre": 5,
+    "witchery:banshee": 5,
+    "witchery:poltergeist": 5
+  },
+  "hidden": true,
+  "result": "witchery:death"
+}

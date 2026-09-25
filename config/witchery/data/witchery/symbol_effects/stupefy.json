@@ -1,0 +1,13 @@
+{
+  "type": "witchery:symbol_effect",
+  "default": true,
+  "strokes": [
+    "right",
+    "right",
+    "up",
+    "left",
+    "up",
+    "right"
+  ],
+  "result": "witchery:stupefy"
+}

@@ -1,0 +1,33 @@
+{
+  "type": "witchery:cauldron",
+  "group": "otherwhere_circle_glyph",
+  "ingredients": [
+    {
+      "ingredient": {
+        "item": "minecraft:nether_wart"
+      },
+      "power": 70
+    },
+    {
+      "ingredient": {
+        "item": "witchery:goddess_tear"
+      },
+      "power": 140
+    },
+    {
+      "ingredient": {
+        "item": "minecraft:ender_pearl"
+      },
+      "power": 1400
+    }
+  ],
+  "trigger_ingredient": {
+    "ingredient": {
+      "item": "witchery:ritual_circle_glyph"
+    },
+    "power": 2800
+  },
+  "result": {
+    "item": "witchery:otherwhere_circle_glyph"
+  }
+}

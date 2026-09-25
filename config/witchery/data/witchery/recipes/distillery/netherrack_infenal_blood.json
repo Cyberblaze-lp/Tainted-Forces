@@ -1,0 +1,21 @@
+{
+  "type": "witchery:distillery",
+  "primary_ingredient": {
+    "item": "witchery:demon_heart"
+  },
+  "secondary_ingredient": {
+    "item": "minecraft:netherrack"
+  },
+  "clay_jars": 2,
+  "result": [
+    {
+      "item": "minecraft:soul_sand"
+    },
+    {
+      "item": "witchery:demonic_blood"
+    },
+    {
+      "item": "witchery:demonic_blood"
+    }
+  ]
+}

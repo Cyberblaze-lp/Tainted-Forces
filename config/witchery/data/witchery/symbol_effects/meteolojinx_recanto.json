@@ -1,0 +1,18 @@
+{
+  "type": "witchery:symbol_effect",
+  "default": true,
+  "strokes": [
+    "up",
+    "up",
+    "up",
+    "right",
+    "right",
+    "down",
+    "up",
+    "right",
+    "right",
+    "down",
+    "down"
+  ],
+  "result": "witchery:meteolojinx_recanto"
+}

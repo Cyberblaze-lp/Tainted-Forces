@@ -1,0 +1,46 @@
+{
+  "conditions": [
+    {
+      "type": "witchery:night"
+    }
+  ],
+  "sacrifices": {
+    "items": [
+      {
+        "ingredient": {
+          "item": "witchery:quartz_sphere"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "minecraft:gold_ingot"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:happenstance_oil"
+        }
+      }
+    ],
+    "power": 2000.0
+  },
+  "circles": [
+    {
+      "glyph": "witchery:ritual_circle_glyph",
+      "size": 2
+    }
+  ],
+  "sorting": {
+    "left": "witchery:sky_broom_infusion",
+    "right": "witchery:seer_stone_infusion"
+  },
+  "result": [
+    {
+      "type": "witchery:item_summoning",
+      "stack": {
+        "item": "witchery:crystal_ball"
+      }
+    },
+    "witchery:set_fortune_teller"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "type": "witchery:cauldron",
+  "group": "heart_circle_glyph",
+  "ingredients": [
+    {
+      "ingredient": {
+        "item": "witchery:mandrake_root"
+      }
+    },
+    {
+      "ingredient": {
+        "item": "minecraft:gold_nugget"
+      },
+      "power": 70
+    }
+  ],
+  "trigger_ingredient": {
+    "ingredient": {
+      "item": "witchery:ritual_circle_glyph"
+    },
+    "power": 2800
+  },
+  "result": {
+    "item": "witchery:heart_circle_glyph"
+  }
+}

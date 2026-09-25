@@ -1,0 +1,49 @@
+{
+  "sacrifices": {
+    "items": [
+      {
+        "ingredient": {
+          "item": "witchery:bound_taglock_kit"
+        },
+        "identifier": "target"
+      },
+      {
+        "ingredient": {
+          "item": "witchery:goddess_breath"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "minecraft:dye",
+          "data": 15
+        }
+      },
+      {
+        "ingredient": {
+          "item": "minecraft:nether_wart"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:depths_brew"
+        }
+      }
+    ],
+    "power": 2000.0
+  },
+  "circles": [
+    {
+      "glyph": "witchery:ritual_circle_glyph",
+      "size": 1
+    }
+  ],
+  "sorting": {
+    "left": "witchery:insanity_curse_removal",
+    "right": "witchery:overheating_curse_removal"
+  },
+  "result": {
+    "type": "witchery:curse_removal",
+    "target": "target",
+    "curse": "witchery:sinking"
+  }
+}

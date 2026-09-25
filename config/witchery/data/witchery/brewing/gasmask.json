@@ -1,0 +1,9 @@
+{
+  "type": "witchery:effect",
+  "item": "minecraft:gravel",
+  "power_cost": 100,
+  "capacity_required": 2,
+  "effect": "witchery:potion",
+  "potion": "witchery:gas_mask",
+  "duration": 1800
+}

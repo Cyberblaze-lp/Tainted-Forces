@@ -1,0 +1,17 @@
+{
+  "type": "witchery:spinning_wheel",
+  "fibre": {
+    "ingredient": {
+      "item": "minecraft:hay_block"
+    }
+  },
+  "modifiers": [
+    {
+      "item": "witchery:magic_whiff"
+    }
+  ],
+  "result": {
+    "item": "witchery:golden_thread",
+    "count": 3
+  }
+}

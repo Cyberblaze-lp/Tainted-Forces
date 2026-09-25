@@ -1,0 +1,7 @@
+{
+  "type": "witchery:effect",
+  "item": "minecraft:quartz",
+  "power_cost": 2000,
+  "capacity_required": 4,
+  "effect": "witchery:raise_land"
+}

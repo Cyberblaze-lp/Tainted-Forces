@@ -1,0 +1,8 @@
+{
+  "type": "witchery:effect",
+  "item": "witchery:misfortune_reek",
+  "power_cost": 250,
+  "capacity_required": 2,
+  "group": 3,
+  "effect": "witchery:cure_buffs"
+}

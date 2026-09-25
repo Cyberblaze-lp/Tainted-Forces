@@ -1,0 +1,42 @@
+{
+  "sacrifices": {
+    "items": [
+      {
+        "ingredient": {
+          "item": "witchery:refined_evil"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:demonic_blood"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "minecraft:ender_pearl"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:attuned_stone"
+        }
+      }
+    ],
+    "power": 5000.0
+  },
+  "circles": [
+    {
+      "glyph": "witchery:infernal_circle_glyph",
+      "size": 2
+    }
+  ],
+  "sorting": {
+    "left": "witchery:expensive_wither_summoning",
+    "right": "witchery:reflection_summoning"
+  },
+  "result": {
+    "type": "witchery:entity_summoning",
+    "entity": "witchery:imp",
+    "coven_size": 1
+  }
+}

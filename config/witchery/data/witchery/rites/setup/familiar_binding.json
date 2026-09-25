@@ -1,0 +1,43 @@
+{
+  "sacrifices": {
+    "items": [
+      {
+        "ingredient": {
+          "item": "witchery:goddess_tear"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:purity_odor"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:magic_whiff"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "minecraft:diamond"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:demonic_blood"
+        }
+      }
+    ],
+    "power": 8000.0
+  },
+  "circles": [
+    {
+      "glyph": "witchery:ritual_circle_glyph",
+      "size": 2
+    }
+  ],
+  "sorting": {
+    "left": "witchery:portable_player_waystone_binding",
+    "right": "witchery:spectral_binding"
+  },
+  "result": "witchery:familiar_binding"
+}

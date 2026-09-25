@@ -1,0 +1,6 @@
+{
+  "type": "witchery:capacity",
+  "item": "witchery:mandrake_root",
+  "increment": 1,
+  "ceiling": 1
+}

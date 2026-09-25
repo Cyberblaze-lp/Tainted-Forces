@@ -1,0 +1,7 @@
+{
+  "ghosts": {
+    "witchery:spirit": 3,
+    "witchery:poltergeist": 2
+  },
+  "result": "witchery:disorientation"
+}

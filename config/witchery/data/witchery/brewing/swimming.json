@@ -1,0 +1,8 @@
+{
+  "type": "witchery:effect",
+  "item": "minecraft:fish",
+  "capacity_required": 1,
+  "effect": "witchery:potion",
+  "potion": "witchery:swim_boost",
+  "duration": 3600
+}

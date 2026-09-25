@@ -1,0 +1,48 @@
+{
+  "sacrifices": {
+    "items": [
+      {
+        "ingredient": {
+          "item": "witchery:worship_statue"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:belladonna_flower"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "minecraft:red_flower",
+          "data": 0
+        }
+      },
+      {
+        "ingredient": {
+          "item": "minecraft:yellow_flower",
+          "data": 0
+        }
+      }
+    ],
+    "power": 4000.0
+  },
+  "circles": [
+    {
+      "glyph": "witchery:ritual_circle_glyph",
+      "size": 1
+    }
+  ],
+  "sorting": {
+    "left": "witchery:fetish_binding",
+    "right": "witchery:attuned_stone_charging"
+  },
+  "result": {
+    "type": "witchery:item_summoning",
+    "stack": {
+      "item": "witchery:worship_statue",
+      "actions": [
+        "witchery:player_binding"
+      ]
+    }
+  }
+}

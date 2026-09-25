@@ -1,0 +1,16 @@
+{
+  "type": "witchery:brazier_effect",
+  "ingredients": [
+    {
+      "item": "witchery:goddess_tear"
+    },
+    {
+      "item": "minecraft:bone"
+    },
+    {
+      "item": "minecraft:blaze_powder"
+    }
+  ],
+  "effect": "minecraft:strength",
+  "height": 4
+}

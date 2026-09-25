@@ -1,0 +1,24 @@
+{
+  "type": "witchery:distillery",
+  "primary_ingredient": {
+    "item": "witchery:diamond_vapor"
+  },
+  "secondary_ingredient": {
+    "item": "minecraft:ghast_tear"
+  },
+  "clay_jars": 3,
+  "result": [
+    {
+      "item": "witchery:purity_odor"
+    },
+    {
+      "item": "witchery:misfortune_reek"
+    },
+    {
+      "item": "witchery:foul_fume"
+    },
+    {
+      "item": "witchery:refined_evil"
+    }
+  ]
+}

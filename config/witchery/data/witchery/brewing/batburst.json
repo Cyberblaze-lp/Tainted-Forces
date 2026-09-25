@@ -1,0 +1,8 @@
+{
+  "type": "witchery:effect",
+  "item": "witchery:concentrated_bat_ball",
+  "power_cost": 1000,
+  "capacity_required": 2,
+  "group": 2,
+  "effect": "witchery:bat_burst"
+}

@@ -1,0 +1,5 @@
+{
+  "type": "witchery:set_color",
+  "item": "minecraft:wool,8",
+  "color": "silver"
+}

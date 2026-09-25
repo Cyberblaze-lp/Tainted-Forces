@@ -1,0 +1,13 @@
+{
+  "abilities": [
+    {
+      "type": "witchery:shoot_arrow"
+    },
+    {
+      "type": "witchery:drown_prevention",
+      "cost": 5,
+      "duration": 600,
+      "air": 30
+    }
+  ]
+}

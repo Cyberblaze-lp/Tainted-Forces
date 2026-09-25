@@ -1,0 +1,18 @@
+{
+  "type": "witchery:symbol_effect",
+  "level": 3,
+  "strokes": [
+    "left",
+    "left",
+    "left",
+    "left",
+    "up",
+    "up",
+    "up",
+    "up",
+    "right",
+    "right",
+    "right"
+  ],
+  "result": "witchery:confundus"
+}

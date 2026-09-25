@@ -1,0 +1,23 @@
+{
+  "type": "witchery:distillery",
+  "primary_ingredient": {
+    "item": "witchery:demon_heart"
+  },
+  "secondary_ingredient": {
+    "item": "witchery:diamond_vapor"
+  },
+  "clay_jars": 4,
+  "result": [
+    {
+      "item": "witchery:demonic_blood",
+      "count": 2
+    },
+    {
+      "item": "witchery:demonic_blood",
+      "count": 2
+    },
+    {
+      "item": "witchery:refined_evil"
+    }
+  ]
+}

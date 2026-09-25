@@ -1,0 +1,38 @@
+{
+  "type": "witchery:cauldron",
+  "group": "luck_drop",
+  "ingredients": [
+    {
+      "ingredient": {
+        "item": "witchery:mandrake_root"
+      }
+    },
+    {
+      "ingredient": {
+        "item": "minecraft:nether_wart"
+      },
+      "power": 70
+    },
+    {
+      "ingredient": {
+        "item": "witchery:goddess_tear"
+      },
+      "power": 140
+    },
+    {
+      "ingredient": {
+        "item": "witchery:refined_evil"
+      },
+      "power": 4200
+    }
+  ],
+  "trigger_ingredient": {
+    "ingredient": {
+      "item": "witchery:mutandis_extremis"
+    },
+    "power": 2520
+  },
+  "result": {
+    "item": "witchery:luck_drop"
+  }
+}

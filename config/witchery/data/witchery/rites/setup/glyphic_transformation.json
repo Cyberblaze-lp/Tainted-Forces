@@ -1,0 +1,25 @@
+{
+  "sacrifices": {
+    "items": [
+      {
+        "ingredient": {
+          "item": "witchery:gypsum"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:arthana"
+        },
+        "returns": {
+          "type": "witchery:self"
+        }
+      }
+    ],
+    "power": 1000.0
+  },
+  "sorting": {
+    "left": "witchery:infusion_charging",
+    "right": "witchery:position_waystone_transposition"
+  },
+  "result": "witchery:glyphic_transformation"
+}

@@ -1,0 +1,49 @@
+{
+  "sacrifices": {
+    "items": [
+      {
+        "ingredient": {
+          "item": "witchery:rowan_sapling"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:plain_wicker_bundle"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:sprouting_brew"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:ent_twig"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:bound_waystone"
+        },
+        "action": "witchery:set_location",
+        "optional": true
+      }
+    ],
+    "power": 4000.0
+  },
+  "circles": [
+    {
+      "glyph": "witchery:ritual_circle_glyph",
+      "size": 2
+    }
+  ],
+  "sorting": {
+    "left": "witchery:jungle_forestation",
+    "right": "witchery:alder_forestation"
+  },
+  "hidden": true,
+  "result": {
+    "type": "witchery:forestation",
+    "state": "witchery:rowan_sapling"
+  }
+}

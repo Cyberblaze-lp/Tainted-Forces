@@ -1,0 +1,7 @@
+{
+  "type": "witchery:effect",
+  "item": "minecraft:string",
+  "capacity_required": 1,
+  "group": 2,
+  "effect": "witchery:felling"
+}

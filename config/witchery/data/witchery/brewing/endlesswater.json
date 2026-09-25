@@ -1,0 +1,9 @@
+{
+  "type": "witchery:effect",
+  "item": "minecraft:snow",
+  "power_cost": 3000,
+  "capacity_required": 2,
+  "group": 3,
+  "has_note": true,
+  "effect": "witchery:endless_water"
+}

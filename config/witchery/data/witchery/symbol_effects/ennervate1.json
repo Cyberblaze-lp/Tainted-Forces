@@ -1,0 +1,18 @@
+{
+  "type": "witchery:symbol_effect",
+  "level": 2,
+  "strokes": [
+    "up",
+    "left",
+    "left",
+    "up",
+    "right",
+    "right",
+    "left",
+    "left",
+    "up",
+    "right",
+    "right"
+  ],
+  "result": "witchery:ennervate"
+}

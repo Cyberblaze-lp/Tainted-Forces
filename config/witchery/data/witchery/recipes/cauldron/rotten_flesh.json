@@ -1,0 +1,13 @@
+{
+  "type": "witchery:cauldron",
+  "group": "rotten_flesh",
+  "trigger_ingredient": {
+    "ingredient": {
+      "item": "witchery:witches_hand"
+    }
+  },
+  "result": {
+    "item": "minecraft:rotten_flesh",
+    "count": 6
+  }
+}

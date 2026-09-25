@@ -1,0 +1,28 @@
+{
+  "sacrifices": {
+    "items": [
+      {
+        "ingredient": {
+          "item": "witchery:bound_waystone"
+        },
+        "identifier": "location_waystone"
+      }
+    ]
+  },
+  "circles": [
+    {
+      "glyph": "witchery:otherwhere_circle_glyph",
+      "size": 1
+    }
+  ],
+  "sorting": {
+    "left": "witchery:glyphic_transformation",
+    "right": "witchery:creature_waystone_transposition"
+  },
+  "name_type": "by_path",
+  "name_path": "waystone_transposition",
+  "result": {
+    "type": "witchery:waystone_transposition",
+    "target": "location_waystone"
+  }
+}

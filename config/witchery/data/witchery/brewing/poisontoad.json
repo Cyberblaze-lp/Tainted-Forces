@@ -1,0 +1,7 @@
+{
+  "type": "witchery:effect",
+  "item": "minecraft:double_plant",
+  "power_cost": 500,
+  "capacity_required": 5,
+  "effect": "witchery:poison_toad"
+}

@@ -1,0 +1,9 @@
+{
+  "type": "witchery:effect",
+  "item": "minecraft:emerald",
+  "power_cost": 2500,
+  "capacity_required": 6,
+  "effect": "witchery:potion",
+  "potion": "witchery:resizing",
+  "duration": 400
+}

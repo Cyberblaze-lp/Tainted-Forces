@@ -1,0 +1,27 @@
+{
+  "type": "witchery:kettle",
+  "power_required": 2000.0,
+  "ingredients": [
+    {
+      "item": "witchery:hollow_tears_brew"
+    },
+    {
+      "item": "witchery:subdued_spirit"
+    },
+    {
+      "item": "witchery:subdued_spirit"
+    },
+    {
+      "item": "witchery:subdued_spirit"
+    },
+    {
+      "item": "witchery:subdued_spirit"
+    },
+    {
+      "item": "witchery:subdued_spirit"
+    }
+  ],
+  "result": {
+    "item": "witchery:congealed_spirit"
+  }
+}

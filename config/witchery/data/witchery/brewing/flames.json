@@ -1,0 +1,8 @@
+{
+  "type": "witchery:effect",
+  "item": "witchery:glint_weed",
+  "power_cost": 750,
+  "capacity_required": 3,
+  "level_group": 4,
+  "effect": "witchery:flames"
+}

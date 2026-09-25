@@ -1,0 +1,18 @@
+{
+  "form": "witchery:player",
+  "trait": "witchery:vampirism",
+  "stats": [
+    {
+      "level": 1,
+      "damage": 2.3
+    },
+    {
+      "level": 4,
+      "damage": 4.6
+    },
+    {
+      "level": 7,
+      "damage": 6.9
+    }
+  ]
+}

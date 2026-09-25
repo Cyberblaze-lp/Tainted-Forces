@@ -1,0 +1,10 @@
+{
+  "abilities": [
+    {
+      "type": "witchery:large_fireballs"
+    },
+    {
+      "type": "witchery:fire_protection"
+    }
+  ]
+}

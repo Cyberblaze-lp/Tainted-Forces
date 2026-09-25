@@ -1,0 +1,9 @@
+{
+  "type": "witchery:effect",
+  "item": "minecraft:fish,3",
+  "power_cost": 100,
+  "capacity_required": 2,
+  "effect": "witchery:potion",
+  "potion": "minecraft:water_breathing",
+  "duration": 3600
+}

@@ -1,0 +1,41 @@
+{
+  "sacrifices": {
+    "items": [
+      {
+        "ingredient": {
+          "item": "minecraft:stone_sword",
+          "data": 32767
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:wood_ash"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:bound_waystone"
+        },
+        "action": "witchery:set_location",
+        "optional": true
+      }
+    ],
+    "power": 2000.0
+  },
+  "circles": [
+    {
+      "glyph": "witchery:ritual_circle_glyph",
+      "size": 1
+    }
+  ],
+  "sorting": {
+    "left": "witchery:sky_wrath",
+    "right": "witchery:portable_sky_wrath"
+  },
+  "result": {
+    "type": "witchery:sky_wrath",
+    "min_radius": 3,
+    "max_radius": 7,
+    "bolts": 18
+  }
+}

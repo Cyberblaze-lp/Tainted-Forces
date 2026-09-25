@@ -1,0 +1,9 @@
+{
+  "type": "witchery:effect",
+  "item": "witchery:magic_whiff",
+  "power_cost": 2000,
+  "capacity_required": 4,
+  "effect": "witchery:potion",
+  "potion": "witchery:absorb_magic",
+  "duration": 1200
+}

@@ -1,0 +1,29 @@
+{
+  "type": "witchery:kettle",
+  "hat_bonus": 1,
+  "power_required": 1000.0,
+  "ingredients": [
+    {
+      "item": "witchery:icy_needle"
+    },
+    {
+      "item": "minecraft:snowball"
+    },
+    {
+      "item": "witchery:artichoke_globe"
+    },
+    {
+      "item": "minecraft:speckled_melon"
+    },
+    {
+      "item": "minecraft:red_mushroom"
+    },
+    {
+      "item": "witchery:purity_odor"
+    }
+  ],
+  "result": {
+    "item": "witchery:ice_brew",
+    "count": 3
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "sacrifices": {
+    "items": [
+      {
+        "ingredient": {
+          "item": "minecraft:stone",
+          "data": 0
+        }
+      },
+      {
+        "ingredient": {
+          "item": "minecraft:magma_cream"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "minecraft:golden_sword",
+          "data": 32767
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:charged_attuned_stone"
+        },
+        "returns": {
+          "type": "witchery:copy_data",
+          "item": "witchery:attuned_stone"
+        }
+      }
+    ]
+  },
+  "circles": [
+    {
+      "glyph": "witchery:infernal_circle_glyph",
+      "size": 1
+    }
+  ],
+  "sorting": {
+    "left": "witchery:earth_wrath",
+    "right": "witchery:sky_wrath"
+  },
+  "name_type": "by_path",
+  "name_path": "earth_wrath",
+  "result": "witchery:earth_wrath"
+}

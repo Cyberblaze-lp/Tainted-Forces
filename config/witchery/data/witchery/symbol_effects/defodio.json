@@ -1,0 +1,11 @@
+{
+  "type": "witchery:symbol_effect",
+  "default": true,
+  "strokes": [
+    "up",
+    "up",
+    "left",
+    "down"
+  ],
+  "result": "witchery:defodio"
+}

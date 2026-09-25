@@ -1,0 +1,17 @@
+{
+  "abilities": [
+    {
+      "type": "witchery:potion",
+      "potion": "minecraft:jump_boost",
+      "duration": 400,
+      "amplifier": 3
+    },
+    {
+      "type": "witchery:sound",
+      "sound": "minecraft:block.fire.extinguish"
+    },
+    {
+      "type": "witchery:jump"
+    }
+  ]
+}

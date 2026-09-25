@@ -1,0 +1,12 @@
+{
+  "abilities": [
+    {
+      "type": "witchery:potion",
+      "potion": "minecraft:night_vision",
+      "duration": 400
+    },
+    {
+      "type": "witchery:fly"
+    }
+  ]
+}

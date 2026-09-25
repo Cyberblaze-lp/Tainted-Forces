@@ -1,0 +1,33 @@
+{
+  "sacrifices": {
+    "items": [
+      {
+        "ingredient": {
+          "item": "witchery:goddess_breath"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:rebirth_hint"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:magic_whiff"
+        }
+      }
+    ],
+    "power": 1000.0
+  },
+  "circles": [
+    {
+      "glyph": "witchery:ritual_circle_glyph",
+      "size": 2
+    }
+  ],
+  "sorting": {
+    "left": "witchery:searching_familiar_summoning",
+    "right": "witchery:light_infusion"
+  },
+  "result": "witchery:familiar_summoning"
+}

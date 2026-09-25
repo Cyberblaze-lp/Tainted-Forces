@@ -1,0 +1,7 @@
+{
+  "type": "witchery:duration",
+  "item": "witchery:mindrake_bulb",
+  "power_cost": 150,
+  "increment": 1,
+  "ceiling": 3
+}

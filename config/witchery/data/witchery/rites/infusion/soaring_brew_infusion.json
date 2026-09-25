@@ -1,0 +1,53 @@
+{
+  "sacrifices": {
+    "items": [
+      {
+        "ingredient": {
+          "item": "witchery:infused_brew_base"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:broom"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "minecraft:feather"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:arthana"
+        },
+        "returns": {
+          "type": "witchery:self"
+        }
+      }
+    ],
+    "entities": [
+      "witchery:owl"
+    ],
+    "power": 3000.0
+  },
+  "circles": [
+    {
+      "glyph": "witchery:ritual_circle_glyph",
+      "size": 1
+    },
+    {
+      "glyph": "witchery:ritual_circle_glyph",
+      "size": 2
+    }
+  ],
+  "sorting": {
+    "left": "witchery:seer_stone_infusion",
+    "right": "witchery:grave_brew_infusion"
+  },
+  "result": {
+    "type": "witchery:item_summoning",
+    "stack": {
+      "item": "witchery:infused_soaring_brew"
+    }
+  }
+}
