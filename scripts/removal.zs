@@ -25,7 +25,8 @@
 		"thermalexpansion",
 		"rustichromia",
 		"sync",
-		"weather2"
+		"weather2",
+		"witchery"
 	]{
 		recipes.removeByMod(mod);
 	}
