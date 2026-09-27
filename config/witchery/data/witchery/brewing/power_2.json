@@ -1,0 +1,7 @@
+{
+  "type": "witchery:power",
+  "item": "minecraft:blaze_rod",
+  "power_cost": 100,
+  "increment": 1,
+  "ceiling": 2
+}

@@ -1,0 +1,14 @@
+{
+  "type": "witchery:symbol_effect",
+  "default": true,
+  "strokes": [
+    "up",
+    "left",
+    "up",
+    "right",
+    "left",
+    "up",
+    "right"
+  ],
+  "result": "witchery:ennervate"
+}

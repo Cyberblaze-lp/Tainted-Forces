@@ -1,0 +1,53 @@
+{
+  "conditions": [
+    {
+      "type": "witchery:thunder"
+    }
+  ],
+  "sacrifices": {
+    "items": [
+      {
+        "ingredient": {
+          "item": "witchery:bound_taglock_kit"
+        },
+        "identifier": "target"
+      },
+      {
+        "ingredient": {
+          "item": "witchery:horned_one_exhale"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:demonic_blood"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "minecraft:blaze_rod"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:grotesque_brew"
+        }
+      }
+    ],
+    "power": 2000.0
+  },
+  "circles": [
+    {
+      "glyph": "witchery:infernal_circle_glyph",
+      "size": 2
+    }
+  ],
+  "sorting": {
+    "left": "witchery:sinking_curse",
+    "right": "witchery:waking_nightmare_curse"
+  },
+  "result": {
+    "type": "witchery:curse",
+    "target": "target",
+    "curse": "witchery:overheating"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "type": "witchery:extent",
+  "item": "minecraft:dye,3",
+  "power_cost": 100,
+  "limit": 2
+}

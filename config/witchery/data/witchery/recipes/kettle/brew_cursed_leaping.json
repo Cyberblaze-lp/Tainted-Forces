@@ -1,0 +1,30 @@
+{
+  "type": "witchery:kettle",
+  "hat_bonus": 1,
+  "ingredients": [
+    {
+      "item": "minecraft:bone"
+    },
+    {
+      "item": "minecraft:apple"
+    },
+    {
+      "item": "witchery:sprouting_brew"
+    },
+    {
+      "item": "witchery:belladonna_flower"
+    },
+    {
+      "item": "minecraft:feather"
+    },
+    {
+      "item": "minecraft:fish",
+      "data": 0
+    }
+  ],
+  "familiar_power": "witchery:curse_mastery",
+  "result": {
+    "item": "witchery:cursed_leaping_brew",
+    "count": 3
+  }
+}

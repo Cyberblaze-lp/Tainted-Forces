@@ -1,0 +1,28 @@
+{
+  "sacrifices": {
+    "items": [
+      {
+        "ingredient": {
+          "item": "minecraft:blaze_powder"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:waystone"
+        }
+      }
+    ],
+    "power": 2000.0
+  },
+  "circles": [
+    {
+      "glyph": "witchery:ritual_circle_glyph",
+      "size": 1
+    }
+  ],
+  "sorting": {
+    "left": "witchery:hawthorn_forestation",
+    "right": "witchery:portable_banishing"
+  },
+  "result": "witchery:banishing"
+}

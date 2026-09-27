@@ -1,0 +1,11 @@
+{
+  "type": "witchery:fight_pet",
+  "pet": "minecraft:zombie",
+  "drop": "minecraft:rotten_flesh",
+  "equipment": {
+    "head": {
+      "item": "minecraft:skull",
+      "data": 0
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "witchery:symbol_effect",
+  "default": true,
+  "strokes": [
+    "down",
+    "down",
+    "down",
+    "right"
+  ],
+  "result": "witchery:lumos"
+}

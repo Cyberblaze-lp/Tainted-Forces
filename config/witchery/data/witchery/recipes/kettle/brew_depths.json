@@ -1,0 +1,29 @@
+{
+  "type": "witchery:kettle",
+  "hat_bonus": 1,
+  "ingredients": [
+    {
+      "item": "witchery:mandrake_root"
+    },
+    {
+      "item": "witchery:artichoke_globe"
+    },
+    {
+      "item": "witchery:purity_odor"
+    },
+    {
+      "item": "witchery:goddess_tear"
+    },
+    {
+      "item": "minecraft:waterlily"
+    },
+    {
+      "item": "minecraft:dye",
+      "data": 0
+    }
+  ],
+  "result": {
+    "item": "witchery:depths_brew",
+    "count": 3
+  }
+}

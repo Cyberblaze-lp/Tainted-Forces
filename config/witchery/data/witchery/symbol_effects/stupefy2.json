@@ -1,0 +1,15 @@
+{
+  "type": "witchery:symbol_effect",
+  "level": 2,
+  "strokes": [
+    "right",
+    "right",
+    "up",
+    "up",
+    "left",
+    "up",
+    "up",
+    "right"
+  ],
+  "result": "witchery:stupefy"
+}

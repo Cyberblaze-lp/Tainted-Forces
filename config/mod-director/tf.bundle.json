@@ -2,14 +2,14 @@
 	"curse": [
 		{
 			"addonId": 557549,
-			"fileId": 8405357,
+			"fileId": 8934963,
 			"installationPolicy": {
 				"description": "Mandatory! Downloads Had enough Items"
 			}
 		},
 		{
 			"addonId": 1214906,
-			"fileId": 8471479,
+			"fileId": 8574852,
 			"metadata": {
 				"side": "CLIENT"
 			},

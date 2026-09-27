@@ -1,0 +1,28 @@
+{
+  "sacrifices": {
+    "items": [
+      {
+        "ingredient": {
+          "item": "minecraft:feather"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "minecraft:redstone"
+        }
+      }
+    ],
+    "power": 500.0
+  },
+  "circles": [
+    {
+      "glyph": "witchery:ritual_circle_glyph",
+      "size": 1
+    }
+  ],
+  "sorting": {
+    "left": "witchery:beastial_call",
+    "right": "witchery:imprisonment"
+  },
+  "result": "witchery:sanctity"
+}

@@ -1,0 +1,51 @@
+{
+  "sacrifices": {
+    "items": [
+      {
+        "ingredient": {
+          "item": "witchery:charged_attuned_stone"
+        },
+        "returns": {
+          "type": "witchery:copy_data",
+          "item": "witchery:attuned_stone"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:redstone_soup"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:misfortune_reek"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:frogs_toe"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "minecraft:water_bucket"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:belladonna_flower"
+        }
+      }
+    ]
+  },
+  "circles": [
+    {
+      "glyph": "witchery:infernal_circle_glyph",
+      "size": 2
+    }
+  ],
+  "sorting": {
+    "left": "witchery:corrupt_poppet_curse",
+    "right": "witchery:misfortune_curse"
+  },
+  "result": "witchery:raining_toads"
+}

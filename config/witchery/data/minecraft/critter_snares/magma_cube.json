@@ -1,0 +1,6 @@
+{
+  "block": "witchery:magma_cube_critter_snare",
+  "condition": "{Size: 0}",
+  "sound": "minecraft:entity.small_magmacube.squish",
+  "drop": "minecraft:magma_cream"
+}

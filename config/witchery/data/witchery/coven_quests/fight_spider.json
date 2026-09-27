@@ -1,0 +1,5 @@
+{
+  "type": "witchery:fight_pet",
+  "pet": "minecraft:spider",
+  "drop": "minecraft:spider_eye"
+}

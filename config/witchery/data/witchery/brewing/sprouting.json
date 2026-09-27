@@ -1,0 +1,8 @@
+{
+  "type": "witchery:effect",
+  "item": "witchery:ent_twig",
+  "power_cost": 350,
+  "capacity_required": 2,
+  "group": 2,
+  "effect": "witchery:sprouting"
+}

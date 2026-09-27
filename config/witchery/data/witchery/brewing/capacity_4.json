@@ -1,0 +1,7 @@
+{
+  "type": "witchery:capacity",
+  "item": "witchery:diamond_vapor",
+  "power_cost": 150,
+  "increment": 2,
+  "ceiling": 6
+}

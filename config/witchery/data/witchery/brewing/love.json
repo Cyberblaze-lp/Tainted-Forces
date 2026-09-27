@@ -1,0 +1,9 @@
+{
+  "type": "witchery:effect",
+  "item": "minecraft:red_flower",
+  "power_cost": 500,
+  "capacity_required": 4,
+  "effect": "witchery:potion",
+  "potion": "witchery:love",
+  "duration": 200
+}

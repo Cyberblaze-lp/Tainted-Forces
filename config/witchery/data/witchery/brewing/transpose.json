@@ -1,0 +1,8 @@
+{
+  "type": "witchery:effect",
+  "item": "minecraft:ender_pearl",
+  "power_cost": 1000,
+  "capacity_required": 4,
+  "book_pages": 3,
+  "effect": "witchery:transpose"
+}

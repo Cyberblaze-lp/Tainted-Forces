@@ -1,0 +1,6 @@
+{
+  "type": "witchery:linger",
+  "item": "minecraft:dye,4",
+  "power_cost": 100,
+  "limit": 2
+}

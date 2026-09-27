@@ -1,0 +1,13 @@
+{
+  "type": "witchery:symbol_effect",
+  "default": true,
+  "strokes": [
+    "right",
+    "up",
+    "right",
+    "left",
+    "up",
+    "right"
+  ],
+  "result": "witchery:flagrate"
+}

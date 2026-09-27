@@ -1,0 +1,56 @@
+{
+  "sacrifices": {
+    "items": [
+      {
+        "ingredient": [
+          {
+            "item": "witchery:scarecrow"
+          },
+          {
+            "item": "witchery:trent_effigy"
+          },
+          {
+            "item": "witchery:witchs_ladder"
+          }
+        ],
+        "identifier": "fetish"
+      },
+      {
+        "ingredient": {
+          "item": "witchery:attuned_stone"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:necromantic_stone"
+        },
+        "returns": {
+          "type": "witchery:self"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:boline"
+        },
+        "returns": {
+          "type": "witchery:self"
+        }
+      }
+    ],
+    "power": 6000.0
+  },
+  "circles": [
+    {
+      "glyph": "witchery:ritual_circle_glyph",
+      "size": 2
+    }
+  ],
+  "sorting": {
+    "left": "witchery:spectral_binding",
+    "right": "witchery:player_statue_binding"
+  },
+  "result": {
+    "type": "witchery:fetish_binding",
+    "fetish": "fetish"
+  }
+}

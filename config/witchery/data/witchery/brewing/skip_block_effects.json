@@ -1,0 +1,6 @@
+{
+  "type": "witchery:modifier",
+  "item": "minecraft:netherbrick",
+  "power_cost": 50,
+  "modifier": "skip_block_effects"
+}

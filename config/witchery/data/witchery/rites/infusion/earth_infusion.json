@@ -1,0 +1,30 @@
+{
+  "sacrifices": {
+    "items": [
+      {
+        "ingredient": {
+          "item": "witchery:world_soul"
+        }
+      }
+    ],
+    "power": 4000.0
+  },
+  "circles": [
+    {
+      "glyph": "witchery:ritual_circle_glyph",
+      "size": 1
+    },
+    {
+      "glyph": "witchery:ritual_circle_glyph",
+      "size": 2
+    }
+  ],
+  "sorting": {
+    "left": "witchery:light_infusion",
+    "right": "witchery:otherwhere_infusion"
+  },
+  "result": {
+    "type": "witchery:infuse_player",
+    "infusion": "witchery:overworld"
+  }
+}

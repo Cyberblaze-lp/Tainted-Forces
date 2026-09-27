@@ -1,0 +1,46 @@
+{
+  "sacrifices": {
+    "items": [
+      {
+        "ingredient": {
+          "item": "minecraft:blaze_rod"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:wood_ash"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "minecraft:blaze_powder"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:charged_attuned_stone"
+        },
+        "returns": {
+          "type": "witchery:copy_data",
+          "item": "witchery:attuned_stone"
+        }
+      }
+    ]
+  },
+  "circles": [
+    {
+      "glyph": "witchery:infernal_circle_glyph",
+      "size": 1
+    }
+  ],
+  "sorting": {
+    "left": "witchery:broiling",
+    "right": "witchery:shifting_seasons"
+  },
+  "name_type": "by_path",
+  "name_path": "broiling",
+  "result": {
+    "type": "witchery:broiling",
+    "burn_chance": 0.16
+  }
+}

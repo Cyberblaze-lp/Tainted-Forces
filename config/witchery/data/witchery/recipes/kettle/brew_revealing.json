@@ -1,0 +1,32 @@
+{
+  "type": "witchery:kettle",
+  "hat_bonus": 1,
+  "ingredients": [
+    {
+      "item": "minecraft:carrot"
+    },
+    {
+      "item": "minecraft:spider_eye"
+    },
+    {
+      "item": "minecraft:spider_eye"
+    },
+    {
+      "type": "minecraft:item_nbt",
+      "item": "minecraft:potion",
+      "nbt": {
+        "Potion": "minecraft:night_vision"
+      }
+    },
+    {
+      "item": "minecraft:brown_mushroom"
+    },
+    {
+      "item": "witchery:purity_odor"
+    }
+  ],
+  "result": {
+    "item": "witchery:revealing_brew",
+    "count": 3
+  }
+}

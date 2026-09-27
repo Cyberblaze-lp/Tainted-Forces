@@ -1,0 +1,31 @@
+{
+  "type": "witchery:kettle",
+  "power_required": 3000.0,
+  "ingredients": [
+    {
+      "item": "witchery:redstone_soup"
+    },
+    {
+      "type": "minecraft:item_nbt",
+      "item": "minecraft:potion",
+      "nbt": {
+        "Potion": "minecraft:long_swiftness"
+      }
+    },
+    {
+      "item": "minecraft:diamond"
+    },
+    {
+      "item": "minecraft:feather"
+    },
+    {
+      "item": "witchery:bat_wool"
+    },
+    {
+      "item": "witchery:belladonna_flower"
+    }
+  ],
+  "result": {
+    "item": "witchery:flying_ointment"
+  }
+}

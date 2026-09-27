@@ -1,0 +1,11 @@
+{
+  "type": "witchery:cauldron",
+  "trigger_ingredient": {
+    "ingredient": {
+      "item": "minecraft:mutton"
+    }
+  },
+  "result": {
+    "item": "minecraft:cooked_mutton"
+  }
+}

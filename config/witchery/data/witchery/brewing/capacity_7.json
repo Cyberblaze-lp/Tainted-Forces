@@ -1,0 +1,8 @@
+{
+  "type": "witchery:capacity",
+  "item": "witchery:pentacle",
+  "power_cost": 1000,
+  "secret": true,
+  "increment": 6,
+  "ceiling": 16
+}

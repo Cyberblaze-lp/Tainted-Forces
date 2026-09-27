@@ -1,0 +1,11 @@
+{
+  "type": "witchery:effect",
+  "item": "minecraft:blaze_powder",
+  "power_cost": 200,
+  "capacity_required": 2,
+  "effect": "witchery:potion",
+  "potion": "minecraft:strength",
+  "inverted_potion": "minecraft:weakness",
+  "duration": 3600,
+  "inverted_duration": 1800
+}

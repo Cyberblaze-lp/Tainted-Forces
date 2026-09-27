@@ -1,0 +1,38 @@
+{
+  "sacrifices": {
+    "items": [
+      {
+        "ingredient": {
+          "item": "minecraft:blaze_powder"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:waystone"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:charged_attuned_stone"
+        },
+        "returns": {
+          "type": "witchery:copy_data",
+          "item": "witchery:attuned_stone"
+        }
+      }
+    ]
+  },
+  "circles": [
+    {
+      "glyph": "witchery:ritual_circle_glyph",
+      "size": 1
+    }
+  ],
+  "sorting": {
+    "left": "witchery:banishing",
+    "right": "witchery:demon_summoning"
+  },
+  "name_type": "by_path",
+  "name_path": "banishing",
+  "result": "witchery:banishing"
+}

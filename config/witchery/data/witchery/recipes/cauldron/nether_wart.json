@@ -1,0 +1,42 @@
+{
+  "type": "witchery:cauldron",
+  "group": "nether_wart",
+  "ingredients": [
+    {
+      "ingredient": {
+        "item": "witchery:mandrake_root"
+      }
+    },
+    {
+      "ingredient": {
+        "item": "witchery:goddess_tear"
+      },
+      "power": 140
+    },
+    {
+      "ingredient": {
+        "item": "witchery:diamond_vapor"
+      },
+      "power": 210
+    },
+    {
+      "ingredient": {
+        "item": "minecraft:ender_pearl"
+      },
+      "power": 1400
+    },
+    {
+      "ingredient": {
+        "item": "minecraft:wheat"
+      }
+    }
+  ],
+  "trigger_ingredient": {
+    "ingredient": {
+      "item": "witchery:mutandis"
+    }
+  },
+  "result": {
+    "item": "minecraft:nether_wart"
+  }
+}

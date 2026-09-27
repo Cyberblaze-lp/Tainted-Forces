@@ -1,0 +1,15 @@
+{
+  "type": "witchery:brazier_effect",
+  "ingredients": [
+    {
+      "item": "witchery:goddess_tear"
+    },
+    {
+      "item": "minecraft:rotten_flesh"
+    },
+    {
+      "item": "minecraft:blaze_powder"
+    }
+  ],
+  "effect": "minecraft:resistance"
+}

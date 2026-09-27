@@ -1,0 +1,12 @@
+{
+  "type": "witchery:effect",
+  "item": "minecraft:web",
+  "power_cost": 250,
+  "capacity_required": 2,
+  "group": 1,
+  "effect": "witchery:potion",
+  "potion": "witchery:reflect_projectiles",
+  "inverted_potion": "witchery:attract_projectiles",
+  "duration": 1800,
+  "inverted_duration": 900
+}

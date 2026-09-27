@@ -1,0 +1,61 @@
+{
+  "sacrifices": {
+    "items": [
+      {
+        "ingredient": {
+          "item": "witchery:bound_waystone"
+        },
+        "action": "witchery:keep",
+        "identifier": "old_waystone"
+      },
+      {
+        "ingredient": {
+          "item": "witchery:waystone"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:ender_dew"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:quicklime"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:charged_attuned_stone"
+        },
+        "returns": {
+          "type": "witchery:copy_data",
+          "item": "witchery:attuned_stone"
+        }
+      }
+    ]
+  },
+  "circles": [
+    {
+      "glyph": "witchery:ritual_circle_glyph",
+      "size": 1
+    }
+  ],
+  "sorting": {
+    "left": "witchery:waystone_copy_binding",
+    "right": "witchery:player_waystone_binding"
+  },
+  "name_type": "by_path",
+  "name_path": "waystone_copy_binding",
+  "result": {
+    "type": "witchery:item_summoning",
+    "stack": {
+      "item": "witchery:bound_waystone",
+      "actions": [
+        {
+          "type": "witchery:copy_binding",
+          "target": "old_waystone"
+        }
+      ]
+    }
+  }
+}

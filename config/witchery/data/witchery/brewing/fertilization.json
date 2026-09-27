@@ -1,0 +1,8 @@
+{
+  "type": "witchery:effect",
+  "item": "minecraft:dye,15",
+  "power_cost": 250,
+  "capacity_required": 1,
+  "group": 1,
+  "effect": "witchery:fertilization"
+}

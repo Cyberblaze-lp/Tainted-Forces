@@ -1,0 +1,6 @@
+{
+  "type": "witchery:effect",
+  "item": "minecraft:snowball",
+  "capacity_required": 1,
+  "effect": "witchery:snow_trail"
+}

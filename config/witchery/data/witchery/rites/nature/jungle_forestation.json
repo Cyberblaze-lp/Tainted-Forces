@@ -1,0 +1,52 @@
+{
+  "sacrifices": {
+    "items": [
+      {
+        "ingredient": {
+          "item": "minecraft:sapling",
+          "data": 3
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:plain_wicker_bundle"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:sprouting_brew"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:ent_twig"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:bound_waystone"
+        },
+        "action": "witchery:set_location",
+        "optional": true
+      }
+    ],
+    "power": 4000.0
+  },
+  "circles": [
+    {
+      "glyph": "witchery:ritual_circle_glyph",
+      "size": 2
+    }
+  ],
+  "sorting": {
+    "left": "witchery:birch_forestation",
+    "right": "witchery:rowan_forestation"
+  },
+  "hidden": true,
+  "name_type": "by_path",
+  "name_path": "forestation",
+  "result": {
+    "type": "witchery:forestation",
+    "state": "minecraft:sapling[type=jungle]"
+  }
+}

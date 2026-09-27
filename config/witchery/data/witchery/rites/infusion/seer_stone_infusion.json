@@ -1,0 +1,43 @@
+{
+  "conditions": [
+    {
+      "type": "witchery:night"
+    }
+  ],
+  "sacrifices": {
+    "items": [
+      {
+        "ingredient": {
+          "item": "witchery:quartz_sphere"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "minecraft:obsidian"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:happenstance_oil"
+        }
+      }
+    ],
+    "power": 2000.0
+  },
+  "circles": [
+    {
+      "glyph": "witchery:ritual_circle_glyph",
+      "size": 1
+    }
+  ],
+  "sorting": {
+    "left": "witchery:future_crystal_ball_infusion",
+    "right": "witchery:soaring_brew_infusion"
+  },
+  "result": {
+    "type": "witchery:item_summoning",
+    "stack": {
+      "item": "witchery:seer_stone"
+    }
+  }
+}

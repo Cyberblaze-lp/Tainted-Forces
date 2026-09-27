@@ -1,0 +1,13 @@
+{
+  "form": "witchery:bat",
+  "width": 0.3,
+  "height": 0.6,
+  "step_height": 0.5,
+  "eye_height": 0.48,
+  "flying": true,
+  "stats": [
+    {
+      "damage": -6.0
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "type": "witchery:effect",
+  "item": "minecraft:sand",
+  "capacity_required": 1,
+  "effect": "witchery:tidal_hold"
+}

@@ -1,0 +1,46 @@
+{
+  "sacrifices": {
+    "items": [
+      {
+        "ingredient": {
+          "item": "witchery:waystone"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:ender_dew"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "minecraft:slime_ball"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "minecraft:snowball"
+        }
+      }
+    ],
+    "power": 500.0
+  },
+  "circles": [
+    {
+      "glyph": "witchery:ritual_circle_glyph",
+      "size": 1
+    }
+  ],
+  "sorting": {
+    "left": "witchery:portable_waystone_copy_binding",
+    "right": "witchery:portable_player_waystone_binding"
+  },
+  "result": {
+    "type": "witchery:item_summoning",
+    "stack": {
+      "item": "witchery:blooded_waystone",
+      "actions": [
+        "witchery:entity_binding"
+      ]
+    }
+  }
+}

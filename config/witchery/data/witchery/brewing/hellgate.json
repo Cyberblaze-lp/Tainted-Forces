@@ -1,0 +1,7 @@
+{
+  "type": "witchery:effect",
+  "item": "witchery:refined_evil",
+  "power_cost": 3000,
+  "capacity_required": 5,
+  "effect": "witchery:inferno"
+}

@@ -1,0 +1,31 @@
+{
+  "sacrifices": {
+    "items": [
+      {
+        "ingredient": {
+          "type": "minecraft:item_nbt",
+          "item": "minecraft:potion",
+          "nbt": {
+            "Potion": "minecraft:regeneration"
+          }
+        }
+      }
+    ],
+    "power": 4000.0
+  },
+  "circles": [
+    {
+      "glyph": "witchery:ritual_circle_glyph",
+      "size": 1
+    },
+    {
+      "glyph": "witchery:ritual_circle_glyph",
+      "size": 2
+    }
+  ],
+  "sorting": {
+    "left": "witchery:attuned_stone_charging",
+    "right": "witchery:glyphic_transformation"
+  },
+  "result": "witchery:infusion_charging"
+}

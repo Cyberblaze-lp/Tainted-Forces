@@ -1,0 +1,11 @@
+{
+  "type": "witchery:cauldron",
+  "trigger_ingredient": {
+    "ingredient": {
+      "item": "witchery:sheep_liver"
+    }
+  },
+  "result": {
+    "item": "witchery:cooked_sheep_liver"
+  }
+}

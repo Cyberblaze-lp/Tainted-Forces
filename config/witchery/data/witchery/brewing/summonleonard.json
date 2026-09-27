@@ -1,0 +1,7 @@
+{
+  "type": "witchery:effect",
+  "item": "witchery:witches_hat",
+  "power_cost": 10000,
+  "capacity_required": 12,
+  "effect": "witchery:summon_leonard"
+}

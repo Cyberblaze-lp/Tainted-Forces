@@ -1,0 +1,55 @@
+{
+  "sacrifices": {
+    "items": [
+      {
+        "ingredient": {
+          "item": "witchery:spectral_dust"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:mellifluous_hunger"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:necromantic_stone"
+        },
+        "returns": {
+          "type": "witchery:self"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "minecraft:golden_pickaxe",
+          "data": 32767
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:arthana"
+        },
+        "returns": {
+          "type": "witchery:self"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "minecraft:gunpowder"
+        }
+      }
+    ],
+    "power": 5000.0
+  },
+  "circles": [
+    {
+      "glyph": "witchery:otherwhere_circle_glyph",
+      "size": 1
+    }
+  ],
+  "sorting": {
+    "left": "witchery:beastial_call",
+    "right": "witchery:sanctity"
+  },
+  "result": "witchery:manifestation"
+}

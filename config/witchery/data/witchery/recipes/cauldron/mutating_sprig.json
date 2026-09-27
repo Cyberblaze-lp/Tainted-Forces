@@ -1,0 +1,27 @@
+{
+  "type": "witchery:cauldron",
+  "group": "mutating_sprig",
+  "ingredients": [
+    {
+      "ingredient": {
+        "item": "minecraft:nether_wart"
+      },
+      "power": 70
+    },
+    {
+      "ingredient": {
+        "item": "witchery:ent_twig"
+      },
+      "power": 490
+    }
+  ],
+  "trigger_ingredient": {
+    "ingredient": {
+      "item": "witchery:mutandis_extremis"
+    },
+    "power": 2520
+  },
+  "result": {
+    "item": "witchery:mutating_sprig"
+  }
+}

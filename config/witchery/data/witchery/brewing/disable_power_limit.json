@@ -1,0 +1,7 @@
+{
+  "type": "witchery:modifier",
+  "item": "minecraft:fish,2",
+  "secret": true,
+  "power_cost": 200,
+  "modifier": "disable_power_limit"
+}

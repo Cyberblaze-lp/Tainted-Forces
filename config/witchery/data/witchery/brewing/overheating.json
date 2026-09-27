@@ -1,0 +1,9 @@
+{
+  "type": "witchery:effect",
+  "item": "witchery:ember_moss",
+  "power_cost": 3000,
+  "capacity_required": 4,
+  "effect": "witchery:curse",
+  "potion": "witchery:overheating",
+  "duration": 3600
+}

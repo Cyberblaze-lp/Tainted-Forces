@@ -1,0 +1,7 @@
+{
+  "type": "witchery:effect",
+  "item": "witchery:purity_odor",
+  "power_cost": 100,
+  "capacity_required": 4,
+  "effect": "witchery:revealing"
+}

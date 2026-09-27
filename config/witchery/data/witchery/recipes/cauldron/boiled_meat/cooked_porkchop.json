@@ -1,0 +1,12 @@
+{
+  "type": "witchery:cauldron",
+  "group": "boiled_meat",
+  "trigger_ingredient": {
+    "ingredient": {
+      "item": "minecraft:porkchop"
+    }
+  },
+  "result": {
+    "item": "minecraft:cooked_porkchop"
+  }
+}

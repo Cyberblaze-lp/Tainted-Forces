@@ -1,0 +1,10 @@
+{
+  "type": "witchery:effect",
+  "item": "minecraft:golden_carrot",
+  "power_cost": 200,
+  "capacity_required": 2,
+  "effect": "witchery:potion",
+  "potion": "minecraft:night_vision",
+  "inverted_potion": "minecraft:invisibility",
+  "duration": 3600
+}

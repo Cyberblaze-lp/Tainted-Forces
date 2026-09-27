@@ -1,0 +1,14 @@
+{
+  "type": "witchery:symbol_effect",
+  "level": 2,
+  "strokes": [
+    "left",
+    "up",
+    "up",
+    "up",
+    "down",
+    "down",
+    "down"
+  ],
+  "result": "witchery:incendio"
+}

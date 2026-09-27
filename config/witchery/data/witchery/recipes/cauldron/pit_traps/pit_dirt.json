@@ -1,0 +1,27 @@
+{
+  "type": "witchery:cauldron",
+  "group": "pit_traps",
+  "ingredients": [
+    {
+      "ingredient": {
+        "item": "witchery:mandrake_root"
+      }
+    },
+    {
+      "ingredient": {
+        "item": "minecraft:dirt",
+        "data": 0
+      }
+    }
+  ],
+  "trigger_ingredient": {
+    "ingredient": {
+      "item": "witchery:tormented_twine"
+    },
+    "power": 5600
+  },
+  "result": {
+    "item": "witchery:pit_dirt",
+    "count": 4
+  }
+}

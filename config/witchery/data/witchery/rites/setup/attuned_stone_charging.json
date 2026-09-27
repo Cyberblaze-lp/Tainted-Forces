@@ -1,0 +1,52 @@
+{
+  "sacrifices": {
+    "items": [
+      {
+        "ingredient": {
+          "item": "witchery:attuned_stone"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "minecraft:glowstone_dust"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "minecraft:redstone"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:wood_ash"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:quicklime"
+        }
+      }
+    ],
+    "power": 2000.0
+  },
+  "circles": [
+    {
+      "glyph": "witchery:ritual_circle_glyph",
+      "size": 1
+    },
+    {
+      "glyph": "witchery:ritual_circle_glyph",
+      "size": 2
+    }
+  ],
+  "sorting": {
+    "left": "witchery:player_statue_binding",
+    "right": "witchery:infusion_charging"
+  },
+  "result": {
+    "type": "witchery:item_summoning",
+    "stack": {
+      "item": "witchery:charged_attuned_stone"
+    }
+  }
+}

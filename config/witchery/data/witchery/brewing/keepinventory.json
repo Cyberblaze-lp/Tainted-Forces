@@ -1,0 +1,9 @@
+{
+  "type": "witchery:effect",
+  "item": "witchery:focused_will",
+  "power_cost": 10000,
+  "capacity_required": 8,
+  "effect": "witchery:potion",
+  "potion": "witchery:sticky_items",
+  "duration": 7200
+}

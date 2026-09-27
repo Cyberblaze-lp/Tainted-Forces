@@ -1,0 +1,5 @@
+{
+  "type": "witchery:fetch_item",
+  "item": "minecraft:bone",
+  "count": 30
+}

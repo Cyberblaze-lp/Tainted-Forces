@@ -1,0 +1,32 @@
+{
+  "type": "witchery:kettle",
+  "power_required": 4000.0,
+  "ingredients": [
+    {
+      "item": "witchery:redstone_soup"
+    },
+    {
+      "type": "minecraft:item_nbt",
+      "item": "minecraft:potion",
+      "nbt": {
+        "Potion": "minecraft:strong_harming"
+      }
+    },
+    {
+      "item": "witchery:voodoo_poppet"
+    },
+    {
+      "item": "witchery:demon_heart"
+    },
+    {
+      "item": "witchery:refined_evil"
+    },
+    {
+      "item": "minecraft:blaze_rod"
+    }
+  ],
+  "result": {
+    "item": "witchery:infernal_animus",
+    "count": 2
+  }
+}

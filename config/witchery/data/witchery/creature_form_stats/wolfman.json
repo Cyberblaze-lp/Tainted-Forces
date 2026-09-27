@@ -1,0 +1,61 @@
+{
+  "form": "witchery:wolfman",
+  "trait": "witchery:lycanthropy",
+  "holdable_item": {
+    "item": "witchery:moon_charm"
+  },
+  "wears_armor": false,
+  "howling": true,
+  "stats": [
+    {
+      "level": 0,
+      "damage_cap": 4.0
+    },
+    {
+      "level": 2,
+      "damage_cap": 3.0
+    },
+    {
+      "level": 5,
+      "health": 20,
+      "damage": 9.2,
+      "resistance": 3.0,
+      "damage_cap": 2.0,
+      "fall": 3,
+      "speed": 0.2,
+      "jump": 0.2,
+      "leap": 0.2
+    },
+    {
+      "level": 6,
+      "fall": 4,
+      "jump": 0.3
+    },
+    {
+      "level": 7,
+      "damage": 11.5,
+      "fall": 5,
+      "speed": 0.4,
+      "jump": 0.4,
+      "leap": 0.4
+    },
+    {
+      "level": 8,
+      "health": 30,
+      "damage": 13.8,
+      "resistance": 4.0,
+      "fall": 6,
+      "jump": 0.5
+    },
+    {
+      "level": 9,
+      "health": 40,
+      "damage": 16.2,
+      "resistance": 5.0,
+      "fall": 7,
+      "speed": 0.5,
+      "jump": 0.6,
+      "leap": 0.6
+    }
+  ]
+}

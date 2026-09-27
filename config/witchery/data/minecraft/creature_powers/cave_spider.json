@@ -1,0 +1,10 @@
+{
+  "abilities": [
+    {
+      "type": "witchery:climb"
+    },
+    {
+      "type": "witchery:shoot_web"
+    }
+  ]
+}

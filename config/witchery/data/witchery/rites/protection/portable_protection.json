@@ -1,0 +1,38 @@
+{
+  "sacrifices": {
+    "items": [
+      {
+        "ingredient": {
+          "item": "minecraft:obsidian"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:charged_attuned_stone"
+        },
+        "returns": {
+          "type": "witchery:copy_data",
+          "item": "witchery:attuned_stone"
+        }
+      }
+    ]
+  },
+  "circles": [
+    {
+      "glyph": "witchery:ritual_circle_glyph",
+      "size": 1
+    }
+  ],
+  "sorting": {
+    "left": "witchery:large_protection",
+    "right": "witchery:icy_expansion"
+  },
+  "result": {
+    "type": "witchery:protection",
+    "radius": 6,
+    "height": 5,
+    "power": 0.0,
+    "block_players": true,
+    "lifetime": 60
+  }
+}

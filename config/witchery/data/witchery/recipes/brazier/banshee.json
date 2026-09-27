@@ -1,0 +1,17 @@
+{
+  "type": "witchery:brazier_entity_summoning",
+  "ingredients": [
+    {
+      "item": "witchery:wormwood"
+    },
+    {
+      "item": "witchery:condensed_fear"
+    },
+    {
+      "item": "witchery:graveyard_dust"
+    }
+  ],
+  "burn_time": 600,
+  "entity": "witchery:banshee",
+  "extra": "witchery:poltergeist"
+}

@@ -1,0 +1,11 @@
+{
+  "type": "witchery:effect",
+  "item": "witchery:owlets_wing",
+  "power_cost": 1000,
+  "capacity_required": 2,
+  "group": 2,
+  "links": [
+    "witchery:concentrated_bat_ball"
+  ],
+  "effect": "witchery:bodega"
+}

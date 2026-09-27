@@ -1,0 +1,44 @@
+{
+  "sacrifices": {
+    "items": [
+      {
+        "ingredient": {
+          "item": "minecraft:skull",
+          "data": 1
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:diamond_vapor"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "minecraft:ender_pearl"
+        }
+      }
+    ],
+    "entities": [
+      "minecraft:villager"
+    ],
+    "power": 4000.0
+  },
+  "circles": [
+    {
+      "glyph": "witchery:infernal_circle_glyph",
+      "size": 2
+    },
+    {
+      "glyph": "witchery:infernal_circle_glyph",
+      "size": 3
+    }
+  ],
+  "sorting": {
+    "left": "witchery:expensive_demon_summoning",
+    "right": "witchery:expensive_wither_summoning"
+  },
+  "result": {
+    "type": "witchery:entity_summoning",
+    "entity": "minecraft:wither"
+  }
+}

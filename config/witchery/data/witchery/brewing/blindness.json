@@ -1,0 +1,9 @@
+{
+  "type": "witchery:effect",
+  "item": "minecraft:dye",
+  "power_cost": 1000,
+  "capacity_required": 4,
+  "effect": "witchery:potion",
+  "potion": "minecraft:blindness",
+  "duration": 300
+}

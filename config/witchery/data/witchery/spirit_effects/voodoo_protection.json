@@ -1,0 +1,9 @@
+{
+  "ghosts": {
+    "witchery:spirit": 3,
+    "witchery:spectre": 1,
+    "witchery:banshee": 1,
+    "witchery:poltergeist": 1
+  },
+  "result": "witchery:voodoo_protection"
+}

@@ -1,0 +1,43 @@
+{
+  "sacrifices": {
+    "items": [
+      {
+        "ingredient": {
+          "item": "witchery:waystone"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:bound_taglock_kit"
+        },
+        "identifier": "creature_taglock"
+      },
+      {
+        "ingredient": {
+          "item": "witchery:ender_dew"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "minecraft:iron_axe",
+          "data": 32767
+        }
+      }
+    ],
+    "power": 3000.0
+  },
+  "circles": [
+    {
+      "glyph": "witchery:otherwhere_circle_glyph",
+      "size": 2
+    }
+  ],
+  "sorting": {
+    "left": "witchery:creature_waystone_transposition",
+    "right": "witchery:ore_transposition"
+  },
+  "result": {
+    "type": "witchery:entity_transposition",
+    "target": "creature_taglock"
+  }
+}

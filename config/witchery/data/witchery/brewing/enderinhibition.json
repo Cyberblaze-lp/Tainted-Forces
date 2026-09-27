@@ -1,0 +1,9 @@
+{
+  "type": "witchery:effect",
+  "item": "witchery:ender_dew",
+  "power_cost": 200,
+  "capacity_required": 1,
+  "effect": "witchery:potion",
+  "potion": "witchery:ender_inhibition",
+  "duration": 1800
+}

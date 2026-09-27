@@ -1,0 +1,12 @@
+{
+  "type": "witchery:effect",
+  "item": "witchery:foul_fume",
+  "power_cost": 1000,
+  "capacity_required": 4,
+  "links": [
+    "minecraft:wheat"
+  ],
+  "effect": "witchery:potion",
+  "potion": "witchery:stout_belly",
+  "duration": 1800
+}

@@ -1,0 +1,19 @@
+{
+  "type": "witchery:symbol_effect",
+  "level": 3,
+  "strokes": [
+    "right",
+    "right",
+    "up",
+    "up",
+    "left",
+    "left",
+    "down",
+    "down",
+    "down",
+    "down",
+    "right",
+    "right"
+  ],
+  "result": "witchery:episkey"
+}

@@ -1,0 +1,6 @@
+{
+  "type": "witchery:modifier",
+  "item": "minecraft:gold_nugget",
+  "power_cost": 50,
+  "modifier": "no_particles"
+}

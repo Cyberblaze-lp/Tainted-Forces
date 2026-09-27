@@ -1,0 +1,8 @@
+{
+  "type": "witchery:capacity",
+  "item": "minecraft:diamond",
+  "power_cost": 150,
+  "yeild_modifier": -2,
+  "increment": 2,
+  "ceiling": 8
+}

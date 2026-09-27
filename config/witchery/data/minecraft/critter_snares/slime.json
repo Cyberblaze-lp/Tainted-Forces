@@ -1,0 +1,6 @@
+{
+  "block": "witchery:slime_critter_snare",
+  "condition": "{Size: 0}",
+  "sound": "minecraft:entity.small_slime.jump",
+  "drop": "minecraft:slime_ball"
+}
