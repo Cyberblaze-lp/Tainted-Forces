@@ -2,10 +2,15 @@ import crafttweaker.data.IData;
 import crafttweaker.recipes.IRecipeFunction;
 
 
+
+
+
+
 mods.botania.ManaInfusion.addInfusion(<tfc:straw>, <botania:petal:*>, 100);
 mods.botania.ManaInfusion.addInfusion(<botania:grassseeds>, <tfc:straw>, 1000);
 
-mods.botania.ManaInfusion.addInfusion(<botania:managlass>, <ore:sand>, 1000);
+mods.botania.ManaInfusion.addInfusion(<botania:managlass>, <ore:ice>, 1000);
+
 
 
 mods.botania.ManaInfusion.addInfusion(<tfc:wooden_bucket>.withTag({Fluid: {FluidName: "water", Amount: 1000}}), <tfc:wooden_bucket>.withTag({Fluid: {}}), 500);

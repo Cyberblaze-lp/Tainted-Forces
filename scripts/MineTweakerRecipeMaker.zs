@@ -55,6 +55,16 @@ recipes.addShapeless(<ic2:reactor_heat_vent>, [<ic2:heat_vent>, <ic2:crafting:7>
 
 // ================================================================================
 //#MARKER ADD SHAPED
+recipes.addShaped(<minecraft:ice> * 2, [[<witchery:icy_needle>, <witchery:icy_needle>], [<witchery:icy_needle>, <witchery:icy_needle>]]);
+recipes.addShaped(<witchery:soft_clay_jar> * 2, [[<ore:clay>], [<ore:clay>]]);
+recipes.addShaped(<witchery:candelabra>, [[<deeperdepths:candle>, <deeperdepths:candle>, <deeperdepths:candle>], [<ore:ingotLead>, <witchery:attuned_stone>, <ore:ingotLead>], [null, <ore:ingotLead>, null]]);
+recipes.addShaped(<witchery:chalice>, [[<ore:ingotBrass>, <witchery:attuned_stone>, <ore:ingotBrass>], [<ore:ingotBrass>, <ore:ingotBrass>, <ore:ingotBrass>], [null, <ore:ingotBrass>, null]]);
+recipes.addShaped(<witchery:chalice>, [[<ore:ingotGold>, <witchery:attuned_stone>, <ore:ingotGold>], [null, <ore:ingotGold>, null]]);
+recipes.addShaped(<witchery:kettle>, [[<ore:ingotLead>, null, <ore:ingotLead>], [<ore:ingotLead>, <witchery:attuned_stone>, <ore:ingotLead>]]);
+recipes.addShaped(<witchery:spinning_wheel>, [[<tfc:brass_mechanisms>, <tfc:brass_mechanisms>, null], [<tfc:brass_mechanisms>, <tfc:brass_mechanisms>, <witchery:attuned_stone>], [<ore:livingwood>, <ore:livingwood>, <ore:livingwood>]]);
+recipes.addShaped(<witchery:distillery>, [[<witchery:icy_needle>, <ore:ingotLead>, null], [<witchery:icy_needle>, <ore:ingotLead>, <ore:ingotLead>], [<ore:ingotLead>, <witchery:attuned_stone>, <ore:ingotLead>]]);
+recipes.addShaped(<witchery:altar> * 6, [[<ore:clothManaweave>, null, <ore:clothManaweave>], [<ore:livingrock>, <ore:livingrock>, <ore:livingrock>]]);
+recipes.addShaped(<botania:livingrock> * 32, [[<ore:dustFlux>, <ore:dustFlux>], [<ore:dustFlux>, <ore:dustFlux>]]);
 recipes.addShaped(<botania:craftinghalo>, [[null, <ore:ingotManasteel>, null], [<ore:ingotManasteel>, null, <ore:ingotManasteel>], [null, <ore:ingotManasteel>, null]]);
 recipes.addShaped(<thermaldynamics:duct_64> * 4, [[<ore:ingotCopper>, <railcraft:glass:*>, <ore:ingotCopper>], [<railcraft:glass:*>, null, <railcraft:glass:*>], [<ore:ingotCopper>, <railcraft:glass:*>, <ore:ingotCopper>]]);
 recipes.addShaped(<thaumcraft:table_wood>, [[<ore:livingwood>, <ore:livingwood>, <ore:livingwood>], [null, <ore:livingwood>, null]]);

@@ -1,6 +1,7 @@
 #priority 253
 
 //Removal
+    <ore:gemCoal>.remove(<minecraft:coal:1>);
     <ore:blockFuelCoke>.remove(<railcraft:generic:6>);
     <ore:circuitAdvanced>.remove(<ic2:crafting:2>);
     <ore:circuitBasic>.remove(<ic2:crafting:1>);
