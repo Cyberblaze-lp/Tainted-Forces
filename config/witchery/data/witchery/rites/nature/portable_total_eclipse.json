@@ -9,13 +9,12 @@
     "items": [
       {
         "ingredient": {
-          "item": "minecraft:iron_axe",
-          "data": 32767
+          "item": "witchery:vitriol_oil"
         }
       },
       {
         "ingredient": {
-          "item": "witchery:quicklime"
+          "item": "minecraft:bone"
         }
       },
       {

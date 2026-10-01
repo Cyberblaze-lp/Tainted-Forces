@@ -3,13 +3,12 @@
     "items": [
       {
         "ingredient": {
-          "item": "minecraft:iron_sword",
-          "data": 32767
+          "item": "witchery:artichoke_globe"
         }
       },
       {
         "ingredient": {
-          "item": "witchery:wood_ash"
+          "item": "minecraft:glowstone_dust"
         }
       },
       {

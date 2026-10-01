@@ -78,8 +78,8 @@ zenClass multiblockAdjust1 {
     #mixin Overwrite
     function makeMultiblockSet() as native.vazkii.botania.api.lexicon.multiblock.MultiblockSet
     {
-        val PylonsX as BlockPos[] =[  BlockPos(-5, 1, 0),   BlockPos(5, 1, 0),   BlockPos(-4, 1, 3),   BlockPos(4, 1, 3),   BlockPos(-4, 1, -3 ),   BlockPos(4, 1, -3)];
-        val PylonsZ as BlockPos[] =[   BlockPos(0, 1, -5),   BlockPos(0, 1, 5),   BlockPos(3, 1, -4),   BlockPos(3, 1, 4),   BlockPos(-3, 1, -4 ),   BlockPos(-3, 1, 4) ];
+        val PylonsX as BlockPos[] =[  BlockPos(-4, 1, 0),   BlockPos(4, 1, 0),   BlockPos(-3, 1, 3),   BlockPos(3, 1, 3),   BlockPos(-3, 1, -3 ),   BlockPos(3, 1, -3)];
+        val PylonsZ as BlockPos[] =[   BlockPos(0, 1, -4),   BlockPos(0, 1, 4),   BlockPos(3, 1, -3),   BlockPos(3, 1, 3),   BlockPos(-3, 1, -3 ),   BlockPos(-3, 1, 3) ];
         val Obby as BlockPos[] =[  BlockPos(0, -1, 0),
 			  BlockPos(0, -1, 1),   BlockPos(0, -1, -1),   BlockPos(1, -1, 0),   BlockPos(-1, -1, 0),
 			  BlockPos(0, -1, 2),   BlockPos(-1, -1, 2),   BlockPos(1, -1, 2),
@@ -113,8 +113,8 @@ zenClass multiblockAdjust1 {
     #mixin Static
     #mixin Overwrite
     function canEnchanterExist(world as World, pos as BlockPos, axis as EnumFacing.Axis ) as bool {
-        val PylonsX as BlockPos[] =[  BlockPos(-5, 1, 0),   BlockPos(5, 1, 0),   BlockPos(-4, 1, 3),   BlockPos(4, 1, 3),   BlockPos(-4, 1, -3 ),   BlockPos(4, 1, -3)];
-        val PylonsZ as BlockPos[] =[   BlockPos(0, 1, -5),   BlockPos(0, 1, 5),   BlockPos(3, 1, -4),   BlockPos(3, 1, 4),   BlockPos(-3, 1, -4 ),   BlockPos(-3, 1, 4) ];
+        val PylonsX as BlockPos[] =[  BlockPos(-4, 1, 0),   BlockPos(4, 1, 0),   BlockPos(-3, 1, 3),   BlockPos(3, 1, 3),   BlockPos(-3, 1, -3 ),   BlockPos(3, 1, -3)];
+        val PylonsZ as BlockPos[] =[   BlockPos(0, 1, -4),   BlockPos(0, 1, 4),   BlockPos(3, 1, -3),   BlockPos(3, 1, 3),   BlockPos(-3, 1, -3 ),   BlockPos(-3, 1, 3) ];
         val Obby as BlockPos[] =[  BlockPos(0, -1, 0),
 			  BlockPos(0, -1, 1),   BlockPos(0, -1, -1),   BlockPos(1, -1, 0),   BlockPos(-1, -1, 0),
 			  BlockPos(0, -1, 2),   BlockPos(-1, -1, 2),   BlockPos(1, -1, 2),
@@ -139,12 +139,12 @@ zenClass multiblockAdjust1 {
         else 
         {
             for pylon in PylonsZ
-			if(world.getBlockState(pos.add(pylon)).getBlock() != native.vazkii.botania.common.block.ModBlocks.pylon || world.getBlockState(pos.add(pylon.down())).getBlock() != WitcheryBlocks.GLYPH_RITUAL)
+			if(world.getBlockState(pos.add(pylon)).getBlock() != native.vazkii.botania.common.block.ModBlocks.pylon || !(world.getBlockState(pos.add(pylon.down())).getBlock() == WitcheryBlocks.GLYPH_RITUAL || world.getBlockState(pos.add(pylon.down())).getBlock() == WitcheryBlocks.CIRCLE))
 				return false;
         }
 
 		for flower in Flowers
-			if(world.getBlockState(pos.add(flower)).getBlock() != WitcheryBlocks.GLYPH_RITUAL)
+			if !(world.getBlockState(pos.add(flower)).getBlock() == WitcheryBlocks.GLYPH_RITUAL || world.getBlockState(pos.add(flower)).getBlock() == WitcheryBlocks.CIRCLE )
 				return false;
 
 		return true;
@@ -166,6 +166,7 @@ function LapistoAltar() as Block
         return WitcheryBlocks.ALTAR as Block;
     }
 }
+
 
 
 

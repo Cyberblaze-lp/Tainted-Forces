@@ -57,9 +57,9 @@ as IBlock[];
 for block in forged {
 
 block.definition.resistance = 0.0;
-
-<block:tetra:seeping_bedrock>.definition.resistance = 10000000.0;
 }
+(<tetra:seeping_bedrock> as IBlock).definition.resistance = 1000000.0;
+
 mods.inworldcrafting.ExplosionCrafting.explodeBlockRecipe(<tetra:extractor_pipe>, <tetra:extractor_pipe>, 100);
 mods.inworldcrafting.ExplosionCrafting.explodeBlockRecipe(<tetra:extractor_pipe>, <tetra:extractor_pipe:1>, 100);
 mods.inworldcrafting.ExplosionCrafting.explodeBlockRecipe(<tetra:extractor_pipe>, <tetra:extractor_pipe:2>, 100);
