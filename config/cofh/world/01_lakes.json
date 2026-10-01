@@ -199,10 +199,10 @@
 					"value-a": 1,
 					"value-b": {
 						"operation": "SUBTRACT",
-						"value-a": 128,
+						"value-a": 115,
 						"value-b": {
 							"operation": "MINIMUM",
-							"value-a": 128,
+							"value-a": 115,
 							"value-b": {
 								"world-data": "SURFACE_BLOCK"
 							}
