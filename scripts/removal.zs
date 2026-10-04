@@ -43,6 +43,7 @@
 		<bloodmagic:altar>,
 		<bloodmagic:soul_forge>,
 		<bloodmagic:soul_snare>,
+		<botania:altar>,
 		<botania:autocraftinghalo>,
 		<botania:corporeacrystalcube>,
 		<botania:corporeafunnel>,

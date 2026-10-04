@@ -180,10 +180,10 @@
 					"value-a": 1,
 					"value-b": {
 						"operation": "SUBTRACT",
-						"value-a": 128,
+						"value-a": 130,
 						"value-b": {
 							"operation": "MINIMUM",
-							"value-a": 128,
+							"value-a": 130,
 							"value-b": {
 								"world-data": "SURFACE_BLOCK"
 							}
@@ -212,8 +212,16 @@
 			},
 			"follow-terrain": true,
 			"chunk-chance": 2,
-			"biome": "all",
+			
 			"retrogen": false,
+			"biome": {
+				"restriction": "blacklist",
+				"value": [
+					"tfc:ocean",
+					"tfc:deep_ocean",
+					"tfc:lake"
+				]
+			},
 			"dimension": {
 				"restriction": "whitelist",
 				"value": [
