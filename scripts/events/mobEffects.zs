@@ -10,7 +10,11 @@ import crafttweaker.util.IAxisAlignedBB;
 import crafttweaker.util.Math;
 import crafttweaker.world.IBlockPos;
 import native.java.lang.Class;
-
+import native.net.dries007.tfc.objects.entity.animal.EntityAnimalTFC;
+import native.net.dries007.tfc.objects.entity.animal.EntityChickenTFC;
+import native.net.dries007.tfc.objects.entity.animal.EntityCowTFC;
+import native.net.dries007.tfc.objects.entity.animal.EntitySheepTFC;
+import crafttweaker.entity.IEntityAnimal;
 
 //Applies potion effects to entities upon spawning
 //i thought RotM covered this but here we are
@@ -255,6 +259,37 @@ events.onProjectileImpactArrow(function(event as crafttweaker.event.ProjectileIm
             }
         }
     }
+});
+
+events.onEntityLivingUpdate(function(event as crafttweaker.event.EntityLivingUpdateEvent){
+    
+    val entity = event.entityLivingBase;
+    if entity.world.getWorldTime() % 128 != 0
+    {
+        return;
+    }
+
+    if !(entity.native instanceof EntityAnimalTFC)
+    {
+        return;
+    }
+   
+
+    val entityAN = entity.native as EntityAnimalTFC;
+    if !entityAN.isInLove()
+    {
+        return;
+    }
+
+    entityAN.setFamiliarity(entityAN.getFamiliarity() as float + 0.01f);
+
+    
+
+
+
+    
+
+
 });
 
 

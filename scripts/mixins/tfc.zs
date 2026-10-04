@@ -109,11 +109,29 @@ zenClass MixinWaterRegistry
         {
             return FluidRegistry.WATER;
         }
+        if this0.fluid.name == "wrought_iron"
+        {
+            return FluidRegistry.getFluid("iron");
+        }
         return this0.fluid;
 
     }
 }
+#mixin {targets:"net.dries007.tfc.objects.fluids.FluidsTFC"}
+zenClass MixinIronRegistry
+{
+    #mixin Static
+    #mixin ModifyVariable {method: "registerFluid", name:"newFluid", at:{value:"LOAD"}}
+    function replaceIron(value as Fluid) as Fluid
+    {
+        if value.getName() == "wrought_iron"
+        {
+            return FluidRegistry.getFluid("iron");
+        }
+        else return value;
+    }
 
+}
 
 
 #mixin {targets: "com.rcx.mystgears.block.TileEntityMechanicalBellows" }
