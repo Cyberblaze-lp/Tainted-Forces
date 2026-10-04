@@ -1,0 +1,7 @@
+{
+  "type": "witchery:effect",
+  "item": "minecraft:cobblestone",
+  "power_cost": 100,
+  "capacity_required": 2,
+  "effect": "witchery:lava_hold"
+}

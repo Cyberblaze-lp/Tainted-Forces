@@ -1,0 +1,49 @@
+{
+  "sacrifices": {
+    "items": [
+      {
+        "ingredient": {
+          "item": "witchery:diamond_vapor"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:horned_one_exhale"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "minecraft:magma_cream"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:arthana"
+        },
+        "returns": {
+          "type": "witchery:self"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "minecraft:fermented_spider_eye"
+        }
+      }
+    ],
+    "power": 2000.0
+  },
+  "circles": [
+    {
+      "glyph": "witchery:infernal_circle_glyph",
+      "size": 1
+    }
+  ],
+  "sorting": {
+    "left": "witchery:reflection_summoning",
+    "right": "witchery:searching_familiar_summoning"
+  },
+  "result": {
+    "type": "witchery:entity_summoning",
+    "entity": "minecraft:witch"
+  }
+}

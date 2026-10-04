@@ -1,0 +1,17 @@
+{
+  "abilities": [
+    {
+      "type": "witchery:blind_target"
+    },
+    {
+      "type": "witchery:swim_boost"
+    },
+    {
+      "type": "witchery:drown_prevention",
+      "cost": 1,
+      "duration": 1200,
+      "amplifier": 1,
+      "air": 300
+    }
+  ]
+}

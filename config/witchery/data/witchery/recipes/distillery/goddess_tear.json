@@ -1,0 +1,25 @@
+{
+  "type": "witchery:distillery",
+  "primary_ingredient": {
+    "item": "witchery:goddess_breath"
+  },
+  "secondary_ingredient": {
+    "item": "minecraft:dye",
+    "data": 4
+  },
+  "clay_jars": 3,
+  "result": [
+    {
+      "item": "witchery:goddess_tear"
+    },
+    {
+      "item": "witchery:magic_whiff"
+    },
+    {
+      "item": "minecraft:slime_ball"
+    },
+    {
+      "item": "witchery:foul_fume"
+    }
+  ]
+}

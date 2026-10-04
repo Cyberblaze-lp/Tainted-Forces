@@ -1,0 +1,9 @@
+{
+  "type": "witchery:effect",
+  "item": "minecraft:golden_apple",
+  "power_cost": 1000,
+  "capacity_required": 4,
+  "effect": "witchery:potion",
+  "potion": "minecraft:absorption",
+  "duration": 600
+}

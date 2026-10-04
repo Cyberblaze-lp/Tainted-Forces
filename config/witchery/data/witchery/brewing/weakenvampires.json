@@ -1,0 +1,7 @@
+{
+  "type": "witchery:effect",
+  "item": "witchery:garlic",
+  "power_cost": 500,
+  "capacity_required": 4,
+  "effect": "witchery:weaken_vampires"
+}

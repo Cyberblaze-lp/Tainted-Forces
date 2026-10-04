@@ -1,0 +1,37 @@
+{
+  "sacrifices": {
+    "items": [
+      {
+        "ingredient": {
+          "item": "minecraft:blaze_rod"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:wood_ash"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "minecraft:coal",
+          "data": 0
+        }
+      }
+    ],
+    "power": 1000.0
+  },
+  "circles": [
+    {
+      "glyph": "witchery:infernal_circle_glyph",
+      "size": 1
+    }
+  ],
+  "sorting": {
+    "left": "witchery:natures_power",
+    "right": "witchery:portable_broiling"
+  },
+  "result": {
+    "type": "witchery:broiling",
+    "burn_chance": 0.08
+  }
+}

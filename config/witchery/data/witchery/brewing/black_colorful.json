@@ -1,0 +1,8 @@
+{
+  "type": "witchery:effect",
+  "item": "biomesoplenty:black_dye",
+  "secret": true,
+  "capacity_required": 1,
+  "effect": "witchery:tinting",
+  "color": "black"
+}

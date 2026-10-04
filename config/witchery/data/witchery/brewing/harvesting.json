@@ -1,0 +1,7 @@
+{
+  "type": "witchery:effect",
+  "item": "minecraft:apple",
+  "capacity_required": 1,
+  "group": 1,
+  "effect": "witchery:harvesting"
+}

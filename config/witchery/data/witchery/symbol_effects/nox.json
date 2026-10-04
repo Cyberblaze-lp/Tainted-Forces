@@ -1,0 +1,13 @@
+{
+  "type": "witchery:symbol_effect",
+  "default": true,
+  "strokes": [
+    "up",
+    "up",
+    "right",
+    "down",
+    "right",
+    "up"
+  ],
+  "result": "witchery:nox"
+}

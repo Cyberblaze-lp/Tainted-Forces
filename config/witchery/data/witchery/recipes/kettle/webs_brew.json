@@ -1,0 +1,29 @@
+{
+  "type": "witchery:kettle",
+  "hat_bonus": 1,
+  "ingredients": [
+    {
+      "item": "witchery:dense_web"
+    },
+    {
+      "item": "minecraft:red_mushroom"
+    },
+    {
+      "item": "witchery:bat_wool"
+    },
+    {
+      "item": "minecraft:yellow_flower",
+      "data": 0
+    },
+    {
+      "item": "witchery:magic_whiff"
+    },
+    {
+      "item": "witchery:belladonna_flower"
+    }
+  ],
+  "result": {
+    "item": "witchery:webs_brew",
+    "count": 3
+  }
+}

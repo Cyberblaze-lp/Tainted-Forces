@@ -1,0 +1,29 @@
+{
+  "type": "witchery:kettle",
+  "hat_bonus": 1,
+  "power_required": 500.0,
+  "ingredients": [
+    {
+      "item": "witchery:bat_wool"
+    },
+    {
+      "item": "witchery:mutandis"
+    },
+    {
+      "item": "minecraft:redstone"
+    },
+    {
+      "item": "witchery:vitriol_oil"
+    },
+    {
+      "item": "minecraft:bone"
+    },
+    {
+      "item": "minecraft:rotten_flesh"
+    }
+  ],
+  "result": {
+    "item": "witchery:raising_brew",
+    "count": 3
+  }
+}

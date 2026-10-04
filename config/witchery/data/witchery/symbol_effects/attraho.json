@@ -1,0 +1,14 @@
+{
+  "type": "witchery:symbol_effect",
+  "default": true,
+  "strokes": [
+    "up",
+    "up",
+    "up",
+    "right",
+    "right",
+    "down",
+    "left"
+  ],
+  "result": "witchery:attraho"
+}

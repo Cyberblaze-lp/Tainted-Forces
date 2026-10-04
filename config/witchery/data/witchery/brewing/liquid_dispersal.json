@@ -1,0 +1,12 @@
+{
+  "type": "witchery:dispersal",
+  "item": "witchery:wormwood",
+  "dispersal": "witchery:liquid",
+  "nullifiers": [
+    "minecraft:gunpowder",
+    "witchery:artichoke_globe",
+    "witchery:bat_wool",
+    "minecraft:skull,2",
+    "minecraft:wheat"
+  ]
+}

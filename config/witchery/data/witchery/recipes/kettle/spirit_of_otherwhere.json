@@ -1,0 +1,32 @@
+{
+  "type": "witchery:kettle",
+  "power_required": 4000.0,
+  "ingredients": [
+    {
+      "item": "witchery:redstone_soup"
+    },
+    {
+      "type": "minecraft:item_nbt",
+      "item": "minecraft:potion",
+      "nbt": {
+        "Potion": "minecraft:long_swiftness"
+      }
+    },
+    {
+      "item": "minecraft:ender_eye"
+    },
+    {
+      "item": "minecraft:ender_eye"
+    },
+    {
+      "item": "witchery:luck_drop"
+    },
+    {
+      "item": "witchery:bat_wool"
+    }
+  ],
+  "result": {
+    "item": "witchery:otherwhere_spirit",
+    "count": 2
+  }
+}

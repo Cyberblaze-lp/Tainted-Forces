@@ -1,0 +1,8 @@
+{
+  "type": "witchery:effect",
+  "item": "witchery:goddess_breath",
+  "power_cost": 750,
+  "capacity_required": 2,
+  "group": 2,
+  "effect": "witchery:air_hike"
+}

@@ -1,0 +1,12 @@
+{
+  "type": "witchery:symbol_effect",
+  "strokes": [
+    "up",
+    "left",
+    "up",
+    "up",
+    "up",
+    "right"
+  ],
+  "result": "witchery:cave_inimicum"
+}

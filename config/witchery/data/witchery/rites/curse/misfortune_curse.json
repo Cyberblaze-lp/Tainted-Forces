@@ -1,0 +1,53 @@
+{
+  "conditions": [
+    {
+      "type": "witchery:thunder"
+    }
+  ],
+  "sacrifices": {
+    "items": [
+      {
+        "ingredient": {
+          "item": "witchery:bound_taglock_kit"
+        },
+        "identifier": "target"
+      },
+      {
+        "ingredient": {
+          "item": "witchery:horned_one_exhale"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "minecraft:fermented_spider_eye"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "minecraft:gunpowder"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:grotesque_brew"
+        }
+      }
+    ],
+    "power": 2000.0
+  },
+  "circles": [
+    {
+      "glyph": "witchery:infernal_circle_glyph",
+      "size": 2
+    }
+  ],
+  "sorting": {
+    "left": "witchery:raining_toads_curse",
+    "right": "witchery:insanity_curse"
+  },
+  "result": {
+    "type": "witchery:curse",
+    "target": "target",
+    "curse": "witchery:misfortune"
+  }
+}

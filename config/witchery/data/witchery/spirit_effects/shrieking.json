@@ -1,0 +1,7 @@
+{
+  "ghosts": {
+    "witchery:spirit": 3,
+    "witchery:banshee": 2
+  },
+  "result": "witchery:shrieking"
+}

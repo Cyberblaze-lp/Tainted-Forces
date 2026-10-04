@@ -1,0 +1,5 @@
+{
+  "block": "witchery:bat_critter_snare",
+  "sound": "minecraft:entity.bat.ambient",
+  "fly": true
+}

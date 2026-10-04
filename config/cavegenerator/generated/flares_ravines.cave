@@ -160,7 +160,7 @@
     }
     scale: 16
     stretch: {
-      startVal: 2
+      startVal: 2.3
       factor: 1
       randFactor: 0.3
       exponent: 1

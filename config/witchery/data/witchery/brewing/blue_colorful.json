@@ -1,0 +1,8 @@
+{
+  "type": "witchery:effect",
+  "item": "biomesoplenty:blue_dye",
+  "secret": true,
+  "capacity_required": 1,
+  "effect": "witchery:tinting",
+  "color": "blue"
+}

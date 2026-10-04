@@ -1,0 +1,21 @@
+{
+  "type": "witchery:distillery",
+  "primary_ingredient": {
+    "item": "minecraft:blaze_powder"
+  },
+  "secondary_ingredient": {
+    "item": "minecraft:gunpowder"
+  },
+  "clay_jars": 1,
+  "result": [
+    {
+      "item": "minecraft:glowstone_dust"
+    },
+    {
+      "item": "minecraft:glowstone_dust"
+    },
+    {
+      "item": "witchery:misfortune_reek"
+    }
+  ]
+}

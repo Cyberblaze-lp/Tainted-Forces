@@ -1,0 +1,7 @@
+{
+  "type": "witchery:effect",
+  "item": "witchery:biome_note",
+  "power_cost": 5000,
+  "capacity_required": 8,
+  "effect": "witchery:shifting_seasons"
+}

@@ -1,0 +1,10 @@
+{
+  "abilities": [
+    {
+      "type": "witchery:explosion"
+    },
+    {
+      "type": "witchery:lightning_recharge"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "type": "witchery:brazier_drain_growth",
+  "ingredients": [
+    {
+      "item": "witchery:condensed_fear"
+    },
+    {
+      "item": "witchery:wormy_apple"
+    },
+    {
+      "item": "witchery:graveyard_dust"
+    }
+  ],
+  "burn_time": 1200
+}

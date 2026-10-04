@@ -1,0 +1,225 @@
+{
+	"dependencies": [
+		"bettercaves",
+		"cavegenerator",
+		"tfc"
+	],
+	"priority": 20,
+	"populate": {
+		"hotsprings_center": {
+			"distribution": "custom",
+			"generator": {
+				"type": "sequential",
+				"generators": [
+					{
+						"type": "boulder",
+						"diameter": 10,
+						"count": 1,
+						"block": {
+							"name": "minecraft:stained_hardened_clay",
+							"properties": {
+								"color": "blue"
+							}
+						},
+						"hollow": false,
+						"height": 2,
+						"material": [
+							"tfc:raw/granite",
+							"tfc:raw/diorite",
+							"tfc:raw/gabbro",
+							"tfc:raw/shale",
+							"tfc:raw/claystone",
+							"tfc:raw/rocksalt",
+							"tfc:raw/limestone",
+							"tfc:raw/conglomerate",
+							"tfc:raw/dolomite",
+							"tfc:raw/chert",
+							"tfc:raw/chalk",
+							"tfc:raw/rhyolite",
+							"tfc:raw/basalt",
+							"tfc:raw/andesite",
+							"tfc:raw/dacite",
+							"tfc:raw/quartzite",
+							"tfc:raw/slate",
+							"tfc:raw/phyllite",
+							"tfc:raw/schist",
+							"tfc:raw/gneiss",
+							"tfc:raw/marble",
+							"minecraft:stained_hardened_clay"
+						]
+					},
+					{
+						"type": "boulder",
+						"diameter": 8,
+						"count": 1,
+						"block": {
+							"name": "minecraft:stained_hardened_clay",
+							"properties": {
+								"color": "purple"
+							}
+						},
+						"hollow": false,
+						"height": 2,
+						"material": [
+							"tfc:raw/granite",
+							"tfc:raw/diorite",
+							"tfc:raw/gabbro",
+							"tfc:raw/shale",
+							"tfc:raw/claystone",
+							"tfc:raw/rocksalt",
+							"tfc:raw/limestone",
+							"tfc:raw/conglomerate",
+							"tfc:raw/dolomite",
+							"tfc:raw/chert",
+							"tfc:raw/chalk",
+							"tfc:raw/rhyolite",
+							"tfc:raw/basalt",
+							"tfc:raw/andesite",
+							"tfc:raw/dacite",
+							"tfc:raw/quartzite",
+							"tfc:raw/slate",
+							"tfc:raw/phyllite",
+							"tfc:raw/schist",
+							"tfc:raw/gneiss",
+							"tfc:raw/marble",
+							"minecraft:stained_hardened_clay"
+						]
+					},
+					{
+						"type": "boulder",
+						"diameter": 6,
+						"count": 1,
+						"block": {
+							"name": "minecraft:stained_hardened_clay",
+							"properties": {
+								"color": "orange"
+							}
+						},
+						"hollow": false,
+						"height": 2,
+						"material": [
+							"tfc:raw/granite",
+							"tfc:raw/diorite",
+							"tfc:raw/gabbro",
+							"tfc:raw/shale",
+							"tfc:raw/claystone",
+							"tfc:raw/rocksalt",
+							"tfc:raw/limestone",
+							"tfc:raw/conglomerate",
+							"tfc:raw/dolomite",
+							"tfc:raw/chert",
+							"tfc:raw/chalk",
+							"tfc:raw/rhyolite",
+							"tfc:raw/basalt",
+							"tfc:raw/andesite",
+							"tfc:raw/dacite",
+							"tfc:raw/quartzite",
+							"tfc:raw/slate",
+							"tfc:raw/phyllite",
+							"tfc:raw/schist",
+							"tfc:raw/gneiss",
+							"tfc:raw/marble",
+							"minecraft:stained_hardened_clay"
+						]
+					},
+					{
+						"type": "spout",
+						"radius": 12,
+						"block": "air",
+						"material": [
+							{
+								"name": "minecraft:stained_hardened_clay"
+								
+							},
+							{
+								"name": "minecraft:stained_hardened_clay",
+								"properties": {
+									"color": "yellow"
+								}
+							},
+							"tfc:fluid/hot_water"
+						],
+						"height": 20,
+						"use-material": false
+					},
+					{
+						"type": "lake",
+						"block": {
+							"name": "tfc:fluid/hot_water"
+						},
+						"use-material": false,
+						"solid-outline": true,
+						"total-outline": false,
+						"outline-block": [
+							{
+								"name": "minecraft:stained_hardened_clay",
+								"properties": {
+									"color": "yellow"
+								}
+							}
+						],
+						"material": "air"
+					}
+				]
+			},
+			"x-offset": {
+				"min": -7,
+				"max": 8
+			},
+			"z-offset": {
+				"min": -7,
+				"max": 8
+			},
+			"y-offset": {
+				"operation": "MULTIPLY",
+				"value-a": {
+					"world-data": "SURFACE_BLOCK"
+				},
+				"value-b": {
+					"operation": "MINIMUM",
+					"value-a": 1,
+					"value-b": {
+						"operation": "SUBTRACT",
+						"value-a": 128,
+						"value-b": {
+							"operation": "MINIMUM",
+							"value-a": 128,
+							"value-b": {
+								"world-data": "SURFACE_BLOCK"
+							}
+						}
+					}
+				}
+			},
+			"cluster-count": {
+				"operation": "MULTIPLY",
+				"value-a": 1,
+				"value-b": {
+					"operation": "MINIMUM",
+					"value-a": 1,
+					"value-b": {
+						"operation": "SUBTRACT",
+						"value-a": 115,
+						"value-b": {
+							"operation": "MINIMUM",
+							"value-a": 115,
+							"value-b": {
+								"world-data": "SURFACE_BLOCK"
+							}
+						}
+					}
+				}
+			},
+			"follow-terrain": true,
+			"chunk-chance": 2,
+			"biome": "all",
+			"retrogen": false,
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					0
+				]
+			}
+		}
+	}
+}

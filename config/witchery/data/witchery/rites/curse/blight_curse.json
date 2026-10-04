@@ -1,0 +1,56 @@
+{
+  "sacrifices": {
+    "items": [
+      {
+        "ingredient": {
+          "item": "witchery:charged_attuned_stone"
+        },
+        "returns": {
+          "type": "witchery:copy_data",
+          "item": "witchery:attuned_stone"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:redstone_soup"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:misfortune_reek"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "minecraft:fermented_spider_eye"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "minecraft:speckled_melon"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "minecraft:rotten_flesh"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "minecraft:diamond"
+        }
+      }
+    ]
+  },
+  "circles": [
+    {
+      "glyph": "witchery:infernal_circle_glyph",
+      "size": 2
+    }
+  ],
+  "sorting": {
+    "left": "witchery:prior_incarnation",
+    "right": "witchery:blindness_curse"
+  },
+  "result": "witchery:blight_curse"
+}

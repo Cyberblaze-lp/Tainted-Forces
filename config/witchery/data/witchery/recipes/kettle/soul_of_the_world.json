@@ -1,0 +1,33 @@
+{
+  "type": "witchery:kettle",
+  "power_required": 4000.0,
+  "ingredients": [
+    {
+      "item": "witchery:redstone_soup"
+    },
+    {
+      "type": "minecraft:item_nbt",
+      "item": "minecraft:potion",
+      "nbt": {
+        "Potion": "minecraft:long_regeneration"
+      }
+    },
+    {
+      "item": "minecraft:golden_apple",
+      "data": 1
+    },
+    {
+      "item": "witchery:attuned_stone"
+    },
+    {
+      "item": "witchery:mandrake_root"
+    },
+    {
+      "item": "witchery:rowan_sapling"
+    }
+  ],
+  "result": {
+    "item": "witchery:world_soul",
+    "count": 2
+  }
+}

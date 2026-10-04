@@ -1,0 +1,7 @@
+{
+  "type": "witchery:duration",
+  "item": "minecraft:redstone",
+  "power_cost": 50,
+  "increment": 1,
+  "ceiling": 1
+}

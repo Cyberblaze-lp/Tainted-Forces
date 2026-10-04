@@ -1,0 +1,6 @@
+{
+  "type": "witchery:speed",
+  "item": "witchery:spanish_moss",
+  "power_cost": 50,
+  "speed": 4
+}

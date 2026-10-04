@@ -1,0 +1,40 @@
+{
+  "sacrifices": {
+    "items": [
+      {
+        "ingredient": {
+          "item": "witchery:refined_evil"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "minecraft:blaze_powder"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "minecraft:ender_pearl"
+        }
+      }
+    ],
+    "entities": [
+      "minecraft:villager"
+    ],
+    "power": 3000.0
+  },
+  "circles": [
+    {
+      "glyph": "witchery:infernal_circle_glyph",
+      "size": 3
+    }
+  ],
+  "sorting": {
+    "left": "witchery:banishing",
+    "right": "witchery:expensive_demon_summoning"
+  },
+  "result": {
+    "type": "witchery:entity_summoning",
+    "entity": "witchery:demon",
+    "persistent": true
+  }
+}

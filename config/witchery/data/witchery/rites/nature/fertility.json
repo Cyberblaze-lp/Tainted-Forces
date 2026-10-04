@@ -1,0 +1,49 @@
+{
+  "sacrifices": {
+    "items": [
+      {
+        "ingredient": {
+          "item": "minecraft:dye",
+          "data": 15
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:rebirth_hint"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:diamond_vapor"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:quicklime"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:gypsum"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:mutandis"
+        }
+      }
+    ],
+    "power": 3000.0
+  },
+  "circles": [
+    {
+      "glyph": "witchery:ritual_circle_glyph",
+      "size": 1
+    }
+  ],
+  "sorting": {
+    "left": "witchery:moving_earth_9",
+    "right": "witchery:portable_fertility"
+  },
+  "result": "witchery:fertility"
+}

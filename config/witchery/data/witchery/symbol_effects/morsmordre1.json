@@ -1,0 +1,14 @@
+{
+  "type": "witchery:symbol_effect",
+  "strokes": [
+    "up",
+    "up",
+    "left",
+    "left",
+    "right",
+    "right",
+    "right",
+    "right"
+  ],
+  "result": "witchery:morsmordre"
+}

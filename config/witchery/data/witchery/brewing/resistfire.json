@@ -1,0 +1,9 @@
+{
+  "type": "witchery:effect",
+  "item": "minecraft:magma_cream",
+  "power_cost": 100,
+  "capacity_required": 2,
+  "effect": "witchery:potion",
+  "potion": "minecraft:fire_resistance",
+  "duration": 3600
+}

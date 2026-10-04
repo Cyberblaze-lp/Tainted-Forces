@@ -1,0 +1,29 @@
+{
+  "type": "witchery:kettle",
+  "hat_bonus": 1,
+  "ingredients": [
+    {
+      "item": "minecraft:red_mushroom"
+    },
+    {
+      "item": "minecraft:wheat"
+    },
+    {
+      "item": "witchery:webs_brew"
+    },
+    {
+      "item": "witchery:artichoke_globe"
+    },
+    {
+      "item": "minecraft:slime_ball"
+    },
+    {
+      "item": "witchery:frogs_toe"
+    }
+  ],
+  "familiar_power": "witchery:brew_mastery",
+  "result": {
+    "item": "witchery:frogs_tongue_brew",
+    "count": 3
+  }
+}

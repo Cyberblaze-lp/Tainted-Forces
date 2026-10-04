@@ -1,0 +1,7 @@
+{
+  "type": "witchery:effect",
+  "item": "minecraft:skull,4",
+  "power_cost": 2000,
+  "capacity_required": 8,
+  "effect": "witchery:spread_debuffs"
+}

@@ -1,0 +1,31 @@
+{
+  "type": "witchery:kettle",
+  "special": true,
+  "hat_bonus": 1,
+  "power_required": 2000.0,
+  "ingredients": [
+    {
+      "item": "minecraft:dirt",
+      "data": 0
+    },
+    {
+      "item": "witchery:foul_fume"
+    },
+    {
+      "item": "witchery:purity_odor"
+    },
+    {
+      "item": "witchery:mutandis"
+    },
+    {
+      "item": "witchery:wood_ash"
+    },
+    {
+      "item": "witchery:spanish_moss"
+    }
+  ],
+  "result": {
+    "item": "witchery:solidifying_dirt_brew",
+    "count": 3
+  }
+}

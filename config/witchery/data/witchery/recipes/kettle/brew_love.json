@@ -1,0 +1,30 @@
+{
+  "type": "witchery:kettle",
+  "hat_bonus": 1,
+  "ingredients": [
+    {
+      "item": "minecraft:red_flower",
+      "data": 0
+    },
+    {
+      "item": "witchery:magic_whiff"
+    },
+    {
+      "item": "witchery:artichoke_globe"
+    },
+    {
+      "item": "minecraft:golden_carrot"
+    },
+    {
+      "item": "minecraft:waterlily"
+    },
+    {
+      "item": "minecraft:dye",
+      "data": 3
+    }
+  ],
+  "result": {
+    "item": "witchery:love_brew",
+    "count": 3
+  }
+}

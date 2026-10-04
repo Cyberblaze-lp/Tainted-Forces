@@ -1,0 +1,6 @@
+{
+  "type": "witchery:modifier",
+  "item": "minecraft:brick",
+  "power_cost": 50,
+  "modifier": "skip_entity_effects"
+}

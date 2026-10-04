@@ -1,0 +1,64 @@
+{
+  "sacrifices": {
+    "items": [
+      {
+        "ingredient": {
+          "item": "witchery:sprouting_brew"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:rowan_sapling"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:alder_sapling"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:hawthorn_sapling"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "minecraft:sapling",
+          "data": 0
+        }
+      },
+      {
+        "ingredient": {
+          "item": "minecraft:sapling",
+          "data": 1
+        }
+      },
+      {
+        "ingredient": {
+          "item": "minecraft:sapling",
+          "data": 2
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:charged_attuned_stone"
+        },
+        "returns": {
+          "type": "witchery:copy_data",
+          "item": "witchery:attuned_stone"
+        }
+      }
+    ]
+  },
+  "circles": [
+    {
+      "glyph": "witchery:ritual_circle_glyph",
+      "size": 2
+    }
+  ],
+  "sorting": {
+    "left": "witchery:portable_fertility",
+    "right": "witchery:broiling"
+  },
+  "result": "witchery:natures_power"
+}

@@ -1,0 +1,10 @@
+{
+  "type": "witchery:effect",
+  "item": "minecraft:feather",
+  "power_cost": 100,
+  "capacity_required": 2,
+  "group": 1,
+  "effect": "witchery:potion",
+  "potion": "witchery:slow_falling",
+  "duration": 1200
+}

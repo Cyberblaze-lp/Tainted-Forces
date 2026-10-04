@@ -1,0 +1,35 @@
+{
+  "type": "witchery:cauldron",
+  "group": "pit_traps",
+  "ingredients": [
+    {
+      "ingredient": {
+        "item": "minecraft:nether_wart"
+      },
+      "power": 70
+    },
+    {
+      "ingredient": {
+        "item": "minecraft:dirt",
+        "data": 0
+      }
+    },
+    {
+      "ingredient": {
+        "item": "minecraft:yellow_flower",
+        "data": 0
+      },
+      "power": 280
+    }
+  ],
+  "trigger_ingredient": {
+    "ingredient": {
+      "item": "witchery:tormented_twine"
+    },
+    "power": 5600
+  },
+  "result": {
+    "item": "witchery:pit_grass",
+    "count": 4
+  }
+}

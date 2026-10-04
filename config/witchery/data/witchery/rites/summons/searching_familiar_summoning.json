@@ -1,0 +1,45 @@
+{
+  "sacrifices": {
+    "items": [
+      {
+        "ingredient": {
+          "item": "witchery:luck_drop"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "minecraft:porkchop"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "minecraft:gold_ingot"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:arthana"
+        },
+        "returns": {
+          "type": "witchery:self"
+        }
+      }
+    ],
+    "power": 2000.0
+  },
+  "circles": [
+    {
+      "glyph": "witchery:ritual_circle_glyph",
+      "size": 1
+    }
+  ],
+  "sorting": {
+    "left": "witchery:witch_summoning",
+    "right": "witchery:familiar_summoning"
+  },
+  "result": {
+    "type": "witchery:entity_summoning",
+    "entity": "witchery:spectral_familiar",
+    "tame": true
+  }
+}

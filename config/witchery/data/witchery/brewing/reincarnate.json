@@ -1,0 +1,9 @@
+{
+  "type": "witchery:effect",
+  "item": "witchery:rebirth_hint",
+  "power_cost": 2500,
+  "capacity_required": 6,
+  "effect": "witchery:potion",
+  "potion": "witchery:reincarnate",
+  "duration": 3600
+}

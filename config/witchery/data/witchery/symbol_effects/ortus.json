@@ -1,0 +1,12 @@
+{
+  "type": "witchery:symbol_effect",
+  "default": true,
+  "strokes": [
+    "down",
+    "right",
+    "up",
+    "up",
+    "left"
+  ],
+  "result": "witchery:ortus"
+}

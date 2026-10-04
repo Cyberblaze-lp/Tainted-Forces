@@ -1,0 +1,28 @@
+{
+  "type": "witchery:kettle",
+  "hat_bonus": 1,
+  "ingredients": [
+    {
+      "item": "minecraft:vine"
+    },
+    {
+      "item": "minecraft:red_mushroom"
+    },
+    {
+      "item": "minecraft:brown_mushroom"
+    },
+    {
+      "item": "witchery:dog_tongue"
+    },
+    {
+      "item": "minecraft:wheat"
+    },
+    {
+      "item": "witchery:misfortune_reek"
+    }
+  ],
+  "result": {
+    "item": "witchery:vines_brew",
+    "count": 3
+  }
+}

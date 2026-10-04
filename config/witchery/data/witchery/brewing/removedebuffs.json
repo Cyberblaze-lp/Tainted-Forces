@@ -1,0 +1,8 @@
+{
+  "type": "witchery:effect",
+  "item": "witchery:purified_milk",
+  "power_cost": 200,
+  "capacity_required": 2,
+  "group": 3,
+  "effect": "witchery:cure_debuffs"
+}

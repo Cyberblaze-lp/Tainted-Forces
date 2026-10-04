@@ -1,0 +1,41 @@
+{
+  "sacrifices": {
+    "items": [
+      {
+        "ingredient": {
+          "item": "witchery:hollow_tears_brew"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "minecraft:gold_ingot"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "minecraft:glass_pane"
+        }
+      }
+    ],
+    "entities": [
+      "witchery:demon"
+    ],
+    "power": 2000.0
+  },
+  "circles": [
+    {
+      "glyph": "witchery:ritual_circle_glyph",
+      "size": 2
+    }
+  ],
+  "sorting": {
+    "left": "witchery:grave_brew_infusion",
+    "right": "witchery:necromantic_stone_necromancy"
+  },
+  "result": {
+    "type": "witchery:item_summoning",
+    "stack": {
+      "item": "witchery:mirror"
+    }
+  }
+}

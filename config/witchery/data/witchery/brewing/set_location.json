@@ -1,0 +1,5 @@
+{
+  "type": "witchery:set_location",
+  "item": "witchery:bound_waystone",
+  "power_cost": 100
+}

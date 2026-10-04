@@ -62,3 +62,5 @@ ItemRegistry.registerFood(<contenttweaker:taint_tendril>, 0, 0.0, 0.0, decayMod,
 
 ItemRegistry.registerFood(<botania:manacookie>, 8, 10.0, 10.0, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0);
 
+
+

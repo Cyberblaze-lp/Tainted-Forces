@@ -1,0 +1,18 @@
+{
+  "type": "witchery:brazier_entity_summoning",
+  "ingredients": [
+    {
+      "item": "witchery:wormwood"
+    },
+    {
+      "item": "witchery:refined_evil"
+    },
+    {
+      "item": "witchery:focused_will"
+    }
+  ],
+  "burn_time": 900,
+  "hidden": true,
+  "entity": "witchery:poltergeist",
+  "extra": "witchery:poltergeist"
+}

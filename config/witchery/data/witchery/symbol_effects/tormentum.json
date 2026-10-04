@@ -1,0 +1,12 @@
+{
+  "type": "witchery:symbol_effect",
+  "default": true,
+  "strokes": [
+    "down",
+    "down",
+    "left",
+    "right",
+    "right"
+  ],
+  "result": "witchery:tormentum"
+}

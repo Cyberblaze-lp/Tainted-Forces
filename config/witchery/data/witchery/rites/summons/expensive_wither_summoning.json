@@ -1,0 +1,56 @@
+{
+  "sacrifices": {
+    "items": [
+      {
+        "ingredient": {
+          "item": "minecraft:skull",
+          "data": 1
+        }
+      },
+      {
+        "ingredient": {
+          "item": "minecraft:diamond"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "minecraft:ender_pearl"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:attuned_stone"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:charged_attuned_stone"
+        },
+        "returns": {
+          "type": "witchery:copy_data",
+          "item": "witchery:attuned_stone"
+        }
+      }
+    ]
+  },
+  "circles": [
+    {
+      "glyph": "witchery:infernal_circle_glyph",
+      "size": 2
+    },
+    {
+      "glyph": "witchery:infernal_circle_glyph",
+      "size": 3
+    }
+  ],
+  "sorting": {
+    "left": "witchery:wither_summoning",
+    "right": "witchery:imp_summoning"
+  },
+  "name_type": "by_path",
+  "name_path": "wither_summoning",
+  "result": {
+    "type": "witchery:entity_summoning",
+    "entity": "minecraft:wither"
+  }
+}

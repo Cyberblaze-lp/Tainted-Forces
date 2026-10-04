@@ -1,0 +1,37 @@
+{
+  "sacrifices": {
+    "items": [
+      {
+        "ingredient": {
+          "item": "witchery:sprouting_brew"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "minecraft:cactus"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "minecraft:glowstone_dust"
+        }
+      }
+    ]
+  },
+  "circles": [
+    {
+      "glyph": "witchery:ritual_circle_glyph",
+      "size": 3
+    }
+  ],
+  "sorting": {
+    "left": "witchery:moving_earth_6",
+    "right": "witchery:fertility"
+  },
+  "name_type": "by_path",
+  "name_path": "moving_earth",
+  "result": {
+    "type": "witchery:moving_earth",
+    "radius": 9
+  }
+}

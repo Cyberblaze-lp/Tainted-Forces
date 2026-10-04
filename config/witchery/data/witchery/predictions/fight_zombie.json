@@ -1,0 +1,5 @@
+{
+  "type": "witchery:fight",
+  "weight": 13,
+  "entity": "minecraft:zombie"
+}

@@ -1,0 +1,9 @@
+{
+  "type": "witchery:effect",
+  "item": "witchery:ender_bramble",
+  "power_cost": 250,
+  "capacity_required": 2,
+  "effect": "witchery:potion",
+  "potion": "witchery:repell",
+  "duration": 1800
+}

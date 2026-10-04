@@ -1,0 +1,6 @@
+{
+  "type": "witchery:linger",
+  "item": "minecraft:end_stone",
+  "power_cost": 150,
+  "limit": 3
+}

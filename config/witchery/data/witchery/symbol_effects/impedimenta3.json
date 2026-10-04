@@ -1,0 +1,16 @@
+{
+  "type": "witchery:symbol_effect",
+  "level": 3,
+  "strokes": [
+    "left",
+    "left",
+    "left",
+    "left",
+    "left",
+    "right",
+    "right",
+    "right",
+    "right"
+  ],
+  "result": "witchery:impedimenta"
+}

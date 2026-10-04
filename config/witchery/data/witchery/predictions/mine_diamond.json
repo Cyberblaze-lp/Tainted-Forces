@@ -1,0 +1,13 @@
+{
+  "type": "witchery:mining_fortune",
+  "weight": 3,
+  "fulfillment_duration": 1208,
+  "block": "minecraft:stone",
+  "drop": {
+    "item": "minecraft:diamond"
+  },
+  "extra": {
+    "min": 1,
+    "max": 1
+  }
+}

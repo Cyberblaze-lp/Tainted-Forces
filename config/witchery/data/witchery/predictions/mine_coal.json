@@ -1,0 +1,14 @@
+{
+  "type": "witchery:mining_fortune",
+  "weight": 13,
+  "fulfillment_duration": 1208,
+  "block": "minecraft:coal_ore",
+  "drop": {
+    "item": "minecraft:coal",
+    "data": 0
+  },
+  "extra": {
+    "min": 10,
+    "max": 20
+  }
+}

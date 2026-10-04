@@ -1,0 +1,10 @@
+{
+  "type": "witchery:effect",
+  "item": "minecraft:red_mushroom",
+  "power_cost": 200,
+  "capacity_required": 2,
+  "group": 1,
+  "effect": "witchery:potion",
+  "potion": "witchery:poison_weapons",
+  "duration": 1800
+}

@@ -1,0 +1,42 @@
+{
+  "conditions": [
+    {
+      "type": "witchery:night"
+    }
+  ],
+  "sacrifices": {
+    "items": [
+      {
+        "ingredient": {
+          "item": "witchery:ent_twig"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:mystic_unguent"
+        }
+      }
+    ],
+    "power": 3000.0
+  },
+  "circles": [
+    {
+      "glyph": "witchery:ritual_circle_glyph",
+      "size": 1
+    },
+    {
+      "glyph": "witchery:ritual_circle_glyph",
+      "size": 2
+    }
+  ],
+  "sorting": {
+    "left": "witchery:sky_broom_infusion",
+    "right": "witchery:future_crystal_ball_infusion"
+  },
+  "result": {
+    "type": "witchery:item_summoning",
+    "stack": {
+      "item": "witchery:mystic_branch"
+    }
+  }
+}

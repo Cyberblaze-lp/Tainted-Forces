@@ -1,0 +1,9 @@
+{
+  "type": "witchery:effect",
+  "item": "witchery:disturbed_cotton",
+  "power_cost": 3000,
+  "capacity_required": 4,
+  "effect": "witchery:curse",
+  "potion": "witchery:sinking",
+  "duration": 3600
+}

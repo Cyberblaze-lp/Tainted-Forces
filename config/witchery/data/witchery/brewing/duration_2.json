@@ -1,0 +1,7 @@
+{
+  "type": "witchery:duration",
+  "item": "minecraft:obsidian",
+  "power_cost": 100,
+  "increment": 1,
+  "ceiling": 2
+}

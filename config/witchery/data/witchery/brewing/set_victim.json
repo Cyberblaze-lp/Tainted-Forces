@@ -1,0 +1,5 @@
+{
+  "type": "witchery:set_victim",
+  "item": "witchery:bound_taglock_kit",
+  "power_cost": 1000
+}

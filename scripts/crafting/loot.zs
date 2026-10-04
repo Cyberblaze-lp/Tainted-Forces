@@ -43,12 +43,12 @@ dungeonMain.addItemEntry(<thaumcraft:celestial_notes:9>, 1000);
 dungeonMain.addItemEntry(<thaumcraft:celestial_notes:10>, 1000);
 dungeonMain.addItemEntry(<thaumcraft:celestial_notes:11>, 1000);
 dungeonMain.addItemEntry(<thaumcraft:celestial_notes:12>, 1000);
-dungeonMain.addItemEntry(<thaumcraft:fabric>, 30000);
+dungeonMain.addItemEntry(<botania:manaresource:16>, 30000);
 dungeonMain.addItemEntry(<thaumcraft:baubles:3>, 1000);
 dungeonMain.addItemEntry(<thaumcraft:pech_wand>, 2000);
 dungeonMain.addItemEntry(<thaumcraft:curio:6>, 3000);
-dungeonMain.addItemEntry(<minecraft:dye:4>, 70000);
 dungeonMain.addItemEntry(<quark:backpack>, 20000);
+dungeonMain.addItemEntry(<minecraft:leather>, 20000);
 
 
 

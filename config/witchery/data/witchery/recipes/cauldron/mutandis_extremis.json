@@ -1,0 +1,20 @@
+{
+  "type": "witchery:cauldron",
+  "group": "mutandis_extremis",
+  "ingredients": [
+    {
+      "ingredient": {
+        "item": "minecraft:nether_wart"
+      },
+      "power": 70
+    }
+  ],
+  "trigger_ingredient": {
+    "ingredient": {
+      "item": "witchery:mutandis"
+    }
+  },
+  "result": {
+    "item": "witchery:mutandis_extremis"
+  }
+}

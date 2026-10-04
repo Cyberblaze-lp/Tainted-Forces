@@ -1,0 +1,12 @@
+{
+  "type": "witchery:spinning_wheel",
+  "fibre": {
+    "ingredient": {
+      "item": "minecraft:string"
+    },
+    "count": 8
+  },
+  "result": {
+    "item": "minecraft:web"
+  }
+}

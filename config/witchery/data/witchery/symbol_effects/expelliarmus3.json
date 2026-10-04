@@ -1,0 +1,16 @@
+{
+  "type": "witchery:symbol_effect",
+  "level": 3,
+  "strokes": [
+    "up",
+    "up",
+    "up",
+    "up",
+    "up",
+    "down",
+    "down",
+    "down",
+    "down"
+  ],
+  "result": "witchery:expelliarmus"
+}

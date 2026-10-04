@@ -1,0 +1,7 @@
+{
+  "type": "witchery:capacity",
+  "item": "witchery:goddess_tear",
+  "power_cost": 100,
+  "increment": 2,
+  "ceiling": 4
+}

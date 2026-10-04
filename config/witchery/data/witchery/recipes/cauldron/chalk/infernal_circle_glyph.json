@@ -1,0 +1,27 @@
+{
+  "type": "witchery:cauldron",
+  "group": "infernal_circle_glyph",
+  "ingredients": [
+    {
+      "ingredient": {
+        "item": "minecraft:nether_wart"
+      },
+      "power": 70
+    },
+    {
+      "ingredient": {
+        "item": "minecraft:blaze_powder"
+      },
+      "power": 280
+    }
+  ],
+  "trigger_ingredient": {
+    "ingredient": {
+      "item": "witchery:ritual_circle_glyph"
+    },
+    "power": 2800
+  },
+  "result": {
+    "item": "witchery:infernal_circle_glyph"
+  }
+}

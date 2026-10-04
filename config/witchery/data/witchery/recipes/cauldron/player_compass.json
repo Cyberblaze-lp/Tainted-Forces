@@ -1,0 +1,38 @@
+{
+  "type": "witchery:cauldron",
+  "group": "player_compass",
+  "ingredients": [
+    {
+      "ingredient": {
+        "item": "minecraft:nether_wart"
+      },
+      "power": 70
+    },
+    {
+      "ingredient": {
+        "item": "witchery:goddess_tear"
+      },
+      "power": 140
+    },
+    {
+      "ingredient": {
+        "item": "minecraft:vine"
+      },
+      "power": 210
+    },
+    {
+      "ingredient": {
+        "item": "minecraft:spider_eye"
+      }
+    }
+  ],
+  "trigger_ingredient": {
+    "ingredient": {
+      "item": "minecraft:compass"
+    },
+    "power": 7000
+  },
+  "result": {
+    "item": "witchery:player_compass"
+  }
+}

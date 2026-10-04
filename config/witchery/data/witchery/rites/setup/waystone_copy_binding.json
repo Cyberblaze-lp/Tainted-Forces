@@ -1,0 +1,51 @@
+{
+  "sacrifices": {
+    "items": [
+      {
+        "ingredient": {
+          "item": "witchery:bound_waystone"
+        },
+        "action": "witchery:keep",
+        "identifier": "old_waystone"
+      },
+      {
+        "ingredient": {
+          "item": "witchery:waystone"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:ender_dew"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "minecraft:redstone"
+        }
+      }
+    ],
+    "power": 500.0
+  },
+  "circles": [
+    {
+      "glyph": "witchery:ritual_circle_glyph",
+      "size": 1
+    }
+  ],
+  "sorting": {
+    "left": "witchery:portable_waystone_binding",
+    "right": "witchery:portable_waystone_copy_binding"
+  },
+  "result": {
+    "type": "witchery:item_summoning",
+    "stack": {
+      "item": "witchery:bound_waystone",
+      "actions": [
+        {
+          "type": "witchery:copy_binding",
+          "target": "old_waystone"
+        }
+      ]
+    }
+  }
+}

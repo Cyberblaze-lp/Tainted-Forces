@@ -1,0 +1,47 @@
+{
+  "sacrifices": {
+    "items": [
+      {
+        "ingredient": {
+          "item": "witchery:bound_taglock_kit"
+        },
+        "identifier": "target"
+      },
+      {
+        "ingredient": {
+          "item": "witchery:horned_one_exhale"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:voodoo_protection_poppet"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "minecraft:blaze_powder"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:spectral_dust"
+        }
+      }
+    ],
+    "power": 7000.0
+  },
+  "circles": [
+    {
+      "glyph": "witchery:infernal_circle_glyph",
+      "size": 2
+    }
+  ],
+  "sorting": {
+    "left": "witchery:earth_hell_curse",
+    "right": "witchery:raining_toads_curse"
+  },
+  "result": {
+    "type": "witchery:corrupt_poppet_curse",
+    "target": "target"
+  }
+}

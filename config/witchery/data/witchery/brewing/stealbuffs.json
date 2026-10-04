@@ -1,0 +1,7 @@
+{
+  "type": "witchery:effect",
+  "item": "minecraft:skull",
+  "power_cost": 100,
+  "capacity_required": 6,
+  "effect": "witchery:steal_buffs"
+}

@@ -1,0 +1,44 @@
+{
+  "sacrifices": {
+    "items": [
+      {
+        "ingredient": {
+          "item": "witchery:sprouting_brew"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "minecraft:cactus"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "minecraft:gunpowder"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:bound_waystone"
+        },
+        "action": "witchery:set_location",
+        "optional": true
+      }
+    ]
+  },
+  "circles": [
+    {
+      "glyph": "witchery:ritual_circle_glyph",
+      "size": 1
+    }
+  ],
+  "sorting": {
+    "left": "witchery:broken_earth",
+    "right": "witchery:moving_earth_6"
+  },
+  "name_type": "by_path",
+  "name_path": "moving_earth",
+  "result": {
+    "type": "witchery:moving_earth",
+    "radius": 4
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "sacrifices": {
+    "items": [
+      {
+        "ingredient": {
+          "item": "minecraft:ender_pearl"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "minecraft:iron_ingot"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "minecraft:blaze_powder"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:diamond_vapor"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:charged_attuned_stone"
+        },
+        "returns": {
+          "type": "witchery:copy_data",
+          "item": "witchery:attuned_stone"
+        }
+      }
+    ]
+  },
+  "circles": [
+    {
+      "glyph": "witchery:otherwhere_circle_glyph",
+      "size": 3
+    }
+  ],
+  "sorting": {
+    "left": "witchery:entity_transposition",
+    "right": "witchery:beastial_call"
+  },
+  "result": {
+    "type": "witchery:ore_transposition",
+    "coven_size_blocks": {
+      "0": [
+        "minecraft:iron_ore"
+      ],
+      "6": [
+        "minecraft:gold_ore"
+      ]
+    }
+  }
+}

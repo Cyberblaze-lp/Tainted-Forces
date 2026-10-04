@@ -1,0 +1,41 @@
+{
+  "sacrifices": {
+    "items": [
+      {
+        "ingredient": {
+          "item": "minecraft:cobblestone"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "minecraft:magma_cream"
+        }
+      },
+      {
+        "ingredient": {
+          "item": "minecraft:golden_sword",
+          "data": 32767
+        }
+      },
+      {
+        "ingredient": {
+          "item": "witchery:bound_waystone"
+        },
+        "action": "witchery:set_location",
+        "optional": true
+      }
+    ],
+    "power": 2000.0
+  },
+  "circles": [
+    {
+      "glyph": "witchery:infernal_circle_glyph",
+      "size": 1
+    }
+  ],
+  "sorting": {
+    "left": "witchery:icy_expansion",
+    "right": "witchery:portable_earth_wrath"
+  },
+  "result": "witchery:earth_wrath"
+}
