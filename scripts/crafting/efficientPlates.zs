@@ -61,10 +61,7 @@ import mods.terrafirmacraft.Anvil;
 	
 	mods.embers.DawnstoneAnvil.add([<tfc:metal/double_ingot/brass>],<ore:ingotBrass>,<ore:ingotBrass>);
 	mods.embers.DawnstoneAnvil.add([<tfc:metal/sheet/brass>*3],<ore:ingotDoubleBrass>,<ore:ingotDoubleBrass>);
-	
-	mods.embers.DawnstoneAnvil.add([<tfc:metal/double_ingot/antimony>],<ore:ingotAntimony>,<ore:ingotAntimony>);
-	mods.embers.DawnstoneAnvil.add([<tfc:metal/sheet/antimony>*3],<ore:ingotDoubleAntimony>,<ore:ingotDoubleAntimony>);
-	
+
 	mods.embers.DawnstoneAnvil.add([<tfc:metal/double_ingot/rose_gold>],<ore:ingotRoseGold>,<ore:ingotRoseGold>);
 	mods.embers.DawnstoneAnvil.add([<tfc:metal/sheet/rose_gold>*3],<ore:ingotDoubleRoseGold>,<ore:ingotDoubleRoseGold>);
 	

@@ -20,6 +20,71 @@
     <ore:nuggetAdvancedElectronicAlloy>.remove(<immersiveintelligence:material_nugget>);
     <ore:itemRubber>.remove(<ic2:crafting>);
     <ore:itemRubber>.remove(<tfctech:latex/rubber>);
+
+    for ore in [
+        
+        <ore:oreRichCopper>,
+        <ore:oreCopperRich>
+    ]{
+        ore.remove(<tfc:ore/malachite:2>);
+    }
+    for ore in [
+        
+        <ore:oreNormalCopper>,
+        <ore:oreCopperNormal>
+    ]{
+        ore.remove(<tfc:ore/malachite>);
+    }
+
+    for ore in [
+        
+        <ore:orePoorCopper>,
+        <ore:oreCopperPoor>
+    ]{
+        ore.remove(<tfc:ore/malachite:1>);
+    }
+    for ore in [
+        
+        <ore:oreSmallCopper>,
+        <ore:oreCopperSmall>
+    ]{
+        ore.remove(<tfc:ore/small/malachite>);
+    }
+
+     for ore in [
+        <ore:oreRichIron>,
+        <ore:oreIronRich>,
+        <ore:oreRichWroughtIron>,
+        <ore:oreWroughtIronRich>
+    ]{
+        ore.remove(<tfc:ore/limonite:2>);
+    }
+    for ore in [
+        <ore:oreNormalIron>,
+        <ore:oreIronNormal>,
+        <ore:oreNormalWroughtIron>,
+        <ore:oreWroughtIronNormal>
+    ]{
+        ore.remove(<tfc:ore/limonite>);
+    }
+
+    for ore in [
+        <ore:orePoorIron>,
+        <ore:oreIronPoor>,
+        <ore:orePoorWroughtIron>,
+        <ore:oreWroughtIronPoor>
+    ]{
+        ore.remove(<tfc:ore/limonite:1>);
+    }
+    for ore in [
+        <ore:oreSmallIron>,
+        <ore:oreIronSmall>,
+        <ore:oreSmallWroughtIron>,
+        <ore:oreWroughtIronSmall>
+    ]{
+        ore.remove(<tfc:ore/small/limonite>);
+    }
+
     
 
 

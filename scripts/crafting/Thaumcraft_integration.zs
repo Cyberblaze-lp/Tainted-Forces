@@ -326,7 +326,7 @@ for items in oreDict.get("oreSmall" +itemPlusOre.ore).items
     ThaumcraftApi.addCrucibleRecipe(resource, recipe);
     recipe.setGroup(ResourceLocation("thaumcraft:groupOre"+ itemPlusOre.ore));
 
-    if ! (itemPlusOre.ore has "Iron")
+    if ! (itemPlusOre.ore has "Iron" || itemPlusOre.ore has "Thorium")
     {
     mods.inworldcrafting.FireCrafting.addRecipe(itemstack, items, 100);
     }
@@ -342,7 +342,7 @@ for items in oreDict.get("orePoor" +itemPlusOre.ore).items
 
     ThaumcraftApi.addCrucibleRecipe(resource, recipe);
     recipe.setGroup(ResourceLocation("thaumcraft:groupOre"+ itemPlusOre.ore));
-    if ! (itemPlusOre.ore has "Iron")
+    if ! (itemPlusOre.ore has "Iron" || itemPlusOre.ore has "Thorium")
     {
     mods.inworldcrafting.FireCrafting.addRecipe(itemstack*2, items, 100);
     }
@@ -357,7 +357,7 @@ for items in oreDict.get("oreNormal" +itemPlusOre.ore).items
 
     ThaumcraftApi.addCrucibleRecipe(resource, recipe);
     recipe.setGroup(ResourceLocation("thaumcraft:groupOre"+ itemPlusOre.ore));
-    if ! (itemPlusOre.ore has "Iron")
+    if ! (itemPlusOre.ore has "Iron" || itemPlusOre.ore has "Thorium")
     {
     mods.inworldcrafting.FireCrafting.addRecipe(itemstack*3, items, 100);
     }
@@ -372,7 +372,7 @@ for items in oreDict.get("oreRich" +itemPlusOre.ore).items
 
     ThaumcraftApi.addCrucibleRecipe(resource, recipe);
     recipe.setGroup(ResourceLocation("thaumcraft:groupOre"+ itemPlusOre.ore));
-    if ! (itemPlusOre.ore has "Iron")
+    if ! (itemPlusOre.ore has "Iron" || itemPlusOre.ore has "Thorium")
     {
     mods.inworldcrafting.FireCrafting.addRecipe(itemstack*5, items, 100);
     }
@@ -382,8 +382,62 @@ for items in oreDict.get("oreRich" +itemPlusOre.ore).items
 }
 
 
+mods.inworldcrafting.FireCrafting.addRecipe(<tfc:metal/nugget/copper>,<tfc:ore/small/malachite>*3, 200);
+mods.inworldcrafting.FireCrafting.addRecipe(<tfc:metal/nugget/copper>*2,<tfc:ore/malachite:1>*3, 200);
+mods.inworldcrafting.FireCrafting.addRecipe(<tfc:metal/nugget/copper>,<tfc:ore/malachite>, 200);
+mods.inworldcrafting.FireCrafting.addRecipe(<tfc:metal/nugget/copper>*5,<tfc:ore/malachite:2>*3, 200);
 
 
 
+//special handling for Limonite and Malachite
+
+var resource as ResourceLocation = ResourceLocation("thaumcraft:orerichMalachite");
+var recipe as CrucibleRecipe = CrucibleRecipe("SIMPLEOREPROCESSING",(<tfc:metal/nugget/copper>*5).native, <tfc:ore/malachite:2>.native ,aspectsrich);
+
+    ThaumcraftApi.addCrucibleRecipe(resource, recipe);
+    recipe.setGroup(ResourceLocation("thaumcraft:groupOreMalachite"));
+
+resource = ResourceLocation("thaumcraft:oreNormalMalachite");
+recipe  = CrucibleRecipe("SIMPLEOREPROCESSING",(<tfc:metal/nugget/copper>*3).native, <tfc:ore/malachite>.native ,aspectsnormal);
+
+    ThaumcraftApi.addCrucibleRecipe(resource, recipe);
+    recipe.setGroup(ResourceLocation("thaumcraft:groupOreMalachite"));
+
+resource = ResourceLocation("thaumcraft:oreePoorMalachite");
+recipe  = CrucibleRecipe("SIMPLEOREPROCESSING",(<tfc:metal/nugget/copper>*2).native, <tfc:ore/malachite:1>.native ,aspectspoor);
+
+    ThaumcraftApi.addCrucibleRecipe(resource, recipe);
+    recipe.setGroup(ResourceLocation("thaumcraft:groupOreMalachite"));
+
+resource = ResourceLocation("thaumcraft:oreNuggetMalachite");
+recipe  = CrucibleRecipe("SIMPLEOREPROCESSING",(<tfc:metal/nugget/copper>).native, <tfc:ore/small/malachite>.native ,aspectsnugget);
+
+    ThaumcraftApi.addCrucibleRecipe(resource, recipe);
+    recipe.setGroup(ResourceLocation("thaumcraft:groupOreMalachite"));
+
+
+ resource = ResourceLocation("thaumcraft:orerichLimonite");
+ recipe = CrucibleRecipe("SIMPLEOREPROCESSING",(<tfc:metal/nugget/wrought_iron>*5).native, <tfc:ore/limonite:2>.native ,aspectsrich);
+
+    ThaumcraftApi.addCrucibleRecipe(resource, recipe);
+    recipe.setGroup(ResourceLocation("thaumcraft:groupOreLimonite"));
+
+resource = ResourceLocation("thaumcraft:oreNormalLimonite");
+recipe  = CrucibleRecipe("SIMPLEOREPROCESSING",(<tfc:metal/nugget/wrought_iron>*3).native, <tfc:ore/limonite>.native ,aspectsnormal);
+
+    ThaumcraftApi.addCrucibleRecipe(resource, recipe);
+    recipe.setGroup(ResourceLocation("thaumcraft:groupOreLimonite"));
+
+resource = ResourceLocation("thaumcraft:oreePoorLimonite");
+recipe  = CrucibleRecipe("SIMPLEOREPROCESSING",(<tfc:metal/nugget/wrought_iron>*2).native, <tfc:ore/limonite:1>.native ,aspectspoor);
+
+    ThaumcraftApi.addCrucibleRecipe(resource, recipe);
+    recipe.setGroup(ResourceLocation("thaumcraft:groupOreLimonite"));
+
+resource = ResourceLocation("thaumcraft:oreNuggetLimonite");
+recipe  = CrucibleRecipe("SIMPLEOREPROCESSING",(<tfc:metal/nugget/wrought_iron>).native, <tfc:ore/small/limonite>.native ,aspectsnugget);
+
+    ThaumcraftApi.addCrucibleRecipe(resource, recipe);
+    recipe.setGroup(ResourceLocation("thaumcraft:groupOreLimonite"));
 
 

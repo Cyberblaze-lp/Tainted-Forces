@@ -4,6 +4,7 @@ import mods.contenttweaker.VanillaFactory;
 import mods.contenttweaker.Fluid;
 import mods.contenttweaker.Color;
 import mods.randomtweaker.cote.IPotion;
+import crafttweaker.block.IBlock;
 
 
 
@@ -31,3 +32,11 @@ combatpotion.isReady = function(duration, amplifier) {
 combatpotion.performEffect = function(living, amplifier) {};
 
 combatpotion.register();
+
+
+val artiBlock = VanillaFactory.createBlock("artichoke_block", <blockmaterial:grass>);
+artiBlock.blockSoundType = <soundtype:plant>;
+artiBlock.toolClass=null;
+artiBlock.toolLevel=0;
+artiBlock.blockHardness=1.0;
+artiBlock.register();

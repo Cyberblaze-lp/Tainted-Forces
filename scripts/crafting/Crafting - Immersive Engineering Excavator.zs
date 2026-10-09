@@ -36,7 +36,7 @@ mods.immersiveengineering.Excavator.addMineral("Bauxite", 20, 0.005, ["oreAlumin
 mods.immersiveengineering.Excavator.addMineral("Cobaltite", 2, 0.005, ["oreCobaltPoor", "oreCobaltNormal", "oreCobaltRich"], [0.6, 0.3, 0.1]);
 mods.immersiveengineering.Excavator.addMineral("Ardite", 2, 0.005, ["oreArditeNormal", "oreBismuthPoor", "oreLeadPoor", "oreArditeRich"], [0.5, 0.30, 0.20, 0.1]);
 mods.immersiveengineering.Excavator.addMineral("Native Osmium", 1, 0.005, ["oreOsmiumPoor", "oreOsmiumNormal", "oreOsmiumRich"], [0.6, 0.3, 0.1]);
-mods.immersiveengineering.Excavator.addMineral("Stibnite", 5, 0.005, ["oreAntimonyPoor", "oreAntimonyNormal", "oreAntimonyRich"], [0.6, 0.3, 0.1]);
+
 mods.immersiveengineering.Excavator.addMineral("Wolframite", 1, 0.005, ["oreTungstenNormal", "oreHematitePoor", ], [0.75, 0.25]);
 mods.immersiveengineering.Excavator.addMineral("Chromite", 5, 0.005, ["gemChromite", ], [0.1]);
 mods.immersiveengineering.Excavator.addMineral("Pyrolusite", 5, 0.005, ["gemPyrolusite", ], [0.1]);

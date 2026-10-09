@@ -27,6 +27,8 @@ recipes.removeShaped(<immersiveengineering:wooden_device0>, [[<ore:plankTreatedW
 
 // ================================================================================
 //#MARKER ADD SHAPELESS
+recipes.addShapeless(<tfc:ceramics/fired/fire_brick>, [<ore:clay>, <ore:clay>, <ore:clay>, <thaumcraft:salis_mundus>, <thaumcraft:salis_mundus>, <witchery:wood_ash>, <witchery:wood_ash>, <witchery:wood_ash>]);
+recipes.addShapeless(<witchery:artichoke_globe> * 9, [<contenttweaker:artichoke_block>]);
 recipes.addShapeless(<botania:spreader>, [<ore:livingwood>, <ore:livingwood>, <botania:petalblock:4>]);
 recipes.addShapeless(<mystgears:bellows_mechanical>, [<botania:bellows>, <thaumcraft:mechanism_simple>]);
 recipes.addShapeless(<tfc:sand/conglomerate>, [<ore:sand>]);
@@ -55,6 +57,7 @@ recipes.addShapeless(<ic2:reactor_heat_vent>, [<ic2:heat_vent>, <ic2:crafting:7>
 
 // ================================================================================
 //#MARKER ADD SHAPED
+recipes.addShaped(<contenttweaker:artichoke_block>, [[<witchery:artichoke_globe>, <witchery:artichoke_globe>, <witchery:artichoke_globe>], [<witchery:artichoke_globe>, <witchery:artichoke_globe>, <witchery:artichoke_globe>], [<witchery:artichoke_globe>, <witchery:artichoke_globe>, <witchery:artichoke_globe>]]);
 recipes.addShaped(<botania:pylon>, [[<ore:powderMana>, <botania:managlass>, <ore:powderMana>], [<ore:ingotBrass>, <ore:powderMana>, <ore:ingotBrass>], [<ore:powderMana>, <botania:managlass>, <ore:powderMana>]]);
 recipes.addShaped(<botania:pylon>, [[<ore:powderMana>, <botania:managlass>, <ore:powderMana>], [<ore:powderMana>, <ore:ingotGold>, <ore:powderMana>], [<ore:powderMana>, <botania:managlass>, <ore:powderMana>]]);
 recipes.addShaped(<minecraft:ice> * 2, [[<witchery:icy_needle>, <witchery:icy_needle>], [<witchery:icy_needle>, <witchery:icy_needle>]]);

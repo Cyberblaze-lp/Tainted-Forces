@@ -44,7 +44,7 @@ recipes.addShapeless(<camping:parts:2>, [<ore:pickHead>, <ore:hammer>.transformD
 recipes.addShapeless(<minecraft:pumpkin>, [<firmalife:lit_pumpkin_face>]);
 recipes.addShapeless(<tfc:metal/sheet/brass>, [<ore:sheetmetalBrass>]);
 recipes.addShapeless(<minecraft:slime_ball>, [<ore:glue>, <ore:dyeLime>]);
-recipes.addShapeless(<tfc:metal/nugget/wrought_iron> * 9, [<ore:ingotWroughtIron>]);
+
 recipes.addShapeless(<tfc:metal/ingot/wrought_iron>, [<minecraft:iron_ingot>]);
 recipes.addShapeless(<tfc:metal/ingot/gold>, [<minecraft:gold_ingot>]);
 recipes.addShapeless(<minecraft:gold_ingot>, [<tfc:metal/ingot/gold>, <ore:paper>]);

@@ -28,6 +28,12 @@ mods.modularmachinery.RecipeBuilder.newBuilder("basicflux", "calcifier_t0", 300)
 .addFluxOutput(2,0)
 .build();
 
+mods.modularmachinery.RecipeBuilder.newBuilder("basicQuicksilver", "calcifier_t0", 300)
+.addItemInput(<ore:dustRedstone>*4)
+.addItemOutput(<thaumcraft:nugget:5>)
+.addFluxOutput(0.25f,0)
+.build();
+
 //Cooling Tower
 
     //ic2 boiler to tower ratio should be ~ 16:1
