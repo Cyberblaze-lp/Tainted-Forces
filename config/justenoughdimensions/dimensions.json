@@ -1,0 +1,21 @@
+{
+  "dimensions": [
+    {
+      "dim": 3,
+      "biome": "advancedrocketry:moon",
+      "override": true,
+      "dimensiontype": {
+        "name": "Lunar Plane",
+        "suffix": "_dim3",
+        "worldprovider": "WorldProviderSurfaceJED"
+      },
+      "worldinfo": {
+        "generatorName": "flat",
+        "generatorOptions":"3;222*minecraft:air,2*advancedrocketry:moonturf_dark;127;"
+      },
+      "jed": {
+        "GenerateFallbackSpawnBlock": false
+      }
+    }
+  ]
+}

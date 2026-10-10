@@ -45,13 +45,13 @@
                 <thunderProlongationLength>0</thunderProlongationLength>
                 <rainMarker>0</rainMarker>
                 <thunderMarker>0</thunderMarker>
-                <generateCraters>false</generateCraters>
+                <generateCraters>true</generateCraters>
                 <generateCaves>false</generateCaves>
                 <generateVolcanos>false</generateVolcanos>
                 <generateStructures>false</generateStructures>
                 <generateGeodes>false</generateGeodes>
                 <seaLevel>4</seaLevel>
-                <biomeIds>advrocketry:moon_dark;30</biomeIds>
+                <biomeIds>minecraft:void;30</biomeIds>
             </planet>
         </planet>
         <planet DIMID="4" name="Sol-4">
@@ -83,7 +83,6 @@
             <generateStructures>false</generateStructures>
             <generateGeodes>false</generateGeodes>
             <seaLevel>63</seaLevel>
-            
-        </planet>
+            </planet>
     </star>
 </galaxy>
