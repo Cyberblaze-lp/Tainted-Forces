@@ -593,12 +593,8 @@ zenClass simplerGolemPress3 {
          
       }
    }
-
-
-
-
-
-
 }
+
+
 
 

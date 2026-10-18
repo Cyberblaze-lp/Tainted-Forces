@@ -1,3 +1,4 @@
+#reloadable
 import crafttweaker.events.IEventManager;
 import crafttweaker.block.IBlock;
 import crafttweaker.item.IItemStack;
@@ -20,11 +21,27 @@ turf.resistance = 5000000.0;
 static AllowedTEs as bool[IBlockDefinition] = {};
 
 for block in [
-    <mekanism:boundingblock>
+    <mekanism:boundingblock>,
+	<advancedrocketry:rocketmotor>,
+	<advancedrocketry:advrocketmotor>,
+	<advancedrocketry:bipropellantrocketmotor>,
+	<advancedrocketry:advbipropellantrocketmotor>,
+	<advancedrocketry:nuclearrocketmotor>,
+	<advancedrocketry:rocketbuilder>,
+	<advancedrocketry:guidancecomputer>,
+	<cyberware:radio_post>,
+	<cyberware:beacon_large>,
+	<weather2:anemometer>,
+	<weather2:wind_vane>,
+	<railcraft:equipment>,
+	<tfc:placed_item>,
+	<minecraft:structure_block>
 ]
 {
     AllowedTEs[(block as IBlock).definition] = true;
 }
+AllowedTEs[<blockstate:tfc:placed_item_flat>.block.definition] = true;
+AllowedTEs[<blockstate:sync:block_multi>.block.definition] = true;
 
 function isYDenied(block as IBlock, world as IWorld, position as IBlockPos) as bool
 {
@@ -36,6 +53,7 @@ function isYDenied(block as IBlock, world as IWorld, position as IBlockPos) as b
     {
         return false;
     }
+	
     if !block.definition.native.hasTileEntity()
     {
         return false;
@@ -57,7 +75,7 @@ events.onPlayerInteractBlock(function(event as crafttweaker.event.PlayerInteract
 		if(isYDenied(event.item.asBlock(), event.world, event.position.getOffset(event.face, 1))){
 			event.cancel();
 			event.player.sendRichTextStatusMessage(format.red("Wind too strong up here, cannot place!"));
-			event.player.setCooldown(event.item, 200);
+			event.player.setCooldown(event.item, 10);
 			
 			return;
 		}

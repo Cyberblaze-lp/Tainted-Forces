@@ -1,3 +1,4 @@
+#reloadable
 import crafttweaker.event.EntityLivingDeathEvent;
 import mods.ctutils.world.IGameRules;
 import crafttweaker.world.IWorld;

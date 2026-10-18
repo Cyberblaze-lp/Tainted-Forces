@@ -322,7 +322,6 @@ recipes.addShaped(<quark:iron_plate>, [[null, <ore:nuggetIron>, null], [<ore:nug
 
 recipes.addShaped(<mysticalmechanics:gearbox_frame> * 2, [[<ore:rodWroughtIron>, null, <ore:rodWroughtIron>], [null, <ore:ingotIron>, null], [<ore:rodWroughtIron>, null, <ore:rodWroughtIron>]]);
 recipes.addShaped(<thermalexpansion:satchel>, [[null, <ore:leather>, null], [null, <ore:nuggetCopper>, null], [<ore:leather>, <ore:clothHighQuality>, <ore:leather>]]);
-recipes.addShaped(<ic2:dust:6> * 9, [[<ore:dustRedstone>, <ore:dustLithium>, <ore:dustRedstone>], [<ore:dustLithium>, <ore:dustRedstone>, <ore:dustLithium>], [<ore:dustRedstone>, <ore:dustLithium>, <ore:dustRedstone>]]);
 recipes.addShaped(<tetra:journal>, [[null, <embers:archaic_brick>, null], [<embers:archaic_brick>, <ore:dustBedrock>, <embers:archaic_brick>], [null, <embers:archaic_brick>, null]]);
 recipes.addShaped(<tetra:toolbelt_modular>.withTag({"toolbelt/belt_material": "belt/rope", "toolbelt/belt": "toolbelt/belt", "toolbelt/slot1": "toolbelt/strap_slot1", "toolbelt/strap_slot1_material": "strap1/leather"}), [[null, <tfc:crop/product/jute_fiber>, null], [<tfc:crop/product/jute_fiber>, null, <tfc:crop/product/jute_fiber>], [null, <tfc:crop/product/jute_fiber>, null]]);
 recipes.addShaped(<tetra:toolbelt_modular>.withTag({"toolbelt/belt_material": "belt/rope", "toolbelt/belt": "toolbelt/belt", "toolbelt/slot1": "toolbelt/strap_slot1", "toolbelt/strap_slot1_material": "strap1/leather"}), [[null, <ore:string>, null], [<ore:string>, null, <ore:string>], [null, <ore:string>, null]]);

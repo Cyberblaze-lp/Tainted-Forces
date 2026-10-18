@@ -1,3 +1,4 @@
+#reloadable
 import crafttweaker.entity.AttributeInstance;
 import crafttweaker.entity.IEntity;
 import crafttweaker.entity.IEntityLivingBase;

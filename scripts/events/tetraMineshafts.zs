@@ -1,4 +1,4 @@
-
+#reloadable
 import crafttweaker.world.IWorld;
 import crafttweaker.event.EntityJoinWorldEvent;
 import crafttweaker.util.IRandom;

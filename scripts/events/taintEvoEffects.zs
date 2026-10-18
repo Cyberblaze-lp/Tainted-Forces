@@ -1,3 +1,4 @@
+#reloadable
 import mods.ctutils.world.IGameRules;
 import crafttweaker.world.IWorld;
 import crafttweaker.event.WorldTickEvent;

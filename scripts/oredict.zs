@@ -104,7 +104,7 @@
     <ore:blockGlass>.add(<betternether:quartz_glass>);
     <ore:blockGlassColorless>.add(<betternether:quartz_glass>);
     <ore:itemRubber>.add(<tfctech:latex/rubber>);
-    <ore:sheetPlastic>.add(<mekanism:polyethene:2>);
+    <ore:sheetPlastic>.add(<mekanism:hdpe_sheet>);
     <ore:circuitBasic>.add(<cyberware:component:3>);
     <ore:materialNuke>.add(<ic2:quad_mox_fuel_rod>);
     <ore:tallow>.add(<thaumcraft:tallow>);

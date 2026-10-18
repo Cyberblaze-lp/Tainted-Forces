@@ -1,3 +1,7 @@
 item.contenttweaker.ignatius_fuel.name=Infused Ignatius
 effect.contenttweaker.in_combat=Wounded
 tile.contenttweaker.artichoke_block.name=Artichoke Bundle
+fluid.liquefacted_lumen=Liquefacted Lumen
+gas.fluorine=Fluorine Gas
+gas.sulfuric_acid=Sulfuric Acid Vapor
+gas.hydrofluoric_acid=Gaseous Hydrofluoric Acid

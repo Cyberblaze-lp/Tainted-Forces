@@ -1,3 +1,4 @@
+#reloadable
 import crafttweaker.event.PlayerInteractEntityEvent;
 import crafttweaker.entity.IEntityLivingBase;
 import crafttweaker.liquid.ILiquidDefinition;

@@ -1,0 +1,1 @@
+native.com.rcx.mystgears.block.TileEntityEssentiaMotor.maxEssentia =2.0;

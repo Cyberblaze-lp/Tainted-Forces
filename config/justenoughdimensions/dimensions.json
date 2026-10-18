@@ -14,7 +14,13 @@
         "generatorOptions":"3;222*minecraft:air,2*advancedrocketry:moonturf_dark;127;"
       },
       "jed": {
-        "GenerateFallbackSpawnBlock": false
+        "GenerateFallbackSpawnBlock": false,
+        "SkyRenderer":"zmaster587.advancedRocketry.client.render.planet.RenderPlanetarySky",
+        "FogColor":"0xA8DDB0",
+        "SkyColor":"0xB8FDD0",
+        "SkyLightBlend": 0.2,
+        "DisableDawnDuskColors":true
+
       }
     }
   ]

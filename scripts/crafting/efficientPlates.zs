@@ -176,9 +176,6 @@ import mods.terrafirmacraft.Anvil;
 
 	mods.embers.DawnstoneAnvil.add([<tfc:metal/double_sheet/black_bronze>],<ore:sheetBlackBronze>,<ore:sheetBlackBronze>);
 
-	mods.embers.DawnstoneAnvil.add([<tfc:metal/double_sheet/lithium>],<ore:sheet>,<ore:sheet>);
-
-	mods.embers.DawnstoneAnvil.add([<tfc:metal/double_sheet/lithium>],<ore:sheetLithium>,<ore:sheetLithium>);
 
 	mods.embers.DawnstoneAnvil.add([<tfc:metal/double_sheet/constantan>],<ore:sheetConstantan>,<ore:sheetConstantan>);
 

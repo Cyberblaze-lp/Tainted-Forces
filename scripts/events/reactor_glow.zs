@@ -1,4 +1,5 @@
 
+#reloadable
 #download_reobf_mapping 
 import native.net.minecraft.tileentity.TileEntity;
 import native.net.minecraft.block.Block;

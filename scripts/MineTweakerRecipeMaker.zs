@@ -57,6 +57,10 @@ recipes.addShapeless(<ic2:reactor_heat_vent>, [<ic2:heat_vent>, <ic2:crafting:7>
 
 // ================================================================================
 //#MARKER ADD SHAPED
+recipes.addShaped(<immersiveengineering:metal_decoration0:6> * 2, [[<ore:plateSteel>, <tfc:metal/ingot/black_steel>, <ore:plateSteel>], [<tfc:metal/ingot/black_steel>, <ore:ingotBlackSteel>, <tfc:metal/ingot/black_steel>], [<ore:plateSteel>, <tfc:metal/ingot/black_steel>, <ore:plateSteel>]]);
+recipes.addShaped(<immersiveengineering:metal_decoration0:6> * 2, [[<ore:plateSteel>, <railcraft:charge:5>, <ore:plateSteel>], [<railcraft:charge:5>, null, <railcraft:charge:5>], [<ore:plateSteel>, <railcraft:charge:5>, <ore:plateSteel>]]);
+recipes.addShaped(<mekanism:plasticfence:15> * 6, [[<ore:plasticWhite>, null, <ore:plasticWhite>], [<ore:plasticWhite>, <ore:plasticWhite>, <ore:plasticWhite>], [<ore:plasticWhite>, null, <ore:plasticWhite>]]);
+recipes.addShaped(<mekanism:plasticblock:15> * 2, [[<ore:plasticWhite>, <ore:plasticWhite>], [<ore:plasticWhite>, <ore:plasticWhite>]]);
 recipes.addShaped(<contenttweaker:artichoke_block>, [[<witchery:artichoke_globe>, <witchery:artichoke_globe>, <witchery:artichoke_globe>], [<witchery:artichoke_globe>, <witchery:artichoke_globe>, <witchery:artichoke_globe>], [<witchery:artichoke_globe>, <witchery:artichoke_globe>, <witchery:artichoke_globe>]]);
 recipes.addShaped(<botania:pylon>, [[<ore:powderMana>, <botania:managlass>, <ore:powderMana>], [<ore:ingotBrass>, <ore:powderMana>, <ore:ingotBrass>], [<ore:powderMana>, <botania:managlass>, <ore:powderMana>]]);
 recipes.addShaped(<botania:pylon>, [[<ore:powderMana>, <botania:managlass>, <ore:powderMana>], [<ore:powderMana>, <ore:ingotGold>, <ore:powderMana>], [<ore:powderMana>, <botania:managlass>, <ore:powderMana>]]);

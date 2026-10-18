@@ -168,7 +168,7 @@ vent.addItemEntry(<tfc:metal/sheet/copper>, 12);
 vent.addItemEntry(<tfc:metal/nugget/copper>, 12);
 vent.addItemEntry(<thaumcraft:nugget:5>, 30);
 vent.addItemEntry(<thaumcraft:plate:3>, 5);
-vent.addItemEntry(<mekanism:polyethene:2>, 30, 1);
+vent.addItemEntry(<mekanism:hdpe_sheet>, 30, 1);
 vent.addItemEntry(<thaumcraft:nugget:7>, 5);
 vent.addItemEntry(<contenttweaker:taint_tendril>, 5);
 

@@ -1,3 +1,4 @@
+#reloadable
 import crafttweaker.events.IEventManager;
 import crafttweaker.block.IBlock;
 import crafttweaker.item.IItemStack;
@@ -167,6 +168,16 @@ import native.net.minecraftforge.common.DimensionManager;
 
 	for item in waterstuff {
 		addRestriction(false, true, [-1], item);
+	}
+
+	//stuff exclusive to the Lunar Plane ("Flatland")
+	for item in [
+		<mekanism:machineblock2:10>,
+		<mekanismgenerators:generator:6>
+
+	] as IItemStack[]
+	{
+		addRestriction(true, false, [3], item);
 	}
 //End
 

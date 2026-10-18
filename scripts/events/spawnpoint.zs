@@ -1,4 +1,4 @@
-
+#reloadable
 import crafttweaker.event.PlayerChangedDimensionEvent;
 import crafttweaker.event.PlayerLoggedInEvent;
 import crafttweaker.event.PlayerRespawnEvent;

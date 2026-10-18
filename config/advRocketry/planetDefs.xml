@@ -30,7 +30,7 @@
                 <isKnown>false</isKnown>
                 <forceRiverGeneration>false</forceRiverGeneration>
                 <fogColor>1.0,1.0,1.0</fogColor>
-                <skyColor>1.0,1.0,1.0</skyColor>
+                <skyColor>1.0,1.0,0.0</skyColor>
                 <gravitationalMultiplier>16</gravitationalMultiplier>
                 <orbitalDistance>150</orbitalDistance>
                 <orbitalTheta>0</orbitalTheta>
@@ -38,7 +38,7 @@
                 <retrograde>false</retrograde>
                 <avgTemperature>198</avgTemperature>
                 <rotationalPeriod>128000</rotationalPeriod>
-                <atmosphereDensity>500</atmosphereDensity>
+                <atmosphereDensity>500000</atmosphereDensity>
                 <rainStartLength>168000</rainStartLength>
                 <rainProlongationLength>0</rainProlongationLength>
                 <thunderStartLength>168000</thunderStartLength>
@@ -51,7 +51,7 @@
                 <generateStructures>false</generateStructures>
                 <generateGeodes>false</generateGeodes>
                 <seaLevel>4</seaLevel>
-                <biomeIds>minecraft:void;30</biomeIds>
+                <biomeIds>advancedrocketry:moon;30</biomeIds>
             </planet>
         </planet>
         <planet DIMID="4" name="Sol-4">

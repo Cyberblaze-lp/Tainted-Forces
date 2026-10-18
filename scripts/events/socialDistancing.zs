@@ -1,5 +1,4 @@
-
-
+#reloadable
 import crafttweaker.world.IWorld;
 import crafttweaker.entity.IEntity;
 import crafttweaker.entity.IEntityDefinition;

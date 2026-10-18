@@ -1,3 +1,4 @@
+#reloadable
 import crafttweaker.events.IEventManager;
 import crafttweaker.block.IBlock;
 import crafttweaker.item.IItemStack;

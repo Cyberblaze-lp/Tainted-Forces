@@ -22,7 +22,7 @@ import crafttweaker.item.IItemStack;
 <immersiveengineering:material:6>.setAspects(<aspect:terra>*10,<aspect:ignis>*10, <aspect:potentia>*10);
 <tfc:metal/ingot/bismuth>.setAspects(<aspect:metallum>*10, <aspect:sensus>*5);
 <tfc:metal/ingot/zinc>.setAspects(<aspect:metallum>*10, <aspect:perditio>*5);
-<tfc:metal/ingot/lithium>.setAspects(<aspect:metallum>*10, <aspect:potentia>*5);
+<mekanism:otherdust:4>.setAspects(<aspect:metallum>*10, <aspect:potentia>*5,<aspect:perditio>*1);
 <tfc:metal/ingot/black_bronze>.setAspects(<aspect:metallum>*10, <aspect:tenebrae>*5);
 <tfc:metal/ingot/bismuth_bronze>.setAspects(<aspect:metallum>*10, <aspect:fabrico>*5);
 <tfc:metal/ingot/pig_iron>.setAspects(<aspect:metallum>*15, <aspect:bestia>*5);

@@ -1,3 +1,4 @@
+#reloadable
 import crafttweaker.event.PlayerInteractBlockEvent;
 import native.blusunrize.immersiveengineering.common.util.advancements.IEAdvancements;
 import native.blusunrize.immersiveengineering.api.MultiblockHandler;
